@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import PomodoroClock from "../components/PomodoroClock.js";
+import PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';
 
 export default class Homepage extends Component {
   render() {
     return (
-      <div className="main">
+      <div className="home">
         <PomodoroClock />
       </div>
     );
