@@ -6,18 +6,20 @@ const Controls = ({
   isActive,
   timer,
   cycle,
+  cycleLength,
   focusTime,
   breakTime,
   increaseTimer,
   decreaseTimer,
-  cycleLengthLabel,
   setTimer,
+  setIsActive,
 }) => {
   return (
     <React.Fragment>
       {/* <Reset /> */}
       <StartStop
         isActive={isActive}
+        setIsActive={setIsActive}
         cycle={cycle}
         focusTime={focusTime}
         breakTime={breakTime}
@@ -27,7 +29,8 @@ const Controls = ({
       <AdjustTime
         increaseTimer={increaseTimer}
         decreaseTimer={decreaseTimer}
-        cycleLengthLabel={cycleLengthLabel}
+        cycleLength={cycleLength}
+        cycle={cycle}
       />
     </React.Fragment>
   );

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const StartStop = ({
   isActive,
+  setIsActive,
   timer,
   cycle,
   focusTime,
@@ -26,9 +27,10 @@ const StartStop = ({
   const handleStartStop = () => {
     if (isActive) {
       clearInterval(intervalId);
-      setIntervalId(null);
-    } else {
-      useEffect(() => {});
+      setIsActive(false);
+    }
+    //TODO: note that maybe the reason why is because my setIsActie is not catching within the block (see return blocks)
+    if (!isActive) {
       const newIntervalId = setInterval(() => {
         console.log(Date.now());
         setTimer((prevTimer) => {
@@ -36,19 +38,15 @@ const StartStop = ({
           if (newTimer >= 0) {
             return newTimer;
           }
-
-          //   if (cycle) {
-          //     // setCycle(false);
-          //     setTimer(focusTime);
-          //   } else if (!cycle) {
-          //     // setCycle(true);
-          //     setTimer(breakTime);
-          //   }
           return prevTimer;
         });
       }, 1000);
+
       setInterval(newIntervalId);
+      setIsActive(true);
     }
+    //added this to try and fix memory leak - appears code still runs when switched
+    // return () => clearInterval(newIntervalId);
   };
 
   return (
