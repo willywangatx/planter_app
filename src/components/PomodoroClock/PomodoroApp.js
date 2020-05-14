@@ -3,7 +3,6 @@ import moment from 'moment';
 import Controls from './Controls';
 import Timer from './Timer';
 import Cycle from './Cycle';
-import StartStop from './StartStop';
 
 const PomodoroClock = () => {
   const [focusTime, setFocusTime] = useState(60 * 25);
@@ -12,8 +11,9 @@ const PomodoroClock = () => {
   const [cycle, setCycle] = useState(true);
   const [isActive, setIsActive] = useState(false);
   const [timerId, setTimerId] = useState(null);
+  const [reset, setReset] = useState(false);
 
-  //<Cycle /> component
+  //<Cycle />
   useEffect(() => {
     setTimer(cycle ? focusTime : breakTime);
   }, [cycle]);
@@ -22,16 +22,24 @@ const PomodoroClock = () => {
     setCycle(!cycle);
   };
 
+  //<Reset />
+  useEffect(() => {
+    setTimer(cycle ? focusTime : breakTime);
+    setReset(false);
+  }, [reset]);
+
+  const resetTime = () => {
+    setReset(true);
+  };
+
   //<StartStop />
   const startStopClick = () => {
     let updatedTimerId;
     if (isActive) {
-      //stop timer
       clearInterval(timerId);
       setIsActive(false);
     }
     if (!isActive) {
-      //start timer
       updatedTimerId = setInterval(() => {
         setTimer((prevTimer) => {
           const newTimer = prevTimer - 1;
@@ -95,16 +103,12 @@ const PomodoroClock = () => {
       <Timer timer={timer} />
       <Controls
         isActive={isActive}
-        setIsActive={setIsActive}
-        timer={timer}
         cycle={cycle}
-        focusTime={focusTime}
-        breakTime={breakTime}
         increaseTimer={increaseTimer}
         decreaseTimer={decreaseTimer}
         cycleLength={cycleLength}
-        setTimer={setTimer}
         startStopClick={startStopClick}
+        resetTime={resetTime}
       />
     </div>
   );
