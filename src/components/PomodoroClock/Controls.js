@@ -13,19 +13,12 @@ const Controls = ({
   decreaseTimer,
   setTimer,
   setIsActive,
+  startStopClick,
 }) => {
   return (
     <React.Fragment>
       {/* <Reset /> */}
-      <StartStop
-        isActive={isActive}
-        setIsActive={setIsActive}
-        cycle={cycle}
-        focusTime={focusTime}
-        breakTime={breakTime}
-        timer={timer}
-        setTimer={setTimer}
-      />
+      <StartStop isActive={isActive} startStopClick={startStopClick} />
       <AdjustTime
         increaseTimer={increaseTimer}
         decreaseTimer={decreaseTimer}
