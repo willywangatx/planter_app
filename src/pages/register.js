@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'fusion-plugin-react-router';
+import paths from '../constants/paths';
 
 export default class Register extends Component {
   constructor(props) {
@@ -86,7 +88,8 @@ export default class Register extends Component {
             <input type="submit" value="Register" />
           </div>
         </form>
-        <a href="/login">Log In</a>
+        <Link to={paths.login}>login.</Link>
+        <Link to={paths.home}>home.</Link>
       </React.Fragment>
     );
   }

@@ -2510,10 +2510,6 @@ cssstyle@^1.0.0:
   dependencies:
     cssom "0.3.x"
 
-csstype@rtsao/csstype#c4e709f:
-  version "2.6.4"
-  resolved "https://codeload.github.com/rtsao/csstype/tar.gz/c4e709f5e047e9cacb721e437f53f0b84d6ada84"
-
 cyclist@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
@@ -3837,22 +3833,22 @@ fusion-cli@^2.6.0:
     webpack-sources "^1.4.3"
     winston "^3.1.0"
 
-fusion-core@^2.0.9:
-  version "2.0.9"
-  resolved "https://registry.npmjs.org/fusion-core/-/fusion-core-2.0.9.tgz#fbe062b5c6b4e4cf707fff119f7cef27b7eba3ea"
-  integrity sha512-P1crq1MWEIRl22e1abUJEeaGY85bgJrWNybgIFyMTo0hQSeten+EIYrDrTOZ12DjlrLxsanvxDAwxk+UY7N9tQ==
+fusion-core@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-2.2.1.tgz#8708735b5fd171d0927b6658b6fbbe562e3d06e2"
+  integrity sha512-Rv8xgYLK8HX/f7Nkjqxx26E5kncp4C8f8dvIRAh+swOcLy25CF2gJV6Li4a89+SxCDfYywr+QGRFKLCA4Nup1g==
   dependencies:
     koa "^2.7.0"
     koa-compose "^4.1.0"
     node-mocks-http "^1.7.5"
     toposort "^2.0.2"
-    ua-parser-js "^0.7.19"
+    ua-parser-js "^0.7.21"
     uuid "^3.3.2"
 
-fusion-plugin-react-helmet-async@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.npmjs.org/fusion-plugin-react-helmet-async/-/fusion-plugin-react-helmet-async-2.1.5.tgz#feb7342fe3e7b0bb3e9393a707d0eff850f8a23f"
-  integrity sha512-okh4g2120EI7ZU0BPCw25Uq7Pw6WLbDI1Fbwjaz1iJ8V2wXBZcFz2v1JznpE4Bl3/z+5/t+wC+R9tEiZTlxGAA==
+fusion-plugin-react-helmet-async@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/fusion-plugin-react-helmet-async/-/fusion-plugin-react-helmet-async-2.2.3.tgz#5b8efdbfb027882e0b23d938cf70753aa3b32c04"
+  integrity sha512-6nl6RQifWd8tgTWqPK05lIsVK7tL8oHj4jcHVNNYuSnEsL166HXnNvCdwXkq9HgxHVB+w0SsEQMlJel2oWvRQw==
   dependencies:
     react-helmet-async "^1.0.2"
 
@@ -3865,10 +3861,10 @@ fusion-plugin-react-router@^2.1.3:
     prop-types "^15.7.2"
     react-router-dom "^5.1.0"
 
-fusion-plugin-styletron-react@^3.0.12:
-  version "3.0.12"
-  resolved "https://registry.npmjs.org/fusion-plugin-styletron-react/-/fusion-plugin-styletron-react-3.0.12.tgz#236cc629b65ad4ec555db68d6ace46015270183d"
-  integrity sha512-IaKO0+fpv7ocmcIbtd381hcq0I05UrMdRVXAq0WTkrEu2QpvVGrx7qjxnj9yUJbeZcyPmYW/wZwhsxnOsWgIKQ==
+fusion-plugin-styletron-react@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/fusion-plugin-styletron-react/-/fusion-plugin-styletron-react-3.1.2.tgz#07578488802143f7bcdeda06eeaf5f363a8f20db"
+  integrity sha512-gOErPWerjiYu7cJ7JrbFeV1UCAj4E6dIiuwJhC9ZrABH9KVbgqABDuK24cdQt5FWh+1JsC8MF2Uck6PFCYrCyg==
   dependencies:
     css-to-js-sourcemap-worker "^2.0.4"
     styletron-engine-atomic "^1.4.1"
@@ -8094,21 +8090,21 @@ styletron-engine-atomic@^1.4.1:
     inline-style-prefixer "^5.1.0"
     styletron-standard "^3.0.4"
 
-styletron-react@^5.2.2:
-  version "5.2.4"
-  resolved "https://registry.npmjs.org/styletron-react/-/styletron-react-5.2.4.tgz#c70920830d18fd31973cbc1a46bdff96cf725d1f"
-  integrity sha512-NerJskeCmPGCcSeppAOx0ERmAt7u3A9i9KDCEUtg8u+jWWBhFFGWBQa1O3N6Ipo5o1EYxNFaHAGQ+Zxp9NUQdA==
+styletron-engine-atomic@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/styletron-engine-atomic/-/styletron-engine-atomic-1.4.6.tgz#0cfaa32dd8c386a4736b9cd25361711712c4fd98"
+  integrity sha512-1dPXjIjdd3nrQdh1PYvQ3MOd0syzAkFVJzaH31rwy0lhSSsKzfCqn1WLtaLqvL5z89J9wwAsu9CaNZis06K+4g==
+  dependencies:
+    inline-style-prefixer "^5.1.0"
+    styletron-standard "^3.0.4"
+
+styletron-react@^5.2.7:
+  version "5.2.7"
+  resolved "https://registry.yarnpkg.com/styletron-react/-/styletron-react-5.2.7.tgz#7aa283a0b06787024f96289480c60bafed5048cf"
+  integrity sha512-PUUf7MAv9aaO8oT0B4ryPreeLi3BT1kQ7WIDNhkkpLkvCzk+pOvmtaZJJZRIxWPimj8756rLZqpF7/2ssF9KhQ==
   dependencies:
     prop-types "^15.6.0"
-    styletron-standard "^3.0.3"
-
-styletron-standard@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.npmjs.org/styletron-standard/-/styletron-standard-3.0.3.tgz#60790fb23cf1ede5f51fcbaa48f13c92b5b8b949"
-  integrity sha512-zr36POeQxvstdY8Sw443h4/AcBj23pNJ30NWPci0TetH6jJXXKn/IE5QBV2XP8ErT7eeB9LJnqlxav3aTe4qRA==
-  dependencies:
-    csstype rtsao/csstype#c4e709f
-    inline-style-prefixer "^5.1.0"
+    styletron-standard "^3.0.4"
 
 styletron-standard@^3.0.4:
   version "3.0.4"
@@ -8463,10 +8459,10 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-ua-parser-js@^0.7.19:
-  version "0.7.20"
-  resolved "https://registry.npmjs.org/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
-  integrity sha512-8OaIKfzL5cpx8eCMAhhvTlft8GYF8b2eQr6JkCyVdrgjcytyOmPCXrqXFcUnhonRpLlh5yxEZVohm6mzaowUOw==
+ua-parser-js@^0.7.21:
+  version "0.7.21"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
+  integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
 
 uglify-js@^3.1.4:
   version "3.6.4"

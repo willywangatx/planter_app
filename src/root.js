@@ -1,19 +1,28 @@
 // @flow
 import React from 'react';
 import { Route, Switch } from 'fusion-plugin-react-router';
-
+import { Helmet } from 'fusion-plugin-react-helmet-async';
+import { Link } from 'fusion-plugin-react-router';
+import paths from './constants/paths';
 import Home from './pages/home.js';
 import Login from './pages/login.js';
 import Register from './pages/register.js';
 import PageNotFound from './pages/pageNotFound.js';
+import { assetUrl } from 'fusion-core';
 
-const root = (
-  <Switch>
-    <Route exact path="/" component={Home} />
-    <Route exact path="/login" component={Login} />
-    <Route exact path="/register" component={Register} />
-    <Route component={PageNotFound} />
-  </Switch>
+const Root = (
+  <>
+    <Helmet>
+      <title>planter.</title>
+      <link rel="stylesheet" href={assetUrl('./constants/styles.css')}></link>
+    </Helmet>
+    <Switch>
+      <Route exact path={paths.home} component={Home} />
+      <Route exact path={paths.login} component={Login} />
+      <Route exact path={paths.register} component={Register} />
+      <Route component={PageNotFound} />
+    </Switch>
+  </>
 );
 
-export default root;
+export default Root;

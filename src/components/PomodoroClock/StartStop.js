@@ -1,10 +1,12 @@
 import React from 'react';
+import CycleCounter from './CycleCounter';
 
-const StartStop = ({ isActive, startStopClick }) => {
+const StartStop = ({ isStarted, startStopClick, cycleCount }) => {
   return (
     <React.Fragment>
+      <p id="cycle-count">Session Count: {cycleCount}</p>
       <button id="start-stop-btn" onClick={startStopClick}>
-        {isActive ? 'Stop' : 'Start'}
+        {isStarted ? 'Stop' : 'Start'}
       </button>
     </React.Fragment>
   );

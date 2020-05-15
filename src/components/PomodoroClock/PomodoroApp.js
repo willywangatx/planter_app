@@ -3,15 +3,17 @@ import moment from 'moment';
 import Controls from './Controls';
 import Timer from './Timer';
 import Cycle from './Cycle';
+import CycleCounter from './CycleCounter';
 
 const PomodoroClock = () => {
   const [focusTime, setFocusTime] = useState(60 * 25);
   const [breakTime, setBreakTime] = useState(60 * 5);
   const [timer, setTimer] = useState(focusTime);
   const [cycle, setCycle] = useState(true);
-  const [isActive, setIsActive] = useState(false);
+  const [isStarted, setIsStarted] = useState(false);
   const [timerId, setTimerId] = useState(null);
   const [reset, setReset] = useState(false);
+  const [cycleCount, setCycleCount] = useState(0);
 
   //<Cycle />
   useEffect(() => {
@@ -33,29 +35,36 @@ const PomodoroClock = () => {
   };
 
   //<StartStop />
+  //TODO: adding a session counter to app
+  //logic to prevent setting focus time to 0 in adjust time
   const startStopClick = () => {
     let updatedTimerId;
-    if (isActive) {
+    if (isStarted) {
       clearInterval(timerId);
-      setIsActive(false);
+      setIsStarted(false);
     }
-    if (!isActive) {
+    if (!isStarted) {
       updatedTimerId = setInterval(() => {
         setTimer((prevTimer) => {
           const newTimer = prevTimer - 1;
           if (newTimer >= 0) {
             return newTimer;
           }
+          //TODO: count does not update on successive focusSessions
+          if (cycle) {
+            setCycleCount(cycleCount + 1);
+            console.log(cycleCount);
+          }
           return prevTimer;
         });
       }, 1000);
       setTimerId(updatedTimerId);
       setInterval(timerId);
-      setIsActive(true);
+      setIsStarted(true);
     }
   };
 
-  //<AdjustTime /> component
+  //<AdjustTime />
   useEffect(() => {
     if (cycle) {
       setTimer(focusTime);
@@ -71,7 +80,6 @@ const PomodoroClock = () => {
   };
 
   const increaseTimer = () => {
-    console.log('increaseTimer');
     if (cycle) {
       setFocusTime(focusTime + 60);
     }
@@ -80,10 +88,11 @@ const PomodoroClock = () => {
     }
   };
 
+  //update: set focusTime minimum time to 1 min
   const decreaseTimer = () => {
     if (cycle) {
-      if (focusTime <= 0) {
-        setFocusTime(0);
+      if (focusTime <= 60) {
+        setFocusTime(60);
       } else {
         setFocusTime(focusTime - 60);
       }
@@ -100,15 +109,17 @@ const PomodoroClock = () => {
   return (
     <div className="pomodoro-clock">
       <Cycle toggleCycle={toggleCycle} cycle={cycle} />
+      {/* <CycleCounter cycleCount={cycleCount} /> */}
       <Timer timer={timer} />
       <Controls
-        isActive={isActive}
+        isStarted={isStarted}
         cycle={cycle}
         increaseTimer={increaseTimer}
         decreaseTimer={decreaseTimer}
         cycleLength={cycleLength}
         startStopClick={startStopClick}
         resetTime={resetTime}
+        cycleCount={cycleCount}
       />
     </div>
   );

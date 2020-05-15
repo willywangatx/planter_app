@@ -4,18 +4,23 @@ import StartStop from './StartStop';
 import Reset from './Reset';
 
 const Controls = ({
-  isActive,
+  isStarted,
   cycle,
   cycleLength,
   increaseTimer,
   decreaseTimer,
   startStopClick,
   resetTime,
+  cycleCount,
 }) => {
   return (
     <React.Fragment>
       <Reset resetTime={resetTime} />
-      <StartStop isActive={isActive} startStopClick={startStopClick} />
+      <StartStop
+        isStarted={isStarted}
+        startStopClick={startStopClick}
+        cycleCount={cycleCount}
+      />
       <AdjustTime
         increaseTimer={increaseTimer}
         decreaseTimer={decreaseTimer}
