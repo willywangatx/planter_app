@@ -8,7 +8,7 @@ const AdjustTime = ({ increaseTimer, decreaseTimer, cycleLength, cycle }) => {
         {' '}
         +{' '}
       </button>
-      <p className="inset panel-inset">{adjustLabel}</p>
+      <p className="inset panel-label">{adjustLabel}</p>
       <button className="raised panel-btn" onClick={decreaseTimer}>
         {' '}
         -{' '}

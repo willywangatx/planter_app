@@ -11,10 +11,8 @@ const Timer = ({ timer, cycle }) => {
 
   return (
     <React.Fragment>
-      <div className="timer-panel raised">
-        <p className="inset timer-label">{cycle ? 'Focus' : 'Break'}</p>
-        <p className="inset timer-clock">{formattedTimeLeft}</p>
-      </div>
+      <p className="inset timer-label">{cycle ? 'Focus' : 'Break'}</p>
+      <p className="inset timer-clock">{formattedTimeLeft}</p>
     </React.Fragment>
   );
 };

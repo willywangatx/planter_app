@@ -8,17 +8,17 @@
 body {
   text-align: center;
   /* background-color: rgba(219, 255, 234, 1); */
-  background-color: rgba(244, 255, 235, 1);
+  background-color: rgba(255, 249, 230, 1);
   font-family: 'Amatic SC', cursive;
   font-size: 2em;
 }
 
 button {
   font-family: 'Amatic SC', cursive;
-  font-size: 1em;
-  padding: 0 1em;
-  margin: 1em auto;
-  border-radius: 1em;
+  font-size: 4vw;
+  padding: 0 3vw;
+  margin: 1vw auto;
+  border-radius: 1vw;
   border: none;
   outline: none;
 }
@@ -39,55 +39,51 @@ button {
 .inset {
   border-radius: 1em;
   margin: 0 auto;
+  background: rgba(255, 249, 230, 1);
   box-shadow: -10px 10px 10px 0 rgba(128, 128, 128, 0.2) inset,
     8px -7px 5px 0 rgba(0, 0, 0, 0.15) inset;
 }
 
-/* Class Styling  */
-
-/* Timer Component  */
+/* POMODORO CLOCK COMPONENT  */
 
 /* grid timer wrapper */
 .pomodoro-clock {
   margin: 1.5em auto;
   padding: 0.5em;
-  width: 90%;
+  width: 80%;
   /* Grid layout  */
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-gap: 0.1vw;
 }
-/* .timer-panel {
-  margin: 1.5em auto;
-  padding: 0.5em;
-  width: 90%; */
-/* Grid layout  */
-/* display: grid;
-  grid-template-columns: 25% 50% 25%;
-} */
+
+.left-panel {
+  margin: auto;
+}
+
+.center-panel {
+  margin: auto;
+}
+
+.right-panel {
+  margin: auto;
+}
 
 .timer-clock {
   margin: 1vh auto 1vh auto;
-  font-size: 10vw;
-  padding: 0;
-  width: 30%;
+  font-size: 15vw;
+  padding: 0 3vw;
+  border-radius: 6vw;
 }
 
 .timer-label {
-  width: 30%;
   font-size: 5vw;
 }
 
-/* Control Panel Component*/
-.control-panel {
-  margin: 0 auto;
-  width: 75%;
-}
-
-.panel-inset {
-  width: 8em;
-  padding: 0.5em 0;
-}
-
 .panel-btn {
-  margin: 2vh auto;
+  margin: 2vh 2vh;
+}
+
+.panel-label {
+  padding: 0.75vw 2.5vw;
 }

@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
-import Controls from './Controls';
-import Timer from './Timer';
 
+import Timer from './Timer';
+import AdjustTime from './AdjustTime';
+import StartStop from './StartStop';
+import Reset from './Reset';
+import Cycle from './Cycle';
 import CycleCounter from './CycleCounter';
 
 const PomodoroClock = () => {
@@ -57,7 +60,7 @@ const PomodoroClock = () => {
           }
           return prevTimer;
         });
-      }, 1000);
+      }, 100);
       setTimerId(updatedTimerId);
       setInterval(timerId);
       setIsStarted(true);
@@ -108,21 +111,27 @@ const PomodoroClock = () => {
 
   return (
     <div className="pomodoro-clock raised">
-      {/* <Cycle toggleCycle={toggleCycle} cycle={cycle} /> */}
-      {/* <CycleCounter cycleCount={cycleCount} /> */}
-      <Timer timer={timer} cycle={cycle} />
-      <Controls
-        isStarted={isStarted}
-        cycle={cycle}
-        increaseTimer={increaseTimer}
-        decreaseTimer={decreaseTimer}
-        cycleLength={cycleLength}
-        startStopClick={startStopClick}
-        resetTime={resetTime}
-        cycleCount={cycleCount}
-        toggleCycle={toggleCycle}
-        cycleCount={cycle}
-      />
+      <div className="left-panel">
+        <Reset resetTime={resetTime} />
+        <CycleCounter cycleCount={cycleCount} />
+        <Cycle toggleCycle={toggleCycle} cycle={cycle} />
+      </div>
+      <div className="center-panel">
+        <Timer timer={timer} cycle={cycle} />
+        <StartStop
+          isStarted={isStarted}
+          startStopClick={startStopClick}
+          cycleCount={cycleCount}
+        />
+      </div>
+      <div className="right-panel">
+        <AdjustTime
+          increaseTimer={increaseTimer}
+          decreaseTimer={decreaseTimer}
+          cycleLength={cycleLength}
+          cycle={cycle}
+        />
+      </div>
     </div>
   );
 };
