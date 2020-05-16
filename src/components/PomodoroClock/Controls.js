@@ -17,14 +17,14 @@ const Controls = ({
 }) => {
   return (
     <React.Fragment>
-      <div className="controls raised">
+      <div className="control-panel raised">
         <Reset resetTime={resetTime} />
         <StartStop
           isStarted={isStarted}
           startStopClick={startStopClick}
           cycleCount={cycleCount}
         />
-        <div className="adjust-time">
+        <div className="inset control-panel">
           <AdjustTime
             increaseTimer={increaseTimer}
             decreaseTimer={decreaseTimer}
@@ -32,7 +32,7 @@ const Controls = ({
             cycle={cycle}
           />
         </div>
-        <Cycle toggleCycle={toggleCycle} cycleCount={cycle} />
+        <Cycle toggleCycle={toggleCycle} cycle={cycle} />
       </div>
     </React.Fragment>
   );

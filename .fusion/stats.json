@@ -2,14 +2,14 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "c9a9807cad0c503af3db",
+  "hash": "e5f694fcdaa6c82ff485",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "c9a9807cad0c503af3db",
-      "time": 156,
-      "builtAt": 1589587302941,
+      "hash": "e5f694fcdaa6c82ff485",
+      "time": 252,
+      "builtAt": 1589656573374,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/.fusion/dist/development/server",
       "assetsByChunkName": {
@@ -20,8 +20,8 @@
       },
       "assets": [
         {
-          "name": "../client/087fbc6972bfa853e0b97b69ce483af1.css",
-          "size": 1272,
+          "name": "../client/bb1774b14f3669d4815d38b9fad3c2ba.css",
+          "size": 1607,
           "chunks": [],
           "chunkNames": [],
           "info": {},
@@ -29,7 +29,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 124637,
+          "size": 124737,
           "chunks": [
             "main"
           ],
@@ -41,7 +41,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 85669,
+          "size": 85767,
           "chunks": [
             "main"
           ],
@@ -87,7 +87,7 @@
           "rendered": false,
           "initial": true,
           "entry": true,
-          "size": 48123,
+          "size": 48237,
           "names": [
             "main"
           ],
@@ -95,7 +95,7 @@
             "server-main.js",
             "server-main.js.map"
           ],
-          "hash": "2a8c94ec0241b125e957",
+          "hash": "bf8c6d6f3ecf7e9be362",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -366,7 +366,7 @@
               "errors": 0,
               "warnings": 0,
               "assets": [
-                "../client/087fbc6972bfa853e0b97b69ce483af1.css"
+                "../client/bb1774b14f3669d4815d38b9fad3c2ba.css"
               ],
               "reasons": [
                 {
@@ -382,7 +382,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 4,
-              "source": "module.exports = __webpack_public_path__ + \"087fbc6972bfa853e0b97b69ce483af1.css\";"
+              "source": "module.exports = __webpack_public_path__ + \"bb1774b14f3669d4815d38b9fad3c2ba.css\";"
             },
             {
               "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -1321,7 +1321,7 @@
               "name": "./src/components/PomodoroClock/AdjustTime.js",
               "index": 39,
               "index2": 32,
-              "size": 1236,
+              "size": 1018,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1398,7 +1398,7 @@
               ],
               "optimizationBailout": [],
               "depth": 7,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/AdjustTime.js\";\nimport React from 'react';\n\nconst AdjustTime = ({\n  increaseTimer,\n  decreaseTimer,\n  cycleLength,\n  cycle\n}) => {\n  const adjustLabel = cycleLength();\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset\",\n    id: \"adjust-time-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, \"Adjust \", cycle ? 'Focus' : 'Break', \" Time\"), React.createElement(\"button\", {\n    onClick: increaseTimer,\n    id: \"increase-timer\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"inset\",\n    id: \"cycle-length\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, adjustLabel), React.createElement(\"button\", {\n    onClick: decreaseTimer,\n    id: \"decrease-timer\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nexport default AdjustTime;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/AdjustTime.js\";\nimport React from 'react';\n\nconst AdjustTime = ({\n  increaseTimer,\n  decreaseTimer,\n  cycleLength,\n  cycle\n}) => {\n  const adjustLabel = cycleLength();\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised panel-btn\",\n    onClick: increaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"inset panel-inset\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, adjustLabel), React.createElement(\"button\", {\n    className: \"raised panel-btn\",\n    onClick: decreaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nexport default AdjustTime;"
             },
             {
               "id": "./src/components/PomodoroClock/Controls.js",
@@ -1406,7 +1406,7 @@
               "name": "./src/components/PomodoroClock/Controls.js",
               "index": 38,
               "index2": 37,
-              "size": 1711,
+              "size": 1719,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1478,7 +1478,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Controls.js\";\nimport React from 'react';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport Cycle from './Cycle';\n\nconst Controls = ({\n  isStarted,\n  cycle,\n  cycleLength,\n  increaseTimer,\n  decreaseTimer,\n  startStopClick,\n  resetTime,\n  cycleCount,\n  toggleCycle\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"controls raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 20\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 21\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 22\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"adjust-time\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  })), React.createElement(Cycle, {\n    toggleCycle: toggleCycle,\n    cycleCount: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 35\n    },\n    __self: this\n  })));\n};\n\nexport default Controls;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Controls.js\";\nimport React from 'react';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport Cycle from './Cycle';\n\nconst Controls = ({\n  isStarted,\n  cycle,\n  cycleLength,\n  increaseTimer,\n  decreaseTimer,\n  startStopClick,\n  resetTime,\n  cycleCount,\n  toggleCycle\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"control-panel raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 20\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 21\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 22\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"inset control-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  })), React.createElement(Cycle, {\n    toggleCycle: toggleCycle,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 35\n    },\n    __self: this\n  })));\n};\n\nexport default Controls;"
             },
             {
               "id": "./src/components/PomodoroClock/Cycle.js",
@@ -1486,9 +1486,9 @@
               "name": "./src/components/PomodoroClock/Cycle.js",
               "index": 43,
               "index2": 36,
-              "size": 550,
+              "size": 562,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -1563,7 +1563,7 @@
               ],
               "optimizationBailout": [],
               "depth": 7,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js\";\nimport React from 'react';\n\nconst Cycle = ({\n  cycle,\n  toggleCycle\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    id: \"toggleCycle\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, cycle ? 'Break' : 'Focus'));\n};\n\nexport default Cycle;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js\";\nimport React from 'react';\n\nconst Cycle = ({\n  cycle,\n  toggleCycle\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised panel-btn\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, cycle ? 'Break' : 'Focus'));\n};\n\nexport default Cycle;"
             },
             {
               "id": "./src/components/PomodoroClock/CycleCounter.js",
@@ -1651,9 +1651,9 @@
               "name": "./src/components/PomodoroClock/PomodoroApp.js",
               "index": 36,
               "index2": 40,
-              "size": 3475,
+              "size": 3506,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -1718,7 +1718,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport moment from 'moment';\nimport Controls from './Controls';\nimport Timer from './Timer';\nimport CycleCounter from './CycleCounter';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<Cycle />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  //logic to prevent setting focus time to 0 in adjust time\n\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          } //TODO: count does not update on successive focusSessions\n\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 1000);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      setTimer(focusTime);\n    } else {\n      setTimer(breakTime);\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `${moment.duration(focusTime, 's').minutes()} min.` : `${moment.duration(breakTime, 's').minutes()} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 0) {\n        setBreakTime(0);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 110\n    },\n    __self: this\n  }, React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 113\n    },\n    __self: this\n  }), React.createElement(Controls, {\n    isStarted: isStarted,\n    cycle: cycle,\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    startStopClick: startStopClick,\n    resetTime: resetTime,\n    cycleCount: cycleCount,\n    toggleCycle: toggleCycle,\n    cycleCount: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 114\n    },\n    __self: this\n  }));\n};\n\nexport default PomodoroClock;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport moment from 'moment';\nimport Controls from './Controls';\nimport Timer from './Timer';\nimport CycleCounter from './CycleCounter';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<Cycle />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  //logic to prevent setting focus time to 0 in adjust time\n\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          } //TODO: count does not update on successive focusSessions\n\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 1000);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      setTimer(focusTime);\n    } else {\n      setTimer(breakTime);\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `Focus Time: ${moment.duration(focusTime, 's').minutes()} min.` : `Break Time: ${moment.duration(breakTime, 's').minutes()} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 0) {\n        setBreakTime(0);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 110\n    },\n    __self: this\n  }, React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 113\n    },\n    __self: this\n  }), React.createElement(Controls, {\n    isStarted: isStarted,\n    cycle: cycle,\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    startStopClick: startStopClick,\n    resetTime: resetTime,\n    cycleCount: cycleCount,\n    toggleCycle: toggleCycle,\n    cycleCount: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 114\n    },\n    __self: this\n  }));\n};\n\nexport default PomodoroClock;"
             },
             {
               "id": "./src/components/PomodoroClock/Reset.js",
@@ -1726,7 +1726,7 @@
               "name": "./src/components/PomodoroClock/Reset.js",
               "index": 42,
               "index2": 35,
-              "size": 513,
+              "size": 628,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1803,7 +1803,7 @@
               ],
               "optimizationBailout": [],
               "depth": 7,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Reset.js\";\nimport React from 'react';\n\nconst Reset = ({\n  resetTime\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    id: \"reset\",\n    onClick: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, \"Reset\"));\n};\n\nexport default Reset;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Reset.js\";\nimport React, { useState } from 'react';\n\nconst Reset = ({\n  resetTime\n}) => {\n  // const [classState, setClassState] = useState();\n  // toggleClass () {\n  // }\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised panel-btn\",\n    onClick: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"Reset\"));\n};\n\nexport default Reset;"
             },
             {
               "id": "./src/components/PomodoroClock/StartStop.js",
@@ -1811,7 +1811,7 @@
               "name": "./src/components/PomodoroClock/StartStop.js",
               "index": 40,
               "index2": 34,
-              "size": 837,
+              "size": 834,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1888,7 +1888,7 @@
               ],
               "optimizationBailout": [],
               "depth": 7,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/StartStop.js\";\nimport React from 'react';\nimport CycleCounter from './CycleCounter';\n\nconst StartStop = ({\n  isStarted,\n  startStopClick,\n  cycleCount\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset\",\n    id: \"cycle-count\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, \"Session Count: \", cycleCount), React.createElement(\"button\", {\n    id: \"start-stop-btn\",\n    onClick: startStopClick,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nexport default StartStop;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/StartStop.js\";\nimport React from 'react';\nimport CycleCounter from './CycleCounter';\n\nconst StartStop = ({\n  isStarted,\n  startStopClick,\n  cycleCount\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-inset\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, \"Session Count: \", cycleCount), React.createElement(\"button\", {\n    className: \"raised panel-btn\",\n    onClick: startStopClick,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 8\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nexport default StartStop;"
             },
             {
               "id": "./src/components/PomodoroClock/Timer.js",
@@ -1896,7 +1896,7 @@
               "name": "./src/components/PomodoroClock/Timer.js",
               "index": 44,
               "index2": 39,
-              "size": 925,
+              "size": 1094,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1968,7 +1968,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'), React.createElement(\"p\", {\n    className: \"inset timer\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"timer-panel raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'), React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, formattedTimeLeft)));\n};\n\nexport default Timer;"
             },
             {
               "id": "./src/constants/paths.js",
@@ -3922,7 +3922,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "moment",
-                  "loc": "81:22-28"
+                  "loc": "81:34-40"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -3931,7 +3931,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "moment",
-                  "loc": "81:76-82"
+                  "loc": "81:100-106"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -4259,7 +4259,7 @@
                   "moduleName": "./src/components/PomodoroClock/AdjustTime.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "25:53-58"
+                  "loc": "25:21-26"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
@@ -4268,16 +4268,7 @@
                   "moduleName": "./src/components/PomodoroClock/AdjustTime.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "33:21-26"
-                },
-                {
-                  "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/AdjustTime.js",
-                  "module": "./src/components/PomodoroClock/AdjustTime.js",
-                  "moduleName": "./src/components/PomodoroClock/AdjustTime.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "41:19-24"
+                  "loc": "32:19-24"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Controls.js",
@@ -4547,7 +4538,7 @@
                   "moduleName": "./src/components/PomodoroClock/Reset.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "react",
-                  "loc": "2:0-26"
+                  "loc": "2:0-40"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -4556,7 +4547,7 @@
                   "moduleName": "./src/components/PomodoroClock/Reset.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "7:9-14"
+                  "loc": "10:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -4565,7 +4556,7 @@
                   "moduleName": "./src/components/PomodoroClock/Reset.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "7:29-34"
+                  "loc": "10:29-34"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -4574,7 +4565,7 @@
                   "moduleName": "./src/components/PomodoroClock/Reset.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "13:5-10"
+                  "loc": "16:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -4619,7 +4610,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "24:37-42"
+                  "loc": "23:37-42"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -4664,7 +4655,16 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "27:33-38"
+                  "loc": "27:5-10"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/Timer.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
+                  "module": "./src/components/PomodoroClock/Timer.js",
+                  "moduleName": "./src/components/PomodoroClock/Timer.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "34:33-38"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -5567,7 +5567,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "../client/087fbc6972bfa853e0b97b69ce483af1.css"
+            "../client/bb1774b14f3669d4815d38b9fad3c2ba.css"
           ],
           "reasons": [
             {
@@ -5583,7 +5583,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
-          "source": "module.exports = __webpack_public_path__ + \"087fbc6972bfa853e0b97b69ce483af1.css\";"
+          "source": "module.exports = __webpack_public_path__ + \"bb1774b14f3669d4815d38b9fad3c2ba.css\";"
         },
         {
           "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -6522,7 +6522,7 @@
           "name": "./src/components/PomodoroClock/AdjustTime.js",
           "index": 39,
           "index2": 32,
-          "size": 1236,
+          "size": 1018,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -6599,7 +6599,7 @@
           ],
           "optimizationBailout": [],
           "depth": 7,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/AdjustTime.js\";\nimport React from 'react';\n\nconst AdjustTime = ({\n  increaseTimer,\n  decreaseTimer,\n  cycleLength,\n  cycle\n}) => {\n  const adjustLabel = cycleLength();\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset\",\n    id: \"adjust-time-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, \"Adjust \", cycle ? 'Focus' : 'Break', \" Time\"), React.createElement(\"button\", {\n    onClick: increaseTimer,\n    id: \"increase-timer\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"inset\",\n    id: \"cycle-length\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, adjustLabel), React.createElement(\"button\", {\n    onClick: decreaseTimer,\n    id: \"decrease-timer\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nexport default AdjustTime;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/AdjustTime.js\";\nimport React from 'react';\n\nconst AdjustTime = ({\n  increaseTimer,\n  decreaseTimer,\n  cycleLength,\n  cycle\n}) => {\n  const adjustLabel = cycleLength();\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised panel-btn\",\n    onClick: increaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"inset panel-inset\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, adjustLabel), React.createElement(\"button\", {\n    className: \"raised panel-btn\",\n    onClick: decreaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nexport default AdjustTime;"
         },
         {
           "id": "./src/components/PomodoroClock/Controls.js",
@@ -6607,7 +6607,7 @@
           "name": "./src/components/PomodoroClock/Controls.js",
           "index": 38,
           "index2": 37,
-          "size": 1711,
+          "size": 1719,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -6679,7 +6679,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Controls.js\";\nimport React from 'react';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport Cycle from './Cycle';\n\nconst Controls = ({\n  isStarted,\n  cycle,\n  cycleLength,\n  increaseTimer,\n  decreaseTimer,\n  startStopClick,\n  resetTime,\n  cycleCount,\n  toggleCycle\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"controls raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 20\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 21\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 22\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"adjust-time\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  })), React.createElement(Cycle, {\n    toggleCycle: toggleCycle,\n    cycleCount: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 35\n    },\n    __self: this\n  })));\n};\n\nexport default Controls;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Controls.js\";\nimport React from 'react';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport Cycle from './Cycle';\n\nconst Controls = ({\n  isStarted,\n  cycle,\n  cycleLength,\n  increaseTimer,\n  decreaseTimer,\n  startStopClick,\n  resetTime,\n  cycleCount,\n  toggleCycle\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"control-panel raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 20\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 21\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 22\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"inset control-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  })), React.createElement(Cycle, {\n    toggleCycle: toggleCycle,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 35\n    },\n    __self: this\n  })));\n};\n\nexport default Controls;"
         },
         {
           "id": "./src/components/PomodoroClock/Cycle.js",
@@ -6687,9 +6687,9 @@
           "name": "./src/components/PomodoroClock/Cycle.js",
           "index": 43,
           "index2": 36,
-          "size": 550,
+          "size": 562,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -6764,7 +6764,7 @@
           ],
           "optimizationBailout": [],
           "depth": 7,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js\";\nimport React from 'react';\n\nconst Cycle = ({\n  cycle,\n  toggleCycle\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    id: \"toggleCycle\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, cycle ? 'Break' : 'Focus'));\n};\n\nexport default Cycle;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js\";\nimport React from 'react';\n\nconst Cycle = ({\n  cycle,\n  toggleCycle\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised panel-btn\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, cycle ? 'Break' : 'Focus'));\n};\n\nexport default Cycle;"
         },
         {
           "id": "./src/components/PomodoroClock/CycleCounter.js",
@@ -6852,9 +6852,9 @@
           "name": "./src/components/PomodoroClock/PomodoroApp.js",
           "index": 36,
           "index2": 40,
-          "size": 3475,
+          "size": 3506,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -6919,7 +6919,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport moment from 'moment';\nimport Controls from './Controls';\nimport Timer from './Timer';\nimport CycleCounter from './CycleCounter';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<Cycle />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  //logic to prevent setting focus time to 0 in adjust time\n\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          } //TODO: count does not update on successive focusSessions\n\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 1000);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      setTimer(focusTime);\n    } else {\n      setTimer(breakTime);\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `${moment.duration(focusTime, 's').minutes()} min.` : `${moment.duration(breakTime, 's').minutes()} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 0) {\n        setBreakTime(0);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 110\n    },\n    __self: this\n  }, React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 113\n    },\n    __self: this\n  }), React.createElement(Controls, {\n    isStarted: isStarted,\n    cycle: cycle,\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    startStopClick: startStopClick,\n    resetTime: resetTime,\n    cycleCount: cycleCount,\n    toggleCycle: toggleCycle,\n    cycleCount: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 114\n    },\n    __self: this\n  }));\n};\n\nexport default PomodoroClock;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport moment from 'moment';\nimport Controls from './Controls';\nimport Timer from './Timer';\nimport CycleCounter from './CycleCounter';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<Cycle />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  //logic to prevent setting focus time to 0 in adjust time\n\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          } //TODO: count does not update on successive focusSessions\n\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 1000);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      setTimer(focusTime);\n    } else {\n      setTimer(breakTime);\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `Focus Time: ${moment.duration(focusTime, 's').minutes()} min.` : `Break Time: ${moment.duration(breakTime, 's').minutes()} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 0) {\n        setBreakTime(0);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 110\n    },\n    __self: this\n  }, React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 113\n    },\n    __self: this\n  }), React.createElement(Controls, {\n    isStarted: isStarted,\n    cycle: cycle,\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    startStopClick: startStopClick,\n    resetTime: resetTime,\n    cycleCount: cycleCount,\n    toggleCycle: toggleCycle,\n    cycleCount: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 114\n    },\n    __self: this\n  }));\n};\n\nexport default PomodoroClock;"
         },
         {
           "id": "./src/components/PomodoroClock/Reset.js",
@@ -6927,7 +6927,7 @@
           "name": "./src/components/PomodoroClock/Reset.js",
           "index": 42,
           "index2": 35,
-          "size": 513,
+          "size": 628,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -7004,7 +7004,7 @@
           ],
           "optimizationBailout": [],
           "depth": 7,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Reset.js\";\nimport React from 'react';\n\nconst Reset = ({\n  resetTime\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    id: \"reset\",\n    onClick: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, \"Reset\"));\n};\n\nexport default Reset;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Reset.js\";\nimport React, { useState } from 'react';\n\nconst Reset = ({\n  resetTime\n}) => {\n  // const [classState, setClassState] = useState();\n  // toggleClass () {\n  // }\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised panel-btn\",\n    onClick: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"Reset\"));\n};\n\nexport default Reset;"
         },
         {
           "id": "./src/components/PomodoroClock/StartStop.js",
@@ -7012,7 +7012,7 @@
           "name": "./src/components/PomodoroClock/StartStop.js",
           "index": 40,
           "index2": 34,
-          "size": 837,
+          "size": 834,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -7089,7 +7089,7 @@
           ],
           "optimizationBailout": [],
           "depth": 7,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/StartStop.js\";\nimport React from 'react';\nimport CycleCounter from './CycleCounter';\n\nconst StartStop = ({\n  isStarted,\n  startStopClick,\n  cycleCount\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset\",\n    id: \"cycle-count\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, \"Session Count: \", cycleCount), React.createElement(\"button\", {\n    id: \"start-stop-btn\",\n    onClick: startStopClick,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nexport default StartStop;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/StartStop.js\";\nimport React from 'react';\nimport CycleCounter from './CycleCounter';\n\nconst StartStop = ({\n  isStarted,\n  startStopClick,\n  cycleCount\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-inset\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, \"Session Count: \", cycleCount), React.createElement(\"button\", {\n    className: \"raised panel-btn\",\n    onClick: startStopClick,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 8\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nexport default StartStop;"
         },
         {
           "id": "./src/components/PomodoroClock/Timer.js",
@@ -7097,7 +7097,7 @@
           "name": "./src/components/PomodoroClock/Timer.js",
           "index": 44,
           "index2": 39,
-          "size": 925,
+          "size": 1094,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -7169,7 +7169,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'), React.createElement(\"p\", {\n    className: \"inset timer\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"timer-panel raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'), React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, formattedTimeLeft)));\n};\n\nexport default Timer;"
         },
         {
           "id": "./src/constants/paths.js",
@@ -9123,7 +9123,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "moment",
-              "loc": "81:22-28"
+              "loc": "81:34-40"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9132,7 +9132,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "moment",
-              "loc": "81:76-82"
+              "loc": "81:100-106"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -9460,7 +9460,7 @@
               "moduleName": "./src/components/PomodoroClock/AdjustTime.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "25:53-58"
+              "loc": "25:21-26"
             },
             {
               "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
@@ -9469,16 +9469,7 @@
               "moduleName": "./src/components/PomodoroClock/AdjustTime.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "33:21-26"
-            },
-            {
-              "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/AdjustTime.js",
-              "module": "./src/components/PomodoroClock/AdjustTime.js",
-              "moduleName": "./src/components/PomodoroClock/AdjustTime.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "41:19-24"
+              "loc": "32:19-24"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Controls.js",
@@ -9748,7 +9739,7 @@
               "moduleName": "./src/components/PomodoroClock/Reset.js",
               "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "2:0-26"
+              "loc": "2:0-40"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -9757,7 +9748,7 @@
               "moduleName": "./src/components/PomodoroClock/Reset.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:9-14"
+              "loc": "10:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -9766,7 +9757,7 @@
               "moduleName": "./src/components/PomodoroClock/Reset.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:29-34"
+              "loc": "10:29-34"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -9775,7 +9766,7 @@
               "moduleName": "./src/components/PomodoroClock/Reset.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "13:5-10"
+              "loc": "16:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -9820,7 +9811,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "24:37-42"
+              "loc": "23:37-42"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -9865,7 +9856,16 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "27:33-38"
+              "loc": "27:5-10"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/Timer.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
+              "module": "./src/components/PomodoroClock/Timer.js",
+              "moduleName": "./src/components/PomodoroClock/Timer.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "34:33-38"
             },
             {
               "moduleId": "./src/pages/home.js",

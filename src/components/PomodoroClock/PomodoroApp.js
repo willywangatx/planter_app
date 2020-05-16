@@ -75,8 +75,8 @@ const PomodoroClock = () => {
 
   const cycleLength = () => {
     return cycle
-      ? `${moment.duration(focusTime, 's').minutes()} min.`
-      : `${moment.duration(breakTime, 's').minutes()} min.`;
+      ? `Focus Time: ${moment.duration(focusTime, 's').minutes()} min.`
+      : `Break Time: ${moment.duration(breakTime, 's').minutes()} min.`;
   };
 
   const increaseTimer = () => {
@@ -107,7 +107,7 @@ const PomodoroClock = () => {
   };
 
   return (
-    <div className="pomodoro-clock">
+    <div className="pomodoro-clock raised">
       {/* <Cycle toggleCycle={toggleCycle} cycle={cycle} /> */}
       {/* <CycleCounter cycleCount={cycleCount} /> */}
       <Timer timer={timer} cycle={cycle} />
