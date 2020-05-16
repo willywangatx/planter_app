@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 import Controls from './Controls';
 import Timer from './Timer';
-import Cycle from './Cycle';
+
 import CycleCounter from './CycleCounter';
 
 const PomodoroClock = () => {
@@ -108,9 +108,9 @@ const PomodoroClock = () => {
 
   return (
     <div className="pomodoro-clock">
-      <Cycle toggleCycle={toggleCycle} cycle={cycle} />
+      {/* <Cycle toggleCycle={toggleCycle} cycle={cycle} /> */}
       {/* <CycleCounter cycleCount={cycleCount} /> */}
-      <Timer timer={timer} />
+      <Timer timer={timer} cycle={cycle} />
       <Controls
         isStarted={isStarted}
         cycle={cycle}
@@ -120,6 +120,8 @@ const PomodoroClock = () => {
         startStopClick={startStopClick}
         resetTime={resetTime}
         cycleCount={cycleCount}
+        toggleCycle={toggleCycle}
+        cycleCount={cycle}
       />
     </div>
   );
