@@ -68,13 +68,43 @@ const PomodoroClock = () => {
   };
 
   //<AdjustTime />
+
   useEffect(() => {
     if (cycle) {
-      setTimer(focusTime);
-    } else {
-      setTimer(breakTime);
+      if (focusTime !== timer) {
+        if (focusTime > timer) {
+          setTimer(timer + 60);
+        }
+        if (focusTime < timer) {
+          setTimer(timer - 60);
+        }
+      }
+    }
+    if (!cycle) {
+      if (breakTime !== timer) {
+        if (breakTime > timer) {
+          setTimer(timer + 60);
+        }
+        if (breakTime < timer && timer >= 60) {
+          setTimer(timer - 60);
+        }
+        if (breakTime < timer && timer <= 60) {
+          setTimer(0);
+        }
+      }
+    }
+    if (timer <= 1) {
+      setTimer(0);
     }
   }, [focusTime, breakTime]);
+
+  // useEffect(() => {
+  //   if (cycle) {
+  //     setTimer(focusTime);
+  //   } else {
+  //     setTimer(breakTime);
+  //   }
+  // }, [focusTime, breakTime]);
 
   const cycleLength = () => {
     return cycle
@@ -110,7 +140,7 @@ const PomodoroClock = () => {
   };
 
   return (
-    <div className="pomodoro-clock raised">
+    <div className="pomodoro-clock">
       <div className="left-panel">
         <Reset resetTime={resetTime} />
         <CycleCounter cycleCount={cycleCount} />

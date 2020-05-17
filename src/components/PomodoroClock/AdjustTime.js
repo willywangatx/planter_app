@@ -4,12 +4,12 @@ const AdjustTime = ({ increaseTimer, decreaseTimer, cycleLength, cycle }) => {
   const adjustLabel = cycleLength();
   return (
     <React.Fragment>
-      <button className="raised panel-btn" onClick={increaseTimer}>
+      <button className="raised-btn panel-btn" onClick={increaseTimer}>
         {' '}
         +{' '}
       </button>
       <p className="inset panel-label">{adjustLabel}</p>
-      <button className="raised panel-btn" onClick={decreaseTimer}>
+      <button className="raised-btn panel-btn" onClick={decreaseTimer}>
         {' '}
         -{' '}
       </button>

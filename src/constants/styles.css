@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 * {
   padding: 0;
@@ -8,14 +8,16 @@
 body {
   text-align: center;
   /* background-color: rgba(219, 255, 234, 1); */
-  background-color: rgba(255, 249, 230, 1);
-  font-family: 'Amatic SC', cursive;
+  background: #acdbc9;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2em;
+  color: #7f8084;
 }
 
 button {
-  font-family: 'Amatic SC', cursive;
-  font-size: 4vw;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3vw;
+  color: #7f8084;
   padding: 0 3vw;
   margin: 1vw auto;
   border-radius: 1vw;
@@ -24,14 +26,15 @@ button {
 }
 
 /* Neumorphism styling */
-.raised {
-  box-shadow: -10px 10px 20px rgba(128, 128, 128, 0.3),
-    7px -7px 15px 10px rgba(196, 196, 196, 0.3);
-  background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.08),
-    rgba(244, 255, 235, 1)
-  );
+.raised-panel {
+  background: #acdbc9;
+  box-shadow: -10px 10px 23px #99c3b3, 10px -10px 23px #bff3df;
+  border-radius: 1em;
+  margin: 0 auto;
+}
+.raised-btn {
+  background: linear-gradient(225deg, #b8ead7, #9bc5b5);
+  box-shadow: -5px 5px 10px #94bcad, 5px -5px 10px #c4fae5;
   border-radius: 1em;
   margin: 0 auto;
 }
@@ -39,9 +42,10 @@ button {
 .inset {
   border-radius: 1em;
   margin: 0 auto;
-  background: rgba(255, 249, 230, 1);
-  box-shadow: -10px 10px 10px 0 rgba(128, 128, 128, 0.2) inset,
-    8px -7px 5px 0 rgba(0, 0, 0, 0.15) inset;
+
+  /* box-shadow: inset -8px 8px 16px #92baab, inset 8px -8px 16px #c6fce7; */
+  background: #acdbc9;
+  box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd;
 }
 
 /* POMODORO CLOCK COMPONENT  */
@@ -55,6 +59,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-column-gap: 0.1vw;
+  grid-auto-rows: minmax(20vh, auto);
 }
 
 .left-panel {
@@ -73,7 +78,7 @@ button {
   margin: 1vh auto 1vh auto;
   font-size: 15vw;
   padding: 0 3vw;
-  border-radius: 6vw;
+  border-radius: 5vw;
 }
 
 .timer-label {
@@ -86,4 +91,5 @@ button {
 
 .panel-label {
   padding: 0.75vw 2.5vw;
+  font-size: 3vw;
 }
