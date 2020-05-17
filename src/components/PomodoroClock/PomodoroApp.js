@@ -43,14 +43,13 @@ const PomodoroClock = () => {
   useEffect(() => {
     if (timer === 0) {
       clearInterval(timerId);
-      setIsStarted(false);
+      setIsStarted(!isStarted);
       setCycle(!cycle);
     }
   }, [timer]);
 
   const startStopClick = () => {
     let updatedTimerId;
-    ç;
     if (isStarted) {
       clearInterval(timerId);
       setIsStarted(false);
