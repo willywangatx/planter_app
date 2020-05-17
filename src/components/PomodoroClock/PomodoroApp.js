@@ -139,7 +139,7 @@ const PomodoroClock = () => {
   };
 
   return (
-    <div className="pomodoro-clock">
+    <div className="pomodoro-clock raised-panel">
       <div className="left-panel">
         <Reset resetTime={resetTime} />
         <CycleCounter cycleCount={cycleCount} />

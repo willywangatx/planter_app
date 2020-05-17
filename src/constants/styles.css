@@ -36,14 +36,24 @@ button {
   background: linear-gradient(225deg, #b8ead7, #9bc5b5);
   box-shadow: -5px 5px 10px #94bcad, 5px -5px 10px #c4fae5;
   border-radius: 1em;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: 1vh auto;
+}
+
+.raised-btn:active {
+  border-radius: 1em;
+  /* margin: 0 auto; */
+  margin: 1vh auto;
+
+  background: #acdbc9;
+  box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd;
 }
 
 .inset {
   border-radius: 1em;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: 1vh auto;
 
-  /* box-shadow: inset -8px 8px 16px #92baab, inset 8px -8px 16px #c6fce7; */
   background: #acdbc9;
   box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd;
 }
@@ -62,14 +72,8 @@ button {
   grid-auto-rows: minmax(20vh, auto);
 }
 
-.left-panel {
-  margin: auto;
-}
-
-.center-panel {
-  margin: auto;
-}
-
+.left-panel,
+.center-panel,
 .right-panel {
   margin: auto;
 }
@@ -79,14 +83,11 @@ button {
   font-size: 15vw;
   padding: 0 3vw;
   border-radius: 5vw;
+  /* background: #fdd2b5; */
 }
 
 .timer-label {
   font-size: 5vw;
-}
-
-.panel-btn {
-  margin: 2vh 2vh;
 }
 
 .panel-label {
