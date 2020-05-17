@@ -39,9 +39,18 @@ const PomodoroClock = () => {
 
   //<StartStop />
   //TODO: adding a session counter to app
-  //logic to prevent setting focus time to 0 in adjust time
+  // //logic to prevent setting focus time to 0 in adjust time
+  useEffect(() => {
+    if (timer === 0) {
+      clearInterval(timerId);
+      setIsStarted(false);
+      setCycle(!cycle);
+    }
+  }, [timer]);
+
   const startStopClick = () => {
     let updatedTimerId;
+    ç;
     if (isStarted) {
       clearInterval(timerId);
       setIsStarted(false);
@@ -85,26 +94,17 @@ const PomodoroClock = () => {
         if (breakTime > timer) {
           setTimer(timer + 60);
         }
-        if (breakTime < timer && timer >= 60) {
-          setTimer(timer - 60);
-        }
-        if (breakTime < timer && timer <= 60) {
-          setTimer(0);
+        if (breakTime < timer) {
+          if (timer >= 60) {
+            setTimer(timer - 60);
+          }
+          if (timer <= 60) {
+            setTimer(0);
+          }
         }
       }
     }
-    if (timer <= 1) {
-      setTimer(0);
-    }
   }, [focusTime, breakTime]);
-
-  // useEffect(() => {
-  //   if (cycle) {
-  //     setTimer(focusTime);
-  //   } else {
-  //     setTimer(breakTime);
-  //   }
-  // }, [focusTime, breakTime]);
 
   const cycleLength = () => {
     return cycle
