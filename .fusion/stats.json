@@ -2,34 +2,76 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "bd91688cb0fa885d4bc9",
+  "hash": "0e528e5e932c73684ed0",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "bd91688cb0fa885d4bc9",
-      "time": 215,
-      "builtAt": 1589847025908,
+      "hash": "0e528e5e932c73684ed0",
+      "time": 275,
+      "builtAt": 1589856046610,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "server-main.js.map"
+          "main.58313709b8cbc0bfe3ca.hot-update.js",
+          "server-main.js.map",
+          "main.58313709b8cbc0bfe3ca.hot-update.js.map"
         ]
       },
       "assets": [
         {
-          "name": "../client/f6bebb7e1df53ca3148ba9e4ff42868f.css",
-          "size": 1830,
+          "name": "../client/e11ddbe017ca00de585d3845a7da396c.css",
+          "size": 2937,
           "chunks": [],
           "chunkNames": [],
           "info": {},
           "emitted": false
         },
         {
+          "name": "58313709b8cbc0bfe3ca.hot-update.json",
+          "size": 46,
+          "chunks": [],
+          "chunkNames": [],
+          "info": {
+            "hotModuleReplacement": true,
+            "immutable": true
+          },
+          "emitted": true
+        },
+        {
+          "name": "main.58313709b8cbc0bfe3ca.hot-update.js",
+          "size": 2193,
+          "chunks": [
+            "main"
+          ],
+          "chunkNames": [
+            "main"
+          ],
+          "info": {
+            "hotModuleReplacement": true,
+            "immutable": true
+          },
+          "emitted": true
+        },
+        {
+          "name": "main.58313709b8cbc0bfe3ca.hot-update.js.map",
+          "size": 859,
+          "chunks": [
+            "main"
+          ],
+          "chunkNames": [
+            "main"
+          ],
+          "info": {
+            "development": true
+          },
+          "emitted": true
+        },
+        {
           "name": "server-main.js",
-          "size": 125379,
+          "size": 123840,
           "chunks": [
             "main"
           ],
@@ -41,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 86113,
+          "size": 85719,
           "chunks": [
             "main"
           ],
@@ -62,7 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "server-main.js.map"
+            "main.58313709b8cbc0bfe3ca.hot-update.js",
+            "server-main.js.map",
+            "main.58313709b8cbc0bfe3ca.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -75,7 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "server-main.js.map"
+            "main.58313709b8cbc0bfe3ca.hot-update.js",
+            "server-main.js.map",
+            "main.58313709b8cbc0bfe3ca.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -84,18 +130,20 @@
       "chunks": [
         {
           "id": "main",
-          "rendered": false,
+          "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 48890,
+          "size": 48386,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "server-main.js.map"
+            "main.58313709b8cbc0bfe3ca.hot-update.js",
+            "server-main.js.map",
+            "main.58313709b8cbc0bfe3ca.hot-update.js.map"
           ],
-          "hash": "d79be3de118b03985148",
+          "hash": "cabf3440e72823b56874",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -106,7 +154,7 @@
               "identifier": "multi /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
               "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
               "index": 0,
-              "index2": 54,
+              "index2": 53,
               "size": 52,
               "built": false,
               "optional": false,
@@ -327,8 +375,8 @@
               "id": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!/Users/williamwang/Programming/v3_Planter/src/constants/styles.css",
               "name": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
-              "index": 49,
-              "index2": 45,
+              "index": 48,
+              "index2": 44,
               "size": 82,
               "cacheable": true,
               "built": false,
@@ -366,7 +414,7 @@
               "errors": 0,
               "warnings": 0,
               "assets": [
-                "../client/f6bebb7e1df53ca3148ba9e4ff42868f.css"
+                "../client/e11ddbe017ca00de585d3845a7da396c.css"
               ],
               "reasons": [
                 {
@@ -382,7 +430,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 4,
-              "source": "module.exports = __webpack_public_path__ + \"f6bebb7e1df53ca3148ba9e4ff42868f.css\";"
+              "source": "module.exports = __webpack_public_path__ + \"e11ddbe017ca00de585d3845a7da396c.css\";"
             },
             {
               "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -667,7 +715,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
               "name": "./node_modules/fusion-cli/entries/server-entry.js",
               "index": 7,
-              "index2": 53,
+              "index2": 52,
               "size": 3021,
               "cacheable": true,
               "built": false,
@@ -1376,7 +1424,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./AdjustTime",
-                  "loc": "5:0-38"
+                  "loc": "4:0-38"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -1396,91 +1444,11 @@
               "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/AdjustTime.js\";\nimport React from 'react';\n\nconst AdjustTime = ({\n  increaseTimer,\n  decreaseTimer,\n  cycleLength,\n  cycle\n}) => {\n  const adjustLabel = cycleLength();\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn\",\n    onClick: increaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, adjustLabel), React.createElement(\"button\", {\n    className: \"raised-btn\",\n    onClick: decreaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nexport default AdjustTime;"
             },
             {
-              "id": "./src/components/PomodoroClock/Cycle.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js",
-              "name": "./src/components/PomodoroClock/Cycle.js",
-              "index": 44,
-              "index2": 38,
-              "size": 566,
-              "cacheable": true,
-              "built": false,
-              "optional": false,
-              "prefetched": false,
-              "chunks": [
-                "main"
-              ],
-              "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-              "issuerId": "./src/components/PomodoroClock/PomodoroApp.js",
-              "issuerName": "./src/components/PomodoroClock/PomodoroApp.js",
-              "issuerPath": [
-                {
-                  "id": 0,
-                  "identifier": "multi /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
-                  "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./node_modules/fusion-cli/entries/server-entry.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
-                  "name": "./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./src/main.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/main.js",
-                  "name": "./src/main.js"
-                },
-                {
-                  "id": "./src/root.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/root.js",
-                  "name": "./src/root.js"
-                },
-                {
-                  "id": "./src/pages/home.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
-                  "name": "./src/pages/home.js"
-                },
-                {
-                  "id": "./src/components/PomodoroClock/PomodoroApp.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-                  "name": "./src/components/PomodoroClock/PomodoroApp.js"
-                }
-              ],
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-                  "module": "./src/components/PomodoroClock/PomodoroApp.js",
-                  "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "./Cycle",
-                  "loc": "8:0-28"
-                },
-                {
-                  "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-                  "module": "./src/components/PomodoroClock/PomodoroApp.js",
-                  "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "./Cycle",
-                  "loc": "176:26-31"
-                }
-              ],
-              "providedExports": [
-                "default"
-              ],
-              "optimizationBailout": [],
-              "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js\";\nimport React from 'react';\n\nconst Cycle = ({\n  cycle,\n  toggleCycle\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn panel-btn\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, cycle ? 'Break' : 'Focus'));\n};\n\nexport default Cycle;"
-            },
-            {
               "id": "./src/components/PomodoroClock/CycleCounter.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/CycleCounter.js",
               "name": "./src/components/PomodoroClock/CycleCounter.js",
-              "index": 45,
-              "index2": 39,
+              "index": 44,
+              "index2": 38,
               "size": 413,
               "cacheable": true,
               "built": false,
@@ -1536,7 +1504,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./CycleCounter",
-                  "loc": "9:0-42"
+                  "loc": "8:0-42"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -1560,8 +1528,8 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
               "name": "./src/components/PomodoroClock/PomodoroApp.js",
               "index": 36,
-              "index2": 40,
-              "size": 5179,
+              "index2": 39,
+              "size": 5237,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1628,7 +1596,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport moment from 'moment';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport Cycle from './Cycle';\nimport CycleCounter from './CycleCounter';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<Cycle />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  // //logic to prevent setting focus time to 0 in adjust time\n\n\n  useEffect(() => {\n    if (timer === 0) {\n      clearInterval(timerId);\n      setIsStarted(!isStarted);\n      setCycle(!cycle);\n    }\n  }, [timer]);\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          } //TODO: count does not update on successive focusSessions\n\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 100);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      if (focusTime !== timer) {\n        if (focusTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (focusTime < timer) {\n          setTimer(timer - 60);\n        }\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime !== timer) {\n        if (breakTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (breakTime < timer) {\n          if (timer >= 60) {\n            setTimer(timer - 60);\n          }\n\n          if (timer <= 60) {\n            setTimer(0);\n          }\n        }\n      }\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `Focus Time: ${focusTime / 60} min.` : `Break Time: ${breakTime / 60} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 60) {\n        setBreakTime(60);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 142\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 143\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 144\n    },\n    __self: this\n  }), React.createElement(CycleCounter, {\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 145\n    },\n    __self: this\n  }), React.createElement(Cycle, {\n    toggleCycle: toggleCycle,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 146\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 148\n    },\n    __self: this\n  }, React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 149\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 150\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 156\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 157\n    },\n    __self: this\n  })));\n};\n\nexport default PomodoroClock;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset'; // import Cycle from './Cycle';\n\nimport CycleCounter from './CycleCounter';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<ToggleSwitch - for changing focus mode />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  // //logic to prevent setting focus time to 0 in adjust time\n\n\n  useEffect(() => {\n    if (timer === 0) {\n      clearInterval(timerId);\n      setIsStarted(!isStarted);\n      setCycle(!cycle);\n    }\n  }, [timer]);\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          } //TODO: count does not update on successive focusSessions\n\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 100);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      if (focusTime !== timer) {\n        if (focusTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (focusTime < timer) {\n          setTimer(timer - 60);\n        }\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime !== timer) {\n        if (breakTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (breakTime < timer) {\n          if (timer >= 60) {\n            setTimer(timer - 60);\n          }\n\n          if (timer <= 60) {\n            setTimer(0);\n          }\n        }\n      }\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `Focus Time: ${focusTime / 60} min.` : `Break Time: ${breakTime / 60} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 60) {\n        setBreakTime(60);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 142\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 143\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 144\n    },\n    __self: this\n  }), React.createElement(CycleCounter, {\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 145\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 148\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    toggleCycle: toggleCycle,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 149\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 150\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 151\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 157\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 158\n    },\n    __self: this\n  })));\n};\n\nexport default PomodoroClock;"
             },
             {
               "id": "./src/components/PomodoroClock/Reset.js",
@@ -1691,7 +1659,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./Reset",
-                  "loc": "7:0-28"
+                  "loc": "6:0-28"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -1771,7 +1739,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./StartStop",
-                  "loc": "6:0-36"
+                  "loc": "5:0-36"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -1794,9 +1762,9 @@
               "id": "./src/components/PomodoroClock/Timer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
               "name": "./src/components/PomodoroClock/Timer.js",
-              "index": 38,
+              "index": 37,
               "index2": 34,
-              "size": 1297,
+              "size": 982,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1851,7 +1819,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./Timer",
-                  "loc": "4:0-28"
+                  "loc": "3:0-28"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -1860,7 +1828,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "./Timer",
-                  "loc": "191:25-30"
+                  "loc": "191:26-31"
                 }
               ],
               "providedExports": [
@@ -1868,7 +1836,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nimport ToggleSwitch from './ToggleSwitch'; // import Switch from 'react-neumorphic-toggle';\n\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  // const theme = {\n  //   color: '#acdbc9',\n  //   primaryShadowColor: '#9bc5b5',\n  //   secondaryShadowColor: '#bdf1dd',\n  // };\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 20\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 22\n    },\n    __self: this\n  }), React.createElement(\"p\", {\n    className: \"inset timer-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 23\n    },\n    __self: this\n  }, cycle ? 'F o c u s' : 'B r e a k'), React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 24\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nimport ToggleSwitch from './ToggleSwitch';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, cycle ? 'F o c u s' : 'B r e a k'), React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
             },
             {
               "id": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -1876,7 +1844,7 @@
               "name": "./src/components/PomodoroClock/ToggleSwitch.js",
               "index": 40,
               "index2": 33,
-              "size": 516,
+              "size": 835,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -1884,9 +1852,9 @@
               "chunks": [
                 "main"
               ],
-              "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-              "issuerId": "./src/components/PomodoroClock/Timer.js",
-              "issuerName": "./src/components/PomodoroClock/Timer.js",
+              "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
+              "issuerId": "./src/components/PomodoroClock/PomodoroApp.js",
+              "issuerName": "./src/components/PomodoroClock/PomodoroApp.js",
               "issuerPath": [
                 {
                   "id": 0,
@@ -1917,11 +1885,6 @@
                   "id": "./src/components/PomodoroClock/PomodoroApp.js",
                   "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
                   "name": "./src/components/PomodoroClock/PomodoroApp.js"
-                },
-                {
-                  "id": "./src/components/PomodoroClock/Timer.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-                  "name": "./src/components/PomodoroClock/Timer.js"
                 }
               ],
               "failed": false,
@@ -1930,6 +1893,24 @@
               "assets": [],
               "reasons": [
                 {
+                  "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
+                  "module": "./src/components/PomodoroClock/PomodoroApp.js",
+                  "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "./ToggleSwitch",
+                  "loc": "9:0-42"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
+                  "module": "./src/components/PomodoroClock/PomodoroApp.js",
+                  "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "./ToggleSwitch",
+                  "loc": "183:25-37"
+                },
+                {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
                   "module": "./src/components/PomodoroClock/Timer.js",
@@ -1937,23 +1918,14 @@
                   "type": "harmony side effect evaluation",
                   "userRequest": "./ToggleSwitch",
                   "loc": "5:0-42"
-                },
-                {
-                  "moduleId": "./src/components/PomodoroClock/Timer.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-                  "module": "./src/components/PomodoroClock/Timer.js",
-                  "moduleName": "./src/components/PomodoroClock/Timer.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "./ToggleSwitch",
-                  "loc": "27:25-37"
                 }
               ],
               "providedExports": [
                 "default"
               ],
               "optimizationBailout": [],
-              "depth": 7,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = () => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    type: \"checkbox\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }));\n};\n\nexport default ToggleSwitch;"
+              "depth": 6,
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = ({\n  toggleCycle,\n  cycle\n}) => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"toggle-input\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, ' ', cycle ? 'Focus' : 'Break'), React.createElement(\"p\", {\n    className: cycle ? 'focus-mode' : 'break-mode',\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'));\n};\n\nexport default ToggleSwitch;"
             },
             {
               "id": "./src/constants/paths.js",
@@ -2129,7 +2101,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/main.js",
               "name": "./src/main.js",
               "index": 27,
-              "index2": 52,
+              "index2": 51,
               "size": 616,
               "cacheable": true,
               "built": false,
@@ -2198,7 +2170,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
               "name": "./src/pages/home.js",
               "index": 35,
-              "index2": 41,
+              "index2": 40,
               "size": 836,
               "cacheable": true,
               "built": false,
@@ -2267,8 +2239,8 @@
               "id": "./src/pages/login.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
               "name": "./src/pages/login.js",
-              "index": 46,
-              "index2": 42,
+              "index": 45,
+              "index2": 41,
               "size": 3152,
               "cacheable": true,
               "built": false,
@@ -2337,8 +2309,8 @@
               "id": "./src/pages/pageNotFound.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/pageNotFound.js",
               "name": "./src/pages/pageNotFound.js",
-              "index": 48,
-              "index2": 44,
+              "index": 47,
+              "index2": 43,
               "size": 465,
               "cacheable": true,
               "built": false,
@@ -2407,8 +2379,8 @@
               "id": "./src/pages/register.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
               "name": "./src/pages/register.js",
-              "index": 47,
-              "index2": 43,
+              "index": 46,
+              "index2": 42,
               "size": 4978,
               "cacheable": true,
               "built": false,
@@ -2477,8 +2449,8 @@
               "id": "./src/plugins/loginAuth.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/plugins/loginAuth.js",
               "name": "./src/plugins/loginAuth.js",
-              "index": 50,
-              "index2": 50,
+              "index": 49,
+              "index2": 49,
               "size": 1549,
               "cacheable": true,
               "built": false,
@@ -2533,8 +2505,8 @@
               "id": "./src/plugins/registerAuth.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/plugins/registerAuth.js",
               "name": "./src/plugins/registerAuth.js",
-              "index": 54,
-              "index2": 51,
+              "index": 53,
+              "index2": 50,
               "size": 1971,
               "cacheable": true,
               "built": false,
@@ -2590,7 +2562,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/root.js",
               "name": "./src/root.js",
               "index": 31,
-              "index2": 46,
+              "index2": 45,
               "size": 1837,
               "cacheable": true,
               "built": false,
@@ -2737,8 +2709,8 @@
               "id": "dotenv",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/dotenv/lib/main.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/dotenv/lib/main.js\"",
-              "index": 53,
-              "index2": 49,
+              "index": 52,
+              "index2": 48,
               "size": 42,
               "built": false,
               "optional": false,
@@ -3636,8 +3608,8 @@
               "id": "koa-bodyparser",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/koa-bodyparser/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/koa-bodyparser/index.js\"",
-              "index": 51,
-              "index2": 47,
+              "index": 50,
+              "index2": 46,
               "size": 42,
               "built": false,
               "optional": false,
@@ -3842,7 +3814,7 @@
               "id": "moment",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/moment/moment.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/moment/moment.js\"",
-              "index": 37,
+              "index": 38,
               "index2": 31,
               "size": 42,
               "built": false,
@@ -3851,9 +3823,9 @@
               "chunks": [
                 "main"
               ],
-              "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-              "issuerId": "./src/components/PomodoroClock/PomodoroApp.js",
-              "issuerName": "./src/components/PomodoroClock/PomodoroApp.js",
+              "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
+              "issuerId": "./src/components/PomodoroClock/Timer.js",
+              "issuerName": "./src/components/PomodoroClock/Timer.js",
               "issuerPath": [
                 {
                   "id": 0,
@@ -3884,6 +3856,11 @@
                   "id": "./src/components/PomodoroClock/PomodoroApp.js",
                   "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
                   "name": "./src/components/PomodoroClock/PomodoroApp.js"
+                },
+                {
+                  "id": "./src/components/PomodoroClock/Timer.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
+                  "name": "./src/components/PomodoroClock/Timer.js"
                 }
               ],
               "failed": false,
@@ -3892,15 +3869,6 @@
               "assets": [],
               "reasons": [
                 {
-                  "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-                  "module": "./src/components/PomodoroClock/PomodoroApp.js",
-                  "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "moment",
-                  "loc": "3:0-28"
-                },
-                {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
                   "module": "./src/components/PomodoroClock/Timer.js",
@@ -3916,7 +3884,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "moment",
-                  "loc": "7:26-32"
+                  "loc": "6:26-32"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -3925,12 +3893,12 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "moment",
-                  "loc": "18:28-34"
+                  "loc": "12:28-34"
                 }
               ],
               "providedExports": null,
               "optimizationBailout": [],
-              "depth": 6
+              "depth": 7
             },
             {
               "id": "moment-duration-format",
@@ -4006,7 +3974,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "moment-duration-format",
-                  "loc": "7:0-25"
+                  "loc": "6:0-25"
                 }
               ],
               "providedExports": null,
@@ -4017,8 +3985,8 @@
               "id": "mongodb",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/mongodb/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/mongodb/index.js\"",
-              "index": 52,
-              "index2": 48,
+              "index": 51,
+              "index2": 47,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4238,42 +4206,6 @@
                   "loc": "32:19-24"
                 },
                 {
-                  "moduleId": "./src/components/PomodoroClock/Cycle.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js",
-                  "module": "./src/components/PomodoroClock/Cycle.js",
-                  "moduleName": "./src/components/PomodoroClock/Cycle.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "react",
-                  "loc": "2:0-26"
-                },
-                {
-                  "moduleId": "./src/components/PomodoroClock/Cycle.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js",
-                  "module": "./src/components/PomodoroClock/Cycle.js",
-                  "moduleName": "./src/components/PomodoroClock/Cycle.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "8:9-14"
-                },
-                {
-                  "moduleId": "./src/components/PomodoroClock/Cycle.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js",
-                  "module": "./src/components/PomodoroClock/Cycle.js",
-                  "moduleName": "./src/components/PomodoroClock/Cycle.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "8:29-34"
-                },
-                {
-                  "moduleId": "./src/components/PomodoroClock/Cycle.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js",
-                  "module": "./src/components/PomodoroClock/Cycle.js",
-                  "moduleName": "./src/components/PomodoroClock/Cycle.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "14:5-10"
-                },
-                {
                   "moduleId": "./src/components/PomodoroClock/CycleCounter.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/CycleCounter.js",
                   "module": "./src/components/PomodoroClock/CycleCounter.js",
@@ -4451,7 +4383,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "176:6-11"
+                  "loc": "176:7-12"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4460,7 +4392,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "184:7-12"
+                  "loc": "183:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4469,7 +4401,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "191:5-10"
+                  "loc": "191:6-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4595,7 +4527,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "21:9-14"
+                  "loc": "15:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -4604,7 +4536,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "21:29-34"
+                  "loc": "15:29-34"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -4613,7 +4545,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "27:5-10"
+                  "loc": "21:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -4622,16 +4554,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "33:6-11"
-                },
-                {
-                  "moduleId": "./src/components/PomodoroClock/Timer.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-                  "module": "./src/components/PomodoroClock/Timer.js",
-                  "moduleName": "./src/components/PomodoroClock/Timer.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "40:41-46"
+                  "loc": "28:41-46"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -4649,7 +4572,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "5:9-14"
+                  "loc": "8:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -4658,7 +4581,16 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "12:5-10"
+                  "loc": "15:5-10"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js",
+                  "module": "./src/components/PomodoroClock/ToggleSwitch.js",
+                  "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "24:38-43"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -5301,7 +5233,7 @@
           "identifier": "multi /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
           "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
           "index": 0,
-          "index2": 54,
+          "index2": 53,
           "size": 52,
           "built": false,
           "optional": false,
@@ -5522,8 +5454,8 @@
           "id": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!/Users/williamwang/Programming/v3_Planter/src/constants/styles.css",
           "name": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
-          "index": 49,
-          "index2": 45,
+          "index": 48,
+          "index2": 44,
           "size": 82,
           "cacheable": true,
           "built": false,
@@ -5561,7 +5493,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "../client/f6bebb7e1df53ca3148ba9e4ff42868f.css"
+            "../client/e11ddbe017ca00de585d3845a7da396c.css"
           ],
           "reasons": [
             {
@@ -5577,7 +5509,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
-          "source": "module.exports = __webpack_public_path__ + \"f6bebb7e1df53ca3148ba9e4ff42868f.css\";"
+          "source": "module.exports = __webpack_public_path__ + \"e11ddbe017ca00de585d3845a7da396c.css\";"
         },
         {
           "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -5862,7 +5794,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
           "name": "./node_modules/fusion-cli/entries/server-entry.js",
           "index": 7,
-          "index2": 53,
+          "index2": 52,
           "size": 3021,
           "cacheable": true,
           "built": false,
@@ -6571,7 +6503,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./AdjustTime",
-              "loc": "5:0-38"
+              "loc": "4:0-38"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -6591,91 +6523,11 @@
           "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/AdjustTime.js\";\nimport React from 'react';\n\nconst AdjustTime = ({\n  increaseTimer,\n  decreaseTimer,\n  cycleLength,\n  cycle\n}) => {\n  const adjustLabel = cycleLength();\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn\",\n    onClick: increaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, adjustLabel), React.createElement(\"button\", {\n    className: \"raised-btn\",\n    onClick: decreaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nexport default AdjustTime;"
         },
         {
-          "id": "./src/components/PomodoroClock/Cycle.js",
-          "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js",
-          "name": "./src/components/PomodoroClock/Cycle.js",
-          "index": 44,
-          "index2": 38,
-          "size": 566,
-          "cacheable": true,
-          "built": false,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            "main"
-          ],
-          "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-          "issuerId": "./src/components/PomodoroClock/PomodoroApp.js",
-          "issuerName": "./src/components/PomodoroClock/PomodoroApp.js",
-          "issuerPath": [
-            {
-              "id": 0,
-              "identifier": "multi /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
-              "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./node_modules/fusion-cli/entries/server-entry.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
-              "name": "./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./src/main.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/main.js",
-              "name": "./src/main.js"
-            },
-            {
-              "id": "./src/root.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/root.js",
-              "name": "./src/root.js"
-            },
-            {
-              "id": "./src/pages/home.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
-              "name": "./src/pages/home.js"
-            },
-            {
-              "id": "./src/components/PomodoroClock/PomodoroApp.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-              "name": "./src/components/PomodoroClock/PomodoroApp.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-              "module": "./src/components/PomodoroClock/PomodoroApp.js",
-              "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "./Cycle",
-              "loc": "8:0-28"
-            },
-            {
-              "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-              "module": "./src/components/PomodoroClock/PomodoroApp.js",
-              "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
-              "type": "harmony import specifier",
-              "userRequest": "./Cycle",
-              "loc": "176:26-31"
-            }
-          ],
-          "providedExports": [
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js\";\nimport React from 'react';\n\nconst Cycle = ({\n  cycle,\n  toggleCycle\n}) => {\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn panel-btn\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, cycle ? 'Break' : 'Focus'));\n};\n\nexport default Cycle;"
-        },
-        {
           "id": "./src/components/PomodoroClock/CycleCounter.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/CycleCounter.js",
           "name": "./src/components/PomodoroClock/CycleCounter.js",
-          "index": 45,
-          "index2": 39,
+          "index": 44,
+          "index2": 38,
           "size": 413,
           "cacheable": true,
           "built": false,
@@ -6731,7 +6583,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./CycleCounter",
-              "loc": "9:0-42"
+              "loc": "8:0-42"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -6755,8 +6607,8 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
           "name": "./src/components/PomodoroClock/PomodoroApp.js",
           "index": 36,
-          "index2": 40,
-          "size": 5179,
+          "index2": 39,
+          "size": 5237,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -6823,7 +6675,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport moment from 'moment';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport Cycle from './Cycle';\nimport CycleCounter from './CycleCounter';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<Cycle />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  // //logic to prevent setting focus time to 0 in adjust time\n\n\n  useEffect(() => {\n    if (timer === 0) {\n      clearInterval(timerId);\n      setIsStarted(!isStarted);\n      setCycle(!cycle);\n    }\n  }, [timer]);\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          } //TODO: count does not update on successive focusSessions\n\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 100);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      if (focusTime !== timer) {\n        if (focusTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (focusTime < timer) {\n          setTimer(timer - 60);\n        }\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime !== timer) {\n        if (breakTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (breakTime < timer) {\n          if (timer >= 60) {\n            setTimer(timer - 60);\n          }\n\n          if (timer <= 60) {\n            setTimer(0);\n          }\n        }\n      }\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `Focus Time: ${focusTime / 60} min.` : `Break Time: ${breakTime / 60} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 60) {\n        setBreakTime(60);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 142\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 143\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 144\n    },\n    __self: this\n  }), React.createElement(CycleCounter, {\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 145\n    },\n    __self: this\n  }), React.createElement(Cycle, {\n    toggleCycle: toggleCycle,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 146\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 148\n    },\n    __self: this\n  }, React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 149\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 150\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 156\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 157\n    },\n    __self: this\n  })));\n};\n\nexport default PomodoroClock;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset'; // import Cycle from './Cycle';\n\nimport CycleCounter from './CycleCounter';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<ToggleSwitch - for changing focus mode />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  // //logic to prevent setting focus time to 0 in adjust time\n\n\n  useEffect(() => {\n    if (timer === 0) {\n      clearInterval(timerId);\n      setIsStarted(!isStarted);\n      setCycle(!cycle);\n    }\n  }, [timer]);\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          } //TODO: count does not update on successive focusSessions\n\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 100);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      if (focusTime !== timer) {\n        if (focusTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (focusTime < timer) {\n          setTimer(timer - 60);\n        }\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime !== timer) {\n        if (breakTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (breakTime < timer) {\n          if (timer >= 60) {\n            setTimer(timer - 60);\n          }\n\n          if (timer <= 60) {\n            setTimer(0);\n          }\n        }\n      }\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `Focus Time: ${focusTime / 60} min.` : `Break Time: ${breakTime / 60} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 60) {\n        setBreakTime(60);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 142\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 143\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 144\n    },\n    __self: this\n  }), React.createElement(CycleCounter, {\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 145\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 148\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    toggleCycle: toggleCycle,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 149\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 150\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 151\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 157\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 158\n    },\n    __self: this\n  })));\n};\n\nexport default PomodoroClock;"
         },
         {
           "id": "./src/components/PomodoroClock/Reset.js",
@@ -6886,7 +6738,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./Reset",
-              "loc": "7:0-28"
+              "loc": "6:0-28"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -6966,7 +6818,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./StartStop",
-              "loc": "6:0-36"
+              "loc": "5:0-36"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -6989,9 +6841,9 @@
           "id": "./src/components/PomodoroClock/Timer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
           "name": "./src/components/PomodoroClock/Timer.js",
-          "index": 38,
+          "index": 37,
           "index2": 34,
-          "size": 1297,
+          "size": 982,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -7046,7 +6898,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./Timer",
-              "loc": "4:0-28"
+              "loc": "3:0-28"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -7055,7 +6907,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "./Timer",
-              "loc": "191:25-30"
+              "loc": "191:26-31"
             }
           ],
           "providedExports": [
@@ -7063,7 +6915,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nimport ToggleSwitch from './ToggleSwitch'; // import Switch from 'react-neumorphic-toggle';\n\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  // const theme = {\n  //   color: '#acdbc9',\n  //   primaryShadowColor: '#9bc5b5',\n  //   secondaryShadowColor: '#bdf1dd',\n  // };\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 20\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 22\n    },\n    __self: this\n  }), React.createElement(\"p\", {\n    className: \"inset timer-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 23\n    },\n    __self: this\n  }, cycle ? 'F o c u s' : 'B r e a k'), React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 24\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nimport ToggleSwitch from './ToggleSwitch';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, cycle ? 'F o c u s' : 'B r e a k'), React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
         },
         {
           "id": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -7071,7 +6923,7 @@
           "name": "./src/components/PomodoroClock/ToggleSwitch.js",
           "index": 40,
           "index2": 33,
-          "size": 516,
+          "size": 835,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -7079,9 +6931,9 @@
           "chunks": [
             "main"
           ],
-          "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-          "issuerId": "./src/components/PomodoroClock/Timer.js",
-          "issuerName": "./src/components/PomodoroClock/Timer.js",
+          "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
+          "issuerId": "./src/components/PomodoroClock/PomodoroApp.js",
+          "issuerName": "./src/components/PomodoroClock/PomodoroApp.js",
           "issuerPath": [
             {
               "id": 0,
@@ -7112,11 +6964,6 @@
               "id": "./src/components/PomodoroClock/PomodoroApp.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
               "name": "./src/components/PomodoroClock/PomodoroApp.js"
-            },
-            {
-              "id": "./src/components/PomodoroClock/Timer.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-              "name": "./src/components/PomodoroClock/Timer.js"
             }
           ],
           "failed": false,
@@ -7125,6 +6972,24 @@
           "assets": [],
           "reasons": [
             {
+              "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
+              "module": "./src/components/PomodoroClock/PomodoroApp.js",
+              "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./ToggleSwitch",
+              "loc": "9:0-42"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
+              "module": "./src/components/PomodoroClock/PomodoroApp.js",
+              "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
+              "type": "harmony import specifier",
+              "userRequest": "./ToggleSwitch",
+              "loc": "183:25-37"
+            },
+            {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
               "module": "./src/components/PomodoroClock/Timer.js",
@@ -7132,23 +6997,14 @@
               "type": "harmony side effect evaluation",
               "userRequest": "./ToggleSwitch",
               "loc": "5:0-42"
-            },
-            {
-              "moduleId": "./src/components/PomodoroClock/Timer.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-              "module": "./src/components/PomodoroClock/Timer.js",
-              "moduleName": "./src/components/PomodoroClock/Timer.js",
-              "type": "harmony import specifier",
-              "userRequest": "./ToggleSwitch",
-              "loc": "27:25-37"
             }
           ],
           "providedExports": [
             "default"
           ],
           "optimizationBailout": [],
-          "depth": 7,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = () => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    type: \"checkbox\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }));\n};\n\nexport default ToggleSwitch;"
+          "depth": 6,
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = ({\n  toggleCycle,\n  cycle\n}) => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"toggle-input\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, ' ', cycle ? 'Focus' : 'Break'), React.createElement(\"p\", {\n    className: cycle ? 'focus-mode' : 'break-mode',\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'));\n};\n\nexport default ToggleSwitch;"
         },
         {
           "id": "./src/constants/paths.js",
@@ -7324,7 +7180,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/main.js",
           "name": "./src/main.js",
           "index": 27,
-          "index2": 52,
+          "index2": 51,
           "size": 616,
           "cacheable": true,
           "built": false,
@@ -7393,7 +7249,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
           "name": "./src/pages/home.js",
           "index": 35,
-          "index2": 41,
+          "index2": 40,
           "size": 836,
           "cacheable": true,
           "built": false,
@@ -7462,8 +7318,8 @@
           "id": "./src/pages/login.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
           "name": "./src/pages/login.js",
-          "index": 46,
-          "index2": 42,
+          "index": 45,
+          "index2": 41,
           "size": 3152,
           "cacheable": true,
           "built": false,
@@ -7532,8 +7388,8 @@
           "id": "./src/pages/pageNotFound.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/pageNotFound.js",
           "name": "./src/pages/pageNotFound.js",
-          "index": 48,
-          "index2": 44,
+          "index": 47,
+          "index2": 43,
           "size": 465,
           "cacheable": true,
           "built": false,
@@ -7602,8 +7458,8 @@
           "id": "./src/pages/register.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
           "name": "./src/pages/register.js",
-          "index": 47,
-          "index2": 43,
+          "index": 46,
+          "index2": 42,
           "size": 4978,
           "cacheable": true,
           "built": false,
@@ -7672,8 +7528,8 @@
           "id": "./src/plugins/loginAuth.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/plugins/loginAuth.js",
           "name": "./src/plugins/loginAuth.js",
-          "index": 50,
-          "index2": 50,
+          "index": 49,
+          "index2": 49,
           "size": 1549,
           "cacheable": true,
           "built": false,
@@ -7728,8 +7584,8 @@
           "id": "./src/plugins/registerAuth.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/plugins/registerAuth.js",
           "name": "./src/plugins/registerAuth.js",
-          "index": 54,
-          "index2": 51,
+          "index": 53,
+          "index2": 50,
           "size": 1971,
           "cacheable": true,
           "built": false,
@@ -7785,7 +7641,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/root.js",
           "name": "./src/root.js",
           "index": 31,
-          "index2": 46,
+          "index2": 45,
           "size": 1837,
           "cacheable": true,
           "built": false,
@@ -7932,8 +7788,8 @@
           "id": "dotenv",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/dotenv/lib/main.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/dotenv/lib/main.js\"",
-          "index": 53,
-          "index2": 49,
+          "index": 52,
+          "index2": 48,
           "size": 42,
           "built": false,
           "optional": false,
@@ -8831,8 +8687,8 @@
           "id": "koa-bodyparser",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/koa-bodyparser/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/koa-bodyparser/index.js\"",
-          "index": 51,
-          "index2": 47,
+          "index": 50,
+          "index2": 46,
           "size": 42,
           "built": false,
           "optional": false,
@@ -9037,7 +8893,7 @@
           "id": "moment",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/moment/moment.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/moment/moment.js\"",
-          "index": 37,
+          "index": 38,
           "index2": 31,
           "size": 42,
           "built": false,
@@ -9046,9 +8902,9 @@
           "chunks": [
             "main"
           ],
-          "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-          "issuerId": "./src/components/PomodoroClock/PomodoroApp.js",
-          "issuerName": "./src/components/PomodoroClock/PomodoroApp.js",
+          "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
+          "issuerId": "./src/components/PomodoroClock/Timer.js",
+          "issuerName": "./src/components/PomodoroClock/Timer.js",
           "issuerPath": [
             {
               "id": 0,
@@ -9079,6 +8935,11 @@
               "id": "./src/components/PomodoroClock/PomodoroApp.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
               "name": "./src/components/PomodoroClock/PomodoroApp.js"
+            },
+            {
+              "id": "./src/components/PomodoroClock/Timer.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
+              "name": "./src/components/PomodoroClock/Timer.js"
             }
           ],
           "failed": false,
@@ -9087,15 +8948,6 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js",
-              "module": "./src/components/PomodoroClock/PomodoroApp.js",
-              "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "moment",
-              "loc": "3:0-28"
-            },
-            {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
               "module": "./src/components/PomodoroClock/Timer.js",
@@ -9111,7 +8963,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "moment",
-              "loc": "7:26-32"
+              "loc": "6:26-32"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -9120,12 +8972,12 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "moment",
-              "loc": "18:28-34"
+              "loc": "12:28-34"
             }
           ],
           "providedExports": null,
           "optimizationBailout": [],
-          "depth": 6
+          "depth": 7
         },
         {
           "id": "moment-duration-format",
@@ -9201,7 +9053,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "moment-duration-format",
-              "loc": "7:0-25"
+              "loc": "6:0-25"
             }
           ],
           "providedExports": null,
@@ -9212,8 +9064,8 @@
           "id": "mongodb",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/mongodb/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/mongodb/index.js\"",
-          "index": 52,
-          "index2": 48,
+          "index": 51,
+          "index2": 47,
           "size": 42,
           "built": false,
           "optional": false,
@@ -9433,42 +9285,6 @@
               "loc": "32:19-24"
             },
             {
-              "moduleId": "./src/components/PomodoroClock/Cycle.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js",
-              "module": "./src/components/PomodoroClock/Cycle.js",
-              "moduleName": "./src/components/PomodoroClock/Cycle.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "react",
-              "loc": "2:0-26"
-            },
-            {
-              "moduleId": "./src/components/PomodoroClock/Cycle.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js",
-              "module": "./src/components/PomodoroClock/Cycle.js",
-              "moduleName": "./src/components/PomodoroClock/Cycle.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "8:9-14"
-            },
-            {
-              "moduleId": "./src/components/PomodoroClock/Cycle.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js",
-              "module": "./src/components/PomodoroClock/Cycle.js",
-              "moduleName": "./src/components/PomodoroClock/Cycle.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "8:29-34"
-            },
-            {
-              "moduleId": "./src/components/PomodoroClock/Cycle.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Cycle.js",
-              "module": "./src/components/PomodoroClock/Cycle.js",
-              "moduleName": "./src/components/PomodoroClock/Cycle.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "14:5-10"
-            },
-            {
               "moduleId": "./src/components/PomodoroClock/CycleCounter.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/CycleCounter.js",
               "module": "./src/components/PomodoroClock/CycleCounter.js",
@@ -9646,7 +9462,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "176:6-11"
+              "loc": "176:7-12"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9655,7 +9471,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "184:7-12"
+              "loc": "183:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9664,7 +9480,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "191:5-10"
+              "loc": "191:6-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9790,7 +9606,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "21:9-14"
+              "loc": "15:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -9799,7 +9615,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "21:29-34"
+              "loc": "15:29-34"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -9808,7 +9624,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "27:5-10"
+              "loc": "21:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -9817,16 +9633,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "33:6-11"
-            },
-            {
-              "moduleId": "./src/components/PomodoroClock/Timer.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-              "module": "./src/components/PomodoroClock/Timer.js",
-              "moduleName": "./src/components/PomodoroClock/Timer.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "40:41-46"
+              "loc": "28:41-46"
             },
             {
               "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -9844,7 +9651,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "5:9-14"
+              "loc": "8:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -9853,7 +9660,16 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:5-10"
+              "loc": "15:5-10"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js",
+              "module": "./src/components/PomodoroClock/ToggleSwitch.js",
+              "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "24:38-43"
             },
             {
               "moduleId": "./src/pages/home.js",

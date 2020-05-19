@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment';
 
 import Timer from './Timer';
 import AdjustTime from './AdjustTime';
 import StartStop from './StartStop';
 import Reset from './Reset';
-import Cycle from './Cycle';
+// import Cycle from './Cycle';
 import CycleCounter from './CycleCounter';
+import ToggleSwitch from './ToggleSwitch';
 
 const PomodoroClock = () => {
   const [focusTime, setFocusTime] = useState(60 * 25);
@@ -18,7 +18,7 @@ const PomodoroClock = () => {
   const [reset, setReset] = useState(false);
   const [cycleCount, setCycleCount] = useState(0);
 
-  //<Cycle />
+  //<ToggleSwitch - for changing focus mode />
   useEffect(() => {
     setTimer(cycle ? focusTime : breakTime);
   }, [cycle]);
@@ -143,9 +143,10 @@ const PomodoroClock = () => {
       <div className="left-panel">
         <Reset resetTime={resetTime} />
         <CycleCounter cycleCount={cycleCount} />
-        <Cycle toggleCycle={toggleCycle} cycle={cycle} />
+        {/* <Cycle toggleCycle={toggleCycle} cycle={cycle} /> */}
       </div>
       <div className="center-panel">
+        <ToggleSwitch toggleCycle={toggleCycle} cycle={cycle} />
         <Timer timer={timer} cycle={cycle} />
         <StartStop
           isStarted={isStarted}

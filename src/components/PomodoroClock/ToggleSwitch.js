@@ -1,9 +1,15 @@
 import React from 'react';
 
-const ToggleSwitch = () => {
+const ToggleSwitch = ({ toggleCycle, cycle }) => {
   return (
     <div className="toggle-container">
-      <input type="checkbox" />
+      <button className="toggle-input" type="checkbox" onClick={toggleCycle}>
+        {' '}
+        {cycle ? 'Focus' : 'Break'}
+      </button>
+      <p className={cycle ? 'focus-mode' : 'break-mode'}>
+        {cycle ? 'Focus' : 'Break'}
+      </p>
     </div>
   );
 };
