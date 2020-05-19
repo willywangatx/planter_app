@@ -1,7 +1,6 @@
 import React from 'react';
 import moment from 'moment';
 import momentDurationFormatSetup from 'moment-duration-format';
-import ToggleSwitch from './ToggleSwitch';
 
 momentDurationFormatSetup(moment);
 

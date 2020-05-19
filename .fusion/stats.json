@@ -2,34 +2,76 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "ca551dcd668e29da1e53",
+  "hash": "76be070f7a00bf762f42",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "ca551dcd668e29da1e53",
-      "time": 213,
-      "builtAt": 1589858589481,
+      "hash": "76be070f7a00bf762f42",
+      "time": 249,
+      "builtAt": 1589870179405,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "server-main.js.map"
+          "main.1e32006c43c2deb8f3f2.hot-update.js",
+          "server-main.js.map",
+          "main.1e32006c43c2deb8f3f2.hot-update.js.map"
         ]
       },
       "assets": [
         {
-          "name": "../client/392f9aa545068f4e564ee8653d4afdaf.css",
-          "size": 3041,
+          "name": "../client/121ae2c8d97c57582a448f44deb2667f.css",
+          "size": 3671,
           "chunks": [],
           "chunkNames": [],
           "info": {},
+          "emitted": false
+        },
+        {
+          "name": "1e32006c43c2deb8f3f2.hot-update.json",
+          "size": 46,
+          "chunks": [],
+          "chunkNames": [],
+          "info": {
+            "hotModuleReplacement": true,
+            "immutable": true
+          },
+          "emitted": true
+        },
+        {
+          "name": "main.1e32006c43c2deb8f3f2.hot-update.js",
+          "size": 5487,
+          "chunks": [
+            "main"
+          ],
+          "chunkNames": [
+            "main"
+          ],
+          "info": {
+            "hotModuleReplacement": true,
+            "immutable": true
+          },
+          "emitted": true
+        },
+        {
+          "name": "main.1e32006c43c2deb8f3f2.hot-update.js.map",
+          "size": 2392,
+          "chunks": [
+            "main"
+          ],
+          "chunkNames": [
+            "main"
+          ],
+          "info": {
+            "development": true
+          },
           "emitted": true
         },
         {
           "name": "server-main.js",
-          "size": 123625,
+          "size": 123909,
           "chunks": [
             "main"
           ],
@@ -41,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 85667,
+          "size": 85885,
           "chunks": [
             "main"
           ],
@@ -62,7 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "server-main.js.map"
+            "main.1e32006c43c2deb8f3f2.hot-update.js",
+            "server-main.js.map",
+            "main.1e32006c43c2deb8f3f2.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -75,7 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "server-main.js.map"
+            "main.1e32006c43c2deb8f3f2.hot-update.js",
+            "server-main.js.map",
+            "main.1e32006c43c2deb8f3f2.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -84,18 +130,20 @@
       "chunks": [
         {
           "id": "main",
-          "rendered": false,
+          "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 48215,
+          "size": 48532,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "server-main.js.map"
+            "main.1e32006c43c2deb8f3f2.hot-update.js",
+            "server-main.js.map",
+            "main.1e32006c43c2deb8f3f2.hot-update.js.map"
           ],
-          "hash": "947c8ebd1e69d7213506",
+          "hash": "376514940b93f0a24e07",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -331,7 +379,7 @@
               "index2": 44,
               "size": 82,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -366,7 +414,7 @@
               "errors": 0,
               "warnings": 0,
               "assets": [
-                "../client/392f9aa545068f4e564ee8653d4afdaf.css"
+                "../client/121ae2c8d97c57582a448f44deb2667f.css"
               ],
               "reasons": [
                 {
@@ -382,7 +430,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 4,
-              "source": "module.exports = __webpack_public_path__ + \"392f9aa545068f4e564ee8653d4afdaf.css\";"
+              "source": "module.exports = __webpack_public_path__ + \"121ae2c8d97c57582a448f44deb2667f.css\";"
             },
             {
               "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -1319,8 +1367,8 @@
               "id": "./src/components/PomodoroClock/AdjustTime.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/AdjustTime.js",
               "name": "./src/components/PomodoroClock/AdjustTime.js",
-              "index": 41,
-              "index2": 35,
+              "index": 40,
+              "index2": 34,
               "size": 1006,
               "cacheable": true,
               "built": false,
@@ -1399,8 +1447,8 @@
               "id": "./src/components/PomodoroClock/CycleCounter.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/CycleCounter.js",
               "name": "./src/components/PomodoroClock/CycleCounter.js",
-              "index": 44,
-              "index2": 38,
+              "index": 43,
+              "index2": 37,
               "size": 413,
               "cacheable": true,
               "built": false,
@@ -1540,7 +1588,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../components/PomodoroClock/PomodoroApp.js",
-                  "loc": "22:39-52"
+                  "loc": "35:41-54"
                 }
               ],
               "providedExports": [
@@ -1554,8 +1602,8 @@
               "id": "./src/components/PomodoroClock/Reset.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Reset.js",
               "name": "./src/components/PomodoroClock/Reset.js",
-              "index": 43,
-              "index2": 37,
+              "index": 42,
+              "index2": 36,
               "size": 632,
               "cacheable": true,
               "built": false,
@@ -1634,8 +1682,8 @@
               "id": "./src/components/PomodoroClock/StartStop.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/StartStop.js",
               "name": "./src/components/PomodoroClock/StartStop.js",
-              "index": 42,
-              "index2": 36,
+              "index": 41,
+              "index2": 35,
               "size": 785,
               "cacheable": true,
               "built": false,
@@ -1715,8 +1763,8 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
               "name": "./src/components/PomodoroClock/Timer.js",
               "index": 37,
-              "index2": 34,
-              "size": 787,
+              "index2": 33,
+              "size": 744,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1788,15 +1836,15 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nimport ToggleSwitch from './ToggleSwitch';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
             },
             {
               "id": "./src/components/PomodoroClock/ToggleSwitch.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js",
               "name": "./src/components/PomodoroClock/ToggleSwitch.js",
-              "index": 40,
-              "index2": 33,
-              "size": 859,
+              "index": 44,
+              "index2": 38,
+              "size": 940,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1861,15 +1909,6 @@
                   "type": "harmony import specifier",
                   "userRequest": "./ToggleSwitch",
                   "loc": "183:25-37"
-                },
-                {
-                  "moduleId": "./src/components/PomodoroClock/Timer.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-                  "module": "./src/components/PomodoroClock/Timer.js",
-                  "moduleName": "./src/components/PomodoroClock/Timer.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "./ToggleSwitch",
-                  "loc": "5:0-42"
                 }
               ],
               "providedExports": [
@@ -1877,7 +1916,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = ({\n  toggleCycle,\n  cycle\n}) => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    className: \"toggle-label toggle-label-inset\",\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'));\n};\n\nexport default ToggleSwitch;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = ({\n  toggleCycle,\n  cycle\n}) => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    // className=\"toggle-label toggle-label-inset\"\n    className: cycle ? 'focus-label toggle-label' : 'break-label toggle-label',\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'));\n};\n\nexport default ToggleSwitch;"
             },
             {
               "id": "./src/constants/paths.js",
@@ -1939,7 +1978,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "9:8-13"
+                  "loc": "15:8-13"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -1948,7 +1987,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "16:8-13"
+                  "loc": "29:8-13"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -2123,7 +2162,7 @@
               "name": "./src/pages/home.js",
               "index": 35,
               "index2": 40,
-              "size": 836,
+              "size": 1115,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2185,7 +2224,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { Component } from 'react';\nimport { Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\n\nconst Home = () => {\n  return React.createElement(React.Fragment, null, React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"register.\"), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { Component } from 'react';\nimport { Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\n\nconst Home = () => {\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"login.\"), React.createElement(\"div\", {\n    className: \"nav-link\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, \"register.\"))), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
             },
             {
               "id": "./src/pages/login.js",
@@ -2195,7 +2234,7 @@
               "index2": 41,
               "size": 3152,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -3227,7 +3266,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "8:71-75"
+                  "loc": "14:25-29"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -3236,7 +3275,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "15:36-40"
+                  "loc": "28:25-29"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -3836,7 +3875,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "moment",
-                  "loc": "6:26-32"
+                  "loc": "5:26-32"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -3845,7 +3884,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "moment",
-                  "loc": "12:28-34"
+                  "loc": "11:28-34"
                 }
               ],
               "providedExports": null,
@@ -3926,7 +3965,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "moment-duration-format",
-                  "loc": "6:0-25"
+                  "loc": "5:0-25"
                 }
               ],
               "providedExports": null,
@@ -4479,7 +4518,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "15:9-14"
+                  "loc": "14:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -4488,7 +4527,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "15:29-34"
+                  "loc": "14:29-34"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -4497,7 +4536,7 @@
                   "moduleName": "./src/components/PomodoroClock/Timer.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "21:5-10"
+                  "loc": "20:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -4578,7 +4617,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "15:16-21"
+                  "loc": "14:5-10"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -4587,7 +4626,25 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "22:19-24"
+                  "loc": "21:16-21"
+                },
+                {
+                  "moduleId": "./src/pages/home.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+                  "module": "./src/pages/home.js",
+                  "moduleName": "./src/pages/home.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "28:5-10"
+                },
+                {
+                  "moduleId": "./src/pages/home.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+                  "module": "./src/pages/home.js",
+                  "moduleName": "./src/pages/home.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "35:21-26"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -5401,7 +5458,7 @@
           "index2": 44,
           "size": 82,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -5436,7 +5493,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "../client/392f9aa545068f4e564ee8653d4afdaf.css"
+            "../client/121ae2c8d97c57582a448f44deb2667f.css"
           ],
           "reasons": [
             {
@@ -5452,7 +5509,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
-          "source": "module.exports = __webpack_public_path__ + \"392f9aa545068f4e564ee8653d4afdaf.css\";"
+          "source": "module.exports = __webpack_public_path__ + \"121ae2c8d97c57582a448f44deb2667f.css\";"
         },
         {
           "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -6389,8 +6446,8 @@
           "id": "./src/components/PomodoroClock/AdjustTime.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/AdjustTime.js",
           "name": "./src/components/PomodoroClock/AdjustTime.js",
-          "index": 41,
-          "index2": 35,
+          "index": 40,
+          "index2": 34,
           "size": 1006,
           "cacheable": true,
           "built": false,
@@ -6469,8 +6526,8 @@
           "id": "./src/components/PomodoroClock/CycleCounter.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/CycleCounter.js",
           "name": "./src/components/PomodoroClock/CycleCounter.js",
-          "index": 44,
-          "index2": 38,
+          "index": 43,
+          "index2": 37,
           "size": 413,
           "cacheable": true,
           "built": false,
@@ -6610,7 +6667,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../components/PomodoroClock/PomodoroApp.js",
-              "loc": "22:39-52"
+              "loc": "35:41-54"
             }
           ],
           "providedExports": [
@@ -6624,8 +6681,8 @@
           "id": "./src/components/PomodoroClock/Reset.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Reset.js",
           "name": "./src/components/PomodoroClock/Reset.js",
-          "index": 43,
-          "index2": 37,
+          "index": 42,
+          "index2": 36,
           "size": 632,
           "cacheable": true,
           "built": false,
@@ -6704,8 +6761,8 @@
           "id": "./src/components/PomodoroClock/StartStop.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/StartStop.js",
           "name": "./src/components/PomodoroClock/StartStop.js",
-          "index": 42,
-          "index2": 36,
+          "index": 41,
+          "index2": 35,
           "size": 785,
           "cacheable": true,
           "built": false,
@@ -6785,8 +6842,8 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
           "name": "./src/components/PomodoroClock/Timer.js",
           "index": 37,
-          "index2": 34,
-          "size": 787,
+          "index2": 33,
+          "size": 744,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -6858,15 +6915,15 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nimport ToggleSwitch from './ToggleSwitch';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
         },
         {
           "id": "./src/components/PomodoroClock/ToggleSwitch.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js",
           "name": "./src/components/PomodoroClock/ToggleSwitch.js",
-          "index": 40,
-          "index2": 33,
-          "size": 859,
+          "index": 44,
+          "index2": 38,
+          "size": 940,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -6931,15 +6988,6 @@
               "type": "harmony import specifier",
               "userRequest": "./ToggleSwitch",
               "loc": "183:25-37"
-            },
-            {
-              "moduleId": "./src/components/PomodoroClock/Timer.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-              "module": "./src/components/PomodoroClock/Timer.js",
-              "moduleName": "./src/components/PomodoroClock/Timer.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "./ToggleSwitch",
-              "loc": "5:0-42"
             }
           ],
           "providedExports": [
@@ -6947,7 +6995,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = ({\n  toggleCycle,\n  cycle\n}) => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    className: \"toggle-label toggle-label-inset\",\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'));\n};\n\nexport default ToggleSwitch;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = ({\n  toggleCycle,\n  cycle\n}) => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    // className=\"toggle-label toggle-label-inset\"\n    className: cycle ? 'focus-label toggle-label' : 'break-label toggle-label',\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'));\n};\n\nexport default ToggleSwitch;"
         },
         {
           "id": "./src/constants/paths.js",
@@ -7009,7 +7057,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "9:8-13"
+              "loc": "15:8-13"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -7018,7 +7066,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "16:8-13"
+              "loc": "29:8-13"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -7193,7 +7241,7 @@
           "name": "./src/pages/home.js",
           "index": 35,
           "index2": 40,
-          "size": 836,
+          "size": 1115,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -7255,7 +7303,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { Component } from 'react';\nimport { Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\n\nconst Home = () => {\n  return React.createElement(React.Fragment, null, React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"register.\"), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { Component } from 'react';\nimport { Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\n\nconst Home = () => {\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"login.\"), React.createElement(\"div\", {\n    className: \"nav-link\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, \"register.\"))), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
         },
         {
           "id": "./src/pages/login.js",
@@ -7265,7 +7313,7 @@
           "index2": 41,
           "size": 3152,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -8297,7 +8345,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "8:71-75"
+              "loc": "14:25-29"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -8306,7 +8354,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "15:36-40"
+              "loc": "28:25-29"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -8906,7 +8954,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "moment",
-              "loc": "6:26-32"
+              "loc": "5:26-32"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -8915,7 +8963,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "moment",
-              "loc": "12:28-34"
+              "loc": "11:28-34"
             }
           ],
           "providedExports": null,
@@ -8996,7 +9044,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "moment-duration-format",
-              "loc": "6:0-25"
+              "loc": "5:0-25"
             }
           ],
           "providedExports": null,
@@ -9549,7 +9597,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "15:9-14"
+              "loc": "14:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -9558,7 +9606,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "15:29-34"
+              "loc": "14:29-34"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -9567,7 +9615,7 @@
               "moduleName": "./src/components/PomodoroClock/Timer.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "21:5-10"
+              "loc": "20:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -9648,7 +9696,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "15:16-21"
+              "loc": "14:5-10"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9657,7 +9705,25 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "22:19-24"
+              "loc": "21:16-21"
+            },
+            {
+              "moduleId": "./src/pages/home.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+              "module": "./src/pages/home.js",
+              "moduleName": "./src/pages/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "28:5-10"
+            },
+            {
+              "moduleId": "./src/pages/home.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+              "module": "./src/pages/home.js",
+              "moduleName": "./src/pages/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "35:21-26"
             },
             {
               "moduleId": "./src/pages/login.js",

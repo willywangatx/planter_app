@@ -10,7 +10,10 @@ const ToggleSwitch = ({ toggleCycle, cycle }) => {
         onClick={toggleCycle}
       />
       <label
-        className="toggle-label toggle-label-inset"
+        // className="toggle-label toggle-label-inset"
+        className={
+          cycle ? 'focus-label toggle-label' : 'break-label toggle-label'
+        }
         htmlFor="toggle-switch"
       >
         {cycle ? 'Focus' : 'Break'}

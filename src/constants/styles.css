@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
 }
-/* html tag styling */
+
 body {
   text-align: center;
   /* background-color: rgba(219, 255, 234, 1); */
@@ -12,6 +12,37 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2vw;
   color: #7f8084;
+}
+/* html tag styling */
+nav {
+  background: #fdd2b5;
+  border-radius: 2.5vw;
+  margin-top: 2vh;
+  height: 5vw;
+  width: 90vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #acdbc9;
+  box-shadow: -10px 10px 23px #99c3b3, 10px -10px 23px #bff3df;
+}
+
+a {
+  color: #7f8084;
+  text-decoration: none;
+  cursor: default;
+  padding: 0 2vw;
+  margin: 1vw;
+  border-radius: 2.5vw;
+  background: #acdbc9;
+  box-shadow: -10px 10px 23px #99c3b3, 10px -10px 23px #bff3df;
+}
+
+a:active {
+  border-radius: 2.5vw;
+  margin: 1vw;
+  background: #acdbc9;
+  box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd;
 }
 
 button {
@@ -55,7 +86,7 @@ button {
 .pomodoro-clock {
   margin: 2.5vw auto;
   padding: 3vw;
-  width: 80%;
+  width: 85vw;
   /* Grid layout  */
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -83,19 +114,11 @@ button {
 }
 
 /* TOGGLE SWITCH STYLING */
+
 .toggle-container {
   margin: 1vh auto;
   position: relative;
 }
-
-/* .toggle-container {
-  margin: 1vh auto;
-  box-shadow: -10px 10px 23px #99c3b3, 10px -10px 23px #bff3df;
-  position: relative;
-  border-radius: 3vw;
-  display: inline-block;
-  align-items: center;
-} */
 
 .toggle-input {
   height: 9vw;
@@ -115,7 +138,7 @@ button {
   margin: auto;
   /* top: 0;
   border: 0; */
-  transition: 0.2s;
+  transition: 0.3s;
   z-index: 5;
 }
 
@@ -138,20 +161,32 @@ button {
 }
 
 .toggle-label {
+  width: 20vw;
   position: absolute;
   font-size: 6vw;
   right: 11vw;
+  transition: all 0.6s ease-in-out;
   z-index: 4;
 }
 
-/* .toggle-label-inset {
-  height: 7vw;
+.focus-label {
+  transition: all 0.6s ease-in-out;
+  left: 10vw;
+}
+
+.break-label {
+  transition: all 0.6s ease-in-out;
+  right: 10vw;
+}
+
+.toggle-label-inset {
+  /* height: 7vw;
   width: 18vw;
   position: absolute;
   top: 0.8vw;
-  left: 9.1vw;
+  left: 9.1vw; */
   z-index: 3;
-  border-radius: 10vw;
-  background: #acdbc9;
-  box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd;
-} */
+  /* border-radius: 10vw; */
+  /* background: #acdbc9; */
+  /* box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd; */
+}
