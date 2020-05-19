@@ -46,7 +46,7 @@ export default class Register extends Component {
             register.
           </NavLink>
         </nav>
-        <div className="raised-panel container-panel">
+        <div className="raised-panel auth-panel">
           <form
             action="/register"
             method="post"
@@ -55,39 +55,47 @@ export default class Register extends Component {
             <div className="input-form">
               <label>Email:</label>
               <input
+                className="input-box inset"
                 value={this.state.email}
                 onChange={this.handleChange}
                 type="email"
                 name="email"
+                placeholder="Email"
                 required
               />
             </div>
             <div className="input-form">
               <label>Username:</label>
               <input
+                className="input-box inset"
                 value={this.state.username}
                 onChange={this.handleChange}
                 type="text"
                 name="username"
+                placeholder="Username"
                 required
               />
             </div>
             <div className="input-form">
               <label>Password:</label>
               <input
+                className="input-box inset"
                 value={this.state.password}
                 type="password"
                 name="password"
+                placeholder="Password"
                 onChange={this.handleChange}
                 required
               />
             </div>
             <div className="input-form">
-              <label>Verify Password:</label>
+              <label>Confirm Password:</label>
               <input
+                className="input-box inset"
                 value={this.state.confirm_password}
                 type="password"
                 name="confirm_password"
+                placeholder="Confirm Password"
                 onChange={this.handleChange}
                 required
               />

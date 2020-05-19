@@ -29,30 +29,34 @@ export default class Login extends Component {
           </NavLink>
           <Link to={paths.register}>register.</Link>
         </nav>
-        <div className="raised-panel container-panel">
+        <div className="raised-panel auth-panel">
           <form action="/login" method="post">
             <div className="input-form">
-              <label>Username:</label>
+              <label className="raised-panel auth-raised">Username:</label>
               <input
+                className="input-box inset"
                 value={this.state.username}
                 onChange={this.handleChange}
                 type="text"
                 name="username"
+                placeholder="Username"
                 required
               />
             </div>
             <div className="input-form">
-              <label>Password:</label>
+              <label className="raised-panel auth-raised">Password:</label>
               <input
+                className="input-box inset"
                 value={this.state.password}
                 onChange={this.handleChange}
                 type="password"
                 name="password"
+                placeholder="Password"
                 required
               />
             </div>
             <div className="submit-btn">
-              <input type="submit" value="Login" />
+              <input className="auth-btn" type="submit" value="Login" />
             </div>
           </form>
         </div>

@@ -13,6 +13,17 @@ body {
   color: #7f8084;
 }
 
+button {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3vw;
+  color: #7f8084;
+  padding: 0 3vw;
+  margin: 1vw auto;
+  border-radius: 2.5vw;
+  border: none;
+  outline: none;
+}
+
 /* NAVBAR STYLING  */
 nav {
   background: #fdd2b5;
@@ -27,7 +38,6 @@ nav {
   box-shadow: -10px 10px 23px #99c3b3, 10px -10px 23px #bff3df;
 }
 
-/* NAV LINKS STYLING */
 a {
   color: #7f8084;
   text-decoration: none;
@@ -40,35 +50,47 @@ a {
 }
 
 a:active {
-  /* border-radius: 2.5vw; */
-  /* margin: 1vw; */
-  /* background: #acdbc9; */
   box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd;
 }
 
-button {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 3vw;
-  color: #7f8084;
-  padding: 0 3vw;
-  margin: 1vw auto;
-  border-radius: 2.5vw;
-  border: none;
-  outline: none;
-}
+/* AUTHENTICATION PAGES */
 
-/* Neumorphism styling */
-
-.container-panel {
+.auth-panel {
   margin: 2.5vw auto;
   padding: 3vw;
   width: 85vw;
+  text-align: center;
 }
+
+input.input-box {
+  outline: none;
+  border: none;
+  width: 15vw;
+  height: 2vw;
+  padding: 2vw;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 2vw;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #7f8084;
+  background: #acdbc9;
+}
+
+textarea:focus,
+input:focus {
+  color: #7f8084;
+}
+
+/* NEUMORPHISM STYLING */
+
 .raised-panel {
   background: #acdbc9;
   box-shadow: -10px 10px 23px #99c3b3, 10px -10px 23px #bff3df;
   border-radius: 2.5vw;
 }
+
 .raised-btn {
   /* background: linear-gradient(225deg, #b8ead7, #9bc5b5); */
   background: #acdbc9;
@@ -89,7 +111,6 @@ button {
 
 /* POMODORO CLOCK COMPONENT  */
 
-/* grid timer wrapper */
 .pomodoro-clock {
   margin: 2.5vw auto;
   padding: 3vw;

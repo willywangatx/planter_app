@@ -2,34 +2,76 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "cc0fc84f2b86ed2a67c9",
+  "hash": "2b08b7bfb85595bbc9c5",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "cc0fc84f2b86ed2a67c9",
-      "time": 210,
-      "builtAt": 1589922021687,
+      "hash": "2b08b7bfb85595bbc9c5",
+      "time": 257,
+      "builtAt": 1589926229420,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "server-main.js.map"
+          "main.5b615ab890fec24575d8.hot-update.js",
+          "server-main.js.map",
+          "main.5b615ab890fec24575d8.hot-update.js.map"
         ]
       },
       "assets": [
         {
-          "name": "../client/fc41afc05f2865d33ecade9164f46263.css",
-          "size": 3869,
+          "name": "../client/dba9e0a720b57a4f6e3349911da80085.css",
+          "size": 4088,
           "chunks": [],
           "chunkNames": [],
           "info": {},
           "emitted": false
         },
         {
+          "name": "5b615ab890fec24575d8.hot-update.json",
+          "size": 46,
+          "chunks": [],
+          "chunkNames": [],
+          "info": {
+            "hotModuleReplacement": true,
+            "immutable": true
+          },
+          "emitted": true
+        },
+        {
+          "name": "main.5b615ab890fec24575d8.hot-update.js",
+          "size": 8596,
+          "chunks": [
+            "main"
+          ],
+          "chunkNames": [
+            "main"
+          ],
+          "info": {
+            "hotModuleReplacement": true,
+            "immutable": true
+          },
+          "emitted": true
+        },
+        {
+          "name": "main.5b615ab890fec24575d8.hot-update.js.map",
+          "size": 4888,
+          "chunks": [
+            "main"
+          ],
+          "chunkNames": [
+            "main"
+          ],
+          "info": {
+            "development": true
+          },
+          "emitted": true
+        },
+        {
           "name": "server-main.js",
-          "size": 125577,
+          "size": 126096,
           "chunks": [
             "main"
           ],
@@ -41,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 86775,
+          "size": 87481,
           "chunks": [
             "main"
           ],
@@ -62,7 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "server-main.js.map"
+            "main.5b615ab890fec24575d8.hot-update.js",
+            "server-main.js.map",
+            "main.5b615ab890fec24575d8.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -75,7 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "server-main.js.map"
+            "main.5b615ab890fec24575d8.hot-update.js",
+            "server-main.js.map",
+            "main.5b615ab890fec24575d8.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -84,18 +130,20 @@
       "chunks": [
         {
           "id": "main",
-          "rendered": false,
+          "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 49663,
+          "size": 50182,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "server-main.js.map"
+            "main.5b615ab890fec24575d8.hot-update.js",
+            "server-main.js.map",
+            "main.5b615ab890fec24575d8.hot-update.js.map"
           ],
-          "hash": "04d143a0cf007f334b93",
+          "hash": "5cff474e91ebf8d342f8",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -366,7 +414,7 @@
               "errors": 0,
               "warnings": 0,
               "assets": [
-                "../client/fc41afc05f2865d33ecade9164f46263.css"
+                "../client/dba9e0a720b57a4f6e3349911da80085.css"
               ],
               "reasons": [
                 {
@@ -382,7 +430,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 4,
-              "source": "module.exports = __webpack_public_path__ + \"fc41afc05f2865d33ecade9164f46263.css\";"
+              "source": "module.exports = __webpack_public_path__ + \"dba9e0a720b57a4f6e3349911da80085.css\";"
             },
             {
               "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -2143,7 +2191,7 @@
               "index2": 40,
               "size": 1158,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2211,7 +2259,7 @@
               "name": "./src/pages/login.js",
               "index": 45,
               "index2": 41,
-              "size": 3691,
+              "size": 3939,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2273,7 +2321,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/login.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Login extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    this.state = {\n      username: '',\n      password: ''\n    };\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 26\n      },\n      __self: this\n    }, \"home.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 27\n      },\n      __self: this\n    }, \"login.\"), React.createElement(Link, {\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 30\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel container-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 32\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/login\",\n      method: \"post\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 33\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 34\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 35\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 36\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 44\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      onChange: this.handleChange,\n      type: \"password\",\n      name: \"password\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 46\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 54\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Login\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    })))));\n  }\n\n}"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/login.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Login extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    this.state = {\n      username: '',\n      password: ''\n    };\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 26\n      },\n      __self: this\n    }, \"home.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 27\n      },\n      __self: this\n    }, \"login.\"), React.createElement(Link, {\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 30\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel auth-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 32\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/login\",\n      method: \"post\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 33\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 34\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      className: \"raised-panel auth-raised\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 35\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      placeholder: \"Username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 36\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 46\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      className: \"raised-panel auth-raised\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 47\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.password,\n      onChange: this.handleChange,\n      type: \"password\",\n      name: \"password\",\n      placeholder: \"Password\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 48\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 58\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      className: \"auth-btn\",\n      type: \"submit\",\n      value: \"Login\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 59\n      },\n      __self: this\n    })))));\n  }\n\n}"
             },
             {
               "id": "./src/pages/pageNotFound.js",
@@ -2351,9 +2399,9 @@
               "name": "./src/pages/register.js",
               "index": 46,
               "index2": 42,
-              "size": 5523,
+              "size": 5794,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2413,7 +2461,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/register.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Register extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      console.log('Target  handlechange');\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    _defineProperty(this, \"confirmPasswordMatch\", e => {\n      console.log('confirmPasswordMatch');\n      let password = this.state.password;\n      let confirm_password = this.state.confirm_password;\n\n      if (password !== confirm_password) {\n        e.preventDefault();\n        alert(\"Passwords don't match!\");\n        return false;\n      }\n    });\n\n    this.state = {\n      email: '',\n      username: '',\n      password: '',\n      confirm_password: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 41\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 42\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 43\n      },\n      __self: this\n    }, \"home.\"), React.createElement(Link, {\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 44\n      },\n      __self: this\n    }, \"login.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel container-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/register\",\n      method: \"post\",\n      onSubmit: this.confirmPasswordMatch,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 50\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 56\n      },\n      __self: this\n    }, \"Email:\"), React.createElement(\"input\", {\n      value: this.state.email,\n      onChange: this.handleChange,\n      type: \"email\",\n      name: \"email\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 57\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 65\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 66\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 67\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 75\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 76\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      type: \"password\",\n      name: \"password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 77\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 85\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 86\n      },\n      __self: this\n    }, \"Verify Password:\"), React.createElement(\"input\", {\n      value: this.state.confirm_password,\n      type: \"password\",\n      name: \"confirm_password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 87\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 95\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Register\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 96\n      },\n      __self: this\n    })))));\n  }\n\n}"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/register.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Register extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      console.log('Target  handlechange');\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    _defineProperty(this, \"confirmPasswordMatch\", e => {\n      console.log('confirmPasswordMatch');\n      let password = this.state.password;\n      let confirm_password = this.state.confirm_password;\n\n      if (password !== confirm_password) {\n        e.preventDefault();\n        alert(\"Passwords don't match!\");\n        return false;\n      }\n    });\n\n    this.state = {\n      email: '',\n      username: '',\n      password: '',\n      confirm_password: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 41\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 42\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 43\n      },\n      __self: this\n    }, \"home.\"), React.createElement(Link, {\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 44\n      },\n      __self: this\n    }, \"login.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel auth-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/register\",\n      method: \"post\",\n      onSubmit: this.confirmPasswordMatch,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 50\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 56\n      },\n      __self: this\n    }, \"Email:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.email,\n      onChange: this.handleChange,\n      type: \"email\",\n      name: \"email\",\n      placeholder: \"Email\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 57\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 67\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 68\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      placeholder: \"Username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 69\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 79\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 80\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.password,\n      type: \"password\",\n      name: \"password\",\n      placeholder: \"Password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 81\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 91\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 92\n      },\n      __self: this\n    }, \"Confirm Password:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.confirm_password,\n      type: \"password\",\n      name: \"confirm_password\",\n      placeholder: \"Confirm Password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 93\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 103\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Register\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 104\n      },\n      __self: this\n    })))));\n  }\n\n}"
             },
             {
               "id": "./src/plugins/loginAuth.js",
@@ -4767,7 +4815,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "91:21-26"
+                  "loc": "92:21-26"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4776,7 +4824,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "102:9-14"
+                  "loc": "105:9-14"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4785,7 +4833,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "109:7-12"
+                  "loc": "112:7-12"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4794,7 +4842,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "115:21-26"
+                  "loc": "119:21-26"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4803,7 +4851,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "126:9-14"
+                  "loc": "132:9-14"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4812,7 +4860,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "133:7-12"
+                  "loc": "139:7-12"
                 },
                 {
                   "moduleId": "./src/pages/pageNotFound.js",
@@ -4965,7 +5013,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "120:9-14"
+                  "loc": "122:9-14"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4974,7 +5022,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "127:7-12"
+                  "loc": "129:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4983,7 +5031,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "133:21-26"
+                  "loc": "135:21-26"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4992,7 +5040,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "144:9-14"
+                  "loc": "148:9-14"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5001,7 +5049,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "151:7-12"
+                  "loc": "155:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5010,7 +5058,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "157:21-26"
+                  "loc": "161:21-26"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5019,7 +5067,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "168:9-14"
+                  "loc": "174:9-14"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5028,7 +5076,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "175:7-12"
+                  "loc": "181:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5037,7 +5085,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "181:28-33"
+                  "loc": "187:29-34"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5046,7 +5094,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "192:9-14"
+                  "loc": "200:9-14"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5055,7 +5103,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "199:7-12"
+                  "loc": "207:7-12"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -5553,7 +5601,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "../client/fc41afc05f2865d33ecade9164f46263.css"
+            "../client/dba9e0a720b57a4f6e3349911da80085.css"
           ],
           "reasons": [
             {
@@ -5569,7 +5617,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
-          "source": "module.exports = __webpack_public_path__ + \"fc41afc05f2865d33ecade9164f46263.css\";"
+          "source": "module.exports = __webpack_public_path__ + \"dba9e0a720b57a4f6e3349911da80085.css\";"
         },
         {
           "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -7330,7 +7378,7 @@
           "index2": 40,
           "size": 1158,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -7398,7 +7446,7 @@
           "name": "./src/pages/login.js",
           "index": 45,
           "index2": 41,
-          "size": 3691,
+          "size": 3939,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -7460,7 +7508,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/login.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Login extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    this.state = {\n      username: '',\n      password: ''\n    };\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 26\n      },\n      __self: this\n    }, \"home.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 27\n      },\n      __self: this\n    }, \"login.\"), React.createElement(Link, {\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 30\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel container-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 32\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/login\",\n      method: \"post\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 33\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 34\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 35\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 36\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 44\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      onChange: this.handleChange,\n      type: \"password\",\n      name: \"password\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 46\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 54\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Login\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    })))));\n  }\n\n}"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/login.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Login extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    this.state = {\n      username: '',\n      password: ''\n    };\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 26\n      },\n      __self: this\n    }, \"home.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 27\n      },\n      __self: this\n    }, \"login.\"), React.createElement(Link, {\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 30\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel auth-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 32\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/login\",\n      method: \"post\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 33\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 34\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      className: \"raised-panel auth-raised\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 35\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      placeholder: \"Username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 36\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 46\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      className: \"raised-panel auth-raised\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 47\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.password,\n      onChange: this.handleChange,\n      type: \"password\",\n      name: \"password\",\n      placeholder: \"Password\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 48\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 58\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      className: \"auth-btn\",\n      type: \"submit\",\n      value: \"Login\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 59\n      },\n      __self: this\n    })))));\n  }\n\n}"
         },
         {
           "id": "./src/pages/pageNotFound.js",
@@ -7538,9 +7586,9 @@
           "name": "./src/pages/register.js",
           "index": 46,
           "index2": 42,
-          "size": 5523,
+          "size": 5794,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -7600,7 +7648,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/register.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Register extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      console.log('Target  handlechange');\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    _defineProperty(this, \"confirmPasswordMatch\", e => {\n      console.log('confirmPasswordMatch');\n      let password = this.state.password;\n      let confirm_password = this.state.confirm_password;\n\n      if (password !== confirm_password) {\n        e.preventDefault();\n        alert(\"Passwords don't match!\");\n        return false;\n      }\n    });\n\n    this.state = {\n      email: '',\n      username: '',\n      password: '',\n      confirm_password: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 41\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 42\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 43\n      },\n      __self: this\n    }, \"home.\"), React.createElement(Link, {\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 44\n      },\n      __self: this\n    }, \"login.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel container-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/register\",\n      method: \"post\",\n      onSubmit: this.confirmPasswordMatch,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 50\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 56\n      },\n      __self: this\n    }, \"Email:\"), React.createElement(\"input\", {\n      value: this.state.email,\n      onChange: this.handleChange,\n      type: \"email\",\n      name: \"email\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 57\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 65\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 66\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 67\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 75\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 76\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      type: \"password\",\n      name: \"password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 77\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 85\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 86\n      },\n      __self: this\n    }, \"Verify Password:\"), React.createElement(\"input\", {\n      value: this.state.confirm_password,\n      type: \"password\",\n      name: \"confirm_password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 87\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 95\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Register\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 96\n      },\n      __self: this\n    })))));\n  }\n\n}"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/register.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Register extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      console.log('Target  handlechange');\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    _defineProperty(this, \"confirmPasswordMatch\", e => {\n      console.log('confirmPasswordMatch');\n      let password = this.state.password;\n      let confirm_password = this.state.confirm_password;\n\n      if (password !== confirm_password) {\n        e.preventDefault();\n        alert(\"Passwords don't match!\");\n        return false;\n      }\n    });\n\n    this.state = {\n      email: '',\n      username: '',\n      password: '',\n      confirm_password: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 41\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 42\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 43\n      },\n      __self: this\n    }, \"home.\"), React.createElement(Link, {\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 44\n      },\n      __self: this\n    }, \"login.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel auth-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/register\",\n      method: \"post\",\n      onSubmit: this.confirmPasswordMatch,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 50\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 56\n      },\n      __self: this\n    }, \"Email:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.email,\n      onChange: this.handleChange,\n      type: \"email\",\n      name: \"email\",\n      placeholder: \"Email\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 57\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 67\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 68\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      placeholder: \"Username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 69\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 79\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 80\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.password,\n      type: \"password\",\n      name: \"password\",\n      placeholder: \"Password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 81\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 91\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 92\n      },\n      __self: this\n    }, \"Confirm Password:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.confirm_password,\n      type: \"password\",\n      name: \"confirm_password\",\n      placeholder: \"Confirm Password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 93\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 103\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Register\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 104\n      },\n      __self: this\n    })))));\n  }\n\n}"
         },
         {
           "id": "./src/plugins/loginAuth.js",
@@ -9954,7 +10002,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "91:21-26"
+              "loc": "92:21-26"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9963,7 +10011,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "102:9-14"
+              "loc": "105:9-14"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9972,7 +10020,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "109:7-12"
+              "loc": "112:7-12"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9981,7 +10029,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "115:21-26"
+              "loc": "119:21-26"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9990,7 +10038,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "126:9-14"
+              "loc": "132:9-14"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9999,7 +10047,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "133:7-12"
+              "loc": "139:7-12"
             },
             {
               "moduleId": "./src/pages/pageNotFound.js",
@@ -10152,7 +10200,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "120:9-14"
+              "loc": "122:9-14"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10161,7 +10209,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "127:7-12"
+              "loc": "129:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10170,7 +10218,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "133:21-26"
+              "loc": "135:21-26"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10179,7 +10227,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "144:9-14"
+              "loc": "148:9-14"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10188,7 +10236,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "151:7-12"
+              "loc": "155:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10197,7 +10245,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "157:21-26"
+              "loc": "161:21-26"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10206,7 +10254,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "168:9-14"
+              "loc": "174:9-14"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10215,7 +10263,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "175:7-12"
+              "loc": "181:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10224,7 +10272,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "181:28-33"
+              "loc": "187:29-34"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10233,7 +10281,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "192:9-14"
+              "loc": "200:9-14"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10242,7 +10290,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "199:7-12"
+              "loc": "207:7-12"
             },
             {
               "moduleId": "./src/root.js",
