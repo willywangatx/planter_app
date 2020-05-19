@@ -77,11 +77,6 @@ button {
   /* background: #fdd2b5; */
 }
 
-.timer-label {
-  font-size: 5vw;
-  border-radius: 2.5vw;
-}
-
 .panel-label {
   padding: 0.75vw 2.5vw;
   font-size: 3vw;
@@ -107,7 +102,7 @@ button {
   width: 33vw;
   box-shadow: -10px 10px 23px #99c3b3, 10px -10px 23px #bff3df,
     inset -10px 10px 23px #99c3b3, inset 10px -10px 23px #bff3df;
-  border-radius: 2.5vw;
+  border-radius: 10vw;
   border: 0.5vw solid #acdbc9;
   -webkit-appearance: none;
   outline: none;
@@ -121,6 +116,7 @@ button {
   /* top: 0;
   border: 0; */
   transition: 0.2s;
+  z-index: 5;
 }
 
 .toggle-input:before {
@@ -136,16 +132,26 @@ button {
 
 .toggle-input:checked:before {
   left: 25vw;
-  content: 'F O C U S';
 }
 .toggle-input:checked:after {
-  /* background-color: #55f696; */
-  content: 'B R E A K';
   text-align: center;
 }
 
-.focus-mode,
-.break-mode {
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #7f8084;
+.toggle-label {
+  position: absolute;
+  font-size: 6vw;
+  right: 11vw;
+  z-index: 4;
 }
+
+/* .toggle-label-inset {
+  height: 7vw;
+  width: 18vw;
+  position: absolute;
+  top: 0.8vw;
+  left: 9.1vw;
+  z-index: 3;
+  border-radius: 10vw;
+  background: #acdbc9;
+  box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd;
+} */

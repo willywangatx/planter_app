@@ -12,7 +12,6 @@ const Timer = ({ timer, cycle }) => {
 
   return (
     <React.Fragment>
-      <p className="inset timer-label">{cycle ? 'F o c u s' : 'B r e a k'}</p>
       <p className="inset timer-clock">{formattedTimeLeft}</p>
     </React.Fragment>
   );

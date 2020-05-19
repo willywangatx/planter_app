@@ -2,76 +2,34 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "0e528e5e932c73684ed0",
+  "hash": "ca551dcd668e29da1e53",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "0e528e5e932c73684ed0",
-      "time": 275,
-      "builtAt": 1589856046610,
+      "hash": "ca551dcd668e29da1e53",
+      "time": 213,
+      "builtAt": 1589858589481,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.58313709b8cbc0bfe3ca.hot-update.js",
-          "server-main.js.map",
-          "main.58313709b8cbc0bfe3ca.hot-update.js.map"
+          "server-main.js.map"
         ]
       },
       "assets": [
         {
-          "name": "../client/e11ddbe017ca00de585d3845a7da396c.css",
-          "size": 2937,
+          "name": "../client/392f9aa545068f4e564ee8653d4afdaf.css",
+          "size": 3041,
           "chunks": [],
           "chunkNames": [],
           "info": {},
-          "emitted": false
-        },
-        {
-          "name": "58313709b8cbc0bfe3ca.hot-update.json",
-          "size": 46,
-          "chunks": [],
-          "chunkNames": [],
-          "info": {
-            "hotModuleReplacement": true,
-            "immutable": true
-          },
-          "emitted": true
-        },
-        {
-          "name": "main.58313709b8cbc0bfe3ca.hot-update.js",
-          "size": 2193,
-          "chunks": [
-            "main"
-          ],
-          "chunkNames": [
-            "main"
-          ],
-          "info": {
-            "hotModuleReplacement": true,
-            "immutable": true
-          },
-          "emitted": true
-        },
-        {
-          "name": "main.58313709b8cbc0bfe3ca.hot-update.js.map",
-          "size": 859,
-          "chunks": [
-            "main"
-          ],
-          "chunkNames": [
-            "main"
-          ],
-          "info": {
-            "development": true
-          },
           "emitted": true
         },
         {
           "name": "server-main.js",
-          "size": 123840,
+          "size": 123625,
           "chunks": [
             "main"
           ],
@@ -83,7 +41,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 85719,
+          "size": 85667,
           "chunks": [
             "main"
           ],
@@ -104,9 +62,7 @@
           ],
           "assets": [
             "server-main.js",
-            "main.58313709b8cbc0bfe3ca.hot-update.js",
-            "server-main.js.map",
-            "main.58313709b8cbc0bfe3ca.hot-update.js.map"
+            "server-main.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +75,7 @@
           ],
           "assets": [
             "server-main.js",
-            "main.58313709b8cbc0bfe3ca.hot-update.js",
-            "server-main.js.map",
-            "main.58313709b8cbc0bfe3ca.hot-update.js.map"
+            "server-main.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -130,20 +84,18 @@
       "chunks": [
         {
           "id": "main",
-          "rendered": true,
+          "rendered": false,
           "initial": true,
           "entry": true,
-          "size": 48386,
+          "size": 48215,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.58313709b8cbc0bfe3ca.hot-update.js",
-            "server-main.js.map",
-            "main.58313709b8cbc0bfe3ca.hot-update.js.map"
+            "server-main.js.map"
           ],
-          "hash": "cabf3440e72823b56874",
+          "hash": "947c8ebd1e69d7213506",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -379,7 +331,7 @@
               "index2": 44,
               "size": 82,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -414,7 +366,7 @@
               "errors": 0,
               "warnings": 0,
               "assets": [
-                "../client/e11ddbe017ca00de585d3845a7da396c.css"
+                "../client/392f9aa545068f4e564ee8653d4afdaf.css"
               ],
               "reasons": [
                 {
@@ -430,7 +382,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 4,
-              "source": "module.exports = __webpack_public_path__ + \"e11ddbe017ca00de585d3845a7da396c.css\";"
+              "source": "module.exports = __webpack_public_path__ + \"392f9aa545068f4e564ee8653d4afdaf.css\";"
             },
             {
               "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -1764,7 +1716,7 @@
               "name": "./src/components/PomodoroClock/Timer.js",
               "index": 37,
               "index2": 34,
-              "size": 982,
+              "size": 787,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1836,7 +1788,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nimport ToggleSwitch from './ToggleSwitch';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, cycle ? 'F o c u s' : 'B r e a k'), React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nimport ToggleSwitch from './ToggleSwitch';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
             },
             {
               "id": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -1844,9 +1796,9 @@
               "name": "./src/components/PomodoroClock/ToggleSwitch.js",
               "index": 40,
               "index2": 33,
-              "size": 835,
+              "size": 859,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -1925,7 +1877,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = ({\n  toggleCycle,\n  cycle\n}) => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"toggle-input\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, ' ', cycle ? 'Focus' : 'Break'), React.createElement(\"p\", {\n    className: cycle ? 'focus-mode' : 'break-mode',\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'));\n};\n\nexport default ToggleSwitch;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = ({\n  toggleCycle,\n  cycle\n}) => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    className: \"toggle-label toggle-label-inset\",\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'));\n};\n\nexport default ToggleSwitch;"
             },
             {
               "id": "./src/constants/paths.js",
@@ -4548,15 +4500,6 @@
                   "loc": "21:5-10"
                 },
                 {
-                  "moduleId": "./src/components/PomodoroClock/Timer.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-                  "module": "./src/components/PomodoroClock/Timer.js",
-                  "moduleName": "./src/components/PomodoroClock/Timer.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "28:41-46"
-                },
-                {
                   "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js",
                   "module": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -4590,7 +4533,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "24:38-43"
+                  "loc": "25:6-11"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -5458,7 +5401,7 @@
           "index2": 44,
           "size": 82,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -5493,7 +5436,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "../client/e11ddbe017ca00de585d3845a7da396c.css"
+            "../client/392f9aa545068f4e564ee8653d4afdaf.css"
           ],
           "reasons": [
             {
@@ -5509,7 +5452,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
-          "source": "module.exports = __webpack_public_path__ + \"e11ddbe017ca00de585d3845a7da396c.css\";"
+          "source": "module.exports = __webpack_public_path__ + \"392f9aa545068f4e564ee8653d4afdaf.css\";"
         },
         {
           "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -6843,7 +6786,7 @@
           "name": "./src/components/PomodoroClock/Timer.js",
           "index": 37,
           "index2": 34,
-          "size": 982,
+          "size": 787,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -6915,7 +6858,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nimport ToggleSwitch from './ToggleSwitch';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, cycle ? 'F o c u s' : 'B r e a k'), React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js\";\nimport React from 'react';\nimport moment from 'moment';\nimport momentDurationFormatSetup from 'moment-duration-format';\nimport ToggleSwitch from './ToggleSwitch';\nmomentDurationFormatSetup(moment);\n\nconst Timer = ({\n  timer,\n  cycle\n}) => {\n  const formattedTimeLeft = moment.duration(timer, 's').format('mm:ss', {\n    trim: false\n  });\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset timer-clock\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, formattedTimeLeft));\n};\n\nexport default Timer;"
         },
         {
           "id": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -6923,9 +6866,9 @@
           "name": "./src/components/PomodoroClock/ToggleSwitch.js",
           "index": 40,
           "index2": 33,
-          "size": 835,
+          "size": 859,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -7004,7 +6947,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = ({\n  toggleCycle,\n  cycle\n}) => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"toggle-input\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }, ' ', cycle ? 'Focus' : 'Break'), React.createElement(\"p\", {\n    className: cycle ? 'focus-mode' : 'break-mode',\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'));\n};\n\nexport default ToggleSwitch;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React from 'react';\n\nconst ToggleSwitch = ({\n  toggleCycle,\n  cycle\n}) => {\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    className: \"toggle-label toggle-label-inset\",\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, cycle ? 'Focus' : 'Break'));\n};\n\nexport default ToggleSwitch;"
         },
         {
           "id": "./src/constants/paths.js",
@@ -9627,15 +9570,6 @@
               "loc": "21:5-10"
             },
             {
-              "moduleId": "./src/components/PomodoroClock/Timer.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/Timer.js",
-              "module": "./src/components/PomodoroClock/Timer.js",
-              "moduleName": "./src/components/PomodoroClock/Timer.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "28:41-46"
-            },
-            {
               "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/ToggleSwitch.js",
               "module": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -9669,7 +9603,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "24:38-43"
+              "loc": "25:6-11"
             },
             {
               "moduleId": "./src/pages/home.js",
