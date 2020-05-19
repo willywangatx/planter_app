@@ -2,76 +2,34 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "76be070f7a00bf762f42",
+  "hash": "cc0fc84f2b86ed2a67c9",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "76be070f7a00bf762f42",
-      "time": 249,
-      "builtAt": 1589870179405,
+      "hash": "cc0fc84f2b86ed2a67c9",
+      "time": 210,
+      "builtAt": 1589922021687,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.1e32006c43c2deb8f3f2.hot-update.js",
-          "server-main.js.map",
-          "main.1e32006c43c2deb8f3f2.hot-update.js.map"
+          "server-main.js.map"
         ]
       },
       "assets": [
         {
-          "name": "../client/121ae2c8d97c57582a448f44deb2667f.css",
-          "size": 3671,
+          "name": "../client/fc41afc05f2865d33ecade9164f46263.css",
+          "size": 3869,
           "chunks": [],
           "chunkNames": [],
           "info": {},
           "emitted": false
         },
         {
-          "name": "1e32006c43c2deb8f3f2.hot-update.json",
-          "size": 46,
-          "chunks": [],
-          "chunkNames": [],
-          "info": {
-            "hotModuleReplacement": true,
-            "immutable": true
-          },
-          "emitted": true
-        },
-        {
-          "name": "main.1e32006c43c2deb8f3f2.hot-update.js",
-          "size": 5487,
-          "chunks": [
-            "main"
-          ],
-          "chunkNames": [
-            "main"
-          ],
-          "info": {
-            "hotModuleReplacement": true,
-            "immutable": true
-          },
-          "emitted": true
-        },
-        {
-          "name": "main.1e32006c43c2deb8f3f2.hot-update.js.map",
-          "size": 2392,
-          "chunks": [
-            "main"
-          ],
-          "chunkNames": [
-            "main"
-          ],
-          "info": {
-            "development": true
-          },
-          "emitted": true
-        },
-        {
           "name": "server-main.js",
-          "size": 123909,
+          "size": 125577,
           "chunks": [
             "main"
           ],
@@ -83,7 +41,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 85885,
+          "size": 86775,
           "chunks": [
             "main"
           ],
@@ -104,9 +62,7 @@
           ],
           "assets": [
             "server-main.js",
-            "main.1e32006c43c2deb8f3f2.hot-update.js",
-            "server-main.js.map",
-            "main.1e32006c43c2deb8f3f2.hot-update.js.map"
+            "server-main.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +75,7 @@
           ],
           "assets": [
             "server-main.js",
-            "main.1e32006c43c2deb8f3f2.hot-update.js",
-            "server-main.js.map",
-            "main.1e32006c43c2deb8f3f2.hot-update.js.map"
+            "server-main.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -130,20 +84,18 @@
       "chunks": [
         {
           "id": "main",
-          "rendered": true,
+          "rendered": false,
           "initial": true,
           "entry": true,
-          "size": 48532,
+          "size": 49663,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.1e32006c43c2deb8f3f2.hot-update.js",
-            "server-main.js.map",
-            "main.1e32006c43c2deb8f3f2.hot-update.js.map"
+            "server-main.js.map"
           ],
-          "hash": "376514940b93f0a24e07",
+          "hash": "04d143a0cf007f334b93",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -414,7 +366,7 @@
               "errors": 0,
               "warnings": 0,
               "assets": [
-                "../client/121ae2c8d97c57582a448f44deb2667f.css"
+                "../client/fc41afc05f2865d33ecade9164f46263.css"
               ],
               "reasons": [
                 {
@@ -430,7 +382,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 4,
-              "source": "module.exports = __webpack_public_path__ + \"121ae2c8d97c57582a448f44deb2667f.css\";"
+              "source": "module.exports = __webpack_public_path__ + \"fc41afc05f2865d33ecade9164f46263.css\";"
             },
             {
               "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -1433,7 +1385,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "./AdjustTime",
-                  "loc": "215:25-35"
+                  "loc": "214:25-35"
                 }
               ],
               "providedExports": [
@@ -1513,7 +1465,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "./CycleCounter",
-                  "loc": "169:26-38"
+                  "loc": "168:26-38"
                 }
               ],
               "providedExports": [
@@ -1529,7 +1481,7 @@
               "name": "./src/components/PomodoroClock/PomodoroApp.js",
               "index": 36,
               "index2": 39,
-              "size": 5237,
+              "size": 5226,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1588,7 +1540,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../components/PomodoroClock/PomodoroApp.js",
-                  "loc": "35:41-54"
+                  "loc": "36:40-53"
                 }
               ],
               "providedExports": [
@@ -1596,7 +1548,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset'; // import Cycle from './Cycle';\n\nimport CycleCounter from './CycleCounter';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<ToggleSwitch - for changing focus mode />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  // //logic to prevent setting focus time to 0 in adjust time\n\n\n  useEffect(() => {\n    if (timer === 0) {\n      clearInterval(timerId);\n      setIsStarted(!isStarted);\n      setCycle(!cycle);\n    }\n  }, [timer]);\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          } //TODO: count does not update on successive focusSessions\n\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 100);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      if (focusTime !== timer) {\n        if (focusTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (focusTime < timer) {\n          setTimer(timer - 60);\n        }\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime !== timer) {\n        if (breakTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (breakTime < timer) {\n          if (timer >= 60) {\n            setTimer(timer - 60);\n          }\n\n          if (timer <= 60) {\n            setTimer(0);\n          }\n        }\n      }\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `Focus Time: ${focusTime / 60} min.` : `Break Time: ${breakTime / 60} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 60) {\n        setBreakTime(60);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 142\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 143\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 144\n    },\n    __self: this\n  }), React.createElement(CycleCounter, {\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 145\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 148\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    toggleCycle: toggleCycle,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 149\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 150\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 151\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 157\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 158\n    },\n    __self: this\n  })));\n};\n\nexport default PomodoroClock;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset'; // import Cycle from './Cycle';\n\nimport CycleCounter from './CycleCounter';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<ToggleSwitch - for changing focus mode />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  // //logic to prevent setting focus time to 0 in adjust time\n\n\n  useEffect(() => {\n    if (timer === 0) {\n      clearInterval(timerId);\n      setIsStarted(!isStarted); // to stop timer from changing automatically\n      // setCycle(!cycle);\n    }\n  }, [timer]);\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          }\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 100);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      if (focusTime !== timer) {\n        if (focusTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (focusTime < timer) {\n          setTimer(timer - 60);\n        }\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime !== timer) {\n        if (breakTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (breakTime < timer) {\n          if (timer >= 60) {\n            setTimer(timer - 60);\n          }\n\n          if (timer <= 60) {\n            setTimer(0);\n          }\n        }\n      }\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `Focus Time: ${focusTime / 60} min.` : `Break Time: ${breakTime / 60} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 60) {\n        setBreakTime(60);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 142\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 143\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 144\n    },\n    __self: this\n  }), React.createElement(CycleCounter, {\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 145\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 148\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    toggleCycle: toggleCycle,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 149\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 150\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 151\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 157\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 158\n    },\n    __self: this\n  })));\n};\n\nexport default PomodoroClock;"
             },
             {
               "id": "./src/components/PomodoroClock/Reset.js",
@@ -1668,7 +1620,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "./Reset",
-                  "loc": "162:25-30"
+                  "loc": "161:25-30"
                 }
               ],
               "providedExports": [
@@ -1684,7 +1636,7 @@
               "name": "./src/components/PomodoroClock/StartStop.js",
               "index": 41,
               "index2": 35,
-              "size": 785,
+              "size": 800,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1748,7 +1700,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "./StartStop",
-                  "loc": "199:26-35"
+                  "loc": "198:26-35"
                 }
               ],
               "providedExports": [
@@ -1756,7 +1708,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/StartStop.js\";\nimport React, { useState } from 'react';\n\nconst StartStop = ({\n  isStarted,\n  startStopClick\n}) => {\n  const [click, setClick] = useState(false);\n\n  const btnClick = () => {\n    setClick(!click);\n  };\n\n  const combinedClickEvents = () => {\n    startStopClick();\n    btnClick();\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn\",\n    onClick: combinedClickEvents,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nexport default StartStop;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/StartStop.js\";\nimport React, { useState } from 'react';\n\nconst StartStop = ({\n  isStarted,\n  startStopClick\n}) => {\n  const [click, setClick] = useState(false);\n\n  const btnClick = () => {\n    setClick(!click);\n  };\n\n  const combinedClickEvents = () => {\n    startStopClick();\n    btnClick();\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn start-stop-btn\",\n    onClick: combinedClickEvents,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nexport default StartStop;"
             },
             {
               "id": "./src/components/PomodoroClock/Timer.js",
@@ -1828,7 +1780,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "./Timer",
-                  "loc": "191:26-31"
+                  "loc": "190:26-31"
                 }
               ],
               "providedExports": [
@@ -1908,7 +1860,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "./ToggleSwitch",
-                  "loc": "183:25-37"
+                  "loc": "182:25-37"
                 }
               ],
               "providedExports": [
@@ -1978,7 +1930,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "15:8-13"
+                  "loc": "16:8-13"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -1987,7 +1939,16 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "29:8-13"
+                  "loc": "23:8-13"
+                },
+                {
+                  "moduleId": "./src/pages/home.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+                  "module": "./src/pages/home.js",
+                  "moduleName": "./src/pages/home.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../constants/paths",
+                  "loc": "30:8-13"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -2005,7 +1966,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "107:10-15"
+                  "loc": "42:10-15"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -2014,7 +1975,16 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "114:10-15"
+                  "loc": "50:10-15"
+                },
+                {
+                  "moduleId": "./src/pages/login.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
+                  "module": "./src/pages/login.js",
+                  "moduleName": "./src/pages/login.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../constants/paths",
+                  "loc": "57:10-15"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -2032,7 +2002,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "173:10-15"
+                  "loc": "59:10-15"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -2041,7 +2011,16 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "180:10-15"
+                  "loc": "66:10-15"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../constants/paths",
+                  "loc": "74:10-15"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -2162,9 +2141,9 @@
               "name": "./src/pages/home.js",
               "index": 35,
               "index2": 40,
-              "size": 1115,
+              "size": 1158,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2224,7 +2203,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { Component } from 'react';\nimport { Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\n\nconst Home = () => {\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"login.\"), React.createElement(\"div\", {\n    className: \"nav-link\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, \"register.\"))), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { Component } from 'react';\nimport { Link, NavLink } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\n\nconst Home = () => {\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"home.\"), React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, \"register.\")), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
             },
             {
               "id": "./src/pages/login.js",
@@ -2232,9 +2211,9 @@
               "name": "./src/pages/login.js",
               "index": 45,
               "index2": 41,
-              "size": 3152,
+              "size": 3691,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2294,7 +2273,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/login.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Login extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    this.state = {\n      username: '',\n      password: ''\n    };\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/login\",\n      method: \"post\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 26\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 27\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 28\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 36\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 37\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      onChange: this.handleChange,\n      type: \"password\",\n      name: \"password\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 38\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 46\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Login\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 47\n      },\n      __self: this\n    }))), React.createElement(Link, {\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 50\n      },\n      __self: this\n    }, \"register.\"), React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 51\n      },\n      __self: this\n    }, \"home.\"));\n  }\n\n}"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/login.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Login extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    this.state = {\n      username: '',\n      password: ''\n    };\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 26\n      },\n      __self: this\n    }, \"home.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 27\n      },\n      __self: this\n    }, \"login.\"), React.createElement(Link, {\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 30\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel container-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 32\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/login\",\n      method: \"post\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 33\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 34\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 35\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 36\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 44\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      onChange: this.handleChange,\n      type: \"password\",\n      name: \"password\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 46\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 54\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Login\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    })))));\n  }\n\n}"
             },
             {
               "id": "./src/pages/pageNotFound.js",
@@ -2372,7 +2351,7 @@
               "name": "./src/pages/register.js",
               "index": 46,
               "index2": 42,
-              "size": 4978,
+              "size": 5523,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2434,7 +2413,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/register.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Register extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      console.log('Target  handlechange');\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    _defineProperty(this, \"confirmPasswordMatch\", e => {\n      console.log('confirmPasswordMatch');\n      let password = this.state.password;\n      let confirm_password = this.state.confirm_password;\n\n      if (password !== confirm_password) {\n        e.preventDefault();\n        alert(\"Passwords don't match!\");\n        return false;\n      }\n    });\n\n    this.state = {\n      email: '',\n      username: '',\n      password: '',\n      confirm_password: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 41\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/register\",\n      method: \"post\",\n      onSubmit: this.confirmPasswordMatch,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 42\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 47\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 48\n      },\n      __self: this\n    }, \"Email:\"), React.createElement(\"input\", {\n      value: this.state.email,\n      onChange: this.handleChange,\n      type: \"email\",\n      name: \"email\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 57\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 58\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 59\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 67\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 68\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      type: \"password\",\n      name: \"password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 69\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 77\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 78\n      },\n      __self: this\n    }, \"Verify Password:\"), React.createElement(\"input\", {\n      value: this.state.confirm_password,\n      type: \"password\",\n      name: \"confirm_password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 79\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 87\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Register\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 88\n      },\n      __self: this\n    }))), React.createElement(Link, {\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 91\n      },\n      __self: this\n    }, \"login.\"), React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 92\n      },\n      __self: this\n    }, \"home.\"));\n  }\n\n}"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/register.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Register extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      console.log('Target  handlechange');\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    _defineProperty(this, \"confirmPasswordMatch\", e => {\n      console.log('confirmPasswordMatch');\n      let password = this.state.password;\n      let confirm_password = this.state.confirm_password;\n\n      if (password !== confirm_password) {\n        e.preventDefault();\n        alert(\"Passwords don't match!\");\n        return false;\n      }\n    });\n\n    this.state = {\n      email: '',\n      username: '',\n      password: '',\n      confirm_password: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 41\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 42\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 43\n      },\n      __self: this\n    }, \"home.\"), React.createElement(Link, {\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 44\n      },\n      __self: this\n    }, \"login.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel container-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/register\",\n      method: \"post\",\n      onSubmit: this.confirmPasswordMatch,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 50\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 56\n      },\n      __self: this\n    }, \"Email:\"), React.createElement(\"input\", {\n      value: this.state.email,\n      onChange: this.handleChange,\n      type: \"email\",\n      name: \"email\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 57\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 65\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 66\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 67\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 75\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 76\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      type: \"password\",\n      name: \"password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 77\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 85\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 86\n      },\n      __self: this\n    }, \"Verify Password:\"), React.createElement(\"input\", {\n      value: this.state.confirm_password,\n      type: \"password\",\n      name: \"confirm_password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 87\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 95\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Register\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 96\n      },\n      __self: this\n    })))));\n  }\n\n}"
             },
             {
               "id": "./src/plugins/loginAuth.js",
@@ -3257,7 +3236,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "3:0-50"
+                  "loc": "3:0-59"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -3266,7 +3245,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "14:25-29"
+                  "loc": "14:25-32"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -3275,7 +3254,16 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "28:25-29"
+                  "loc": "22:35-39"
+                },
+                {
+                  "moduleId": "./src/pages/home.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+                  "module": "./src/pages/home.js",
+                  "moduleName": "./src/pages/home.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-react-router",
+                  "loc": "29:36-40"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -3284,7 +3272,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "6:0-50"
+                  "loc": "6:0-59"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -3293,7 +3281,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "106:30-34"
+                  "loc": "41:27-31"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -3302,7 +3290,16 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "113:41-45"
+                  "loc": "48:37-44"
+                },
+                {
+                  "moduleId": "./src/pages/login.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
+                  "module": "./src/pages/login.js",
+                  "moduleName": "./src/pages/login.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-react-router",
+                  "loc": "56:38-42"
                 },
                 {
                   "moduleId": "./src/pages/pageNotFound.js",
@@ -3329,7 +3326,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "6:0-50"
+                  "loc": "6:0-59"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -3338,7 +3335,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "172:30-34"
+                  "loc": "58:27-31"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -3347,7 +3344,16 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "179:38-42"
+                  "loc": "65:37-41"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-react-router",
+                  "loc": "72:38-45"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -4329,7 +4335,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "83:2-11"
+                  "loc": "82:2-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4338,7 +4344,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "148:9-14"
+                  "loc": "147:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4347,7 +4353,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "155:5-10"
+                  "loc": "154:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4356,7 +4362,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "162:5-10"
+                  "loc": "161:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4365,7 +4371,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "169:6-11"
+                  "loc": "168:6-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4374,7 +4380,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "176:7-12"
+                  "loc": "175:7-12"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4383,7 +4389,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "183:5-10"
+                  "loc": "182:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4392,7 +4398,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "191:6-11"
+                  "loc": "190:6-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4401,7 +4407,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "199:6-11"
+                  "loc": "198:6-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4410,7 +4416,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "208:7-12"
+                  "loc": "207:7-12"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -4419,7 +4425,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "215:5-10"
+                  "loc": "214:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -4626,7 +4632,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "21:16-21"
+                  "loc": "22:15-20"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -4635,7 +4641,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "28:5-10"
+                  "loc": "29:16-21"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -4644,7 +4650,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "35:21-26"
+                  "loc": "36:20-25"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4698,7 +4704,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "43:7-12"
+                  "loc": "41:7-12"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4707,7 +4713,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "50:7-12"
+                  "loc": "48:17-22"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4716,7 +4722,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "56:21-26"
+                  "loc": "56:18-23"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4725,7 +4731,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "67:9-14"
+                  "loc": "63:22-27"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4734,7 +4740,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "74:7-12"
+                  "loc": "70:7-12"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4743,7 +4749,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "80:21-26"
+                  "loc": "78:7-12"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4752,7 +4758,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "91:9-14"
+                  "loc": "85:7-12"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4761,7 +4767,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "98:7-12"
+                  "loc": "91:21-26"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4770,7 +4776,7 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "106:10-15"
+                  "loc": "102:9-14"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -4779,7 +4785,34 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "113:21-26"
+                  "loc": "109:7-12"
+                },
+                {
+                  "moduleId": "./src/pages/login.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
+                  "module": "./src/pages/login.js",
+                  "moduleName": "./src/pages/login.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "115:21-26"
+                },
+                {
+                  "moduleId": "./src/pages/login.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
+                  "module": "./src/pages/login.js",
+                  "moduleName": "./src/pages/login.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "126:9-14"
+                },
+                {
+                  "moduleId": "./src/pages/login.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
+                  "module": "./src/pages/login.js",
+                  "moduleName": "./src/pages/login.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "133:7-12"
                 },
                 {
                   "moduleId": "./src/pages/pageNotFound.js",
@@ -4860,7 +4893,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "61:7-12"
+                  "loc": "58:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4869,7 +4902,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "68:7-12"
+                  "loc": "65:17-22"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4878,7 +4911,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "74:18-23"
+                  "loc": "72:18-23"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4887,7 +4920,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "85:9-14"
+                  "loc": "80:22-27"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4896,7 +4929,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "92:7-12"
+                  "loc": "87:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4905,7 +4938,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "98:21-26"
+                  "loc": "96:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4914,7 +4947,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "109:9-14"
+                  "loc": "103:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4923,7 +4956,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "116:7-12"
+                  "loc": "109:18-23"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4932,7 +4965,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "122:21-26"
+                  "loc": "120:9-14"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4941,7 +4974,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "133:9-14"
+                  "loc": "127:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4950,7 +4983,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "140:7-12"
+                  "loc": "133:21-26"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4959,7 +4992,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "146:28-33"
+                  "loc": "144:9-14"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4968,7 +5001,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "157:9-14"
+                  "loc": "151:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4977,7 +5010,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "164:7-12"
+                  "loc": "157:21-26"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4986,7 +5019,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "172:10-15"
+                  "loc": "168:9-14"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -4995,7 +5028,34 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "179:18-23"
+                  "loc": "175:7-12"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "181:28-33"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "192:9-14"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "199:7-12"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -5493,7 +5553,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "../client/121ae2c8d97c57582a448f44deb2667f.css"
+            "../client/fc41afc05f2865d33ecade9164f46263.css"
           ],
           "reasons": [
             {
@@ -5509,7 +5569,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
-          "source": "module.exports = __webpack_public_path__ + \"121ae2c8d97c57582a448f44deb2667f.css\";"
+          "source": "module.exports = __webpack_public_path__ + \"fc41afc05f2865d33ecade9164f46263.css\";"
         },
         {
           "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -6512,7 +6572,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "./AdjustTime",
-              "loc": "215:25-35"
+              "loc": "214:25-35"
             }
           ],
           "providedExports": [
@@ -6592,7 +6652,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "./CycleCounter",
-              "loc": "169:26-38"
+              "loc": "168:26-38"
             }
           ],
           "providedExports": [
@@ -6608,7 +6668,7 @@
           "name": "./src/components/PomodoroClock/PomodoroApp.js",
           "index": 36,
           "index2": 39,
-          "size": 5237,
+          "size": 5226,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -6667,7 +6727,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../components/PomodoroClock/PomodoroApp.js",
-              "loc": "35:41-54"
+              "loc": "36:40-53"
             }
           ],
           "providedExports": [
@@ -6675,7 +6735,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset'; // import Cycle from './Cycle';\n\nimport CycleCounter from './CycleCounter';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<ToggleSwitch - for changing focus mode />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  // //logic to prevent setting focus time to 0 in adjust time\n\n\n  useEffect(() => {\n    if (timer === 0) {\n      clearInterval(timerId);\n      setIsStarted(!isStarted);\n      setCycle(!cycle);\n    }\n  }, [timer]);\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          } //TODO: count does not update on successive focusSessions\n\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 100);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      if (focusTime !== timer) {\n        if (focusTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (focusTime < timer) {\n          setTimer(timer - 60);\n        }\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime !== timer) {\n        if (breakTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (breakTime < timer) {\n          if (timer >= 60) {\n            setTimer(timer - 60);\n          }\n\n          if (timer <= 60) {\n            setTimer(0);\n          }\n        }\n      }\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `Focus Time: ${focusTime / 60} min.` : `Break Time: ${breakTime / 60} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 60) {\n        setBreakTime(60);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 142\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 143\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 144\n    },\n    __self: this\n  }), React.createElement(CycleCounter, {\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 145\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 148\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    toggleCycle: toggleCycle,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 149\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 150\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 151\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 157\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 158\n    },\n    __self: this\n  })));\n};\n\nexport default PomodoroClock;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/PomodoroApp.js\";\nimport React, { useState, useEffect } from 'react';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset'; // import Cycle from './Cycle';\n\nimport CycleCounter from './CycleCounter';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = () => {\n  const [focusTime, setFocusTime] = useState(60 * 25);\n  const [breakTime, setBreakTime] = useState(60 * 5);\n  const [timer, setTimer] = useState(focusTime);\n  const [cycle, setCycle] = useState(true);\n  const [isStarted, setIsStarted] = useState(false);\n  const [timerId, setTimerId] = useState(null);\n  const [reset, setReset] = useState(false);\n  const [cycleCount, setCycleCount] = useState(0); //<ToggleSwitch - for changing focus mode />\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n  }, [cycle]);\n\n  const toggleCycle = () => {\n    setCycle(!cycle);\n  }; //<Reset />\n\n\n  useEffect(() => {\n    setTimer(cycle ? focusTime : breakTime);\n    setReset(false);\n  }, [reset]);\n\n  const resetTime = () => {\n    setReset(true);\n  }; //<StartStop />\n  //TODO: adding a session counter to app\n  // //logic to prevent setting focus time to 0 in adjust time\n\n\n  useEffect(() => {\n    if (timer === 0) {\n      clearInterval(timerId);\n      setIsStarted(!isStarted); // to stop timer from changing automatically\n      // setCycle(!cycle);\n    }\n  }, [timer]);\n\n  const startStopClick = () => {\n    let updatedTimerId;\n\n    if (isStarted) {\n      clearInterval(timerId);\n      setIsStarted(false);\n    }\n\n    if (!isStarted) {\n      updatedTimerId = setInterval(() => {\n        setTimer(prevTimer => {\n          const newTimer = prevTimer - 1;\n\n          if (newTimer >= 0) {\n            return newTimer;\n          }\n\n          if (cycle) {\n            setCycleCount(cycleCount + 1);\n            console.log(cycleCount);\n          }\n\n          return prevTimer;\n        });\n      }, 100);\n      setTimerId(updatedTimerId);\n      setInterval(timerId);\n      setIsStarted(true);\n    }\n  }; //<AdjustTime />\n\n\n  useEffect(() => {\n    if (cycle) {\n      if (focusTime !== timer) {\n        if (focusTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (focusTime < timer) {\n          setTimer(timer - 60);\n        }\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime !== timer) {\n        if (breakTime > timer) {\n          setTimer(timer + 60);\n        }\n\n        if (breakTime < timer) {\n          if (timer >= 60) {\n            setTimer(timer - 60);\n          }\n\n          if (timer <= 60) {\n            setTimer(0);\n          }\n        }\n      }\n    }\n  }, [focusTime, breakTime]);\n\n  const cycleLength = () => {\n    return cycle ? `Focus Time: ${focusTime / 60} min.` : `Break Time: ${breakTime / 60} min.`;\n  };\n\n  const increaseTimer = () => {\n    if (cycle) {\n      setFocusTime(focusTime + 60);\n    }\n\n    if (!cycle) {\n      setBreakTime(breakTime + 60);\n    }\n  }; //update: set focusTime minimum time to 1 min\n\n\n  const decreaseTimer = () => {\n    if (cycle) {\n      if (focusTime <= 60) {\n        setFocusTime(60);\n      } else {\n        setFocusTime(focusTime - 60);\n      }\n    }\n\n    if (!cycle) {\n      if (breakTime <= 60) {\n        setBreakTime(60);\n      } else {\n        setBreakTime(breakTime - 60);\n      }\n    }\n  };\n\n  return React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 142\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 143\n    },\n    __self: this\n  }, React.createElement(Reset, {\n    resetTime: resetTime,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 144\n    },\n    __self: this\n  }), React.createElement(CycleCounter, {\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 145\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 148\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    toggleCycle: toggleCycle,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 149\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    timer: timer,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 150\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    isStarted: isStarted,\n    startStopClick: startStopClick,\n    cycleCount: cycleCount,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 151\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 157\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    increaseTimer: increaseTimer,\n    decreaseTimer: decreaseTimer,\n    cycleLength: cycleLength,\n    cycle: cycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 158\n    },\n    __self: this\n  })));\n};\n\nexport default PomodoroClock;"
         },
         {
           "id": "./src/components/PomodoroClock/Reset.js",
@@ -6747,7 +6807,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "./Reset",
-              "loc": "162:25-30"
+              "loc": "161:25-30"
             }
           ],
           "providedExports": [
@@ -6763,7 +6823,7 @@
           "name": "./src/components/PomodoroClock/StartStop.js",
           "index": 41,
           "index2": 35,
-          "size": 785,
+          "size": 800,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -6827,7 +6887,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "./StartStop",
-              "loc": "199:26-35"
+              "loc": "198:26-35"
             }
           ],
           "providedExports": [
@@ -6835,7 +6895,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/StartStop.js\";\nimport React, { useState } from 'react';\n\nconst StartStop = ({\n  isStarted,\n  startStopClick\n}) => {\n  const [click, setClick] = useState(false);\n\n  const btnClick = () => {\n    setClick(!click);\n  };\n\n  const combinedClickEvents = () => {\n    startStopClick();\n    btnClick();\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn\",\n    onClick: combinedClickEvents,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nexport default StartStop;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/components/PomodoroClock/StartStop.js\";\nimport React, { useState } from 'react';\n\nconst StartStop = ({\n  isStarted,\n  startStopClick\n}) => {\n  const [click, setClick] = useState(false);\n\n  const btnClick = () => {\n    setClick(!click);\n  };\n\n  const combinedClickEvents = () => {\n    startStopClick();\n    btnClick();\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn start-stop-btn\",\n    onClick: combinedClickEvents,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nexport default StartStop;"
         },
         {
           "id": "./src/components/PomodoroClock/Timer.js",
@@ -6907,7 +6967,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "./Timer",
-              "loc": "191:26-31"
+              "loc": "190:26-31"
             }
           ],
           "providedExports": [
@@ -6987,7 +7047,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "./ToggleSwitch",
-              "loc": "183:25-37"
+              "loc": "182:25-37"
             }
           ],
           "providedExports": [
@@ -7057,7 +7117,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "15:8-13"
+              "loc": "16:8-13"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -7066,7 +7126,16 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "29:8-13"
+              "loc": "23:8-13"
+            },
+            {
+              "moduleId": "./src/pages/home.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+              "module": "./src/pages/home.js",
+              "moduleName": "./src/pages/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "../constants/paths",
+              "loc": "30:8-13"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -7084,7 +7153,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "107:10-15"
+              "loc": "42:10-15"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -7093,7 +7162,16 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "114:10-15"
+              "loc": "50:10-15"
+            },
+            {
+              "moduleId": "./src/pages/login.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
+              "module": "./src/pages/login.js",
+              "moduleName": "./src/pages/login.js",
+              "type": "harmony import specifier",
+              "userRequest": "../constants/paths",
+              "loc": "57:10-15"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -7111,7 +7189,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "173:10-15"
+              "loc": "59:10-15"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -7120,7 +7198,16 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "180:10-15"
+              "loc": "66:10-15"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony import specifier",
+              "userRequest": "../constants/paths",
+              "loc": "74:10-15"
             },
             {
               "moduleId": "./src/root.js",
@@ -7241,9 +7328,9 @@
           "name": "./src/pages/home.js",
           "index": 35,
           "index2": 40,
-          "size": 1115,
+          "size": 1158,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -7303,7 +7390,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { Component } from 'react';\nimport { Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\n\nconst Home = () => {\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"login.\"), React.createElement(\"div\", {\n    className: \"nav-link\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, \"register.\"))), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { Component } from 'react';\nimport { Link, NavLink } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\n\nconst Home = () => {\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"home.\"), React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, \"register.\")), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
         },
         {
           "id": "./src/pages/login.js",
@@ -7311,9 +7398,9 @@
           "name": "./src/pages/login.js",
           "index": 45,
           "index2": 41,
-          "size": 3152,
+          "size": 3691,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -7373,7 +7460,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/login.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Login extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    this.state = {\n      username: '',\n      password: ''\n    };\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/login\",\n      method: \"post\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 26\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 27\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 28\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 36\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 37\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      onChange: this.handleChange,\n      type: \"password\",\n      name: \"password\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 38\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 46\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Login\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 47\n      },\n      __self: this\n    }))), React.createElement(Link, {\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 50\n      },\n      __self: this\n    }, \"register.\"), React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 51\n      },\n      __self: this\n    }, \"home.\"));\n  }\n\n}"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/login.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Login extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    this.state = {\n      username: '',\n      password: ''\n    };\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 26\n      },\n      __self: this\n    }, \"home.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 27\n      },\n      __self: this\n    }, \"login.\"), React.createElement(Link, {\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 30\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel container-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 32\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/login\",\n      method: \"post\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 33\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 34\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 35\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 36\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 44\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      onChange: this.handleChange,\n      type: \"password\",\n      name: \"password\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 46\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 54\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Login\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    })))));\n  }\n\n}"
         },
         {
           "id": "./src/pages/pageNotFound.js",
@@ -7451,7 +7538,7 @@
           "name": "./src/pages/register.js",
           "index": 46,
           "index2": 42,
-          "size": 4978,
+          "size": 5523,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -7513,7 +7600,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/register.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Register extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      console.log('Target  handlechange');\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    _defineProperty(this, \"confirmPasswordMatch\", e => {\n      console.log('confirmPasswordMatch');\n      let password = this.state.password;\n      let confirm_password = this.state.confirm_password;\n\n      if (password !== confirm_password) {\n        e.preventDefault();\n        alert(\"Passwords don't match!\");\n        return false;\n      }\n    });\n\n    this.state = {\n      email: '',\n      username: '',\n      password: '',\n      confirm_password: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 41\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/register\",\n      method: \"post\",\n      onSubmit: this.confirmPasswordMatch,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 42\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 47\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 48\n      },\n      __self: this\n    }, \"Email:\"), React.createElement(\"input\", {\n      value: this.state.email,\n      onChange: this.handleChange,\n      type: \"email\",\n      name: \"email\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 57\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 58\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 59\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 67\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 68\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      type: \"password\",\n      name: \"password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 69\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 77\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 78\n      },\n      __self: this\n    }, \"Verify Password:\"), React.createElement(\"input\", {\n      value: this.state.confirm_password,\n      type: \"password\",\n      name: \"confirm_password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 79\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 87\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Register\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 88\n      },\n      __self: this\n    }))), React.createElement(Link, {\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 91\n      },\n      __self: this\n    }, \"login.\"), React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 92\n      },\n      __self: this\n    }, \"home.\"));\n  }\n\n}"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/register.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nexport default class Register extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      console.log('Target  handlechange');\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    _defineProperty(this, \"confirmPasswordMatch\", e => {\n      console.log('confirmPasswordMatch');\n      let password = this.state.password;\n      let confirm_password = this.state.confirm_password;\n\n      if (password !== confirm_password) {\n        e.preventDefault();\n        alert(\"Passwords don't match!\");\n        return false;\n      }\n    });\n\n    this.state = {\n      email: '',\n      username: '',\n      password: '',\n      confirm_password: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n  } //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 41\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 42\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 43\n      },\n      __self: this\n    }, \"home.\"), React.createElement(Link, {\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 44\n      },\n      __self: this\n    }, \"login.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel container-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/register\",\n      method: \"post\",\n      onSubmit: this.confirmPasswordMatch,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 50\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 56\n      },\n      __self: this\n    }, \"Email:\"), React.createElement(\"input\", {\n      value: this.state.email,\n      onChange: this.handleChange,\n      type: \"email\",\n      name: \"email\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 57\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 65\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 66\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 67\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 75\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 76\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      value: this.state.password,\n      type: \"password\",\n      name: \"password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 77\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 85\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 86\n      },\n      __self: this\n    }, \"Verify Password:\"), React.createElement(\"input\", {\n      value: this.state.confirm_password,\n      type: \"password\",\n      name: \"confirm_password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 87\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 95\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Register\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 96\n      },\n      __self: this\n    })))));\n  }\n\n}"
         },
         {
           "id": "./src/plugins/loginAuth.js",
@@ -8336,7 +8423,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony side effect evaluation",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "3:0-50"
+              "loc": "3:0-59"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -8345,7 +8432,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "14:25-29"
+              "loc": "14:25-32"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -8354,7 +8441,16 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "28:25-29"
+              "loc": "22:35-39"
+            },
+            {
+              "moduleId": "./src/pages/home.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+              "module": "./src/pages/home.js",
+              "moduleName": "./src/pages/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-react-router",
+              "loc": "29:36-40"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -8363,7 +8459,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony side effect evaluation",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "6:0-50"
+              "loc": "6:0-59"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -8372,7 +8468,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "106:30-34"
+              "loc": "41:27-31"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -8381,7 +8477,16 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "113:41-45"
+              "loc": "48:37-44"
+            },
+            {
+              "moduleId": "./src/pages/login.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
+              "module": "./src/pages/login.js",
+              "moduleName": "./src/pages/login.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-react-router",
+              "loc": "56:38-42"
             },
             {
               "moduleId": "./src/pages/pageNotFound.js",
@@ -8408,7 +8513,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony side effect evaluation",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "6:0-50"
+              "loc": "6:0-59"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -8417,7 +8522,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "172:30-34"
+              "loc": "58:27-31"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -8426,7 +8531,16 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "179:38-42"
+              "loc": "65:37-41"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-react-router",
+              "loc": "72:38-45"
             },
             {
               "moduleId": "./src/root.js",
@@ -9408,7 +9522,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "83:2-11"
+              "loc": "82:2-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9417,7 +9531,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "148:9-14"
+              "loc": "147:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9426,7 +9540,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "155:5-10"
+              "loc": "154:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9435,7 +9549,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "162:5-10"
+              "loc": "161:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9444,7 +9558,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "169:6-11"
+              "loc": "168:6-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9453,7 +9567,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "176:7-12"
+              "loc": "175:7-12"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9462,7 +9576,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "183:5-10"
+              "loc": "182:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9471,7 +9585,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "191:6-11"
+              "loc": "190:6-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9480,7 +9594,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "199:6-11"
+              "loc": "198:6-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9489,7 +9603,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "208:7-12"
+              "loc": "207:7-12"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroApp.js",
@@ -9498,7 +9612,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroApp.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "215:5-10"
+              "loc": "214:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -9705,7 +9819,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "21:16-21"
+              "loc": "22:15-20"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9714,7 +9828,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "28:5-10"
+              "loc": "29:16-21"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9723,7 +9837,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "35:21-26"
+              "loc": "36:20-25"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9777,7 +9891,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "43:7-12"
+              "loc": "41:7-12"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9786,7 +9900,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "50:7-12"
+              "loc": "48:17-22"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9795,7 +9909,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "56:21-26"
+              "loc": "56:18-23"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9804,7 +9918,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "67:9-14"
+              "loc": "63:22-27"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9813,7 +9927,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "74:7-12"
+              "loc": "70:7-12"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9822,7 +9936,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "80:21-26"
+              "loc": "78:7-12"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9831,7 +9945,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "91:9-14"
+              "loc": "85:7-12"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9840,7 +9954,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "98:7-12"
+              "loc": "91:21-26"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9849,7 +9963,7 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "106:10-15"
+              "loc": "102:9-14"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -9858,7 +9972,34 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "113:21-26"
+              "loc": "109:7-12"
+            },
+            {
+              "moduleId": "./src/pages/login.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
+              "module": "./src/pages/login.js",
+              "moduleName": "./src/pages/login.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "115:21-26"
+            },
+            {
+              "moduleId": "./src/pages/login.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
+              "module": "./src/pages/login.js",
+              "moduleName": "./src/pages/login.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "126:9-14"
+            },
+            {
+              "moduleId": "./src/pages/login.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
+              "module": "./src/pages/login.js",
+              "moduleName": "./src/pages/login.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "133:7-12"
             },
             {
               "moduleId": "./src/pages/pageNotFound.js",
@@ -9939,7 +10080,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "61:7-12"
+              "loc": "58:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -9948,7 +10089,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "68:7-12"
+              "loc": "65:17-22"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -9957,7 +10098,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "74:18-23"
+              "loc": "72:18-23"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -9966,7 +10107,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "85:9-14"
+              "loc": "80:22-27"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -9975,7 +10116,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "92:7-12"
+              "loc": "87:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -9984,7 +10125,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "98:21-26"
+              "loc": "96:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -9993,7 +10134,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "109:9-14"
+              "loc": "103:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10002,7 +10143,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "116:7-12"
+              "loc": "109:18-23"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10011,7 +10152,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "122:21-26"
+              "loc": "120:9-14"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10020,7 +10161,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "133:9-14"
+              "loc": "127:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10029,7 +10170,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "140:7-12"
+              "loc": "133:21-26"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10038,7 +10179,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "146:28-33"
+              "loc": "144:9-14"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10047,7 +10188,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "157:9-14"
+              "loc": "151:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10056,7 +10197,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "164:7-12"
+              "loc": "157:21-26"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10065,7 +10206,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "172:10-15"
+              "loc": "168:9-14"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -10074,7 +10215,34 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "179:18-23"
+              "loc": "175:7-12"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "181:28-33"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "192:9-14"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "199:7-12"
             },
             {
               "moduleId": "./src/root.js",

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'fusion-plugin-react-router';
+import { NavLink, Link } from 'fusion-plugin-react-router';
 import paths from '../constants/paths';
 
 export default class Login extends Component {
@@ -22,33 +22,40 @@ export default class Login extends Component {
   render() {
     return (
       <React.Fragment>
-        <form action="/login" method="post">
-          <div className="input-form">
-            <label>Username:</label>
-            <input
-              value={this.state.username}
-              onChange={this.handleChange}
-              type="text"
-              name="username"
-              required
-            />
-          </div>
-          <div className="input-form">
-            <label>Password:</label>
-            <input
-              value={this.state.password}
-              onChange={this.handleChange}
-              type="password"
-              name="password"
-              required
-            />
-          </div>
-          <div className="submit-btn">
-            <input type="submit" value="Login" />
-          </div>
-        </form>
-        <Link to={paths.register}>register.</Link>
-        <Link to={paths.home}>home.</Link>
+        <nav>
+          <Link to={paths.home}>home.</Link>
+          <NavLink activeClassName="inset" to={paths.login}>
+            login.
+          </NavLink>
+          <Link to={paths.register}>register.</Link>
+        </nav>
+        <div className="raised-panel container-panel">
+          <form action="/login" method="post">
+            <div className="input-form">
+              <label>Username:</label>
+              <input
+                value={this.state.username}
+                onChange={this.handleChange}
+                type="text"
+                name="username"
+                required
+              />
+            </div>
+            <div className="input-form">
+              <label>Password:</label>
+              <input
+                value={this.state.password}
+                onChange={this.handleChange}
+                type="password"
+                name="password"
+                required
+              />
+            </div>
+            <div className="submit-btn">
+              <input type="submit" value="Login" />
+            </div>
+          </form>
+        </div>
       </React.Fragment>
     );
   }

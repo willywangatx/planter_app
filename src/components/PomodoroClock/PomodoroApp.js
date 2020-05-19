@@ -44,7 +44,8 @@ const PomodoroClock = () => {
     if (timer === 0) {
       clearInterval(timerId);
       setIsStarted(!isStarted);
-      setCycle(!cycle);
+      // to stop timer from changing automatically
+      // setCycle(!cycle);
     }
   }, [timer]);
 
@@ -61,7 +62,6 @@ const PomodoroClock = () => {
           if (newTimer >= 0) {
             return newTimer;
           }
-          //TODO: count does not update on successive focusSessions
           if (cycle) {
             setCycleCount(cycleCount + 1);
             console.log(cycleCount);

@@ -7,13 +7,13 @@
 
 body {
   text-align: center;
-  /* background-color: rgba(219, 255, 234, 1); */
   background: #acdbc9;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2vw;
   color: #7f8084;
 }
-/* html tag styling */
+
+/* NAVBAR STYLING  */
 nav {
   background: #fdd2b5;
   border-radius: 2.5vw;
@@ -27,6 +27,7 @@ nav {
   box-shadow: -10px 10px 23px #99c3b3, 10px -10px 23px #bff3df;
 }
 
+/* NAV LINKS STYLING */
 a {
   color: #7f8084;
   text-decoration: none;
@@ -39,9 +40,9 @@ a {
 }
 
 a:active {
-  border-radius: 2.5vw;
-  margin: 1vw;
-  background: #acdbc9;
+  /* border-radius: 2.5vw; */
+  /* margin: 1vw; */
+  /* background: #acdbc9; */
   box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd;
 }
 
@@ -57,14 +58,20 @@ button {
 }
 
 /* Neumorphism styling */
+
+.container-panel {
+  margin: 2.5vw auto;
+  padding: 3vw;
+  width: 85vw;
+}
 .raised-panel {
   background: #acdbc9;
   box-shadow: -10px 10px 23px #99c3b3, 10px -10px 23px #bff3df;
   border-radius: 2.5vw;
-  margin: 0 auto;
 }
 .raised-btn {
-  background: linear-gradient(225deg, #b8ead7, #9bc5b5);
+  /* background: linear-gradient(225deg, #b8ead7, #9bc5b5); */
+  background: #acdbc9;
   box-shadow: -5px 5px 10px #94bcad, 5px -5px 10px #c4fae5;
 }
 
@@ -75,7 +82,7 @@ button {
 
 .inset {
   border-radius: 2.5vw;
-  margin: 1vh auto;
+  margin: 1vh;
   background: #acdbc9;
   box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd;
 }
@@ -105,12 +112,18 @@ button {
   font-size: 15vw;
   padding: 0 3vw;
   border-radius: 2.5vw;
-  /* background: #fdd2b5; */
+  color: #acdbc9;
+  text-shadow: -5px 5px 10px #94bcad, 5px -5px 10px #c4fae5;
 }
 
 .panel-label {
   padding: 0.75vw 2.5vw;
   font-size: 3vw;
+}
+
+.start-stop-btn {
+  width: 33vw;
+  height: 5vw;
 }
 
 /* TOGGLE SWITCH STYLING */
@@ -161,7 +174,7 @@ button {
 }
 
 .toggle-label {
-  width: 20vw;
+  /* width: 20vw; */
   position: absolute;
   font-size: 6vw;
   right: 11vw;
@@ -169,15 +182,15 @@ button {
   z-index: 4;
 }
 
-.focus-label {
+/* .focus-label {
   transition: all 0.6s ease-in-out;
   left: 10vw;
-}
+} */
 
-.break-label {
+/* .break-label {
   transition: all 0.6s ease-in-out;
   right: 10vw;
-}
+} */
 
 .toggle-label-inset {
   /* height: 7vw;
@@ -185,7 +198,7 @@ button {
   position: absolute;
   top: 0.8vw;
   left: 9.1vw; */
-  z-index: 3;
+  /* z-index: 3; */
   /* border-radius: 10vw; */
   /* background: #acdbc9; */
   /* box-shadow: inset -8px 8px 16px #9bc5b5, inset 8px -8px 16px #bdf1dd; */

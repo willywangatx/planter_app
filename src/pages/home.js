@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'fusion-plugin-react-router';
+import { Link, NavLink } from 'fusion-plugin-react-router';
 import paths from '../constants/paths';
 import PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';
 
@@ -7,10 +7,11 @@ const Home = () => {
   return (
     <>
       <nav>
+        <NavLink activeClassName="inset" to={paths.home}>
+          home.
+        </NavLink>
         <Link to={paths.login}>login.</Link>
-        <div className="nav-link">
-          <Link to={paths.register}>register.</Link>
-        </div>
+        <Link to={paths.register}>register.</Link>
       </nav>
       <PomodoroClock />
     </>

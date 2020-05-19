@@ -14,7 +14,10 @@ const StartStop = ({ isStarted, startStopClick }) => {
 
   return (
     <React.Fragment>
-      <button className="raised-btn" onClick={combinedClickEvents}>
+      <button
+        className="raised-btn start-stop-btn"
+        onClick={combinedClickEvents}
+      >
         {isStarted ? 'Stop' : 'Start'}
       </button>
     </React.Fragment>

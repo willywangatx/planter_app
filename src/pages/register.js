@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'fusion-plugin-react-router';
+import { NavLink, Link } from 'fusion-plugin-react-router';
 import paths from '../constants/paths';
 
 export default class Register extends Component {
@@ -39,57 +39,64 @@ export default class Register extends Component {
   render() {
     return (
       <React.Fragment>
-        <form
-          action="/register"
-          method="post"
-          onSubmit={this.confirmPasswordMatch}
-        >
-          <div className="input-form">
-            <label>Email:</label>
-            <input
-              value={this.state.email}
-              onChange={this.handleChange}
-              type="email"
-              name="email"
-              required
-            />
-          </div>
-          <div className="input-form">
-            <label>Username:</label>
-            <input
-              value={this.state.username}
-              onChange={this.handleChange}
-              type="text"
-              name="username"
-              required
-            />
-          </div>
-          <div className="input-form">
-            <label>Password:</label>
-            <input
-              value={this.state.password}
-              type="password"
-              name="password"
-              onChange={this.handleChange}
-              required
-            />
-          </div>
-          <div className="input-form">
-            <label>Verify Password:</label>
-            <input
-              value={this.state.confirm_password}
-              type="password"
-              name="confirm_password"
-              onChange={this.handleChange}
-              required
-            />
-          </div>
-          <div className="submit-btn">
-            <input type="submit" value="Register" />
-          </div>
-        </form>
-        <Link to={paths.login}>login.</Link>
-        <Link to={paths.home}>home.</Link>
+        <nav>
+          <Link to={paths.home}>home.</Link>
+          <Link to={paths.login}>login.</Link>
+          <NavLink activeClassName="inset" to={paths.register}>
+            register.
+          </NavLink>
+        </nav>
+        <div className="raised-panel container-panel">
+          <form
+            action="/register"
+            method="post"
+            onSubmit={this.confirmPasswordMatch}
+          >
+            <div className="input-form">
+              <label>Email:</label>
+              <input
+                value={this.state.email}
+                onChange={this.handleChange}
+                type="email"
+                name="email"
+                required
+              />
+            </div>
+            <div className="input-form">
+              <label>Username:</label>
+              <input
+                value={this.state.username}
+                onChange={this.handleChange}
+                type="text"
+                name="username"
+                required
+              />
+            </div>
+            <div className="input-form">
+              <label>Password:</label>
+              <input
+                value={this.state.password}
+                type="password"
+                name="password"
+                onChange={this.handleChange}
+                required
+              />
+            </div>
+            <div className="input-form">
+              <label>Verify Password:</label>
+              <input
+                value={this.state.confirm_password}
+                type="password"
+                name="confirm_password"
+                onChange={this.handleChange}
+                required
+              />
+            </div>
+            <div className="submit-btn">
+              <input type="submit" value="Register" />
+            </div>
+          </form>
+        </div>
       </React.Fragment>
     );
   }
