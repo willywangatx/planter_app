@@ -7067,6 +7067,11 @@ react-is@^16.10.2, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.0, react-i
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.11.0.tgz#b85dfecd48ad1ce469ff558a882ca8e8313928fa"
   integrity sha512-gbBVYR2p8mnriqAwWx9LbuUrShnAuSCNnuPGyc7GJrMVQtPDAh8iLpv7FRuMPFb56KkaVZIYSz1PrjI9q0QPCw==
 
+react-neumorphic-toggle@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-neumorphic-toggle/-/react-neumorphic-toggle-1.0.1.tgz#45d990fc3a303d01659501b1e0829d6b8fe2b3cc"
+  integrity sha512-/gn90qBCfFFODpM60eRIqZ/8DKa6za8kjk7j5ZXvKuFoCuz/c8q+3kR4Uzn32Tfawn2ytZgGWF9gKcFObh7yjw==
+
 react-router-dom@^5.1.0:
   version "5.1.2"
   resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.1.2.tgz#06701b834352f44d37fbb6311f870f84c76b9c18"

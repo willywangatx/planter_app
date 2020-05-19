@@ -107,8 +107,8 @@ const PomodoroClock = () => {
 
   const cycleLength = () => {
     return cycle
-      ? `Focus Time: ${moment.duration(focusTime, 's').minutes()} min.`
-      : `Break Time: ${moment.duration(breakTime, 's').minutes()} min.`;
+      ? `Focus Time: ${focusTime / 60} min.`
+      : `Break Time: ${breakTime / 60} min.`;
   };
 
   const increaseTimer = () => {
@@ -130,8 +130,8 @@ const PomodoroClock = () => {
       }
     }
     if (!cycle) {
-      if (breakTime <= 0) {
-        setBreakTime(0);
+      if (breakTime <= 60) {
+        setBreakTime(60);
       } else {
         setBreakTime(breakTime - 60);
       }
