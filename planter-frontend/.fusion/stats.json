@@ -8,8 +8,8 @@
       "errors": [],
       "warnings": [],
       "hash": "00cd804d8d5ef12698d9",
-      "time": 215,
-      "builtAt": 1592008099481,
+      "time": 49,
+      "builtAt": 1592008492869,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
@@ -2213,7 +2213,7 @@
               "index2": 42,
               "size": 4493,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2479,7 +2479,7 @@
               "index2": 51,
               "size": 805,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2688,9 +2688,9 @@
               "chunks": [
                 "main"
               ],
-              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "issuerId": "./src/plugins/register.js",
-              "issuerName": "./src/plugins/register.js",
+              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/login.js",
+              "issuerId": "./src/pages/login.js",
+              "issuerName": "./src/pages/login.js",
               "issuerPath": [
                 {
                   "id": 0,
@@ -2708,9 +2708,14 @@
                   "name": "./src/main.js"
                 },
                 {
-                  "id": "./src/plugins/register.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-                  "name": "./src/plugins/register.js"
+                  "id": "./src/root.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+                  "name": "./src/root.js"
+                },
+                {
+                  "id": "./src/pages/login.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/login.js",
+                  "name": "./src/pages/login.js"
                 }
               ],
               "failed": false,
@@ -7457,7 +7462,7 @@
           "index2": 42,
           "size": 4493,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -7723,7 +7728,7 @@
           "index2": 51,
           "size": 805,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -7932,9 +7937,9 @@
           "chunks": [
             "main"
           ],
-          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-          "issuerId": "./src/plugins/register.js",
-          "issuerName": "./src/plugins/register.js",
+          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/login.js",
+          "issuerId": "./src/pages/login.js",
+          "issuerName": "./src/pages/login.js",
           "issuerPath": [
             {
               "id": 0,
@@ -7952,9 +7957,14 @@
               "name": "./src/main.js"
             },
             {
-              "id": "./src/plugins/register.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "name": "./src/plugins/register.js"
+              "id": "./src/root.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+              "name": "./src/root.js"
+            },
+            {
+              "id": "./src/pages/login.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/login.js",
+              "name": "./src/pages/login.js"
             }
           ],
           "failed": false,
