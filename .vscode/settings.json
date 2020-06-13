@@ -1,5 +1,6 @@
 {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "prettier.singleQuote": true
+    "prettier.singleQuote": true,
+    "python.pythonPath": "/Users/williamwang/Programming/v3_Planter/env/bin/python3"
 }

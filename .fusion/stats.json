@@ -2,22 +2,22 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "2b08b7bfb85595bbc9c5",
+  "hash": "7694adfb9ea5963c412b",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "2b08b7bfb85595bbc9c5",
-      "time": 257,
-      "builtAt": 1589926229420,
+      "hash": "7694adfb9ea5963c412b",
+      "time": 330,
+      "builtAt": 1590777694692,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.5b615ab890fec24575d8.hot-update.js",
+          "main.7050f99b77efbbe3446d.hot-update.js",
           "server-main.js.map",
-          "main.5b615ab890fec24575d8.hot-update.js.map"
+          "main.7050f99b77efbbe3446d.hot-update.js.map"
         ]
       },
       "assets": [
@@ -30,7 +30,7 @@
           "emitted": false
         },
         {
-          "name": "5b615ab890fec24575d8.hot-update.json",
+          "name": "7050f99b77efbbe3446d.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.5b615ab890fec24575d8.hot-update.js",
-          "size": 8596,
+          "name": "main.7050f99b77efbbe3446d.hot-update.js",
+          "size": 4026,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.5b615ab890fec24575d8.hot-update.js.map",
-          "size": 4888,
+          "name": "main.7050f99b77efbbe3446d.hot-update.js.map",
+          "size": 1387,
           "chunks": [
             "main"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 126096,
+          "size": 127092,
           "chunks": [
             "main"
           ],
@@ -83,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 87481,
+          "size": 88119,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.5b615ab890fec24575d8.hot-update.js",
+            "main.7050f99b77efbbe3446d.hot-update.js",
             "server-main.js.map",
-            "main.5b615ab890fec24575d8.hot-update.js.map"
+            "main.7050f99b77efbbe3446d.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.5b615ab890fec24575d8.hot-update.js",
+            "main.7050f99b77efbbe3446d.hot-update.js",
             "server-main.js.map",
-            "main.5b615ab890fec24575d8.hot-update.js.map"
+            "main.7050f99b77efbbe3446d.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -133,17 +133,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 50182,
+          "size": 50536,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.5b615ab890fec24575d8.hot-update.js",
+            "main.7050f99b77efbbe3446d.hot-update.js",
             "server-main.js.map",
-            "main.5b615ab890fec24575d8.hot-update.js.map"
+            "main.7050f99b77efbbe3446d.hot-update.js.map"
           ],
-          "hash": "5cff474e91ebf8d342f8",
+          "hash": "cf217e556fd8d02ae226",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -154,7 +154,7 @@
               "identifier": "multi /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
               "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
               "index": 0,
-              "index2": 53,
+              "index2": 54,
               "size": 52,
               "built": false,
               "optional": false,
@@ -375,8 +375,8 @@
               "id": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!/Users/williamwang/Programming/v3_Planter/src/constants/styles.css",
               "name": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
-              "index": 48,
-              "index2": 44,
+              "index": 49,
+              "index2": 45,
               "size": 82,
               "cacheable": true,
               "built": false,
@@ -715,7 +715,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
               "name": "./node_modules/fusion-cli/entries/server-entry.js",
               "index": 7,
-              "index2": 52,
+              "index2": 53,
               "size": 3021,
               "cacheable": true,
               "built": false,
@@ -1588,7 +1588,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../components/PomodoroClock/PomodoroApp.js",
-                  "loc": "36:40-53"
+                  "loc": "49:40-53"
                 }
               ],
               "providedExports": [
@@ -1978,7 +1978,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "16:8-13"
+                  "loc": "29:8-13"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -1987,7 +1987,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "23:8-13"
+                  "loc": "36:8-13"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -1996,7 +1996,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "30:8-13"
+                  "loc": "43:8-13"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -2119,7 +2119,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/main.js",
               "name": "./src/main.js",
               "index": 27,
-              "index2": 51,
+              "index2": 52,
               "size": 616,
               "cacheable": true,
               "built": false,
@@ -2188,10 +2188,10 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
               "name": "./src/pages/home.js",
               "index": 35,
-              "index2": 40,
-              "size": 1158,
+              "index2": 41,
+              "size": 1470,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2251,14 +2251,14 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { Component } from 'react';\nimport { Link, NavLink } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\n\nconst Home = () => {\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"home.\"), React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, \"register.\")), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { useEffect, Component } from 'react';\nimport { Link, NavLink } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\nimport axios from 'axios';\n\nconst Home = () => {\n  // useEffect(() => {\n  //   axios({\n  //     method: 'POST',\n  //     url: 'http://localhost:8000/polls/timer',\n  //   })\n  //     .then((res) => {\n  //       console.log(res);\n  //     })\n  //     .catch((err) => {\n  //       console.log(err);\n  //     });\n  // }, []);\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 23\n    },\n    __self: this\n  }, React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 24\n    },\n    __self: this\n  }, \"home.\"), React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  }, \"register.\")), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 30\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
             },
             {
               "id": "./src/pages/login.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
               "name": "./src/pages/login.js",
-              "index": 45,
-              "index2": 41,
+              "index": 46,
+              "index2": 42,
               "size": 3939,
               "cacheable": true,
               "built": false,
@@ -2327,8 +2327,8 @@
               "id": "./src/pages/pageNotFound.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/pageNotFound.js",
               "name": "./src/pages/pageNotFound.js",
-              "index": 47,
-              "index2": 43,
+              "index": 48,
+              "index2": 44,
               "size": 465,
               "cacheable": true,
               "built": false,
@@ -2397,11 +2397,11 @@
               "id": "./src/pages/register.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
               "name": "./src/pages/register.js",
-              "index": 46,
-              "index2": 42,
+              "index": 47,
+              "index2": 43,
               "size": 5794,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2467,8 +2467,8 @@
               "id": "./src/plugins/loginAuth.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/plugins/loginAuth.js",
               "name": "./src/plugins/loginAuth.js",
-              "index": 49,
-              "index2": 49,
+              "index": 50,
+              "index2": 50,
               "size": 1549,
               "cacheable": true,
               "built": false,
@@ -2523,8 +2523,8 @@
               "id": "./src/plugins/registerAuth.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/plugins/registerAuth.js",
               "name": "./src/plugins/registerAuth.js",
-              "index": 53,
-              "index2": 50,
+              "index": 54,
+              "index2": 51,
               "size": 1971,
               "cacheable": true,
               "built": false,
@@ -2580,7 +2580,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/root.js",
               "name": "./src/root.js",
               "index": 31,
-              "index2": 45,
+              "index2": 46,
               "size": 1837,
               "cacheable": true,
               "built": false,
@@ -2724,11 +2724,73 @@
               "depth": 2
             },
             {
+              "id": "axios",
+              "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/axios/index.js\"",
+              "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/axios/index.js\"",
+              "index": 45,
+              "index2": 40,
+              "size": 42,
+              "built": false,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                "main"
+              ],
+              "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+              "issuerId": "./src/pages/home.js",
+              "issuerName": "./src/pages/home.js",
+              "issuerPath": [
+                {
+                  "id": 0,
+                  "identifier": "multi /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
+                  "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
+                },
+                {
+                  "id": "./node_modules/fusion-cli/entries/server-entry.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
+                  "name": "./node_modules/fusion-cli/entries/server-entry.js"
+                },
+                {
+                  "id": "./src/main.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/main.js",
+                  "name": "./src/main.js"
+                },
+                {
+                  "id": "./src/root.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/root.js",
+                  "name": "./src/root.js"
+                },
+                {
+                  "id": "./src/pages/home.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+                  "name": "./src/pages/home.js"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "./src/pages/home.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+                  "module": "./src/pages/home.js",
+                  "moduleName": "./src/pages/home.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "axios",
+                  "loc": "6:0-26"
+                }
+              ],
+              "providedExports": null,
+              "optimizationBailout": [],
+              "depth": 5
+            },
+            {
               "id": "dotenv",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/dotenv/lib/main.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/dotenv/lib/main.js\"",
-              "index": 52,
-              "index2": 48,
+              "index": 53,
+              "index2": 49,
               "size": 42,
               "built": false,
               "optional": false,
@@ -3293,7 +3355,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "14:25-32"
+                  "loc": "27:25-32"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -3302,7 +3364,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "22:35-39"
+                  "loc": "35:35-39"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -3311,7 +3373,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "29:36-40"
+                  "loc": "42:36-40"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -3653,8 +3715,8 @@
               "id": "koa-bodyparser",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/koa-bodyparser/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/koa-bodyparser/index.js\"",
-              "index": 50,
-              "index2": 46,
+              "index": 51,
+              "index2": 47,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4030,8 +4092,8 @@
               "id": "mongodb",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/mongodb/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/mongodb/index.js\"",
-              "index": 51,
-              "index2": 47,
+              "index": 52,
+              "index2": 48,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4635,7 +4697,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "react",
-                  "loc": "2:0-41"
+                  "loc": "2:0-52"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -4644,7 +4706,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "8:9-14"
+                  "loc": "21:9-14"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -4653,7 +4715,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "8:29-34"
+                  "loc": "21:29-34"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -4662,7 +4724,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "8:51-56"
+                  "loc": "21:51-56"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -4671,7 +4733,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "14:5-10"
+                  "loc": "27:5-10"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -4680,7 +4742,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "22:15-20"
+                  "loc": "35:15-20"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -4689,7 +4751,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "29:16-21"
+                  "loc": "42:16-21"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -4698,7 +4760,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "36:20-25"
+                  "loc": "49:20-25"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -5341,7 +5403,7 @@
           "identifier": "multi /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
           "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
           "index": 0,
-          "index2": 53,
+          "index2": 54,
           "size": 52,
           "built": false,
           "optional": false,
@@ -5562,8 +5624,8 @@
           "id": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!/Users/williamwang/Programming/v3_Planter/src/constants/styles.css",
           "name": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
-          "index": 48,
-          "index2": 44,
+          "index": 49,
+          "index2": 45,
           "size": 82,
           "cacheable": true,
           "built": false,
@@ -5902,7 +5964,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
           "name": "./node_modules/fusion-cli/entries/server-entry.js",
           "index": 7,
-          "index2": 52,
+          "index2": 53,
           "size": 3021,
           "cacheable": true,
           "built": false,
@@ -6775,7 +6837,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../components/PomodoroClock/PomodoroApp.js",
-              "loc": "36:40-53"
+              "loc": "49:40-53"
             }
           ],
           "providedExports": [
@@ -7165,7 +7227,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "16:8-13"
+              "loc": "29:8-13"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -7174,7 +7236,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "23:8-13"
+              "loc": "36:8-13"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -7183,7 +7245,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "30:8-13"
+              "loc": "43:8-13"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -7306,7 +7368,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/main.js",
           "name": "./src/main.js",
           "index": 27,
-          "index2": 51,
+          "index2": 52,
           "size": 616,
           "cacheable": true,
           "built": false,
@@ -7375,10 +7437,10 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
           "name": "./src/pages/home.js",
           "index": 35,
-          "index2": 40,
-          "size": 1158,
+          "index2": 41,
+          "size": 1470,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -7438,14 +7500,14 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { Component } from 'react';\nimport { Link, NavLink } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\n\nconst Home = () => {\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"home.\"), React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, \"register.\")), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/src/pages/home.js\";\nimport React, { useEffect, Component } from 'react';\nimport { Link, NavLink } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';\nimport axios from 'axios';\n\nconst Home = () => {\n  // useEffect(() => {\n  //   axios({\n  //     method: 'POST',\n  //     url: 'http://localhost:8000/polls/timer',\n  //   })\n  //     .then((res) => {\n  //       console.log(res);\n  //     })\n  //     .catch((err) => {\n  //       console.log(err);\n  //     });\n  // }, []);\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 23\n    },\n    __self: this\n  }, React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 24\n    },\n    __self: this\n  }, \"home.\"), React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  }, \"register.\")), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 30\n    },\n    __self: this\n  }));\n};\n\nexport default Home;"
         },
         {
           "id": "./src/pages/login.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/login.js",
           "name": "./src/pages/login.js",
-          "index": 45,
-          "index2": 41,
+          "index": 46,
+          "index2": 42,
           "size": 3939,
           "cacheable": true,
           "built": false,
@@ -7514,8 +7576,8 @@
           "id": "./src/pages/pageNotFound.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/pageNotFound.js",
           "name": "./src/pages/pageNotFound.js",
-          "index": 47,
-          "index2": 43,
+          "index": 48,
+          "index2": 44,
           "size": 465,
           "cacheable": true,
           "built": false,
@@ -7584,11 +7646,11 @@
           "id": "./src/pages/register.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/register.js",
           "name": "./src/pages/register.js",
-          "index": 46,
-          "index2": 42,
+          "index": 47,
+          "index2": 43,
           "size": 5794,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -7654,8 +7716,8 @@
           "id": "./src/plugins/loginAuth.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/plugins/loginAuth.js",
           "name": "./src/plugins/loginAuth.js",
-          "index": 49,
-          "index2": 49,
+          "index": 50,
+          "index2": 50,
           "size": 1549,
           "cacheable": true,
           "built": false,
@@ -7710,8 +7772,8 @@
           "id": "./src/plugins/registerAuth.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/plugins/registerAuth.js",
           "name": "./src/plugins/registerAuth.js",
-          "index": 53,
-          "index2": 50,
+          "index": 54,
+          "index2": 51,
           "size": 1971,
           "cacheable": true,
           "built": false,
@@ -7767,7 +7829,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/root.js",
           "name": "./src/root.js",
           "index": 31,
-          "index2": 45,
+          "index2": 46,
           "size": 1837,
           "cacheable": true,
           "built": false,
@@ -7911,11 +7973,73 @@
           "depth": 2
         },
         {
+          "id": "axios",
+          "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/axios/index.js\"",
+          "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/axios/index.js\"",
+          "index": 45,
+          "index2": 40,
+          "size": 42,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+          "issuerId": "./src/pages/home.js",
+          "issuerName": "./src/pages/home.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
+              "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
+            },
+            {
+              "id": "./node_modules/fusion-cli/entries/server-entry.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/entries/server-entry.js",
+              "name": "./node_modules/fusion-cli/entries/server-entry.js"
+            },
+            {
+              "id": "./src/main.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/main.js",
+              "name": "./src/main.js"
+            },
+            {
+              "id": "./src/root.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/root.js",
+              "name": "./src/root.js"
+            },
+            {
+              "id": "./src/pages/home.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+              "name": "./src/pages/home.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "./src/pages/home.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/src/pages/home.js",
+              "module": "./src/pages/home.js",
+              "moduleName": "./src/pages/home.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "axios",
+              "loc": "6:0-26"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 5
+        },
+        {
           "id": "dotenv",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/dotenv/lib/main.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/dotenv/lib/main.js\"",
-          "index": 52,
-          "index2": 48,
+          "index": 53,
+          "index2": 49,
           "size": 42,
           "built": false,
           "optional": false,
@@ -8480,7 +8604,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "14:25-32"
+              "loc": "27:25-32"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -8489,7 +8613,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "22:35-39"
+              "loc": "35:35-39"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -8498,7 +8622,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "29:36-40"
+              "loc": "42:36-40"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -8840,8 +8964,8 @@
           "id": "koa-bodyparser",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/koa-bodyparser/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/koa-bodyparser/index.js\"",
-          "index": 50,
-          "index2": 46,
+          "index": 51,
+          "index2": 47,
           "size": 42,
           "built": false,
           "optional": false,
@@ -9217,8 +9341,8 @@
           "id": "mongodb",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/mongodb/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/mongodb/index.js\"",
-          "index": 51,
-          "index2": 47,
+          "index": 52,
+          "index2": 48,
           "size": 42,
           "built": false,
           "optional": false,
@@ -9822,7 +9946,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "2:0-41"
+              "loc": "2:0-52"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9831,7 +9955,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "8:9-14"
+              "loc": "21:9-14"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9840,7 +9964,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "8:29-34"
+              "loc": "21:29-34"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9849,7 +9973,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "8:51-56"
+              "loc": "21:51-56"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9858,7 +9982,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "14:5-10"
+              "loc": "27:5-10"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9867,7 +9991,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "22:15-20"
+              "loc": "35:15-20"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9876,7 +10000,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "29:16-21"
+              "loc": "42:16-21"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9885,7 +10009,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "36:20-25"
+              "loc": "49:20-25"
             },
             {
               "moduleId": "./src/pages/login.js",
