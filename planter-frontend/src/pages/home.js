@@ -1,7 +1,7 @@
 import React, { useEffect, Component } from 'react';
 import { Link, NavLink } from 'fusion-plugin-react-router';
 import paths from '../constants/paths';
-import PomodoroClock from '../components/PomodoroClock/PomodoroApp.js';
+import PomodoroClock from '../components/PomodoroClock';
 
 const Home = () => {
   return (

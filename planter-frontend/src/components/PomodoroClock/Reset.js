@@ -7,7 +7,7 @@ const Reset = ({ resetTime }) => {
   // }
   return (
     <React.Fragment>
-      <button className="raised-btn panel-btn" onClick={resetTime}>
+      <button className="raised-btn panel-btn reset-btn" onClick={resetTime}>
         Reset
       </button>
     </React.Fragment>

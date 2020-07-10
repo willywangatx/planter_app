@@ -1,0 +1,33 @@
+import reduceReducers from 'reduce-reducers';
+import { createRPCReducer } from 'fusion-plugin-rpc-redux-react';
+
+// export default createRPCReducer('greet', {
+//   start: (state, action) => ({...state, loading: true}),
+//   success: (state, action) => ({...state, loading: false, greeting: action.payload.greeting}),
+//   failure: (state, action) => ({...state, loading: false, error: action.payload.error}),
+// });
+
+const DEFAULT_STATE = { loading: false, profile: null, error: null };
+
+export default reduceReducers(
+  DEFAULT_STATE,
+  createRPCReducer('getProfile', {
+    // what we call thunk with
+    start: (state) => {
+      return { ...state, loading: true };
+    },
+    success: (state, { payload }) => {
+      console.log(payload);
+      return {
+        ...state,
+        loading: false,
+        profile: payload,
+      };
+    },
+    failure: (state, { payload }) => ({
+      ...state,
+      loading: false,
+      error: payload,
+    }),
+  })
+);

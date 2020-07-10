@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 # Used to include app urlconf into root urlconf file 
 from django.urls import path, include
+from profiles.views import get_profile 
 # from rest_framework_simplejwt.views import (
 #     TokenObtainPairView,
 #     TokenRefreshView,
@@ -30,6 +31,8 @@ urlpatterns = [
     # path('api/refreshLogin/', TokenRefreshView.as_view(), name='token_refresh'),
     # App references
     path('accounts/', include('accounts.urls')),
+    path('api/getProfile/', get_profile, name='get_profile'),
+
     # path('accounts/profiles/<uuid:uuid>/', include('profiles.urls')),
     # path('', home_screen_view, name='home ')
 ]

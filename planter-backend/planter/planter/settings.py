@@ -43,17 +43,22 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     # planter apps 
     'accounts',
+    'profiles',
+    'timers',
+    'tasks',
+    'wallets',
+    'gardens',
+    'plants',
+    'tools',
+    'sheds',
 
     #DEV
     'corsheaders',
     
 ]
 
-# Cors Stuff
-CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = (
-       'http://localhost:3000',
-)
+
+
 
 # Django Rest Framework with SimpleJWT
 REST_FRAMEWORK = {
@@ -183,3 +188,14 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=365),
 }
+
+# Planter settings
+# AUTH_USER_MODEL = 'accounts.Account'
+# TIMER_MODEL = 'timer.Timer'
+
+
+# Cors Stuff
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+       'http://localhost:3000',
+)

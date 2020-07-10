@@ -1,10 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-import uuid 
+# import uuid 
 from django.utils.translation import gettext_lazy as _
 # from django.core.mail import send_mail
 
 class AccountManager(BaseUserManager):
+    use_in_migrations = True
+
     # create method to normalize username - to lowercase 
     def normalize_username(self, username):
         return username.lower()
@@ -21,6 +23,10 @@ class AccountManager(BaseUserManager):
             )
         user.set_password(password)
         user.save(using=self._db)
+
+        # Create associated one-one profile when yser instance created 
+        Profile.objects.create(account=user)
+
         return user 
 
     def create_superuser(self, email, username, password):
@@ -38,42 +44,6 @@ class AccountManager(BaseUserManager):
         # import profile model from profile app - Profile.objects.create(account=user)
         return user 
 
-# class AccountManager(BaseUserManager):
-#     use_in_migrations = True
-
-#     def _create_user(self, username, email, password, **extra_fields):
-#         """
-#         Create and save an account with the given handle, email, and password.
-#         """
-#         if not username:
-#             raise ValueError('The given username must be set')
-#         email = self.normalize_email(email)
-#         username = self.model.normalize_username(username)
-#         user = self.model(username=username, email=email, **extra_fields)
-#         user.set_password(password)
-#         user.save(using=self._db)
-
-#         # When a user is created, an associated one-to-one profile
-#         # must be created as well.
-
-
-#         return user
-
-#     def create_user(self, username, email=None, password=None, **extra_fields):
-#         extra_fields.setdefault('is_staff', False)
-#         extra_fields.setdefault('is_superuser', False)
-#         return self._create_user(username, email, password, **extra_fields)
-
-#     def create_superuser(self, username, email=None, password=None, **extra_fields):
-#         extra_fields.setdefault('is_staff', True)
-#         extra_fields.setdefault('is_superuser', True)
-
-#         if extra_fields.get('is_staff') is not True:
-#             raise ValueError('Superuser must have is_staff=True.')
-#         if extra_fields.get('is_superuser') is not True:
-#             raise ValueError('Superuser must have is_superuser=True.')
-
-#         return self._create_user(username, email, password, **extra_fields)
 
 
 class Account(AbstractBaseUser):
@@ -81,7 +51,7 @@ class Account(AbstractBaseUser):
     #look into adding a uuid field for use when passing id info to the FE server 
     email = models.EmailField(_('email address'), max_length=128, unique=True)
     username = models.CharField(_('username'), max_length=30, unique=True)
-    external_id = models.UUIDField(unique=True, editable=False, default=uuid.uuid4)
+    # external_id = models.UUIDField(unique=True, editable=False, default=uuid.uuid4)
     # required fields for custom user model 
     date_joined = models.DateTimeField(_('date joined'), auto_now_add=True)
     last_login = models.DateTimeField(_('last logged in'), auto_now=True)
@@ -120,3 +90,24 @@ class Account(AbstractBaseUser):
         #normalize the email
         self.email = self.__class__.objects.normalize_email(self.email)
 
+
+# class BlackListedToken(models.Model):
+#     token = models.CharField(max_length=500)
+#     user = models.ForeignKey(Account, related_name="token_user",on_delete=models.CASCADE)
+#     timestamp = models.DateTimeField(auto_now=True)
+
+#     class Meta:
+#         unique_together("token", "user")
+
+# class IsTokenValid(BasePermission):
+#     def has_permission(self, request, view):
+#         user_id = request.user.id
+#         is_allowed_user = True
+#         token = request.auth.decode("utf-8")
+#         try:
+#             is_blacklisted = BlackListedToken.objects.get(user=user_id, token=token)
+#             if is_blacklisted:
+#                 is_allowed_user = False
+#         except BlackListedToken.DoesNotExist:
+#             is_allowed_user = True
+#         return is_allowed_user

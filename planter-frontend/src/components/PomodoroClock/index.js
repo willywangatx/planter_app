@@ -1,14 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Component } from 'react';
+import axios from 'axios';
+
+import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
 
 import Timer from './Timer';
 import AdjustTime from './AdjustTime';
 import StartStop from './StartStop';
 import Reset from './Reset';
 // import Cycle from './Cycle';
-import CycleCounter from './CycleCounter';
+// import CycleCounter from './CycleCounter';
 import ToggleSwitch from './ToggleSwitch';
 
-const PomodoroClock = () => {
+const PomodoroClock = ({
+  greet,
+  greetingText,
+  loadingGreeting,
+  greetingError,
+  getProfile,
+}) => {
+  //action creator for these
+  //in store make reducer Pomodoro Clock
+  // make a const DEFAULT_STATE object tree in reducers
+  // creat actions for these
+  // dispatch actions with updated time
+  //in reducers, look for actions swtich (action.type) - case setFocusTime
+  // update state for focus time
   const [focusTime, setFocusTime] = useState(60 * 25);
   const [breakTime, setBreakTime] = useState(60 * 5);
   const [timer, setTimer] = useState(focusTime);
@@ -18,7 +36,37 @@ const PomodoroClock = () => {
   const [reset, setReset] = useState(false);
   const [cycleCount, setCycleCount] = useState(0);
 
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     // fires thunk - pass it the profile ID
+  //     // cals backend eventually
+  //     greet({ name: 'eminem', greeting: 'hi', statement: 'jskdlf' });
+  //   }, 2000);
+  // }, []);
+
+  useEffect(() => {
+    getProfile();
+  }, []);
+
+  // const [focusTime, setFocusTime] = useState(null);
+  // const [breakTime, setBreakTime] = useState(null);
+  // const [timer, setTimer] = useState(null);
+  // const [cycle, setCycle] = useState(null);
+  // const [isStarted, setIsStarted] = useState(null);
+  // const [timerId, setTimerId] = useState(null);
+  // const [reset, setReset] = useState(null);
+  // const [cycleCount, setCycleCount] = useState(null);
+
+  // componentDidMount() {
+  //   axios({
+  //     method: 'GET',
+  //     url: 'http://localhost:8000/accounts/',
+  //     timeout: 4000,
+  //     data:
+  //   })
+  // }
   //<ToggleSwitch - for changing focus mode />
+
   useEffect(() => {
     setTimer(cycle ? focusTime : breakTime);
   }, [cycle]);
@@ -138,14 +186,18 @@ const PomodoroClock = () => {
     }
   };
 
+  const shownText = loadingGreeting ? 'loading' : greetingText;
+
   return (
     <div className="pomodoro-clock raised-panel">
       <div className="left-panel">
-        <Reset resetTime={resetTime} />
-        <CycleCounter cycleCount={cycleCount} />
+        {/* <CurrentTask /> */}
+
+        {/* <CycleCounter cycleCount={cycleCount} /> */}
         {/* <Cycle toggleCycle={toggleCycle} cycle={cycle} /> */}
       </div>
       <div className="center-panel">
+        <div>{shownText}</div>
         <ToggleSwitch toggleCycle={toggleCycle} cycle={cycle} />
         <Timer timer={timer} cycle={cycle} />
         <StartStop
@@ -161,8 +213,33 @@ const PomodoroClock = () => {
           cycleLength={cycleLength}
           cycle={cycle}
         />
+
+        <Reset resetTime={resetTime} />
       </div>
     </div>
   );
 };
-export default PomodoroClock;
+
+const mapStateToProps = (state) => {
+  //accessing store and putting it in variable
+  // accessing data in store  - called a reducer
+  const greetingText = state.greeting.greeting;
+  const loadingGreeting = state.greeting.loading;
+  const greetingError = state.greeting.error;
+  return {
+    greetingText,
+    loadingGreeting,
+    greetingError,
+  };
+};
+
+const hoc = compose(
+  // gets data from browser to FE server - network request from browser get sent through all middleware
+  withRPCRedux('greet'),
+  withRPCRedux('getProfile'),
+  // connecting reducers to components
+  connect(mapStateToProps)
+);
+
+export default hoc(PomodoroClock);
+// export default PomodoroClock;

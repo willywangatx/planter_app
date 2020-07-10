@@ -6,13 +6,14 @@ export default createPlugin({
   middleware() {
     const parseBody = bodyParser();
     return async (ctx, next) => {
-      if (ctx.path == '/register' && ctx.method == 'POST') {
+      if (ctx.path === '/register' && ctx.method === 'POST') {
         await parseBody(ctx, () => Promise.resolve);
         console.log(ctx.request.body);
 
         axios({
           method: 'POST',
           url: 'http://localhost:8000/accounts/create/',
+          timeout: 4000,
           data: ctx.request.body,
         })
           .then((res) => {

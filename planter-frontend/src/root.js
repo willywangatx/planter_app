@@ -2,13 +2,15 @@
 import React from 'react';
 import { Route, Switch } from 'fusion-plugin-react-router';
 import { Helmet } from 'fusion-plugin-react-helmet-async';
-import { Link } from 'fusion-plugin-react-router';
+// import { Link } from 'fusion-plugin-react-router';
 import paths from './constants/paths';
 import Home from './pages/home.js';
 import Login from './pages/login.js';
 import Register from './pages/register.js';
 import PageNotFound from './pages/pageNotFound.js';
 import { assetUrl } from 'fusion-core';
+
+// import Example from './components/index.js';
 
 const Root = (
   <>
@@ -21,6 +23,7 @@ const Root = (
       <Route exact path={paths.login} component={Login} />
       <Route exact path={paths.register} component={Register} />
       <Route component={PageNotFound} />
+      {/* <Route component={Example} /> */}
     </Switch>
   </>
 );

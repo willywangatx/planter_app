@@ -39,6 +39,8 @@ def create_account(request):
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def read_account(request):
+    # request.user for backend because i'm only getting auth user data 
+    # request.user.profile 
     account = AccountSerializer(request.user)
     return Response(account.data)
 

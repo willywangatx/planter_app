@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "fusion-plugin-react-redux": "^2.1.4",
+    "fusion-plugin-rpc": "^3.5.2",
+    "fusion-plugin-rpc-redux-react": "^4.3.3",
+    "react-redux": "^7.2.0",
+    "unfetch": "^4.1.0"
+  }
+}

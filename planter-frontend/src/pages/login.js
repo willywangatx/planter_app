@@ -1,7 +1,6 @@
 import React, { Component, useEffect } from 'react';
 import { NavLink, Link } from 'fusion-plugin-react-router';
 import paths from '../constants/paths';
-import axios from 'axios';
 
 export default class Login extends Component {
   constructor(props) {
@@ -12,27 +11,6 @@ export default class Login extends Component {
     };
   }
 
-  // useState = //set tokens
-  // instead of console.log can set token
-  // postLogin = (e) => {
-  //   e.preventDefault();
-  //   axios({
-  //     method: 'POST',
-  //     url: 'http://localhost:8000/api/login/',
-  //     data: { email: this.state.eamil, password: this.state.password },
-  //   })
-  //     .then((res) => {
-  //       // if res.status === 201
-  //       // redirect to homepage
-  //       console.log(res);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
-
-  //updating state values for username and password with user submitted values
-  //passing the target input name to change/update when the user changes the field
   handleChange = ({ target }) => {
     this.setState({
       [target.name]: target.value,

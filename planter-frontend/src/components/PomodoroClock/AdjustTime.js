@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AdjustTime = ({ increaseTimer, decreaseTimer, cycleLength, cycle }) => {
+const AdjustTime = ({ increaseTimer, decreaseTimer, cycleLength }) => {
   const adjustLabel = cycleLength();
   return (
     <React.Fragment>
