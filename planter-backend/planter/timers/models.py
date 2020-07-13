@@ -1,11 +1,11 @@
 from django.db import models
-from profiles.models import Profile
+from django.apps import apps 
 
 # Create your models here.
 class Timer(models.Model):
 
     # Use foreign key to give flexibility 
-    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    profile = models.ForeignKey('Profile', on_delete=models.CASCADE)
     focus_time = models.IntegerField(default=25)
     break_time = models.IntegerField(default=5) 
     # needed to keep timer state between page loads

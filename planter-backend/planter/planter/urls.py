@@ -14,13 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-# Used to include app urlconf into root urlconf file 
 from django.urls import path, include
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+
 from profiles.views import get_profile 
-# from rest_framework_simplejwt.views import (
-#     TokenObtainPairView,
-#     TokenRefreshView,
-# )
+from accounts.views import create_account, read_account
 
 urlpatterns = [
     # Django Admin endpoint 
@@ -30,7 +31,14 @@ urlpatterns = [
     # path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     # path('api/refreshLogin/', TokenRefreshView.as_view(), name='token_refresh'),
     # App references
-    path('accounts/', include('accounts.urls')),
+    # path('accounts/', include('accounts.urls')),
+    
+    # auth rest paths 
+    path('api/createAccount/', create_account, name="create_account"),
+    path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/refresh-login/', TokenRefreshView.as_view(), name='token_refresh'),
+
+    # get users profile data 
     path('api/getProfile/', get_profile, name='get_profile'),
 
     # path('accounts/profiles/<uuid:uuid>/', include('profiles.urls')),

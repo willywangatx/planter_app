@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'tasks',
     'wallets',
     'gardens',
+    'plot_details',
     'plants',
     'tools',
     'sheds',

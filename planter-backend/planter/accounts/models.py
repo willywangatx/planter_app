@@ -1,8 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-# import uuid 
 from django.utils.translation import gettext_lazy as _
-# from django.core.mail import send_mail
+from django.apps import apps
 
 class AccountManager(BaseUserManager):
     use_in_migrations = True
@@ -24,7 +23,7 @@ class AccountManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
 
-        # Create associated one-one profile when yser instance created 
+        # Create associated one-one profile when user instance created 
         Profile.objects.create(account=user)
 
         return user 
@@ -33,7 +32,7 @@ class AccountManager(BaseUserManager):
         user = self.create_user(
             email,
             username,
-            password
+            password,
             )
         user.is_admin = True
         user.is_staff = True

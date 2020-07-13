@@ -1,5 +1,6 @@
-// handlers
+// rpc handlers
 import axios from 'axios';
+
 export default {
   greet: async (args, ctx) => {
     console.log(args);

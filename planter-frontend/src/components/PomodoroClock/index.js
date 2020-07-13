@@ -1,6 +1,4 @@
-import React, { useState, useEffect, Component } from 'react';
-import axios from 'axios';
-
+import React, { useState, useEffect } from 'react';
 import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
