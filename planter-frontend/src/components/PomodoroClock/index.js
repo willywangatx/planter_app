@@ -12,11 +12,14 @@ import Reset from './Reset';
 import ToggleSwitch from './ToggleSwitch';
 
 const PomodoroClock = ({
-  greet,
-  greetingText,
-  loadingGreeting,
-  greetingError,
+  // greet,
+  // greetingText,
+  // loadingGreeting,
+  // greetingError,
   getProfile,
+  loadingProfile,
+  profileError,
+  profileData,
 }) => {
   //action creator for these
   //in store make reducer Pomodoro Clock
@@ -42,18 +45,10 @@ const PomodoroClock = ({
   //   }, 2000);
   // }, []);
 
-  useEffect(() => {
-    getProfile();
-  }, []);
-
-  // const [focusTime, setFocusTime] = useState(null);
-  // const [breakTime, setBreakTime] = useState(null);
-  // const [timer, setTimer] = useState(null);
-  // const [cycle, setCycle] = useState(null);
-  // const [isStarted, setIsStarted] = useState(null);
-  // const [timerId, setTimerId] = useState(null);
-  // const [reset, setReset] = useState(null);
-  // const [cycleCount, setCycleCount] = useState(null);
+  // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up
+  // useEffect(() => {
+  //   getProfile();
+  // }, []);
 
   // componentDidMount() {
   //   axios({
@@ -184,18 +179,27 @@ const PomodoroClock = ({
     }
   };
 
-  const shownText = loadingGreeting ? 'loading' : greetingText;
+  const getProfileData = () => {
+    getProfile();
+  };
+
+  // const shownGreetText = loadingGreeting ? 'loading' : greetingText;
+  const shownProfileData = loadingProfile ? 'loading' : profileData;
 
   return (
     <div className="pomodoro-clock raised-panel">
       <div className="left-panel">
+        <button className="raised-btn" onClick={getProfileData}>
+          Get Profile Data
+        </button>
+        <p className="inset panel-label">Profile Data: {shownProfileData}</p>
         {/* <CurrentTask /> */}
 
         {/* <CycleCounter cycleCount={cycleCount} /> */}
         {/* <Cycle toggleCycle={toggleCycle} cycle={cycle} /> */}
       </div>
       <div className="center-panel">
-        <div>{shownText}</div>
+        {/* <div>{shownGreetText}</div> */}
         <ToggleSwitch toggleCycle={toggleCycle} cycle={cycle} />
         <Timer timer={timer} cycle={cycle} />
         <StartStop
@@ -221,13 +225,20 @@ const PomodoroClock = ({
 const mapStateToProps = (state) => {
   //accessing store and putting it in variable
   // accessing data in store  - called a reducer
-  const greetingText = state.greeting.greeting;
-  const loadingGreeting = state.greeting.loading;
-  const greetingError = state.greeting.error;
+  // const greetingText = state.greeting.greeting;
+  // const loadingGreeting = state.greeting.loading;
+  // const greetingError = state.greeting.error;
+  const loadingProfile = state.profile.loading;
+  const profileError = state.profile.error;
+  const profileData = state.profile.profile;
+
   return {
-    greetingText,
-    loadingGreeting,
-    greetingError,
+    // greetingText,
+    // loadingGreeting,
+    // greetingError,
+    loadingProfile,
+    profileError,
+    profileData,
   };
 };
 
