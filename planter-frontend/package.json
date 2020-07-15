@@ -8,6 +8,7 @@
     "fusion-cli": "^2.6.0",
     "fusion-core": "^2.2.1",
     "fusion-plugin-i18n": "^2.4.3",
+    "fusion-plugin-jwt": "^2.1.2",
     "fusion-plugin-react-helmet-async": "^2.2.3",
     "fusion-plugin-react-redux": "^2.1.4",
     "fusion-plugin-react-router": "^2.1.3",

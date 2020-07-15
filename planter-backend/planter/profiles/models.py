@@ -9,9 +9,8 @@ class ProfileManager(models.Manager):
 
 class Profile(models.Model):
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
-    external_id = models.UUIDField(unique=True, editable=False, default=uuid.uuid4)
+    # external_id = models.UUIDField(unique=True, editable=False, default=uuid.uuid4)
     is_private = models.BooleanField(default=False)
-
     objects = ProfileManager()
 
     def __str__(self):

@@ -13,7 +13,7 @@ export default createPlugin({
 
         axios({
           method: 'POST',
-          url: 'http://localhost:8000/accounts/login/',
+          url: 'http://localhost:8000/api/login/',
           // 4 sec timeout
           timeout: 4000,
           data: ctx.request.body,

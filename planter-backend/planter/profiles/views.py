@@ -16,13 +16,7 @@ def update_profile(request):
     pass 
 
 @api_view(['POST'])
-@permission_classes([AllowAny])
-def get_profile(request): 
-
-    # how to get data from a post request (see below)
-    # try: 
-    #     profile_id=request.data['id']
-    # except KeyError:
-    #     raise Http404
-    profile = {'id': 1, 'name': 'John', 'focusTime': 25, 'breakTime': 5}
-    return Response(profile)
+@permission_classes([IsAuthenticated])
+def get_profile(request):
+    # profile = {'id': 1, 'name': 'John', 'focusTime': 25, 'breakTime': 5}
+    return Response(request.user.id)

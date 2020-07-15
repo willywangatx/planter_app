@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "fusion-plugin-jwt": "^2.1.2",
     "fusion-plugin-react-redux": "^2.1.4",
     "fusion-plugin-rpc": "^3.5.2",
     "fusion-plugin-rpc-redux-react": "^4.3.3",

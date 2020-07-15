@@ -6,11 +6,11 @@ from plants.models import Plant
 # Create your models here.
 
 # many to many through relationship between item db and plot_detail
-class Tool_Attachement (models.Model):
+class Tool_Attachment (models.Model):
     plot_detail = models.ForeignKey('Plot_Detail', on_delete=models.CASCADE)
     tool = models.ForeignKey(Tool, on_delete=models.CASCADE)
 
-class Plant_Attachement (models.Model):
+class Plant_Attachment (models.Model):
     plot_detail = models.ForeignKey('Plot_Detail', on_delete=models.CASCADE)
     plant = models.ForeignKey(Plant, on_delete=models.CASCADE)
     # incrementing indicates growth, decrementing indicates decay 

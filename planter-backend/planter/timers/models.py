@@ -12,4 +12,4 @@ class Timer(models.Model):
     curent_focus_time = models.IntegerField(default=25)
     # intervals divisable by 4 get extra energy points 
     completed_focus_counter = models.IntegerField(default=0)
-    logged_focus_minutes = models.IntegerField()
+    logged_focus_minutes = models.IntegerField(default=0)

@@ -192,7 +192,9 @@ const PomodoroClock = ({
         <button className="raised-btn" onClick={getProfileData}>
           Get Profile Data
         </button>
-        <p className="inset panel-label">Profile Data: {shownProfileData}</p>
+        <p className="inset panel-label">
+          Profile Data: {JSON.stringify(shownProfileData)}
+        </p>
         {/* <CurrentTask /> */}
 
         {/* <CycleCounter cycleCount={cycleCount} /> */}
