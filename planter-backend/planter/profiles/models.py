@@ -1,6 +1,6 @@
 from django.db import models
 import uuid 
-from accounts.models import Account
+import accounts
 # Create your models here.
 
 class ProfileManager(models.Manager):
@@ -8,7 +8,7 @@ class ProfileManager(models.Manager):
         return self.filter(account__username=username)
 
 class Profile(models.Model):
-    account = models.ForeignKey(Account, on_delete=models.CASCADE)
+    account = models.ForeignKey('accounts.models.Account', on_delete=models.CASCADE)
     # external_id = models.UUIDField(unique=True, editable=False, default=uuid.uuid4)
     is_private = models.BooleanField(default=False)
     objects = ProfileManager()

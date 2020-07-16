@@ -2,22 +2,22 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "27d901be0691f5d29708",
+  "hash": "829c5ec054302c1bbd27",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "27d901be0691f5d29708",
-      "time": 114,
-      "builtAt": 1594786703739,
+      "hash": "829c5ec054302c1bbd27",
+      "time": 326,
+      "builtAt": 1594870041213,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.c13bd43aa08f9d97b44f.hot-update.js",
+          "main.820d108270f782e4f5d7.hot-update.js",
           "server-main.js.map",
-          "main.c13bd43aa08f9d97b44f.hot-update.js.map"
+          "main.820d108270f782e4f5d7.hot-update.js.map"
         ]
       },
       "assets": [
@@ -30,7 +30,7 @@
           "emitted": false
         },
         {
-          "name": "c13bd43aa08f9d97b44f.hot-update.json",
+          "name": "820d108270f782e4f5d7.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.c13bd43aa08f9d97b44f.hot-update.js",
-          "size": 2492,
+          "name": "main.820d108270f782e4f5d7.hot-update.js",
+          "size": 11932,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.c13bd43aa08f9d97b44f.hot-update.js.map",
-          "size": 1933,
+          "name": "main.820d108270f782e4f5d7.hot-update.js.map",
+          "size": 8934,
           "chunks": [
             "main"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 146885,
+          "size": 147073,
           "chunks": [
             "main"
           ],
@@ -83,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 101369,
+          "size": 103367,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.c13bd43aa08f9d97b44f.hot-update.js",
+            "main.820d108270f782e4f5d7.hot-update.js",
             "server-main.js.map",
-            "main.c13bd43aa08f9d97b44f.hot-update.js.map"
+            "main.820d108270f782e4f5d7.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.c13bd43aa08f9d97b44f.hot-update.js",
+            "main.820d108270f782e4f5d7.hot-update.js",
             "server-main.js.map",
-            "main.c13bd43aa08f9d97b44f.hot-update.js.map"
+            "main.820d108270f782e4f5d7.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -133,17 +133,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 57347,
+          "size": 58405,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.c13bd43aa08f9d97b44f.hot-update.js",
+            "main.820d108270f782e4f5d7.hot-update.js",
             "server-main.js.map",
-            "main.c13bd43aa08f9d97b44f.hot-update.js.map"
+            "main.820d108270f782e4f5d7.hot-update.js.map"
           ],
-          "hash": "9fe225aab3da1ca0eb79",
+          "hash": "502b7c4f32d781c0d384",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -154,7 +154,7 @@
               "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
               "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
               "index": 0,
-              "index2": 65,
+              "index2": 63,
               "size": 52,
               "built": false,
               "optional": false,
@@ -715,7 +715,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
               "name": "./node_modules/fusion-cli/entries/server-entry.js",
               "index": 7,
-              "index2": 64,
+              "index2": 62,
               "size": 3021,
               "cacheable": true,
               "built": false,
@@ -1970,7 +1970,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "80:10-15"
+                  "loc": "59:8-13"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -1979,7 +1979,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "87:10-15"
+                  "loc": "66:8-13"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -1988,7 +1988,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "../constants/paths",
-                  "loc": "95:10-15"
+                  "loc": "74:8-13"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -2039,8 +2039,8 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
               "name": "./src/main.js",
               "index": 27,
-              "index2": 63,
-              "size": 1810,
+              "index2": 61,
+              "size": 1814,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2101,7 +2101,7 @@
               ],
               "optimizationBailout": [],
               "depth": 2,
-              "source": "import App from 'fusion-react';\nimport Router from 'fusion-plugin-react-router';\nimport Styletron from 'fusion-plugin-styletron-react';\nimport Root from './root.js';\nimport HelmetPlugin from 'fusion-plugin-react-helmet-async'; // fusion-plugin-rpc-redux-react imports\n\nimport UniversalEvents, { UniversalEventsToken } from 'fusion-plugin-universal-events';\nimport Redux, { ReduxToken, ReducerToken } from 'fusion-plugin-react-redux';\nimport RPC, { RPCToken, RPCHandlersToken } from 'fusion-plugin-rpc';\nimport { SessionToken } from 'fusion-tokens';\nimport { FetchToken } from 'fusion-tokens';\nimport JWTSession, { SessionSecretToken, SessionCookieNameToken, SessionCookieExpiresToken } from 'fusion-plugin-jwt';\nimport fetch from 'unfetch';\nimport reducer from './reducers/index.js';\nexport default (() => {\n  const app = new App(Root);\n\n  if (false) {\n    app.register(FetchToken, fetch);\n  }\n\n  if (true) {\n    const handlers = require('./rpc/index').default; // const LoginPlugin = require('./plugins/login.js').default;\n    // app.register(LoginPlugin);\n\n\n    const RegisterPlugin = require('./plugins/register').default;\n\n    app.register(RegisterPlugin);\n\n    const AuthPlugin = require('./plugins/auth.js').default;\n\n    app.register(AuthPlugin);\n    app.register(RPCHandlersToken, handlers); //jwt session adds cookie to request\n\n    app.register(SessionToken, JWTSession);\n    app.register(SessionSecretToken, 'some-secret');\n    app.register(SessionCookieNameToken, 'planter-cookie');\n    app.register(SessionCookieExpiresToken, 86400);\n  }\n\n  app.register(Router);\n  app.register(Styletron);\n  app.register(HelmetPlugin);\n  app.register(RPCToken, RPC);\n  app.register(UniversalEventsToken, UniversalEvents);\n  app.register(ReduxToken, Redux);\n  app.register(ReducerToken, reducer);\n  return app;\n});"
+              "source": "import App from 'fusion-react';\nimport Router from 'fusion-plugin-react-router';\nimport Styletron from 'fusion-plugin-styletron-react';\nimport Root from './root.js';\nimport HelmetPlugin from 'fusion-plugin-react-helmet-async'; // fusion-plugin-rpc-redux-react imports\n\nimport UniversalEvents, { UniversalEventsToken } from 'fusion-plugin-universal-events';\nimport Redux, { ReduxToken, ReducerToken } from 'fusion-plugin-react-redux';\nimport RPC, { RPCToken, RPCHandlersToken } from 'fusion-plugin-rpc';\nimport { SessionToken } from 'fusion-tokens';\nimport { FetchToken } from 'fusion-tokens';\nimport JWTSession, { SessionSecretToken, SessionCookieNameToken, SessionCookieExpiresToken } from 'fusion-plugin-jwt';\nimport fetch from 'unfetch';\nimport reducer from './reducers/index.js';\nexport default (() => {\n  const app = new App(Root);\n\n  if (false) {\n    app.register(FetchToken, fetch);\n  }\n\n  if (true) {\n    const handlers = require('./rpc/index').default; // const LoginPlugin = require('./plugins/login.js').default;\n    // app.register(LoginPlugin);\n    // const RegisterPlugin = require('./plugins/register').default;\n    // app.register(RegisterPlugin);\n\n\n    const AuthPlugin = require('./plugins/auth.js').default;\n\n    app.register(AuthPlugin);\n    app.register(RPCHandlersToken, handlers); //jwt session adds cookie to request\n\n    app.register(SessionToken, JWTSession);\n    app.register(SessionSecretToken, 'some-secret');\n    app.register(SessionCookieNameToken, 'planter-cookie');\n    app.register(SessionCookieExpiresToken, 86400);\n  }\n\n  app.register(Router);\n  app.register(Styletron);\n  app.register(HelmetPlugin);\n  app.register(RPCToken, RPC);\n  app.register(UniversalEventsToken, UniversalEvents);\n  app.register(ReduxToken, Redux);\n  app.register(ReducerToken, reducer);\n  return app;\n});"
             },
             {
               "id": "./src/pages/home.js",
@@ -2179,7 +2179,7 @@
               "name": "./src/pages/login.js",
               "index": 47,
               "index2": 43,
-              "size": 5772,
+              "size": 5767,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2241,7 +2241,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/login.js\";\nimport React, { Component, useEffect, useState } from 'react';\nimport { compose } from 'redux';\nimport { connect } from 'react-redux';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\n\nconst Login = ({\n  login\n}) => {\n  const [email, setEmail] = useState('');\n  const [password, setPassword] = useState('');\n\n  const handleEmailChange = ({\n    target\n  }) => {\n    setEmail(target.value);\n  };\n\n  const handlePasswordChange = ({\n    target\n  }) => {\n    setPassword(target.value);\n  };\n\n  const handleLogin = event => {\n    event.preventDefault();\n    login({\n      email,\n      password\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  }, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 29\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 30\n    },\n    __self: this\n  }, \"home.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 31\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 34\n    },\n    __self: this\n  }, \"register.\")), React.createElement(\"div\", {\n    className: \"raised-panel auth-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 36\n    },\n    __self: this\n  }, React.createElement(\"form\", {\n    onSubmit: handleLogin,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 37\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 38\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    className: \"raised-panel auth-raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 39\n    },\n    __self: this\n  }, \"Email:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: email,\n    onChange: handleEmailChange,\n    type: \"text\",\n    name: \"email\",\n    placeholder: \"Email\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 40\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 50\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    className: \"raised-panel auth-raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 51\n    },\n    __self: this\n  }, \"Password:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: password,\n    onChange: handlePasswordChange,\n    type: \"password\",\n    name: \"password\",\n    placeholder: \"Password\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 52\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"submit-btn\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 62\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"auth-btn\",\n    type: \"submit\",\n    value: \"Login\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  })))));\n}; // class Login extends Component {\n//   constructor(props) {\n//     super(props);\n//     this.state = {\n//       email: '',\n//       password: '',\n//     };\n//   }\n//   handleChange = ({ target }) => {\n//     this.setState({\n//       [target.name]: target.value,\n//     });\n//   };\n//   handleLogin = (event) => {\n//     event.preventDefault();\n//     console.log(`${this.state.email}`);\n//     props.login({ email: this.state.email, password: this.state.password });\n//   };\n//   render() {\n//     return (\n//       <React.Fragment>\n//         <nav>\n//           <Link to={paths.home}>home.</Link>\n//           <NavLink activeClassName=\"inset\" to={paths.login}>\n//             login.\n//           </NavLink>\n//           <Link to={paths.register}>register.</Link>\n//         </nav>\n//         <div className=\"raised-panel auth-panel\">\n//           <form onSubmit={this.handleLogin}>\n//             <div className=\"input-form\">\n//               <label className=\"raised-panel auth-raised\">Email:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.email}\n//                 onChange={this.handleChange}\n//                 type=\"text\"\n//                 name=\"email\"\n//                 placeholder=\"Email\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"input-form\">\n//               <label className=\"raised-panel auth-raised\">Password:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.password}\n//                 onChange={this.handleChange}\n//                 type=\"password\"\n//                 name=\"password\"\n//                 placeholder=\"Password\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"submit-btn\">\n//               <input className=\"auth-btn\" type=\"submit\" value=\"Login\" />\n//             </div>\n//           </form>\n//         </div>\n//       </React.Fragment>\n//     );\n//   }\n// }\n\n\nconst rpcs = [withRPCRedux('login')];\n\nconst mapStateToProps = state => ({// auth: state.auth,\n});\n\nconst hoc = compose(...rpcs, connect(mapStateToProps));\nexport default hoc(Login);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/login.js\";\nimport React, { Component, useEffect, useState } from 'react';\nimport { compose } from 'redux';\nimport { connect } from 'react-redux';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\n\nconst Login = ({\n  login\n}) => {\n  const [email, setEmail] = useState('');\n  const [password, setPassword] = useState('');\n\n  const handleEmailInput = ({\n    target\n  }) => {\n    setEmail(target.value);\n  };\n\n  const handlePasswordInput = ({\n    target\n  }) => {\n    setPassword(target.value);\n  };\n\n  const handleLogin = event => {\n    event.preventDefault();\n    login({\n      email,\n      password\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  }, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 29\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 30\n    },\n    __self: this\n  }, \"home.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 31\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 34\n    },\n    __self: this\n  }, \"register.\")), React.createElement(\"div\", {\n    className: \"raised-panel auth-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 36\n    },\n    __self: this\n  }, React.createElement(\"form\", {\n    onSubmit: handleLogin,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 37\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 38\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    className: \"raised-panel auth-raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 39\n    },\n    __self: this\n  }, \"Email:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: email,\n    onChange: handleEmailInput,\n    type: \"text\",\n    name: \"email\",\n    placeholder: \"Email\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 40\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 50\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    className: \"raised-panel auth-raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 51\n    },\n    __self: this\n  }, \"Password:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: password,\n    onChange: handlePasswordInput,\n    type: \"password\",\n    name: \"password\",\n    placeholder: \"Password\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 52\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"submit-btn\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 62\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"auth-btn\",\n    type: \"submit\",\n    value: \"Login\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  })))));\n};\n\nconst rpcs = [withRPCRedux('login')];\n\nconst mapStateToProps = state => ({// auth: state.auth,\n});\n\nconst hoc = compose(...rpcs, connect(mapStateToProps));\nexport default hoc(Login); // class Login extends Component {\n//   constructor(props) {\n//     super(props);\n//     this.state = {\n//       email: '',\n//       password: '',\n//     };\n//   }\n//   handleChange = ({ target }) => {\n//     this.setState({\n//       [target.name]: target.value,\n//     });\n//   };\n//   handleLogin = (event) => {\n//     event.preventDefault();\n//     console.log(`${this.state.email}`);\n//     props.login({ email: this.state.email, password: this.state.password });\n//   };\n//   render() {\n//     return (\n//       <React.Fragment>\n//         <nav>\n//           <Link to={paths.home}>home.</Link>\n//           <NavLink activeClassName=\"inset\" to={paths.login}>\n//             login.\n//           </NavLink>\n//           <Link to={paths.register}>register.</Link>\n//         </nav>\n//         <div className=\"raised-panel auth-panel\">\n//           <form onSubmit={this.handleLogin}>\n//             <div className=\"input-form\">\n//               <label className=\"raised-panel auth-raised\">Email:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.email}\n//                 onChange={this.handleChange}\n//                 type=\"text\"\n//                 name=\"email\"\n//                 placeholder=\"Email\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"input-form\">\n//               <label className=\"raised-panel auth-raised\">Password:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.password}\n//                 onChange={this.handleChange}\n//                 type=\"password\"\n//                 name=\"password\"\n//                 placeholder=\"Password\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"submit-btn\">\n//               <input className=\"auth-btn\" type=\"submit\" value=\"Login\" />\n//             </div>\n//           </form>\n//         </div>\n//       </React.Fragment>\n//     );\n//   }\n// }"
             },
             {
               "id": "./src/pages/pageNotFound.js",
@@ -2319,9 +2319,9 @@
               "name": "./src/pages/register.js",
               "index": 48,
               "index2": 44,
-              "size": 6368,
+              "size": 8194,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2381,14 +2381,14 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths'; // import axios from 'axios';\n\nexport default class Register extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      console.log('Target  handlechange');\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    _defineProperty(this, \"confirmPasswordMatch\", e => {\n      console.log('confirmPasswordMatch');\n      let password = this.state.password;\n      let confirm_password = this.state.confirm_password;\n\n      if (password !== confirm_password) {\n        e.preventDefault();\n        alert(\"Passwords don't match!\");\n        return false;\n      }\n    });\n\n    this.state = {\n      email: '',\n      username: '',\n      password: '',\n      confirm_password: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n  } // postRegister = (e) => {\n  //   e.preventDefault();\n  //   axios({\n  //     method: 'POST',\n  //     url: 'http://localhost:8000/api/login/',\n  //     data: {\n  //       email: this.state.eamil,\n  //       username: this.state.username,\n  //       password: this.state.password,\n  //     },\n  //   })\n  //     .then((res) => {\n  //       // if res.status === 201\n  //       // redirect to homepage\n  //       console.log(res);\n  //     })\n  //     .catch((err) => {\n  //       console.log(err);\n  //     });\n  // };\n  //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 63\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 64\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 65\n      },\n      __self: this\n    }, \"home.\"), React.createElement(Link, {\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 66\n      },\n      __self: this\n    }, \"login.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 67\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel auth-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 71\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/register\",\n      method: \"post\",\n      onSubmit: this.confirmPasswordMatch,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 72\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 77\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 78\n      },\n      __self: this\n    }, \"Email:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.email,\n      onChange: this.handleChange,\n      type: \"email\",\n      name: \"email\",\n      placeholder: \"Email\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 79\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 89\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 90\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      placeholder: \"Username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 91\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 101\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 102\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.password,\n      type: \"password\",\n      name: \"password\",\n      placeholder: \"Password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 103\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 113\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 114\n      },\n      __self: this\n    }, \"Confirm Password:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.confirm_password,\n      type: \"password\",\n      name: \"confirm_password\",\n      placeholder: \"Confirm Password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 115\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 125\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Register\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 126\n      },\n      __self: this\n    })))));\n  }\n\n}"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js\";\nimport React, { Component, useState } from 'react';\nimport { compose } from 'redux';\nimport { connect } from 'react-redux';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\n\nconst Register = ({\n  register\n}) => {\n  const [email, setEmail] = useState('');\n  const [username, setUsername] = useState('');\n  const [password, setPassword] = useState(''); // const [confirmPassword, setConfirmPassword] = useState('');\n\n  const handleEmailInput = ({\n    target\n  }) => {\n    setEmail(target.value);\n  };\n\n  const handleUsernameInput = ({\n    target\n  }) => {\n    setUsername(target.value);\n  };\n\n  const handlePasswordInput = ({\n    target\n  }) => {\n    setPassword(target.value);\n  }; // const handleConfirmPasswordInput = ({ target }) => {\n  //   setConfirmPassword(target.value);\n  // };\n\n\n  const handleRegistration = event => {\n    event.preventDefault();\n    register({\n      email,\n      username,\n      password\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 38\n    },\n    __self: this\n  }, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 39\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 40\n    },\n    __self: this\n  }, \"home.\"), React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 41\n    },\n    __self: this\n  }, \"login.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 42\n    },\n    __self: this\n  }, \"register.\")), React.createElement(\"div\", {\n    className: \"raised-panel auth-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 46\n    },\n    __self: this\n  }, React.createElement(\"form\", {\n    onSubmit: handleRegistration // onSubmit={this.confirmPasswordMatch}\n    ,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 47\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 51\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 52\n    },\n    __self: this\n  }, \"Email:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: email,\n    onChange: handleEmailInput,\n    type: \"email\",\n    name: \"email\",\n    placeholder: \"Email\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 53\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }, \"Username:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: username,\n    onChange: handleUsernameInput,\n    type: \"text\",\n    name: \"username\",\n    placeholder: \"Username\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 65\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 75\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 76\n    },\n    __self: this\n  }, \"Password:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: password,\n    type: \"password\",\n    name: \"password\",\n    placeholder: \"Password\",\n    onChange: handlePasswordInput,\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 77\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"submit-btn\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 99\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    type: \"submit\",\n    value: \"Register\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 100\n    },\n    __self: this\n  })))));\n};\n\nconst rpcs = [withRPCRedux('register')];\n\nconst mapStateToProps = state => ({// auth: state.auth,\n});\n\nconst hoc = compose(...rpcs, connect(mapStateToProps));\nexport default hoc(Register); // export default class Register extends Component {\n//   constructor(props) {\n//     super(props);\n//     this.state = {\n//       email: '',\n//       username: '',\n//       password: '',\n//       confirm_password: '',\n//     };\n//     this.handleChange = this.handleChange.bind(this);\n//     this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n//   }\n//   //updating state values for username and password with user submitted values\n//   //passing the target input name to change/update when the user changes the field\n//   handleChange = ({ target }) => {\n//     console.log('Target  handlechange');\n//     this.setState({\n//       [target.name]: target.value,\n//     });\n//   };\n//   //verify passwords match and prevent submission unless form fields match\n//   confirmPasswordMatch = (e) => {\n//     console.log('confirmPasswordMatch');\n//     let password = this.state.password;\n//     let confirm_password = this.state.confirm_password;\n//     if (password !== confirm_password) {\n//       e.preventDefault();\n//       alert(\"Passwords don't match!\");\n//       return false;\n//     }\n//   };\n//   render() {\n//     return (\n//       <React.Fragment>\n//         <nav>\n//           <Link to={paths.home}>home.</Link>\n//           <Link to={paths.login}>login.</Link>\n//           <NavLink activeClassName=\"inset\" to={paths.register}>\n//             register.\n//           </NavLink>\n//         </nav>\n//         <div className=\"raised-panel auth-panel\">\n//           <form\n//             action=\"/register\"\n//             method=\"post\"\n//             onSubmit={this.confirmPasswordMatch}\n//           >\n//             <div className=\"input-form\">\n//               <label>Email:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.email}\n//                 onChange={this.handleChange}\n//                 type=\"email\"\n//                 name=\"email\"\n//                 placeholder=\"Email\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"input-form\">\n//               <label>Username:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.username}\n//                 onChange={this.handleChange}\n//                 type=\"text\"\n//                 name=\"username\"\n//                 placeholder=\"Username\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"input-form\">\n//               <label>Password:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.password}\n//                 type=\"password\"\n//                 name=\"password\"\n//                 placeholder=\"Password\"\n//                 onChange={this.handleChange}\n//                 required\n//               />\n//             </div>\n//             <div className=\"input-form\">\n//               <label>Confirm Password:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.confirm_password}\n//                 type=\"password\"\n//                 name=\"confirm_password\"\n//                 placeholder=\"Confirm Password\"\n//                 onChange={this.handleChange}\n//                 required\n//               />\n//             </div>\n//             <div className=\"submit-btn\">\n//               <input type=\"submit\" value=\"Register\" />\n//             </div>\n//           </form>\n//         </div>\n//       </React.Fragment>\n//     );\n//   }\n// }"
             },
             {
               "id": "./src/plugins/auth.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/auth.js",
               "name": "./src/plugins/auth.js",
-              "index": 65,
-              "index2": 62,
+              "index": 63,
+              "index2": 60,
               "size": 577,
               "cacheable": true,
               "built": false,
@@ -2429,7 +2429,7 @@
                   "moduleName": "./src/main.js",
                   "type": "cjs require",
                   "userRequest": "./plugins/auth.js",
-                  "loc": "31:23-51"
+                  "loc": "29:23-51"
                 }
               ],
               "providedExports": [
@@ -2438,62 +2438,6 @@
               "optimizationBailout": [],
               "depth": 3,
               "source": "import { createPlugin } from 'fusion-core';\nimport { SessionToken } from 'fusion-tokens';\n\nvar _default =\n/*#__PURE__*/\ncreatePlugin({\n  deps: {\n    Session: SessionToken\n  },\n\n  middleware({\n    Session\n  }) {\n    return async (ctx, next) => {\n      const session = Session.from(ctx);\n      ctx['access_token'] = session.get('access_token');\n      ctx['refresh_token'] = session.get('refresh_token');\n      await next();\n      session.set('access_token', ctx['access_token']);\n      session.set('refresh_token', ctx['refresh_token']);\n    };\n  }\n\n});\n\nexport default _default;"
-            },
-            {
-              "id": "./src/plugins/register.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "name": "./src/plugins/register.js",
-              "index": 63,
-              "index2": 61,
-              "size": 832,
-              "cacheable": true,
-              "built": false,
-              "optional": false,
-              "prefetched": false,
-              "chunks": [
-                "main"
-              ],
-              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
-              "issuerId": "./src/main.js",
-              "issuerName": "./src/main.js",
-              "issuerPath": [
-                {
-                  "id": 0,
-                  "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-                  "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./node_modules/fusion-cli/entries/server-entry.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-                  "name": "./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./src/main.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
-                  "name": "./src/main.js"
-                }
-              ],
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleId": "./src/main.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
-                  "module": "./src/main.js",
-                  "moduleName": "./src/main.js",
-                  "type": "cjs require",
-                  "userRequest": "./plugins/register",
-                  "loc": "27:27-56"
-                }
-              ],
-              "providedExports": [
-                "default"
-              ],
-              "optimizationBailout": [],
-              "depth": 3,
-              "source": "import { createPlugin } from 'fusion-core';\nimport bodyParser from 'koa-bodyparser';\nimport axios from 'axios';\n\nvar _default =\n/*#__PURE__*/\ncreatePlugin({\n  middleware() {\n    const parseBody = bodyParser();\n    return async (ctx, next) => {\n      if (ctx.path === '/register' && ctx.method === 'POST') {\n        await parseBody(ctx, () => Promise.resolve);\n        console.log(ctx.request.body);\n        axios({\n          method: 'POST',\n          url: 'http://localhost:8000/accounts/create/',\n          timeout: 4000,\n          data: ctx.request.body\n        }).then(res => {\n          ctx.body = res; // if res.status === 201\n          // redirect to homepage\n\n          console.log(res);\n        }).catch(err => {\n          console.log(err);\n        });\n      }\n\n      return next();\n    };\n  }\n\n});\n\nexport default _default;"
             },
             {
               "id": "./src/reducers/greetingReducer.js",
@@ -2547,15 +2491,6 @@
                   "type": "harmony side effect evaluation",
                   "userRequest": "./greetingReducer",
                   "loc": "2:0-48"
-                },
-                {
-                  "moduleId": "./src/reducers/index.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/index.js",
-                  "module": "./src/reducers/index.js",
-                  "moduleName": "./src/reducers/index.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "./greetingReducer",
-                  "loc": "5:12-27"
                 }
               ],
               "providedExports": [
@@ -2571,7 +2506,7 @@
               "name": "./src/reducers/index.js",
               "index": 57,
               "index2": 57,
-              "size": 228,
+              "size": 231,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2620,7 +2555,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "./reducers/index.js",
-                  "loc": "48:29-36"
+                  "loc": "46:29-36"
                 }
               ],
               "providedExports": [
@@ -2628,7 +2563,7 @@
               ],
               "optimizationBailout": [],
               "depth": 3,
-              "source": "import { combineReducers } from 'redux';\nimport grettingReducer from './greetingReducer';\nimport profileReducer from './profileReducer';\nexport default combineReducers({\n  greeting: grettingReducer,\n  profile: profileReducer\n});"
+              "source": "import { combineReducers } from 'redux';\nimport grettingReducer from './greetingReducer';\nimport profileReducer from './profileReducer';\nexport default combineReducers({\n  // greeting: grettingReducer,\n  profile: profileReducer\n});"
             },
             {
               "id": "./src/reducers/profileReducer.js",
@@ -2771,9 +2706,9 @@
               "name": "./src/rpc/index.js",
               "index": 61,
               "index2": 59,
-              "size": 1300,
+              "size": 1404,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2819,7 +2754,7 @@
               ],
               "optimizationBailout": [],
               "depth": 3,
-              "source": "// rpc handlers\nimport axios from 'axios'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  greet: async (args, ctx) => {\n    console.log(args);\n    const p = new Promise((resolve, reject) => {\n      setTimeout(() => {\n        resolve();\n      }, 10000);\n    });\n    await p;\n    return {\n      greeting: `hell0!! ${args.name}`,\n      test: 'test',\n      profile: 'user123'\n    };\n  },\n  getProfile: async (args, ctx) => {\n    const headers = {\n      authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log('testing if log works');\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  }\n};"
+              "source": "// rpc handlers\nimport axios from 'axios'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  getProfile: async (args, ctx) => {\n    const headers = {\n      authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log('testing if log works');\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  register: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/register/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  }\n};"
             },
             {
               "id": "assert",
@@ -2917,9 +2852,9 @@
               "chunks": [
                 "main"
               ],
-              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "issuerId": "./src/plugins/register.js",
-              "issuerName": "./src/plugins/register.js",
+              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
+              "issuerId": "./src/rpc/index.js",
+              "issuerName": "./src/rpc/index.js",
               "issuerPath": [
                 {
                   "id": 0,
@@ -2937,9 +2872,9 @@
                   "name": "./src/main.js"
                 },
                 {
-                  "id": "./src/plugins/register.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-                  "name": "./src/plugins/register.js"
+                  "id": "./src/rpc/index.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
+                  "name": "./src/rpc/index.js"
                 }
               ],
               "failed": false,
@@ -2947,24 +2882,6 @@
               "warnings": 0,
               "assets": [],
               "reasons": [
-                {
-                  "moduleId": "./src/plugins/register.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-                  "module": "./src/plugins/register.js",
-                  "moduleName": "./src/plugins/register.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "axios",
-                  "loc": "3:0-26"
-                },
-                {
-                  "moduleId": "./src/plugins/register.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-                  "module": "./src/plugins/register.js",
-                  "moduleName": "./src/plugins/register.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "axios",
-                  "loc": "14:8-13"
-                },
                 {
                   "moduleId": "./src/rpc/index.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
@@ -2981,7 +2898,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "27:25-30"
+                  "loc": "13:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -2990,7 +2907,16 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "40:25-30"
+                  "loc": "26:25-30"
+                },
+                {
+                  "moduleId": "./src/rpc/index.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
+                  "module": "./src/rpc/index.js",
+                  "moduleName": "./src/rpc/index.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "axios",
+                  "loc": "41:25-30"
                 }
               ],
               "providedExports": null,
@@ -3310,24 +3236,6 @@
                   "loc": "6:0-12"
                 },
                 {
-                  "moduleId": "./src/plugins/register.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-                  "module": "./src/plugins/register.js",
-                  "moduleName": "./src/plugins/register.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "fusion-core",
-                  "loc": "1:0-43"
-                },
-                {
-                  "moduleId": "./src/plugins/register.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-                  "module": "./src/plugins/register.js",
-                  "moduleName": "./src/plugins/register.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "fusion-core",
-                  "loc": "7:0-12"
-                },
-                {
                   "moduleId": "./src/root.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
                   "module": "./src/root.js",
@@ -3404,7 +3312,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-jwt",
-                  "loc": "36:31-41"
+                  "loc": "34:31-41"
                 },
                 {
                   "moduleId": "./src/main.js",
@@ -3413,7 +3321,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-jwt",
-                  "loc": "37:17-35"
+                  "loc": "35:17-35"
                 },
                 {
                   "moduleId": "./src/main.js",
@@ -3422,7 +3330,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-jwt",
-                  "loc": "38:17-39"
+                  "loc": "36:17-39"
                 },
                 {
                   "moduleId": "./src/main.js",
@@ -3431,7 +3339,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-jwt",
-                  "loc": "39:17-42"
+                  "loc": "37:17-42"
                 }
               ],
               "providedExports": null,
@@ -3492,7 +3400,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-helmet-async",
-                  "loc": "44:15-27"
+                  "loc": "42:15-27"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -3571,7 +3479,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-redux",
-                  "loc": "47:15-25"
+                  "loc": "45:15-25"
                 },
                 {
                   "moduleId": "./src/main.js",
@@ -3580,7 +3488,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-redux",
-                  "loc": "47:27-32"
+                  "loc": "45:27-32"
                 },
                 {
                   "moduleId": "./src/main.js",
@@ -3589,7 +3497,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-redux",
-                  "loc": "48:15-27"
+                  "loc": "46:15-27"
                 }
               ],
               "providedExports": null,
@@ -3650,7 +3558,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "42:15-21"
+                  "loc": "40:15-21"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -3758,7 +3666,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "79:27-31"
+                  "loc": "58:25-29"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -3767,7 +3675,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "86:37-41"
+                  "loc": "65:35-39"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -3776,7 +3684,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "93:38-45"
+                  "loc": "72:36-43"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -3891,7 +3799,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "34:17-33"
+                  "loc": "32:17-33"
                 },
                 {
                   "moduleId": "./src/main.js",
@@ -3900,7 +3808,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "45:15-23"
+                  "loc": "43:15-23"
                 },
                 {
                   "moduleId": "./src/main.js",
@@ -3909,7 +3817,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "45:25-28"
+                  "loc": "43:25-28"
                 }
               ],
               "providedExports": null,
@@ -4007,7 +3915,25 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "219:14-26"
+                  "loc": "156:14-26"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "5:0-61"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "191:14-26"
                 },
                 {
                   "moduleId": "./src/reducers/greetingReducer.js",
@@ -4104,7 +4030,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-styletron-react",
-                  "loc": "43:15-24"
+                  "loc": "41:15-24"
                 }
               ],
               "providedExports": null,
@@ -4165,7 +4091,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-universal-events",
-                  "loc": "46:15-35"
+                  "loc": "44:15-35"
                 },
                 {
                   "moduleId": "./src/main.js",
@@ -4174,7 +4100,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-universal-events",
-                  "loc": "46:37-52"
+                  "loc": "44:37-52"
                 }
               ],
               "providedExports": null,
@@ -4305,7 +4231,7 @@
                   "moduleName": "./src/main.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-tokens",
-                  "loc": "36:17-29"
+                  "loc": "34:17-29"
                 },
                 {
                   "moduleId": "./src/plugins/auth.js",
@@ -4385,72 +4311,6 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 2
-            },
-            {
-              "id": "koa-bodyparser",
-              "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/koa-bodyparser/index.js\"",
-              "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/koa-bodyparser/index.js\"",
-              "index": 64,
-              "index2": 60,
-              "size": 42,
-              "built": false,
-              "optional": false,
-              "prefetched": false,
-              "chunks": [
-                "main"
-              ],
-              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "issuerId": "./src/plugins/register.js",
-              "issuerName": "./src/plugins/register.js",
-              "issuerPath": [
-                {
-                  "id": 0,
-                  "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-                  "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./node_modules/fusion-cli/entries/server-entry.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-                  "name": "./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./src/main.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
-                  "name": "./src/main.js"
-                },
-                {
-                  "id": "./src/plugins/register.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-                  "name": "./src/plugins/register.js"
-                }
-              ],
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleId": "./src/plugins/register.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-                  "module": "./src/plugins/register.js",
-                  "moduleName": "./src/plugins/register.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "koa-bodyparser",
-                  "loc": "2:0-40"
-                },
-                {
-                  "moduleId": "./src/plugins/register.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-                  "module": "./src/plugins/register.js",
-                  "moduleName": "./src/plugins/register.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "koa-bodyparser",
-                  "loc": "9:22-32"
-                }
-              ],
-              "providedExports": null,
-              "optimizationBailout": [],
-              "depth": 4
             },
             {
               "id": "koa-mount",
@@ -5549,7 +5409,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "react",
-                  "loc": "5:0-41"
+                  "loc": "2:0-51"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5558,7 +5418,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "9:38-47"
+                  "loc": "12:28-36"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5567,7 +5427,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "67:11-16"
+                  "loc": "13:34-42"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5576,7 +5436,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "67:31-36"
+                  "loc": "14:34-42"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5585,7 +5445,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "73:7-12"
+                  "loc": "46:9-14"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5594,7 +5454,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "79:7-12"
+                  "loc": "46:29-34"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5603,7 +5463,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "86:17-22"
+                  "loc": "52:5-10"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5612,7 +5472,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "93:18-23"
+                  "loc": "58:5-10"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5621,7 +5481,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "101:22-27"
+                  "loc": "65:15-20"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5630,7 +5490,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "108:7-12"
+                  "loc": "72:16-21"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5639,7 +5499,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "117:7-12"
+                  "loc": "80:20-25"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5648,7 +5508,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "124:7-12"
+                  "loc": "87:5-10"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5657,7 +5517,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "130:18-23"
+                  "loc": "95:5-10"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5666,7 +5526,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "143:9-14"
+                  "loc": "102:5-10"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5675,7 +5535,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "150:7-12"
+                  "loc": "108:16-21"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5684,7 +5544,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "156:21-26"
+                  "loc": "121:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5693,7 +5553,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "169:9-14"
+                  "loc": "128:5-10"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5702,7 +5562,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "176:7-12"
+                  "loc": "134:19-24"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5711,7 +5571,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "182:21-26"
+                  "loc": "147:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5720,7 +5580,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "195:9-14"
+                  "loc": "154:5-10"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5729,7 +5589,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "202:7-12"
+                  "loc": "160:19-24"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5738,7 +5598,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "208:29-34"
+                  "loc": "173:7-12"
                 },
                 {
                   "moduleId": "./src/pages/register.js",
@@ -5747,16 +5607,7 @@
                   "moduleName": "./src/pages/register.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "221:9-14"
-                },
-                {
-                  "moduleId": "./src/pages/register.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
-                  "module": "./src/pages/register.js",
-                  "moduleName": "./src/pages/register.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "228:7-12"
+                  "loc": "180:5-10"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -5944,7 +5795,25 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "224:29-36"
+                  "loc": "161:29-36"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "react-redux",
+                  "loc": "4:0-38"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react-redux",
+                  "loc": "196:29-36"
                 }
               ],
               "providedExports": null,
@@ -6117,7 +5986,25 @@
                   "moduleName": "./src/pages/login.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "224:12-19"
+                  "loc": "161:12-19"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "redux",
+                  "loc": "3:0-32"
+                },
+                {
+                  "moduleId": "./src/pages/register.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+                  "module": "./src/pages/register.js",
+                  "moduleName": "./src/pages/register.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "redux",
+                  "loc": "196:12-19"
                 },
                 {
                   "moduleId": "./src/reducers/index.js",
@@ -6326,7 +6213,7 @@
           "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
           "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
           "index": 0,
-          "index2": 65,
+          "index2": 63,
           "size": 52,
           "built": false,
           "optional": false,
@@ -6887,7 +6774,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
           "name": "./node_modules/fusion-cli/entries/server-entry.js",
           "index": 7,
-          "index2": 64,
+          "index2": 62,
           "size": 3021,
           "cacheable": true,
           "built": false,
@@ -8142,7 +8029,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "80:10-15"
+              "loc": "59:8-13"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -8151,7 +8038,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "87:10-15"
+              "loc": "66:8-13"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -8160,7 +8047,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "../constants/paths",
-              "loc": "95:10-15"
+              "loc": "74:8-13"
             },
             {
               "moduleId": "./src/root.js",
@@ -8211,8 +8098,8 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
           "name": "./src/main.js",
           "index": 27,
-          "index2": 63,
-          "size": 1810,
+          "index2": 61,
+          "size": 1814,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -8273,7 +8160,7 @@
           ],
           "optimizationBailout": [],
           "depth": 2,
-          "source": "import App from 'fusion-react';\nimport Router from 'fusion-plugin-react-router';\nimport Styletron from 'fusion-plugin-styletron-react';\nimport Root from './root.js';\nimport HelmetPlugin from 'fusion-plugin-react-helmet-async'; // fusion-plugin-rpc-redux-react imports\n\nimport UniversalEvents, { UniversalEventsToken } from 'fusion-plugin-universal-events';\nimport Redux, { ReduxToken, ReducerToken } from 'fusion-plugin-react-redux';\nimport RPC, { RPCToken, RPCHandlersToken } from 'fusion-plugin-rpc';\nimport { SessionToken } from 'fusion-tokens';\nimport { FetchToken } from 'fusion-tokens';\nimport JWTSession, { SessionSecretToken, SessionCookieNameToken, SessionCookieExpiresToken } from 'fusion-plugin-jwt';\nimport fetch from 'unfetch';\nimport reducer from './reducers/index.js';\nexport default (() => {\n  const app = new App(Root);\n\n  if (false) {\n    app.register(FetchToken, fetch);\n  }\n\n  if (true) {\n    const handlers = require('./rpc/index').default; // const LoginPlugin = require('./plugins/login.js').default;\n    // app.register(LoginPlugin);\n\n\n    const RegisterPlugin = require('./plugins/register').default;\n\n    app.register(RegisterPlugin);\n\n    const AuthPlugin = require('./plugins/auth.js').default;\n\n    app.register(AuthPlugin);\n    app.register(RPCHandlersToken, handlers); //jwt session adds cookie to request\n\n    app.register(SessionToken, JWTSession);\n    app.register(SessionSecretToken, 'some-secret');\n    app.register(SessionCookieNameToken, 'planter-cookie');\n    app.register(SessionCookieExpiresToken, 86400);\n  }\n\n  app.register(Router);\n  app.register(Styletron);\n  app.register(HelmetPlugin);\n  app.register(RPCToken, RPC);\n  app.register(UniversalEventsToken, UniversalEvents);\n  app.register(ReduxToken, Redux);\n  app.register(ReducerToken, reducer);\n  return app;\n});"
+          "source": "import App from 'fusion-react';\nimport Router from 'fusion-plugin-react-router';\nimport Styletron from 'fusion-plugin-styletron-react';\nimport Root from './root.js';\nimport HelmetPlugin from 'fusion-plugin-react-helmet-async'; // fusion-plugin-rpc-redux-react imports\n\nimport UniversalEvents, { UniversalEventsToken } from 'fusion-plugin-universal-events';\nimport Redux, { ReduxToken, ReducerToken } from 'fusion-plugin-react-redux';\nimport RPC, { RPCToken, RPCHandlersToken } from 'fusion-plugin-rpc';\nimport { SessionToken } from 'fusion-tokens';\nimport { FetchToken } from 'fusion-tokens';\nimport JWTSession, { SessionSecretToken, SessionCookieNameToken, SessionCookieExpiresToken } from 'fusion-plugin-jwt';\nimport fetch from 'unfetch';\nimport reducer from './reducers/index.js';\nexport default (() => {\n  const app = new App(Root);\n\n  if (false) {\n    app.register(FetchToken, fetch);\n  }\n\n  if (true) {\n    const handlers = require('./rpc/index').default; // const LoginPlugin = require('./plugins/login.js').default;\n    // app.register(LoginPlugin);\n    // const RegisterPlugin = require('./plugins/register').default;\n    // app.register(RegisterPlugin);\n\n\n    const AuthPlugin = require('./plugins/auth.js').default;\n\n    app.register(AuthPlugin);\n    app.register(RPCHandlersToken, handlers); //jwt session adds cookie to request\n\n    app.register(SessionToken, JWTSession);\n    app.register(SessionSecretToken, 'some-secret');\n    app.register(SessionCookieNameToken, 'planter-cookie');\n    app.register(SessionCookieExpiresToken, 86400);\n  }\n\n  app.register(Router);\n  app.register(Styletron);\n  app.register(HelmetPlugin);\n  app.register(RPCToken, RPC);\n  app.register(UniversalEventsToken, UniversalEvents);\n  app.register(ReduxToken, Redux);\n  app.register(ReducerToken, reducer);\n  return app;\n});"
         },
         {
           "id": "./src/pages/home.js",
@@ -8351,7 +8238,7 @@
           "name": "./src/pages/login.js",
           "index": 47,
           "index2": 43,
-          "size": 5772,
+          "size": 5767,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -8413,7 +8300,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/login.js\";\nimport React, { Component, useEffect, useState } from 'react';\nimport { compose } from 'redux';\nimport { connect } from 'react-redux';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\n\nconst Login = ({\n  login\n}) => {\n  const [email, setEmail] = useState('');\n  const [password, setPassword] = useState('');\n\n  const handleEmailChange = ({\n    target\n  }) => {\n    setEmail(target.value);\n  };\n\n  const handlePasswordChange = ({\n    target\n  }) => {\n    setPassword(target.value);\n  };\n\n  const handleLogin = event => {\n    event.preventDefault();\n    login({\n      email,\n      password\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  }, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 29\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 30\n    },\n    __self: this\n  }, \"home.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 31\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 34\n    },\n    __self: this\n  }, \"register.\")), React.createElement(\"div\", {\n    className: \"raised-panel auth-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 36\n    },\n    __self: this\n  }, React.createElement(\"form\", {\n    onSubmit: handleLogin,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 37\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 38\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    className: \"raised-panel auth-raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 39\n    },\n    __self: this\n  }, \"Email:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: email,\n    onChange: handleEmailChange,\n    type: \"text\",\n    name: \"email\",\n    placeholder: \"Email\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 40\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 50\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    className: \"raised-panel auth-raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 51\n    },\n    __self: this\n  }, \"Password:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: password,\n    onChange: handlePasswordChange,\n    type: \"password\",\n    name: \"password\",\n    placeholder: \"Password\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 52\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"submit-btn\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 62\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"auth-btn\",\n    type: \"submit\",\n    value: \"Login\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  })))));\n}; // class Login extends Component {\n//   constructor(props) {\n//     super(props);\n//     this.state = {\n//       email: '',\n//       password: '',\n//     };\n//   }\n//   handleChange = ({ target }) => {\n//     this.setState({\n//       [target.name]: target.value,\n//     });\n//   };\n//   handleLogin = (event) => {\n//     event.preventDefault();\n//     console.log(`${this.state.email}`);\n//     props.login({ email: this.state.email, password: this.state.password });\n//   };\n//   render() {\n//     return (\n//       <React.Fragment>\n//         <nav>\n//           <Link to={paths.home}>home.</Link>\n//           <NavLink activeClassName=\"inset\" to={paths.login}>\n//             login.\n//           </NavLink>\n//           <Link to={paths.register}>register.</Link>\n//         </nav>\n//         <div className=\"raised-panel auth-panel\">\n//           <form onSubmit={this.handleLogin}>\n//             <div className=\"input-form\">\n//               <label className=\"raised-panel auth-raised\">Email:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.email}\n//                 onChange={this.handleChange}\n//                 type=\"text\"\n//                 name=\"email\"\n//                 placeholder=\"Email\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"input-form\">\n//               <label className=\"raised-panel auth-raised\">Password:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.password}\n//                 onChange={this.handleChange}\n//                 type=\"password\"\n//                 name=\"password\"\n//                 placeholder=\"Password\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"submit-btn\">\n//               <input className=\"auth-btn\" type=\"submit\" value=\"Login\" />\n//             </div>\n//           </form>\n//         </div>\n//       </React.Fragment>\n//     );\n//   }\n// }\n\n\nconst rpcs = [withRPCRedux('login')];\n\nconst mapStateToProps = state => ({// auth: state.auth,\n});\n\nconst hoc = compose(...rpcs, connect(mapStateToProps));\nexport default hoc(Login);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/login.js\";\nimport React, { Component, useEffect, useState } from 'react';\nimport { compose } from 'redux';\nimport { connect } from 'react-redux';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\n\nconst Login = ({\n  login\n}) => {\n  const [email, setEmail] = useState('');\n  const [password, setPassword] = useState('');\n\n  const handleEmailInput = ({\n    target\n  }) => {\n    setEmail(target.value);\n  };\n\n  const handlePasswordInput = ({\n    target\n  }) => {\n    setPassword(target.value);\n  };\n\n  const handleLogin = event => {\n    event.preventDefault();\n    login({\n      email,\n      password\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  }, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 29\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 30\n    },\n    __self: this\n  }, \"home.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 31\n    },\n    __self: this\n  }, \"login.\"), React.createElement(Link, {\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 34\n    },\n    __self: this\n  }, \"register.\")), React.createElement(\"div\", {\n    className: \"raised-panel auth-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 36\n    },\n    __self: this\n  }, React.createElement(\"form\", {\n    onSubmit: handleLogin,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 37\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 38\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    className: \"raised-panel auth-raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 39\n    },\n    __self: this\n  }, \"Email:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: email,\n    onChange: handleEmailInput,\n    type: \"text\",\n    name: \"email\",\n    placeholder: \"Email\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 40\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 50\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    className: \"raised-panel auth-raised\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 51\n    },\n    __self: this\n  }, \"Password:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: password,\n    onChange: handlePasswordInput,\n    type: \"password\",\n    name: \"password\",\n    placeholder: \"Password\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 52\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"submit-btn\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 62\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"auth-btn\",\n    type: \"submit\",\n    value: \"Login\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  })))));\n};\n\nconst rpcs = [withRPCRedux('login')];\n\nconst mapStateToProps = state => ({// auth: state.auth,\n});\n\nconst hoc = compose(...rpcs, connect(mapStateToProps));\nexport default hoc(Login); // class Login extends Component {\n//   constructor(props) {\n//     super(props);\n//     this.state = {\n//       email: '',\n//       password: '',\n//     };\n//   }\n//   handleChange = ({ target }) => {\n//     this.setState({\n//       [target.name]: target.value,\n//     });\n//   };\n//   handleLogin = (event) => {\n//     event.preventDefault();\n//     console.log(`${this.state.email}`);\n//     props.login({ email: this.state.email, password: this.state.password });\n//   };\n//   render() {\n//     return (\n//       <React.Fragment>\n//         <nav>\n//           <Link to={paths.home}>home.</Link>\n//           <NavLink activeClassName=\"inset\" to={paths.login}>\n//             login.\n//           </NavLink>\n//           <Link to={paths.register}>register.</Link>\n//         </nav>\n//         <div className=\"raised-panel auth-panel\">\n//           <form onSubmit={this.handleLogin}>\n//             <div className=\"input-form\">\n//               <label className=\"raised-panel auth-raised\">Email:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.email}\n//                 onChange={this.handleChange}\n//                 type=\"text\"\n//                 name=\"email\"\n//                 placeholder=\"Email\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"input-form\">\n//               <label className=\"raised-panel auth-raised\">Password:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.password}\n//                 onChange={this.handleChange}\n//                 type=\"password\"\n//                 name=\"password\"\n//                 placeholder=\"Password\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"submit-btn\">\n//               <input className=\"auth-btn\" type=\"submit\" value=\"Login\" />\n//             </div>\n//           </form>\n//         </div>\n//       </React.Fragment>\n//     );\n//   }\n// }"
         },
         {
           "id": "./src/pages/pageNotFound.js",
@@ -8491,9 +8378,9 @@
           "name": "./src/pages/register.js",
           "index": 48,
           "index2": 44,
-          "size": 6368,
+          "size": 8194,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -8553,14 +8440,14 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js\";\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nimport React, { Component } from 'react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths'; // import axios from 'axios';\n\nexport default class Register extends Component {\n  constructor(props) {\n    super(props);\n\n    _defineProperty(this, \"handleChange\", ({\n      target\n    }) => {\n      console.log('Target  handlechange');\n      this.setState({\n        [target.name]: target.value\n      });\n    });\n\n    _defineProperty(this, \"confirmPasswordMatch\", e => {\n      console.log('confirmPasswordMatch');\n      let password = this.state.password;\n      let confirm_password = this.state.confirm_password;\n\n      if (password !== confirm_password) {\n        e.preventDefault();\n        alert(\"Passwords don't match!\");\n        return false;\n      }\n    });\n\n    this.state = {\n      email: '',\n      username: '',\n      password: '',\n      confirm_password: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n  } // postRegister = (e) => {\n  //   e.preventDefault();\n  //   axios({\n  //     method: 'POST',\n  //     url: 'http://localhost:8000/api/login/',\n  //     data: {\n  //       email: this.state.eamil,\n  //       username: this.state.username,\n  //       password: this.state.password,\n  //     },\n  //   })\n  //     .then((res) => {\n  //       // if res.status === 201\n  //       // redirect to homepage\n  //       console.log(res);\n  //     })\n  //     .catch((err) => {\n  //       console.log(err);\n  //     });\n  // };\n  //updating state values for username and password with user submitted values\n  //passing the target input name to change/update when the user changes the field\n\n\n  render() {\n    return React.createElement(React.Fragment, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 63\n      },\n      __self: this\n    }, React.createElement(\"nav\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 64\n      },\n      __self: this\n    }, React.createElement(Link, {\n      to: paths.home,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 65\n      },\n      __self: this\n    }, \"home.\"), React.createElement(Link, {\n      to: paths.login,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 66\n      },\n      __self: this\n    }, \"login.\"), React.createElement(NavLink, {\n      activeClassName: \"inset\",\n      to: paths.register,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 67\n      },\n      __self: this\n    }, \"register.\")), React.createElement(\"div\", {\n      className: \"raised-panel auth-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 71\n      },\n      __self: this\n    }, React.createElement(\"form\", {\n      action: \"/register\",\n      method: \"post\",\n      onSubmit: this.confirmPasswordMatch,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 72\n      },\n      __self: this\n    }, React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 77\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 78\n      },\n      __self: this\n    }, \"Email:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.email,\n      onChange: this.handleChange,\n      type: \"email\",\n      name: \"email\",\n      placeholder: \"Email\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 79\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 89\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 90\n      },\n      __self: this\n    }, \"Username:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.username,\n      onChange: this.handleChange,\n      type: \"text\",\n      name: \"username\",\n      placeholder: \"Username\",\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 91\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 101\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 102\n      },\n      __self: this\n    }, \"Password:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.password,\n      type: \"password\",\n      name: \"password\",\n      placeholder: \"Password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 103\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"input-form\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 113\n      },\n      __self: this\n    }, React.createElement(\"label\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 114\n      },\n      __self: this\n    }, \"Confirm Password:\"), React.createElement(\"input\", {\n      className: \"input-box inset\",\n      value: this.state.confirm_password,\n      type: \"password\",\n      name: \"confirm_password\",\n      placeholder: \"Confirm Password\",\n      onChange: this.handleChange,\n      required: true,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 115\n      },\n      __self: this\n    })), React.createElement(\"div\", {\n      className: \"submit-btn\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 125\n      },\n      __self: this\n    }, React.createElement(\"input\", {\n      type: \"submit\",\n      value: \"Register\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 126\n      },\n      __self: this\n    })))));\n  }\n\n}"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js\";\nimport React, { Component, useState } from 'react';\nimport { compose } from 'redux';\nimport { connect } from 'react-redux';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { NavLink, Link } from 'fusion-plugin-react-router';\nimport paths from '../constants/paths';\n\nconst Register = ({\n  register\n}) => {\n  const [email, setEmail] = useState('');\n  const [username, setUsername] = useState('');\n  const [password, setPassword] = useState(''); // const [confirmPassword, setConfirmPassword] = useState('');\n\n  const handleEmailInput = ({\n    target\n  }) => {\n    setEmail(target.value);\n  };\n\n  const handleUsernameInput = ({\n    target\n  }) => {\n    setUsername(target.value);\n  };\n\n  const handlePasswordInput = ({\n    target\n  }) => {\n    setPassword(target.value);\n  }; // const handleConfirmPasswordInput = ({ target }) => {\n  //   setConfirmPassword(target.value);\n  // };\n\n\n  const handleRegistration = event => {\n    event.preventDefault();\n    register({\n      email,\n      username,\n      password\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 38\n    },\n    __self: this\n  }, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 39\n    },\n    __self: this\n  }, React.createElement(Link, {\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 40\n    },\n    __self: this\n  }, \"home.\"), React.createElement(Link, {\n    to: paths.login,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 41\n    },\n    __self: this\n  }, \"login.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.register,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 42\n    },\n    __self: this\n  }, \"register.\")), React.createElement(\"div\", {\n    className: \"raised-panel auth-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 46\n    },\n    __self: this\n  }, React.createElement(\"form\", {\n    onSubmit: handleRegistration // onSubmit={this.confirmPasswordMatch}\n    ,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 47\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 51\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 52\n    },\n    __self: this\n  }, \"Email:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: email,\n    onChange: handleEmailInput,\n    type: \"email\",\n    name: \"email\",\n    placeholder: \"Email\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 53\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }, \"Username:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: username,\n    onChange: handleUsernameInput,\n    type: \"text\",\n    name: \"username\",\n    placeholder: \"Username\",\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 65\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"input-form\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 75\n    },\n    __self: this\n  }, React.createElement(\"label\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 76\n    },\n    __self: this\n  }, \"Password:\"), React.createElement(\"input\", {\n    className: \"input-box inset\",\n    value: password,\n    type: \"password\",\n    name: \"password\",\n    placeholder: \"Password\",\n    onChange: handlePasswordInput,\n    required: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 77\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"submit-btn\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 99\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    type: \"submit\",\n    value: \"Register\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 100\n    },\n    __self: this\n  })))));\n};\n\nconst rpcs = [withRPCRedux('register')];\n\nconst mapStateToProps = state => ({// auth: state.auth,\n});\n\nconst hoc = compose(...rpcs, connect(mapStateToProps));\nexport default hoc(Register); // export default class Register extends Component {\n//   constructor(props) {\n//     super(props);\n//     this.state = {\n//       email: '',\n//       username: '',\n//       password: '',\n//       confirm_password: '',\n//     };\n//     this.handleChange = this.handleChange.bind(this);\n//     this.confirmPasswordMatch = this.confirmPasswordMatch.bind(this);\n//   }\n//   //updating state values for username and password with user submitted values\n//   //passing the target input name to change/update when the user changes the field\n//   handleChange = ({ target }) => {\n//     console.log('Target  handlechange');\n//     this.setState({\n//       [target.name]: target.value,\n//     });\n//   };\n//   //verify passwords match and prevent submission unless form fields match\n//   confirmPasswordMatch = (e) => {\n//     console.log('confirmPasswordMatch');\n//     let password = this.state.password;\n//     let confirm_password = this.state.confirm_password;\n//     if (password !== confirm_password) {\n//       e.preventDefault();\n//       alert(\"Passwords don't match!\");\n//       return false;\n//     }\n//   };\n//   render() {\n//     return (\n//       <React.Fragment>\n//         <nav>\n//           <Link to={paths.home}>home.</Link>\n//           <Link to={paths.login}>login.</Link>\n//           <NavLink activeClassName=\"inset\" to={paths.register}>\n//             register.\n//           </NavLink>\n//         </nav>\n//         <div className=\"raised-panel auth-panel\">\n//           <form\n//             action=\"/register\"\n//             method=\"post\"\n//             onSubmit={this.confirmPasswordMatch}\n//           >\n//             <div className=\"input-form\">\n//               <label>Email:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.email}\n//                 onChange={this.handleChange}\n//                 type=\"email\"\n//                 name=\"email\"\n//                 placeholder=\"Email\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"input-form\">\n//               <label>Username:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.username}\n//                 onChange={this.handleChange}\n//                 type=\"text\"\n//                 name=\"username\"\n//                 placeholder=\"Username\"\n//                 required\n//               />\n//             </div>\n//             <div className=\"input-form\">\n//               <label>Password:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.password}\n//                 type=\"password\"\n//                 name=\"password\"\n//                 placeholder=\"Password\"\n//                 onChange={this.handleChange}\n//                 required\n//               />\n//             </div>\n//             <div className=\"input-form\">\n//               <label>Confirm Password:</label>\n//               <input\n//                 className=\"input-box inset\"\n//                 value={this.state.confirm_password}\n//                 type=\"password\"\n//                 name=\"confirm_password\"\n//                 placeholder=\"Confirm Password\"\n//                 onChange={this.handleChange}\n//                 required\n//               />\n//             </div>\n//             <div className=\"submit-btn\">\n//               <input type=\"submit\" value=\"Register\" />\n//             </div>\n//           </form>\n//         </div>\n//       </React.Fragment>\n//     );\n//   }\n// }"
         },
         {
           "id": "./src/plugins/auth.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/auth.js",
           "name": "./src/plugins/auth.js",
-          "index": 65,
-          "index2": 62,
+          "index": 63,
+          "index2": 60,
           "size": 577,
           "cacheable": true,
           "built": false,
@@ -8601,7 +8488,7 @@
               "moduleName": "./src/main.js",
               "type": "cjs require",
               "userRequest": "./plugins/auth.js",
-              "loc": "31:23-51"
+              "loc": "29:23-51"
             }
           ],
           "providedExports": [
@@ -8610,62 +8497,6 @@
           "optimizationBailout": [],
           "depth": 3,
           "source": "import { createPlugin } from 'fusion-core';\nimport { SessionToken } from 'fusion-tokens';\n\nvar _default =\n/*#__PURE__*/\ncreatePlugin({\n  deps: {\n    Session: SessionToken\n  },\n\n  middleware({\n    Session\n  }) {\n    return async (ctx, next) => {\n      const session = Session.from(ctx);\n      ctx['access_token'] = session.get('access_token');\n      ctx['refresh_token'] = session.get('refresh_token');\n      await next();\n      session.set('access_token', ctx['access_token']);\n      session.set('refresh_token', ctx['refresh_token']);\n    };\n  }\n\n});\n\nexport default _default;"
-        },
-        {
-          "id": "./src/plugins/register.js",
-          "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-          "name": "./src/plugins/register.js",
-          "index": 63,
-          "index2": 61,
-          "size": 832,
-          "cacheable": true,
-          "built": false,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            "main"
-          ],
-          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
-          "issuerId": "./src/main.js",
-          "issuerName": "./src/main.js",
-          "issuerPath": [
-            {
-              "id": 0,
-              "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-              "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./node_modules/fusion-cli/entries/server-entry.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-              "name": "./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./src/main.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
-              "name": "./src/main.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": "./src/main.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
-              "module": "./src/main.js",
-              "moduleName": "./src/main.js",
-              "type": "cjs require",
-              "userRequest": "./plugins/register",
-              "loc": "27:27-56"
-            }
-          ],
-          "providedExports": [
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 3,
-          "source": "import { createPlugin } from 'fusion-core';\nimport bodyParser from 'koa-bodyparser';\nimport axios from 'axios';\n\nvar _default =\n/*#__PURE__*/\ncreatePlugin({\n  middleware() {\n    const parseBody = bodyParser();\n    return async (ctx, next) => {\n      if (ctx.path === '/register' && ctx.method === 'POST') {\n        await parseBody(ctx, () => Promise.resolve);\n        console.log(ctx.request.body);\n        axios({\n          method: 'POST',\n          url: 'http://localhost:8000/accounts/create/',\n          timeout: 4000,\n          data: ctx.request.body\n        }).then(res => {\n          ctx.body = res; // if res.status === 201\n          // redirect to homepage\n\n          console.log(res);\n        }).catch(err => {\n          console.log(err);\n        });\n      }\n\n      return next();\n    };\n  }\n\n});\n\nexport default _default;"
         },
         {
           "id": "./src/reducers/greetingReducer.js",
@@ -8719,15 +8550,6 @@
               "type": "harmony side effect evaluation",
               "userRequest": "./greetingReducer",
               "loc": "2:0-48"
-            },
-            {
-              "moduleId": "./src/reducers/index.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/index.js",
-              "module": "./src/reducers/index.js",
-              "moduleName": "./src/reducers/index.js",
-              "type": "harmony import specifier",
-              "userRequest": "./greetingReducer",
-              "loc": "5:12-27"
             }
           ],
           "providedExports": [
@@ -8743,7 +8565,7 @@
           "name": "./src/reducers/index.js",
           "index": 57,
           "index2": 57,
-          "size": 228,
+          "size": 231,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -8792,7 +8614,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "./reducers/index.js",
-              "loc": "48:29-36"
+              "loc": "46:29-36"
             }
           ],
           "providedExports": [
@@ -8800,7 +8622,7 @@
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "import { combineReducers } from 'redux';\nimport grettingReducer from './greetingReducer';\nimport profileReducer from './profileReducer';\nexport default combineReducers({\n  greeting: grettingReducer,\n  profile: profileReducer\n});"
+          "source": "import { combineReducers } from 'redux';\nimport grettingReducer from './greetingReducer';\nimport profileReducer from './profileReducer';\nexport default combineReducers({\n  // greeting: grettingReducer,\n  profile: profileReducer\n});"
         },
         {
           "id": "./src/reducers/profileReducer.js",
@@ -8943,9 +8765,9 @@
           "name": "./src/rpc/index.js",
           "index": 61,
           "index2": 59,
-          "size": 1300,
+          "size": 1404,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -8991,7 +8813,7 @@
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "// rpc handlers\nimport axios from 'axios'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  greet: async (args, ctx) => {\n    console.log(args);\n    const p = new Promise((resolve, reject) => {\n      setTimeout(() => {\n        resolve();\n      }, 10000);\n    });\n    await p;\n    return {\n      greeting: `hell0!! ${args.name}`,\n      test: 'test',\n      profile: 'user123'\n    };\n  },\n  getProfile: async (args, ctx) => {\n    const headers = {\n      authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log('testing if log works');\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  }\n};"
+          "source": "// rpc handlers\nimport axios from 'axios'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  getProfile: async (args, ctx) => {\n    const headers = {\n      authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log('testing if log works');\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  register: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/register/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  }\n};"
         },
         {
           "id": "assert",
@@ -9089,9 +8911,9 @@
           "chunks": [
             "main"
           ],
-          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-          "issuerId": "./src/plugins/register.js",
-          "issuerName": "./src/plugins/register.js",
+          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
+          "issuerId": "./src/rpc/index.js",
+          "issuerName": "./src/rpc/index.js",
           "issuerPath": [
             {
               "id": 0,
@@ -9109,9 +8931,9 @@
               "name": "./src/main.js"
             },
             {
-              "id": "./src/plugins/register.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "name": "./src/plugins/register.js"
+              "id": "./src/rpc/index.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
+              "name": "./src/rpc/index.js"
             }
           ],
           "failed": false,
@@ -9119,24 +8941,6 @@
           "warnings": 0,
           "assets": [],
           "reasons": [
-            {
-              "moduleId": "./src/plugins/register.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "module": "./src/plugins/register.js",
-              "moduleName": "./src/plugins/register.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "axios",
-              "loc": "3:0-26"
-            },
-            {
-              "moduleId": "./src/plugins/register.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "module": "./src/plugins/register.js",
-              "moduleName": "./src/plugins/register.js",
-              "type": "harmony import specifier",
-              "userRequest": "axios",
-              "loc": "14:8-13"
-            },
             {
               "moduleId": "./src/rpc/index.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
@@ -9153,7 +8957,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "27:25-30"
+              "loc": "13:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -9162,7 +8966,16 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "40:25-30"
+              "loc": "26:25-30"
+            },
+            {
+              "moduleId": "./src/rpc/index.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
+              "module": "./src/rpc/index.js",
+              "moduleName": "./src/rpc/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "axios",
+              "loc": "41:25-30"
             }
           ],
           "providedExports": null,
@@ -9482,24 +9295,6 @@
               "loc": "6:0-12"
             },
             {
-              "moduleId": "./src/plugins/register.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "module": "./src/plugins/register.js",
-              "moduleName": "./src/plugins/register.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "fusion-core",
-              "loc": "1:0-43"
-            },
-            {
-              "moduleId": "./src/plugins/register.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "module": "./src/plugins/register.js",
-              "moduleName": "./src/plugins/register.js",
-              "type": "harmony import specifier",
-              "userRequest": "fusion-core",
-              "loc": "7:0-12"
-            },
-            {
               "moduleId": "./src/root.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
               "module": "./src/root.js",
@@ -9576,7 +9371,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-jwt",
-              "loc": "36:31-41"
+              "loc": "34:31-41"
             },
             {
               "moduleId": "./src/main.js",
@@ -9585,7 +9380,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-jwt",
-              "loc": "37:17-35"
+              "loc": "35:17-35"
             },
             {
               "moduleId": "./src/main.js",
@@ -9594,7 +9389,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-jwt",
-              "loc": "38:17-39"
+              "loc": "36:17-39"
             },
             {
               "moduleId": "./src/main.js",
@@ -9603,7 +9398,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-jwt",
-              "loc": "39:17-42"
+              "loc": "37:17-42"
             }
           ],
           "providedExports": null,
@@ -9664,7 +9459,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-helmet-async",
-              "loc": "44:15-27"
+              "loc": "42:15-27"
             },
             {
               "moduleId": "./src/root.js",
@@ -9743,7 +9538,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-redux",
-              "loc": "47:15-25"
+              "loc": "45:15-25"
             },
             {
               "moduleId": "./src/main.js",
@@ -9752,7 +9547,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-redux",
-              "loc": "47:27-32"
+              "loc": "45:27-32"
             },
             {
               "moduleId": "./src/main.js",
@@ -9761,7 +9556,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-redux",
-              "loc": "48:15-27"
+              "loc": "46:15-27"
             }
           ],
           "providedExports": null,
@@ -9822,7 +9617,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "42:15-21"
+              "loc": "40:15-21"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -9930,7 +9725,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "79:27-31"
+              "loc": "58:25-29"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -9939,7 +9734,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "86:37-41"
+              "loc": "65:35-39"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -9948,7 +9743,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "93:38-45"
+              "loc": "72:36-43"
             },
             {
               "moduleId": "./src/root.js",
@@ -10063,7 +9858,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "34:17-33"
+              "loc": "32:17-33"
             },
             {
               "moduleId": "./src/main.js",
@@ -10072,7 +9867,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "45:15-23"
+              "loc": "43:15-23"
             },
             {
               "moduleId": "./src/main.js",
@@ -10081,7 +9876,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "45:25-28"
+              "loc": "43:25-28"
             }
           ],
           "providedExports": null,
@@ -10179,7 +9974,25 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "219:14-26"
+              "loc": "156:14-26"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "5:0-61"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "191:14-26"
             },
             {
               "moduleId": "./src/reducers/greetingReducer.js",
@@ -10276,7 +10089,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-styletron-react",
-              "loc": "43:15-24"
+              "loc": "41:15-24"
             }
           ],
           "providedExports": null,
@@ -10337,7 +10150,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-universal-events",
-              "loc": "46:15-35"
+              "loc": "44:15-35"
             },
             {
               "moduleId": "./src/main.js",
@@ -10346,7 +10159,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-universal-events",
-              "loc": "46:37-52"
+              "loc": "44:37-52"
             }
           ],
           "providedExports": null,
@@ -10477,7 +10290,7 @@
               "moduleName": "./src/main.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-tokens",
-              "loc": "36:17-29"
+              "loc": "34:17-29"
             },
             {
               "moduleId": "./src/plugins/auth.js",
@@ -10557,72 +10370,6 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2
-        },
-        {
-          "id": "koa-bodyparser",
-          "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/koa-bodyparser/index.js\"",
-          "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/koa-bodyparser/index.js\"",
-          "index": 64,
-          "index2": 60,
-          "size": 42,
-          "built": false,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            "main"
-          ],
-          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-          "issuerId": "./src/plugins/register.js",
-          "issuerName": "./src/plugins/register.js",
-          "issuerPath": [
-            {
-              "id": 0,
-              "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-              "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./node_modules/fusion-cli/entries/server-entry.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-              "name": "./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./src/main.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
-              "name": "./src/main.js"
-            },
-            {
-              "id": "./src/plugins/register.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "name": "./src/plugins/register.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": "./src/plugins/register.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "module": "./src/plugins/register.js",
-              "moduleName": "./src/plugins/register.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "koa-bodyparser",
-              "loc": "2:0-40"
-            },
-            {
-              "moduleId": "./src/plugins/register.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/register.js",
-              "module": "./src/plugins/register.js",
-              "moduleName": "./src/plugins/register.js",
-              "type": "harmony import specifier",
-              "userRequest": "koa-bodyparser",
-              "loc": "9:22-32"
-            }
-          ],
-          "providedExports": null,
-          "optimizationBailout": [],
-          "depth": 4
         },
         {
           "id": "koa-mount",
@@ -11721,7 +11468,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "5:0-41"
+              "loc": "2:0-51"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11730,7 +11477,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "9:38-47"
+              "loc": "12:28-36"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11739,7 +11486,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "67:11-16"
+              "loc": "13:34-42"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11748,7 +11495,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "67:31-36"
+              "loc": "14:34-42"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11757,7 +11504,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "73:7-12"
+              "loc": "46:9-14"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11766,7 +11513,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "79:7-12"
+              "loc": "46:29-34"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11775,7 +11522,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "86:17-22"
+              "loc": "52:5-10"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11784,7 +11531,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "93:18-23"
+              "loc": "58:5-10"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11793,7 +11540,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "101:22-27"
+              "loc": "65:15-20"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11802,7 +11549,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "108:7-12"
+              "loc": "72:16-21"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11811,7 +11558,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "117:7-12"
+              "loc": "80:20-25"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11820,7 +11567,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "124:7-12"
+              "loc": "87:5-10"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11829,7 +11576,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "130:18-23"
+              "loc": "95:5-10"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11838,7 +11585,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "143:9-14"
+              "loc": "102:5-10"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11847,7 +11594,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "150:7-12"
+              "loc": "108:16-21"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11856,7 +11603,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "156:21-26"
+              "loc": "121:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11865,7 +11612,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "169:9-14"
+              "loc": "128:5-10"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11874,7 +11621,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "176:7-12"
+              "loc": "134:19-24"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11883,7 +11630,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "182:21-26"
+              "loc": "147:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11892,7 +11639,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "195:9-14"
+              "loc": "154:5-10"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11901,7 +11648,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "202:7-12"
+              "loc": "160:19-24"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11910,7 +11657,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "208:29-34"
+              "loc": "173:7-12"
             },
             {
               "moduleId": "./src/pages/register.js",
@@ -11919,16 +11666,7 @@
               "moduleName": "./src/pages/register.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "221:9-14"
-            },
-            {
-              "moduleId": "./src/pages/register.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
-              "module": "./src/pages/register.js",
-              "moduleName": "./src/pages/register.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "228:7-12"
+              "loc": "180:5-10"
             },
             {
               "moduleId": "./src/root.js",
@@ -12116,7 +11854,25 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "224:29-36"
+              "loc": "161:29-36"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "react-redux",
+              "loc": "4:0-38"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony import specifier",
+              "userRequest": "react-redux",
+              "loc": "196:29-36"
             }
           ],
           "providedExports": null,
@@ -12289,7 +12045,25 @@
               "moduleName": "./src/pages/login.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "224:12-19"
+              "loc": "161:12-19"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "redux",
+              "loc": "3:0-32"
+            },
+            {
+              "moduleId": "./src/pages/register.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/register.js",
+              "module": "./src/pages/register.js",
+              "moduleName": "./src/pages/register.js",
+              "type": "harmony import specifier",
+              "userRequest": "redux",
+              "loc": "196:12-19"
             },
             {
               "moduleId": "./src/reducers/index.js",

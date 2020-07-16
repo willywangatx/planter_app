@@ -35,8 +35,8 @@ export default () => {
     // const LoginPlugin = require('./plugins/login.js').default;
     // app.register(LoginPlugin);
 
-    const RegisterPlugin = require('./plugins/register').default;
-    app.register(RegisterPlugin);
+    // const RegisterPlugin = require('./plugins/register').default;
+    // app.register(RegisterPlugin);
 
     const AuthPlugin = require('./plugins/auth.js').default;
     app.register(AuthPlugin);

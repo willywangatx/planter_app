@@ -11,11 +11,11 @@ const Login = ({ login }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleEmailChange = ({ target }) => {
+  const handleEmailInput = ({ target }) => {
     setEmail(target.value);
   };
 
-  const handlePasswordChange = ({ target }) => {
+  const handlePasswordInput = ({ target }) => {
     setPassword(target.value);
   };
 
@@ -40,7 +40,7 @@ const Login = ({ login }) => {
             <input
               className="input-box inset"
               value={email}
-              onChange={handleEmailChange}
+              onChange={handleEmailInput}
               type="text"
               name="email"
               placeholder="Email"
@@ -52,7 +52,7 @@ const Login = ({ login }) => {
             <input
               className="input-box inset"
               value={password}
-              onChange={handlePasswordChange}
+              onChange={handlePasswordInput}
               type="password"
               name="password"
               placeholder="Password"
@@ -67,6 +67,19 @@ const Login = ({ login }) => {
     </React.Fragment>
   );
 };
+
+const rpcs = [withRPCRedux('login')];
+
+const mapStateToProps = (state) => ({
+  // auth: state.auth,
+});
+
+const hoc = compose(
+  ...rpcs,
+  connect(mapStateToProps)
+);
+
+export default hoc(Login);
 
 // class Login extends Component {
 //   constructor(props) {
@@ -134,16 +147,3 @@ const Login = ({ login }) => {
 //     );
 //   }
 // }
-
-const rpcs = [withRPCRedux('login')];
-
-const mapStateToProps = (state) => ({
-  // auth: state.auth,
-});
-
-const hoc = compose(
-  ...rpcs,
-  connect(mapStateToProps)
-);
-
-export default hoc(Login);

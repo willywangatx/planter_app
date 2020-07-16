@@ -3,6 +3,6 @@ import grettingReducer from './greetingReducer';
 import profileReducer from './profileReducer';
 
 export default combineReducers({
-  greeting: grettingReducer,
+  // greeting: grettingReducer,
   profile: profileReducer,
 });

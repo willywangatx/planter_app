@@ -27,14 +27,9 @@ urlpatterns = [
     # Django Admin endpoint 
     path('admin/', admin.site.urls),
     
-    # Simple JWT api endpoints 
-    # path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    # path('api/refreshLogin/', TokenRefreshView.as_view(), name='token_refresh'),
-    # App references
-    # path('accounts/', include('accounts.urls')),
-    
+   
     # auth rest paths 
-    path('api/createAccount/', create_account, name="create_account"),
+    path('api/register/', create_account, name="create_account"),
     path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/refresh-login/', TokenRefreshView.as_view(), name='token_refresh'),
 
