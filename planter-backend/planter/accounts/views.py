@@ -27,7 +27,7 @@ def create_account(request):
     return Response(data, status=status.HTTP_201_CREATED)
     
     
-@api_view(['GET'])
+@api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def read_account(request):
     # request.user for backend because i'm only getting auth user data 

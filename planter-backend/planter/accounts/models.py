@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import models, signals 
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.utils.translation import gettext_lazy as _
 from profiles.models import Profile
@@ -24,7 +24,11 @@ class AccountManager(BaseUserManager):
         user.save(using=self._db)
 
         # Create associated one-one profile when user instance created 
-        Profile.objects.create(account=user)
+        # Profile.objects.create(account=user)
+
+        def create_profile_model(sender, instance, created, **kwargs):
+            if created:
+                Profile.objects.create(account=user)
 
         return user 
 

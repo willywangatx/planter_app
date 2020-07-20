@@ -18,5 +18,6 @@ def update_profile(request):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def get_profile(request):
+    # timer = Profile.objects.select_related('profile').get(id=profile.id)
     # profile = {'id': 1, 'name': 'John', 'focusTime': 25, 'breakTime': 5}
     return Response(request.user.id)
