@@ -1,16 +1,28 @@
-from django.db import models, signals 
+from django.db import models 
+from django.db.models.signals import post_save, pre_save
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.utils.translation import gettext_lazy as _
 from profiles.models import Profile
 
+
 class AccountManager(BaseUserManager):
     use_in_migrations = True
+    # def create_profile_model(sender, instance, **kwargs):
+    #     import pdb
+    #     pdb.set_trace()
+    #     print('testing signals')
+    #     Profile.objects.create(account=user)
 
+    # post_save.connect(create_profile_model, sender=Account)
     # create method to normalize username - to lowercase 
     def normalize_username(self, username):
         return username.lower()
 
     def create_user(self, email, username, password):
+        # import pdb
+        # pdb.set_trace()
+
+
         if not email: 
             raise ValueError("Users must have a valid email address")
         if not username: 
@@ -24,11 +36,7 @@ class AccountManager(BaseUserManager):
         user.save(using=self._db)
 
         # Create associated one-one profile when user instance created 
-        # Profile.objects.create(account=user)
-
-        def create_profile_model(sender, instance, created, **kwargs):
-            if created:
-                Profile.objects.create(account=user)
+        Profile.objects.create(account=user)
 
         return user 
 

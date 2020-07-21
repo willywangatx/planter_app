@@ -11,12 +11,15 @@ import json
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def create_account(request):
-    # import pdb 
-    # # python debugger 
-    # pdb.set_trace()
     
     serializer = AccountSerializer(data=request.data)
-    serializer.is_valid(raise_exception=True)
+
+    # wrap in try catch block 
+    # serializer.is_valid(raise_exception=True)
+    if not serializer.is_valid():
+        serializer.errors
+        return Response(serializer.errors, status.HTTP_500_INTERNAL_SERVER_ERROR)
+
     account = serializer.save()
     refresh = RefreshToken.for_user(account)
     tokens = {
@@ -27,13 +30,13 @@ def create_account(request):
     return Response(data, status=status.HTTP_201_CREATED)
     
     
-@api_view(['POST'])
-@permission_classes([IsAuthenticated])
-def read_account(request):
-    # request.user for backend because i'm only getting auth user data 
-    # request.user.profile 
-    account = AccountSerializer(request.user)
-    return Response(account.data)
+# @api_view(['POST'])
+# @permission_classes([IsAuthenticated])
+# def read_account(request):
+#     # request.user for backend because i'm only getting auth user data 
+#     # request.user.profile 
+#     account = AccountSerializer(request.user)
+#     return Response(account.data)
 
 
 

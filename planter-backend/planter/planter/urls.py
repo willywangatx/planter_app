@@ -21,7 +21,7 @@ from rest_framework_simplejwt.views import (
 )
 
 from profiles.views import get_profile 
-from accounts.views import create_account, read_account
+from accounts.views import create_account
 
 urlpatterns = [
     # Django Admin endpoint 

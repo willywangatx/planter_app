@@ -10,14 +10,14 @@ import axios from 'axios';
 
 export default {
   getProfile: async (args, ctx) => {
-    const headers = { authorization: `Bearer ${ctx.access_token}` };
+    const headers = { Authorization: `Bearer ${ctx.access_token}` };
     const result = await axios({
       method: 'POST',
       headers,
       url: 'http://localhost:8000/api/getProfile/',
     })
       .then((res) => {
-        console.log('testing if log works');
+        console.log(res.data);
         return res.data;
       })
       .catch((err) => {
@@ -27,6 +27,7 @@ export default {
   },
 
   register: async (args, ctx) => {
+    console.log('test reg handler');
     const result = await axios({
       method: 'POST',
       url: 'http://localhost:8000/api/register/',
@@ -51,6 +52,7 @@ export default {
       data: args,
     })
       .then((res) => {
+        // ctx['username'] = res.data.username;
         ctx['access_token'] = res.data.access;
         ctx['refresh_token'] = res.data.refresh;
         console.log(res.data);
