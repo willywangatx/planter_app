@@ -27,7 +27,6 @@ export default {
   },
 
   register: async (args, ctx) => {
-    console.log('test reg handler');
     const result = await axios({
       method: 'POST',
       url: 'http://localhost:8000/api/register/',

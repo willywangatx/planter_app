@@ -5,7 +5,7 @@ from rest_framework import status
 from .serializers import AccountSerializer 
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.shortcuts import redirect 
-import json 
+# import json 
 
 
 @api_view(['POST'])
@@ -28,6 +28,26 @@ def create_account(request):
     }
     data = {'account': serializer.data, 'tokens': tokens, 'response': 'Account successfully created.'}
     return Response(data, status=status.HTTP_201_CREATED)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_account(request):
+    serializer = AccountSerializer(data=request.data)
+
+    if not serializer.is_valid():
+        serializers.errors
+        return Response(serializer.errors, status=HTTP_500_INTERNAL_SERVER_ERROR)
+    
+    account = serializer.save()
+    refresh = RefreshToken.for_user(account)
+    tokens = {
+        'refresh': str(refresh),
+        'access': str(refresh.access_token),
+    }
+    data = {'account': serializer.data, 'tokens': tokens, 'response': 'Account successfully updated.'}
+    return Response(data, status=status.HTTP_200_OK)
+
     
     
 # @api_view(['POST'])

@@ -12,10 +12,6 @@ import Reset from './Reset';
 import ToggleSwitch from './ToggleSwitch';
 
 const PomodoroClock = ({
-  // greet,
-  // greetingText,
-  // loadingGreeting,
-  // greetingError,
   getProfile,
   loadingProfile,
   profileError,
@@ -235,9 +231,6 @@ const mapStateToProps = (state) => {
   const profileData = state.profile.profile;
 
   return {
-    // greetingText,
-    // loadingGreeting,
-    // greetingError,
     loadingProfile,
     profileError,
     profileData,
@@ -246,7 +239,6 @@ const mapStateToProps = (state) => {
 
 const hoc = compose(
   // gets data from browser to FE server - network request from browser get sent through all middleware
-  withRPCRedux('greet'),
   withRPCRedux('getProfile'),
   // connecting reducers to components
   connect(mapStateToProps)
