@@ -3,7 +3,7 @@ from django.db.models.signals import post_save, pre_save
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.utils.translation import gettext_lazy as _
 from profiles.models import Profile
-
+from timers.models import Timer
 
 class AccountManager(BaseUserManager):
     use_in_migrations = True

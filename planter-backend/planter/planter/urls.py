@@ -26,7 +26,6 @@ from accounts.views import create_account
 urlpatterns = [
     # Django Admin endpoint 
     path('admin/', admin.site.urls),
-    
    
     # auth rest paths 
     path('api/register/', create_account, name="create_account"),
