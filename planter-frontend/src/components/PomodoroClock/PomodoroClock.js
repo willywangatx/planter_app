@@ -10,6 +10,7 @@ import Reset from './Reset';
 // import Cycle from './Cycle';
 // import CycleCounter from './CycleCounter';
 import ToggleSwitch from './ToggleSwitch';
+import { object } from 'prop-types';
 
 const PomodoroClock = ({
   getProfile,
@@ -24,14 +25,6 @@ const PomodoroClock = ({
   // dispatch actions with updated time
   //in reducers, look for actions swtich (action.type) - case setFocusTime
   // update state for focus time
-  const [focusTime, setFocusTime] = useState(60 * 25);
-  const [breakTime, setBreakTime] = useState(60 * 5);
-  const [timer, setTimer] = useState(focusTime);
-  const [cycle, setCycle] = useState(true);
-  const [isStarted, setIsStarted] = useState(false);
-  const [timerId, setTimerId] = useState(null);
-  const [reset, setReset] = useState(false);
-  const [cycleCount, setCycleCount] = useState(0);
 
   // useEffect(() => {
   //   setTimeout(() => {
@@ -42,19 +35,26 @@ const PomodoroClock = ({
   // }, []);
 
   // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up
-  // useEffect(() => {
-  //   getProfile();
-  // }, []);
+  useEffect(() => {
+    getProfile();
+  }, []);
 
-  // componentDidMount() {
-  //   axios({
-  //     method: 'GET',
-  //     url: 'http://localhost:8000/accounts/',
-  //     timeout: 4000,
-  //     data:
-  //   })
+  // if (loadingProfile || !Object.keys(profileData).length) {
+  //   return <div>loading</div>;
   // }
-  //<ToggleSwitch - for changing focus mode />
+
+  // if (profileError) {
+  //   return <div>error</div>;
+  // }
+
+  const [focusTime, setFocusTime] = useState(60 * 25);
+  const [breakTime, setBreakTime] = useState(60 * 5);
+  const [timer, setTimer] = useState(60 * 25);
+  const [cycle, setCycle] = useState(true);
+  const [isStarted, setIsStarted] = useState(false);
+  const [timerId, setTimerId] = useState(null);
+  const [reset, setReset] = useState(false);
+  const [cycleCount, setCycleCount] = useState(0);
 
   useEffect(() => {
     setTimer(cycle ? focusTime : breakTime);
@@ -112,7 +112,7 @@ const PomodoroClock = ({
     }
   };
 
-  //<AdjustTime />
+  // <AdjustTime />
 
   useEffect(() => {
     if (cycle) {
@@ -229,6 +229,7 @@ const mapStateToProps = (state) => {
   const loadingProfile = state.profile.loading;
   const profileError = state.profile.error;
   const profileData = state.profile.profile;
+  // const focusTime = state.profile.profile.timers[0].focus_time;
 
   return {
     loadingProfile,
