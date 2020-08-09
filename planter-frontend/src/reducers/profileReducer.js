@@ -8,7 +8,6 @@ const DEFAULT_STATE = {
 };
 
 // const DEFAULT_TIMER = { focusTime: 25, break_time: 5 };
-// const default_timer = {focusTime: 25, breakTime: }
 
 export default reduceReducers(
   DEFAULT_STATE,

@@ -10,7 +10,7 @@ import Reset from './Reset';
 // import Cycle from './Cycle';
 // import CycleCounter from './CycleCounter';
 import ToggleSwitch from './ToggleSwitch';
-import { object } from 'prop-types';
+// import { object } from 'prop-types';
 
 const PomodoroClock = ({
   getProfile,
@@ -18,35 +18,6 @@ const PomodoroClock = ({
   profileError,
   profileData,
 }) => {
-  //action creator for these
-  //in store make reducer Pomodoro Clock
-  // make a const DEFAULT_STATE object tree in reducers
-  // creat actions for these
-  // dispatch actions with updated time
-  //in reducers, look for actions swtich (action.type) - case setFocusTime
-  // update state for focus time
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     // fires thunk - pass it the profile ID
-  //     // cals backend eventually
-  //     greet({ name: 'eminem', greeting: 'hi', statement: 'jskdlf' });
-  //   }, 2000);
-  // }, []);
-
-  // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up
-  useEffect(() => {
-    getProfile();
-  }, []);
-
-  // if (loadingProfile || !Object.keys(profileData).length) {
-  //   return <div>loading</div>;
-  // }
-
-  // if (profileError) {
-  //   return <div>error</div>;
-  // }
-
   const [focusTime, setFocusTime] = useState(60 * 25);
   const [breakTime, setBreakTime] = useState(60 * 5);
   const [timer, setTimer] = useState(60 * 25);
@@ -55,6 +26,18 @@ const PomodoroClock = ({
   const [timerId, setTimerId] = useState(null);
   const [reset, setReset] = useState(false);
   const [cycleCount, setCycleCount] = useState(0);
+  //action creator for these
+  //in store make reducer Pomodoro Clock
+  // make a const DEFAULT_STATE object tree in reducers
+  // creat actions for these
+  // dispatch actions with updated time
+  //in reducers, look for actions swtich (action.type) - case setFocusTime
+  // update state for focus time
+
+  // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up
+  useEffect(() => {
+    getProfile();
+  }, []);
 
   useEffect(() => {
     setTimer(cycle ? focusTime : breakTime);
@@ -86,34 +69,6 @@ const PomodoroClock = ({
     }
   }, [timer]);
 
-  const startStopClick = () => {
-    let updatedTimerId;
-    if (isStarted) {
-      clearInterval(timerId);
-      setIsStarted(false);
-    }
-    if (!isStarted) {
-      updatedTimerId = setInterval(() => {
-        setTimer((prevTimer) => {
-          const newTimer = prevTimer - 1;
-          if (newTimer >= 0) {
-            return newTimer;
-          }
-          if (cycle) {
-            setCycleCount(cycleCount + 1);
-            console.log(cycleCount);
-          }
-          return prevTimer;
-        });
-      }, 1000);
-      setTimerId(updatedTimerId);
-      setInterval(timerId);
-      setIsStarted(true);
-    }
-  };
-
-  // <AdjustTime />
-
   useEffect(() => {
     if (cycle) {
       if (focusTime !== timer) {
@@ -141,6 +96,44 @@ const PomodoroClock = ({
       }
     }
   }, [focusTime, breakTime]);
+
+  // if (loadingProfile || !Object.keys(profileData).length) {
+  //   return <div>loading</div>;
+  // }
+
+  // if (profileError) {
+  //   return <div>error</div>;
+  // }
+
+  // const focusTime = profileData.timers[0].focus_time;
+
+  const startStopClick = () => {
+    let updatedTimerId;
+    if (isStarted) {
+      clearInterval(timerId);
+      setIsStarted(false);
+    }
+    if (!isStarted) {
+      updatedTimerId = setInterval(() => {
+        setTimer((prevTimer) => {
+          const newTimer = prevTimer - 1;
+          if (newTimer >= 0) {
+            return newTimer;
+          }
+          if (cycle) {
+            setCycleCount(cycleCount + 1);
+            console.log(cycleCount);
+          }
+          return prevTimer;
+        });
+      }, 1000);
+      setTimerId(updatedTimerId);
+      setInterval(timerId);
+      setIsStarted(true);
+    }
+  };
+
+  // <AdjustTime />
 
   const cycleLength = () => {
     return cycle

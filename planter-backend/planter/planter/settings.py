@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'tasks',
     'wallets',
     'gardens',
-    'plot_details',
+    'plots',
     'plants',
     'tools',
     'sheds',
@@ -59,7 +59,7 @@ INSTALLED_APPS = [
     
 ]
 
-
+AUTH_USER_MODEL = 'accounts.Account'
 
 
 # Django Rest Framework with SimpleJWT
