@@ -10,13 +10,13 @@ class Tool(models.Model):
     # ex: a water bucket can be added to an irrigation 
     # slot, but not a soil slot 
     tool_type = models.CharField(max_length=100)
-    water_attribute = models.IntegerField()
+    water_attribute = models.IntegerField(default=0)
     # hardiness_attribute = models.IntegerField()
-    growth_attribute = models.IntegerField()
-    time_before_decay_attribute = models.DurationField()
-    wither_attribute = models.IntegerField()
-    yield_attribute = models.IntegerField()
-    yield_price_attribute = models.IntegerField()
-    tool_price = models.IntegerField()
+    growth_attribute = models.IntegerField(default=0)
+    time_before_decay_attribute = models.DurationField(default=0)
+    wither_attribute = models.IntegerField(default=0)
+    yield_attribute = models.IntegerField(default=0)
+    yield_price_attribute = models.IntegerField(default=0)
+    tool_price = models.IntegerField(default=0)
     # tools_ressale_value = models.IntegerField()
 
