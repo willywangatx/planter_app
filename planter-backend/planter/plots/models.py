@@ -10,6 +10,9 @@ class Tool_Attachment (models.Model):
     plot = models.ForeignKey('Plot', on_delete=models.CASCADE)
     tool = models.ForeignKey(Tool, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return ("(%s's row %s col %s) tool attachment: %s" % (self.plot.garden.profile.account.username, self.plot.row, self.plot.column, self.tool.tool_name))
+
 class Plant_Attachment (models.Model):
     plot = models.ForeignKey('Plot', on_delete=models.CASCADE)
     plant = models.ForeignKey(Plant, on_delete=models.CASCADE)

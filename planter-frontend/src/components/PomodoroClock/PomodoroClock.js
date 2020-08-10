@@ -176,40 +176,44 @@ const PomodoroClock = ({
   const shownProfileData = loadingProfile ? 'loading' : profileData;
 
   return (
-    <div className="pomodoro-clock raised-panel">
-      <div className="left-panel">
+    <>
+      <div className="pomodoro-clock raised-panel">
+        <div className="left-panel">
+          {/* <CurrentTask /> */}
+
+          {/* <CycleCounter cycleCount={cycleCount} /> */}
+          {/* <Cycle toggleCycle={toggleCycle} cycle={cycle} /> */}
+        </div>
+        <div className="center-panel">
+          {/* <div>{shownGreetText}</div> */}
+          <ToggleSwitch toggleCycle={toggleCycle} cycle={cycle} />
+          <Timer timer={timer} cycle={cycle} />
+          <StartStop
+            isStarted={isStarted}
+            startStopClick={startStopClick}
+            cycleCount={cycleCount}
+          />
+        </div>
+        <div className="right-panel">
+          <AdjustTime
+            increaseTimer={increaseTimer}
+            decreaseTimer={decreaseTimer}
+            cycleLength={cycleLength}
+            cycle={cycle}
+          />
+
+          <Reset resetTime={resetTime} />
+        </div>
+      </div>
+      <div className="json-data">
         <button className="raised-btn" onClick={getProfileData}>
           Get Profile Data
         </button>
         <p className="inset panel-label">
           Profile Data: {JSON.stringify(shownProfileData)}
         </p>
-        {/* <CurrentTask /> */}
-
-        {/* <CycleCounter cycleCount={cycleCount} /> */}
-        {/* <Cycle toggleCycle={toggleCycle} cycle={cycle} /> */}
       </div>
-      <div className="center-panel">
-        {/* <div>{shownGreetText}</div> */}
-        <ToggleSwitch toggleCycle={toggleCycle} cycle={cycle} />
-        <Timer timer={timer} cycle={cycle} />
-        <StartStop
-          isStarted={isStarted}
-          startStopClick={startStopClick}
-          cycleCount={cycleCount}
-        />
-      </div>
-      <div className="right-panel">
-        <AdjustTime
-          increaseTimer={increaseTimer}
-          decreaseTimer={decreaseTimer}
-          cycleLength={cycleLength}
-          cycle={cycle}
-        />
-
-        <Reset resetTime={resetTime} />
-      </div>
-    </div>
+    </>
   );
 };
 

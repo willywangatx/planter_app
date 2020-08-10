@@ -13,10 +13,11 @@ class ProfileSerializer(serializers.ModelSerializer):
     timers = TimerSerializer(many=True, read_only=True)
     gardens = GardenSerializer(many=True, read_only=True)
     tasks = TaskSerializer(many=True, read_only=True)
-    tool_attachment = ToolAttachmentSerializer(many=True, read_only=True)
+    # tool_attachment = ToolAttachmentSerializer(many=True, read_only=True)
+    plots = PlotSerializer(many=True, read_only=True)
     class Meta: 
         model = Profile
-        fields = ['id', 'username', 'email', 'timers', 'gardens', 'tasks']
+        fields = ['id', 'username', 'email', 'timers', 'gardens', 'tasks', 'plots']
 
    
    

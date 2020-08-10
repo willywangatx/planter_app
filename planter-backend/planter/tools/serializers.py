@@ -4,4 +4,4 @@ from .models import Tool
 class ToolSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tool
-        Fields "__all__"
+        fields = "__all__"

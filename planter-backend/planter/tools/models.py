@@ -20,3 +20,6 @@ class Tool(models.Model):
     tool_price = models.IntegerField(default=0)
     # tools_ressale_value = models.IntegerField()
 
+    def __str__(self):
+        return self.tool_name
+
