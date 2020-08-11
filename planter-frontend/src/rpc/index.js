@@ -1,6 +1,8 @@
 // rpc handlers
 import axios from 'axios';
 
+import { ResponseError } from 'fusion-plugin-rpc';
+
 //write code to get the access token to automatically refresh
 
 // const refreshToken = (ctx, args) => {
@@ -22,6 +24,12 @@ export default {
       })
       .catch((err) => {
         console.log(err);
+        // const respError = new ResponseError(err);
+        // respError.meta = args;
+        const responseError = new ResponseError(
+          `Could not login to Planter, error: ${err.message}`
+        );
+        throw responseError;
       });
     return result;
   },

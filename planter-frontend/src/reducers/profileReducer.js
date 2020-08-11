@@ -1,13 +1,14 @@
 import reduceReducers from 'reduce-reducers';
+
 import { createRPCReducer } from 'fusion-plugin-rpc-redux-react';
+
+const  = { timers: { focus_time: 25, break_time: 5 } };
 
 const DEFAULT_STATE = {
   loading: false,
-  profile: {},
+  profile: { profile },
   error: null,
 };
-
-// const DEFAULT_TIMER = { focusTime: 25, break_time: 5 };
 
 export default reduceReducers(
   DEFAULT_STATE,
@@ -22,6 +23,8 @@ export default reduceReducers(
         ...state,
         loading: false,
         profile: payload,
+
+        // add if statement for error handling for unauthroized - redirect to login
       };
     },
     failure: (state, { payload }) => ({

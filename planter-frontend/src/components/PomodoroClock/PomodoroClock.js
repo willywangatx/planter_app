@@ -14,7 +14,7 @@ import ToggleSwitch from './ToggleSwitch';
 
 const PomodoroClock = ({
   getProfile,
-  loadingProfile,
+  profileLoading,
   profileError,
   profileData,
 }) => {
@@ -26,6 +26,12 @@ const PomodoroClock = ({
   const [timerId, setTimerId] = useState(null);
   const [reset, setReset] = useState(false);
   const [cycleCount, setCycleCount] = useState(0);
+
+  // need to write if statement - if the backend request has returned and is not error,
+  //  then use that data, else use the default data
+  // const focusTime = profileData.timers[0].focus_time;
+  // const breakTime = profileData.timers[0].break_time;
+
   //action creator for these
   //in store make reducer Pomodoro Clock
   // make a const DEFAULT_STATE object tree in reducers
@@ -97,13 +103,13 @@ const PomodoroClock = ({
     }
   }, [focusTime, breakTime]);
 
-  // if (loadingProfile || !Object.keys(profileData).length) {
-  //   return <div>loading</div>;
-  // }
+  if (profileLoading || !Object.keys(profileData).length) {
+    return <div>loading</div>;
+  }
 
-  // if (profileError) {
-  //   return <div>error</div>;
-  // }
+  if (profileError) {
+    return <div>{profileError.message}</div>;
+  }
 
   // const focusTime = profileData.timers[0].focus_time;
 
@@ -173,7 +179,7 @@ const PomodoroClock = ({
   };
 
   // const shownGreetText = loadingGreeting ? 'loading' : greetingText;
-  const shownProfileData = loadingProfile ? 'loading' : profileData;
+  const shownProfileData = profileLoading ? 'loading' : profileData;
 
   return (
     <>
@@ -223,13 +229,13 @@ const mapStateToProps = (state) => {
   // const greetingText = state.greeting.greeting;
   // const loadingGreeting = state.greeting.loading;
   // const greetingError = state.greeting.error;
-  const loadingProfile = state.profile.loading;
+  const profileLoading = state.profile.loading;
   const profileError = state.profile.error;
   const profileData = state.profile.profile;
   // const focusTime = state.profile.profile.timers[0].focus_time;
 
   return {
-    loadingProfile,
+    profileLoading,
     profileError,
     profileData,
   };
