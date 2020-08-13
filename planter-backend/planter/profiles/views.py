@@ -25,3 +25,18 @@ def get_profile(request):
     # data = {'profile': profile_serializer.data, 'timer': timer_serializer.data, 'response': 'Profile Data successfully fetched'}
     # profile = users[]
     return Response(data, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_profile(request):
+    serializer = ProfileSerializer(request.user.profile)
+
+    if not serializer.is_valid():
+        serializers.errors
+        return Response(serializer.errors, status=HTTP_500_INTERNAL_SERVER_ERROR)
+    
+    serializer.save()
+
+    data = {'profile': serializer.data, 'response': 'Profile Data successfully updated'}
+    return Response(data, status=status.HTTP_200_OK)

@@ -36,5 +36,25 @@ export default reduceReducers(
       loading: false,
       error: payload,
     }),
+  }),
+  createRPCReducer('updateProfile', {
+    start: (state) => {
+      return { ...state, loading: true };
+    },
+    success: (state, { payload }) => {
+      console.log(payload);
+      return {
+        ...state,
+        loading: false,
+        ...payload.profile,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
   })
 );

@@ -71,12 +71,12 @@ export default {
     return result;
   },
 
-  setFocusTime: async (args, ctx) => {
+  updateProfile: async (args, ctx) => {
     const headers = { Authorization: `Bearer ${ctx.access_token}` };
     const result = await axios({
       method: 'POST',
       headers,
-      url: 'http://localhost:8000/api/setFocusTime',
+      url: 'http://localhost:8000/api/updateProfile',
     })
       .then((res) => {
         console.log(res.data);
@@ -85,9 +85,29 @@ export default {
       .catch((err) => {
         console.log(err);
         const responseError = new ResponseError(
-          `Could not update timers, error: ${err.message}`
+          `Profile update unsuccessful, error: ${err.message}`
         );
-        throw responseError;
       });
+    return result;
   },
 };
+
+// setFocusTime: async (args, ctx) => {
+//   const headers = { Authorization: `Bearer ${ctx.access_token}` };
+//   const result = await axios({
+//     method: 'POST',
+//     headers,
+//     url: 'http://localhost:8000/api/setFocusTime',
+//   })
+//     .then((res) => {
+//       console.log(res.data);
+//       return res.data;
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       const responseError = new ResponseError(
+//         `Could not update timers, error: ${err.message}`
+//       );
+//       throw responseError;
+//     });
+// },

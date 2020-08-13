@@ -19,5 +19,12 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = Profile
         fields = ['id', 'username', 'email', 'timers', 'gardens', 'tasks', 'plots']
 
+
+    def update(self, instance, validated_data):
+        for (key, value) in validated_data.items():
+            setattr(instance, key, value)
+
+        return instance
+
    
    

@@ -7,6 +7,7 @@ import Timer from './Timer';
 import AdjustTime from './AdjustTime';
 import StartStop from './StartStop';
 import Reset from './Reset';
+// import Tasks from './Tasks';
 // import Cycle from './Cycle';
 // import CycleCounter from './CycleCounter';
 import ToggleSwitch from './ToggleSwitch';
@@ -14,14 +15,21 @@ import ToggleSwitch from './ToggleSwitch';
 
 const PomodoroClock = ({
   getProfile,
+  updateProfile,
   // setFocusTime,
   profileLoading,
   profileError,
   profileData,
   focusTime,
+  breakTime,
+  // tasks,
 }) => {
+  // TODO: figure out how to get this to update before intial page render
+  // not converting the default or redux state * 60 before clock loads
+  focusTime = focusTime * 60;
+  breakTime = breakTime * 60;
   // const [focusTime, setFocusTime] = useState(60 * 25);
-  const [breakTime, setBreakTime] = useState(60 * 5);
+  // const [breakTime, setBreakTime] = useState(60 * 5);
   const [timer, setTimer] = useState(60 * 25);
   const [cycle, setCycle] = useState(true);
   const [isStarted, setIsStarted] = useState(false);
@@ -29,7 +37,6 @@ const PomodoroClock = ({
   const [reset, setReset] = useState(false);
   const [cycleCount, setCycleCount] = useState(0);
 
-  focusTime = focusTime * 60;
   // const focusTime = profileData.timers[0].focus_time;
   // const focusTime = 60 * 25;
   // need to write if statement - if the backend request has returned and is not error,
@@ -55,7 +62,7 @@ const PomodoroClock = ({
 
   useEffect(() => {
     setTimer(cycle ? focusTime : breakTime);
-  }, [cycle]);
+  }, [cycle, focusTime]);
 
   const toggleCycle = () => {
     setCycle(!cycle);
@@ -163,10 +170,11 @@ const PomodoroClock = ({
       : `Break Time: ${breakTime / 60} min.`;
   };
 
-  const increaseTimer = () => {
+  const increaseTimer = (focusTime) => {
     if (cycle) {
-      focus_time = focusTime + 1;
-      setFocusTime(focus_time);
+      const focus_time = focusTime + 1;
+      updateProfile({ focus_time });
+      // setFocusTime(focus_time);
     }
     if (!cycle) {
       setBreakTime(breakTime + 60);
@@ -204,6 +212,7 @@ const PomodoroClock = ({
     <>
       <div className="pomodoro-clock raised-panel">
         <div className="left-panel">
+          {/* <Tasks tasks={tasks} /> */}
           {/* <CurrentTask /> */}
 
           {/* <CycleCounter cycleCount={cycleCount} /> */}
@@ -249,6 +258,8 @@ const mapStateToProps = (state) => {
   const profileError = state.profile.error;
   const profileData = state.profile;
   const focusTime = state.profile.timers[0].focus_time;
+  const breakTime = state.profile.timers[0].break_time;
+  // const tasks = state.profile.tasks;
 
   // const focusTime = state.profile.profile.timers[0].focus_time;
 
@@ -257,13 +268,16 @@ const mapStateToProps = (state) => {
     profileError,
     profileData,
     focusTime,
+    breakTime,
+    // tasks,
   };
 };
 
 const hoc = compose(
   // gets data from browser to FE server - network request from browser get sent through all middleware
-  withRPCRedux('getProfile'),
-  withRPCRedux('setFocusTime'),
+  withRPCRedux('getProfile', 'updateProfile'),
+  // withRPCRedux('setFocusTime'),
+  // withRPCRedux('updateProfile'),
   // connecting reducers to components
   connect(mapStateToProps)
 );
