@@ -142,8 +142,10 @@ input:focus {
   font-size: 15vw;
   padding: 0 3vw;
   border-radius: 2.5vw;
-  color: #acdbc9;
-  text-shadow: -5px 5px 10px #94bcad, 5px -5px 10px #c4fae5;
+  color: #7f8084;
+  /* Neumorphic number display */
+  /* color: #acdbc9; */
+  /* text-shadow: -5px 5px 10px #94bcad, 5px -5px 10px #c4fae5; */
 }
 
 .panel-label {

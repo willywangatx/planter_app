@@ -14,11 +14,13 @@ import ToggleSwitch from './ToggleSwitch';
 
 const PomodoroClock = ({
   getProfile,
+  // setFocusTime,
   profileLoading,
   profileError,
   profileData,
+  focusTime,
 }) => {
-  const [focusTime, setFocusTime] = useState(60 * 25);
+  // const [focusTime, setFocusTime] = useState(60 * 25);
   const [breakTime, setBreakTime] = useState(60 * 5);
   const [timer, setTimer] = useState(60 * 25);
   const [cycle, setCycle] = useState(true);
@@ -27,6 +29,9 @@ const PomodoroClock = ({
   const [reset, setReset] = useState(false);
   const [cycleCount, setCycleCount] = useState(0);
 
+  focusTime = focusTime * 60;
+  // const focusTime = profileData.timers[0].focus_time;
+  // const focusTime = 60 * 25;
   // need to write if statement - if the backend request has returned and is not error,
   //  then use that data, else use the default data
   // const focusTime = profileData.timers.focus_time;
@@ -43,7 +48,9 @@ const PomodoroClock = ({
   // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up
 
   useEffect(() => {
-    getProfile();
+    getProfile().catch((error) => {
+      console.log(error);
+    });
   }, []);
 
   useEffect(() => {
@@ -110,7 +117,9 @@ const PomodoroClock = ({
   //   return <div>loading</div>;
   // }
 
-  if (profileLoading || !Object.keys(profileData).length) {
+  // Object.keys(profileData).length == null || undefined
+
+  if (profileLoading) {
     return <div>loading</div>;
   }
 
@@ -156,7 +165,8 @@ const PomodoroClock = ({
 
   const increaseTimer = () => {
     if (cycle) {
-      setFocusTime(focusTime + 60);
+      focus_time = focusTime + 1;
+      setFocusTime(focus_time);
     }
     if (!cycle) {
       setBreakTime(breakTime + 60);
@@ -166,10 +176,12 @@ const PomodoroClock = ({
   //update: set focusTime minimum time to 1 min
   const decreaseTimer = () => {
     if (cycle) {
-      if (focusTime <= 60) {
-        setFocusTime(60);
+      if (focusTime <= 1) {
+        focus_time = 1;
+        setFocusTime({ focus_time });
       } else {
-        setFocusTime(focusTime - 60);
+        focus_time = focusTime - 1;
+        setFocusTime({ focus_time });
       }
     }
     if (!cycle) {
@@ -233,24 +245,25 @@ const PomodoroClock = ({
 const mapStateToProps = (state) => {
   //accessing store and putting it in variable
   // accessing data in store  - called a reducer
-  // const greetingText = state.greeting.greeting;
-  // const loadingGreeting = state.greeting.loading;
-  // const greetingError = state.greeting.error;
   const profileLoading = state.profile.loading;
   const profileError = state.profile.error;
-  const profileData = state.profile.profile;
+  const profileData = state.profile;
+  const focusTime = state.profile.timers[0].focus_time;
+
   // const focusTime = state.profile.profile.timers[0].focus_time;
 
   return {
     profileLoading,
     profileError,
     profileData,
+    focusTime,
   };
 };
 
 const hoc = compose(
   // gets data from browser to FE server - network request from browser get sent through all middleware
   withRPCRedux('getProfile'),
+  withRPCRedux('setFocusTime'),
   // connecting reducers to components
   connect(mapStateToProps)
 );
