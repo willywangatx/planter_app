@@ -29,8 +29,8 @@ const PomodoroClock = ({
 
   // need to write if statement - if the backend request has returned and is not error,
   //  then use that data, else use the default data
-  // const focusTime = profileData.timers[0].focus_time;
-  // const breakTime = profileData.timers[0].break_time;
+  // const focusTime = profileData.timers.focus_time;
+  // const breakTime = profileData.timers.break_time;
 
   //action creator for these
   //in store make reducer Pomodoro Clock
@@ -41,6 +41,7 @@ const PomodoroClock = ({
   // update state for focus time
 
   // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up
+
   useEffect(() => {
     getProfile();
   }, []);
@@ -102,6 +103,12 @@ const PomodoroClock = ({
       }
     }
   }, [focusTime, breakTime]);
+
+  // display for loading/error state
+
+  // if (typeof profileData == 'undefined') {
+  //   return <div>loading</div>;
+  // }
 
   if (profileLoading || !Object.keys(profileData).length) {
     return <div>loading</div>;
