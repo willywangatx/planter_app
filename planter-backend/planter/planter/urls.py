@@ -22,7 +22,8 @@ from rest_framework_simplejwt.views import (
 
 from profiles.views import get_profile 
 from accounts.views import create_account
-from profiles.views import update_profile
+from timers.views import get_timers
+# from profiles.views import update_profile
 
 urlpatterns = [
     # Django Admin endpoint 
@@ -37,7 +38,7 @@ urlpatterns = [
     path('api/getProfile/', get_profile, name='get_profile'),
 
     # update users profile data
-    path('api/updateProfile', update_profile, name='update_profile')
+    path('api/getTimers/', get_timers, name='get_timers'),
 
     #timers api 
     # path('api/setFocusTime/', update_focus_time, name='update_focus_time')

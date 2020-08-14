@@ -7,8 +7,8 @@ from rest_framework import status
 
 from .serializers import ProfileSerializer
 from .models import Profile
-from accounts.models import Account
-from timers.serializers import TimerSerializer
+# from accounts.models import Account
+# from timers.serializers import TimerSerializer
 
 
 @api_view(['POST'])
@@ -27,16 +27,20 @@ def get_profile(request):
     return Response(data, status=status.HTTP_200_OK)
 
 
-@api_view(['POST'])
-@permission_classes([IsAuthenticated])
-def update_profile(request):
-    serializer = ProfileSerializer(request.user.profile)
+# @api_view(['POST'])
+# @permission_classes([IsAuthenticated])
+# def update_profile(request):
+#     serializer = ProfileSerializer(request.user.profile, data=request.data, partial=True)
 
-    if not serializer.is_valid():
-        serializers.errors
-        return Response(serializer.errors, status=HTTP_500_INTERNAL_SERVER_ERROR)
+#     serializer.is_valid(raise_exception=True)
+
+#     # if not serializer.is_valid():
+#     #     # serializers.errors
+
+#     #     # update error statement to bad request and raise_exception=True,
+#     #     return Response(serializer.errors, status=HTTP_500_INTERNAL_SERVER_ERROR)
     
-    serializer.save()
+#     serializer.save()
 
-    data = {'profile': serializer.data, 'response': 'Profile Data successfully updated'}
-    return Response(data, status=status.HTTP_200_OK)
+#     data = {'profile': serializer.data, 'response': 'Profile Data successfully updated'}
+#     return Response(data, status=status.HTTP_200_OK)

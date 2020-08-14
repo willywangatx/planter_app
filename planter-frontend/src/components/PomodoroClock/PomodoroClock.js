@@ -15,11 +15,13 @@ import ToggleSwitch from './ToggleSwitch';
 
 const PomodoroClock = ({
   getProfile,
-  updateProfile,
+  getTimers,
+  // updateProfile,
   // setFocusTime,
   profileLoading,
   profileError,
   profileData,
+  timerId,
   focusTime,
   breakTime,
   // tasks,
@@ -33,7 +35,7 @@ const PomodoroClock = ({
   const [timer, setTimer] = useState(60 * 25);
   const [cycle, setCycle] = useState(true);
   const [isStarted, setIsStarted] = useState(false);
-  const [timerId, setTimerId] = useState(null);
+  const [idTimer, setIdTimer] = useState(null);
   const [reset, setReset] = useState(false);
   const [cycleCount, setCycleCount] = useState(0);
 
@@ -55,9 +57,8 @@ const PomodoroClock = ({
   // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up
 
   useEffect(() => {
-    getProfile().catch((error) => {
-      console.log(error);
-    });
+    getProfile();
+    getTimers();
   }, []);
 
   useEffect(() => {
@@ -83,7 +84,7 @@ const PomodoroClock = ({
   // //logic to prevent setting focus time to 0 in adjust time
   useEffect(() => {
     if (timer === 0) {
-      clearInterval(timerId);
+      clearInterval(idTimer);
       setIsStarted(!isStarted);
       // to stop timer from changing automatically
       // setCycle(!cycle);
@@ -139,7 +140,7 @@ const PomodoroClock = ({
   const startStopClick = () => {
     let updatedTimerId;
     if (isStarted) {
-      clearInterval(timerId);
+      clearInterval(idTimer);
       setIsStarted(false);
     }
     if (!isStarted) {
@@ -156,8 +157,8 @@ const PomodoroClock = ({
           return prevTimer;
         });
       }, 1000);
-      setTimerId(updatedTimerId);
-      setInterval(timerId);
+      setIdTimer(updatedTimerId);
+      setInterval(idTimer);
       setIsStarted(true);
     }
   };
@@ -170,11 +171,12 @@ const PomodoroClock = ({
       : `Break Time: ${breakTime / 60} min.`;
   };
 
-  const increaseTimer = (focusTime) => {
+  const increaseTimer = (event) => {
+    event.preventDefault();
     if (cycle) {
-      const focus_time = focusTime + 1;
-      updateProfile({ focus_time });
-      // setFocusTime(focus_time);
+      const focus_time = focusTime / 60 + 1;
+      console.log(focus_time);
+      // updateProfile({ timers: [{ id: timerId, focus_time }] });
     }
     if (!cycle) {
       setBreakTime(breakTime + 60);
@@ -257,6 +259,7 @@ const mapStateToProps = (state) => {
   const profileLoading = state.profile.loading;
   const profileError = state.profile.error;
   const profileData = state.profile;
+  const timerId = state.profile.timers[0].id;
   const focusTime = state.profile.timers[0].focus_time;
   const breakTime = state.profile.timers[0].break_time;
   // const tasks = state.profile.tasks;
@@ -267,6 +270,7 @@ const mapStateToProps = (state) => {
     profileLoading,
     profileError,
     profileData,
+    timerId,
     focusTime,
     breakTime,
     // tasks,
@@ -275,7 +279,8 @@ const mapStateToProps = (state) => {
 
 const hoc = compose(
   // gets data from browser to FE server - network request from browser get sent through all middleware
-  withRPCRedux('getProfile', 'updateProfile'),
+  withRPCRedux('getProfile'),
+  withRPCRedux('getTimers'),
   // withRPCRedux('setFocusTime'),
   // withRPCRedux('updateProfile'),
   // connecting reducers to components

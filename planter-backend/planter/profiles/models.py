@@ -1,6 +1,7 @@
 from django.db import models
 import uuid 
 from planter.settings import AUTH_USER_MODEL
+# from timers.models import Timer
 # from django.dispatch import reciever
 # from django.db.models.signals import post_save
 # Create your models here.
@@ -10,8 +11,7 @@ from planter.settings import AUTH_USER_MODEL
 #         return self.filter(account__username=username)
 
 class ProfileManager(models.Manager):
-    pass 
-
+    pass
 class Profile(models.Model):
     # @receiver(post_save, sender=accounts.Account)
     # def create_profile_for_new_user(sender, created, instance, **kwargs):

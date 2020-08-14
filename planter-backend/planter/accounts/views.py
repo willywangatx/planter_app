@@ -17,7 +17,7 @@ def create_account(request):
     # wrap in try catch block 
     # serializer.is_valid(raise_exception=True)
     if not serializer.is_valid():
-        serializer.errors
+        # serializer.errors
         return Response(serializer.errors, status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     account = serializer.save()
@@ -35,9 +35,11 @@ def create_account(request):
 def update_account(request):
     serializer = AccountSerializer(data=request.data)
 
-    if not serializer.is_valid():
-        serializers.errors
-        return Response(serializer.errors, status=HTTP_500_INTERNAL_SERVER_ERROR)
+    seerializer.is_valid(raise_exception=True)
+    
+    # if not serializer.is_valid():
+    #     # serializers.errors
+    #     return Response(serializer.errors, status=HTTP_500_INTERNAL_SERVER_ERROR)
     
     account = serializer.save()
     refresh = RefreshToken.for_user(account)

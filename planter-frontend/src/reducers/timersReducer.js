@@ -1,37 +1,35 @@
-// import reduceReducers from 'reduce-reducers';
+import reduceReducers from 'reduce-reducers';
 
-// import { createRPCReducer } from 'fusion-plugin-rpc-redux-react';
+import { createRPCReducer } from 'fusion-plugin-rpc-redux-react';
 
-// const timers = { focus_time: 25, break_time: 5 };
+const DEFAULT_STATE = {
+  loading: false,
+  error: null,
+  timers: [{ focus_time: 25 * 60, break_time: 5 * 60 }],
+};
 
-// const DEFAULT_STATE = {
-//   loading: false,
-//   profile: { timers },
-//   error: null,
-// };
-
-// export default reduceReducers(
-//   DEFAULT_STATE,
-//   createRPCReducer('setFocusTime', {
-//     // what we call thunk with
-//     start: (state) => {
-//       return { ...state, loading: true };
-//     },
-//     success: (state, { payload }) => {
-//       console.log(payload);
-//       return {
-//         ...state,
-//         loading: false,
-//         profile: payload,
-//         // add if statement for error handling for unauthroized - redirect to login
-//       };
-//     },
-//     failure: (state, { payload }) => ({
-//       ...state,
-//       loading: false,
-//       error: payload,
-//     }),
-//   })
-// );
-
-// need to make handler
+export default reduceReducers(
+  DEFAULT_STATE,
+  createRPCReducer('getTimers', {
+    // what we call thunk with
+    start: (state) => {
+      return { ...state, loading: true, error: null };
+    },
+    success: (state, { payload }) => {
+      console.log(payload);
+      return {
+        ...state,
+        loading: false,
+        ...payload,
+        focus_time: payload.timers.focus_time * 60,
+        break_time: payload.timers.break_time * 60,
+        // add if statement for error handling for unauthroized - redirect to login
+      };
+    },
+    failure: (state, { payload }) => ({
+      ...state,
+      loading: false,
+      error: payload,
+    }),
+  })
+);
