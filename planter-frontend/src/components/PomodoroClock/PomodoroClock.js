@@ -174,8 +174,9 @@ const PomodoroClock = ({
     event.preventDefault();
     if (cycle) {
       const focus_time = focusTime / 60;
-      console.log(focus_time);
-      incrementFocusTime({ timers: { id: timerId, focus_time } });
+      console.log(focus_time, timerId);
+      // timers: { id: timerId, focus_time }
+      incrementFocusTime({ id: timerId });
     }
     if (!cycle) {
       setBreakTime(breakTime + 60);
@@ -183,10 +184,12 @@ const PomodoroClock = ({
   };
 
   //update: set focusTime minimum time to 1 min
-  const decreaseTimer = () => {
+  const decreaseTimer = (event) => {
+    event.preventDefault();
     if (cycle) {
       if (focusTime <= 1) {
-        focus_time = 1;
+        const focus_time = 1;
+        decrementFocusTime({ id: timerId, focus_time: focus_time });
         setFocusTime({ focus_time });
       } else {
         focus_time = focusTime - 1;

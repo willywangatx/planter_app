@@ -45,10 +45,10 @@ export default reduceReducers(
   createRPCReducer('incrementFocusTime', {
     start: (state) => {
       return {
-        ...state,
+        ...state.timers,
         loading: true,
         error: null,
-        focus_time: 60 + state.timers.focus_time,
+        focus_time: 60 + state.focus_time,
       };
     },
     success: (state, { payload }) => {
@@ -56,8 +56,8 @@ export default reduceReducers(
       return {
         ...state,
         loading: false,
-        ...payload.timers[0],
-        focus_time: 60 * payload.timers[0].focus_time,
+        ...payload.timers,
+        focus_time: 60 * payload.timers.focus_time,
       };
     },
     failure: (state, { payload }) => {

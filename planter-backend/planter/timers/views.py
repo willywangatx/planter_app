@@ -43,12 +43,22 @@ def get_timers(request):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def increment_focus_time(request):
-    timer = Timer.objects.get(pk=request.user.profile.timers.id).update(focus_time=F('focus_time') + 1)
-    # timer.refresh_from_db()
+    try:
+        timer_id = request.data['id']
+    except KeyError: 
+        return Response({'details': {'required fields': ['timers', 'id']}}, status=status.HTTP_400_BAD_REQUEST)
     
-    serializer = TimerSerializer(timer, data=request.data, partial=True)
-    serializer.is_valid(raise_exception=True)
-    serializer.save()
+    try:
+         timer = Timer.objects.get(pk=timer_id)
+         timer.focus_time = (F('focus_time') + 1)
+        #  timer.update(focus_time=F('focus_time') + 1)
+         timer.save()
+         timer.refresh_from_db()
+    except Timer.DoesNotExist: 
+        raise Http404()
 
-    data = {'timer': serializer.data, 'response': 'Focus Time successfully incremented'}
+    serializer = TimerSerializer(timer)
+
+    data = {'timers': serializer.data, 'response': 'Focus Time successfully incremented'}
     return Response(data, status=status.HTTP_200_OK)
+
