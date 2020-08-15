@@ -22,7 +22,7 @@ from rest_framework_simplejwt.views import (
 
 from profiles.views import get_profile 
 from accounts.views import create_account
-from timers.views import get_timers
+from timers.views import get_timers, increment_focus_time
 # from profiles.views import update_profile
 
 urlpatterns = [
@@ -34,12 +34,12 @@ urlpatterns = [
     path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/refresh-login/', TokenRefreshView.as_view(), name='token_refresh'),
 
-    # get users profile data 
+    # profile endpoints
     path('api/getProfile/', get_profile, name='get_profile'),
 
-    # update users profile data
+    # timers endpoints
     path('api/getTimers/', get_timers, name='get_timers'),
-
+    path('api/incrementFocusTime/', increment_focus_time, name='increment_focus_time'),
     #timers api 
     # path('api/setFocusTime/', update_focus_time, name='update_focus_time')
 

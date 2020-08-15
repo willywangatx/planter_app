@@ -10,7 +10,6 @@ const DEFAULT_STATE = {
   id: null,
   username: null,
   email: null,
-  timers: [{ focus_time: 25 * 60, break_time: 5 * 60 }],
 };
 
 export default reduceReducers(
@@ -25,8 +24,9 @@ export default reduceReducers(
       return {
         ...state,
         loading: false,
-        // transform data to seconds for timers here - list out on FE
         ...payload.profile,
+        // transform data to seconds for timers here - list out on FE
+        // ...(payload.profile.timers.focus_time * 60),
         // user: {payload.profile.id, payload.username, payload.email},
         // add if statement for error handling for unauthroized - redirect to login
       };

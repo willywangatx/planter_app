@@ -16,8 +16,7 @@ import ToggleSwitch from './ToggleSwitch';
 const PomodoroClock = ({
   getProfile,
   getTimers,
-  // updateProfile,
-  // setFocusTime,
+  incrementFocusTime,
   profileLoading,
   profileError,
   profileData,
@@ -28,8 +27,8 @@ const PomodoroClock = ({
 }) => {
   // TODO: figure out how to get this to update before intial page render
   // not converting the default or redux state * 60 before clock loads
-  focusTime = focusTime * 60;
-  breakTime = breakTime * 60;
+  // focusTime = focusTime * 60;
+  // breakTime = breakTime * 60;
   // const [focusTime, setFocusTime] = useState(60 * 25);
   // const [breakTime, setBreakTime] = useState(60 * 5);
   const [timer, setTimer] = useState(60 * 25);
@@ -174,9 +173,9 @@ const PomodoroClock = ({
   const increaseTimer = (event) => {
     event.preventDefault();
     if (cycle) {
-      const focus_time = focusTime / 60 + 1;
+      const focus_time = focusTime / 60;
       console.log(focus_time);
-      // updateProfile({ timers: [{ id: timerId, focus_time }] });
+      incrementFocusTime({ timers: { id: timerId, focus_time } });
     }
     if (!cycle) {
       setBreakTime(breakTime + 60);
@@ -259,12 +258,11 @@ const mapStateToProps = (state) => {
   const profileLoading = state.profile.loading;
   const profileError = state.profile.error;
   const profileData = state.profile;
-  const timerId = state.profile.timers[0].id;
-  const focusTime = state.profile.timers[0].focus_time;
-  const breakTime = state.profile.timers[0].break_time;
-  // const tasks = state.profile.tasks;
-
-  // const focusTime = state.profile.profile.timers[0].focus_time;
+  // const focusTime = state.timers[0].focus_time;
+  // const breakTime = state.timers[0].focus_time;
+  const timerId = state.timers.id;
+  const focusTime = state.timers.focus_time;
+  const breakTime = state.timers.break_time;
 
   return {
     profileLoading,
@@ -273,7 +271,6 @@ const mapStateToProps = (state) => {
     timerId,
     focusTime,
     breakTime,
-    // tasks,
   };
 };
 
@@ -281,6 +278,7 @@ const hoc = compose(
   // gets data from browser to FE server - network request from browser get sent through all middleware
   withRPCRedux('getProfile'),
   withRPCRedux('getTimers'),
+  withRPCRedux('incrementFocusTime'),
   // withRPCRedux('setFocusTime'),
   // withRPCRedux('updateProfile'),
   // connecting reducers to components

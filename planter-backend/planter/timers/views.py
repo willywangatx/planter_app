@@ -4,6 +4,8 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.views import Response 
 from rest_framework import status
 
+from django.db.models import F
+
 from .serializers import TimerSerializer
 from .models import Timer
 
@@ -36,4 +38,17 @@ def get_timers(request):
     # serializer.save()
 
     data = {'timers': serializer.data, 'response': 'Timers Data successfully fetched'}
+    return Response(data, status=status.HTTP_200_OK)
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def increment_focus_time(request):
+    timer = Timer.objects.get(pk=request.user.profile.timers.id).update(focus_time=F('focus_time') + 1)
+    # timer.refresh_from_db()
+    
+    serializer = TimerSerializer(timer, data=request.data, partial=True)
+    serializer.is_valid(raise_exception=True)
+    serializer.save()
+
+    data = {'timer': serializer.data, 'response': 'Focus Time successfully incremented'}
     return Response(data, status=status.HTTP_200_OK)

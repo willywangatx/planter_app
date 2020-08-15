@@ -18,7 +18,7 @@ class ProfileSerializer(serializers.ModelSerializer):
     plots = PlotSerializer(many=True, read_only=True)
     class Meta: 
         model = Profile
-        fields = ['id', 'username', 'email', 'timers', 'gardens', 'tasks', 'plots']
+        fields = ['id', 'username', 'email', 'gardens', 'timers', 'tasks', 'plots']
 
 
         # attempt 1 
