@@ -116,12 +116,12 @@ export default {
     return result;
   },
 
-  incrementFocusTime: async (args, ctx) => {
+  decrementFocusTime: async (args, ctx) => {
     const headers = { Authorization: `Bearer ${ctx.access_token}` };
     const result = await axios({
       method: 'POST',
       headers,
-      url: 'http://localhost:8000/api/incrementFocusTime/',
+      url: 'http://localhost:8000/api/decrementFocusTime/',
       data: args,
     })
       .then((res) => {
@@ -131,52 +131,54 @@ export default {
       .catch((err) => {
         console.log(err);
         const responseError = new ResponseError(
-          `Could not increment focus time, error: ${err.message}`
+          `Could not decrement focus time, error: ${err.message}`
+        );
+        throw responseError;
+      });
+    return result;
+  },
+
+  incrementBreakTime: async (args, ctx) => {
+    const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    const result = await axios({
+      method: 'POST',
+      headers,
+      url: 'http://localhost:8000/api/incrementBreakTime/',
+      data: args,
+    })
+      .then((res) => {
+        console.log(res.data);
+        return res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+        const responseError = new ResponseError(
+          `Could not increment break time, error: ${err.message}`
+        );
+        throw responseError;
+      });
+    return result;
+  },
+
+  decrementBreakTime: async (args, ctx) => {
+    const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    const result = await axios({
+      method: 'POST',
+      headers,
+      url: 'http://localhost:8000/api/decrementBreakTime/',
+      data: args,
+    })
+      .then((res) => {
+        console.log(res.data);
+        return res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+        const responseError = new ResponseError(
+          `Could not decrement break time, error: ${err.message}`
         );
         throw responseError;
       });
     return result;
   },
 };
-
-// setFocusTime: async (args, ctx) => {
-//   const headers = { Authorization: `Bearer ${ctx.access_token}` };
-//   const result = await axios({
-//     method: 'POST',
-//     headers,
-//     url: 'http://localhost:8000/api/setFocusTime',
-//   })
-//     .then((res) => {
-//       console.log(res.data);
-//       return res.data;
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       const responseError = new ResponseError(
-//         `Could not update timers, error: ${err.message}`
-//       );
-//       throw responseError;
-//     });
-// },
-
-// updateTimer: async (args, ctx) => {
-//   const headers = { Authorization: `Bearer ${ctx.access_token}` };
-//   const result = await axios({
-//     method: 'POST',
-//     headers,
-//     url: 'http://localhost:8000/api/updateTimer',
-//     data: args,
-//   })
-//     .then((res) => {
-//       console.log(res.data);
-//       return res.data;
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       const responseError = new ResponseError(
-//         `Profile update unsuccessful, error: ${err.message}`
-//       );
-//       throw responseError;
-//     });
-//   return result;
-// },

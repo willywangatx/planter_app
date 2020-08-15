@@ -14,9 +14,15 @@ import ToggleSwitch from './ToggleSwitch';
 // import { object } from 'prop-types';
 
 const PomodoroClock = ({
+  // retrieving data RPC handlers
   getProfile,
   getTimers,
+  // AdjustTime RPC handlers
   incrementFocusTime,
+  decrementFocusTime,
+  incrementBreakTime,
+  decrementBreakTime,
+  // props from redux global state
   profileLoading,
   profileError,
   profileData,
@@ -173,13 +179,11 @@ const PomodoroClock = ({
   const increaseTimer = (event) => {
     event.preventDefault();
     if (cycle) {
-      const focus_time = focusTime / 60;
-      console.log(focus_time, timerId);
       // timers: { id: timerId, focus_time }
       incrementFocusTime({ id: timerId });
     }
     if (!cycle) {
-      setBreakTime(breakTime + 60);
+      incrementBreakTime({ id: timerId });
     }
   };
 
@@ -187,21 +191,10 @@ const PomodoroClock = ({
   const decreaseTimer = (event) => {
     event.preventDefault();
     if (cycle) {
-      if (focusTime <= 1) {
-        const focus_time = 1;
-        decrementFocusTime({ id: timerId, focus_time: focus_time });
-        setFocusTime({ focus_time });
-      } else {
-        focus_time = focusTime - 1;
-        setFocusTime({ focus_time });
-      }
+      decrementFocusTime({ id: timerId, min_focus_time: 1 });
     }
     if (!cycle) {
-      if (breakTime <= 60) {
-        setBreakTime(60);
-      } else {
-        setBreakTime(breakTime - 60);
-      }
+      decrementBreakTime({ id: timerId, min_break_time: 1 });
     }
   };
 
@@ -282,8 +275,9 @@ const hoc = compose(
   withRPCRedux('getProfile'),
   withRPCRedux('getTimers'),
   withRPCRedux('incrementFocusTime'),
-  // withRPCRedux('setFocusTime'),
-  // withRPCRedux('updateProfile'),
+  withRPCRedux('decrementFocusTime'),
+  withRPCRedux('incrementBreakTime'),
+  withRPCRedux('decrementBreakTime'),
   // connecting reducers to components
   connect(mapStateToProps)
 );

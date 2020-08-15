@@ -45,7 +45,7 @@ export default reduceReducers(
   createRPCReducer('incrementFocusTime', {
     start: (state) => {
       return {
-        ...state.timers,
+        ...state,
         loading: true,
         error: null,
         focus_time: 60 + state.focus_time,
@@ -58,6 +58,91 @@ export default reduceReducers(
         loading: false,
         ...payload.timers,
         focus_time: 60 * payload.timers.focus_time,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
+  }),
+
+  createRPCReducer('decrementFocusTime', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        focus_time:
+          state.focus_time <= 60
+            ? state.focus_time === 60
+            : state.focus_time - 60,
+      };
+    },
+    success: (state, { payload }) => {
+      console.log(payload);
+      return {
+        ...state,
+        loading: false,
+        ...payload.timers,
+        focus_time: 60 * payload.timers.focus_time,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
+  }),
+
+  createRPCReducer('incrementBreakTime', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        break_time: state.break_time + 60,
+      };
+    },
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        ...payload.timers,
+        break_time: 60 * payload.timers.break_time,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
+  }),
+
+  createRPCReducer('decrementBreakTime', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        break_time:
+          state.break_time <= 60
+            ? state.break_time === 60
+            : state.break_time - 60,
+      };
+    },
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        ...payload.timers,
+        break_time: 60 * payload.timers.break_time,
       };
     },
     failure: (state, { payload }) => {
