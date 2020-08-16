@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ToggleSwitch = ({ toggleCycle, cycle }) => {
+const ToggleSwitch = ({ toggleCycle, currentCycle }) => {
   return (
     <div className="toggle-container">
       <input
@@ -12,11 +12,11 @@ const ToggleSwitch = ({ toggleCycle, cycle }) => {
       <label
         // className="toggle-label toggle-label-inset"
         className={
-          cycle ? 'focus-label toggle-label' : 'break-label toggle-label'
+          currentCycle ? 'focus-label toggle-label' : 'break-label toggle-label'
         }
         htmlFor="toggle-switch"
       >
-        {cycle ? 'Focus' : 'Break'}
+        {currentCycle === 'Focus' ? 'Focus' : 'Break'}
       </label>
     </div>
   );

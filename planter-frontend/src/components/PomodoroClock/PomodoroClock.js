@@ -21,6 +21,7 @@ const PomodoroClock = ({
   incrementBreakTime,
   decrementBreakTime,
   resetTimers,
+  setCycle,
   // props from redux global state
   profileLoading,
   profileError,
@@ -30,13 +31,14 @@ const PomodoroClock = ({
   breakTime,
   currentFocusTime,
   currentBreakTime,
+  currentCycle,
 }) => {
   // TODO: figure out how to get this to update on redirect from login
   // TODO: if not loading and not error, use the data, but if error than use the default state
   // - think reducers already do this tho
 
   const [timer, setTimer] = useState(focusTime);
-  const [cycle, setCycle] = useState(true);
+  // const [cycle, setCycle] = useState(true);
   const [isStarted, setIsStarted] = useState(false);
   const [idTimer, setIdTimer] = useState(null);
   const [cycleCount, setCycleCount] = useState(0);
@@ -57,11 +59,11 @@ const PomodoroClock = ({
   }, []);
 
   useEffect(() => {
-    setTimer(cycle ? focusTime : breakTime);
-  }, [cycle, focusTime, breakTime]);
+    setTimer(currentCycle === 'Focus' ? currentFocusTime : currentBreakTime);
+  }, [currentCycle, focusTime, breakTime]);
 
   const toggleCycle = () => {
-    setCycle(!cycle);
+    setCycle({ id: timerId });
   };
 
   //<StartStop />
@@ -75,23 +77,25 @@ const PomodoroClock = ({
     }
   }, [timer]);
 
+  // Adjusting timer when the times are incremented/decremented
+
   useEffect(() => {
-    if (cycle) {
-      if (focusTime !== timer) {
-        if (focusTime > timer) {
+    if (currentCycle === 'Focus') {
+      if (currentFocusTime !== timer) {
+        if (currentFocusTime > timer) {
           setTimer(timer + 60);
         }
-        if (focusTime < timer) {
+        if (currentFocusTime < timer) {
           setTimer(timer - 60);
         }
       }
     }
-    if (!cycle) {
-      if (breakTime !== timer) {
-        if (breakTime > timer) {
+    if (currentCycle === 'Break') {
+      if (currentBreakTime !== timer) {
+        if (currentBreakTime > timer) {
           setTimer(timer + 60);
         }
-        if (breakTime < timer) {
+        if (currentBreakTime < timer) {
           if (timer >= 60) {
             setTimer(timer - 60);
           }
@@ -101,7 +105,7 @@ const PomodoroClock = ({
         }
       }
     }
-  }, [focusTime, breakTime]);
+  }, [currentFocusTime, currentBreakTime]);
 
   // display for loading/error state
 
@@ -134,9 +138,9 @@ const PomodoroClock = ({
           if (newTimer >= 0) {
             return newTimer;
           }
-          if (cycle) {
-            setCycleCount(cycleCount + 1);
-            console.log(cycleCount);
+          if (currentCycle === 'Focus') {
+            // setCycleCount(cycleCount + 1);
+            // console.log(cycleCount);
           }
           return prevTimer;
         });
@@ -156,17 +160,17 @@ const PomodoroClock = ({
   // <AdjustTime />
 
   const cycleLength = () => {
-    return cycle
+    return currentCycle === 'Focus'
       ? `Focus Time: ${focusTime / 60} min.`
       : `Break Time: ${breakTime / 60} min.`;
   };
 
   const increaseTimer = (event) => {
     event.preventDefault();
-    if (cycle) {
+    if (currentCycle === 'Focus') {
       incrementFocusTime({ id: timerId });
     }
-    if (!cycle) {
+    if (currentCycle === 'Break') {
       incrementBreakTime({ id: timerId });
     }
   };
@@ -174,10 +178,10 @@ const PomodoroClock = ({
   //update: set focusTime minimum time to 1 min
   const decreaseTimer = (event) => {
     event.preventDefault();
-    if (cycle) {
+    if (currentCycle === 'Focus') {
       decrementFocusTime({ id: timerId, min_focus_time: 1 });
     }
-    if (!cycle) {
+    if (currentCycle === 'Break') {
       decrementBreakTime({ id: timerId, min_break_time: 1 });
     }
   };
@@ -194,8 +198,12 @@ const PomodoroClock = ({
       <div className="pomodoro-clock raised-panel">
         <div className="left-panel"></div>
         <div className="center-panel">
-          <ToggleSwitch toggleCycle={toggleCycle} cycle={cycle} />
-          <Timer timer={timer} cycle={cycle} />
+          <ToggleSwitch toggleCycle={toggleCycle} currentCycle={currentCycle} />
+          <Timer
+            timer={timer}
+            // currentCycle={currentCycle}
+          />
+
           <StartStop
             isStarted={isStarted}
             startStopClick={startStopClick}
@@ -207,7 +215,7 @@ const PomodoroClock = ({
             increaseTimer={increaseTimer}
             decreaseTimer={decreaseTimer}
             cycleLength={cycleLength}
-            cycle={cycle}
+            // currentCycle={currentCycle}
           />
 
           <Reset reset={reset} />
@@ -235,6 +243,7 @@ const mapStateToProps = (state) => {
   const breakTime = state.timers.break_time;
   const currentFocusTime = state.timers.current_focus_time;
   const currentBreakTime = state.timers.current_break_time;
+  const currentCycle = state.timers.current_cycle;
 
   return {
     profileLoading,
@@ -245,6 +254,7 @@ const mapStateToProps = (state) => {
     breakTime,
     currentFocusTime,
     currentBreakTime,
+    currentCycle,
   };
 };
 
@@ -257,6 +267,7 @@ const hoc = compose(
   withRPCRedux('incrementBreakTime'),
   withRPCRedux('decrementBreakTime'),
   withRPCRedux('resetTimers'),
+  withRPCRedux('setCycle'),
   // connecting reducers to components
   connect(mapStateToProps)
 );

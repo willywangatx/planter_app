@@ -134,3 +134,32 @@ def decrement_break_time(request):
 
     data = {'timers': serializer.data, 'response': 'Break Time successfuly decremented'}
     return Response(data, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def set_cycle(request):
+    try: 
+        timer_id = request.data['id']
+    except KeyError:
+        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
+
+    try: 
+        timer = Timer.objects.get(pk=timer_id)
+        if timer.current_cycle == 'Focus':
+            timer.current_cycle = 'Break'
+            # timer.current_cycle = (F('current_cycle') == 'Break')
+        elif timer.current_cycle == 'Break':
+            # timer.current_cycle = (F('current_cycle') == 'Focus')
+            timer.current_cycle = 'Focus'
+        # else: 
+        #     # timer.current_cycle = (F('current_cycle') == 'Focus')
+        #     timer.current_cycle = 'Focus'
+        timer.save()
+        # timer.refresh_from_db()
+    except Timer.DoesNotExist:
+        return Http404()
+
+    serializer = TimerSerializer(timer)
+    data = {'timers': serializer.data, 'response': 'Cycle successfuly set'}
+    return Response(data, status=status.HTTP_200_OK)

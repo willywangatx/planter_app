@@ -4,7 +4,7 @@ import momentDurationFormatSetup from 'moment-duration-format';
 
 momentDurationFormatSetup(moment);
 
-const Timer = ({ timer, cycle }) => {
+const Timer = ({ timer }) => {
   const formattedTimeLeft = moment
     .duration(timer, 's')
     .format('mm:ss', { trim: false });

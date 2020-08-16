@@ -10,6 +10,7 @@ const DEFAULT_STATE = {
   break_time: 5 * 60,
   current_focus_time: 25 * 60,
   current_break_time: 5 * 60,
+  current_cycle: 'Focus',
   completed_focus_counter: null,
   logged_focus_minutes: null,
   profile: null,
@@ -172,6 +173,32 @@ export default reduceReducers(
         loading: false,
         ...payload.timers,
         break_time: payload.timers.break_time,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
+  }),
+
+  createRPCReducer('setCycle', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        current_cycle: state.current_cycle === 'Focus' ? 'Break' : 'Focus',
+      };
+    },
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: null,
+        current_cycle: payload.timers.current_cycle,
       };
     },
     failure: (state, { payload }) => {

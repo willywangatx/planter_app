@@ -20,6 +20,8 @@ class Timer(models.Model):
     current_focus_time = models.IntegerField(default=25*60)
     current_break_time = models.IntegerField(default=5*60)
 
+    current_cycle = models.CharField(max_length=20, default='Focus')
+
     # last_updated = models.TimeField(auto_now=True)
     # intervals divisable by 4 get extra energy points 
     completed_focus_counter = models.IntegerField(default=0)
