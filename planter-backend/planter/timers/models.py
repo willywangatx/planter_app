@@ -14,10 +14,11 @@ class Timer(models.Model):
             timer.save()
     # Use foreign key to give flexibility 
     profile = models.ForeignKey(Profile, related_name='timers', on_delete=models.CASCADE)
-    focus_time = models.IntegerField(default=25)
-    break_time = models.IntegerField(default=5) 
+    focus_time = models.IntegerField(default=25*60)
+    break_time = models.IntegerField(default=5*60) 
     # needed to keep timer state between page loads
-    curent_focus_time = models.IntegerField(default=25)
+    current_focus_time = models.IntegerField(default=25*60)
+    current_break_time = models.IntegerField(default=5*60)
 
     # last_updated = models.TimeField(auto_now=True)
     # intervals divisable by 4 get extra energy points 

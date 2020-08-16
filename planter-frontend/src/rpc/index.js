@@ -181,4 +181,26 @@ export default {
       });
     return result;
   },
+
+  resetTimers: async (args, ctx) => {
+    const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    const result = await axios({
+      method: 'POST',
+      headers,
+      url: 'http://localhost:8000/api/resetTimers/',
+      data: args,
+    })
+      .then((res) => {
+        console.log(res.data);
+        return res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+        const responseError = new ResponseError(
+          `Could not reset timers, error: ${err.message}`
+        );
+        throw responseError;
+      });
+    return result;
+  },
 };

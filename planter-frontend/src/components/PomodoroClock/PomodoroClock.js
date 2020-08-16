@@ -7,9 +7,7 @@ import Timer from './Timer';
 import AdjustTime from './AdjustTime';
 import StartStop from './StartStop';
 import Reset from './Reset';
-// import Tasks from './Tasks';
-// import Cycle from './Cycle';
-// import CycleCounter from './CycleCounter';
+
 import ToggleSwitch from './ToggleSwitch';
 // import { object } from 'prop-types';
 
@@ -22,6 +20,7 @@ const PomodoroClock = ({
   decrementFocusTime,
   incrementBreakTime,
   decrementBreakTime,
+  resetTimers,
   // props from redux global state
   profileLoading,
   profileError,
@@ -37,11 +36,11 @@ const PomodoroClock = ({
   // breakTime = breakTime * 60;
   // const [focusTime, setFocusTime] = useState(60 * 25);
   // const [breakTime, setBreakTime] = useState(60 * 5);
-  const [timer, setTimer] = useState(60 * 25);
+  const [timer, setTimer] = useState(focusTime);
   const [cycle, setCycle] = useState(true);
   const [isStarted, setIsStarted] = useState(false);
   const [idTimer, setIdTimer] = useState(null);
-  const [reset, setReset] = useState(false);
+  // const [reset, setReset] = useState(false);
   const [cycleCount, setCycleCount] = useState(0);
 
   // const focusTime = profileData.timers[0].focus_time;
@@ -68,21 +67,21 @@ const PomodoroClock = ({
 
   useEffect(() => {
     setTimer(cycle ? focusTime : breakTime);
-  }, [cycle, focusTime]);
+  }, [cycle, focusTime, breakTime]);
 
   const toggleCycle = () => {
     setCycle(!cycle);
   };
 
   //<Reset />
-  useEffect(() => {
-    setTimer(cycle ? focusTime : breakTime);
-    setReset(false);
-  }, [reset]);
+  // useEffect(() => {
+  //   setTimer(cycle ? focusTime : breakTime);
+  //   setReset(false);
+  // }, [reset]);
 
-  const resetTime = () => {
-    setReset(true);
-  };
+  // const resetTime = () => {
+  //   setReset(true);
+  // };
 
   //<StartStop />
   //TODO: adding a session counter to app
@@ -168,6 +167,12 @@ const PomodoroClock = ({
     }
   };
 
+  // RESET TIMERS
+  const reset = (event) => {
+    event.preventDefault();
+    resetTimers({ id: timerId });
+  };
+
   // <AdjustTime />
 
   const cycleLength = () => {
@@ -179,7 +184,6 @@ const PomodoroClock = ({
   const increaseTimer = (event) => {
     event.preventDefault();
     if (cycle) {
-      // timers: { id: timerId, focus_time }
       incrementFocusTime({ id: timerId });
     }
     if (!cycle) {
@@ -208,15 +212,8 @@ const PomodoroClock = ({
   return (
     <>
       <div className="pomodoro-clock raised-panel">
-        <div className="left-panel">
-          {/* <Tasks tasks={tasks} /> */}
-          {/* <CurrentTask /> */}
-
-          {/* <CycleCounter cycleCount={cycleCount} /> */}
-          {/* <Cycle toggleCycle={toggleCycle} cycle={cycle} /> */}
-        </div>
+        <div className="left-panel"></div>
         <div className="center-panel">
-          {/* <div>{shownGreetText}</div> */}
           <ToggleSwitch toggleCycle={toggleCycle} cycle={cycle} />
           <Timer timer={timer} cycle={cycle} />
           <StartStop
@@ -233,7 +230,7 @@ const PomodoroClock = ({
             cycle={cycle}
           />
 
-          <Reset resetTime={resetTime} />
+          <Reset reset={reset} />
         </div>
       </div>
       <div className="json-data">
@@ -278,6 +275,7 @@ const hoc = compose(
   withRPCRedux('decrementFocusTime'),
   withRPCRedux('incrementBreakTime'),
   withRPCRedux('decrementBreakTime'),
+  withRPCRedux('resetTimers'),
   // connecting reducers to components
   connect(mapStateToProps)
 );

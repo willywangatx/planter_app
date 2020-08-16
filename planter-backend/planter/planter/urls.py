@@ -22,8 +22,8 @@ from rest_framework_simplejwt.views import (
 
 from profiles.views import get_profile 
 from accounts.views import create_account
-from timers.views import get_timers, increment_focus_time, decrement_focus_time, increment_break_time, decrement_break_time
-# from profiles.views import update_profile
+from timers.views import *
+# from timers.views import get_timers, increment_focus_time, decrement_focus_time, increment_break_time, decrement_break_time, reset_timers
 
 urlpatterns = [
     # Django Admin endpoint 
@@ -39,6 +39,7 @@ urlpatterns = [
 
     # timers endpoints
     path('api/getTimers/', get_timers, name='get_timers'),
+    path('api/resetTimers/', reset_timers, name='reset_timers'),
     path('api/incrementFocusTime/', increment_focus_time, name='increment_focus_time'),
     path('api/decrementFocusTime/', decrement_focus_time, name='decrement_focus_time'),
     path('api/incrementBreakTime/', increment_break_time, name='increment_break_time'),

@@ -12,23 +12,34 @@ from .models import Timer
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def get_timers(request):
-
     timers = Timer.objects.filter(profile=request.user.profile)
-    # request.user.profile.timers.all()
     serializer = TimerSerializer(timers, many=True)
-
-
-    # timers = Timer.objects.get(pk=timers.id)
-
-    # data=request.data meansa you're updating or creating something
-    # parital=True is for updating/creating
-    # serializer = TimerSerializer(request.user.profile.timers.id, data=request.data, partial=True)
-    
-    # serializer.is_valid(raise_exception=True)
-    # serializer.save()
-
     data = {'timers': serializer.data, 'response': 'Timers Data successfully fetched'}
     return Response(data, status=status.HTTP_200_OK)
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def reset_timers(request):
+    try: 
+        timer_id = request.data['id']
+
+    except KeyError:
+        return Response({'details': {'required fields': ['id', 'current_focus_time', 'current_break_time']}}, status=status.HTTP_400_BAD_REQUEST)
+
+    try: 
+        timer = Timer.objects.get(pk=timer_id)
+        timer.current_focus_time = (F('current_focus_time') == focus_time)
+        timer.current_break_time = (F('current_break_time') == break_time)
+        timer.save()
+        timer.refresh_from_db()
+    except Timer.DoesNotExist:
+        raise Http404()
+
+    serializer = TimerSerializer(timer)
+    data = {'timers': serializer.data, 'response': 'Timers successfully reset'}
+    return Response(data, status=status.HTTP_200_OK)
+
+
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
@@ -40,8 +51,7 @@ def increment_focus_time(request):
     
     try:
          timer = Timer.objects.get(pk=timer_id)
-         timer.focus_time = (F('focus_time') + 1)
-        #  timer.update(focus_time=F('focus_time') + 1)
+         timer.focus_time = (F('focus_time') + 60)
          timer.save()
          timer.refresh_from_db()
     except Timer.DoesNotExist: 
@@ -64,7 +74,7 @@ def decrement_focus_time(request):
     try: 
         timer = Timer.objects.get(pk=timer_id)
         if timer.focus_time > min_focus_time:
-            timer.focus_time = (F('focus_time') - 1)
+            timer.focus_time = (F('focus_time') - 60)
             timer.save()
             timer.refresh_from_db()
     except Timer.DoesNotExist:
@@ -86,7 +96,7 @@ def increment_break_time(request):
 
     try: 
         timer = Timer.objects.get(pk=timer_id)
-        timer.break_time = (F('break_time') + 1)
+        timer.break_time = (F('break_time') + 60)
         timer.save()
         timer.refresh_from_db()
     except Timer.DoesNotExist:
@@ -110,7 +120,7 @@ def decrement_break_time(request):
     try:
         timer = Timer.objects.get(pk=timer_id)
         if timer.break_time > min_break_time:
-            timer.break_time = (F('break_time') - 1)
+            timer.break_time = (F('break_time') - 60)
             timer.save()
             timer.refresh_from_db()
     except Timer.DoesNotExist:

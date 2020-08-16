@@ -8,7 +8,8 @@ const DEFAULT_STATE = {
   id: null,
   focus_time: 25 * 60,
   break_time: 5 * 60,
-  current_focus_time: null,
+  current_focus_time: 25 * 60,
+  current_break_time: 5 * 60,
   completed_focus_counter: null,
   logged_focus_minutes: null,
   profile: null,
@@ -27,8 +28,8 @@ export default reduceReducers(
         ...state,
         loading: false,
         ...payload.timers[0],
-        focus_time: 60 * payload.timers[0].focus_time,
-        break_time: 60 * payload.timers[0].break_time,
+        focus_time: payload.timers[0].focus_time,
+        break_time: payload.timers[0].break_time,
 
         // focusTime: payload.timers[0].focus_time * 60,
         // breakTime: payload.timers[0].break_time * 60,
@@ -40,6 +41,34 @@ export default reduceReducers(
       loading: false,
       error: payload,
     }),
+  }),
+
+  createRPCReducer('resetTimers', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        current_focus_time: state.focus_time,
+        current_break_time: state.break_time,
+      };
+    },
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: null,
+        current_focus_time: payload.timers.current_focus_time,
+        current_break_time: payload.timers.current_break_time,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
   }),
 
   createRPCReducer('incrementFocusTime', {
@@ -57,7 +86,7 @@ export default reduceReducers(
         ...state,
         loading: false,
         ...payload.timers,
-        focus_time: 60 * payload.timers.focus_time,
+        focus_time: payload.timers.focus_time,
       };
     },
     failure: (state, { payload }) => {
@@ -87,7 +116,7 @@ export default reduceReducers(
         ...state,
         loading: false,
         ...payload.timers,
-        focus_time: 60 * payload.timers.focus_time,
+        focus_time: payload.timers.focus_time,
       };
     },
     failure: (state, { payload }) => {
@@ -113,7 +142,7 @@ export default reduceReducers(
         ...state,
         loading: false,
         ...payload.timers,
-        break_time: 60 * payload.timers.break_time,
+        break_time: payload.timers.break_time,
       };
     },
     failure: (state, { payload }) => {
@@ -142,7 +171,7 @@ export default reduceReducers(
         ...state,
         loading: false,
         ...payload.timers,
-        break_time: 60 * payload.timers.break_time,
+        break_time: payload.timers.break_time,
       };
     },
     failure: (state, { payload }) => {
