@@ -28,10 +28,14 @@ def reset_timers(request):
 
     try: 
         timer = Timer.objects.get(pk=timer_id)
-        timer.current_focus_time = (F('current_focus_time') == focus_time)
-        timer.current_break_time = (F('current_break_time') == break_time)
+        focus_time = timer.focus_time
+        break_time = timer.break_time
+        timer.current_focus_time = focus_time
+        timer.current_break_time = break_time
+        # timer.current_focus_time = (F('current_focus_time') == focus_time)
+        # timer.current_break_time = (F('current_break_time') == break_time)
         timer.save()
-        timer.refresh_from_db()
+        # timer.refresh_from_db()
     except Timer.DoesNotExist:
         raise Http404()
 

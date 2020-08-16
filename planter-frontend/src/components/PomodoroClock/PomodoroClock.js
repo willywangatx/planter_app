@@ -28,27 +28,18 @@ const PomodoroClock = ({
   timerId,
   focusTime,
   breakTime,
-  // tasks,
+  currentFocusTime,
+  currentBreakTime,
 }) => {
-  // TODO: figure out how to get this to update before intial page render
-  // not converting the default or redux state * 60 before clock loads
-  // focusTime = focusTime * 60;
-  // breakTime = breakTime * 60;
-  // const [focusTime, setFocusTime] = useState(60 * 25);
-  // const [breakTime, setBreakTime] = useState(60 * 5);
+  // TODO: figure out how to get this to update on redirect from login
+  // TODO: if not loading and not error, use the data, but if error than use the default state
+  // - think reducers already do this tho
+
   const [timer, setTimer] = useState(focusTime);
   const [cycle, setCycle] = useState(true);
   const [isStarted, setIsStarted] = useState(false);
   const [idTimer, setIdTimer] = useState(null);
-  // const [reset, setReset] = useState(false);
   const [cycleCount, setCycleCount] = useState(0);
-
-  // const focusTime = profileData.timers[0].focus_time;
-  // const focusTime = 60 * 25;
-  // need to write if statement - if the backend request has returned and is not error,
-  //  then use that data, else use the default data
-  // const focusTime = profileData.timers.focus_time;
-  // const breakTime = profileData.timers.break_time;
 
   //action creator for these
   //in store make reducer Pomodoro Clock
@@ -73,19 +64,8 @@ const PomodoroClock = ({
     setCycle(!cycle);
   };
 
-  //<Reset />
-  // useEffect(() => {
-  //   setTimer(cycle ? focusTime : breakTime);
-  //   setReset(false);
-  // }, [reset]);
-
-  // const resetTime = () => {
-  //   setReset(true);
-  // };
-
   //<StartStop />
-  //TODO: adding a session counter to app
-  // //logic to prevent setting focus time to 0 in adjust time
+
   useEffect(() => {
     if (timer === 0) {
       clearInterval(idTimer);
@@ -246,16 +226,15 @@ const PomodoroClock = ({
 };
 
 const mapStateToProps = (state) => {
-  //accessing store and putting it in variable
-  // accessing data in store  - called a reducer
+  //accessing store and putting it into local props for component
   const profileLoading = state.profile.loading;
   const profileError = state.profile.error;
   const profileData = state.profile;
-  // const focusTime = state.timers[0].focus_time;
-  // const breakTime = state.timers[0].focus_time;
   const timerId = state.timers.id;
   const focusTime = state.timers.focus_time;
   const breakTime = state.timers.break_time;
+  const currentFocusTime = state.timers.current_focus_time;
+  const currentBreakTime = state.timers.current_break_time;
 
   return {
     profileLoading,
@@ -264,6 +243,8 @@ const mapStateToProps = (state) => {
     timerId,
     focusTime,
     breakTime,
+    currentFocusTime,
+    currentBreakTime,
   };
 };
 
