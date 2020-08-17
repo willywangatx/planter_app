@@ -29,8 +29,8 @@ const PomodoroClock = ({
   timerId,
   focusTime,
   breakTime,
-  currentFocusTime,
-  currentBreakTime,
+  // currentFocusTime,
+  // currentBreakTime,
   currentCycle,
 }) => {
   // TODO: figure out how to get this to update on redirect from login
@@ -58,13 +58,17 @@ const PomodoroClock = ({
     getTimers();
   }, []);
 
-  useEffect(() => {
-    setTimer(currentCycle === 'Focus' ? currentFocusTime : currentBreakTime);
-  }, [currentCycle, focusTime, breakTime]);
-
-  const toggleCycle = () => {
-    setCycle({ id: timerId });
-  };
+  // TODO: connect back end call for timers
+  // useEffect(() => {
+  //   if (isStarted && timer != 0) {
+  //     if (currentCycle === 'Focus') {
+  //       focusCountdown();
+  //     }
+  //     if (currentCycle === 'Break') {
+  //       breakCoundown();
+  //     }
+  //   }
+  // }, [isStarted, timer]);
 
   //<StartStop />
 
@@ -77,25 +81,33 @@ const PomodoroClock = ({
     }
   }, [timer]);
 
-  // Adjusting timer when the times are incremented/decremented
+  useEffect(() => {
+    setTimer(currentCycle === 'Focus' ? focusTime : breakTime);
+  }, [currentCycle, focusTime, breakTime]);
 
+  // TOGGLE
+  const toggleCycle = () => {
+    setCycle({ id: timerId });
+  };
+
+  // Adjusting timer when the times are incremented/decremented
   useEffect(() => {
     if (currentCycle === 'Focus') {
-      if (currentFocusTime !== timer) {
-        if (currentFocusTime > timer) {
+      if (focusTime !== timer) {
+        if (focusTime > timer) {
           setTimer(timer + 60);
         }
-        if (currentFocusTime < timer) {
+        if (focusTime < timer) {
           setTimer(timer - 60);
         }
       }
     }
     if (currentCycle === 'Break') {
-      if (currentBreakTime !== timer) {
-        if (currentBreakTime > timer) {
+      if (breakTime !== timer) {
+        if (breakTime > timer) {
           setTimer(timer + 60);
         }
-        if (currentBreakTime < timer) {
+        if (breakTime < timer) {
           if (timer >= 60) {
             setTimer(timer - 60);
           }
@@ -105,7 +117,7 @@ const PomodoroClock = ({
         }
       }
     }
-  }, [currentFocusTime, currentBreakTime]);
+  }, [focusTime, breakTime]);
 
   // display for loading/error state
 
@@ -125,7 +137,7 @@ const PomodoroClock = ({
 
   // const focusTime = profileData.timers[0].focus_time;
 
-  const startStopClick = () => {
+  const startStopTimer = () => {
     let updatedTimerId;
     if (isStarted) {
       clearInterval(idTimer);
@@ -138,10 +150,10 @@ const PomodoroClock = ({
           if (newTimer >= 0) {
             return newTimer;
           }
-          if (currentCycle === 'Focus') {
-            // setCycleCount(cycleCount + 1);
-            // console.log(cycleCount);
-          }
+          // if (currentCycle === 'Focus') {
+          //   // setCycleCount(cycleCount + 1);
+          //   // console.log(cycleCount);
+          // }
           return prevTimer;
         });
       }, 1000);
@@ -206,7 +218,7 @@ const PomodoroClock = ({
 
           <StartStop
             isStarted={isStarted}
-            startStopClick={startStopClick}
+            startStopTimer={startStopTimer}
             cycleCount={cycleCount}
           />
         </div>

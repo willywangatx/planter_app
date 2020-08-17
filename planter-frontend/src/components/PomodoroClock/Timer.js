@@ -16,4 +16,21 @@ const Timer = ({ timer }) => {
   );
 };
 
+// const Timer = ({ timer }) => {
+//   let seconds = ('0' + (Math.floor(timer / 1000) % 60)).slice(-2);
+//   // let seconds = (str, num) => {
+//   //   return timer.toString();
+//   // };
+//   let minutes = ('0' + Math.floor((timer / 60000) % 60)).slice(-2);
+
+//   return (
+//     <React.Fragment>
+//       {/* <p className="inset timer-clock">{formattedTimeLeft}</p> */}
+//       <p className="inset timer-clock">
+//         {minutes}:{seconds}
+//       </p>
+//     </React.Fragment>
+//   );
+// };
+
 export default Timer;

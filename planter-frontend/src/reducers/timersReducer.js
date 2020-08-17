@@ -79,6 +79,7 @@ export default reduceReducers(
         loading: true,
         error: null,
         focus_time: 60 + state.focus_time,
+        current_focus_time: state.current_focus_time + 60,
       };
     },
     success: (state, { payload }) => {
@@ -88,6 +89,7 @@ export default reduceReducers(
         loading: false,
         ...payload.timers,
         focus_time: payload.timers.focus_time,
+        current_focus_time: payload.timers.current_focus_time,
       };
     },
     failure: (state, { payload }) => {
@@ -109,6 +111,10 @@ export default reduceReducers(
           state.focus_time <= 60
             ? state.focus_time === 60
             : state.focus_time - 60,
+        current_focus_time:
+          state.current_focus_time <= 60
+            ? state.current_focus_time === 0
+            : state.current_focus_time - 60,
       };
     },
     success: (state, { payload }) => {
@@ -118,6 +124,7 @@ export default reduceReducers(
         loading: false,
         ...payload.timers,
         focus_time: payload.timers.focus_time,
+        current_focus_time: payload.timers.current_focus_time,
       };
     },
     failure: (state, { payload }) => {
@@ -136,6 +143,7 @@ export default reduceReducers(
         loading: true,
         error: null,
         break_time: state.break_time + 60,
+        current_break_time: state.current_break_time + 60,
       };
     },
     success: (state, { payload }) => {
@@ -144,6 +152,7 @@ export default reduceReducers(
         loading: false,
         ...payload.timers,
         break_time: payload.timers.break_time,
+        current_break_time: payload.current_break_time,
       };
     },
     failure: (state, { payload }) => {
@@ -165,6 +174,10 @@ export default reduceReducers(
           state.break_time <= 60
             ? state.break_time === 60
             : state.break_time - 60,
+        current_break_time:
+          state.current_break_time <= 60
+            ? state.current_break_time === 0
+            : state.current_break_time - 60,
       };
     },
     success: (state, { payload }) => {
@@ -173,6 +186,7 @@ export default reduceReducers(
         loading: false,
         ...payload.timers,
         break_time: payload.timers.break_time,
+        current_break_time: payload.timers.current_break_time,
       };
     },
     failure: (state, { payload }) => {
@@ -209,4 +223,22 @@ export default reduceReducers(
       };
     },
   })
+
+  // createRPCReducer('focusCountdown', {
+  //   update: (state) => {
+  //     return {
+  //       ...state,
+  //       current_focus_time: state.current_focus_time - 1,
+  //     };
+  //   },
+  // }),
+
+  // createRPCReducer('breakCountdown', {
+  //   update: (state) => {
+  //     return {
+  //       ...state,
+  //       current_break_time: state.current_break_time - 1,
+  //     };
+  //   },
+  // })
 );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const StartStop = ({ isStarted, startStopClick }) => {
+const StartStop = ({ isStarted, startStopTimer }) => {
   const [click, setClick] = useState(false);
 
   const btnClick = () => {
@@ -8,7 +8,7 @@ const StartStop = ({ isStarted, startStopClick }) => {
   };
 
   const combinedClickEvents = () => {
-    startStopClick();
+    startStopTimer();
     btnClick();
   };
 

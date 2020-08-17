@@ -56,6 +56,7 @@ def increment_focus_time(request):
     try:
          timer = Timer.objects.get(pk=timer_id)
          timer.focus_time = (F('focus_time') + 60)
+         timer.current_focus_time = (F('current_focus_time') + 60)
          timer.save()
          timer.refresh_from_db()
     except Timer.DoesNotExist: 
@@ -77,8 +78,14 @@ def decrement_focus_time(request):
     
     try: 
         timer = Timer.objects.get(pk=timer_id)
+        cft = timer.current_focus_time
         if timer.focus_time > min_focus_time:
             timer.focus_time = (F('focus_time') - 60)
+            if cft >= min_focus_time:
+                timer.current_focus_time = (F('current_focus_time') - 60)
+            else:
+                timer.current_focus_time = (F('current_focus_time') == 0)
+
             timer.save()
             timer.refresh_from_db()
     except Timer.DoesNotExist:
@@ -101,6 +108,7 @@ def increment_break_time(request):
     try: 
         timer = Timer.objects.get(pk=timer_id)
         timer.break_time = (F('break_time') + 60)
+        timer.current_break_time = (F('break_time') + 60)
         timer.save()
         timer.refresh_from_db()
     except Timer.DoesNotExist:
@@ -125,6 +133,10 @@ def decrement_break_time(request):
         timer = Timer.objects.get(pk=timer_id)
         if timer.break_time > min_break_time:
             timer.break_time = (F('break_time') - 60)
+            if timer.current_break_time >= min_break_time:
+                timer.current_break_time = (F('current_break_time') - 60)
+            else: 
+                timer.current_break_time = (F('current_break_time') == 0)
             timer.save()
             timer.refresh_from_db()
     except Timer.DoesNotExist:
