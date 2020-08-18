@@ -12,16 +12,15 @@ const ToggleSwitch = ({
   timerId,
   currentCycle,
 }) => {
-  // TODO: when switching between focus and break, use useEffect to reset the timer and stop countdown
-  useEffect(() => {
-    // need to update timer reducer start logic or create new rpc/reducer for startTimer and stopTimer
-    stopTimers({ id: timerId });
-    resetTimers({ id: timerId });
-  }, [toggleCycle]);
-
   const toggleCycle = () => {
     setCycle({ id: timerId });
   };
+
+  // Reset the timer and stop countdown when toggling between modes
+  useEffect(() => {
+    stopTimers({ id: timerId });
+    resetTimers({ id: timerId });
+  }, [toggleCycle]);
 
   return (
     <div className="toggle-container">

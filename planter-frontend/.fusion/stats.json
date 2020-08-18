@@ -2,22 +2,22 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "23688ee45586cc957770",
+  "hash": "75c5916c22c086be7d2e",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "23688ee45586cc957770",
-      "time": 341,
-      "builtAt": 1597784497047,
+      "hash": "75c5916c22c086be7d2e",
+      "time": 1271,
+      "builtAt": 1597785677922,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.c3642ae3649a64995f67.hot-update.js",
+          "main.2cc0eb2d5eeb599679ed.hot-update.js",
           "server-main.js.map",
-          "main.c3642ae3649a64995f67.hot-update.js.map"
+          "main.2cc0eb2d5eeb599679ed.hot-update.js.map"
         ]
       },
       "assets": [
@@ -30,7 +30,7 @@
           "emitted": false
         },
         {
-          "name": "c3642ae3649a64995f67.hot-update.json",
+          "name": "2cc0eb2d5eeb599679ed.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.c3642ae3649a64995f67.hot-update.js",
-          "size": 4369,
+          "name": "main.2cc0eb2d5eeb599679ed.hot-update.js",
+          "size": 4229,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.c3642ae3649a64995f67.hot-update.js.map",
-          "size": 2234,
+          "name": "main.2cc0eb2d5eeb599679ed.hot-update.js.map",
+          "size": 2085,
           "chunks": [
             "main"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 175457,
+          "size": 175317,
           "chunks": [
             "main"
           ],
@@ -83,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 129229,
+          "size": 129080,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.c3642ae3649a64995f67.hot-update.js",
+            "main.2cc0eb2d5eeb599679ed.hot-update.js",
             "server-main.js.map",
-            "main.c3642ae3649a64995f67.hot-update.js.map"
+            "main.2cc0eb2d5eeb599679ed.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.c3642ae3649a64995f67.hot-update.js",
+            "main.2cc0eb2d5eeb599679ed.hot-update.js",
             "server-main.js.map",
-            "main.c3642ae3649a64995f67.hot-update.js.map"
+            "main.2cc0eb2d5eeb599679ed.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -133,17 +133,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 78491,
+          "size": 78351,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.c3642ae3649a64995f67.hot-update.js",
+            "main.2cc0eb2d5eeb599679ed.hot-update.js",
             "server-main.js.map",
-            "main.c3642ae3649a64995f67.hot-update.js.map"
+            "main.2cc0eb2d5eeb599679ed.hot-update.js.map"
           ],
-          "hash": "2f74566a2236514298db",
+          "hash": "9b09e2f5f2e7487768a0",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -1746,7 +1746,7 @@
               "name": "./src/components/PomodoroClock/ToggleSwitch.js",
               "index": 46,
               "index2": 40,
-              "size": 1912,
+              "size": 1772,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -1818,7 +1818,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst ToggleSwitch = ({\n  // RPC handlers\n  resetTimers,\n  stopTimers,\n  setCycle,\n  // props from global state\n  timerId,\n  currentCycle\n}) => {\n  // TODO: when switching between focus and break, use useEffect to reset the timer and stop countdown\n  useEffect(() => {\n    // need to update timer reducer start logic or create new rpc/reducer for startTimer and stopTimer\n    stopTimers({\n      id: timerId\n    });\n    resetTimers({\n      id: timerId\n    });\n  }, [toggleCycle]);\n\n  const toggleCycle = () => {\n    setCycle({\n      id: timerId\n    });\n  };\n\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    className: currentCycle === 'Focus' ? 'focus-label toggle-label toggle-label-inset\"' : 'break-label toggle-label toggle-label-inset\"',\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 34\n    },\n    __self: this\n  }, currentCycle));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  return {\n    timerId,\n    currentCycle\n  };\n};\n\nconst hoc = compose(withRPCRedux('setCycle'), withRPCRedux('resetTimers'), withRPCRedux('stopTimers'), connect(mapStateToProps));\nexport default hoc(ToggleSwitch);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst ToggleSwitch = ({\n  // RPC handlers\n  resetTimers,\n  stopTimers,\n  setCycle,\n  // props from global state\n  timerId,\n  currentCycle\n}) => {\n  const toggleCycle = () => {\n    setCycle({\n      id: timerId\n    });\n  }; // Reset the timer and stop countdown when toggling between modes\n\n\n  useEffect(() => {\n    stopTimers({\n      id: timerId\n    });\n    resetTimers({\n      id: timerId\n    });\n  }, [toggleCycle]);\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 26\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    className: currentCycle === 'Focus' ? 'focus-label toggle-label toggle-label-inset\"' : 'break-label toggle-label toggle-label-inset\"',\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 33\n    },\n    __self: this\n  }, currentCycle));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  return {\n    timerId,\n    currentCycle\n  };\n};\n\nconst hoc = compose(withRPCRedux('setCycle'), withRPCRedux('resetTimers'), withRPCRedux('stopTimers'), connect(mapStateToProps));\nexport default hoc(ToggleSwitch);"
             },
             {
               "id": "./src/constants/paths.js",
@@ -4354,7 +4354,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "70:20-32"
+                  "loc": "68:20-32"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -4363,7 +4363,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "70:46-58"
+                  "loc": "68:46-58"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -4372,7 +4372,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "70:75-87"
+                  "loc": "68:75-87"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -5623,7 +5623,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "17:2-11"
+                  "loc": "23:2-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -5632,7 +5632,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "33:9-14"
+                  "loc": "31:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -5641,7 +5641,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "40:5-10"
+                  "loc": "38:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -5650,7 +5650,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "50:6-11"
+                  "loc": "48:6-11"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -6387,7 +6387,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "70:103-110"
+                  "loc": "68:103-110"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -6686,7 +6686,7 @@
                   "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "70:12-19"
+                  "loc": "68:12-19"
                 },
                 {
                   "moduleId": "./src/pages/login.js",
@@ -8523,7 +8523,7 @@
           "name": "./src/components/PomodoroClock/ToggleSwitch.js",
           "index": 46,
           "index2": 40,
-          "size": 1912,
+          "size": 1772,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -8595,7 +8595,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst ToggleSwitch = ({\n  // RPC handlers\n  resetTimers,\n  stopTimers,\n  setCycle,\n  // props from global state\n  timerId,\n  currentCycle\n}) => {\n  // TODO: when switching between focus and break, use useEffect to reset the timer and stop countdown\n  useEffect(() => {\n    // need to update timer reducer start logic or create new rpc/reducer for startTimer and stopTimer\n    stopTimers({\n      id: timerId\n    });\n    resetTimers({\n      id: timerId\n    });\n  }, [toggleCycle]);\n\n  const toggleCycle = () => {\n    setCycle({\n      id: timerId\n    });\n  };\n\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    className: currentCycle === 'Focus' ? 'focus-label toggle-label toggle-label-inset\"' : 'break-label toggle-label toggle-label-inset\"',\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 34\n    },\n    __self: this\n  }, currentCycle));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  return {\n    timerId,\n    currentCycle\n  };\n};\n\nconst hoc = compose(withRPCRedux('setCycle'), withRPCRedux('resetTimers'), withRPCRedux('stopTimers'), connect(mapStateToProps));\nexport default hoc(ToggleSwitch);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst ToggleSwitch = ({\n  // RPC handlers\n  resetTimers,\n  stopTimers,\n  setCycle,\n  // props from global state\n  timerId,\n  currentCycle\n}) => {\n  const toggleCycle = () => {\n    setCycle({\n      id: timerId\n    });\n  }; // Reset the timer and stop countdown when toggling between modes\n\n\n  useEffect(() => {\n    stopTimers({\n      id: timerId\n    });\n    resetTimers({\n      id: timerId\n    });\n  }, [toggleCycle]);\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 26\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    className: currentCycle === 'Focus' ? 'focus-label toggle-label toggle-label-inset\"' : 'break-label toggle-label toggle-label-inset\"',\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 33\n    },\n    __self: this\n  }, currentCycle));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  return {\n    timerId,\n    currentCycle\n  };\n};\n\nconst hoc = compose(withRPCRedux('setCycle'), withRPCRedux('resetTimers'), withRPCRedux('stopTimers'), connect(mapStateToProps));\nexport default hoc(ToggleSwitch);"
         },
         {
           "id": "./src/constants/paths.js",
@@ -11131,7 +11131,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "70:20-32"
+              "loc": "68:20-32"
             },
             {
               "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -11140,7 +11140,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "70:46-58"
+              "loc": "68:46-58"
             },
             {
               "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -11149,7 +11149,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "70:75-87"
+              "loc": "68:75-87"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -12400,7 +12400,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "17:2-11"
+              "loc": "23:2-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -12409,7 +12409,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "33:9-14"
+              "loc": "31:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -12418,7 +12418,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "40:5-10"
+              "loc": "38:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/ToggleSwitch.js",
@@ -12427,7 +12427,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "50:6-11"
+              "loc": "48:6-11"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -13164,7 +13164,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "70:103-110"
+              "loc": "68:103-110"
             },
             {
               "moduleId": "./src/pages/login.js",
@@ -13463,7 +13463,7 @@
               "moduleName": "./src/components/PomodoroClock/ToggleSwitch.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "70:12-19"
+              "loc": "68:12-19"
             },
             {
               "moduleId": "./src/pages/login.js",
