@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // RPC REDUX
 import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 import { connect } from 'react-redux';
@@ -23,7 +23,42 @@ momentDurationFormatSetup(moment);
 // };
 
 // NEW componenet
-const Timer = ({ currentFocusTime, currentBreakTime, currentCycle }) => {
+const Timer = ({
+  updateCurrentFocusTime,
+  currentFocusTime,
+  currentBreakTime,
+  currentCycle,
+  timerId,
+}) => {
+  // useEffect(() => {
+  //   if (currentCycle === 'Focus') {
+  //     if (currentBreakTime !== timer()) {
+  //       if (currentFocusTime > timer()) {
+  //         setTimer(timer + 60);
+  //       }
+  //       if (currentFocusTime < timer()) {
+  //         setTimer(timer - 60);
+  //       }
+  //     }
+  //   }
+  //   if (currentCycle === 'Break') {
+  //     if (currentBreakTime !== timer()) {
+  //       if (currentBreakTime > timer()) {
+  //         setTimer(timer + 60);
+  //       }
+  //       if (currentBreakTime < timer()) {
+  //         if (timer >= 60) {
+  //           setTimer(timer - 60);
+  //         }
+  //         if (timer <= 60) {
+  //           setTimer(0);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }, [currentFocusTime, currentBreakTime]);
+  useEffect(() => {}, []);
+
   const timer = () => {
     if (currentCycle === 'Focus') {
       // timer = currentFocusTime;
@@ -47,17 +82,13 @@ const Timer = ({ currentFocusTime, currentBreakTime, currentCycle }) => {
 };
 
 const mapStateToProps = (state) => {
-  // const timerId = state.timers.id;
-  // const focusTime = state.timers.focus_time;
-  // const breakTime = state.timers.break_time;
+  const timerId = state.timers.id;
   const currentFocusTime = state.timers.current_focus_time;
   const currentBreakTime = state.timers.current_break_time;
   const currentCycle = state.timers.current_cycle;
 
   return {
-    // timerId,
-    // focusTime,
-    // breakTime,
+    timerId,
     currentFocusTime,
     currentBreakTime,
     currentCycle,
@@ -65,14 +96,7 @@ const mapStateToProps = (state) => {
 };
 
 const hoc = compose(
-  // withRPCRedux('getProfile'),
-  // withRPCRedux('getTimers'),
-  // withRPCRedux('incrementFocusTime'),
-  // withRPCRedux('decrementFocusTime'),
-  // withRPCRedux('incrementBreakTime'),
-  // withRPCRedux('decrementBreakTime'),
-  // withRPCRedux('resetTimers'),
-  // withRPCRedux('setCycle'),
+  withRPCRedux('updateCurrentFocusTime'),
   // connecting reducers to components
   connect(mapStateToProps)
 );

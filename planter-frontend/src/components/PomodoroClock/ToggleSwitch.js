@@ -1,6 +1,12 @@
 import React from 'react';
+import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
 
-const ToggleSwitch = ({ toggleCycle, currentCycle }) => {
+const ToggleSwitch = ({ setCycle, timerId, currentCycle }) => {
+  const toggleCycle = () => {
+    setCycle({ id: timerId });
+  };
   return (
     <div className="toggle-container">
       <input
@@ -16,9 +22,31 @@ const ToggleSwitch = ({ toggleCycle, currentCycle }) => {
         }
         htmlFor="toggle-switch"
       >
-        {currentCycle === 'Focus' ? 'Focus' : 'Break'}
+        {currentCycle}
       </label>
     </div>
   );
 };
-export default ToggleSwitch;
+
+const mapStateToProps = (state) => {
+  //accessing store and putting it into local props for component
+  const timerId = state.timers.id;
+  const currentCycle = state.timers.current_cycle;
+  const isStarted = state.timers.is_started;
+
+  return {
+    timerId,
+    currentCycle,
+    isStarted,
+  };
+};
+
+const hoc = compose(
+  // gets data from browser to FE server - network request from browser get sent through all middleware
+  withRPCRedux('setCycle'),
+  // connecting reducers to components
+  connect(mapStateToProps)
+);
+
+export default hoc(ToggleSwitch);
+// export default PomodoroClock;

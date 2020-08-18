@@ -16,16 +16,13 @@ class Timer(models.Model):
     profile = models.ForeignKey(Profile, related_name='timers', on_delete=models.CASCADE)
     focus_time = models.IntegerField(default=25*60)
     break_time = models.IntegerField(default=5*60) 
-    # needed to keep timer state between page loads
+    is_started = models.BooleanField(default=False)
     current_focus_time = models.IntegerField(default=25*60)
     current_break_time = models.IntegerField(default=5*60)
 
     current_cycle = models.CharField(max_length=20, default='Focus')
-
-    # last_updated = models.TimeField(auto_now=True)
-    # intervals divisable by 4 get extra energy points 
-    completed_focus_counter = models.IntegerField(default=0)
-    logged_focus_minutes = models.IntegerField(default=0)
+    completed_focus_minutes = models.IntegerField(default=0)
+    # logged_focus_minutes = models.IntegerField(default=0)
 
     def __str__(self):
         return "%s's timer" % self.profile.account.username

@@ -11,8 +11,8 @@ const DEFAULT_STATE = {
   current_focus_time: 25 * 60,
   current_break_time: 5 * 60,
   current_cycle: 'Focus',
-  completed_focus_counter: null,
-  logged_focus_minutes: null,
+  is_started: false,
+  completed_focus_minutes: 0,
   profile: null,
 };
 
@@ -222,23 +222,55 @@ export default reduceReducers(
         error: payload,
       };
     },
+  }),
+
+  createRPCReducer('updateStart', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        is_started: !state.is_started,
+      };
+    },
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        is_started: payload.timers.is_started,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
+  }),
+
+  createRPCReducer('updateCurrentFocusTime', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        current_focus_time: state.current_focus_time - 60,
+      };
+    },
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        current_focus_time: payload.timers.current_focus_time,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
   })
-
-  // createRPCReducer('focusCountdown', {
-  //   update: (state) => {
-  //     return {
-  //       ...state,
-  //       current_focus_time: state.current_focus_time - 1,
-  //     };
-  //   },
-  // }),
-
-  // createRPCReducer('breakCountdown', {
-  //   update: (state) => {
-  //     return {
-  //       ...state,
-  //       current_break_time: state.current_break_time - 1,
-  //     };
-  //   },
-  // })
 );

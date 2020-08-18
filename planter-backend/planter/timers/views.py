@@ -175,3 +175,48 @@ def set_cycle(request):
     serializer = TimerSerializer(timer)
     data = {'timers': serializer.data, 'response': 'Cycle successfuly set'}
     return Response(data, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_start(request):
+    try: 
+        timer_id = request.data['id']
+    except KeyError:
+        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
+
+    try: 
+        timer = Timer.objects.get(pk=timer_id)
+        if (timer.is_started == True):
+            timer.is_started = (F('is_started') == False)
+        else: 
+            timer.is_started = (F('is_started') == True)
+        timer.save()
+        timer.refresh_from_db()
+    except Timer.DoesNotExist: 
+        return Http404()
+    
+    serializer = TimerSerializer(timer)
+    data = {'timers': serializer.data, 'response': 'Start updated successfully'}
+    return Response(data, status=status.HTTP_200_OK)
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_current_focus_time(request): 
+    try: 
+        timer_id = request.data['id']
+    except KeyError: 
+        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
+
+    try: 
+        timer = Timer.objects.get(pk=timer_id)
+        if (timer.is_started == True):
+            timer.current_focus_time = (F('current_focus_time') - 60)
+        timer.save()
+        timer.refresh_from_db()
+    except Timer.DoesNotExist:
+        return Http404()
+
+    serializer = TimerSerializer(timer)
+    data = {'timers': serializer.data, 'response': 'Current focus time updated successfully'}
+    return Response(data, status=status.HTTP_200_OK)
