@@ -36,9 +36,7 @@ const PomodoroClock = ({
   currentCycle,
   isStarted,
 }) => {
-  // TODO: figure out how to get this to update on redirect from login
-  // TODO: if not loading and not error, use the data, but if error than use the default state
-  // - think reducers already do this tho
+  // TODO: wrap the Pomodoro clock in a login component - so login page renders if not authenticated. use props.history and match
 
   // const [timer, setTimer] = useState(focusTime);
   // const [cycle, setCycle] = useState(true);
@@ -267,7 +265,7 @@ const PomodoroClock = ({
         </div>
         <div className="right-panel">
           <AdjustTime />
-          {/* <Reset /> */}
+          <Reset />
         </div>
       </div>
       <div className="json-data">

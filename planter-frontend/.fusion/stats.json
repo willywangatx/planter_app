@@ -2,20 +2,22 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "e7dff44ada62a7189972",
+  "hash": "23ef7c8aedce847c75c4",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "e7dff44ada62a7189972",
-      "time": 285,
-      "builtAt": 1597780325800,
+      "hash": "23ef7c8aedce847c75c4",
+      "time": 346,
+      "builtAt": 1597782292161,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "server-main.js.map"
+          "main.f688c5f604df5a7521b8.hot-update.js",
+          "server-main.js.map",
+          "main.f688c5f604df5a7521b8.hot-update.js.map"
         ]
       },
       "assets": [
@@ -28,8 +30,48 @@
           "emitted": false
         },
         {
+          "name": "f688c5f604df5a7521b8.hot-update.json",
+          "size": 46,
+          "chunks": [],
+          "chunkNames": [],
+          "info": {
+            "hotModuleReplacement": true,
+            "immutable": true
+          },
+          "emitted": true
+        },
+        {
+          "name": "main.f688c5f604df5a7521b8.hot-update.js",
+          "size": 14165,
+          "chunks": [
+            "main"
+          ],
+          "chunkNames": [
+            "main"
+          ],
+          "info": {
+            "hotModuleReplacement": true,
+            "immutable": true
+          },
+          "emitted": true
+        },
+        {
+          "name": "main.f688c5f604df5a7521b8.hot-update.js.map",
+          "size": 11214,
+          "chunks": [
+            "main"
+          ],
+          "chunkNames": [
+            "main"
+          ],
+          "info": {
+            "development": true
+          },
+          "emitted": true
+        },
+        {
           "name": "server-main.js",
-          "size": 172433,
+          "size": 173887,
           "chunks": [
             "main"
           ],
@@ -41,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 127331,
+          "size": 127752,
           "chunks": [
             "main"
           ],
@@ -62,7 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "server-main.js.map"
+            "main.f688c5f604df5a7521b8.hot-update.js",
+            "server-main.js.map",
+            "main.f688c5f604df5a7521b8.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -75,7 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "server-main.js.map"
+            "main.f688c5f604df5a7521b8.hot-update.js",
+            "server-main.js.map",
+            "main.f688c5f604df5a7521b8.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -84,18 +130,20 @@
       "chunks": [
         {
           "id": "main",
-          "rendered": false,
+          "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 76894,
+          "size": 77336,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "server-main.js.map"
+            "main.f688c5f604df5a7521b8.hot-update.js",
+            "server-main.js.map",
+            "main.f688c5f604df5a7521b8.hot-update.js.map"
           ],
-          "hash": "fd240d8c9d854e4ed711",
+          "hash": "1837830b0d481e22977f",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -1323,7 +1371,7 @@
               "index2": 37,
               "size": 2615,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -1385,7 +1433,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "./AdjustTime",
-                  "loc": "272:25-35"
+                  "loc": "270:25-35"
                 }
               ],
               "providedExports": [
@@ -1401,9 +1449,9 @@
               "name": "./src/components/PomodoroClock/PomodoroClock.js",
               "index": 36,
               "index2": 41,
-              "size": 10077,
+              "size": 10126,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -1468,7 +1516,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React, { useState, useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch'; // import { object } from 'prop-types';\n\nconst PomodoroClock = ({\n  // retrieving data RPC handlers\n  getProfile,\n  getTimers,\n  timersData,\n  // RPC handlers\n  incrementFocusTime,\n  decrementFocusTime,\n  incrementBreakTime,\n  decrementBreakTime,\n  resetTimers,\n  setCycle,\n  updateStart,\n  // props from redux global state\n  profileLoading,\n  profileError,\n  profileData,\n  timerId,\n  focusTime,\n  breakTime,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  isStarted\n}) => {\n  // TODO: figure out how to get this to update on redirect from login\n  // TODO: if not loading and not error, use the data, but if error than use the default state\n  // - think reducers already do this tho\n  // const [timer, setTimer] = useState(focusTime);\n  // const [cycle, setCycle] = useState(true);\n  // const [isStarted, setIsStarted] = useState(false);\n  // const [timerReadout, setTimerReadout] = useState(null);\n  //action creator for these\n  //in store make reducer Pomodoro Clock\n  // make a const DEFAULT_STATE object tree in reducers\n  // creat actions for these\n  // dispatch actions with updated time\n  //in reducers, look for actions swtich (action.type) - case setFocusTime\n  // update state for focus time\n  // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up\n  // Initial Page load - grab profile and timer data\n  useEffect(() => {\n    getProfile();\n    getTimers();\n  }, []); // TODO: connect back end call for timers\n  // useEffect(() => {\n  //   if (isStarted && timer != 0) {\n  //     if (currentCycle === 'Focus') {\n  //       focusCountdown();\n  //     }\n  //     if (currentCycle === 'Break') {\n  //       breakCoundown();\n  //     }\n  //   }\n  // }, [isStarted, timer]);\n  //<StartStop />\n  // Stop timer when it the time runs to 0\n  // useEffect(() => {\n  //   if (currentFocusTime === 0 || currentBreakTime === 0) {\n  //     clearInterval(timerReadout);\n  //     updateStart({ id: timerId });\n  //     // to stop timer from changing automatically\n  //     // setCycle(!cycle);\n  //   }\n  // }, [currentFocusTime, currentBreakTime]);\n  // useEffect(() => {\n  //   setTimer(currentCycle === 'Focus' ? focusTime : breakTime);\n  // }, [currentCycle, focusTime, breakTime]);\n  // TOGGLE\n\n  const toggleCycle = () => {\n    setCycle({\n      id: timerId\n    });\n  }; // Adjusting timer when the times are incremented/decremented\n  // useEffect(() => {\n  //   if (currentCycle === 'Focus') {\n  //     if (currentBreakTime !== timer) {\n  //       if (currentFocusTime > timer) {\n  //         setTimer(timer + 60);\n  //       }\n  //       if (currentFocusTime < timer) {\n  //         setTimer(timer - 60);\n  //       }\n  //     }\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     if (currentBreakTime !== timer) {\n  //       if (currentBreakTime > timer) {\n  //         setTimer(timer + 60);\n  //       }\n  //       if (currentBreakTime < timer) {\n  //         if (timer >= 60) {\n  //           setTimer(timer - 60);\n  //         }\n  //         if (timer <= 60) {\n  //           setTimer(0);\n  //         }\n  //       }\n  //     }\n  //   }\n  // }, [currentFocusTime, currentBreakTime]);\n  // display for loading/error state\n  // if (typeof profileData == 'undefined') {\n  //   return <div>loading</div>;\n  // }\n  // Object.keys(profileData).length == null || undefined\n\n\n  if (profileLoading) {\n    return React.createElement(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 135\n      },\n      __self: this\n    }, \"loading\");\n  }\n\n  if (profileError) {\n    return React.createElement(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 139\n      },\n      __self: this\n    }, profileError.message);\n  } // const focusTime = profileData.timers[0].focus_time;\n  // TODO: re-wire start stop to use global state\n  // useEffect(() => {\n  //   if (!isStarted) {\n  //     clearInterval(timerReadout);\n  //   }\n  //   if (isStarted) {\n  //     updatedTimerReadout = setInterval(() => {\n  //       // fire call to update current focus or break time\n  //       if (currentCycle === 'Focus') {\n  //         //need to eventually separate the backend call to reduce the load on the server\n  //         updateCurrentFocusTime({ id: timerId });\n  //       }\n  //     }, 1000);\n  //     setTimerReadout(updatedTimerReadout);\n  //   }\n  // }, [isStarted]);\n  // const startStopTimer = () => {\n  //   updateStart({ id: timerId });\n  // };\n  // const startStopTimer = () => {\n  //   let updatedTimerReadout;\n  //   if (isStarted) {\n  //     clearInterval(timerReadout);\n  //     setIsStarted(false);\n  //   }\n  //   if (!isStarted) {\n  //     updatedTimerReadout = setInterval(() => {\n  //       setTimer((prevTimer) => {\n  //         const newTimer = prevTimer - 1;\n  //         if (newTimer >= 0) {\n  //           return newTimer;\n  //         }\n  //         return prevTimer;\n  //       });\n  //     }, 1000);\n  //     setTimerReadout(updatedTimerReadout);\n  //     setIsStarted(true);\n  //   }\n  // };\n  // De-coupled timer - put timer info into global state\n  // useEffect(() => {}, [\n  //   currentFocusTime,\n  //   currentBreakTime,\n  //   focusTime,\n  //   breakTime,\n  // ]);\n  // set timer based on when current cycle changes -\n  // TODO: when focus or break time changes - update timer\n  // useEffect(() => {\n  //   timer()\n  // }, [currentCycle])\n  // const timer = () => {\n  //   if (currentCycle === 'Focus') {\n  //     timer = currentFocusTime;\n  //     return timer;\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     timer = currentBreakTime;\n  //     return timer;\n  //   }\n  // };\n  // // RESET TIMERS\n  // const reset = (event) => {\n  //   event.preventDefault();\n  //   resetTimers({ id: timerId });\n  // };\n  // TIMER PANEL LABEL\n  // const cycleLength = () => {\n  //   return currentCycle === 'Focus'\n  //     ? `Focus Time: ${focusTime / 60} min.`\n  //     : `Break Time: ${breakTime / 60} min.`;\n  // };\n  // // INCREMENT TIME\n  // const increaseTimer = (event) => {\n  //   event.preventDefault();\n  //   if (currentCycle === 'Focus') {\n  //     incrementFocusTime({ id: timerId });\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     incrementBreakTime({ id: timerId });\n  //   }\n  // };\n  // // DECREMENT TIME\n  // const decreaseTimer = (event) => {\n  //   event.preventDefault();\n  //   if (currentCycle === 'Focus') {\n  //     decrementFocusTime({ id: timerId, min_focus_time: 1 });\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     decrementBreakTime({ id: timerId, min_break_time: 1 });\n  //   }\n  // };\n\n\n  const getProfileData = () => {\n    getProfile();\n    getTimers();\n  }; // const shownGreetText = loadingGreeting ? 'loading' : greetingText;\n\n\n  const shownProfileData = profileLoading ? 'loading' : {\n    profileData,\n    timersData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 260\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 261\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 262\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 268\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 269\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 273\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn\",\n    onClick: getProfileData,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 274\n    },\n    __self: this\n  }, \"Get Profile Data\"), React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 277\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const focusTime = state.timers.focus_time;\n  const breakTime = state.timers.break_time;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const currentCycle = state.timers.current_cycle;\n  const isStarted = state.timers.is_started;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timerId,\n    focusTime,\n    breakTime,\n    currentFocusTime,\n    currentBreakTime,\n    currentCycle,\n    isStarted,\n    timersData\n  };\n};\n\nconst hoc = compose( // gets data from browser to FE server - network request from browser get sent through all middleware\nwithRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('incrementFocusTime'), withRPCRedux('decrementFocusTime'), withRPCRedux('incrementBreakTime'), withRPCRedux('decrementBreakTime'), withRPCRedux('resetTimers'), withRPCRedux('setCycle'), withRPCRedux('updateStart'), withRPCRedux('updateCurrentFocusTime'), // connecting reducers to components\nconnect(mapStateToProps));\nexport default hoc(PomodoroClock); // export default PomodoroClock;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React, { useState, useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch'; // import { object } from 'prop-types';\n\nconst PomodoroClock = ({\n  // retrieving data RPC handlers\n  getProfile,\n  getTimers,\n  timersData,\n  // RPC handlers\n  incrementFocusTime,\n  decrementFocusTime,\n  incrementBreakTime,\n  decrementBreakTime,\n  resetTimers,\n  setCycle,\n  updateStart,\n  // props from redux global state\n  profileLoading,\n  profileError,\n  profileData,\n  timerId,\n  focusTime,\n  breakTime,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  isStarted\n}) => {\n  // TODO: wrap the Pomodoro clock in a login component - so login page renders if not authenticated. use props.history and match\n  // const [timer, setTimer] = useState(focusTime);\n  // const [cycle, setCycle] = useState(true);\n  // const [isStarted, setIsStarted] = useState(false);\n  // const [timerReadout, setTimerReadout] = useState(null);\n  //action creator for these\n  //in store make reducer Pomodoro Clock\n  // make a const DEFAULT_STATE object tree in reducers\n  // creat actions for these\n  // dispatch actions with updated time\n  //in reducers, look for actions swtich (action.type) - case setFocusTime\n  // update state for focus time\n  // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up\n  // Initial Page load - grab profile and timer data\n  useEffect(() => {\n    getProfile();\n    getTimers();\n  }, []); // TODO: connect back end call for timers\n  // useEffect(() => {\n  //   if (isStarted && timer != 0) {\n  //     if (currentCycle === 'Focus') {\n  //       focusCountdown();\n  //     }\n  //     if (currentCycle === 'Break') {\n  //       breakCoundown();\n  //     }\n  //   }\n  // }, [isStarted, timer]);\n  //<StartStop />\n  // Stop timer when it the time runs to 0\n  // useEffect(() => {\n  //   if (currentFocusTime === 0 || currentBreakTime === 0) {\n  //     clearInterval(timerReadout);\n  //     updateStart({ id: timerId });\n  //     // to stop timer from changing automatically\n  //     // setCycle(!cycle);\n  //   }\n  // }, [currentFocusTime, currentBreakTime]);\n  // useEffect(() => {\n  //   setTimer(currentCycle === 'Focus' ? focusTime : breakTime);\n  // }, [currentCycle, focusTime, breakTime]);\n  // TOGGLE\n\n  const toggleCycle = () => {\n    setCycle({\n      id: timerId\n    });\n  }; // Adjusting timer when the times are incremented/decremented\n  // useEffect(() => {\n  //   if (currentCycle === 'Focus') {\n  //     if (currentBreakTime !== timer) {\n  //       if (currentFocusTime > timer) {\n  //         setTimer(timer + 60);\n  //       }\n  //       if (currentFocusTime < timer) {\n  //         setTimer(timer - 60);\n  //       }\n  //     }\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     if (currentBreakTime !== timer) {\n  //       if (currentBreakTime > timer) {\n  //         setTimer(timer + 60);\n  //       }\n  //       if (currentBreakTime < timer) {\n  //         if (timer >= 60) {\n  //           setTimer(timer - 60);\n  //         }\n  //         if (timer <= 60) {\n  //           setTimer(0);\n  //         }\n  //       }\n  //     }\n  //   }\n  // }, [currentFocusTime, currentBreakTime]);\n  // display for loading/error state\n  // if (typeof profileData == 'undefined') {\n  //   return <div>loading</div>;\n  // }\n  // Object.keys(profileData).length == null || undefined\n\n\n  if (profileLoading) {\n    return React.createElement(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 133\n      },\n      __self: this\n    }, \"loading\");\n  }\n\n  if (profileError) {\n    return React.createElement(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 137\n      },\n      __self: this\n    }, profileError.message);\n  } // const focusTime = profileData.timers[0].focus_time;\n  // TODO: re-wire start stop to use global state\n  // useEffect(() => {\n  //   if (!isStarted) {\n  //     clearInterval(timerReadout);\n  //   }\n  //   if (isStarted) {\n  //     updatedTimerReadout = setInterval(() => {\n  //       // fire call to update current focus or break time\n  //       if (currentCycle === 'Focus') {\n  //         //need to eventually separate the backend call to reduce the load on the server\n  //         updateCurrentFocusTime({ id: timerId });\n  //       }\n  //     }, 1000);\n  //     setTimerReadout(updatedTimerReadout);\n  //   }\n  // }, [isStarted]);\n  // const startStopTimer = () => {\n  //   updateStart({ id: timerId });\n  // };\n  // const startStopTimer = () => {\n  //   let updatedTimerReadout;\n  //   if (isStarted) {\n  //     clearInterval(timerReadout);\n  //     setIsStarted(false);\n  //   }\n  //   if (!isStarted) {\n  //     updatedTimerReadout = setInterval(() => {\n  //       setTimer((prevTimer) => {\n  //         const newTimer = prevTimer - 1;\n  //         if (newTimer >= 0) {\n  //           return newTimer;\n  //         }\n  //         return prevTimer;\n  //       });\n  //     }, 1000);\n  //     setTimerReadout(updatedTimerReadout);\n  //     setIsStarted(true);\n  //   }\n  // };\n  // De-coupled timer - put timer info into global state\n  // useEffect(() => {}, [\n  //   currentFocusTime,\n  //   currentBreakTime,\n  //   focusTime,\n  //   breakTime,\n  // ]);\n  // set timer based on when current cycle changes -\n  // TODO: when focus or break time changes - update timer\n  // useEffect(() => {\n  //   timer()\n  // }, [currentCycle])\n  // const timer = () => {\n  //   if (currentCycle === 'Focus') {\n  //     timer = currentFocusTime;\n  //     return timer;\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     timer = currentBreakTime;\n  //     return timer;\n  //   }\n  // };\n  // // RESET TIMERS\n  // const reset = (event) => {\n  //   event.preventDefault();\n  //   resetTimers({ id: timerId });\n  // };\n  // TIMER PANEL LABEL\n  // const cycleLength = () => {\n  //   return currentCycle === 'Focus'\n  //     ? `Focus Time: ${focusTime / 60} min.`\n  //     : `Break Time: ${breakTime / 60} min.`;\n  // };\n  // // INCREMENT TIME\n  // const increaseTimer = (event) => {\n  //   event.preventDefault();\n  //   if (currentCycle === 'Focus') {\n  //     incrementFocusTime({ id: timerId });\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     incrementBreakTime({ id: timerId });\n  //   }\n  // };\n  // // DECREMENT TIME\n  // const decreaseTimer = (event) => {\n  //   event.preventDefault();\n  //   if (currentCycle === 'Focus') {\n  //     decrementFocusTime({ id: timerId, min_focus_time: 1 });\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     decrementBreakTime({ id: timerId, min_break_time: 1 });\n  //   }\n  // };\n\n\n  const getProfileData = () => {\n    getProfile();\n    getTimers();\n  }; // const shownGreetText = loadingGreeting ? 'loading' : greetingText;\n\n\n  const shownProfileData = profileLoading ? 'loading' : {\n    profileData,\n    timersData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 258\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 259\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 260\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 266\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 267\n    },\n    __self: this\n  }), React.createElement(Reset, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 268\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 271\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn\",\n    onClick: getProfileData,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 272\n    },\n    __self: this\n  }, \"Get Profile Data\"), React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 275\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const focusTime = state.timers.focus_time;\n  const breakTime = state.timers.break_time;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const currentCycle = state.timers.current_cycle;\n  const isStarted = state.timers.is_started;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timerId,\n    focusTime,\n    breakTime,\n    currentFocusTime,\n    currentBreakTime,\n    currentCycle,\n    isStarted,\n    timersData\n  };\n};\n\nconst hoc = compose( // gets data from browser to FE server - network request from browser get sent through all middleware\nwithRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('incrementFocusTime'), withRPCRedux('decrementFocusTime'), withRPCRedux('incrementBreakTime'), withRPCRedux('decrementBreakTime'), withRPCRedux('resetTimers'), withRPCRedux('setCycle'), withRPCRedux('updateStart'), withRPCRedux('updateCurrentFocusTime'), // connecting reducers to components\nconnect(mapStateToProps));\nexport default hoc(PomodoroClock); // export default PomodoroClock;"
             },
             {
               "id": "./src/components/PomodoroClock/Reset.js",
@@ -1476,7 +1524,7 @@
               "name": "./src/components/PomodoroClock/Reset.js",
               "index": 45,
               "index2": 39,
-              "size": 696,
+              "size": 1089,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1532,6 +1580,15 @@
                   "type": "harmony side effect evaluation",
                   "userRequest": "./Reset",
                   "loc": "9:0-28"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+                  "module": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "./Reset",
+                  "loc": "276:26-31"
                 }
               ],
               "providedExports": [
@@ -1539,7 +1596,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js\";\nimport React, { useState } from 'react';\n\nconst Reset = ({\n  reset\n}) => {\n  // RESET TIMERS\n  // const reset = (event) => {\n  //   event.preventDefault();\n  //   resetTimers({ id: timerId });\n  // };\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn panel-btn reset-btn\",\n    onClick: reset,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, \"Reset\"));\n};\n\nexport default Reset;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst Reset = ({\n  resetTimers,\n  timerId\n}) => {\n  // TODO: when timer is reset - useEffect to stop countdown\n  // RESET TIMERS\n  const reset = event => {\n    event.preventDefault();\n    resetTimers({\n      id: timerId\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn panel-btn reset-btn\",\n    onClick: reset,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, \"Reset\"));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  return {\n    timerId\n  };\n};\n\nconst hoc = compose(withRPCRedux('resetTimers'), connect(mapStateToProps));\nexport default hoc(Reset);"
             },
             {
               "id": "./src/components/PomodoroClock/StartStop.js",
@@ -4117,7 +4174,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "332:0-12"
+                  "loc": "336:0-12"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4126,7 +4183,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "332:28-40"
+                  "loc": "336:28-40"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4135,7 +4192,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "332:55-67"
+                  "loc": "336:55-67"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4144,7 +4201,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "332:91-103"
+                  "loc": "336:91-103"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4153,7 +4210,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "332:127-139"
+                  "loc": "336:127-139"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4162,7 +4219,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "332:163-175"
+                  "loc": "336:163-175"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4171,7 +4228,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "332:199-211"
+                  "loc": "336:199-211"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4180,7 +4237,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "332:228-240"
+                  "loc": "336:228-240"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4189,7 +4246,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "332:254-266"
+                  "loc": "336:254-266"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4198,7 +4255,25 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "332:283-295"
+                  "loc": "336:283-295"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/Reset.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+                  "module": "./src/components/PomodoroClock/Reset.js",
+                  "moduleName": "./src/components/PomodoroClock/Reset.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "3:0-61"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/Reset.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+                  "module": "./src/components/PomodoroClock/Reset.js",
+                  "moduleName": "./src/components/PomodoroClock/Reset.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "44:20-32"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -5224,7 +5299,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "53:2-11"
+                  "loc": "51:2-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5233,7 +5308,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "122:11-16"
+                  "loc": "120:11-16"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5242,7 +5317,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "132:11-16"
+                  "loc": "130:11-16"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5251,7 +5326,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "244:9-14"
+                  "loc": "242:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5260,7 +5335,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "244:29-34"
+                  "loc": "242:29-34"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5269,7 +5344,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "244:51-56"
+                  "loc": "242:51-56"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5278,7 +5353,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "251:5-10"
+                  "loc": "249:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5287,7 +5362,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "258:6-11"
+                  "loc": "256:6-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5296,7 +5371,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "265:6-11"
+                  "loc": "263:6-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5305,7 +5380,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "272:5-10"
+                  "loc": "270:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5314,7 +5389,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "278:8-13"
+                  "loc": "276:6-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5323,7 +5398,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "285:5-10"
+                  "loc": "282:8-13"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -5332,7 +5407,16 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "293:26-31"
+                  "loc": "289:5-10"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+                  "module": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "297:26-31"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -5341,7 +5425,7 @@
                   "moduleName": "./src/components/PomodoroClock/Reset.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "react",
-                  "loc": "2:0-40"
+                  "loc": "2:0-41"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -5350,7 +5434,7 @@
                   "moduleName": "./src/components/PomodoroClock/Reset.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "12:9-14"
+                  "loc": "20:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -5359,7 +5443,7 @@
                   "moduleName": "./src/components/PomodoroClock/Reset.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "12:29-34"
+                  "loc": "20:29-34"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -5368,7 +5452,7 @@
                   "moduleName": "./src/components/PomodoroClock/Reset.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "18:5-10"
+                  "loc": "26:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6159,7 +6243,25 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "333:0-7"
+                  "loc": "337:0-7"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/Reset.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+                  "module": "./src/components/PomodoroClock/Reset.js",
+                  "moduleName": "./src/components/PomodoroClock/Reset.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "react-redux",
+                  "loc": "4:0-38"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/Reset.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+                  "module": "./src/components/PomodoroClock/Reset.js",
+                  "moduleName": "./src/components/PomodoroClock/Reset.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react-redux",
+                  "loc": "44:49-56"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6440,7 +6542,25 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "331:12-19"
+                  "loc": "335:12-19"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/Reset.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+                  "module": "./src/components/PomodoroClock/Reset.js",
+                  "moduleName": "./src/components/PomodoroClock/Reset.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "redux",
+                  "loc": "5:0-32"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/Reset.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+                  "module": "./src/components/PomodoroClock/Reset.js",
+                  "moduleName": "./src/components/PomodoroClock/Reset.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "redux",
+                  "loc": "44:12-19"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -7956,7 +8076,7 @@
           "index2": 37,
           "size": 2615,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -8018,7 +8138,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "./AdjustTime",
-              "loc": "272:25-35"
+              "loc": "270:25-35"
             }
           ],
           "providedExports": [
@@ -8034,9 +8154,9 @@
           "name": "./src/components/PomodoroClock/PomodoroClock.js",
           "index": 36,
           "index2": 41,
-          "size": 10077,
+          "size": 10126,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -8101,7 +8221,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React, { useState, useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch'; // import { object } from 'prop-types';\n\nconst PomodoroClock = ({\n  // retrieving data RPC handlers\n  getProfile,\n  getTimers,\n  timersData,\n  // RPC handlers\n  incrementFocusTime,\n  decrementFocusTime,\n  incrementBreakTime,\n  decrementBreakTime,\n  resetTimers,\n  setCycle,\n  updateStart,\n  // props from redux global state\n  profileLoading,\n  profileError,\n  profileData,\n  timerId,\n  focusTime,\n  breakTime,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  isStarted\n}) => {\n  // TODO: figure out how to get this to update on redirect from login\n  // TODO: if not loading and not error, use the data, but if error than use the default state\n  // - think reducers already do this tho\n  // const [timer, setTimer] = useState(focusTime);\n  // const [cycle, setCycle] = useState(true);\n  // const [isStarted, setIsStarted] = useState(false);\n  // const [timerReadout, setTimerReadout] = useState(null);\n  //action creator for these\n  //in store make reducer Pomodoro Clock\n  // make a const DEFAULT_STATE object tree in reducers\n  // creat actions for these\n  // dispatch actions with updated time\n  //in reducers, look for actions swtich (action.type) - case setFocusTime\n  // update state for focus time\n  // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up\n  // Initial Page load - grab profile and timer data\n  useEffect(() => {\n    getProfile();\n    getTimers();\n  }, []); // TODO: connect back end call for timers\n  // useEffect(() => {\n  //   if (isStarted && timer != 0) {\n  //     if (currentCycle === 'Focus') {\n  //       focusCountdown();\n  //     }\n  //     if (currentCycle === 'Break') {\n  //       breakCoundown();\n  //     }\n  //   }\n  // }, [isStarted, timer]);\n  //<StartStop />\n  // Stop timer when it the time runs to 0\n  // useEffect(() => {\n  //   if (currentFocusTime === 0 || currentBreakTime === 0) {\n  //     clearInterval(timerReadout);\n  //     updateStart({ id: timerId });\n  //     // to stop timer from changing automatically\n  //     // setCycle(!cycle);\n  //   }\n  // }, [currentFocusTime, currentBreakTime]);\n  // useEffect(() => {\n  //   setTimer(currentCycle === 'Focus' ? focusTime : breakTime);\n  // }, [currentCycle, focusTime, breakTime]);\n  // TOGGLE\n\n  const toggleCycle = () => {\n    setCycle({\n      id: timerId\n    });\n  }; // Adjusting timer when the times are incremented/decremented\n  // useEffect(() => {\n  //   if (currentCycle === 'Focus') {\n  //     if (currentBreakTime !== timer) {\n  //       if (currentFocusTime > timer) {\n  //         setTimer(timer + 60);\n  //       }\n  //       if (currentFocusTime < timer) {\n  //         setTimer(timer - 60);\n  //       }\n  //     }\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     if (currentBreakTime !== timer) {\n  //       if (currentBreakTime > timer) {\n  //         setTimer(timer + 60);\n  //       }\n  //       if (currentBreakTime < timer) {\n  //         if (timer >= 60) {\n  //           setTimer(timer - 60);\n  //         }\n  //         if (timer <= 60) {\n  //           setTimer(0);\n  //         }\n  //       }\n  //     }\n  //   }\n  // }, [currentFocusTime, currentBreakTime]);\n  // display for loading/error state\n  // if (typeof profileData == 'undefined') {\n  //   return <div>loading</div>;\n  // }\n  // Object.keys(profileData).length == null || undefined\n\n\n  if (profileLoading) {\n    return React.createElement(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 135\n      },\n      __self: this\n    }, \"loading\");\n  }\n\n  if (profileError) {\n    return React.createElement(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 139\n      },\n      __self: this\n    }, profileError.message);\n  } // const focusTime = profileData.timers[0].focus_time;\n  // TODO: re-wire start stop to use global state\n  // useEffect(() => {\n  //   if (!isStarted) {\n  //     clearInterval(timerReadout);\n  //   }\n  //   if (isStarted) {\n  //     updatedTimerReadout = setInterval(() => {\n  //       // fire call to update current focus or break time\n  //       if (currentCycle === 'Focus') {\n  //         //need to eventually separate the backend call to reduce the load on the server\n  //         updateCurrentFocusTime({ id: timerId });\n  //       }\n  //     }, 1000);\n  //     setTimerReadout(updatedTimerReadout);\n  //   }\n  // }, [isStarted]);\n  // const startStopTimer = () => {\n  //   updateStart({ id: timerId });\n  // };\n  // const startStopTimer = () => {\n  //   let updatedTimerReadout;\n  //   if (isStarted) {\n  //     clearInterval(timerReadout);\n  //     setIsStarted(false);\n  //   }\n  //   if (!isStarted) {\n  //     updatedTimerReadout = setInterval(() => {\n  //       setTimer((prevTimer) => {\n  //         const newTimer = prevTimer - 1;\n  //         if (newTimer >= 0) {\n  //           return newTimer;\n  //         }\n  //         return prevTimer;\n  //       });\n  //     }, 1000);\n  //     setTimerReadout(updatedTimerReadout);\n  //     setIsStarted(true);\n  //   }\n  // };\n  // De-coupled timer - put timer info into global state\n  // useEffect(() => {}, [\n  //   currentFocusTime,\n  //   currentBreakTime,\n  //   focusTime,\n  //   breakTime,\n  // ]);\n  // set timer based on when current cycle changes -\n  // TODO: when focus or break time changes - update timer\n  // useEffect(() => {\n  //   timer()\n  // }, [currentCycle])\n  // const timer = () => {\n  //   if (currentCycle === 'Focus') {\n  //     timer = currentFocusTime;\n  //     return timer;\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     timer = currentBreakTime;\n  //     return timer;\n  //   }\n  // };\n  // // RESET TIMERS\n  // const reset = (event) => {\n  //   event.preventDefault();\n  //   resetTimers({ id: timerId });\n  // };\n  // TIMER PANEL LABEL\n  // const cycleLength = () => {\n  //   return currentCycle === 'Focus'\n  //     ? `Focus Time: ${focusTime / 60} min.`\n  //     : `Break Time: ${breakTime / 60} min.`;\n  // };\n  // // INCREMENT TIME\n  // const increaseTimer = (event) => {\n  //   event.preventDefault();\n  //   if (currentCycle === 'Focus') {\n  //     incrementFocusTime({ id: timerId });\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     incrementBreakTime({ id: timerId });\n  //   }\n  // };\n  // // DECREMENT TIME\n  // const decreaseTimer = (event) => {\n  //   event.preventDefault();\n  //   if (currentCycle === 'Focus') {\n  //     decrementFocusTime({ id: timerId, min_focus_time: 1 });\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     decrementBreakTime({ id: timerId, min_break_time: 1 });\n  //   }\n  // };\n\n\n  const getProfileData = () => {\n    getProfile();\n    getTimers();\n  }; // const shownGreetText = loadingGreeting ? 'loading' : greetingText;\n\n\n  const shownProfileData = profileLoading ? 'loading' : {\n    profileData,\n    timersData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 260\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 261\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 262\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 268\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 269\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 273\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn\",\n    onClick: getProfileData,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 274\n    },\n    __self: this\n  }, \"Get Profile Data\"), React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 277\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const focusTime = state.timers.focus_time;\n  const breakTime = state.timers.break_time;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const currentCycle = state.timers.current_cycle;\n  const isStarted = state.timers.is_started;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timerId,\n    focusTime,\n    breakTime,\n    currentFocusTime,\n    currentBreakTime,\n    currentCycle,\n    isStarted,\n    timersData\n  };\n};\n\nconst hoc = compose( // gets data from browser to FE server - network request from browser get sent through all middleware\nwithRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('incrementFocusTime'), withRPCRedux('decrementFocusTime'), withRPCRedux('incrementBreakTime'), withRPCRedux('decrementBreakTime'), withRPCRedux('resetTimers'), withRPCRedux('setCycle'), withRPCRedux('updateStart'), withRPCRedux('updateCurrentFocusTime'), // connecting reducers to components\nconnect(mapStateToProps));\nexport default hoc(PomodoroClock); // export default PomodoroClock;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React, { useState, useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch'; // import { object } from 'prop-types';\n\nconst PomodoroClock = ({\n  // retrieving data RPC handlers\n  getProfile,\n  getTimers,\n  timersData,\n  // RPC handlers\n  incrementFocusTime,\n  decrementFocusTime,\n  incrementBreakTime,\n  decrementBreakTime,\n  resetTimers,\n  setCycle,\n  updateStart,\n  // props from redux global state\n  profileLoading,\n  profileError,\n  profileData,\n  timerId,\n  focusTime,\n  breakTime,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  isStarted\n}) => {\n  // TODO: wrap the Pomodoro clock in a login component - so login page renders if not authenticated. use props.history and match\n  // const [timer, setTimer] = useState(focusTime);\n  // const [cycle, setCycle] = useState(true);\n  // const [isStarted, setIsStarted] = useState(false);\n  // const [timerReadout, setTimerReadout] = useState(null);\n  //action creator for these\n  //in store make reducer Pomodoro Clock\n  // make a const DEFAULT_STATE object tree in reducers\n  // creat actions for these\n  // dispatch actions with updated time\n  //in reducers, look for actions swtich (action.type) - case setFocusTime\n  // update state for focus time\n  // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up\n  // Initial Page load - grab profile and timer data\n  useEffect(() => {\n    getProfile();\n    getTimers();\n  }, []); // TODO: connect back end call for timers\n  // useEffect(() => {\n  //   if (isStarted && timer != 0) {\n  //     if (currentCycle === 'Focus') {\n  //       focusCountdown();\n  //     }\n  //     if (currentCycle === 'Break') {\n  //       breakCoundown();\n  //     }\n  //   }\n  // }, [isStarted, timer]);\n  //<StartStop />\n  // Stop timer when it the time runs to 0\n  // useEffect(() => {\n  //   if (currentFocusTime === 0 || currentBreakTime === 0) {\n  //     clearInterval(timerReadout);\n  //     updateStart({ id: timerId });\n  //     // to stop timer from changing automatically\n  //     // setCycle(!cycle);\n  //   }\n  // }, [currentFocusTime, currentBreakTime]);\n  // useEffect(() => {\n  //   setTimer(currentCycle === 'Focus' ? focusTime : breakTime);\n  // }, [currentCycle, focusTime, breakTime]);\n  // TOGGLE\n\n  const toggleCycle = () => {\n    setCycle({\n      id: timerId\n    });\n  }; // Adjusting timer when the times are incremented/decremented\n  // useEffect(() => {\n  //   if (currentCycle === 'Focus') {\n  //     if (currentBreakTime !== timer) {\n  //       if (currentFocusTime > timer) {\n  //         setTimer(timer + 60);\n  //       }\n  //       if (currentFocusTime < timer) {\n  //         setTimer(timer - 60);\n  //       }\n  //     }\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     if (currentBreakTime !== timer) {\n  //       if (currentBreakTime > timer) {\n  //         setTimer(timer + 60);\n  //       }\n  //       if (currentBreakTime < timer) {\n  //         if (timer >= 60) {\n  //           setTimer(timer - 60);\n  //         }\n  //         if (timer <= 60) {\n  //           setTimer(0);\n  //         }\n  //       }\n  //     }\n  //   }\n  // }, [currentFocusTime, currentBreakTime]);\n  // display for loading/error state\n  // if (typeof profileData == 'undefined') {\n  //   return <div>loading</div>;\n  // }\n  // Object.keys(profileData).length == null || undefined\n\n\n  if (profileLoading) {\n    return React.createElement(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 133\n      },\n      __self: this\n    }, \"loading\");\n  }\n\n  if (profileError) {\n    return React.createElement(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 137\n      },\n      __self: this\n    }, profileError.message);\n  } // const focusTime = profileData.timers[0].focus_time;\n  // TODO: re-wire start stop to use global state\n  // useEffect(() => {\n  //   if (!isStarted) {\n  //     clearInterval(timerReadout);\n  //   }\n  //   if (isStarted) {\n  //     updatedTimerReadout = setInterval(() => {\n  //       // fire call to update current focus or break time\n  //       if (currentCycle === 'Focus') {\n  //         //need to eventually separate the backend call to reduce the load on the server\n  //         updateCurrentFocusTime({ id: timerId });\n  //       }\n  //     }, 1000);\n  //     setTimerReadout(updatedTimerReadout);\n  //   }\n  // }, [isStarted]);\n  // const startStopTimer = () => {\n  //   updateStart({ id: timerId });\n  // };\n  // const startStopTimer = () => {\n  //   let updatedTimerReadout;\n  //   if (isStarted) {\n  //     clearInterval(timerReadout);\n  //     setIsStarted(false);\n  //   }\n  //   if (!isStarted) {\n  //     updatedTimerReadout = setInterval(() => {\n  //       setTimer((prevTimer) => {\n  //         const newTimer = prevTimer - 1;\n  //         if (newTimer >= 0) {\n  //           return newTimer;\n  //         }\n  //         return prevTimer;\n  //       });\n  //     }, 1000);\n  //     setTimerReadout(updatedTimerReadout);\n  //     setIsStarted(true);\n  //   }\n  // };\n  // De-coupled timer - put timer info into global state\n  // useEffect(() => {}, [\n  //   currentFocusTime,\n  //   currentBreakTime,\n  //   focusTime,\n  //   breakTime,\n  // ]);\n  // set timer based on when current cycle changes -\n  // TODO: when focus or break time changes - update timer\n  // useEffect(() => {\n  //   timer()\n  // }, [currentCycle])\n  // const timer = () => {\n  //   if (currentCycle === 'Focus') {\n  //     timer = currentFocusTime;\n  //     return timer;\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     timer = currentBreakTime;\n  //     return timer;\n  //   }\n  // };\n  // // RESET TIMERS\n  // const reset = (event) => {\n  //   event.preventDefault();\n  //   resetTimers({ id: timerId });\n  // };\n  // TIMER PANEL LABEL\n  // const cycleLength = () => {\n  //   return currentCycle === 'Focus'\n  //     ? `Focus Time: ${focusTime / 60} min.`\n  //     : `Break Time: ${breakTime / 60} min.`;\n  // };\n  // // INCREMENT TIME\n  // const increaseTimer = (event) => {\n  //   event.preventDefault();\n  //   if (currentCycle === 'Focus') {\n  //     incrementFocusTime({ id: timerId });\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     incrementBreakTime({ id: timerId });\n  //   }\n  // };\n  // // DECREMENT TIME\n  // const decreaseTimer = (event) => {\n  //   event.preventDefault();\n  //   if (currentCycle === 'Focus') {\n  //     decrementFocusTime({ id: timerId, min_focus_time: 1 });\n  //   }\n  //   if (currentCycle === 'Break') {\n  //     decrementBreakTime({ id: timerId, min_break_time: 1 });\n  //   }\n  // };\n\n\n  const getProfileData = () => {\n    getProfile();\n    getTimers();\n  }; // const shownGreetText = loadingGreeting ? 'loading' : greetingText;\n\n\n  const shownProfileData = profileLoading ? 'loading' : {\n    profileData,\n    timersData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 258\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 259\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 260\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 266\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 267\n    },\n    __self: this\n  }), React.createElement(Reset, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 268\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 271\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn\",\n    onClick: getProfileData,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 272\n    },\n    __self: this\n  }, \"Get Profile Data\"), React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 275\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const focusTime = state.timers.focus_time;\n  const breakTime = state.timers.break_time;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const currentCycle = state.timers.current_cycle;\n  const isStarted = state.timers.is_started;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timerId,\n    focusTime,\n    breakTime,\n    currentFocusTime,\n    currentBreakTime,\n    currentCycle,\n    isStarted,\n    timersData\n  };\n};\n\nconst hoc = compose( // gets data from browser to FE server - network request from browser get sent through all middleware\nwithRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('incrementFocusTime'), withRPCRedux('decrementFocusTime'), withRPCRedux('incrementBreakTime'), withRPCRedux('decrementBreakTime'), withRPCRedux('resetTimers'), withRPCRedux('setCycle'), withRPCRedux('updateStart'), withRPCRedux('updateCurrentFocusTime'), // connecting reducers to components\nconnect(mapStateToProps));\nexport default hoc(PomodoroClock); // export default PomodoroClock;"
         },
         {
           "id": "./src/components/PomodoroClock/Reset.js",
@@ -8109,7 +8229,7 @@
           "name": "./src/components/PomodoroClock/Reset.js",
           "index": 45,
           "index2": 39,
-          "size": 696,
+          "size": 1089,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -8165,6 +8285,15 @@
               "type": "harmony side effect evaluation",
               "userRequest": "./Reset",
               "loc": "9:0-28"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+              "module": "./src/components/PomodoroClock/PomodoroClock.js",
+              "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
+              "type": "harmony import specifier",
+              "userRequest": "./Reset",
+              "loc": "276:26-31"
             }
           ],
           "providedExports": [
@@ -8172,7 +8301,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js\";\nimport React, { useState } from 'react';\n\nconst Reset = ({\n  reset\n}) => {\n  // RESET TIMERS\n  // const reset = (event) => {\n  //   event.preventDefault();\n  //   resetTimers({ id: timerId });\n  // };\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn panel-btn reset-btn\",\n    onClick: reset,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, \"Reset\"));\n};\n\nexport default Reset;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst Reset = ({\n  resetTimers,\n  timerId\n}) => {\n  // TODO: when timer is reset - useEffect to stop countdown\n  // RESET TIMERS\n  const reset = event => {\n    event.preventDefault();\n    resetTimers({\n      id: timerId\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"raised-btn panel-btn reset-btn\",\n    onClick: reset,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, \"Reset\"));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  return {\n    timerId\n  };\n};\n\nconst hoc = compose(withRPCRedux('resetTimers'), connect(mapStateToProps));\nexport default hoc(Reset);"
         },
         {
           "id": "./src/components/PomodoroClock/StartStop.js",
@@ -10750,7 +10879,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "332:0-12"
+              "loc": "336:0-12"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -10759,7 +10888,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "332:28-40"
+              "loc": "336:28-40"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -10768,7 +10897,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "332:55-67"
+              "loc": "336:55-67"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -10777,7 +10906,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "332:91-103"
+              "loc": "336:91-103"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -10786,7 +10915,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "332:127-139"
+              "loc": "336:127-139"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -10795,7 +10924,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "332:163-175"
+              "loc": "336:163-175"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -10804,7 +10933,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "332:199-211"
+              "loc": "336:199-211"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -10813,7 +10942,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "332:228-240"
+              "loc": "336:228-240"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -10822,7 +10951,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "332:254-266"
+              "loc": "336:254-266"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -10831,7 +10960,25 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "332:283-295"
+              "loc": "336:283-295"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/Reset.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+              "module": "./src/components/PomodoroClock/Reset.js",
+              "moduleName": "./src/components/PomodoroClock/Reset.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "3:0-61"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/Reset.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+              "module": "./src/components/PomodoroClock/Reset.js",
+              "moduleName": "./src/components/PomodoroClock/Reset.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "44:20-32"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -11857,7 +12004,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "53:2-11"
+              "loc": "51:2-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11866,7 +12013,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "122:11-16"
+              "loc": "120:11-16"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11875,7 +12022,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "132:11-16"
+              "loc": "130:11-16"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11884,7 +12031,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "244:9-14"
+              "loc": "242:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11893,7 +12040,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "244:29-34"
+              "loc": "242:29-34"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11902,7 +12049,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "244:51-56"
+              "loc": "242:51-56"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11911,7 +12058,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "251:5-10"
+              "loc": "249:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11920,7 +12067,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "258:6-11"
+              "loc": "256:6-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11929,7 +12076,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "265:6-11"
+              "loc": "263:6-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11938,7 +12085,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "272:5-10"
+              "loc": "270:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11947,7 +12094,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "278:8-13"
+              "loc": "276:6-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11956,7 +12103,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "285:5-10"
+              "loc": "282:8-13"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -11965,7 +12112,16 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "293:26-31"
+              "loc": "289:5-10"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+              "module": "./src/components/PomodoroClock/PomodoroClock.js",
+              "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "297:26-31"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -11974,7 +12130,7 @@
               "moduleName": "./src/components/PomodoroClock/Reset.js",
               "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "2:0-40"
+              "loc": "2:0-41"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -11983,7 +12139,7 @@
               "moduleName": "./src/components/PomodoroClock/Reset.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:9-14"
+              "loc": "20:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -11992,7 +12148,7 @@
               "moduleName": "./src/components/PomodoroClock/Reset.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:29-34"
+              "loc": "20:29-34"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -12001,7 +12157,7 @@
               "moduleName": "./src/components/PomodoroClock/Reset.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "18:5-10"
+              "loc": "26:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -12792,7 +12948,25 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "333:0-7"
+              "loc": "337:0-7"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/Reset.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+              "module": "./src/components/PomodoroClock/Reset.js",
+              "moduleName": "./src/components/PomodoroClock/Reset.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "react-redux",
+              "loc": "4:0-38"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/Reset.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+              "module": "./src/components/PomodoroClock/Reset.js",
+              "moduleName": "./src/components/PomodoroClock/Reset.js",
+              "type": "harmony import specifier",
+              "userRequest": "react-redux",
+              "loc": "44:49-56"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -13073,7 +13247,25 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "331:12-19"
+              "loc": "335:12-19"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/Reset.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+              "module": "./src/components/PomodoroClock/Reset.js",
+              "moduleName": "./src/components/PomodoroClock/Reset.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "redux",
+              "loc": "5:0-32"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/Reset.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/Reset.js",
+              "module": "./src/components/PomodoroClock/Reset.js",
+              "moduleName": "./src/components/PomodoroClock/Reset.js",
+              "type": "harmony import specifier",
+              "userRequest": "redux",
+              "loc": "44:12-19"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",

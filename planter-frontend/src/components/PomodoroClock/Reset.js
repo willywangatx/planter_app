@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
 
-const Reset = ({ reset }) => {
+const Reset = ({ resetTimers, timerId }) => {
+  // TODO: when timer is reset - useEffect to stop countdown
+
   // RESET TIMERS
-  // const reset = (event) => {
-  //   event.preventDefault();
-  //   resetTimers({ id: timerId });
-  // };
+  const reset = (event) => {
+    event.preventDefault();
+    resetTimers({ id: timerId });
+  };
 
   return (
     <React.Fragment>
@@ -15,4 +20,15 @@ const Reset = ({ reset }) => {
     </React.Fragment>
   );
 };
-export default Reset;
+
+const mapStateToProps = (state) => {
+  const timerId = state.timers.id;
+  return { timerId };
+};
+
+const hoc = compose(
+  withRPCRedux('resetTimers'),
+  connect(mapStateToProps)
+);
+
+export default hoc(Reset);
