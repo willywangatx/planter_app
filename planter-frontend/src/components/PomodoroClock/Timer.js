@@ -1,12 +1,42 @@
 import React from 'react';
+// RPC REDUX
+import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
+// Timer formatter
 import moment from 'moment';
 import momentDurationFormatSetup from 'moment-duration-format';
 
 momentDurationFormatSetup(moment);
 
-const Timer = ({ timer }) => {
+/////// Original component ////////
+// const Timer = ({  timer }) => {
+//   const formattedTimeLeft = moment
+//     .duration(timer, 's')
+//     .format('mm:ss', { trim: false });
+
+//   return (
+//     <React.Fragment>
+//       <p className="inset timer-clock">{formattedTimeLeft}</p>
+//     </React.Fragment>
+//   );
+// };
+
+// NEW componenet
+const Timer = ({ currentFocusTime, currentBreakTime, currentCycle }) => {
+  const timer = () => {
+    if (currentCycle === 'Focus') {
+      // timer = currentFocusTime;
+      return currentFocusTime;
+    }
+    if (currentCycle === 'Break') {
+      // timer = currentBreakTime;
+      return currentBreakTime;
+    }
+  };
+
   const formattedTimeLeft = moment
-    .duration(timer, 's')
+    .duration(timer(), 's')
     .format('mm:ss', { trim: false });
 
   return (
@@ -16,21 +46,36 @@ const Timer = ({ timer }) => {
   );
 };
 
-// const Timer = ({ timer }) => {
-//   let seconds = ('0' + (Math.floor(timer / 1000) % 60)).slice(-2);
-//   // let seconds = (str, num) => {
-//   //   return timer.toString();
-//   // };
-//   let minutes = ('0' + Math.floor((timer / 60000) % 60)).slice(-2);
+const mapStateToProps = (state) => {
+  // const timerId = state.timers.id;
+  // const focusTime = state.timers.focus_time;
+  // const breakTime = state.timers.break_time;
+  const currentFocusTime = state.timers.current_focus_time;
+  const currentBreakTime = state.timers.current_break_time;
+  const currentCycle = state.timers.current_cycle;
 
-//   return (
-//     <React.Fragment>
-//       {/* <p className="inset timer-clock">{formattedTimeLeft}</p> */}
-//       <p className="inset timer-clock">
-//         {minutes}:{seconds}
-//       </p>
-//     </React.Fragment>
-//   );
-// };
+  return {
+    // timerId,
+    // focusTime,
+    // breakTime,
+    currentFocusTime,
+    currentBreakTime,
+    currentCycle,
+  };
+};
 
-export default Timer;
+const hoc = compose(
+  // withRPCRedux('getProfile'),
+  // withRPCRedux('getTimers'),
+  // withRPCRedux('incrementFocusTime'),
+  // withRPCRedux('decrementFocusTime'),
+  // withRPCRedux('incrementBreakTime'),
+  // withRPCRedux('decrementBreakTime'),
+  // withRPCRedux('resetTimers'),
+  // withRPCRedux('setCycle'),
+  // connecting reducers to components
+  connect(mapStateToProps)
+);
+
+export default hoc(Timer);
+// export default PomodoroClock;

@@ -44,6 +44,10 @@ export default {
       })
       .catch((err) => {
         console.log(err);
+        const responseError = new ResponseError(
+          `Login attempt unsuccessful, erro: ${err.message}`
+        );
+        throw responseError;
       });
     return result;
   },

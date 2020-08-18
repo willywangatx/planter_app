@@ -3,7 +3,13 @@ import { Link, NavLink } from 'fusion-plugin-react-router';
 import paths from '../constants/paths';
 import PomodoroClock from '../components/PomodoroClock/PomodoroClock';
 
-const Home = () => {
+const Home = (props) => {
+  console.log(props);
+
+  try {
+    window.herpderp = props.history;
+  } catch {}
+
   return (
     <>
       <nav>

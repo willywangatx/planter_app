@@ -3,6 +3,8 @@ import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 
+import { Redirect } from 'fusion-plugin-react-router';
+
 import Timer from './Timer';
 import AdjustTime from './AdjustTime';
 import StartStop from './StartStop';
@@ -29,8 +31,8 @@ const PomodoroClock = ({
   timerId,
   focusTime,
   breakTime,
-  // currentFocusTime,
-  // currentBreakTime,
+  currentFocusTime,
+  currentBreakTime,
   currentCycle,
 }) => {
   // TODO: figure out how to get this to update on redirect from login
@@ -40,7 +42,7 @@ const PomodoroClock = ({
   const [timer, setTimer] = useState(focusTime);
   // const [cycle, setCycle] = useState(true);
   const [isStarted, setIsStarted] = useState(false);
-  const [idTimer, setIdTimer] = useState(null);
+  const [timerReadout, setTimerReadout] = useState(null);
   const [cycleCount, setCycleCount] = useState(0);
 
   //action creator for these
@@ -53,6 +55,7 @@ const PomodoroClock = ({
 
   // NOTE: GETTING THE PROFILE DATA ON PAGE LOAD - how i will do it once i link everything up
 
+  // Initial Page load - grab profile and timer data
   useEffect(() => {
     getProfile();
     getTimers();
@@ -74,13 +77,14 @@ const PomodoroClock = ({
 
   useEffect(() => {
     if (timer === 0) {
-      clearInterval(idTimer);
+      clearInterval(timerReadout);
       setIsStarted(!isStarted);
       // to stop timer from changing automatically
       // setCycle(!cycle);
     }
   }, [timer]);
 
+  //
   useEffect(() => {
     setTimer(currentCycle === 'Focus' ? focusTime : breakTime);
   }, [currentCycle, focusTime, breakTime]);
@@ -138,30 +142,52 @@ const PomodoroClock = ({
   // const focusTime = profileData.timers[0].focus_time;
 
   const startStopTimer = () => {
-    let updatedTimerId;
+    let updatedTimerReadout;
     if (isStarted) {
-      clearInterval(idTimer);
+      clearInterval(timerReadout);
       setIsStarted(false);
     }
     if (!isStarted) {
-      updatedTimerId = setInterval(() => {
+      updatedTimerReadout = setInterval(() => {
         setTimer((prevTimer) => {
           const newTimer = prevTimer - 1;
           if (newTimer >= 0) {
             return newTimer;
           }
-          // if (currentCycle === 'Focus') {
-          //   // setCycleCount(cycleCount + 1);
-          //   // console.log(cycleCount);
-          // }
+
           return prevTimer;
         });
       }, 1000);
-      setIdTimer(updatedTimerId);
-      setInterval(idTimer);
+      setTimerReadout(updatedTimerReadout);
       setIsStarted(true);
     }
   };
+
+  // De-coupled timer - put timer info into global state
+
+  // useEffect(() => {}, [
+  //   currentFocusTime,
+  //   currentBreakTime,
+  //   focusTime,
+  //   breakTime,
+  // ]);
+
+  // set timer based on when current cycle changes -
+  // TODO: when focus or break time changes - update timer
+  // useEffect(() => {
+  //   timer()
+  // }, [currentCycle])
+
+  // const timer = () => {
+  //   if (currentCycle === 'Focus') {
+  //     timer = currentFocusTime;
+  //     return timer;
+  //   }
+  //   if (currentCycle === 'Break') {
+  //     timer = currentBreakTime;
+  //     return timer;
+  //   }
+  // };
 
   // RESET TIMERS
   const reset = (event) => {
@@ -169,14 +195,14 @@ const PomodoroClock = ({
     resetTimers({ id: timerId });
   };
 
-  // <AdjustTime />
-
+  // TIMER PANEL LABEL
   const cycleLength = () => {
     return currentCycle === 'Focus'
       ? `Focus Time: ${focusTime / 60} min.`
       : `Break Time: ${breakTime / 60} min.`;
   };
 
+  // INCREMENT TIME
   const increaseTimer = (event) => {
     event.preventDefault();
     if (currentCycle === 'Focus') {
@@ -187,7 +213,7 @@ const PomodoroClock = ({
     }
   };
 
-  //update: set focusTime minimum time to 1 min
+  // DECREMENT TIME
   const decreaseTimer = (event) => {
     event.preventDefault();
     if (currentCycle === 'Focus') {
