@@ -224,13 +224,13 @@ export default reduceReducers(
     },
   }),
 
-  createRPCReducer('updateStart', {
+  createRPCReducer('startTimers', {
     start: (state) => {
       return {
         ...state,
         loading: true,
         error: null,
-        is_started: !state.is_started,
+        is_started: true,
       };
     },
     success: (state, { payload }) => {
@@ -241,6 +241,31 @@ export default reduceReducers(
       };
     },
     failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
+  }),
+
+  createRPCReducer('stopTimers', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        is_started: false,
+      };
+    },
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        loading: true,
+        is_started: payload.timers.is_started,
+      };
+    },
+    error: (state, { payload }) => {
       return {
         ...state,
         loading: false,

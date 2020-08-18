@@ -258,8 +258,8 @@ const PomodoroClock = ({
       <div className="pomodoro-clock raised-panel">
         <div className="left-panel"></div>
         <div className="center-panel">
-          {/* <ToggleSwitch />
-          <Timer />
+          <ToggleSwitch />
+          {/* <Timer />
 
           <StartStop /> */}
         </div>

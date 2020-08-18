@@ -11,9 +11,7 @@ const StartStop = ({
   currentCycle,
   timerId,
 }) => {
-  // TODO: figure out a way to stop timer when the cycle is toggled
-
-  // stop the timer if time runs to 0 or switching from focus to break time
+  // stops the timer when the time runs to 0
   useEffect(() => {
     if (currentFocusTime === 0 || currentBreakTime === 0) {
       // clearInterval(timerReadout);

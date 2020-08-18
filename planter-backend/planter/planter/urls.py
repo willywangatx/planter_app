@@ -45,6 +45,7 @@ urlpatterns = [
     path('api/incrementBreakTime/', increment_break_time, name='increment_break_time'),
     path('api/decrementBreakTime/', decrement_break_time, name='decrement_break_time'),
     path('api/setCycle/', set_cycle, name='set_cycle'),
-    path ('api/updateStart', update_start, name='update_start'),
+    path ('api/startTimers/', start_timers, name='start_timers'),
+    path('api/stopTimers/', stop_timers, name='stop_timers'),
     path('api/updateCurrentFocusTime', update_current_focus_time, name='update_current_focus_time'),
 ]

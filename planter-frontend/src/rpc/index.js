@@ -230,12 +230,34 @@ export default {
     return result;
   },
 
-  updateStart: async (args, ctx) => {
+  startTimers: async (args, ctx) => {
     const headers = { Authorization: `Bearer ${ctx.access_token}` };
     const result = await axios({
       method: 'POST',
       headers,
-      url: 'http://localhost:8000/api/updateStart',
+      url: 'http://localhost:8000/api/startTimers/',
+      data: args,
+    })
+      .then((res) => {
+        console.log(res.data);
+        return res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+        const responseError = new ResponseError(
+          `Could not set isStarted, error: ${err.message}`
+        );
+        throw responseError;
+      });
+    return result;
+  },
+
+  stopTimers: async (args, ctx) => {
+    const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    const result = await axios({
+      method: 'POST',
+      headers,
+      url: 'http://localhost:8000/api/stopTimers/',
       data: args,
     })
       .then((res) => {
