@@ -23,7 +23,7 @@ const PomodoroClock = ({
   decrementBreakTime,
   resetTimers,
   setCycle,
-  updateStart,
+  // updateStart,
   // props from redux global state
   profileLoading,
   profileError,
@@ -88,9 +88,9 @@ const PomodoroClock = ({
   // }, [currentCycle, focusTime, breakTime]);
 
   // TOGGLE
-  const toggleCycle = () => {
-    setCycle({ id: timerId });
-  };
+  // const toggleCycle = () => {
+  //   setCycle({ id: timerId });
+  // };
 
   // Adjusting timer when the times are incremented/decremented
   // useEffect(() => {
@@ -259,9 +259,9 @@ const PomodoroClock = ({
         <div className="left-panel"></div>
         <div className="center-panel">
           <ToggleSwitch />
-          {/* <Timer />
+          {/* <Timer /> */}
 
-          <StartStop /> */}
+          <StartStop />
         </div>
         <div className="right-panel">
           <AdjustTime />
@@ -319,7 +319,7 @@ const hoc = compose(
   withRPCRedux('decrementBreakTime'),
   withRPCRedux('resetTimers'),
   withRPCRedux('setCycle'),
-  withRPCRedux('updateStart'),
+  // withRPCRedux('updateStart'),
   withRPCRedux('updateCurrentFocusTime'),
   // connecting reducers to components
   connect(mapStateToProps)

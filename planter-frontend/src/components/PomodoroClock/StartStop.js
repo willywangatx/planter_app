@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 
 import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 import { connect } from 'react-redux';
@@ -9,7 +9,7 @@ const StartStop = ({
   startTimers,
   stopTimers,
   updateCurrentFocusTime,
-  startStopToggle,
+  // startStopToggle,
   // global state as props
   isStarted,
   currentFocusTime,
@@ -20,23 +20,40 @@ const StartStop = ({
   // stops the timer when the time runs to 0
   useEffect(() => {
     if (currentFocusTime === 0 || currentBreakTime === 0) {
-      // clearInterval(timerReadout);
       stopTimers({ id: timerId });
     }
   }, [currentFocusTime, currentBreakTime]);
 
-  useEffect(() => {
-    if (isStarted) {
-      // clearInterval(**put the timer readout here)
-    }
-    if (!isStarted) {
-    }
-  }, [isStarted]);
-
+  // toggles the timer between start and stop
   const startStopTimer = (event) => {
     event.preventDefault();
-    startStopToggle({ id: timerId });
+    if (isStarted) {
+      stopTimers({ id: timerId });
+    }
+    if (!isStarted) {
+      startTimers({ id: timerId });
+    }
+    // startStopToggle({ id: timerId });
   };
+
+  // TODO: be more explicit in changing the currentFocusTime and currentBreakTime?
+  // maybe keep using timerDisplay - and every 20 seconds/when the timer hits 0, sync up the current times with the backend
+  // so send something like updateCurrentFocusTime({id: timerId, current_focus_time: timerDisplay})
+  // start or stop timer when button clicked
+  useEffect(() => {
+    let interval;
+    let timerDisplay = () => {
+      currentCycle === 'Focus' ? currentFocusTime : currentBreakTime;
+    };
+    if (isStarted) {
+      clearInterval(interval);
+    }
+    if (!isStarted) {
+      interval = setInterval(() => {
+        return timerDisplay - 60;
+      }, 1000);
+    }
+  }, [startStopTimer]);
 
   return (
     <React.Fragment>
@@ -67,7 +84,7 @@ const mapStateToProps = (state) => {
 const hoc = compose(
   withRPCRedux('startTimers'),
   withRPCRedux('stopTimers'),
-  withRPCRedux('startStopToggle'),
+  // withRPCRedux('startStopToggle'),
   withRPCRedux('updateCurrentFocusTime'),
 
   connect(mapStateToProps)

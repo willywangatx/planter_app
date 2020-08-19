@@ -2,6 +2,7 @@
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.views import Response 
+from django.db.models import Case, Value, When
 from rest_framework import status
 from django.http import Http404
 from django.db.models import F
@@ -176,6 +177,7 @@ def set_cycle(request):
     return Response(data, status=status.HTTP_200_OK)
 
 
+# TODO: Figure out a way to set boolean value of is_startted using F() Expressions 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def start_timers(request):
@@ -186,9 +188,9 @@ def start_timers(request):
 
     try: 
         timer = Timer.objects.get(pk=timer_id)
-        timer.is_started = (F('is_started') == True)
+        if timer.is_started == False:
+            timer.is_started = True
         timer.save()
-        timer.refresh_from_db()
     except Timer.DoesNotExist: 
         return Http404()
     
@@ -207,38 +209,39 @@ def stop_timers(request):
     
     try: 
         timer = Timer.objects.get(pk=timer_id)
-        timer.is_started = (F('is_started') == False)
+        if timer.is_started == True:
+            timer.is_started = False
         timer.save()
-        timer.refresh_from_db()
     except Timer.DoesNotExist:
-        return Http404()
+        return Response(status=status.HTTP_404_NOT_FOUND)
     
     serializer = TimerSerializer(timer)
     data = {'timers': serializer.data, 'response': 'Timers successfully stopped'}
     return Response(data, status=status.HTTP_200_OK)
 
 
-@api_view(['POST'])
-@permission_classes([IsAuthenticated])
-def start_stop_toggle(request):
-    try:
-        timer_id = request.data['id']
-    except KeyError:
-        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
+# @api_view(['POST'])
+# @permission_classes([IsAuthenticated])
+# def start_stop_toggle(request):
+#     try:
+#         timer_id = request.data['id']
+#     except KeyError:
+#         return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
 
-    try: 
-        timer = Timer.objects.get(pk=timer_id)
-        if timer.is_started == True:
-            timer.is_started = (F('is_started') == False)
-        timer.is_started = (F('is_started') == True)
-        timer.save()
-        timer.refresh_from_db()
-    except Timer.DoesNotExist:
-        return Http404()
+#     try: 
+#         timer = Timer.objects.get(pk=timer_id)
+#         if timer.is_started == True:
+#             timer.is_started = (F('is_started') == False)
+#         elif timer.is_started == False:
+#             timer.is_started = (F('is_started') == True)
+#         timer.save()
+#         timer.refresh_from_db()
+#     except Timer.DoesNotExist:
+#         return Http404()
 
-    serializer = TimerSerializer(timer)
-    data = {'timers': serializer.data, 'response': 'Start/stop toggle successfully stopped'}
-    return Response(data, status=status.HTTP_200_OK)
+#     serializer = TimerSerializer(timer)
+#     data = {'timers': serializer.data, 'response': 'Start/stop toggle successfully stopped'}
+#     return Response(data, status=status.HTTP_200_OK)
 
 
 @api_view(['POST'])

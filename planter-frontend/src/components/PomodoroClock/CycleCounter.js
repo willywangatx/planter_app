@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 
-const CycleCounter = ({ cycleCount }) => {
-  return <p className="inset panel-label">Session Count: {cycleCount}</p>;
-};
-export default CycleCounter;
+// const CycleCounter = ({ cycleCount }) => {
+//   return <p className="inset panel-label">Session Count: {cycleCount}</p>;
+// };
+// export default CycleCounter;
