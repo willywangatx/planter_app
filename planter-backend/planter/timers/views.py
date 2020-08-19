@@ -3,9 +3,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.views import Response 
 from rest_framework import status
-
+from django.http import Http404
 from django.db.models import F
-
 from .serializers import TimerSerializer
 from .models import Timer
 
@@ -207,7 +206,7 @@ def stop_timers(request):
         return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
     
     try: 
-        timer = Timers.objects.get(pk=timer_id)
+        timer = Timer.objects.get(pk=timer_id)
         timer.is_started = (F('is_started') == False)
         timer.save()
         timer.refresh_from_db()
@@ -217,7 +216,30 @@ def stop_timers(request):
     serializer = TimerSerializer(timer)
     data = {'timers': serializer.data, 'response': 'Timers successfully stopped'}
     return Response(data, status=status.HTTP_200_OK)
-    
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def start_stop_toggle(request):
+    try:
+        timer_id = request.data['id']
+    except KeyError:
+        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
+
+    try: 
+        timer = Timer.objects.get(pk=timer_id)
+        if timer.is_started == True:
+            timer.is_started = (F('is_started') == False)
+        timer.is_started = (F('is_started') == True)
+        timer.save()
+        timer.refresh_from_db()
+    except Timer.DoesNotExist:
+        return Http404()
+
+    serializer = TimerSerializer(timer)
+    data = {'timers': serializer.data, 'response': 'Start/stop toggle successfully stopped'}
+    return Response(data, status=status.HTTP_200_OK)
+
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])

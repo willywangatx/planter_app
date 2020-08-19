@@ -274,6 +274,27 @@ export default {
     return result;
   },
 
+  startStopToggle: async (args, ctx) => {
+    const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    const result = await axios({
+      method: 'POST',
+      headers,
+      url: 'http://localhost:8000/api/startStopToggle/',
+      data: args,
+    })
+      .then((res) => {
+        console.log(res.data);
+        return res.data;
+      })
+      .catch((err) => {
+        const responseError = new ResponseError(
+          `Could not update start/stop, error: ${err.message}`
+        );
+        throw responseError;
+      });
+    return result;
+  },
+
   updateCurrentFocusTime: async (args, ctx) => {
     const headers = { Authorization: `Bearer ${ctx.access_token}` };
     const result = await axios({

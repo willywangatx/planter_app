@@ -5,6 +5,12 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 
 const StartStop = ({
+  // RPC handlers
+  startTimers,
+  stopTimers,
+  updateCurrentFocusTime,
+  startStopToggle,
+  // global state as props
   isStarted,
   currentFocusTime,
   currentBreakTime,
@@ -15,49 +21,26 @@ const StartStop = ({
   useEffect(() => {
     if (currentFocusTime === 0 || currentBreakTime === 0) {
       // clearInterval(timerReadout);
-      updateStart({ id: timerId });
-      // to stop timer from changing automatically
-      // setCycle(!cycle);
+      stopTimers({ id: timerId });
     }
   }, [currentFocusTime, currentBreakTime]);
 
   useEffect(() => {
-    if (!isStarted) {
-      clearInterval(timerReadout);
-    }
     if (isStarted) {
-      updatedTimerReadout = setInterval(() => {
-        // fire call to update current focus or break time
-        if (currentCycle === 'Focus') {
-          //need to eventually separate the backend call to reduce the load on the server
-          updateCurrentFocusTime({ id: timerId });
-        }
-      }, 1000);
-      setTimerReadout(updatedTimerReadout);
+      // clearInterval(**put the timer readout here)
+    }
+    if (!isStarted) {
     }
   }, [isStarted]);
 
-  const [click, setClick] = useState(false);
-
-  const startStopTimer = () => {
-    updateStart({ id: timerId });
-  };
-
-  const btnClick = () => {
-    setClick(!click);
-  };
-
-  const combinedClickEvents = () => {
-    startStopTimer();
-    btnClick();
+  const startStopTimer = (event) => {
+    event.preventDefault();
+    startStopToggle({ id: timerId });
   };
 
   return (
     <React.Fragment>
-      <button
-        className="raised-btn start-stop-btn"
-        onClick={combinedClickEvents}
-      >
+      <button className="raised-btn start-stop-btn" onClick={startStopTimer}>
         {isStarted ? 'Stop' : 'Start'}
       </button>
     </React.Fragment>
@@ -82,11 +65,51 @@ const mapStateToProps = (state) => {
 };
 
 const hoc = compose(
-  // gets data from browser to FE server - network request from browser get sent through all middleware
-  withRPCRedux('updateStart'),
-  // connecting reducers to components
+  withRPCRedux('startTimers'),
+  withRPCRedux('stopTimers'),
+  withRPCRedux('startStopToggle'),
+  withRPCRedux('updateCurrentFocusTime'),
+
   connect(mapStateToProps)
 );
 
 export default hoc(StartStop);
-// export default PomodoroClock;
+
+// useEffect(() => {
+//   let initiateTimer;
+//   if (currentCycle === 'Focus') {
+//     if (isStarted) {
+//       const initiateTimer = setInterval(() => {
+//         updateCurrentFocusTime({ id: timerId });
+//       }, 1000);
+//     }
+//     if (!isStarted) {}
+//   }
+// }, [isStarted]);
+
+// useEffect(() => {
+//   if (!isStarted) {
+//     clearInterval(timerReadout);
+//   }
+//   if (isStarted) {
+//     updatedTimerReadout = setInterval(() => {
+//       // fire call to update current focus or break time
+//       if (currentCycle === 'Focus') {
+//         //need to eventually separate the backend call to reduce the load on the server
+//         updateCurrentFocusTime({ id: timerId });
+//       }
+//     }, 1000);
+//     setTimerReadout(updatedTimerReadout);
+//   }
+// }, [isStarted]);
+
+// const [click, setClick] = useState(false);
+
+// const btnClick = () => {
+//   setClick(!click);
+// };
+
+// const combinedClickEvents = () => {
+//   startStopTimer();
+//   btnClick();
+// };

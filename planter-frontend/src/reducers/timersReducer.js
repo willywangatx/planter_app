@@ -274,6 +274,31 @@ export default reduceReducers(
     },
   }),
 
+  createRPCReducer('startStopToggle', {
+    start: (start) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        is_started: !state.is_started,
+      };
+    },
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        is_started: payload.timers.is_started,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
+  }),
+
   createRPCReducer('updateCurrentFocusTime', {
     start: (state) => {
       return {
