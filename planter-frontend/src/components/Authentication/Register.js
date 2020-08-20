@@ -4,8 +4,8 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 
-import { NavLink, Link } from 'fusion-plugin-react-router';
-import paths from '../constants/paths';
+// import { NavLink, Link } from 'fusion-plugin-react-router';
+// import paths from '../constants/paths';
 
 const Register = ({ register }) => {
   const [email, setEmail] = useState('');
@@ -36,13 +36,13 @@ const Register = ({ register }) => {
 
   return (
     <React.Fragment>
-      <nav>
+      {/* <nav>
         <Link to={paths.home}>home.</Link>
         <Link to={paths.login}>login.</Link>
         <NavLink activeClassName="inset" to={paths.register}>
           register.
         </NavLink>
-      </nav>
+      </nav> */}
       <div className="raised-panel auth-panel">
         <form
           onSubmit={handleRegistration}

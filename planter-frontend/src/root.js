@@ -9,6 +9,7 @@ import Login from './pages/login.js';
 import Register from './pages/register.js';
 import PageNotFound from './pages/pageNotFound.js';
 import { assetUrl } from 'fusion-core';
+import Authentication from './components/Authentication/Authentication';
 
 // import Example from './components/index.js';
 
@@ -21,10 +22,9 @@ const Root = (
     <Switch>
       {/* wrap each componnetnt in a login hoc */}
       <Route exact path={paths.home} component={Home} />
-      <Route exact path={paths.login} component={Login} />
-      <Route exact path={paths.register} component={Register} />
+      {/* <Route exact path={paths.login} component={Login} />
+      <Route exact path={paths.register} component={Register} /> */}
       <Route component={PageNotFound} />
-      {/* <Route component={Example} /> */}
     </Switch>
   </>
 );

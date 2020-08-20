@@ -30,7 +30,7 @@ const ToggleSwitch = ({
   useEffect(() => {
     if (useDidMount) {
       stopTimers({ id: timerId });
-      resetTimers({ id: timerId });
+      // resetTimers({ id: timerId });
     }
   }, [toggleCycle]);
 

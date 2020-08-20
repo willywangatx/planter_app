@@ -6,6 +6,7 @@ import { compose } from 'redux';
 
 import paths from '../constants/paths';
 import PomodoroClock from '../components/PomodoroClock/PomodoroClock';
+import Authentication from '../components/Authentication/Authentication';
 
 const Home = (props, { isAuthenticated, login, register }) => {
   console.log(props);
@@ -16,14 +17,15 @@ const Home = (props, { isAuthenticated, login, register }) => {
 
   return (
     <>
-      <nav>
+      {/* <nav>
         <NavLink activeClassName="inset" to={paths.home}>
           home.
         </NavLink>
         <Link to={paths.login}>login.</Link>
         <Link to={paths.register}>register.</Link>
-      </nav>
-      <PomodoroClock />
+      </nav> */}
+      {/* <PomodoroClock /> */}
+      <Authentication />
     </>
   );
 };
