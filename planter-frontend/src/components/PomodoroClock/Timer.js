@@ -23,13 +23,7 @@ momentDurationFormatSetup(moment);
 // };
 
 // NEW componenet
-const Timer = ({
-  updateCurrentFocusTime,
-  currentFocusTime,
-  currentBreakTime,
-  currentCycle,
-  timerId,
-}) => {
+const Timer = ({ currentFocusTime, currentBreakTime, currentCycle }) => {
   // useEffect(() => {
   //   if (currentCycle === 'Focus') {
   //     if (currentBreakTime !== timer()) {
@@ -61,11 +55,9 @@ const Timer = ({
 
   const timer = () => {
     if (currentCycle === 'Focus') {
-      // timer = currentFocusTime;
       return currentFocusTime;
     }
     if (currentCycle === 'Break') {
-      // timer = currentBreakTime;
       return currentBreakTime;
     }
   };

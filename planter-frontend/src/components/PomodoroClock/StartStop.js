@@ -46,6 +46,8 @@ const StartStop = ({
   //   currentCycle === 'Focus' ? currentFocusTime : currentBreakTime;
   // };
 
+  // when the Start/Stop btn is clicked, start countdown on current focus/break time
+  // TODO: ask why there is a return clear interval needed in the if (isStarted) block??
   useEffect(() => {
     let interval;
     if (!isStarted) {
