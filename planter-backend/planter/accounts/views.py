@@ -18,7 +18,7 @@ def create_account(request):
     # serializer.is_valid(raise_exception=True)
     if not serializer.is_valid():
         # serializer.errors
-        return Response(serializer.errors, status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     account = serializer.save()
     refresh = RefreshToken.for_user(account)

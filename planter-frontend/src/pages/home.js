@@ -1,9 +1,13 @@
 import React, { useEffect, Component } from 'react';
 import { Link, NavLink } from 'fusion-plugin-react-router';
+import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
+
 import paths from '../constants/paths';
 import PomodoroClock from '../components/PomodoroClock/PomodoroClock';
 
-const Home = (props) => {
+const Home = (props, { isAuthenticated, login, register }) => {
   console.log(props);
 
   try {
@@ -23,4 +27,16 @@ const Home = (props) => {
     </>
   );
 };
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    isAuthenticated: state.authentication.isAuthenticated,
+  };
+};
+
+const hoc = compose(
+  connect(mapStateToProps),
+  withRPCRedux('login'),
+  withRPCRedux('register')
+);
+
+export default hoc(Home);

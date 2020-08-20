@@ -50,13 +50,16 @@ def reset_timers(request):
 def increment_focus_time(request):
     try:
         timer_id = request.data['id']
+        current_ft = request.data['current_focus_time']
     except KeyError: 
         return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
     
     try:
          timer = Timer.objects.get(pk=timer_id)
+        #  TODO: why is it returning integrityError: NOT NULL constraint failed for below 
+        #  timer.current_focus_time = current_ft
          timer.focus_time = (F('focus_time') + 60)
-         timer.current_focus_time = (F('current_focus_time') + 60)
+        #  timer.current_focus_time = (F('current_focus_time') + 60)
          timer.save()
          timer.refresh_from_db()
     except Timer.DoesNotExist: 

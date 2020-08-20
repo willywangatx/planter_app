@@ -30,11 +30,11 @@ const AdjustTime = ({
     currentCycle === 'Focus'
       ? incrementFocusTime({
           id: timerId,
-          current_focus_time: currentFocusTime,
+          // current_focus_time: currentFocusTime + 60,
         })
       : incrementBreakTime({
           id: timerId,
-          current_break_time: currentBreakTime,
+          // current_break_time: currentBreakTime,
         });
   };
 
@@ -45,12 +45,12 @@ const AdjustTime = ({
       ? decrementFocusTime({
           id: timerId,
           min_focus_time: 1,
-          current_focus_time: currentFocusTime,
+          // current_focus_time: currentFocusTime,
         })
       : decrementBreakTime({
           id: timerId,
           min_break_time: 1,
-          current_break_time: currentBreakTime,
+          // current_break_time: currentBreakTime,
         });
   };
 

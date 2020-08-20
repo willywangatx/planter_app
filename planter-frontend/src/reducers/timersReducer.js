@@ -87,7 +87,6 @@ export default reduceReducers(
         loading: false,
         ...payload.timers,
         focus_time: payload.timers.focus_time,
-        current_focus_time: payload.timers.current_focus_time,
       };
     },
     failure: (state, { payload }) => {
