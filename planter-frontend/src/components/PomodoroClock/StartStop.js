@@ -8,9 +8,7 @@ const StartStop = ({
   // RPC handlers
   startTimers,
   stopTimers,
-  updateCurrentFocusTime,
-  // startStopToggle,
-  // global state as props
+  // global state props
   isStarted,
   currentFocusTime,
   currentBreakTime,
@@ -34,19 +32,8 @@ const StartStop = ({
     if (!isStarted) {
       startTimers({ id: timerId });
     }
-    // startStopToggle({ id: timerId });
   };
 
-  // TODO: be more explicit in changing the currentFocusTime and currentBreakTime?
-  // maybe keep using timerDisplay - and every 20 seconds/when the timer hits 0, sync up the current times with the backend
-  // so send something like updateCurrentFocusTime({id: timerId, current_focus_time: timerDisplay})
-  // start or stop timer when button clicked
-
-  // const timerDisplay = () => {
-  //   currentCycle === 'Focus' ? currentFocusTime : currentBreakTime;
-  // };
-
-  // when the Start/Stop btn is clicked, start countdown on current focus/break time
   // TODO: ask why there is a return clear interval needed in the if (isStarted) block??
   useEffect(() => {
     let interval;
@@ -75,7 +62,6 @@ const StartStop = ({
 };
 
 const mapStateToProps = (state) => {
-  //accessing store and putting it into local props for component
   const isStarted = state.timers.is_started;
   const currentFocusTime = state.timers.current_focus_time;
   const currentBreakTime = state.timers.current_break_time;
@@ -100,42 +86,3 @@ const hoc = compose(
 );
 
 export default hoc(StartStop);
-
-// useEffect(() => {
-//   let initiateTimer;
-//   if (currentCycle === 'Focus') {
-//     if (isStarted) {
-//       const initiateTimer = setInterval(() => {
-//         updateCurrentFocusTime({ id: timerId });
-//       }, 1000);
-//     }
-//     if (!isStarted) {}
-//   }
-// }, [isStarted]);
-
-// useEffect(() => {
-//   if (!isStarted) {
-//     clearInterval(timerReadout);
-//   }
-//   if (isStarted) {
-//     updatedTimerReadout = setInterval(() => {
-//       // fire call to update current focus or break time
-//       if (currentCycle === 'Focus') {
-//         //need to eventually separate the backend call to reduce the load on the server
-//         updateCurrentFocusTime({ id: timerId });
-//       }
-//     }, 1000);
-//     setTimerReadout(updatedTimerReadout);
-//   }
-// }, [isStarted]);
-
-// const [click, setClick] = useState(false);
-
-// const btnClick = () => {
-//   setClick(!click);
-// };
-
-// const combinedClickEvents = () => {
-//   startStopTimer();
-//   btnClick();
-// };

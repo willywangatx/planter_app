@@ -32,9 +32,7 @@ export default reduceReducers(
         focus_time: payload.timers[0].focus_time,
         break_time: payload.timers[0].break_time,
 
-        // focusTime: payload.timers[0].focus_time * 60,
-        // breakTime: payload.timers[0].break_time * 60,
-        // add if statement for error handling for unauthroized - redirect to login
+        // TODO: add if statement for error handling for unauthroized - redirect to login
       };
     },
     failure: (state, { payload }) => ({

@@ -14,6 +14,8 @@ const AdjustTime = ({
   decrementFocusTime,
   incrementBreakTime,
   decrementBreakTime,
+  currentFocusTime,
+  currentBreakTime,
 }) => {
   // AdjustTimeLabel
   const adjustTimeLabel = () => {
@@ -26,16 +28,30 @@ const AdjustTime = ({
   const increaseTimer = (event) => {
     event.preventDefault();
     currentCycle === 'Focus'
-      ? incrementFocusTime({ id: timerId })
-      : incrementBreakTime({ id: timerId });
+      ? incrementFocusTime({
+          id: timerId,
+          current_focus_time: currentFocusTime,
+        })
+      : incrementBreakTime({
+          id: timerId,
+          current_break_time: currentBreakTime,
+        });
   };
 
   // DECREMENT TIME
   const decreaseTimer = (event) => {
     event.preventDefault();
     currentCycle === 'Focus'
-      ? decrementFocusTime({ id: timerId, min_focus_time: 1 })
-      : decrementBreakTime({ id: timerId, min_break_time: 1 });
+      ? decrementFocusTime({
+          id: timerId,
+          min_focus_time: 1,
+          current_focus_time: currentFocusTime,
+        })
+      : decrementBreakTime({
+          id: timerId,
+          min_break_time: 1,
+          current_break_time: currentBreakTime,
+        });
   };
 
   return (
@@ -54,28 +70,29 @@ const AdjustTime = ({
 };
 
 const mapStateToProps = (state) => {
-  //accessing store and putting it into local props for component
   const timerId = state.timers.id;
   const focusTime = state.timers.focus_time;
   const breakTime = state.timers.break_time;
   const currentCycle = state.timers.current_cycle;
+  const currentFocusTime = state.current_focus_time;
+  const currentBreakTime = state.current_break_time;
 
   return {
     timerId,
     focusTime,
     breakTime,
     currentCycle,
+    currentBreakTime,
+    currentFocusTime,
   };
 };
 
 const hoc = compose(
-  // gets data from browser to FE server - network request from browser get sent through all middleware
+  connect(mapStateToProps),
   withRPCRedux('incrementFocusTime'),
   withRPCRedux('decrementFocusTime'),
   withRPCRedux('incrementBreakTime'),
-  withRPCRedux('decrementBreakTime'),
-  // connecting reducers to components
-  connect(mapStateToProps)
+  withRPCRedux('decrementBreakTime')
 );
 
 export default hoc(AdjustTime);
