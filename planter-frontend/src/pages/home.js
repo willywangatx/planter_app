@@ -1,18 +1,23 @@
-import React, { useEffect, Component } from 'react';
+import React, { useEffect } from 'react';
 import { Link, NavLink } from 'fusion-plugin-react-router';
-import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
-import { connect } from 'react-redux';
-import { compose } from 'redux';
 
 import paths from '../constants/paths';
 import PomodoroClock from '../components/PomodoroClock/PomodoroClock';
 import Authentication from '../components/Authentication/Authentication';
 
-const Home = (props, { isAuthenticated, login, register }) => {
-  console.log(props);
+// import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
+// import { connect } from 'react-redux';
+// import { compose } from 'redux';
+
+const Home = ({ isAuthenticated }) => {
+  // useEffect(() => {
+  //   if (!isAuthenticated) {
+  //     props.history.push('/login');
+  //   }
+  // });
 
   try {
-    window.herpderp = props.history;
+    window.herpderp = history;
   } catch {}
 
   return (
@@ -29,16 +34,19 @@ const Home = (props, { isAuthenticated, login, register }) => {
     </>
   );
 };
-const mapStateToProps = (state) => {
-  return {
-    isAuthenticated: state.authentication.isAuthenticated,
-  };
-};
 
-const hoc = compose(
-  connect(mapStateToProps),
-  withRPCRedux('login'),
-  withRPCRedux('register')
-);
+export default Home;
 
-export default hoc(Home);
+// const mapStateToProps = (state) => {
+//   return {
+//     isAuthenticated: state.authentication.isAuthenticated,
+//   };
+// };
+
+// const hoc = compose(
+//   connect(mapStateToProps),
+//   withRPCRedux('login'),
+//   withRPCRedux('register')
+// );
+
+// export default hoc(Home);

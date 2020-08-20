@@ -20,10 +20,9 @@ const Root = (
       <link rel="stylesheet" href={assetUrl('./constants/styles.css')}></link>
     </Helmet>
     <Switch>
-      {/* wrap each componnetnt in a login hoc */}
       <Route exact path={paths.home} component={Home} />
-      {/* <Route exact path={paths.login} component={Login} />
-      <Route exact path={paths.register} component={Register} /> */}
+      <Route exact path={paths.login} component={Login} />
+      <Route exact path={paths.register} component={Register} />
       <Route component={PageNotFound} />
     </Switch>
   </>

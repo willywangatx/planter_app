@@ -8,16 +8,25 @@ import Register from './Register';
 import PomodoroClock from '../PomodoroClock/PomodoroClock';
 
 const Authentication = ({ isAuthenticated }) => {
+  // TODO: ask why a useEffect render a blank page instead of component - watching for isAuth state
+  // change seems like a good idea
+
   // useEffect(() => {
   //   if (isAuthenticated) {
-  //     props.history.push('/');
+  //     return <PomodoroClock />;
   //   }
   // }, [isAuthenticated]);
 
   if (isAuthenticated) {
     return <PomodoroClock />;
   }
-  return <Login />;
+  return (
+    <>
+      {/* put the nav links for login and register here */}
+      <Login />
+      <Register />
+    </>
+  );
 };
 
 const mapStateToProps = (state) => {
