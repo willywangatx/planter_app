@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import { compose } from 'redux';
 
 const StartStop = ({
@@ -17,6 +17,7 @@ const StartStop = ({
   currentCycle,
   timerId,
 }) => {
+  const dispatch = useDispatch();
   // stops the timer when the time runs to 0
   useEffect(() => {
     if (currentFocusTime === 0 || currentBreakTime === 0) {
@@ -40,18 +41,26 @@ const StartStop = ({
   // maybe keep using timerDisplay - and every 20 seconds/when the timer hits 0, sync up the current times with the backend
   // so send something like updateCurrentFocusTime({id: timerId, current_focus_time: timerDisplay})
   // start or stop timer when button clicked
+
+  const timerDisplay = () => {
+    currentCycle === 'Focus' ? currentFocusTime : currentBreakTime;
+  };
+
   useEffect(() => {
     let interval;
-    let timerDisplay = () => {
-      currentCycle === 'Focus' ? currentFocusTime : currentBreakTime;
-    };
-    if (isStarted) {
-      clearInterval(interval);
-    }
     if (!isStarted) {
+      clearInterval(interval);
+      // dispatch({ type: 'CLEAR_INTERVAL' });
+      // dispatch({ type: 'START_TIMER', payload: { timers: { id: timerId } } });
+    }
+    if (isStarted) {
       interval = setInterval(() => {
-        return timerDisplay - 60;
+        // TODO: nest in checks for logic - try using switch
+        dispatch({ type: 'DECREMENT_CURRENT_TIME' });
+        // return timerDisplay - 1;
       }, 1000);
+      // add peice about updating either focus or break time using RPC call every 20 sec if started
+      // or if the timerDisplay reaches 0
     }
   }, [startStopTimer]);
 
@@ -82,12 +91,11 @@ const mapStateToProps = (state) => {
 };
 
 const hoc = compose(
+  connect(mapStateToProps),
   withRPCRedux('startTimers'),
   withRPCRedux('stopTimers'),
   // withRPCRedux('startStopToggle'),
-  withRPCRedux('updateCurrentFocusTime'),
-
-  connect(mapStateToProps)
+  withRPCRedux('updateCurrentFocusTime')
 );
 
 export default hoc(StartStop);

@@ -274,6 +274,24 @@ export default reduceReducers(
     },
   }),
 
+  (state, action) => {
+    // use switch statement for this
+    if (action.type === 'DECREMENT_CURRENT_TIME') {
+      // do state checking on FE component startStop
+
+      console.log(action);
+      return {
+        ...state,
+        current_focus_time: state.current_focus_time - 1,
+      };
+    }
+    return state;
+    // switch() {
+    //   case state.current_cycle == 'F':
+
+    // }
+  }
+
   // createRPCReducer('startStopToggle', {
   //   start: (state) => {
   //     return {
@@ -299,28 +317,28 @@ export default reduceReducers(
   //   },
   // }),
 
-  createRPCReducer('updateCurrentFocusTime', {
-    start: (state) => {
-      return {
-        ...state,
-        loading: true,
-        error: null,
-        current_focus_time: state.current_focus_time - 60,
-      };
-    },
-    success: (state, { payload }) => {
-      return {
-        ...state,
-        loading: false,
-        current_focus_time: payload.timers.current_focus_time,
-      };
-    },
-    failure: (state, { payload }) => {
-      return {
-        ...state,
-        loading: false,
-        error: payload,
-      };
-    },
-  })
+  // createRPCReducer('updateCurrentFocusTime', {
+  //   start: (state) => {
+  //     return {
+  //       ...state,
+  //       loading: true,
+  //       error: null,
+  //       current_focus_time: state.current_focus_time - 60,
+  //     };
+  //   },
+  //   success: (state, { payload }) => {
+  //     return {
+  //       ...state,
+  //       loading: false,
+  //       current_focus_time: payload.timers.current_focus_time,
+  //     };
+  //   },
+  //   failure: (state, { payload }) => {
+  //     return {
+  //       ...state,
+  //       loading: false,
+  //       error: payload,
+  //     };
+  //   },
+  // })
 );
