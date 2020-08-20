@@ -276,20 +276,20 @@ export default reduceReducers(
 
   (state, action) => {
     // use switch statement for this
-    if (action.type === 'DECREMENT_CURRENT_TIME') {
-      // do state checking on FE component startStop
-
-      console.log(action);
-      return {
-        ...state,
-        current_focus_time: state.current_focus_time - 1,
-      };
+    switch (action.type) {
+      case 'DECREMENT_CURRENT_FOCUS_TIME':
+        return {
+          ...state,
+          current_focus_time: state.current_focus_time - 1,
+        };
+      case 'DECREMENT_CURRENT_BREAK_TIME':
+        return {
+          ...state,
+          current_break_time: state.current_break_time - 1,
+        };
+      default:
+        return state;
     }
-    return state;
-    // switch() {
-    //   case state.current_cycle == 'F':
-
-    // }
   }
 
   // createRPCReducer('startStopToggle', {

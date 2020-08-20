@@ -42,25 +42,24 @@ const StartStop = ({
   // so send something like updateCurrentFocusTime({id: timerId, current_focus_time: timerDisplay})
   // start or stop timer when button clicked
 
-  const timerDisplay = () => {
-    currentCycle === 'Focus' ? currentFocusTime : currentBreakTime;
-  };
+  // const timerDisplay = () => {
+  //   currentCycle === 'Focus' ? currentFocusTime : currentBreakTime;
+  // };
 
   useEffect(() => {
     let interval;
     if (!isStarted) {
-      clearInterval(interval);
-      // dispatch({ type: 'CLEAR_INTERVAL' });
-      // dispatch({ type: 'START_TIMER', payload: { timers: { id: timerId } } });
+      return clearInterval(interval);
     }
     if (isStarted) {
       interval = setInterval(() => {
-        // TODO: nest in checks for logic - try using switch
-        dispatch({ type: 'DECREMENT_CURRENT_TIME' });
-        // return timerDisplay - 1;
+        if (currentCycle === 'Focus') {
+          dispatch({ type: 'DECREMENT_CURRENT_FOCUS_TIME' });
+        }
+        if (currentCycle === 'Break')
+          dispatch({ type: 'DECREMENT_CURRENT_BREAK_TIME' });
       }, 1000);
-      // add peice about updating either focus or break time using RPC call every 20 sec if started
-      // or if the timerDisplay reaches 0
+      return () => clearInterval(interval);
     }
   }, [startStopTimer]);
 
