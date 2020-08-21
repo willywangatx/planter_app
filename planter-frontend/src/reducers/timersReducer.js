@@ -82,11 +82,14 @@ export default reduceReducers(
     },
     success: (state, { payload }) => {
       console.log(payload);
+      const newTimer = { ...payload.timers };
+      delete newTimer.current_focus_time;
+      delete newTimer.current_break_time;
+      delete newTimer.current_cycle;
       return {
         ...state,
         loading: false,
-        ...payload.timers,
-        focus_time: payload.timers.focus_time,
+        ...newTimer,
       };
     },
     failure: (state, { payload }) => {
@@ -149,7 +152,7 @@ export default reduceReducers(
         loading: false,
         ...payload.timers,
         break_time: payload.timers.break_time,
-        current_break_time: payload.current_break_time,
+        current_break_time: payload.timers.current_break_time,
       };
     },
     failure: (state, { payload }) => {

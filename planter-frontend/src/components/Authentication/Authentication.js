@@ -7,7 +7,7 @@ import Login from './Login';
 import Register from './Register';
 import PomodoroClock from '../PomodoroClock/PomodoroClock';
 
-const Authentication = ({ isAuthenticated }) => {
+const Authentication = ({ isAuthenticated, getProfile, getTimers }) => {
   // TODO: ask why a useEffect render a blank page instead of component - watching for isAuth state
   // change seems like a good idea
 
@@ -16,15 +16,21 @@ const Authentication = ({ isAuthenticated }) => {
   //     return <PomodoroClock />;
   //   }
   // }, [isAuthenticated]);
+  useEffect(() => {
+    getProfile();
+    getTimers();
+  }, []);
 
   if (isAuthenticated) {
     return <PomodoroClock />;
   }
+
   return (
     <>
       {/* put the nav links for login and register here */}
+      {/* <authNavBar /> */}
       <Login />
-      <Register />
+      {/* <Register /> */}
     </>
   );
 };
@@ -38,7 +44,9 @@ const mapStateToProps = (state) => {
 const hoc = compose(
   connect(mapStateToProps),
   withRPCRedux('login'),
-  withRPCRedux('register')
+  withRPCRedux('register'),
+  withRPCRedux('getProfile'),
+  withRPCRedux('getTimers')
 );
 
 export default hoc(Authentication);

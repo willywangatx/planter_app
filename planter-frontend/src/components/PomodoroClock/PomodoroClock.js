@@ -21,10 +21,10 @@ const PomodoroClock = ({
   profileError,
   profileData,
 }) => {
-  useEffect(() => {
-    getProfile();
-    getTimers();
-  }, []);
+  // useEffect(() => {
+  //   getProfile();
+  //   getTimers();
+  // }, []);
 
   if (profileLoading) {
     return <div>loading</div>;
