@@ -6,6 +6,7 @@ import { compose } from 'redux';
 import Login from './Login';
 import Register from './Register';
 import PomodoroClock from '../PomodoroClock/PomodoroClock';
+import RenderedAuth from './RenderedAuth';
 
 const Authentication = ({ isAuthenticated, getProfile, getTimers }) => {
   // TODO: ask why a useEffect render a blank page instead of component - watching for isAuth state
@@ -19,6 +20,7 @@ const Authentication = ({ isAuthenticated, getProfile, getTimers }) => {
   useEffect(() => {
     getProfile();
     getTimers();
+    // TODO: How to preserve login between page refreshes
   }, []);
 
   if (isAuthenticated) {
@@ -29,7 +31,7 @@ const Authentication = ({ isAuthenticated, getProfile, getTimers }) => {
     <>
       {/* put the nav links for login and register here */}
       {/* <authNavBar /> */}
-      <Login />
+      <RenderedAuth />
       {/* <Register /> */}
     </>
   );

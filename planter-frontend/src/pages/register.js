@@ -4,6 +4,8 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 
+import { useHistory } from 'fusion-plugin-react-router';
+
 import { NavLink, Link } from 'fusion-plugin-react-router';
 import paths from '../constants/paths';
 
@@ -12,6 +14,8 @@ const Register = ({ register }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   // const [confirmPassword, setConfirmPassword] = useState('');
+
+  const history = useHistory();
 
   const handleEmailInput = ({ target }) => {
     setEmail(target.value);
@@ -32,6 +36,11 @@ const Register = ({ register }) => {
   const handleRegistration = (event) => {
     event.preventDefault();
     register({ email, username, password });
+  };
+
+  const loginPage = () => {
+    // return <Register />;
+    history.push(`/login`);
   };
 
   return (
@@ -97,8 +106,15 @@ const Register = ({ register }) => {
             />
           </div> */}
           <div className="submit-btn">
-            <input type="submit" value="Register" />
+            <input
+              type="submit"
+              className="raised-btn auth-btn"
+              value="Register"
+            />
           </div>
+          <p className="" onClick={loginPage}>
+            Already have an acconut? Go to login page.
+          </p>
         </form>
       </div>
     </React.Fragment>

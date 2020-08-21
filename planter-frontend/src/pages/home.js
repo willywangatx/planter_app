@@ -9,16 +9,16 @@ import Authentication from '../components/Authentication/Authentication';
 // import { connect } from 'react-redux';
 // import { compose } from 'redux';
 
-const Home = ({ isAuthenticated }) => {
+const Home = () => {
   // useEffect(() => {
   //   if (!isAuthenticated) {
   //     props.history.push('/login');
   //   }
   // });
 
-  try {
-    window.herpderp = history;
-  } catch {}
+  // try {
+  //   window.herpderp = history;
+  // } catch {}
 
   return (
     <>

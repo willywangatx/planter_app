@@ -83,6 +83,17 @@ input:focus {
   color: #7f8084;
 }
 
+.auth-btn {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3vw;
+  color: #7f8084;
+  padding: 0 3vw;
+  margin: 1vw auto;
+  border-radius: 2.5vw;
+  border: none;
+  outline: none;
+}
+
 /* NEUMORPHISM STYLING */
 
 .raised-panel {

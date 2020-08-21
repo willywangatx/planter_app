@@ -23,7 +23,7 @@ export default reduceReducers(
         loading: false,
         isAuthenticated: true,
         loginAttempted: true,
-        // TODO: how to check if the user is authenticated?
+        // TODO: how to preserve login between page refreshes?
       };
     },
     failure: (state, { payload }) => ({
