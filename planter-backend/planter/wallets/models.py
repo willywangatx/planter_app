@@ -17,8 +17,9 @@ class Wallet(models.Model):
     # should i give user some coins to start out? 
     energy = models.FloatField(default=10)
     coins = models.IntegerField(default=10)
-    # reference to timer so walet knows when to increment coins 
-    # timer = models.ForeignKey(Timer, on_delete=models.CASCADE)
 
     def __str__(self):
         return "%s's Wallet" % self.profile.account.username
+
+
+
