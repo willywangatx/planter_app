@@ -314,4 +314,24 @@ export default {
       });
     return result;
   },
+
+  updateCompletedFocusMinutes: async (args, ctx) => {
+    const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    const result = await axios({
+      method: 'POST',
+      headers,
+      url: 'http://localhost:8000/api/updateCompletedFocusMinutes',
+      data: args,
+    })
+      .then((res) => {
+        return res.data;
+      })
+      .catch((err) => {
+        const responseError = new ResponseError(
+          `Could not update completed focus minutes, error: ${err.message}`
+        );
+        throw responseError;
+      });
+    return result;
+  },
 };

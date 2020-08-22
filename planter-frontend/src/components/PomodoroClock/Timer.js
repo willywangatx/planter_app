@@ -24,7 +24,7 @@ const Timer = ({ currentFocusTime, currentBreakTime, currentCycle }) => {
 
   return (
     <React.Fragment>
-      <p className="inset timer-clock">{formattedTimeLeft}</p>
+      <p className="disable-select inset timer-clock">{formattedTimeLeft}</p>
     </React.Fragment>
   );
 };

@@ -53,12 +53,16 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
+      const newTimer = { ...payload.timers };
+      delete newTimer.current_cycle;
+      delete newTimer.current_focus_time;
+      delete newTimer.current_break_time;
+      delete newTimer.is_started;
       return {
         ...state,
         loading: false,
         error: null,
-        current_focus_time: payload.timers.current_focus_time,
-        current_break_time: payload.timers.current_break_time,
+        ...newTimer,
       };
     },
     failure: (state, { payload }) => {
@@ -84,8 +88,8 @@ export default reduceReducers(
       console.log(payload);
       const newTimer = { ...payload.timers };
       delete newTimer.current_focus_time;
-      delete newTimer.current_break_time;
-      delete newTimer.current_cycle;
+      // delete newTimer.current_break_time;
+      // delete newTimer.current_cycle;
       return {
         ...state,
         loading: false,
@@ -119,12 +123,12 @@ export default reduceReducers(
     },
     success: (state, { payload }) => {
       console.log(payload);
+      const newTimer = { ...payload.timers };
+      delete newTimer.current_focus_time;
       return {
         ...state,
         loading: false,
-        ...payload.timers,
-        focus_time: payload.timers.focus_time,
-        current_focus_time: payload.timers.current_focus_time,
+        ...newTimer,
       };
     },
     failure: (state, { payload }) => {
@@ -147,12 +151,12 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
+      const newTimer = { ...payload.timers };
+      delete newTimer.current_focus_time;
       return {
         ...state,
         loading: false,
-        ...payload.timers,
-        break_time: payload.timers.break_time,
-        current_break_time: payload.timers.current_break_time,
+        ...newTimer,
       };
     },
     failure: (state, { payload }) => {
@@ -181,12 +185,12 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
+      const newTimer = { ...payload.timers };
+      delete newTimer.current_focus_time;
       return {
         ...state,
         loading: false,
-        ...payload.timers,
-        break_time: payload.timers.break_time,
-        current_break_time: payload.timers.current_break_time,
+        ...newTimer,
       };
     },
     failure: (state, { payload }) => {
@@ -208,11 +212,15 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
+      const newTimer = { ...payload.timers };
+      delete newTimer.current_focus_time;
+      delete newTimer.current_break_time;
+      delete newTimer.is_started;
       return {
         ...state,
         loading: false,
         error: null,
-        current_cycle: payload.timers.current_cycle,
+        ...newTimer,
       };
     },
     failure: (state, { payload }) => {
@@ -259,10 +267,15 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
+      const newTimer = { ...payload.timers };
+      delete newTimer.current_cycle;
+      delete newTimer.current_focus_time;
+      delete newTimer.current_break_time;
+      delete newTimer.is_started;
       return {
         ...state,
         loading: true,
-        is_started: payload.timers.is_started,
+        ...newTimer,
       };
     },
     error: (state, { payload }) => {
@@ -274,8 +287,8 @@ export default reduceReducers(
     },
   }),
 
+  // FE only state change for current time
   (state, action) => {
-    // use switch statement for this
     switch (action.type) {
       case 'DECREMENT_CURRENT_FOCUS_TIME':
         return {
@@ -290,55 +303,81 @@ export default reduceReducers(
       default:
         return state;
     }
-  }
+  },
 
-  // createRPCReducer('startStopToggle', {
-  //   start: (state) => {
-  //     return {
-  //       ...state,
-  //       loading: true,
-  //       error: null,
-  //       is_started: !state.is_started,
-  //     };
-  //   },
-  //   success: (state, { payload }) => {
-  //     return {
-  //       ...state,
-  //       loading: false,
-  //       is_started: payload.timers.is_started,
-  //     };
-  //   },
-  //   failure: (state, { payload }) => {
-  //     return {
-  //       ...state,
-  //       loading: false,
-  //       error: payload,
-  //     };
-  //   },
-  // }),
-
-  // createRPCReducer('updateCurrentFocusTime', {
-  //   start: (state) => {
-  //     return {
-  //       ...state,
-  //       loading: true,
-  //       error: null,
-  //       current_focus_time: state.current_focus_time - 60,
-  //     };
-  //   },
-  //   success: (state, { payload }) => {
-  //     return {
-  //       ...state,
-  //       loading: false,
-  //       current_focus_time: payload.timers.current_focus_time,
-  //     };
-  //   },
-  //   failure: (state, { payload }) => {
-  //     return {
-  //       ...state,
-  //       loading: false,
-  //       error: payload,
-  //     };
-  //   },
-  // })
+  createRPCReducer('updateCompletedFocusMinutes', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        completed_focus_minutes:
+          state.focus_time / 60 + state.completed_focus_minutes,
+      };
+    },
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        completed_focus_minutes: payload.timers.completed_focus_minutes,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
+  })
 );
+
+// createRPCReducer('startStopToggle', {
+//   start: (state) => {
+//     return {
+//       ...state,
+//       loading: true,
+//       error: null,
+//       is_started: !state.is_started,
+//     };
+//   },
+//   success: (state, { payload }) => {
+//     return {
+//       ...state,
+//       loading: false,
+//       is_started: payload.timers.is_started,
+//     };
+//   },
+//   failure: (state, { payload }) => {
+//     return {
+//       ...state,
+//       loading: false,
+//       error: payload,
+//     };
+//   },
+// }),
+
+// createRPCReducer('updateCurrentFocusTime', {
+//   start: (state) => {
+//     return {
+//       ...state,
+//       loading: true,
+//       error: null,
+//       current_focus_time: state.current_focus_time - 60,
+//     };
+//   },
+//   success: (state, { payload }) => {
+//     return {
+//       ...state,
+//       loading: false,
+//       current_focus_time: payload.timers.current_focus_time,
+//     };
+//   },
+//   failure: (state, { payload }) => {
+//     return {
+//       ...state,
+//       loading: false,
+//       error: payload,
+//     };
+//   },
+// })

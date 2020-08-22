@@ -4,14 +4,11 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 
-// import { NavLink, Link } from 'fusion-plugin-react-router';
-// import paths from '../constants/paths';
-
-const Register = ({ register }) => {
+const Register = ({ register, renderOnClick }) => {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  // const [confirmPassword, setConfirmPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleEmailInput = ({ target }) => {
     setEmail(target.value);
@@ -25,9 +22,12 @@ const Register = ({ register }) => {
     setPassword(target.value);
   };
 
-  // const handleConfirmPasswordInput = ({ target }) => {
-  //   setConfirmPassword(target.value);
-  // };
+  const handleConfirmPasswordInput = ({ target, password }) => {
+    setConfirmPassword(target.value);
+    if (confirmPassword != password) {
+      preventDefault();
+    }
+  };
 
   const handleRegistration = (event) => {
     event.preventDefault();
@@ -36,13 +36,6 @@ const Register = ({ register }) => {
 
   return (
     <React.Fragment>
-      {/* <nav>
-        <Link to={paths.home}>home.</Link>
-        <Link to={paths.login}>login.</Link>
-        <NavLink activeClassName="inset" to={paths.register}>
-          register.
-        </NavLink>
-      </nav> */}
       <div className="raised-panel auth-panel">
         <form
           onSubmit={handleRegistration}
@@ -84,21 +77,28 @@ const Register = ({ register }) => {
               required
             />
           </div>
-          {/* <div className="input-form">
+          <div className="input-form">
             <label>Confirm Password:</label>
             <input
               className="input-box inset"
               value={confirmPassword}
               type="password"
-              name="confirm_password"
-              placeholder="Confirm Password"
+              name="password"
+              placeholder="Password"
               onChange={handleConfirmPasswordInput}
               required
             />
-          </div> */}
-          <div className="submit-btn">
-            <input type="submit" value="Register" />
           </div>
+          <div className="submit-btn">
+            <input
+              className="raised-btn auth-btn"
+              type="submit"
+              value="Register"
+            />
+          </div>
+          <p className="" onClick={renderOnClick}>
+            Already have an acconut? Go to login page.
+          </p>
         </form>
       </div>
     </React.Fragment>

@@ -30,11 +30,11 @@ const AdjustTime = ({
     currentCycle === 'Focus'
       ? incrementFocusTime({
           id: timerId,
-          // current_focus_time: currentFocusTime + 60,
+          current_focus_time: currentFocusTime + 60,
         })
       : incrementBreakTime({
           id: timerId,
-          // current_break_time: currentBreakTime,
+          current_break_time: currentBreakTime + 60,
         });
   };
 
@@ -44,24 +44,24 @@ const AdjustTime = ({
     currentCycle === 'Focus'
       ? decrementFocusTime({
           id: timerId,
-          min_focus_time: 1,
-          // current_focus_time: currentFocusTime,
+          min_focus_time: 60,
+          current_focus_time: currentFocusTime,
         })
       : decrementBreakTime({
           id: timerId,
-          min_break_time: 1,
-          // current_break_time: currentBreakTime,
+          min_break_time: 60,
+          current_break_time: currentBreakTime,
         });
   };
 
   return (
     <React.Fragment>
-      <button className="raised-btn" onClick={increaseTimer}>
+      <button className="disable-select raised-btn" onClick={increaseTimer}>
         {' '}
         +{' '}
       </button>
-      <p className="inset panel-label">{adjustTimeLabel()}</p>
-      <button className="raised-btn" onClick={decreaseTimer}>
+      <p className="disable-select inset panel-label">{adjustTimeLabel()}</p>
+      <button className="disable-select raised-btn" onClick={decreaseTimer}>
         {' '}
         -{' '}
       </button>
@@ -74,8 +74,8 @@ const mapStateToProps = (state) => {
   const focusTime = state.timers.focus_time;
   const breakTime = state.timers.break_time;
   const currentCycle = state.timers.current_cycle;
-  const currentFocusTime = state.current_focus_time;
-  const currentBreakTime = state.current_break_time;
+  const currentFocusTime = state.timers.current_focus_time;
+  const currentBreakTime = state.timers.current_break_time;
 
   return {
     timerId,

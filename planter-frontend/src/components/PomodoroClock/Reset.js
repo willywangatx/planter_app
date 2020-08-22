@@ -13,7 +13,10 @@ const Reset = ({ resetTimers, stopTimers, timerId }) => {
 
   return (
     <React.Fragment>
-      <button className="raised-btn panel-btn reset-btn" onClick={reset}>
+      <button
+        className="disable-select raised-btn panel-btn reset-btn"
+        onClick={reset}
+      >
         Reset
       </button>
     </React.Fragment>

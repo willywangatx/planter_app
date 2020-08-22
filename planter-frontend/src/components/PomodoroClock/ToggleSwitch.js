@@ -45,8 +45,8 @@ const ToggleSwitch = ({
       <label
         className={
           currentCycle === 'Focus'
-            ? 'focus-label toggle-label toggle-label-inset"'
-            : 'break-label toggle-label toggle-label-inset"'
+            ? 'disable-select focus-label toggle-label toggle-label-inset"'
+            : 'disable-select break-label toggle-label toggle-label-inset"'
         }
         htmlFor="toggle-switch"
       >

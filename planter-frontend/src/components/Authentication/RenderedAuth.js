@@ -5,7 +5,6 @@ import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 
 import Login from './Login';
 import Register from './Register';
-import register from '../../pages/register';
 
 const renderedAuth = () => {
   const [render, setRender] = useState('Login');
@@ -32,9 +31,7 @@ const renderedAuth = () => {
 
 const rpcs = [withRPCRedux('login'), withRPCRedux('register')];
 
-const mapStateToProps = (state) => ({
-  // auth: state.auth,
-});
+const mapStateToProps = (state) => ({});
 
 const hoc = compose(
   ...rpcs,

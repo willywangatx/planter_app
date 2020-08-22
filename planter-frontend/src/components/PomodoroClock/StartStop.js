@@ -14,11 +14,21 @@ const StartStop = ({
   currentBreakTime,
   currentCycle,
   timerId,
+  updateCompletedFocusMinutes,
 }) => {
   const dispatch = useDispatch();
   // stops the timer when the time runs to 0
+
   useEffect(() => {
-    if (currentFocusTime === 0 || currentBreakTime === 0) {
+    // if (currentFocusTime === 0 || currentBreakTime === 0) {
+    //   stopTimers({ id: timerId });
+    // }
+    if (currentFocusTime === 0) {
+      stopTimers({ id: timerId });
+      updateCompletedFocusMinutes({ id: timerId });
+    }
+
+    if (currentBreakTime === 0) {
       stopTimers({ id: timerId });
     }
   }, [currentFocusTime, currentBreakTime]);
@@ -54,7 +64,10 @@ const StartStop = ({
 
   return (
     <React.Fragment>
-      <button className="raised-btn start-stop-btn" onClick={startStopTimer}>
+      <button
+        className="disable-select raised-btn start-stop-btn"
+        onClick={startStopTimer}
+      >
         {isStarted ? 'Stop' : 'Start'}
       </button>
     </React.Fragment>
@@ -81,8 +94,7 @@ const hoc = compose(
   connect(mapStateToProps),
   withRPCRedux('startTimers'),
   withRPCRedux('stopTimers'),
-  // withRPCRedux('startStopToggle'),
-  withRPCRedux('updateCurrentFocusTime')
+  withRPCRedux('updateCompletedFocusMinutes')
 );
 
 export default hoc(StartStop);

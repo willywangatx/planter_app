@@ -48,18 +48,22 @@ def reset_timers(request):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def increment_focus_time(request):
-    try:
-        timer_id = request.data['id']
-        # current_ft = request.data['current_focus_time']
-    except KeyError: 
-        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
-    
+    # try:
+    #     timer_id = request.data['id']
+    #     cft = request.data['current_focus_time']
+    # except KeyError: 
+    #     return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
+
+    # use get instead of requet.data so django doesn't try to save null value 
+    timer_id = request.data.get('id')
+    cft = request.data.get('current_focus_time')
+    if not timer_id or not cft: 
+        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST) 
     try:
         timer = Timer.objects.get(pk=timer_id)
-        #  TODO: why is it returning integrityError: NOT NULL constraint failed for below 
-        #  timer.current_focus_time = current_ft
+        timer.current_focus_time = cft
         timer.focus_time = (F('focus_time') + 60)
-        timer.current_focus_time = (F('current_focus_time') + 60)
+        # timer.current_focus_time = (F('current_focus_time') + 60)
         timer.save()
         timer.refresh_from_db()
     except Timer.DoesNotExist: 
@@ -73,19 +77,25 @@ def increment_focus_time(request):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def decrement_focus_time(request):
-    try: 
-        timer_id = request.data['id']
-        min_focus_time = request.data['min_focus_time']
-    except KeyError: 
+
+    timer_id = request.data.get('id')
+    cft = request.data.get('current_focus_time')
+    min_focus_time = request.data.get('min_focus_time')
+    if not timer_id or not cft or not min_focus_time:
         return Response({'details': {'required fields': ['id', 'min_focus_time']}}, status=status.HTTP_400_BAD_REQUEST)
+    # try: 
+    #     timer_id = request.data['id']
+    #     min_focus_time = request.data['min_focus_time']
+    # except KeyError: 
+    #     return Response({'details': {'required fields': ['id', 'min_focus_time']}}, status=status.HTTP_400_BAD_REQUEST)
     
     try: 
         timer = Timer.objects.get(pk=timer_id)
-        cft = timer.current_focus_time
         if timer.focus_time > min_focus_time:
             timer.focus_time = (F('focus_time') - 60)
             if cft >= min_focus_time:
-                timer.current_focus_time = (F('current_focus_time') - 60)
+                timer.current_focus_timer = cft - 60
+                # timer.current_focus_time = (F('current_focus_time') == 60)
             else:
                 timer.current_focus_time = (F('current_focus_time') == 0)
 
@@ -102,16 +112,18 @@ def decrement_focus_time(request):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def increment_break_time(request):
-    try: 
-        timer_id = request.data['id']
-    except KeyError: 
-        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
-    
+
+    timer_id = request.data.get('id')
+    cbt = request.data.get('current_break_time')
+    if not timer_id or not cbt: 
+        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST) 
 
     try: 
         timer = Timer.objects.get(pk=timer_id)
         timer.break_time = (F('break_time') + 60)
-        timer.current_break_time = (F('break_time') + 60)
+        timer.current_break_time = cbt
+        # timer.current_break_time = (F('break_time') + 60)
+        
         timer.save()
         timer.refresh_from_db()
     except Timer.DoesNotExist:
@@ -126,18 +138,19 @@ def increment_break_time(request):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def decrement_break_time(request):
-    try: 
-        min_break_time = request.data['min_break_time']
-        timer_id = request.data['id']
-    except KeyError:
+
+    timer_id = request.data.get('id')
+    cbt = request.data.get('current_break_time')
+    min_break_time = request.data.get('min_break_time')
+    if not timer_id or not cbt or not min_break_time:
         return Response({'details': {'required fields': ['id', 'min_focus_time']}}, status=status.HTTP_400_BAD_REQUEST)
 
     try:
         timer = Timer.objects.get(pk=timer_id)
         if timer.break_time > min_break_time:
             timer.break_time = (F('break_time') - 60)
-            if timer.current_break_time >= min_break_time:
-                timer.current_break_time = (F('current_break_time') - 60)
+            if timer.cbt >= min_break_time:
+                timer.current_break_time = cbt - 60
             else: 
                 timer.current_break_time = (F('current_break_time') == 0)
             timer.save()
@@ -171,6 +184,7 @@ def set_cycle(request):
         #     # timer.current_cycle = (F('current_cycle') == 'Focus')
         #     timer.current_cycle = 'Focus'
         timer.save()
+        timer.refresh_from_db()
         # timer.refresh_from_db()
     except Timer.DoesNotExist:
         return Http404()
@@ -266,4 +280,28 @@ def update_current_focus_time(request):
 
     serializer = TimerSerializer(timer)
     data = {'timers': serializer.data, 'response': 'Current focus time updated successfully'}
+    return Response(data, status=status.HTTP_200_OK)
+
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_completed_focus_minutes(request): 
+    try:
+        timer_id = request.data['id']
+    except KeyError: 
+            return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
+
+    try: 
+        timer = Timer.objects.get(pk=timer_id)
+        ft = timer.focus_time / 60
+        cfm = timer.completed_focus_minutes
+        timer.completed_focus_minutes = cfm + ft
+        timer.save(update_fields=['completed_focus_minutes'])
+        timer.refresh_from_db()
+    except Timer.DoesNotExist:
+        return Http404()
+    
+    serializer = TimerSerializer(timer)
+    data = {'timers': serializer.data, 'response': 'Completed focus minutes updated successfully'}
     return Response(data, status=status.HTTP_200_OK)

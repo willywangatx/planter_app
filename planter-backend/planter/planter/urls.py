@@ -49,4 +49,5 @@ urlpatterns = [
     path('api/stopTimers/', stop_timers, name='stop_timers'),
     # path('api/startStopToggle/', start_stop_toggle, name='start_stop_toggle'),
     path('api/updateCurrentFocusTime', update_current_focus_time, name='update_current_focus_time'),
+    path('api/updateCompletedFocusMinutes', update_completed_focus_minutes, name='update_completed_focus_minutes'),
 ]

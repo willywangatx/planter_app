@@ -5,6 +5,14 @@
   margin: 0;
 }
 
+/* disable text highlighting  */
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 body {
   text-align: center;
   background: #acdbc9;
