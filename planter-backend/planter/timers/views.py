@@ -263,23 +263,25 @@ def stop_timers(request):
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
-def update_current_focus_time(request): 
-    try: 
-        timer_id = request.data['id']
-    except KeyError: 
-        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
+def update_current_times(request): 
 
+    timer_id = request.data.get('id')
+    cft = request.data.get('current_focus_time')
+    cbt = request.data.get('current_break_time')
+    if not timer_id or not cft or not cbt: 
+        return Response({'details': {'required fields': ['id']}}, status=status.HTTP_400_BAD_REQUEST)
+        
     try: 
         timer = Timer.objects.get(pk=timer_id)
-        if (timer.is_started == True):
-            timer.current_focus_time = (F('current_focus_time') - 60)
+        timer.current_focus_time = cft
+        timer.current_break_time = cbt
         timer.save()
         timer.refresh_from_db()
     except Timer.DoesNotExist:
         return Http404()
 
     serializer = TimerSerializer(timer)
-    data = {'timers': serializer.data, 'response': 'Current focus time updated successfully'}
+    data = {'timers': serializer.data, 'response': 'Current times updated successfully'}
     return Response(data, status=status.HTTP_200_OK)
 
 

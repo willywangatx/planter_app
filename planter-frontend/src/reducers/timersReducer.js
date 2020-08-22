@@ -305,6 +305,33 @@ export default reduceReducers(
     }
   },
 
+  createRPCReducer('updateCurrentTimes', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+      };
+    },
+    success: (state, { payload }) => {
+      const newTimer = { ...payload.timers };
+      delete newTimer.current_focus_time;
+      delete newTimer.current_break_time;
+      return {
+        ...state,
+        loading: false,
+        ...newTimer,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
+  }),
+
   createRPCReducer('updateCompletedFocusMinutes', {
     start: (state) => {
       return {

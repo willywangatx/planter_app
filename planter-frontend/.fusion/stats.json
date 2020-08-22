@@ -2,22 +2,20 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "fbeb7e13cd20ccfb9dca",
+  "hash": "367e9b25432392ee07ca",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "fbeb7e13cd20ccfb9dca",
-      "time": 373,
-      "builtAt": 1598060854168,
+      "hash": "367e9b25432392ee07ca",
+      "time": 92,
+      "builtAt": 1598070813995,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.bea2d9d36447409bc7b6.hot-update.js",
-          "server-main.js.map",
-          "main.bea2d9d36447409bc7b6.hot-update.js.map"
+          "server-main.js.map"
         ]
       },
       "assets": [
@@ -30,48 +28,8 @@
           "emitted": false
         },
         {
-          "name": "bea2d9d36447409bc7b6.hot-update.json",
-          "size": 46,
-          "chunks": [],
-          "chunkNames": [],
-          "info": {
-            "hotModuleReplacement": true,
-            "immutable": true
-          },
-          "emitted": true
-        },
-        {
-          "name": "main.bea2d9d36447409bc7b6.hot-update.js",
-          "size": 10171,
-          "chunks": [
-            "main"
-          ],
-          "chunkNames": [
-            "main"
-          ],
-          "info": {
-            "hotModuleReplacement": true,
-            "immutable": true
-          },
-          "emitted": true
-        },
-        {
-          "name": "main.bea2d9d36447409bc7b6.hot-update.js.map",
-          "size": 11244,
-          "chunks": [
-            "main"
-          ],
-          "chunkNames": [
-            "main"
-          ],
-          "info": {
-            "development": true
-          },
-          "emitted": true
-        },
-        {
           "name": "server-main.js",
-          "size": 172773,
+          "size": 173611,
           "chunks": [
             "main"
           ],
@@ -83,7 +41,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 123746,
+          "size": 124726,
           "chunks": [
             "main"
           ],
@@ -104,9 +62,7 @@
           ],
           "assets": [
             "server-main.js",
-            "main.bea2d9d36447409bc7b6.hot-update.js",
-            "server-main.js.map",
-            "main.bea2d9d36447409bc7b6.hot-update.js.map"
+            "server-main.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +75,7 @@
           ],
           "assets": [
             "server-main.js",
-            "main.bea2d9d36447409bc7b6.hot-update.js",
-            "server-main.js.map",
-            "main.bea2d9d36447409bc7b6.hot-update.js.map"
+            "server-main.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -130,20 +84,18 @@
       "chunks": [
         {
           "id": "main",
-          "rendered": true,
+          "rendered": false,
           "initial": true,
           "entry": true,
-          "size": 73508,
+          "size": 74206,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.bea2d9d36447409bc7b6.hot-update.js",
-            "server-main.js.map",
-            "main.bea2d9d36447409bc7b6.hot-update.js.map"
+            "server-main.js.map"
           ],
-          "hash": "2590852708691ec10974",
+          "hash": "8fc084d51f12ce83f28b",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -1938,7 +1890,7 @@
               "name": "./src/components/PomodoroClock/StartStop.js",
               "index": 44,
               "index2": 38,
-              "size": 2845,
+              "size": 3052,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2010,7 +1962,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCompletedFocusMinutes\n}) => {\n  const dispatch = useDispatch(); // stops the timer when the time runs to 0\n\n  useEffect(() => {\n    // if (currentFocusTime === 0 || currentBreakTime === 0) {\n    //   stopTimers({ id: timerId });\n    // }\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // toggles the timer between start and stop\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 1000);\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 66\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 67\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCompletedFocusMinutes'));\nexport default hoc(StartStop);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCurrentTimes,\n  updateCompletedFocusMinutes\n}) => {\n  const dispatch = useDispatch(); // stops the timer when the time runs to 0\n\n  useEffect(() => {\n    // if (currentFocusTime === 0 || currentBreakTime === 0) {\n    //   stopTimers({ id: timerId });\n    // }\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // toggles the timer between start and stop\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n      updateCurrentTimes({\n        id: timerId,\n        current_focus_time: currentFocusTime,\n        current_break_time: currentBreakTime\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 1000);\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 74\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 75\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCurrentTimes'), withRPCRedux('updateCompletedFocusMinutes'));\nexport default hoc(StartStop);"
             },
             {
               "id": "./src/components/PomodoroClock/Timer.js",
@@ -2727,9 +2679,9 @@
               "name": "./src/reducers/timersReducer.js",
               "index": 62,
               "index2": 58,
-              "size": 7932,
+              "size": 8437,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2789,7 +2741,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  id: null,\n  focus_time: 25 * 60,\n  break_time: 5 * 60,\n  current_focus_time: 25 * 60,\n  current_break_time: 5 * 60,\n  current_cycle: 'Focus',\n  is_started: false,\n  completed_focus_minutes: 0,\n  profile: null\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('getTimers', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    return { ...state,\n      loading: false,\n      ...payload.timers[0],\n      focus_time: payload.timers[0].focus_time,\n      break_time: payload.timers[0].break_time // TODO: add if statement for error handling for unauthroized - redirect to login\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => ({ ...state,\n    loading: false,\n    error: payload\n  })\n}), createRPCReducer('resetTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_focus_time: state.focus_time,\n      current_break_time: state.break_time\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: 60 + state.focus_time,\n      current_focus_time: state.current_focus_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time; // delete newTimer.current_break_time;\n    // delete newTimer.current_cycle;\n\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: state.focus_time <= 60 ? state.focus_time === 60 : state.focus_time - 60,\n      current_focus_time: state.current_focus_time <= 60 ? state.current_focus_time === 0 : state.current_focus_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time + 60,\n      current_break_time: state.current_break_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time <= 60 ? state.break_time === 60 : state.break_time - 60,\n      current_break_time: state.current_break_time <= 60 ? state.current_break_time === 0 : state.current_break_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('setCycle', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_cycle: state.current_cycle === 'Focus' ? 'Break' : 'Focus'\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('startTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: true\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      is_started: payload.timers.is_started\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('stopTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: false\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: true,\n      ...newTimer\n    };\n  },\n  error: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), // FE only state change for current time\n(state, action) => {\n  switch (action.type) {\n    case 'DECREMENT_CURRENT_FOCUS_TIME':\n      return { ...state,\n        current_focus_time: state.current_focus_time - 1\n      };\n\n    case 'DECREMENT_CURRENT_BREAK_TIME':\n      return { ...state,\n        current_break_time: state.current_break_time - 1\n      };\n\n    default:\n      return state;\n  }\n}, createRPCReducer('updateCompletedFocusMinutes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      completed_focus_minutes: state.focus_time / 60 + state.completed_focus_minutes\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      completed_focus_minutes: payload.timers.completed_focus_minutes\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n})); // createRPCReducer('startStopToggle', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       is_started: !state.is_started,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       is_started: payload.timers.is_started,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// }),\n// createRPCReducer('updateCurrentFocusTime', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       current_focus_time: state.current_focus_time - 60,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       current_focus_time: payload.timers.current_focus_time,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// })"
+              "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  id: null,\n  focus_time: 25 * 60,\n  break_time: 5 * 60,\n  current_focus_time: 25 * 60,\n  current_break_time: 5 * 60,\n  current_cycle: 'Focus',\n  is_started: false,\n  completed_focus_minutes: 0,\n  profile: null\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('getTimers', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    return { ...state,\n      loading: false,\n      ...payload.timers[0],\n      focus_time: payload.timers[0].focus_time,\n      break_time: payload.timers[0].break_time // TODO: add if statement for error handling for unauthroized - redirect to login\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => ({ ...state,\n    loading: false,\n    error: payload\n  })\n}), createRPCReducer('resetTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_focus_time: state.focus_time,\n      current_break_time: state.break_time\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: 60 + state.focus_time,\n      current_focus_time: state.current_focus_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time; // delete newTimer.current_break_time;\n    // delete newTimer.current_cycle;\n\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: state.focus_time <= 60 ? state.focus_time === 60 : state.focus_time - 60,\n      current_focus_time: state.current_focus_time <= 60 ? state.current_focus_time === 0 : state.current_focus_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time + 60,\n      current_break_time: state.current_break_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time <= 60 ? state.break_time === 60 : state.break_time - 60,\n      current_break_time: state.current_break_time <= 60 ? state.current_break_time === 0 : state.current_break_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('setCycle', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_cycle: state.current_cycle === 'Focus' ? 'Break' : 'Focus'\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('startTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: true\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      is_started: payload.timers.is_started\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('stopTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: false\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: true,\n      ...newTimer\n    };\n  },\n  error: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), // FE only state change for current time\n(state, action) => {\n  switch (action.type) {\n    case 'DECREMENT_CURRENT_FOCUS_TIME':\n      return { ...state,\n        current_focus_time: state.current_focus_time - 1\n      };\n\n    case 'DECREMENT_CURRENT_BREAK_TIME':\n      return { ...state,\n        current_break_time: state.current_break_time - 1\n      };\n\n    default:\n      return state;\n  }\n}, createRPCReducer('updateCurrentTimes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('updateCompletedFocusMinutes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      completed_focus_minutes: state.focus_time / 60 + state.completed_focus_minutes\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      completed_focus_minutes: payload.timers.completed_focus_minutes\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n})); // createRPCReducer('startStopToggle', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       is_started: !state.is_started,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       is_started: payload.timers.is_started,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// }),\n// createRPCReducer('updateCurrentFocusTime', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       current_focus_time: state.current_focus_time - 60,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       current_focus_time: payload.timers.current_focus_time,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// })"
             },
             {
               "id": "./src/root.js",
@@ -2862,9 +2814,9 @@
               "name": "./src/rpc/index.js",
               "index": 64,
               "index2": 62,
-              "size": 8397,
+              "size": 8383,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2910,7 +2862,7 @@
               ],
               "optimizationBailout": [],
               "depth": 3,
-              "source": "// rpc handlers\nimport axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  register: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/register/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      // ctx['username'] = res.data.username;\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Login attempt unsuccessful, erro: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getProfile: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err); // const respError = new ResponseError(err);\n      // respError.meta = args;\n\n      const responseError = new ResponseError(`Could not load profile data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getTimers/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err); // const respError = new ResponseError(err);\n      // respError.meta = args;\n\n      const responseError = new ResponseError(`Could not load timer data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  resetTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/resetTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not reset timers, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  setCycle: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/setCycle/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set cycle, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  startTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/startTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  stopTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/stopTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  // startStopToggle: async (args, ctx) => {\n  //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n  //   const result = await axios({\n  //     method: 'POST',\n  //     headers,\n  //     url: 'http://localhost:8000/api/startStopToggle/',\n  //     data: args,\n  //   })\n  //     .then((res) => {\n  //       console.log(res.data);\n  //       return res.data;\n  //     })\n  //     .catch((err) => {\n  //       const responseError = new ResponseError(\n  //         `Could not update start/stop, error: ${err.message}`\n  //       );\n  //       throw responseError;\n  //     });\n  //   return result;\n  // },\n  updateCurrentFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCurrentFocusTime/',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update current focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  updateCompletedFocusMinutes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update completed focus minutes, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  }\n};"
+              "source": "// rpc handlers\nimport axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  register: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/register/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      // ctx['username'] = res.data.username;\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Login attempt unsuccessful, erro: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getProfile: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err); // const respError = new ResponseError(err);\n      // respError.meta = args;\n\n      const responseError = new ResponseError(`Could not load profile data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getTimers/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err); // const respError = new ResponseError(err);\n      // respError.meta = args;\n\n      const responseError = new ResponseError(`Could not load timer data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  resetTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/resetTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not reset timers, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  setCycle: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/setCycle/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set cycle, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  startTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/startTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  stopTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/stopTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  // startStopToggle: async (args, ctx) => {\n  //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n  //   const result = await axios({\n  //     method: 'POST',\n  //     headers,\n  //     url: 'http://localhost:8000/api/startStopToggle/',\n  //     data: args,\n  //   })\n  //     .then((res) => {\n  //       console.log(res.data);\n  //       return res.data;\n  //     })\n  //     .catch((err) => {\n  //       const responseError = new ResponseError(\n  //         `Could not update start/stop, error: ${err.message}`\n  //       );\n  //       throw responseError;\n  //     });\n  //   return result;\n  // },\n  updateCurrentTimes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCurrentTimes/',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update current times error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  updateCompletedFocusMinutes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update completed focus minutes, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  }\n};"
             },
             {
               "id": "assert",
@@ -4368,7 +4320,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "112:46-58"
+                  "loc": "118:46-58"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -4377,7 +4329,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "112:75-87"
+                  "loc": "118:75-87"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -4386,7 +4338,16 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "112:103-115"
+                  "loc": "118:103-115"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/StartStop.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js",
+                  "module": "./src/components/PomodoroClock/StartStop.js",
+                  "moduleName": "./src/components/PomodoroClock/StartStop.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "118:139-151"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -4576,6 +4537,15 @@
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
                   "loc": "290:3-19"
+                },
+                {
+                  "moduleId": "./src/reducers/timersReducer.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/timersReducer.js",
+                  "module": "./src/reducers/timersReducer.js",
+                  "moduleName": "./src/reducers/timersReducer.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "317:4-20"
                 }
               ],
               "providedExports": null,
@@ -6069,7 +6039,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "21:2-11"
+                  "loc": "22:2-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6078,7 +6048,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "58:2-11"
+                  "loc": "64:2-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6087,7 +6057,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "80:9-14"
+                  "loc": "86:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6096,7 +6066,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "80:29-34"
+                  "loc": "86:29-34"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6105,7 +6075,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "86:5-10"
+                  "loc": "92:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -6523,7 +6493,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "19:19-30"
+                  "loc": "20:19-30"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6532,7 +6502,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "112:20-27"
+                  "loc": "118:20-27"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -6867,7 +6837,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "112:12-19"
+                  "loc": "118:12-19"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -8896,7 +8866,7 @@
           "name": "./src/components/PomodoroClock/StartStop.js",
           "index": 44,
           "index2": 38,
-          "size": 2845,
+          "size": 3052,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -8968,7 +8938,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCompletedFocusMinutes\n}) => {\n  const dispatch = useDispatch(); // stops the timer when the time runs to 0\n\n  useEffect(() => {\n    // if (currentFocusTime === 0 || currentBreakTime === 0) {\n    //   stopTimers({ id: timerId });\n    // }\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // toggles the timer between start and stop\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 1000);\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 66\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 67\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCompletedFocusMinutes'));\nexport default hoc(StartStop);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCurrentTimes,\n  updateCompletedFocusMinutes\n}) => {\n  const dispatch = useDispatch(); // stops the timer when the time runs to 0\n\n  useEffect(() => {\n    // if (currentFocusTime === 0 || currentBreakTime === 0) {\n    //   stopTimers({ id: timerId });\n    // }\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // toggles the timer between start and stop\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n      updateCurrentTimes({\n        id: timerId,\n        current_focus_time: currentFocusTime,\n        current_break_time: currentBreakTime\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 1000);\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 74\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 75\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCurrentTimes'), withRPCRedux('updateCompletedFocusMinutes'));\nexport default hoc(StartStop);"
         },
         {
           "id": "./src/components/PomodoroClock/Timer.js",
@@ -9685,9 +9655,9 @@
           "name": "./src/reducers/timersReducer.js",
           "index": 62,
           "index2": 58,
-          "size": 7932,
+          "size": 8437,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -9747,7 +9717,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  id: null,\n  focus_time: 25 * 60,\n  break_time: 5 * 60,\n  current_focus_time: 25 * 60,\n  current_break_time: 5 * 60,\n  current_cycle: 'Focus',\n  is_started: false,\n  completed_focus_minutes: 0,\n  profile: null\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('getTimers', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    return { ...state,\n      loading: false,\n      ...payload.timers[0],\n      focus_time: payload.timers[0].focus_time,\n      break_time: payload.timers[0].break_time // TODO: add if statement for error handling for unauthroized - redirect to login\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => ({ ...state,\n    loading: false,\n    error: payload\n  })\n}), createRPCReducer('resetTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_focus_time: state.focus_time,\n      current_break_time: state.break_time\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: 60 + state.focus_time,\n      current_focus_time: state.current_focus_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time; // delete newTimer.current_break_time;\n    // delete newTimer.current_cycle;\n\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: state.focus_time <= 60 ? state.focus_time === 60 : state.focus_time - 60,\n      current_focus_time: state.current_focus_time <= 60 ? state.current_focus_time === 0 : state.current_focus_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time + 60,\n      current_break_time: state.current_break_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time <= 60 ? state.break_time === 60 : state.break_time - 60,\n      current_break_time: state.current_break_time <= 60 ? state.current_break_time === 0 : state.current_break_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('setCycle', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_cycle: state.current_cycle === 'Focus' ? 'Break' : 'Focus'\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('startTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: true\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      is_started: payload.timers.is_started\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('stopTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: false\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: true,\n      ...newTimer\n    };\n  },\n  error: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), // FE only state change for current time\n(state, action) => {\n  switch (action.type) {\n    case 'DECREMENT_CURRENT_FOCUS_TIME':\n      return { ...state,\n        current_focus_time: state.current_focus_time - 1\n      };\n\n    case 'DECREMENT_CURRENT_BREAK_TIME':\n      return { ...state,\n        current_break_time: state.current_break_time - 1\n      };\n\n    default:\n      return state;\n  }\n}, createRPCReducer('updateCompletedFocusMinutes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      completed_focus_minutes: state.focus_time / 60 + state.completed_focus_minutes\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      completed_focus_minutes: payload.timers.completed_focus_minutes\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n})); // createRPCReducer('startStopToggle', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       is_started: !state.is_started,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       is_started: payload.timers.is_started,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// }),\n// createRPCReducer('updateCurrentFocusTime', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       current_focus_time: state.current_focus_time - 60,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       current_focus_time: payload.timers.current_focus_time,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// })"
+          "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  id: null,\n  focus_time: 25 * 60,\n  break_time: 5 * 60,\n  current_focus_time: 25 * 60,\n  current_break_time: 5 * 60,\n  current_cycle: 'Focus',\n  is_started: false,\n  completed_focus_minutes: 0,\n  profile: null\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('getTimers', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    return { ...state,\n      loading: false,\n      ...payload.timers[0],\n      focus_time: payload.timers[0].focus_time,\n      break_time: payload.timers[0].break_time // TODO: add if statement for error handling for unauthroized - redirect to login\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => ({ ...state,\n    loading: false,\n    error: payload\n  })\n}), createRPCReducer('resetTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_focus_time: state.focus_time,\n      current_break_time: state.break_time\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: 60 + state.focus_time,\n      current_focus_time: state.current_focus_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time; // delete newTimer.current_break_time;\n    // delete newTimer.current_cycle;\n\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: state.focus_time <= 60 ? state.focus_time === 60 : state.focus_time - 60,\n      current_focus_time: state.current_focus_time <= 60 ? state.current_focus_time === 0 : state.current_focus_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time + 60,\n      current_break_time: state.current_break_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time <= 60 ? state.break_time === 60 : state.break_time - 60,\n      current_break_time: state.current_break_time <= 60 ? state.current_break_time === 0 : state.current_break_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('setCycle', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_cycle: state.current_cycle === 'Focus' ? 'Break' : 'Focus'\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('startTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: true\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      is_started: payload.timers.is_started\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('stopTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: false\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: true,\n      ...newTimer\n    };\n  },\n  error: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), // FE only state change for current time\n(state, action) => {\n  switch (action.type) {\n    case 'DECREMENT_CURRENT_FOCUS_TIME':\n      return { ...state,\n        current_focus_time: state.current_focus_time - 1\n      };\n\n    case 'DECREMENT_CURRENT_BREAK_TIME':\n      return { ...state,\n        current_break_time: state.current_break_time - 1\n      };\n\n    default:\n      return state;\n  }\n}, createRPCReducer('updateCurrentTimes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('updateCompletedFocusMinutes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      completed_focus_minutes: state.focus_time / 60 + state.completed_focus_minutes\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      completed_focus_minutes: payload.timers.completed_focus_minutes\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n})); // createRPCReducer('startStopToggle', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       is_started: !state.is_started,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       is_started: payload.timers.is_started,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// }),\n// createRPCReducer('updateCurrentFocusTime', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       current_focus_time: state.current_focus_time - 60,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       current_focus_time: payload.timers.current_focus_time,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// })"
         },
         {
           "id": "./src/root.js",
@@ -9820,9 +9790,9 @@
           "name": "./src/rpc/index.js",
           "index": 64,
           "index2": 62,
-          "size": 8397,
+          "size": 8383,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -9868,7 +9838,7 @@
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "// rpc handlers\nimport axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  register: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/register/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      // ctx['username'] = res.data.username;\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Login attempt unsuccessful, erro: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getProfile: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err); // const respError = new ResponseError(err);\n      // respError.meta = args;\n\n      const responseError = new ResponseError(`Could not load profile data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getTimers/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err); // const respError = new ResponseError(err);\n      // respError.meta = args;\n\n      const responseError = new ResponseError(`Could not load timer data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  resetTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/resetTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not reset timers, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  setCycle: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/setCycle/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set cycle, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  startTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/startTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  stopTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/stopTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  // startStopToggle: async (args, ctx) => {\n  //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n  //   const result = await axios({\n  //     method: 'POST',\n  //     headers,\n  //     url: 'http://localhost:8000/api/startStopToggle/',\n  //     data: args,\n  //   })\n  //     .then((res) => {\n  //       console.log(res.data);\n  //       return res.data;\n  //     })\n  //     .catch((err) => {\n  //       const responseError = new ResponseError(\n  //         `Could not update start/stop, error: ${err.message}`\n  //       );\n  //       throw responseError;\n  //     });\n  //   return result;\n  // },\n  updateCurrentFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCurrentFocusTime/',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update current focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  updateCompletedFocusMinutes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update completed focus minutes, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  }\n};"
+          "source": "// rpc handlers\nimport axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  register: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/register/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      // ctx['username'] = res.data.username;\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Login attempt unsuccessful, erro: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getProfile: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err); // const respError = new ResponseError(err);\n      // respError.meta = args;\n\n      const responseError = new ResponseError(`Could not load profile data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getTimers/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err); // const respError = new ResponseError(err);\n      // respError.meta = args;\n\n      const responseError = new ResponseError(`Could not load timer data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  resetTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/resetTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not reset timers, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  setCycle: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/setCycle/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set cycle, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  startTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/startTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  stopTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/stopTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  // startStopToggle: async (args, ctx) => {\n  //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n  //   const result = await axios({\n  //     method: 'POST',\n  //     headers,\n  //     url: 'http://localhost:8000/api/startStopToggle/',\n  //     data: args,\n  //   })\n  //     .then((res) => {\n  //       console.log(res.data);\n  //       return res.data;\n  //     })\n  //     .catch((err) => {\n  //       const responseError = new ResponseError(\n  //         `Could not update start/stop, error: ${err.message}`\n  //       );\n  //       throw responseError;\n  //     });\n  //   return result;\n  // },\n  updateCurrentTimes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCurrentTimes/',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update current times error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  updateCompletedFocusMinutes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update completed focus minutes, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  }\n};"
         },
         {
           "id": "assert",
@@ -11326,7 +11296,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "112:46-58"
+              "loc": "118:46-58"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -11335,7 +11305,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "112:75-87"
+              "loc": "118:75-87"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -11344,7 +11314,16 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "112:103-115"
+              "loc": "118:103-115"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/StartStop.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js",
+              "module": "./src/components/PomodoroClock/StartStop.js",
+              "moduleName": "./src/components/PomodoroClock/StartStop.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "118:139-151"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -11534,6 +11513,15 @@
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
               "loc": "290:3-19"
+            },
+            {
+              "moduleId": "./src/reducers/timersReducer.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/timersReducer.js",
+              "module": "./src/reducers/timersReducer.js",
+              "moduleName": "./src/reducers/timersReducer.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "317:4-20"
             }
           ],
           "providedExports": null,
@@ -13027,7 +13015,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "21:2-11"
+              "loc": "22:2-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -13036,7 +13024,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "58:2-11"
+              "loc": "64:2-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -13045,7 +13033,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "80:9-14"
+              "loc": "86:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -13054,7 +13042,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "80:29-34"
+              "loc": "86:29-34"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -13063,7 +13051,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "86:5-10"
+              "loc": "92:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -13481,7 +13469,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "19:19-30"
+              "loc": "20:19-30"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -13490,7 +13478,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "112:20-27"
+              "loc": "118:20-27"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -13825,7 +13813,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "112:12-19"
+              "loc": "118:12-19"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",

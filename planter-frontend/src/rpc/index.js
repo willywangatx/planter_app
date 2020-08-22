@@ -295,12 +295,12 @@ export default {
   //   return result;
   // },
 
-  updateCurrentFocusTime: async (args, ctx) => {
+  updateCurrentTimes: async (args, ctx) => {
     const headers = { Authorization: `Bearer ${ctx.access_token}` };
     const result = await axios({
       method: 'POST',
       headers,
-      url: 'http://localhost:8000/api/updateCurrentFocusTime/',
+      url: 'http://localhost:8000/api/updateCurrentTimes/',
       data: args,
     })
       .then((res) => {
@@ -308,7 +308,7 @@ export default {
       })
       .catch((err) => {
         const responseError = new ResponseError(
-          `Could not update current focus time, error: ${err.message}`
+          `Could not update current times error: ${err.message}`
         );
         throw responseError;
       });

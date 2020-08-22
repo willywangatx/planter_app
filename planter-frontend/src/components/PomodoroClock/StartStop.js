@@ -14,6 +14,7 @@ const StartStop = ({
   currentBreakTime,
   currentCycle,
   timerId,
+  updateCurrentTimes,
   updateCompletedFocusMinutes,
 }) => {
   const dispatch = useDispatch();
@@ -29,7 +30,9 @@ const StartStop = ({
     }
 
     if (currentBreakTime === 0) {
-      stopTimers({ id: timerId });
+      stopTimers({
+        id: timerId,
+      });
     }
   }, [currentFocusTime, currentBreakTime]);
 
@@ -38,6 +41,11 @@ const StartStop = ({
     event.preventDefault();
     if (isStarted) {
       stopTimers({ id: timerId });
+      updateCurrentTimes({
+        id: timerId,
+        current_focus_time: currentFocusTime,
+        current_break_time: currentBreakTime,
+      });
     }
     if (!isStarted) {
       startTimers({ id: timerId });
@@ -94,6 +102,7 @@ const hoc = compose(
   connect(mapStateToProps),
   withRPCRedux('startTimers'),
   withRPCRedux('stopTimers'),
+  withRPCRedux('updateCurrentTimes'),
   withRPCRedux('updateCompletedFocusMinutes')
 );
 
