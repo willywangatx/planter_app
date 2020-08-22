@@ -10,7 +10,7 @@ from .models import Wallet
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def get_wallet(request):
-    wallet = Wallet.objects.filter(profile=request.user.profile)
+    wallet = Wallet.objects.get(profile=request.user.profile)
     serializer = WalletSerializer(wallet)
     data = {'wallet': serializer.data, 'response': 'Wallet Data successfully fetched'}
     return Response(data, status=status.HTTP_200_OK)

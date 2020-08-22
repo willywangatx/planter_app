@@ -2,22 +2,22 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "78916bc08bad7750a37b",
+  "hash": "cf8de54e2bc6af4db009",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "78916bc08bad7750a37b",
-      "time": 1108,
-      "builtAt": 1598126550400,
+      "hash": "cf8de54e2bc6af4db009",
+      "time": 315,
+      "builtAt": 1598127308397,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.a4e5a15c41a732a001f4.hot-update.js",
+          "main.d218dcf4b253c0ed9d4d.hot-update.js",
           "server-main.js.map",
-          "main.a4e5a15c41a732a001f4.hot-update.js.map"
+          "main.d218dcf4b253c0ed9d4d.hot-update.js.map"
         ]
       },
       "assets": [
@@ -30,7 +30,7 @@
           "emitted": false
         },
         {
-          "name": "a4e5a15c41a732a001f4.hot-update.json",
+          "name": "d218dcf4b253c0ed9d4d.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.a4e5a15c41a732a001f4.hot-update.js",
-          "size": 11343,
+          "name": "main.d218dcf4b253c0ed9d4d.hot-update.js",
+          "size": 7582,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.a4e5a15c41a732a001f4.hot-update.js.map",
-          "size": 11460,
+          "name": "main.d218dcf4b253c0ed9d4d.hot-update.js.map",
+          "size": 3385,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.a4e5a15c41a732a001f4.hot-update.js",
+            "main.d218dcf4b253c0ed9d4d.hot-update.js",
             "server-main.js.map",
-            "main.a4e5a15c41a732a001f4.hot-update.js.map"
+            "main.d218dcf4b253c0ed9d4d.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.a4e5a15c41a732a001f4.hot-update.js",
+            "main.d218dcf4b253c0ed9d4d.hot-update.js",
             "server-main.js.map",
-            "main.a4e5a15c41a732a001f4.hot-update.js.map"
+            "main.d218dcf4b253c0ed9d4d.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -139,9 +139,9 @@
           ],
           "files": [
             "server-main.js",
-            "main.a4e5a15c41a732a001f4.hot-update.js",
+            "main.d218dcf4b253c0ed9d4d.hot-update.js",
             "server-main.js.map",
-            "main.a4e5a15c41a732a001f4.hot-update.js.map"
+            "main.d218dcf4b253c0ed9d4d.hot-update.js.map"
           ],
           "hash": "1932ed8a3ccc7ffb68b7",
           "siblings": [],
@@ -1776,7 +1776,7 @@
               "index2": 41,
               "size": 3884,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2934,7 +2934,7 @@
               "index2": 63,
               "size": 8687,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -6474,9 +6474,9 @@
               "chunks": [
                 "main"
               ],
-              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
-              "issuerId": "./src/components/PomodoroClock/PomodoroClock.js",
-              "issuerName": "./src/components/PomodoroClock/PomodoroClock.js",
+              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+              "issuerId": "./src/components/Authentication/Authentication.js",
+              "issuerName": "./src/components/Authentication/Authentication.js",
               "issuerPath": [
                 {
                   "id": 0,
@@ -6504,9 +6504,9 @@
                   "name": "./src/pages/home.js"
                 },
                 {
-                  "id": "./src/components/PomodoroClock/PomodoroClock.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
-                  "name": "./src/components/PomodoroClock/PomodoroClock.js"
+                  "id": "./src/components/Authentication/Authentication.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+                  "name": "./src/components/Authentication/Authentication.js"
                 }
               ],
               "failed": false,
@@ -8885,7 +8885,7 @@
           "index2": 41,
           "size": 3884,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -10043,7 +10043,7 @@
           "index2": 63,
           "size": 8687,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -13583,9 +13583,9 @@
           "chunks": [
             "main"
           ],
-          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
-          "issuerId": "./src/components/PomodoroClock/PomodoroClock.js",
-          "issuerName": "./src/components/PomodoroClock/PomodoroClock.js",
+          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+          "issuerId": "./src/components/Authentication/Authentication.js",
+          "issuerName": "./src/components/Authentication/Authentication.js",
           "issuerPath": [
             {
               "id": 0,
@@ -13613,9 +13613,9 @@
               "name": "./src/pages/home.js"
             },
             {
-              "id": "./src/components/PomodoroClock/PomodoroClock.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
-              "name": "./src/components/PomodoroClock/PomodoroClock.js"
+              "id": "./src/components/Authentication/Authentication.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+              "name": "./src/components/Authentication/Authentication.js"
             }
           ],
           "failed": false,
