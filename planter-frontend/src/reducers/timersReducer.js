@@ -317,6 +317,7 @@ export default reduceReducers(
       const newTimer = { ...payload.timers };
       delete newTimer.current_focus_time;
       delete newTimer.current_break_time;
+      delete newTimer.is_started;
       return {
         ...state,
         loading: false,
