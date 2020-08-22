@@ -8,7 +8,6 @@ export default createPlugin({
   middleware({ Session }) {
     return async (ctx, next) => {
       const session = Session.from(ctx);
-
       ctx['access_token'] = session.get('access_token');
       ctx['refresh_token'] = session.get('refresh_token');
 

@@ -65,8 +65,6 @@ export default {
       })
       .catch((err) => {
         console.log(err);
-        // const respError = new ResponseError(err);
-        // respError.meta = args;
         const responseError = new ResponseError(
           `Could not load profile data, error: ${err.message}`
         );
@@ -75,8 +73,9 @@ export default {
     return result;
   },
 
-  getWallet: async (ctx) => {
+  getWallet: async (args, ctx) => {
     const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    console.log(ctx.access_token);
     const result = await axios({
       method: 'POST',
       headers,
@@ -104,13 +103,9 @@ export default {
       url: 'http://localhost:8000/api/getTimers/',
     })
       .then((res) => {
-        console.log(res.data);
         return res.data;
       })
       .catch((err) => {
-        console.log(err);
-        // const respError = new ResponseError(err);
-        // respError.meta = args;
         const responseError = new ResponseError(
           `Could not load timer data, error: ${err.message}`
         );
