@@ -2,22 +2,22 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "85ae0fb4f08d823d3516",
+  "hash": "78916bc08bad7750a37b",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "85ae0fb4f08d823d3516",
-      "time": 67,
-      "builtAt": 1598126267598,
+      "hash": "78916bc08bad7750a37b",
+      "time": 1108,
+      "builtAt": 1598126550400,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.2104db77623bbc0a8e44.hot-update.js",
+          "main.a4e5a15c41a732a001f4.hot-update.js",
           "server-main.js.map",
-          "main.2104db77623bbc0a8e44.hot-update.js.map"
+          "main.a4e5a15c41a732a001f4.hot-update.js.map"
         ]
       },
       "assets": [
@@ -30,7 +30,7 @@
           "emitted": false
         },
         {
-          "name": "2104db77623bbc0a8e44.hot-update.json",
+          "name": "a4e5a15c41a732a001f4.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.2104db77623bbc0a8e44.hot-update.js",
-          "size": 2056,
+          "name": "main.a4e5a15c41a732a001f4.hot-update.js",
+          "size": 11343,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.2104db77623bbc0a8e44.hot-update.js.map",
-          "size": 936,
+          "name": "main.a4e5a15c41a732a001f4.hot-update.js.map",
+          "size": 11460,
           "chunks": [
             "main"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 176345,
+          "size": 176310,
           "chunks": [
             "main"
           ],
@@ -83,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 126669,
+          "size": 126628,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.2104db77623bbc0a8e44.hot-update.js",
+            "main.a4e5a15c41a732a001f4.hot-update.js",
             "server-main.js.map",
-            "main.2104db77623bbc0a8e44.hot-update.js.map"
+            "main.a4e5a15c41a732a001f4.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.2104db77623bbc0a8e44.hot-update.js",
+            "main.a4e5a15c41a732a001f4.hot-update.js",
             "server-main.js.map",
-            "main.2104db77623bbc0a8e44.hot-update.js.map"
+            "main.a4e5a15c41a732a001f4.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -133,17 +133,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 75551,
+          "size": 75516,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.2104db77623bbc0a8e44.hot-update.js",
+            "main.a4e5a15c41a732a001f4.hot-update.js",
             "server-main.js.map",
-            "main.2104db77623bbc0a8e44.hot-update.js.map"
+            "main.a4e5a15c41a732a001f4.hot-update.js.map"
           ],
-          "hash": "2ed3234a525b90ee29f0",
+          "hash": "1932ed8a3ccc7ffb68b7",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -2468,7 +2468,7 @@
               "index2": 64,
               "size": 577,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2932,9 +2932,9 @@
               "name": "./src/rpc/index.js",
               "index": 65,
               "index2": 63,
-              "size": 8722,
+              "size": 8687,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2980,7 +2980,7 @@
               ],
               "optimizationBailout": [],
               "depth": 3,
-              "source": "// rpc handlers\nimport axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  register: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/register/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      // ctx['username'] = res.data.username;\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Login attempt unsuccessful, erro: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getProfile: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not load profile data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getWallet: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    console.log(ctx.access_token);\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getWallet/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not load wallet data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getTimers/'\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not load timer data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  resetTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/resetTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not reset timers, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  setCycle: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/setCycle/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set cycle, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  startTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/startTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  stopTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/stopTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  // startStopToggle: async (args, ctx) => {\n  //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n  //   const result = await axios({\n  //     method: 'POST',\n  //     headers,\n  //     url: 'http://localhost:8000/api/startStopToggle/',\n  //     data: args,\n  //   })\n  //     .then((res) => {\n  //       console.log(res.data);\n  //       return res.data;\n  //     })\n  //     .catch((err) => {\n  //       const responseError = new ResponseError(\n  //         `Could not update start/stop, error: ${err.message}`\n  //       );\n  //       throw responseError;\n  //     });\n  //   return result;\n  // },\n  updateCurrentTimes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCurrentTimes/',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update current times error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  updateCompletedFocusMinutes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update completed focus minutes, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  }\n};"
+              "source": "// rpc handlers\nimport axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  register: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/register/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      // ctx['username'] = res.data.username;\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Login attempt unsuccessful, erro: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getProfile: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not load profile data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getWallet: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getWallet/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not load wallet data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getTimers/'\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not load timer data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  resetTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/resetTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not reset timers, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  setCycle: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/setCycle/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set cycle, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  startTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/startTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  stopTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/stopTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  // startStopToggle: async (args, ctx) => {\n  //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n  //   const result = await axios({\n  //     method: 'POST',\n  //     headers,\n  //     url: 'http://localhost:8000/api/startStopToggle/',\n  //     data: args,\n  //   })\n  //     .then((res) => {\n  //       console.log(res.data);\n  //       return res.data;\n  //     })\n  //     .catch((err) => {\n  //       const responseError = new ResponseError(\n  //         `Could not update start/stop, error: ${err.message}`\n  //       );\n  //       throw responseError;\n  //     });\n  //   return result;\n  // },\n  updateCurrentTimes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCurrentTimes/',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update current times error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  updateCompletedFocusMinutes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update completed focus minutes, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  }\n};"
             },
             {
               "id": "assert",
@@ -3151,7 +3151,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "66:25-30"
+                  "loc": "65:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3160,7 +3160,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "84:25-30"
+                  "loc": "83:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3169,7 +3169,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "100:25-30"
+                  "loc": "99:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3178,7 +3178,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "119:25-30"
+                  "loc": "118:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3187,7 +3187,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "138:25-30"
+                  "loc": "137:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3196,7 +3196,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "157:25-30"
+                  "loc": "156:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3205,7 +3205,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "176:25-30"
+                  "loc": "175:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3214,7 +3214,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "195:25-30"
+                  "loc": "194:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3223,7 +3223,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "214:25-30"
+                  "loc": "213:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3232,7 +3232,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "233:25-30"
+                  "loc": "232:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3241,7 +3241,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "272:25-30"
+                  "loc": "271:25-30"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -3250,7 +3250,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "289:25-30"
+                  "loc": "288:25-30"
                 }
               ],
               "providedExports": null,
@@ -4070,7 +4070,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "75:32-45"
+                  "loc": "74:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4079,7 +4079,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "91:32-45"
+                  "loc": "90:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4088,7 +4088,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "110:32-45"
+                  "loc": "109:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4097,7 +4097,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "129:32-45"
+                  "loc": "128:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4106,7 +4106,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "148:32-45"
+                  "loc": "147:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4115,7 +4115,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "167:32-45"
+                  "loc": "166:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4124,7 +4124,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "186:32-45"
+                  "loc": "185:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4133,7 +4133,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "205:32-45"
+                  "loc": "204:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4142,7 +4142,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "224:32-45"
+                  "loc": "223:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4151,7 +4151,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "243:32-45"
+                  "loc": "242:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4160,7 +4160,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "280:32-45"
+                  "loc": "279:32-45"
                 },
                 {
                   "moduleId": "./src/rpc/index.js",
@@ -4169,7 +4169,7 @@
                   "moduleName": "./src/rpc/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "297:32-45"
+                  "loc": "296:32-45"
                 }
               ],
               "providedExports": null,
@@ -9577,7 +9577,7 @@
           "index2": 64,
           "size": 577,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -10041,9 +10041,9 @@
           "name": "./src/rpc/index.js",
           "index": 65,
           "index2": 63,
-          "size": 8722,
+          "size": 8687,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -10089,7 +10089,7 @@
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "// rpc handlers\nimport axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  register: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/register/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      // ctx['username'] = res.data.username;\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Login attempt unsuccessful, erro: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getProfile: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not load profile data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getWallet: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    console.log(ctx.access_token);\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getWallet/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not load wallet data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getTimers/'\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not load timer data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  resetTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/resetTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not reset timers, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  setCycle: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/setCycle/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set cycle, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  startTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/startTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  stopTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/stopTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  // startStopToggle: async (args, ctx) => {\n  //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n  //   const result = await axios({\n  //     method: 'POST',\n  //     headers,\n  //     url: 'http://localhost:8000/api/startStopToggle/',\n  //     data: args,\n  //   })\n  //     .then((res) => {\n  //       console.log(res.data);\n  //       return res.data;\n  //     })\n  //     .catch((err) => {\n  //       const responseError = new ResponseError(\n  //         `Could not update start/stop, error: ${err.message}`\n  //       );\n  //       throw responseError;\n  //     });\n  //   return result;\n  // },\n  updateCurrentTimes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCurrentTimes/',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update current times error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  updateCompletedFocusMinutes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update completed focus minutes, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  }\n};"
+          "source": "// rpc handlers\nimport axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc'; //write code to get the access token to automatically refresh\n// const refreshToken = (ctx, args) => {\n//   if (!ctx.access_token) {\n//   }\n// };\n\nexport default {\n  register: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/register/',\n      data: args\n    }).then(res => {\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n    });\n    return result;\n  },\n  login: async (args, ctx) => {\n    const result = await axios({\n      method: 'POST',\n      url: 'http://localhost:8000/api/login/',\n      data: args\n    }).then(res => {\n      // ctx['username'] = res.data.username;\n      ctx['access_token'] = res.data.access;\n      ctx['refresh_token'] = res.data.refresh;\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Login attempt unsuccessful, erro: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getProfile: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getProfile/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not load profile data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getWallet: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getWallet/'\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not load wallet data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  getTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/getTimers/'\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not load timer data, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementFocusTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementFocusTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement focus time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  incrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/incrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not increment break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  decrementBreakTime: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/decrementBreakTime/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not decrement break time, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  resetTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/resetTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not reset timers, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  setCycle: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/setCycle/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set cycle, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  startTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/startTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  stopTimers: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/stopTimers/',\n      data: args\n    }).then(res => {\n      console.log(res.data);\n      return res.data;\n    }).catch(err => {\n      console.log(err);\n      const responseError = new ResponseError(`Could not set isStarted, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  // startStopToggle: async (args, ctx) => {\n  //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n  //   const result = await axios({\n  //     method: 'POST',\n  //     headers,\n  //     url: 'http://localhost:8000/api/startStopToggle/',\n  //     data: args,\n  //   })\n  //     .then((res) => {\n  //       console.log(res.data);\n  //       return res.data;\n  //     })\n  //     .catch((err) => {\n  //       const responseError = new ResponseError(\n  //         `Could not update start/stop, error: ${err.message}`\n  //       );\n  //       throw responseError;\n  //     });\n  //   return result;\n  // },\n  updateCurrentTimes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCurrentTimes/',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update current times error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  },\n  updateCompletedFocusMinutes: async (args, ctx) => {\n    const headers = {\n      Authorization: `Bearer ${ctx.access_token}`\n    };\n    const result = await axios({\n      method: 'POST',\n      headers,\n      url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n      data: args\n    }).then(res => {\n      return res.data;\n    }).catch(err => {\n      const responseError = new ResponseError(`Could not update completed focus minutes, error: ${err.message}`);\n      throw responseError;\n    });\n    return result;\n  }\n};"
         },
         {
           "id": "assert",
@@ -10260,7 +10260,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "66:25-30"
+              "loc": "65:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10269,7 +10269,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "84:25-30"
+              "loc": "83:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10278,7 +10278,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "100:25-30"
+              "loc": "99:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10287,7 +10287,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "119:25-30"
+              "loc": "118:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10296,7 +10296,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "138:25-30"
+              "loc": "137:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10305,7 +10305,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "157:25-30"
+              "loc": "156:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10314,7 +10314,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "176:25-30"
+              "loc": "175:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10323,7 +10323,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "195:25-30"
+              "loc": "194:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10332,7 +10332,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "214:25-30"
+              "loc": "213:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10341,7 +10341,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "233:25-30"
+              "loc": "232:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10350,7 +10350,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "272:25-30"
+              "loc": "271:25-30"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -10359,7 +10359,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "289:25-30"
+              "loc": "288:25-30"
             }
           ],
           "providedExports": null,
@@ -11179,7 +11179,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "75:32-45"
+              "loc": "74:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11188,7 +11188,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "91:32-45"
+              "loc": "90:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11197,7 +11197,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "110:32-45"
+              "loc": "109:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11206,7 +11206,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "129:32-45"
+              "loc": "128:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11215,7 +11215,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "148:32-45"
+              "loc": "147:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11224,7 +11224,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "167:32-45"
+              "loc": "166:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11233,7 +11233,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "186:32-45"
+              "loc": "185:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11242,7 +11242,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "205:32-45"
+              "loc": "204:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11251,7 +11251,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "224:32-45"
+              "loc": "223:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11260,7 +11260,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "243:32-45"
+              "loc": "242:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11269,7 +11269,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "280:32-45"
+              "loc": "279:32-45"
             },
             {
               "moduleId": "./src/rpc/index.js",
@@ -11278,7 +11278,7 @@
               "moduleName": "./src/rpc/index.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "297:32-45"
+              "loc": "296:32-45"
             }
           ],
           "providedExports": null,

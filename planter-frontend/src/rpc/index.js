@@ -75,7 +75,6 @@ export default {
 
   getWallet: async (args, ctx) => {
     const headers = { Authorization: `Bearer ${ctx.access_token}` };
-    console.log(ctx.access_token);
     const result = await axios({
       method: 'POST',
       headers,
