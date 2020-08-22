@@ -29,8 +29,10 @@ export default reduceReducers(
         ...state,
         loading: false,
         ...payload.timers[0],
-        focus_time: payload.timers[0].focus_time,
-        break_time: payload.timers[0].break_time,
+        is_started: false,
+        current_cycle: 'Focus',
+        // focus_time: payload.timers[0].focus_time,
+        // break_time: payload.timers[0].break_time,
 
         // TODO: add if statement for error handling for unauthroized - redirect to login
       };
@@ -216,6 +218,7 @@ export default reduceReducers(
       delete newTimer.current_focus_time;
       delete newTimer.current_break_time;
       delete newTimer.is_started;
+      delete newTimer.current_cycle;
       return {
         ...state,
         loading: false,

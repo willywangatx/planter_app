@@ -149,7 +149,7 @@ def decrement_break_time(request):
         timer = Timer.objects.get(pk=timer_id)
         if timer.break_time > min_break_time:
             timer.break_time = (F('break_time') - 60)
-            if timer.cbt >= min_break_time:
+            if cbt >= min_break_time:
                 timer.current_break_time = cbt - 60
             else: 
                 timer.current_break_time = (F('current_break_time') == 0)

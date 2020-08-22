@@ -75,6 +75,27 @@ export default {
     return result;
   },
 
+  getWallet: async (ctx) => {
+    const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    const result = await axios({
+      method: 'POST',
+      headers,
+      url: 'http://localhost:8000/api/getWallet/',
+    })
+      .then((res) => {
+        console.log(res.data);
+        return res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+        const responseError = new ResponseError(
+          `Could not load wallet data, error: ${err.message}`
+        );
+        throw responseError;
+      });
+    return result;
+  },
+
   getTimers: async (args, ctx) => {
     const headers = { Authorization: `Bearer ${ctx.access_token}` };
     const result = await axios({

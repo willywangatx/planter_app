@@ -5,15 +5,26 @@ import { compose } from 'redux';
 import PomodoroClock from '../PomodoroClock/PomodoroClock';
 import RenderedAuth from './RenderedAuth';
 
-const Authentication = ({ isAuthenticated, getProfile, getTimers }) => {
-  useEffect(() => {
-    getProfile();
-    getTimers();
-    // TODO: How to preserve login between page refreshes
-  }, []);
+const Authentication = ({
+  isAuthenticated,
+  getProfile,
+  getTimers,
+  getWallet,
+}) => {
+  // useEffect(() => {
+  //   getProfile();
+  //   getTimers();
+  //   // TODO: How to preserve login between page refreshes
+  // }, []);
 
   // use a switch to check route and load proper component
   if (isAuthenticated) {
+    useEffect(() => {
+      getProfile();
+      getTimers();
+      getWallet();
+      // TODO: How to preserve login between page refreshes?
+    }, []);
     return <PomodoroClock />;
   }
 
@@ -35,7 +46,8 @@ const hoc = compose(
   withRPCRedux('login'),
   withRPCRedux('register'),
   withRPCRedux('getProfile'),
-  withRPCRedux('getTimers')
+  withRPCRedux('getTimers'),
+  withRPCRedux('getWallet')
 );
 
 export default hoc(Authentication);

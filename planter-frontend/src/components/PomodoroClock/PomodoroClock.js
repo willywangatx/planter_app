@@ -13,6 +13,7 @@ const PomodoroClock = ({
   // RPC handlers
   getProfile,
   getTimers,
+  stopTimers,
   // global state props
   timersLoading,
   timersError,
@@ -21,11 +22,6 @@ const PomodoroClock = ({
   profileError,
   profileData,
 }) => {
-  // useEffect(() => {
-  //   getProfile();
-  //   getTimers();
-  // }, []);
-
   if (profileLoading) {
     return <div>loading</div>;
   }
@@ -77,6 +73,7 @@ const mapStateToProps = (state) => {
   const timersLoading = state.timers.loading;
   const timersError = state.timers.error;
   const timersData = state.timers;
+  const timerId = state.timers.id;
 
   return {
     profileLoading,
@@ -85,6 +82,7 @@ const mapStateToProps = (state) => {
     timersLoading,
     timersError,
     timersData,
+    timerId,
   };
 };
 
