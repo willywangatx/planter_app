@@ -30,6 +30,7 @@ export default {
   },
 
   login: async (args, ctx) => {
+    console.log(ctx);
     const result = await axios({
       method: 'POST',
       url: 'http://localhost:8000/api/login/',
@@ -39,7 +40,7 @@ export default {
         // ctx['username'] = res.data.username;
         ctx['access_token'] = res.data.access;
         ctx['refresh_token'] = res.data.refresh;
-        console.log(res.data);
+        // console.log(ctx['access_token'], ctx['refresh_token']);
         return res.data;
       })
       .catch((err) => {
@@ -53,12 +54,13 @@ export default {
   },
 
   refreshAuth: async (args, ctx) => {
-    const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    // const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    const data = { refresh: ctx.refresh_token };
     const result = await axios({
       method: 'POST',
-      headers,
+      // headers,
       url: 'http://localhost:8000/api/refreshAuth/',
-      // data: args,
+      data,
     })
       .then((res) => {
         // ctx['username'] = res.data.username;
@@ -70,7 +72,7 @@ export default {
       .catch((err) => {
         console.log(err);
         const responseError = new ResponseError(
-          `Auth refresh attempt unsuccessful, erro: ${err.message}`
+          `Auth refresh attempt unsuccessful, error: ${err.message}`
         );
         throw responseError;
       });

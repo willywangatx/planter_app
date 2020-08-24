@@ -14,13 +14,13 @@ from .models import Profile
 @permission_classes([IsAuthenticated])
 def get_profile(request):
     
-    profile_serializer = ProfileSerializer(request.user.profile)
+    serializer = ProfileSerializer(request.user.profile)
 
     # timer_serializer = TimerSerializer(request.user.profile.timer)
 
 
     # TODO: have profile point to specific users profile
-    data = {'profile': profile_serializer.data, 'response': 'Profile Data successfully fetched'}
+    data = {'profile': serializer.data, 'response': 'Profile Data successfully fetched'}
     # data = {'profile': profile_serializer.data, 'timer': timer_serializer.data, 'response': 'Profile Data successfully fetched'}
     # profile = users[]
     return Response(data, status=status.HTTP_200_OK)

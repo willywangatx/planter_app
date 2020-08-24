@@ -52,6 +52,7 @@ export default reduceReducers(
         loading: false,
         error: payload,
         didAttempt: true,
+        isAuthenticated: false,
       };
     },
   })

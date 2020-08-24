@@ -3,12 +3,14 @@ import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import PomodoroClock from '../PomodoroClock/PomodoroClock';
+// import Home from '../../pages/home';
 import RenderedAuth from './RenderedAuth';
 
 const Authentication = ({
   // global state props
   isAuthenticated,
   // RPC calls
+  refreshAuth,
   getProfile,
   getTimers,
   getWallet,
@@ -29,9 +31,21 @@ const Authentication = ({
     return <PomodoroClock />;
   }
 
-  // if (!isAuthenticated) {
-  //   checkAuth()
-  // }
+  if (!isAuthenticated) {
+    // fire if initial calls returned 401 and if this returns 401 as well, load login
+    refreshAuth();
+
+    // fire these calls regardless of auth - if returns 401, keep isAuth false,
+    // if calls return succesful, change isAuth to false
+
+    // if res.data.status === 401, redirect to refreshAuth
+
+    // useEffect(() => {
+    //   getProfile();
+    //   getTimers();
+    //   getWallet();
+    // }, []);
+  }
 
   // TODO: check for access and refresh tokens and if not present, render the login pg
   // and set isAuthenticated to false. if tokens present, set isAuth to true and render above
@@ -52,8 +66,7 @@ const mapStateToProps = (state) => {
 
 const hoc = compose(
   connect(mapStateToProps),
-  withRPCRedux('login'),
-  withRPCRedux('register'),
+  withRPCRedux('refreshAuth'),
   withRPCRedux('getProfile'),
   withRPCRedux('getTimers'),
   withRPCRedux('getWallet')
