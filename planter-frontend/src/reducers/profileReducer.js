@@ -25,10 +25,6 @@ export default reduceReducers(
         ...state,
         loading: false,
         ...payload.profile,
-        // transform data to seconds for timers here - list out on FE
-        // ...(payload.profile.timers.focus_time * 60),
-        // user: {payload.profile.id, payload.username, payload.email},
-        // add if statement for error handling for unauthroized - redirect to login
       };
     },
     failure: (state, { payload }) => ({
@@ -37,27 +33,4 @@ export default reduceReducers(
       error: payload,
     }),
   })
-
-  //
-
-  // createRPCReducer('updateProfile', {
-  //   start: (state) => {
-  //     return { ...state, loading: true };
-  //   },
-  //   success: (state, { payload }) => {
-  //     console.log(payload);
-  //     return {
-  //       ...state,
-  //       loading: false,
-  //       ...payload.profile,
-  //     };
-  //   },
-  //   failure: (state, { payload }) => {
-  //     return {
-  //       ...state,
-  //       loading: false,
-  //       error: payload,
-  //     };
-  //   },
-  // })
 );

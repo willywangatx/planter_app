@@ -24,14 +24,17 @@ const Register = ({ register, renderOnClick }) => {
 
   const handleConfirmPasswordInput = ({ target, password }) => {
     setConfirmPassword(target.value);
-    if (confirmPassword != password) {
-      preventDefault();
-    }
   };
 
   const handleRegistration = (event) => {
     event.preventDefault();
-    register({ email, username, password });
+    if (password === confirmPassword) {
+      register({ email, username, password });
+      alert('Account successfully created!');
+      renderOnClick();
+    } else {
+      alert("Passwords don't match");
+    }
   };
 
   return (

@@ -33,7 +33,7 @@ urlpatterns = [
     # auth rest paths 
     path('api/register/', create_account, name="create_account"),
     path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/refresh-login/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/refreshAuth/', TokenRefreshView.as_view(), name='token_refresh'),
 
     # profile endpoints
     path('api/getProfile/', get_profile, name='get_profile'),

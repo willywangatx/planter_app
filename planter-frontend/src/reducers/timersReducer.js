@@ -29,8 +29,7 @@ export default reduceReducers(
         ...state,
         loading: false,
         ...payload.timers[0],
-        is_started: false,
-        current_cycle: 'Focus',
+        // is_started: false,
         // focus_time: payload.timers[0].focus_time,
         // break_time: payload.timers[0].break_time,
 
@@ -90,6 +89,7 @@ export default reduceReducers(
       console.log(payload);
       const newTimer = { ...payload.timers };
       delete newTimer.current_focus_time;
+      delete newTimer.current_cycle;
       // delete newTimer.current_break_time;
       // delete newTimer.current_cycle;
       return {

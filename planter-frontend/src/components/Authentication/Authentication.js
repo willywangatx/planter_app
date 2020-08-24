@@ -6,7 +6,9 @@ import PomodoroClock from '../PomodoroClock/PomodoroClock';
 import RenderedAuth from './RenderedAuth';
 
 const Authentication = ({
+  // global state props
   isAuthenticated,
+  // RPC calls
   getProfile,
   getTimers,
   getWallet,
@@ -23,10 +25,17 @@ const Authentication = ({
       getProfile();
       getTimers();
       getWallet();
-      // TODO: How to preserve login between page refreshes?
     }, []);
     return <PomodoroClock />;
   }
+
+  // if (!isAuthenticated) {
+  //   checkAuth()
+  // }
+
+  // TODO: check for access and refresh tokens and if not present, render the login pg
+  // and set isAuthenticated to false. if tokens present, set isAuth to true and render above
+  // fire off rpc handler if isAuth is false and if tokens are present and returns 200, change state
 
   return (
     <>

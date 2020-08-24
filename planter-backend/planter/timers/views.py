@@ -12,7 +12,15 @@ from .models import Timer
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def get_timers(request):
+    # timer_id = request.data.get('id')
+    # cycle = request.data.get('current_cycle')
+    # if not cycle: 
+    #     return Response({'details': {'required fields': ['current_cycle']}}, status=status.HTTP_400_BAD_REQUEST) 
+
     timers = Timer.objects.filter(profile=request.user.profile)
+    timers.update(current_cycle='Focus')
+    timers.update(is_started=False)
+    
     serializer = TimerSerializer(timers, many=True)
     data = {'timers': serializer.data, 'response': 'Timers Data successfully fetched'}
     return Response(data, status=status.HTTP_200_OK)

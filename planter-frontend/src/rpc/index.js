@@ -52,6 +52,31 @@ export default {
     return result;
   },
 
+  refreshAuth: async (args, ctx) => {
+    const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    const result = await axios({
+      method: 'POST',
+      headers,
+      url: 'http://localhost:8000/api/refreshAuth/',
+      // data: args,
+    })
+      .then((res) => {
+        // ctx['username'] = res.data.username;
+        ctx['access_token'] = res.data.access;
+        ctx['refresh_token'] = res.data.refresh;
+        console.log(res.data);
+        return res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+        const responseError = new ResponseError(
+          `Auth refresh attempt unsuccessful, erro: ${err.message}`
+        );
+        throw responseError;
+      });
+    return result;
+  },
+
   getProfile: async (args, ctx) => {
     const headers = { Authorization: `Bearer ${ctx.access_token}` };
     const result = await axios({
@@ -100,6 +125,7 @@ export default {
       method: 'POST',
       headers,
       url: 'http://localhost:8000/api/getTimers/',
+      data: args,
     })
       .then((res) => {
         return res.data;
