@@ -27,10 +27,30 @@ export default reduceReducers(
         ...payload.profile,
       };
     },
-    failure: (state, { payload }) => ({
-      ...state,
-      loading: false,
-      error: payload,
-    }),
+    failure: (state, { payload }) => {
+      if (payload.data.code == 'NOT_LOGGED_IN') {
+        return {
+          ...state,
+        };
+      }
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
   })
+
+  // createRPCReducer('login', {
+  //   // what we call thunk with
+
+  //   success: (state, { payload }) => {
+  //     console.log(payload);
+  //     return {
+  //       ...state,
+  //       authenticated: true,
+  //       // TODO: how to preserve login between page refreshes?
+  //     };
+  //   },
+  // })
 );

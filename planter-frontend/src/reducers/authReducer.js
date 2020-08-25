@@ -26,12 +26,22 @@ export default reduceReducers(
         // TODO: how to preserve login between page refreshes?
       };
     },
-    failure: (state, { payload }) => ({
-      ...state,
-      loading: false,
-      didAttempt: true,
-      error: payload,
-    }),
+    failure: (state, { payload }) => {
+      if (payload.data.code == 'NOT_LOGGED_IN') {
+        return {
+          ...state,
+          loading: false,
+          didAttempt: true,
+        };
+      }
+
+      return {
+        ...state,
+        loading: false,
+        didAttempt: true,
+        error: payload,
+      };
+    },
   }),
 
   createRPCReducer('refreshAuth', {
@@ -55,7 +65,37 @@ export default reduceReducers(
         isAuthenticated: false,
       };
     },
+  }),
+
+  // Listeners for RPC handlers to auth
+  createRPCReducer('getProfile', {
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        isAuthenticated: true,
+      };
+    },
+  }),
+
+  createRPCReducer('getTimers', {
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        isAuthenticated: true,
+      };
+    },
+  }),
+
+  createRPCReducer('getWallet', {
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        isAuthenticated: true,
+      };
+    },
   })
+
+  // create rpc reducer around getProfilee
 
   // createRPCReducer('register', {
   //   start: (state) => {

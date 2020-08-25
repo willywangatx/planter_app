@@ -87,7 +87,13 @@ export default {
       url: 'http://localhost:8000/api/getProfile/',
     })
       .then((res) => {
-        console.log(res.data);
+        console.log(res);
+        // if (res.status === 401) {
+        //   // call refreshAuth here
+        //   console.log('CALLING REFRESH AUTH');
+        //   refreshAuth();
+        //   return res.data;
+        // }
         return res.data;
       })
       .catch((err) => {

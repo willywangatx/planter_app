@@ -15,36 +15,30 @@ const Authentication = ({
   getTimers,
   getWallet,
 }) => {
-  // useEffect(() => {
-  //   getProfile();
-  //   getTimers();
-  //   // TODO: How to preserve login between page refreshes
-  // }, []);
-
   // use a switch to check route and load proper component
   if (isAuthenticated) {
     useEffect(() => {
       getProfile();
       getTimers();
       getWallet();
-    }, []);
+    }, [isAuthenticated]);
     return <PomodoroClock />;
   }
 
   if (!isAuthenticated) {
     // fire if initial calls returned 401 and if this returns 401 as well, load login
-    refreshAuth();
+    // refreshAuth();
 
     // fire these calls regardless of auth - if returns 401, keep isAuth false,
     // if calls return succesful, change isAuth to false
 
     // if res.data.status === 401, redirect to refreshAuth
 
-    // useEffect(() => {
-    //   getProfile();
-    //   getTimers();
-    //   getWallet();
-    // }, []);
+    useEffect(() => {
+      getProfile();
+      getTimers();
+      getWallet();
+    }, [isAuthenticated]);
   }
 
   // TODO: check for access and refresh tokens and if not present, render the login pg
