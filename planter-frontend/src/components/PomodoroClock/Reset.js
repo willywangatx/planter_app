@@ -3,13 +3,12 @@ import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 
-const Reset = ({ resetTimers, stopTimers, timerId, refreshAuth }) => {
+const Reset = ({ resetTimers, stopTimers, timerId }) => {
   // RESET TIMERS
   const reset = (event) => {
     event.preventDefault();
-    // resetTimers({ id: timerId });
-    // stopTimers({ id: timerId });
-    refreshAuth();
+    resetTimers({ id: timerId });
+    stopTimers({ id: timerId });
   };
 
   return (
@@ -32,7 +31,6 @@ const mapStateToProps = (state) => {
 const hoc = compose(
   withRPCRedux('resetTimers'),
   withRPCRedux('stopTimers'),
-  withRPCRedux('refreshAuth'),
   connect(mapStateToProps)
 );
 

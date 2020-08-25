@@ -79,8 +79,6 @@ export default {
         return res.data;
       })
       .catch((err) => {
-        // if (err.response.status === 401) {
-        // }
         const responseError = new ResponseError(
           `Auth refresh attempt unsuccessful, error: ${err.message}`
         );
