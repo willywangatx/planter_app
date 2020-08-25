@@ -20,7 +20,6 @@ export default {
       .then((res) => {
         ctx['access_token'] = res.data.access;
         ctx['refresh_token'] = res.data.refresh;
-        console.log(res.data);
         return res.data;
       })
       .catch((err) => {
@@ -30,17 +29,16 @@ export default {
   },
 
   login: async (args, ctx) => {
-    console.log(ctx);
+    // console.log(ctx);
     const result = await axios({
       method: 'POST',
       url: 'http://localhost:8000/api/login/',
       data: args,
     })
       .then((res) => {
-        // ctx['username'] = res.data.username;
         ctx['access_token'] = res.data.access;
         ctx['refresh_token'] = res.data.refresh;
-        // console.log(ctx['access_token'], ctx['refresh_token']);
+        console.log(`Logged in, refresh token: ${ctx.refresh_token}`);
         return res.data;
       })
       .catch((err) => {
@@ -55,22 +53,34 @@ export default {
 
   refreshAuth: async (args, ctx) => {
     // const headers = { Authorization: `Bearer ${ctx.access_token}` };
+    console.log(ctx.refresh_token);
     const data = { refresh: ctx.refresh_token };
     const result = await axios({
       method: 'POST',
-      // headers,
       url: 'http://localhost:8000/api/refreshAuth/',
+      // headers,
       data,
     })
       .then((res) => {
-        // ctx['username'] = res.data.username;
-        ctx['access_token'] = res.data.access;
-        ctx['refresh_token'] = res.data.refresh;
-        console.log(res.data);
+        if (res.data.access) {
+          ctx.access_token = res.data.access;
+        }
+
+        if (res.data.refresh) {
+          ctx.refresh_token = res.data.refresh;
+        }
+        // if (res.data.access || res.data.refresh) {
+        //   ctx.access_token = res.data.access;
+        //   ctx.refresh_token = res.data.refresh;
+        // }
+
+        // console.log(res.data);
+        // return res.data;
         return res.data;
       })
       .catch((err) => {
-        console.log(err);
+        // if (err.response.status === 401) {
+        // }
         const responseError = new ResponseError(
           `Auth refresh attempt unsuccessful, error: ${err.message}`
         );
@@ -87,13 +97,7 @@ export default {
       url: 'http://localhost:8000/api/getProfile/',
     })
       .then((res) => {
-        console.log(res);
-        // if (res.status === 401) {
-        //   // call refreshAuth here
-        //   console.log('CALLING REFRESH AUTH');
-        //   refreshAuth();
-        //   return res.data;
-        // }
+        console.log(res.data);
         return res.data;
       })
       .catch((err) => {
@@ -136,6 +140,7 @@ export default {
       data: args,
     })
       .then((res) => {
+        console.log(res.data);
         return res.data;
       })
       .catch((err) => {

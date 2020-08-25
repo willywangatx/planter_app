@@ -2,8 +2,6 @@ import reduceReducers from 'reduce-reducers';
 
 import { createRPCReducer } from 'fusion-plugin-rpc-redux-react';
 
-const timers = { focus_time: 25, break_time: 5 };
-
 const DEFAULT_STATE = {
   loading: false,
   error: null,

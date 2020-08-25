@@ -16,32 +16,34 @@ export default createPlugin({
       // happnens before virtual dom rendering
 
       const session = Session.from(ctx);
+      // console.log(session);
       ctx['access_token'] = session.get('access_token');
       ctx['refresh_token'] = session.get('refresh_token');
       // console.log(session.access_token, session.refresh_token);
 
-      const hasAuthTokens =
-        session.get('access_token') && session.get('refresh_token');
+      // const hasAuthTokens =
+      //   session.get('access_token') && session.get('refresh_token');
 
-      const userAuth =
-        ctx.path.startsWith('/api/login') ||
-        ctx.path.startsWith('/api/register');
+      // const userAuthRoute =
+      //   ctx.path.startsWith('/api/login') ||
+      //   ctx.path.startsWith('/api/register');
 
-      const apiCall = ctx.path.startsWith('/api');
+      // const apiCall = ctx.path.startsWith('/api');
 
-      if (!hasAuthTokens && !userAuth && apiCall) {
-        // const responseError = new ResponseError(`testing auth error code`);
-        // throw responseError;
-        ctx.status = 200;
-        ctx.body = {
-          status: 'failure',
-          data: {
-            message: 'test auth error code',
-            code: 'NOT_LOGGED_IN',
-          },
-        };
-        return;
-      }
+      // if (!hasAuthTokens && !userAuthRoute && apiCall) {
+      //   // const responseError = new ResponseError(`testing auth error code`);
+      //   // throw responseError;
+      //   ctx.status = 200;
+      //   ctx.body = {
+      //     status: 'failure',
+      //     data: {
+      //       message: 'User not authenticated, log in',
+      //       code: 'NOT_LOGGED_IN',
+      //     },
+      //   };
+      //   return;
+      // }
+
       await next();
 
       // happens after virtual dom rendering but before response sent to browser
