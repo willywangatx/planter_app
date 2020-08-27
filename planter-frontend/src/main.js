@@ -30,10 +30,10 @@ export default () => {
   }
 
   if (__NODE__) {
-    const handlers = require('./rpc/index').default;
+    const defaultHandlers = require('./rpc/index').default;
     const AuthPlugin = require('./plugins/auth.js').default;
     app.register(AuthPlugin);
-    app.register(RPCHandlersToken, handlers);
+    app.register(RPCHandlersToken, defaultHandlers);
     //jwt session adds cookie to request
     app.register(SessionToken, JWTSession);
     app.register(SessionSecretToken, 'some-secret');
