@@ -26,11 +26,11 @@ export default reduceReducers(
       };
     },
     failure: (state, { payload }) => {
-      if (payload.data.code == 'NOT_LOGGED_IN') {
-        return {
-          ...state,
-        };
-      }
+      // if (payload.data.code == 'NOT_LOGGED_IN') {
+      //   return {
+      //     ...state,
+      //   };
+      // }
       return {
         ...state,
         loading: false,

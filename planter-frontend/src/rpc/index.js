@@ -95,11 +95,35 @@ export default {
       url: 'http://localhost:8000/api/getProfile/',
     })
       .then((res) => {
-        console.log(res.data);
         return res.data;
       })
       .catch((err) => {
-        console.log(err);
+        if (err.response.status === 401) {
+          // const tokenRefresh = async () => {
+          //   const result = await refreshAuth();
+          //   return result;
+          // refreshAuth(args, ctx)
+          //   .then(() => {
+          //     getProfile(args, ctx)
+          //       .then((res) => {
+          //         return res.data;
+          //       })
+          //       .catch((err) => {
+          //         const responseError = new ResponseError(
+          //           `Attempt to retrieve profile after auth refresh unsuccesful, error: ${err.message}`
+          //         );
+          //         throw responseError;
+          //       });
+          //   })
+          //   .catch((err) => {
+          //     const responseError = new ResponseError(
+          //       `Attempt to refresh auth unsuccesful, error: ${err.message}`
+          //     );
+          //     console.log(responseError);
+          //     throw responseError;
+          //   });
+        }
+
         const responseError = new ResponseError(
           `Could not load profile data, error: ${err.message}`
         );

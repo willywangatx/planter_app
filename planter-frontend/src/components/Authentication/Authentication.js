@@ -46,7 +46,8 @@ const Authentication = ({
       getWallet();
     }
     if (!isAuthenticated) {
-      refreshAuth();
+      // refreshAuth();
+      getProfile();
     }
   }, [isAuthenticated]);
 

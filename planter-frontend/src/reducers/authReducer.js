@@ -17,7 +17,6 @@ export default reduceReducers(
       return { ...state, loading: true, error: null };
     },
     success: (state, { payload }) => {
-      console.log(payload);
       return {
         ...state,
         loading: false,
@@ -27,13 +26,13 @@ export default reduceReducers(
       };
     },
     failure: (state, { payload }) => {
-      if (payload.data.code == 'NOT_LOGGED_IN') {
-        return {
-          ...state,
-          loading: false,
-          didAttempt: true,
-        };
-      }
+      // if (payload.data.code == 'NOT_LOGGED_IN') {
+      //   return {
+      //     ...state,
+      //     loading: false,
+      //     didAttempt: true,
+      //   };
+      // }
 
       return {
         ...state,
@@ -57,11 +56,11 @@ export default reduceReducers(
       };
     },
     failure: (state, { payload }) => {
-      if (payload.data.code == 'NOT_LOGGED_IN') {
-        return {
-          ...state,
-        };
-      }
+      // if (payload.data.code == 'NOT_LOGGED_IN') {
+      //   return {
+      //     ...state,
+      //   };
+      // }
       return {
         ...state,
         loading: false,
