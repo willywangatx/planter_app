@@ -25,9 +25,10 @@ const Authentication = ({
     return <PomodoroClock />;
   }
 
-  <Router>
-    <Switch></Switch>
-  </Router>;
+  // <Router>
+  //   {/* location: location.pathname in client  */}
+  //   <Switch></Switch>
+  // </Router>;
 
   return (
     <>
