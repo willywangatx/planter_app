@@ -2,22 +2,22 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "b018f73126d9e13fd662",
+  "hash": "a52e67be5116797f2bb2",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "b018f73126d9e13fd662",
-      "time": 301,
-      "builtAt": 1598637944433,
+      "hash": "a52e67be5116797f2bb2",
+      "time": 340,
+      "builtAt": 1598646415238,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.2e790394db5d1693d7ea.hot-update.js",
+          "main.7864f4b12caaa37c8b6f.hot-update.js",
           "server-main.js.map",
-          "main.2e790394db5d1693d7ea.hot-update.js.map"
+          "main.7864f4b12caaa37c8b6f.hot-update.js.map"
         ]
       },
       "assets": [
@@ -30,7 +30,7 @@
           "emitted": false
         },
         {
-          "name": "2e790394db5d1693d7ea.hot-update.json",
+          "name": "7864f4b12caaa37c8b6f.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.2e790394db5d1693d7ea.hot-update.js",
-          "size": 5167,
+          "name": "main.7864f4b12caaa37c8b6f.hot-update.js",
+          "size": 10868,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.2e790394db5d1693d7ea.hot-update.js.map",
-          "size": 1428,
+          "name": "main.7864f4b12caaa37c8b6f.hot-update.js.map",
+          "size": 12135,
           "chunks": [
             "main"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 197893,
+          "size": 198414,
           "chunks": [
             "main"
           ],
@@ -83,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 141968,
+          "size": 142596,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.2e790394db5d1693d7ea.hot-update.js",
+            "main.7864f4b12caaa37c8b6f.hot-update.js",
             "server-main.js.map",
-            "main.2e790394db5d1693d7ea.hot-update.js.map"
+            "main.7864f4b12caaa37c8b6f.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.2e790394db5d1693d7ea.hot-update.js",
+            "main.7864f4b12caaa37c8b6f.hot-update.js",
             "server-main.js.map",
-            "main.2e790394db5d1693d7ea.hot-update.js.map"
+            "main.7864f4b12caaa37c8b6f.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -133,17 +133,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 89096,
+          "size": 89617,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.2e790394db5d1693d7ea.hot-update.js",
+            "main.7864f4b12caaa37c8b6f.hot-update.js",
             "server-main.js.map",
-            "main.2e790394db5d1693d7ea.hot-update.js.map"
+            "main.7864f4b12caaa37c8b6f.hot-update.js.map"
           ],
-          "hash": "9955a2446d2fe8052efb",
+          "hash": "393a608dc2def010de81",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -2121,7 +2121,7 @@
               "name": "./src/components/PomodoroClock/StartStop.js",
               "index": 45,
               "index2": 38,
-              "size": 3231,
+              "size": 3754,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2198,7 +2198,7 @@
               ],
               "optimizationBailout": [],
               "depth": 7,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  updateEnergy,\n  updateCompletedFocusMinutes,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCurrentTimes,\n  focusTime\n}) => {\n  const dispatch = useDispatch(); // stops the timer when the time runs to 0\n\n  useEffect(() => {\n    // if (currentFocusTime === 0 || currentBreakTime === 0) {\n    //   stopTimers({ id: timerId });\n    // }\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n      updateEnergy({\n        focus_time: focusTime\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // toggles the timer between start and stop\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n      updateCurrentTimes({\n        id: timerId,\n        current_focus_time: currentFocusTime,\n        current_break_time: currentBreakTime\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 100);\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 78\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 79\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  const focusTime = state.timers.focus_time;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle,\n    focusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCurrentTimes'), withRPCRedux('updateCompletedFocusMinutes'), withRPCRedux('updateEnergy'));\nexport default hoc(StartStop);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  updateEnergy,\n  updateCompletedFocusMinutes,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCurrentTimes,\n  focusTime\n}) => {\n  const dispatch = useDispatch(); // UPDATE BACKEND WITH CURRENT TIME EVERY 10 SECONDS WHEN isStarted\n  // TODO: current times that are passed to BE are not changing every 10 sec - is the same\n  // useEffect(() => {\n  //   let interval;\n  //   if (!isStarted) {\n  //     return clearInterval(interval);\n  //   }\n  //   if (isStarted) {\n  //     interval = setInterval(() => {\n  //       updateCurrentTimes({\n  //         id: timerId,\n  //         current_focus_time: currentFocusTime,\n  //         current_break_time: currentBreakTime,\n  //       });\n  //     }, 10000);\n  //     return () => clearInterval(interval);\n  //   }\n  // }, [isStarted]);\n  // TIMER LOGIC WHEN TIME REACHES ZERO\n\n  useEffect(() => {\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n      updateEnergy({\n        focus_time: focusTime\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // START AND STOP TIMER LOGIC\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n      updateCurrentTimes({\n        id: timerId,\n        current_focus_time: currentFocusTime,\n        current_break_time: currentBreakTime\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TIMER SECONDS COUNTDOWN LOGIC\n  // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 100);\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 96\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 97\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  const focusTime = state.timers.focus_time;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle,\n    focusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCurrentTimes'), withRPCRedux('updateCompletedFocusMinutes'), withRPCRedux('updateEnergy'));\nexport default hoc(StartStop);"
             },
             {
               "id": "./src/components/PomodoroClock/Timer.js",
@@ -3049,9 +3049,9 @@
               "name": "./src/reducers/timersReducer.js",
               "index": 65,
               "index2": 61,
-              "size": 8561,
+              "size": 8559,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -3111,7 +3111,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  id: null,\n  focus_time: 25 * 60,\n  break_time: 5 * 60,\n  current_focus_time: 25 * 60,\n  current_break_time: 5 * 60,\n  current_cycle: 'Focus',\n  is_started: false,\n  completed_focus_minutes: 0,\n  profile: null\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('getTimers', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    return { ...state,\n      loading: false,\n      ...payload.timers[0] // is_started: false,\n      // focus_time: payload.timers[0].focus_time,\n      // break_time: payload.timers[0].break_time,\n      // TODO: add if statement for error handling for unauthroized - redirect to login\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => ({ ...state,\n    loading: false,\n    error: payload\n  })\n}), createRPCReducer('resetTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_focus_time: state.focus_time,\n      current_break_time: state.break_time\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: 60 + state.focus_time,\n      current_focus_time: state.current_focus_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_cycle; // delete newTimer.current_break_time;\n    // delete newTimer.current_cycle;\n\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: state.focus_time <= 60 ? state.focus_time === 60 : state.focus_time - 60,\n      current_focus_time: state.current_focus_time <= 60 ? state.current_focus_time : state.current_focus_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time + 60,\n      current_break_time: state.current_break_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time <= 60 ? state.break_time === 60 : state.break_time - 60,\n      current_break_time: state.current_break_time <= 60 ? state.current_break_time : state.current_break_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('setCycle', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_cycle: state.current_cycle === 'Focus' ? 'Break' : 'Focus'\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    delete newTimer.current_cycle;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('startTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: true\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      is_started: payload.timers.is_started\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('stopTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: false\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: true,\n      ...newTimer\n    };\n  },\n  error: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), // FE only state change for current time\n(state, action) => {\n  switch (action.type) {\n    case 'DECREMENT_CURRENT_FOCUS_TIME':\n      return { ...state,\n        current_focus_time: state.current_focus_time - 1\n      };\n\n    case 'DECREMENT_CURRENT_BREAK_TIME':\n      return { ...state,\n        current_break_time: state.current_break_time - 1\n      };\n\n    default:\n      return state;\n  }\n}, createRPCReducer('updateCurrentTimes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('updateCompletedFocusMinutes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      completed_focus_minutes: state.focus_time / 60 + state.completed_focus_minutes\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      completed_focus_minutes: payload.timers.completed_focus_minutes\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n})); // createRPCReducer('startStopToggle', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       is_started: !state.is_started,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       is_started: payload.timers.is_started,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// }),\n// createRPCReducer('updateCurrentFocusTime', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       current_focus_time: state.current_focus_time - 60,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       current_focus_time: payload.timers.current_focus_time,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// })"
+              "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  id: null,\n  focus_time: 25 * 60,\n  break_time: 5 * 60,\n  current_focus_time: 25 * 60,\n  current_break_time: 5 * 60,\n  current_cycle: 'Focus',\n  is_started: false,\n  completed_focus_minutes: 0,\n  profile: null\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('getTimers', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    return { ...state,\n      loading: false,\n      ...payload.timers[0] // is_started: false,\n      // focus_time: payload.timers[0].focus_time,\n      // break_time: payload.timers[0].break_time,\n      // TODO: add if statement for error handling for unauthroized - redirect to login\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => ({ ...state,\n    loading: false,\n    error: payload\n  })\n}), createRPCReducer('resetTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_focus_time: state.focus_time,\n      current_break_time: state.break_time\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: 60 + state.focus_time,\n      current_focus_time: state.current_focus_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_cycle; // delete newTimer.current_break_time;\n    // delete newTimer.current_cycle;\n\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: state.focus_time <= 60 ? state.focus_time === 60 : state.focus_time - 60,\n      current_focus_time: state.current_focus_time <= 60 ? state.current_focus_time : state.current_focus_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time + 60,\n      current_break_time: state.current_break_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time <= 60 ? state.break_time === 60 : state.break_time - 60,\n      current_break_time: state.current_break_time <= 60 ? state.current_break_time : state.current_break_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('setCycle', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_cycle: state.current_cycle === 'Focus' ? 'Break' : 'Focus'\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    delete newTimer.current_cycle;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('startTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: true\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      is_started: payload.timers.is_started\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('stopTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: false\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: true,\n      ...newTimer\n    };\n  },\n  error: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), // FE only state change for current time\n(state, action) => {\n  switch (action.type) {\n    case 'DECREMENT_CURRENT_FOCUS_TIME':\n      return { ...state,\n        current_focus_time: state.current_focus_time - 1\n      };\n\n    case 'DECREMENT_CURRENT_BREAK_TIME':\n      return { ...state,\n        current_break_time: state.current_break_time - 1\n      };\n\n    default:\n      return state;\n  }\n}, createRPCReducer('updateCurrentTimes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false // ...newTimer,\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('updateCompletedFocusMinutes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      completed_focus_minutes: state.focus_time / 60 + state.completed_focus_minutes\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      completed_focus_minutes: payload.timers.completed_focus_minutes\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n})); // createRPCReducer('startStopToggle', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       is_started: !state.is_started,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       is_started: payload.timers.is_started,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// }),\n// createRPCReducer('updateCurrentFocusTime', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       current_focus_time: state.current_focus_time - 60,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       current_focus_time: payload.timers.current_focus_time,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// })"
             },
             {
               "id": "./src/reducers/walletReducer.js",
@@ -3191,7 +3191,7 @@
               "index2": 52,
               "size": 1695,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -4900,7 +4900,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "125:46-58"
+                  "loc": "141:46-58"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -4909,7 +4909,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "125:75-87"
+                  "loc": "141:75-87"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -4918,7 +4918,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "125:103-115"
+                  "loc": "141:103-115"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -4927,7 +4927,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "125:139-151"
+                  "loc": "141:139-151"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -4936,7 +4936,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "125:184-196"
+                  "loc": "141:184-196"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -6884,7 +6884,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "24:2-11"
+                  "loc": "42:2-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6893,7 +6893,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "69:2-11"
+                  "loc": "85:2-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6902,7 +6902,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "91:9-14"
+                  "loc": "107:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6911,7 +6911,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "91:29-34"
+                  "loc": "107:29-34"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -6920,7 +6920,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "97:5-10"
+                  "loc": "113:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -7419,7 +7419,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "125:20-27"
+                  "loc": "141:20-27"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -7790,7 +7790,7 @@
                   "moduleName": "./src/components/PomodoroClock/StartStop.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "125:12-19"
+                  "loc": "141:12-19"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -10002,7 +10002,7 @@
           "name": "./src/components/PomodoroClock/StartStop.js",
           "index": 45,
           "index2": 38,
-          "size": 3231,
+          "size": 3754,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -10079,7 +10079,7 @@
           ],
           "optimizationBailout": [],
           "depth": 7,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  updateEnergy,\n  updateCompletedFocusMinutes,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCurrentTimes,\n  focusTime\n}) => {\n  const dispatch = useDispatch(); // stops the timer when the time runs to 0\n\n  useEffect(() => {\n    // if (currentFocusTime === 0 || currentBreakTime === 0) {\n    //   stopTimers({ id: timerId });\n    // }\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n      updateEnergy({\n        focus_time: focusTime\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // toggles the timer between start and stop\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n      updateCurrentTimes({\n        id: timerId,\n        current_focus_time: currentFocusTime,\n        current_break_time: currentBreakTime\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 100);\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 78\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 79\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  const focusTime = state.timers.focus_time;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle,\n    focusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCurrentTimes'), withRPCRedux('updateCompletedFocusMinutes'), withRPCRedux('updateEnergy'));\nexport default hoc(StartStop);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  updateEnergy,\n  updateCompletedFocusMinutes,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCurrentTimes,\n  focusTime\n}) => {\n  const dispatch = useDispatch(); // UPDATE BACKEND WITH CURRENT TIME EVERY 10 SECONDS WHEN isStarted\n  // TODO: current times that are passed to BE are not changing every 10 sec - is the same\n  // useEffect(() => {\n  //   let interval;\n  //   if (!isStarted) {\n  //     return clearInterval(interval);\n  //   }\n  //   if (isStarted) {\n  //     interval = setInterval(() => {\n  //       updateCurrentTimes({\n  //         id: timerId,\n  //         current_focus_time: currentFocusTime,\n  //         current_break_time: currentBreakTime,\n  //       });\n  //     }, 10000);\n  //     return () => clearInterval(interval);\n  //   }\n  // }, [isStarted]);\n  // TIMER LOGIC WHEN TIME REACHES ZERO\n\n  useEffect(() => {\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n      updateEnergy({\n        focus_time: focusTime\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // START AND STOP TIMER LOGIC\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n      updateCurrentTimes({\n        id: timerId,\n        current_focus_time: currentFocusTime,\n        current_break_time: currentBreakTime\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TIMER SECONDS COUNTDOWN LOGIC\n  // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 100);\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 96\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 97\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  const focusTime = state.timers.focus_time;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle,\n    focusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCurrentTimes'), withRPCRedux('updateCompletedFocusMinutes'), withRPCRedux('updateEnergy'));\nexport default hoc(StartStop);"
         },
         {
           "id": "./src/components/PomodoroClock/Timer.js",
@@ -10930,9 +10930,9 @@
           "name": "./src/reducers/timersReducer.js",
           "index": 65,
           "index2": 61,
-          "size": 8561,
+          "size": 8559,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -10992,7 +10992,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  id: null,\n  focus_time: 25 * 60,\n  break_time: 5 * 60,\n  current_focus_time: 25 * 60,\n  current_break_time: 5 * 60,\n  current_cycle: 'Focus',\n  is_started: false,\n  completed_focus_minutes: 0,\n  profile: null\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('getTimers', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    return { ...state,\n      loading: false,\n      ...payload.timers[0] // is_started: false,\n      // focus_time: payload.timers[0].focus_time,\n      // break_time: payload.timers[0].break_time,\n      // TODO: add if statement for error handling for unauthroized - redirect to login\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => ({ ...state,\n    loading: false,\n    error: payload\n  })\n}), createRPCReducer('resetTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_focus_time: state.focus_time,\n      current_break_time: state.break_time\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: 60 + state.focus_time,\n      current_focus_time: state.current_focus_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_cycle; // delete newTimer.current_break_time;\n    // delete newTimer.current_cycle;\n\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: state.focus_time <= 60 ? state.focus_time === 60 : state.focus_time - 60,\n      current_focus_time: state.current_focus_time <= 60 ? state.current_focus_time : state.current_focus_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time + 60,\n      current_break_time: state.current_break_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time <= 60 ? state.break_time === 60 : state.break_time - 60,\n      current_break_time: state.current_break_time <= 60 ? state.current_break_time : state.current_break_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('setCycle', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_cycle: state.current_cycle === 'Focus' ? 'Break' : 'Focus'\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    delete newTimer.current_cycle;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('startTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: true\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      is_started: payload.timers.is_started\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('stopTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: false\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: true,\n      ...newTimer\n    };\n  },\n  error: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), // FE only state change for current time\n(state, action) => {\n  switch (action.type) {\n    case 'DECREMENT_CURRENT_FOCUS_TIME':\n      return { ...state,\n        current_focus_time: state.current_focus_time - 1\n      };\n\n    case 'DECREMENT_CURRENT_BREAK_TIME':\n      return { ...state,\n        current_break_time: state.current_break_time - 1\n      };\n\n    default:\n      return state;\n  }\n}, createRPCReducer('updateCurrentTimes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('updateCompletedFocusMinutes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      completed_focus_minutes: state.focus_time / 60 + state.completed_focus_minutes\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      completed_focus_minutes: payload.timers.completed_focus_minutes\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n})); // createRPCReducer('startStopToggle', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       is_started: !state.is_started,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       is_started: payload.timers.is_started,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// }),\n// createRPCReducer('updateCurrentFocusTime', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       current_focus_time: state.current_focus_time - 60,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       current_focus_time: payload.timers.current_focus_time,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// })"
+          "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  id: null,\n  focus_time: 25 * 60,\n  break_time: 5 * 60,\n  current_focus_time: 25 * 60,\n  current_break_time: 5 * 60,\n  current_cycle: 'Focus',\n  is_started: false,\n  completed_focus_minutes: 0,\n  profile: null\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('getTimers', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    return { ...state,\n      loading: false,\n      ...payload.timers[0] // is_started: false,\n      // focus_time: payload.timers[0].focus_time,\n      // break_time: payload.timers[0].break_time,\n      // TODO: add if statement for error handling for unauthroized - redirect to login\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => ({ ...state,\n    loading: false,\n    error: payload\n  })\n}), createRPCReducer('resetTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_focus_time: state.focus_time,\n      current_break_time: state.break_time\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: 60 + state.focus_time,\n      current_focus_time: state.current_focus_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_cycle; // delete newTimer.current_break_time;\n    // delete newTimer.current_cycle;\n\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementFocusTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      focus_time: state.focus_time <= 60 ? state.focus_time === 60 : state.focus_time - 60,\n      current_focus_time: state.current_focus_time <= 60 ? state.current_focus_time : state.current_focus_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    console.log(payload);\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('incrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time + 60,\n      current_break_time: state.current_break_time + 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('decrementBreakTime', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      break_time: state.break_time <= 60 ? state.break_time === 60 : state.break_time - 60,\n      current_break_time: state.current_break_time <= 60 ? state.current_break_time : state.current_break_time - 60\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    return { ...state,\n      loading: false,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('setCycle', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      current_cycle: state.current_cycle === 'Focus' ? 'Break' : 'Focus'\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    delete newTimer.current_cycle;\n    return { ...state,\n      loading: false,\n      error: null,\n      ...newTimer\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('startTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: true\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      is_started: payload.timers.is_started\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('stopTimers', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      is_started: false\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_cycle;\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: true,\n      ...newTimer\n    };\n  },\n  error: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), // FE only state change for current time\n(state, action) => {\n  switch (action.type) {\n    case 'DECREMENT_CURRENT_FOCUS_TIME':\n      return { ...state,\n        current_focus_time: state.current_focus_time - 1\n      };\n\n    case 'DECREMENT_CURRENT_BREAK_TIME':\n      return { ...state,\n        current_break_time: state.current_break_time - 1\n      };\n\n    default:\n      return state;\n  }\n}, createRPCReducer('updateCurrentTimes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    const newTimer = { ...payload.timers\n    };\n    delete newTimer.current_focus_time;\n    delete newTimer.current_break_time;\n    delete newTimer.is_started;\n    return { ...state,\n      loading: false // ...newTimer,\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n}), createRPCReducer('updateCompletedFocusMinutes', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null,\n      completed_focus_minutes: state.focus_time / 60 + state.completed_focus_minutes\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      completed_focus_minutes: payload.timers.completed_focus_minutes\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      error: payload\n    };\n  }\n})); // createRPCReducer('startStopToggle', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       is_started: !state.is_started,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       is_started: payload.timers.is_started,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// }),\n// createRPCReducer('updateCurrentFocusTime', {\n//   start: (state) => {\n//     return {\n//       ...state,\n//       loading: true,\n//       error: null,\n//       current_focus_time: state.current_focus_time - 60,\n//     };\n//   },\n//   success: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       current_focus_time: payload.timers.current_focus_time,\n//     };\n//   },\n//   failure: (state, { payload }) => {\n//     return {\n//       ...state,\n//       loading: false,\n//       error: payload,\n//     };\n//   },\n// })"
         },
         {
           "id": "./src/reducers/walletReducer.js",
@@ -11072,7 +11072,7 @@
           "index2": 52,
           "size": 1695,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -12781,7 +12781,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "125:46-58"
+              "loc": "141:46-58"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -12790,7 +12790,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "125:75-87"
+              "loc": "141:75-87"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -12799,7 +12799,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "125:103-115"
+              "loc": "141:103-115"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -12808,7 +12808,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "125:139-151"
+              "loc": "141:139-151"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -12817,7 +12817,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "125:184-196"
+              "loc": "141:184-196"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -14765,7 +14765,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "24:2-11"
+              "loc": "42:2-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -14774,7 +14774,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "69:2-11"
+              "loc": "85:2-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -14783,7 +14783,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "91:9-14"
+              "loc": "107:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -14792,7 +14792,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "91:29-34"
+              "loc": "107:29-34"
             },
             {
               "moduleId": "./src/components/PomodoroClock/StartStop.js",
@@ -14801,7 +14801,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "97:5-10"
+              "loc": "113:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -15300,7 +15300,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "125:20-27"
+              "loc": "141:20-27"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",
@@ -15671,7 +15671,7 @@
               "moduleName": "./src/components/PomodoroClock/StartStop.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "125:12-19"
+              "loc": "141:12-19"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Timer.js",

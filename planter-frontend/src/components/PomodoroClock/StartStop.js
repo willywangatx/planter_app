@@ -21,12 +21,29 @@ const StartStop = ({
   focusTime,
 }) => {
   const dispatch = useDispatch();
-  // stops the timer when the time runs to 0
 
+  // UPDATE BACKEND WITH CURRENT TIME EVERY 10 SECONDS WHEN isStarted
+  // TODO: current times that are passed to BE are not changing every 10 sec - is the same
+
+  // useEffect(() => {
+  //   let interval;
+  //   if (!isStarted) {
+  //     return clearInterval(interval);
+  //   }
+  //   if (isStarted) {
+  //     interval = setInterval(() => {
+  //       updateCurrentTimes({
+  //         id: timerId,
+  //         current_focus_time: currentFocusTime,
+  //         current_break_time: currentBreakTime,
+  //       });
+  //     }, 10000);
+  //     return () => clearInterval(interval);
+  //   }
+  // }, [isStarted]);
+
+  // TIMER LOGIC WHEN TIME REACHES ZERO
   useEffect(() => {
-    // if (currentFocusTime === 0 || currentBreakTime === 0) {
-    //   stopTimers({ id: timerId });
-    // }
     if (currentFocusTime === 0) {
       stopTimers({ id: timerId });
       updateCompletedFocusMinutes({ id: timerId });
@@ -40,7 +57,7 @@ const StartStop = ({
     }
   }, [currentFocusTime, currentBreakTime]);
 
-  // toggles the timer between start and stop
+  // START AND STOP TIMER LOGIC
   const startStopTimer = (event) => {
     event.preventDefault();
     if (isStarted) {
@@ -56,6 +73,7 @@ const StartStop = ({
     }
   };
 
+  // TIMER SECONDS COUNTDOWN LOGIC
   // TODO: ask why there is a return clear interval needed in the if (isStarted) block??
   useEffect(() => {
     let interval;
