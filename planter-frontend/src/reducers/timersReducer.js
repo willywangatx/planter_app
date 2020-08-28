@@ -29,11 +29,6 @@ export default reduceReducers(
         ...state,
         loading: false,
         ...payload.timers[0],
-        // is_started: false,
-        // focus_time: payload.timers[0].focus_time,
-        // break_time: payload.timers[0].break_time,
-
-        // TODO: add if statement for error handling for unauthroized - redirect to login
       };
     },
     failure: (state, { payload }) => ({
@@ -89,7 +84,7 @@ export default reduceReducers(
       console.log(payload);
       const newTimer = { ...payload.timers };
       delete newTimer.current_focus_time;
-      delete newTimer.current_cycle;
+      // delete newTimer.current_cycle;
       // delete newTimer.current_break_time;
       // delete newTimer.current_cycle;
       return {
@@ -114,11 +109,11 @@ export default reduceReducers(
         loading: true,
         error: null,
         focus_time:
-          state.focus_time <= 60
-            ? state.focus_time === 60
+          state.focus_time <= 300
+            ? state.focus_time === 300
             : state.focus_time - 60,
         current_focus_time:
-          state.current_focus_time <= 60
+          state.focus_time <= 300
             ? state.current_focus_time
             : state.current_focus_time - 60,
       };
@@ -214,16 +209,16 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
-      const newTimer = { ...payload.timers };
-      delete newTimer.current_focus_time;
-      delete newTimer.current_break_time;
-      delete newTimer.is_started;
-      delete newTimer.current_cycle;
+      // const newTimer = { ...payload.timers };
+      // delete newTimer.current_focus_time;
+      // delete newTimer.current_break_time;
+      // delete newTimer.is_started;
+      // delete newTimer.current_cycle;
       return {
         ...state,
         loading: false,
         error: null,
-        ...newTimer,
+        // ...newTimer,
       };
     },
     failure: (state, { payload }) => {

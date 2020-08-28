@@ -4,10 +4,8 @@ import { createRPCReducer } from 'fusion-plugin-rpc-redux-react';
 const DEFAULT_STATE = {
   loading: false,
   error: null,
-  profile: null,
   energy: null,
   coins: null,
-  id: null,
 };
 
 export default reduceReducers(

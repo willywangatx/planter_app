@@ -44,7 +44,7 @@ const AdjustTime = ({
     currentCycle === 'Focus'
       ? decrementFocusTime({
           id: timerId,
-          min_focus_time: 60,
+          min_focus_time: 300,
           current_focus_time: currentFocusTime,
         })
       : decrementBreakTime({

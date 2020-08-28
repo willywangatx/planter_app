@@ -17,10 +17,9 @@ def get_timers(request):
     # if not cycle: 
     #     return Response({'details': {'required fields': ['current_cycle']}}, status=status.HTTP_400_BAD_REQUEST) 
 
-    timers = Timer.objects.filter(profile=request.user.profile)
+    timers = Timer.objects.select_related().filter(profile=request.user.profile)
     timers.update(current_cycle='Focus')
     timers.update(is_started=False)
-    
     serializer = TimerSerializer(timers, many=True)
     data = {'timers': serializer.data, 'response': 'Timers Data successfully fetched'}
     return Response(data, status=status.HTTP_200_OK)
