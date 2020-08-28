@@ -8,6 +8,9 @@ const StartStop = ({
   // RPC handlers
   startTimers,
   stopTimers,
+  updateEnergy,
+  updateCompletedFocusMinutes,
+
   // global state props
   isStarted,
   currentFocusTime,
@@ -15,7 +18,8 @@ const StartStop = ({
   currentCycle,
   timerId,
   updateCurrentTimes,
-  updateCompletedFocusMinutes,
+  walletId,
+  focusTime,
 }) => {
   const dispatch = useDispatch();
   // stops the timer when the time runs to 0
@@ -27,6 +31,7 @@ const StartStop = ({
     if (currentFocusTime === 0) {
       stopTimers({ id: timerId });
       updateCompletedFocusMinutes({ id: timerId });
+      updateEnergy({ id: walletId, focus_time: focusTime });
     }
 
     if (currentBreakTime === 0) {
@@ -65,7 +70,7 @@ const StartStop = ({
         }
         if (currentCycle === 'Break')
           dispatch({ type: 'DECREMENT_CURRENT_BREAK_TIME' });
-      }, 1000);
+      }, 100);
       return () => clearInterval(interval);
     }
   }, [startStopTimer]);
@@ -88,6 +93,8 @@ const mapStateToProps = (state) => {
   const currentBreakTime = state.timers.current_break_time;
   const timerId = state.timers.id;
   const currentCycle = state.timers.current_cycle;
+  const walletId = state.wallet.id;
+  const focusTime = state.timers.focus_time;
 
   return {
     isStarted,
@@ -95,6 +102,8 @@ const mapStateToProps = (state) => {
     currentBreakTime,
     timerId,
     currentCycle,
+    walletId,
+    focusTime,
   };
 };
 
@@ -103,7 +112,8 @@ const hoc = compose(
   withRPCRedux('startTimers'),
   withRPCRedux('stopTimers'),
   withRPCRedux('updateCurrentTimes'),
-  withRPCRedux('updateCompletedFocusMinutes')
+  withRPCRedux('updateCompletedFocusMinutes'),
+  withRPCRedux('updateEnergy')
 );
 
 export default hoc(StartStop);

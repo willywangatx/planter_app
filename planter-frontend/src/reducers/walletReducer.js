@@ -7,6 +7,7 @@ const DEFAULT_STATE = {
   profile: null,
   energy: null,
   coins: null,
+  id: null,
 };
 
 export default reduceReducers(
@@ -24,6 +25,30 @@ export default reduceReducers(
         ...state,
         loading: false,
         ...payload.wallet,
+      };
+    },
+    failure: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    },
+  }),
+
+  createRPCReducer('updateEnergy', {
+    start: (state) => {
+      return {
+        ...state,
+        loading: true,
+        error: null,
+      };
+    },
+    success: (state, { payload }) => {
+      return {
+        ...state,
+        loading: false,
+        energy: payload.wallet.energy,
       };
     },
     failure: (state, { payload }) => {

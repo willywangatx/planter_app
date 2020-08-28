@@ -23,7 +23,7 @@ from rest_framework_simplejwt.views import (
 from profiles.views import get_profile 
 from accounts.views import create_account
 from timers.views import *
-from wallets.views import get_wallet
+from wallets.views import get_wallet, update_energy
 # from timers.views import get_timers, increment_focus_time, decrement_focus_time, increment_break_time, decrement_break_time, reset_timers
 
 urlpatterns = [
@@ -40,6 +40,8 @@ urlpatterns = [
 
     # wallet endpoints
     path('api/getWallet/', get_wallet, name='get_wallet'),
+    path('api/updateEnergy/', update_energy, name='update_energy'),
+
 
     # timers endpoints
     path('api/getTimers/', get_timers, name='get_timers'),
@@ -52,5 +54,5 @@ urlpatterns = [
     path ('api/startTimers/', start_timers, name='start_timers'),
     path('api/stopTimers/', stop_timers, name='stop_timers'),
     path('api/updateCurrentTimes/', update_current_times, name='update_current_times'),
-    path('api/updateCompletedFocusMinutes', update_completed_focus_minutes, name='update_completed_focus_minutes'),
+    path('api/updateCompletedFocusMinutes/', update_completed_focus_minutes, name='update_completed_focus_minutes'),
 ]

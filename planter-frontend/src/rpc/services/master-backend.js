@@ -5,6 +5,7 @@ const authEndpoints = ['register', 'login', 'refreshAuth'];
 const fetchUserDataEndpoints = ['getProfile', 'getTimers', 'getWallet'];
 
 const userActionEndpoints = [
+  // TIMER
   'incrementFocusTime',
   'decrementFocusTime',
   'incrementBreakTime',
@@ -15,6 +16,8 @@ const userActionEndpoints = [
   'stopTimers',
   'updateCurrentTimes',
   'updateCompletedFocusMinutes',
+  // WALLET
+  'updateEnergy',
 ];
 
 const masterBackend = {
