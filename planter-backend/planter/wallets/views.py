@@ -15,17 +15,17 @@ def get_wallet(request):
     serializer = WalletSerializer(wallet)
     data = {'wallet': serializer.data, 'response': 'Wallet Data successfully fetched'}
     return Response(data, status=status.HTTP_200_OK)
+    
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def update_energy(request):
-    wallet_id = request.data.get('id')
     focus_time = request.data.get('focus_time')
     if not id or not focus_time:
         return Response({'details': {'required fields': ['id', 'focus_time']}}, status=status.HTTP_400_BAD_REQUEST)
 
     try: 
-        wallet = Wallet.objects.get(pk= wallet_id)
+        wallet = Wallet.objects.get(profile= request.user.profile)
         wallet.energy = wallet.energy + focus_time/60
         wallet.save()
         wallet.refresh_from_db()

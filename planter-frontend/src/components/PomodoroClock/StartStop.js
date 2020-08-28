@@ -18,7 +18,6 @@ const StartStop = ({
   currentCycle,
   timerId,
   updateCurrentTimes,
-  walletId,
   focusTime,
 }) => {
   const dispatch = useDispatch();
@@ -31,7 +30,7 @@ const StartStop = ({
     if (currentFocusTime === 0) {
       stopTimers({ id: timerId });
       updateCompletedFocusMinutes({ id: timerId });
-      updateEnergy({ id: walletId, focus_time: focusTime });
+      updateEnergy({ focus_time: focusTime });
     }
 
     if (currentBreakTime === 0) {
@@ -93,7 +92,6 @@ const mapStateToProps = (state) => {
   const currentBreakTime = state.timers.current_break_time;
   const timerId = state.timers.id;
   const currentCycle = state.timers.current_cycle;
-  const walletId = state.wallet.id;
   const focusTime = state.timers.focus_time;
 
   return {
@@ -102,7 +100,6 @@ const mapStateToProps = (state) => {
     currentBreakTime,
     timerId,
     currentCycle,
-    walletId,
     focusTime,
   };
 };

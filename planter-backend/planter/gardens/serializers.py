@@ -5,4 +5,4 @@ from .models import Garden
 class GardenSerializer(serializers.ModelSerializer):
     class Meta:
         model = Garden 
-        fields = "__all__"
+        fields = ['rows', 'columns']

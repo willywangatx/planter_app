@@ -18,6 +18,7 @@ const PomodoroClock = ({
   profileLoading,
   profileError,
   profileData,
+  walletData,
 }) => {
   if (profileLoading) {
     return <div>loading</div>;
@@ -35,9 +36,7 @@ const PomodoroClock = ({
     return <div>{timersError.message}</div>;
   }
 
-  const shownProfileData = profileLoading
-    ? 'loading'
-    : { profileData, timersData };
+  const shownProfileData = profileLoading ? 'loading' : { walletData };
 
   return (
     <>
@@ -72,6 +71,7 @@ const mapStateToProps = (state) => {
   const timersError = state.timers.error;
   const timersData = state.timers;
   const timerId = state.timers.id;
+  const walletData = state.wallet;
 
   return {
     profileLoading,
@@ -81,6 +81,7 @@ const mapStateToProps = (state) => {
     timersError,
     timersData,
     timerId,
+    walletData,
   };
 };
 

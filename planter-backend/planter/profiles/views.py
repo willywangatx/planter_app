@@ -6,23 +6,13 @@ from rest_framework import status
 
 from .serializers import ProfileSerializer
 from .models import Profile
-# from accounts.models import Account
-# from timers.serializers import TimerSerializer
 
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def get_profile(request):
-    
     serializer = ProfileSerializer(request.user.profile)
-
-    # timer_serializer = TimerSerializer(request.user.profile.timer)
-
-
-    # TODO: have profile point to specific users profile
     data = {'profile': serializer.data, 'response': 'Profile Data successfully fetched'}
-    # data = {'profile': profile_serializer.data, 'timer': timer_serializer.data, 'response': 'Profile Data successfully fetched'}
-    # profile = users[]
     return Response(data, status=status.HTTP_200_OK)
 
 
