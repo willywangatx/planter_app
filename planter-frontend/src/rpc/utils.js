@@ -39,25 +39,31 @@ export const fireBackendCall = (
         if (res.data.refresh) {
           ctx.refresh_token = res.data.refresh;
         }
-        // return resolve({body: res.data, initialArgs: args})
         return resolve(res.data);
       })
       .catch((err) => {
         if (wtihRefresh && err.response && err.response.status === 401) {
           // TODO: do i need to add data
-          refreshAuth(backend, ctx).then(() => {
-            fireBackendCall(backend, endpoint, args, ctx, false)
-              .then((res) => {
-                return resolve(res.data);
-              })
-              .catch((err) => {
-                const responseError = new ResponseError(
-                  `Call to endpoint ${endpoint} unsuccessful after auth refresh, error: ${err.message}`
-                );
-                return reject(responseError);
-                // return reject(err)
-              });
-          });
+          refreshAuth(backend, ctx)
+            .then(() => {
+              fireBackendCall(backend, endpoint, args, ctx, false)
+                .then((res) => {
+                  return resolve(res);
+                })
+                .catch((err) => {
+                  const responseError = new ResponseError(
+                    `Call to endpoint ${endpoint} unsuccessful after auth refresh, error: ${err.message}`
+                  );
+                  return reject(responseError);
+                  // return reject(err)
+                });
+            })
+            .catch((err) => {
+              const responseError = new ResponseError(
+                `call to endpoint ${endpoint} unsuccessful, error: ${err.message}`
+              );
+              return reject(responseError);
+            });
         } else {
           const responseError = new ResponseError(
             `Call to endpoint ${endpoint} unsuccessful, error: ${err.message}`
@@ -74,7 +80,7 @@ const refreshAuth = (backend, ctx) => {
   return new Promise((resolve, reject) => {
     axios({
       method: 'POST',
-      url: `${backend.basePath}/${backend.endpoints['refreshAuth']}`,
+      url: `${backend.basePath}/refreshAuth/`,
       data,
     })
       .then((res) => {
@@ -91,6 +97,7 @@ const refreshAuth = (backend, ctx) => {
         const responseError = new ResponseError(
           `Attempted auth refresh unsuccessful, error: ${err.message}`
         );
+        console.log(responseError);
         return reject(responseError);
       });
   });

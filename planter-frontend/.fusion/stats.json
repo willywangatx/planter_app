@@ -2,22 +2,22 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "ee21893b3afc61937a30",
+  "hash": "a023bbff1b3cc5417b1a",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "ee21893b3afc61937a30",
-      "time": 97,
-      "builtAt": 1598562455942,
+      "hash": "a023bbff1b3cc5417b1a",
+      "time": 46,
+      "builtAt": 1598572142546,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.d8c44b7262c6953f3f3f.hot-update.js",
+          "main.817987d9965536382fde.hot-update.js",
           "server-main.js.map",
-          "main.d8c44b7262c6953f3f3f.hot-update.js.map"
+          "main.817987d9965536382fde.hot-update.js.map"
         ]
       },
       "assets": [
@@ -30,7 +30,7 @@
           "emitted": false
         },
         {
-          "name": "d8c44b7262c6953f3f3f.hot-update.json",
+          "name": "817987d9965536382fde.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.d8c44b7262c6953f3f3f.hot-update.js",
-          "size": 4868,
+          "name": "main.817987d9965536382fde.hot-update.js",
+          "size": 14959,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.d8c44b7262c6953f3f3f.hot-update.js.map",
-          "size": 4353,
+          "name": "main.817987d9965536382fde.hot-update.js.map",
+          "size": 15936,
           "chunks": [
             "main"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 191856,
+          "size": 192173,
           "chunks": [
             "main"
           ],
@@ -83,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 142605,
+          "size": 143016,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.d8c44b7262c6953f3f3f.hot-update.js",
+            "main.817987d9965536382fde.hot-update.js",
             "server-main.js.map",
-            "main.d8c44b7262c6953f3f3f.hot-update.js.map"
+            "main.817987d9965536382fde.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.d8c44b7262c6953f3f3f.hot-update.js",
+            "main.817987d9965536382fde.hot-update.js",
             "server-main.js.map",
-            "main.d8c44b7262c6953f3f3f.hot-update.js.map"
+            "main.817987d9965536382fde.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -133,17 +133,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 88488,
+          "size": 88755,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.d8c44b7262c6953f3f3f.hot-update.js",
+            "main.817987d9965536382fde.hot-update.js",
             "server-main.js.map",
-            "main.d8c44b7262c6953f3f3f.hot-update.js.map"
+            "main.817987d9965536382fde.hot-update.js.map"
           ],
-          "hash": "fa6f66861d2d11dad678",
+          "hash": "5ddb24a37112e3282f39",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -1369,7 +1369,7 @@
               "name": "./src/components/Authentication/Authentication.js",
               "index": 47,
               "index2": 45,
-              "size": 2646,
+              "size": 2775,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1436,7 +1436,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport PomodoroClock from '../PomodoroClock/PomodoroClock'; // import Home from '../../pages/home';\n\nimport RenderedAuth from './RenderedAuth';\n\nconst Authentication = ({\n  // global state props\n  isAuthenticated,\n  // RPC calls\n  refreshAuth,\n  getProfile,\n  getTimers,\n  getWallet\n}) => {\n  // TODO: add logic that checks path (maybe use switch) and based on path, fetch differnt components\n  // don't need url links - can just render differnt components based on the rpc call?\n  // if (isAuthenticated) {\n  //   useEffect(() => {\n  //     getProfile();\n  //     getTimers();\n  //     getWallet();\n  //   }, [isAuthenticated]);\n  //   return <PomodoroClock />;\n  // }\n  // if (!isAuthenticated) {\n  //   // fire if initial calls returned 401 and if this returns 401 as well, load login\n  //   // fire these calls regardless of auth - if returns 401, keep isAuth false,\n  //   // if calls return succesful, change isAuth to false\n  //   // if res.data.status === 401, redirect to refreshAuth\n  //   // refreshAuth();\n  //   // useEffect(() => {\n  //   //   getProfile();\n  //   //   getTimers();\n  //   //   getWallet();\n  //   // }, [isAuthenticated]);\n  // }\n  useEffect(() => {\n    if (isAuthenticated) {\n      getProfile();\n      getTimers();\n      getWallet();\n    }\n\n    if (!isAuthenticated) {\n      // refreshAuth();\n      getProfile();\n    }\n  }, [isAuthenticated]);\n\n  if (isAuthenticated) {\n    return React.createElement(PomodoroClock, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    });\n  } // TODO: check for access and refresh tokens and if not present, render the login pg\n  // and set isAuthenticated to false. if tokens present, set isAuth to true and render above\n  // fire off rpc handler if isAuth is false and if tokens are present and returns 200, change state\n\n\n  return React.createElement(React.Fragment, null, React.createElement(RenderedAuth, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }));\n};\n\nconst mapStateToProps = state => {\n  return {\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getWallet'));\nexport default hoc(Authentication);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport PomodoroClock from '../PomodoroClock/PomodoroClock'; // import Home from '../../pages/home';\n\nimport RenderedAuth from './RenderedAuth';\n\nconst Authentication = ({\n  // global state props\n  isAuthenticated,\n  // RPC calls\n  refreshAuth,\n  getProfile,\n  getTimers,\n  getWallet\n}) => {\n  // TODO: add logic that checks path (maybe use switch) and based on path, fetch differnt components\n  // don't need url links - can just render differnt components based on the rpc call?\n  // if (isAuthenticated) {\n  //   useEffect(() => {\n  //     getProfile();\n  //     getTimers();\n  //     getWallet();\n  //   }, [isAuthenticated]);\n  //   return <PomodoroClock />;\n  // }\n  // if (!isAuthenticated) {\n  //   // fire if initial calls returned 401 and if this returns 401 as well, load login\n  //   // fire these calls regardless of auth - if returns 401, keep isAuth false,\n  //   // if calls return succesful, change isAuth to false\n  //   // if res.data.status === 401, redirect to refreshAuth\n  //   // refreshAuth();\n  //   // useEffect(() => {\n  //   //   getProfile();\n  //   //   getTimers();\n  //   //   getWallet();\n  //   // }, [isAuthenticated]);\n  // }\n  // useEffect(() => {\n  //   if (isAuthenticated) {\n  //     getProfile();\n  //     getTimers();\n  //     getWallet();\n  //   }\n  //   if (!isAuthenticated) {\n  //     // refreshAuth();\n  //     getProfile();\n  //   }\n  // }, [isAuthenticated]);\n  useEffect(() => {\n    getProfile();\n    getTimers();\n    getWallet();\n  }, [isAuthenticated]);\n\n  if (isAuthenticated) {\n    return React.createElement(PomodoroClock, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 61\n      },\n      __self: this\n    });\n  } // TODO: check for access and refresh tokens and if not present, render the login pg\n  // and set isAuthenticated to false. if tokens present, set isAuth to true and render above\n  // fire off rpc handler if isAuth is false and if tokens are present and returns 200, change state\n\n\n  return React.createElement(React.Fragment, null, React.createElement(RenderedAuth, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 70\n    },\n    __self: this\n  }));\n};\n\nconst mapStateToProps = state => {\n  return {\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getWallet'));\nexport default hoc(Authentication);"
             },
             {
               "id": "./src/components/Authentication/Login.js",
@@ -1678,7 +1678,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "./RenderedAuth",
-                  "loc": "67:71-83"
+                  "loc": "71:71-83"
                 }
               ],
               "providedExports": [
@@ -1833,7 +1833,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "../PomodoroClock/PomodoroClock",
-                  "loc": "55:31-44"
+                  "loc": "59:31-44"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -2932,9 +2932,9 @@
               "name": "./src/rpc/index.js",
               "index": 65,
               "index2": 67,
-              "size": 13069,
+              "size": 13072,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2980,7 +2980,7 @@
               ],
               "optimizationBailout": [],
               "depth": 3,
-              "source": "import { ResponseError } from 'fusion-plugin-rpc';\nimport { endpointToBackendLookups } from './services/index';\nimport { fireBackendCall } from './utils';\nimport responseError from 'fusion-plugin-rpc/dist-node-cjs/response-error';\nconst defaultHandlers = Object.keys(endpointToBackendLookups).reduce((acc, endpoint) => {\n  const backend = endpointToBackendLookups[endpoint];\n\n  const handler = (args, ctx) => {\n    return fireBackendCall(backend, endpoint, args, ctx).then(res => {\n      console.log(res);\n      return res;\n    }).catch(err => {\n      responseError = new ResponseError(`Failure calling ${endpoint} with args ${JSON.stringify(args)} from ${backend.name}. error: ${err.message}`);\n      console.log(responseError);\n      throw responseError;\n    });\n  };\n\n  acc[endpoint] = handler;\n  return acc;\n}, {});\nexport default defaultHandlers; // export default {\n//   register: async (args, ctx) => {\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/register/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         ctx['access_token'] = res.data.access;\n//         ctx['refresh_token'] = res.data.refresh;\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//       });\n//     return result;\n//   },\n//   login: async (args, ctx) => {\n//     // console.log(ctx);\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/login/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         ctx['access_token'] = res.data.access;\n//         ctx['refresh_token'] = res.data.refresh;\n//         console.log(`Logged in, refresh token: ${ctx.refresh_token}`);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Login attempt unsuccessful, erro: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   refreshAuth: async (args, ctx) => {\n//     // const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     console.log(ctx.refresh_token);\n//     const data = { refresh: ctx.refresh_token };\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/refreshAuth/',\n//       // headers,\n//       data,\n//     })\n//       .then((res) => {\n//         if (res.data.access) {\n//           ctx.access_token = res.data.access;\n//         }\n//         if (res.data.refresh) {\n//           ctx.refresh_token = res.data.refresh;\n//         }\n//         // if (res.data.access || res.data.refresh) {\n//         //   ctx.access_token = res.data.access;\n//         //   ctx.refresh_token = res.data.refresh;\n//         // }\n//         // console.log(res.data);\n//         // return res.data;\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Auth refresh attempt unsuccessful, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getProfile: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getProfile/',\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         if (err.response.status === 401) {\n//           // const tokenRefresh = async () => {\n//           //   const result = await refreshAuth();\n//           //   return result;\n//           // refreshAuth(args, ctx)\n//           //   .then(() => {\n//           //     getProfile(args, ctx)\n//           //       .then((res) => {\n//           //         return res.data;\n//           //       })\n//           //       .catch((err) => {\n//           //         const responseError = new ResponseError(\n//           //           `Attempt to retrieve profile after auth refresh unsuccesful, error: ${err.message}`\n//           //         );\n//           //         throw responseError;\n//           //       });\n//           //   })\n//           //   .catch((err) => {\n//           //     const responseError = new ResponseError(\n//           //       `Attempt to refresh auth unsuccesful, error: ${err.message}`\n//           //     );\n//           //     console.log(responseError);\n//           //     throw responseError;\n//           //   });\n//         }\n//         const responseError = new ResponseError(\n//           `Could not load profile data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getWallet: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getWallet/',\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not load wallet data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not load timer data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   incrementFocusTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/incrementFocusTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not increment focus time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   decrementFocusTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/decrementFocusTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not decrement focus time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   incrementBreakTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/incrementBreakTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not increment break time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   decrementBreakTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/decrementBreakTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not decrement break time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   resetTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/resetTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not reset timers, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   setCycle: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/setCycle/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set cycle, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   startTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/startTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set isStarted, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   stopTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/stopTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set isStarted, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   // startStopToggle: async (args, ctx) => {\n//   //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//   //   const result = await axios({\n//   //     method: 'POST',\n//   //     headers,\n//   //     url: 'http://localhost:8000/api/startStopToggle/',\n//   //     data: args,\n//   //   })\n//   //     .then((res) => {\n//   //       console.log(res.data);\n//   //       return res.data;\n//   //     })\n//   //     .catch((err) => {\n//   //       const responseError = new ResponseError(\n//   //         `Could not update start/stop, error: ${err.message}`\n//   //       );\n//   //       throw responseError;\n//   //     });\n//   //   return result;\n//   // },\n//   updateCurrentTimes: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/updateCurrentTimes/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not update current times error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   updateCompletedFocusMinutes: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n//       data: args,\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not update completed focus minutes, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n// };"
+              "source": "import { ResponseError } from 'fusion-plugin-rpc';\nimport { endpointToBackendLookups } from './services/index';\nimport { fireBackendCall } from './utils';\nimport responseError from 'fusion-plugin-rpc/dist-node-cjs/response-error';\nconst defaultHandlers = Object.keys(endpointToBackendLookups).reduce((acc, endpoint) => {\n  const backend = endpointToBackendLookups[endpoint];\n\n  const handler = (args, ctx) => {\n    return fireBackendCall(backend, endpoint, args, ctx).then(res => {\n      console.log(res);\n      return res.data;\n    }).catch(err => {\n      responseError = new ResponseError(`Failure calling ${endpoint} with args ${JSON.stringify(args)} from ${backend.name}. error: ${err.message}`); // console.log(responseError);\n\n      throw responseError;\n    });\n  };\n\n  acc[endpoint] = handler;\n  return acc;\n}, {});\nexport default defaultHandlers; // export default {\n//   register: async (args, ctx) => {\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/register/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         ctx['access_token'] = res.data.access;\n//         ctx['refresh_token'] = res.data.refresh;\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//       });\n//     return result;\n//   },\n//   login: async (args, ctx) => {\n//     // console.log(ctx);\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/login/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         ctx['access_token'] = res.data.access;\n//         ctx['refresh_token'] = res.data.refresh;\n//         console.log(`Logged in, refresh token: ${ctx.refresh_token}`);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Login attempt unsuccessful, erro: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   refreshAuth: async (args, ctx) => {\n//     // const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     console.log(ctx.refresh_token);\n//     const data = { refresh: ctx.refresh_token };\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/refreshAuth/',\n//       // headers,\n//       data,\n//     })\n//       .then((res) => {\n//         if (res.data.access) {\n//           ctx.access_token = res.data.access;\n//         }\n//         if (res.data.refresh) {\n//           ctx.refresh_token = res.data.refresh;\n//         }\n//         // if (res.data.access || res.data.refresh) {\n//         //   ctx.access_token = res.data.access;\n//         //   ctx.refresh_token = res.data.refresh;\n//         // }\n//         // console.log(res.data);\n//         // return res.data;\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Auth refresh attempt unsuccessful, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getProfile: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getProfile/',\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         if (err.response.status === 401) {\n//           // const tokenRefresh = async () => {\n//           //   const result = await refreshAuth();\n//           //   return result;\n//           // refreshAuth(args, ctx)\n//           //   .then(() => {\n//           //     getProfile(args, ctx)\n//           //       .then((res) => {\n//           //         return res.data;\n//           //       })\n//           //       .catch((err) => {\n//           //         const responseError = new ResponseError(\n//           //           `Attempt to retrieve profile after auth refresh unsuccesful, error: ${err.message}`\n//           //         );\n//           //         throw responseError;\n//           //       });\n//           //   })\n//           //   .catch((err) => {\n//           //     const responseError = new ResponseError(\n//           //       `Attempt to refresh auth unsuccesful, error: ${err.message}`\n//           //     );\n//           //     console.log(responseError);\n//           //     throw responseError;\n//           //   });\n//         }\n//         const responseError = new ResponseError(\n//           `Could not load profile data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getWallet: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getWallet/',\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not load wallet data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not load timer data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   incrementFocusTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/incrementFocusTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not increment focus time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   decrementFocusTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/decrementFocusTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not decrement focus time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   incrementBreakTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/incrementBreakTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not increment break time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   decrementBreakTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/decrementBreakTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not decrement break time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   resetTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/resetTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not reset timers, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   setCycle: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/setCycle/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set cycle, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   startTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/startTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set isStarted, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   stopTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/stopTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set isStarted, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   // startStopToggle: async (args, ctx) => {\n//   //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//   //   const result = await axios({\n//   //     method: 'POST',\n//   //     headers,\n//   //     url: 'http://localhost:8000/api/startStopToggle/',\n//   //     data: args,\n//   //   })\n//   //     .then((res) => {\n//   //       console.log(res.data);\n//   //       return res.data;\n//   //     })\n//   //     .catch((err) => {\n//   //       const responseError = new ResponseError(\n//   //         `Could not update start/stop, error: ${err.message}`\n//   //       );\n//   //       throw responseError;\n//   //     });\n//   //   return result;\n//   // },\n//   updateCurrentTimes: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/updateCurrentTimes/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not update current times error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   updateCompletedFocusMinutes: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n//       data: args,\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not update completed focus minutes, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n// };"
             },
             {
               "id": "./src/rpc/services/index.js",
@@ -3142,9 +3142,9 @@
               "name": "./src/rpc/utils.js",
               "index": 68,
               "index2": 65,
-              "size": 3183,
+              "size": 3318,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -3204,7 +3204,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "import axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc';\nconst PASSALONG_HEADERS = ['cookie', 'content-type'];\nexport const fireBackendCall = (backend, endpoint, args, ctx, wtihRefresh = true) => {\n  const url = `${backend.basePath}/${endpoint}/`; // let {params, ...data} = args\n\n  const headers = {};\n  PASSALONG_HEADERS.forEach(header => {\n    headers[header] = ctx.request.header[header];\n  });\n\n  if (ctx.access_token) {\n    headers.authorization = `Bearer ${ctx.access_token}`;\n  }\n\n  if (endpoint === backend.refreshEndpoint) {\n    data = {\n      refresh: ctx.refresh_token\n    };\n  }\n\n  return new Promise((resolve, reject) => {\n    axios({\n      method: 'POST',\n      headers,\n      url,\n      data: args\n    }).then(res => {\n      if (res.data.access) {\n        ctx.access_token = res.data.access;\n      }\n\n      if (res.data.refresh) {\n        ctx.refresh_token = res.data.refresh;\n      } // return resolve({body: res.data, initialArgs: args})\n\n\n      return resolve(res.data);\n    }).catch(err => {\n      if (wtihRefresh && err.response && err.response.status === 401) {\n        // TODO: do i need to add data\n        refreshAuth(backend, ctx).then(() => {\n          fireBackendCall(backend, endpoint, args, ctx, false).then(res => {\n            return resolve(res.data);\n          }).catch(err => {\n            const responseError = new ResponseError(`Call to endpoint ${endpoint} unsuccessful after auth refresh, error: ${err.message}`);\n            return reject(responseError); // return reject(err)\n          });\n        });\n      } else {\n        const responseError = new ResponseError(`Call to endpoint ${endpoint} unsuccessful, error: ${err.message}`);\n        return reject(responseError);\n      }\n    });\n  });\n};\n\nconst refreshAuth = (backend, ctx) => {\n  console.log('attempting refresh...');\n  const data = {\n    refresh: ctx.refresh_token\n  };\n  return new Promise((resolve, reject) => {\n    axios({\n      method: 'POST',\n      url: `${backend.basePath}/${backend.endpoints['refreshAuth']}`,\n      data\n    }).then(res => {\n      console.log('refreshing tokens successful');\n\n      if (res.data.access) {\n        ctx.access_token = res.data.access;\n      }\n\n      if (res.data.refresh) {\n        ctx.refresh_token = res.data.refresh;\n      }\n\n      return resolve(res.data);\n    }).catch(err => {\n      const responseError = new ResponseError(`Attempted auth refresh unsuccessful, error: ${err.message}`);\n      return reject(responseError);\n    });\n  });\n}; // export const refreshAuth = async (ctx) => {\n//   const data = { refresh: ctx.refresh_token };\n//   const result = await axios({\n//     method: 'POST',\n//     url: 'http://localhost:8000/api/refreshAuth/',\n//     data,\n//   })\n//     .then((res) => {\n//       if (res.data.access) {\n//         ctx.access_token = res.data.access;\n//       }\n//       if (res.data.refresh) {\n//         ctx.refresh_token = res.data.refresh;\n//       }\n//       return res.data;\n//     })\n//     .catch((err) => {\n//       const responseError = new ResponseError(\n//         `Auth refresh attempt unsuccessful, error: ${err.message}`\n//       );\n//       throw responseError;\n//     });\n// };"
+              "source": "import axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc';\nconst PASSALONG_HEADERS = ['cookie', 'content-type'];\nexport const fireBackendCall = (backend, endpoint, args, ctx, wtihRefresh = true) => {\n  const url = `${backend.basePath}/${endpoint}/`; // let {params, ...data} = args\n\n  const headers = {};\n  PASSALONG_HEADERS.forEach(header => {\n    headers[header] = ctx.request.header[header];\n  });\n\n  if (ctx.access_token) {\n    headers.authorization = `Bearer ${ctx.access_token}`;\n  }\n\n  if (endpoint === backend.refreshEndpoint) {\n    data = {\n      refresh: ctx.refresh_token\n    };\n  }\n\n  return new Promise((resolve, reject) => {\n    axios({\n      method: 'POST',\n      headers,\n      url,\n      data: args\n    }).then(res => {\n      if (res.data.access) {\n        ctx.access_token = res.data.access;\n      }\n\n      if (res.data.refresh) {\n        ctx.refresh_token = res.data.refresh;\n      }\n\n      return resolve(res.data);\n    }).catch(err => {\n      if (wtihRefresh && err.response && err.response.status === 401) {\n        // TODO: do i need to add data\n        refreshAuth(backend, ctx).then(() => {\n          fireBackendCall(backend, endpoint, args, ctx, false).then(res => {\n            return resolve(res);\n          }).catch(err => {\n            const responseError = new ResponseError(`Call to endpoint ${endpoint} unsuccessful after auth refresh, error: ${err.message}`);\n            return reject(responseError); // return reject(err)\n          });\n        }).catch(err => {\n          const responseError = new ResponseError(`call to endpoint ${endpoint} unsuccessful, error: ${err.message}`);\n          return reject(responseError);\n        });\n      } else {\n        const responseError = new ResponseError(`Call to endpoint ${endpoint} unsuccessful, error: ${err.message}`);\n        return reject(responseError);\n      }\n    });\n  });\n};\n\nconst refreshAuth = (backend, ctx) => {\n  console.log('attempting refresh...');\n  const data = {\n    refresh: ctx.refresh_token\n  };\n  return new Promise((resolve, reject) => {\n    axios({\n      method: 'POST',\n      url: `${backend.basePath}/refreshAuth/`,\n      data\n    }).then(res => {\n      console.log('refreshing tokens successful');\n\n      if (res.data.access) {\n        ctx.access_token = res.data.access;\n      }\n\n      if (res.data.refresh) {\n        ctx.refresh_token = res.data.refresh;\n      }\n\n      return resolve(res.data);\n    }).catch(err => {\n      const responseError = new ResponseError(`Attempted auth refresh unsuccessful, error: ${err.message}`);\n      console.log(responseError);\n      return reject(responseError);\n    });\n  });\n}; // export const refreshAuth = async (ctx) => {\n//   const data = { refresh: ctx.refresh_token };\n//   const result = await axios({\n//     method: 'POST',\n//     url: 'http://localhost:8000/api/refreshAuth/',\n//     data,\n//   })\n//     .then((res) => {\n//       if (res.data.access) {\n//         ctx.access_token = res.data.access;\n//       }\n//       if (res.data.refresh) {\n//         ctx.refresh_token = res.data.refresh;\n//       }\n//       return res.data;\n//     })\n//     .catch((err) => {\n//       const responseError = new ResponseError(\n//         `Auth refresh attempt unsuccessful, error: ${err.message}`\n//       );\n//       throw responseError;\n//     });\n// };"
             },
             {
               "id": "assert",
@@ -3362,7 +3362,7 @@
                   "moduleName": "./src/rpc/utils.js",
                   "type": "harmony import specifier",
                   "userRequest": "axios",
-                  "loc": "64:4-9"
+                  "loc": "66:4-9"
                 }
               ],
               "providedExports": null,
@@ -4191,7 +4191,7 @@
                   "moduleName": "./src/rpc/utils.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "46:38-51"
+                  "loc": "45:38-51"
                 },
                 {
                   "moduleId": "./src/rpc/utils.js",
@@ -4200,7 +4200,7 @@
                   "moduleName": "./src/rpc/utils.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "51:34-47"
+                  "loc": "49:36-49"
                 },
                 {
                   "moduleId": "./src/rpc/utils.js",
@@ -4209,7 +4209,16 @@
                   "moduleName": "./src/rpc/utils.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc",
-                  "loc": "81:32-45"
+                  "loc": "53:34-47"
+                },
+                {
+                  "moduleId": "./src/rpc/utils.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/utils.js",
+                  "module": "./src/rpc/utils.js",
+                  "moduleName": "./src/rpc/utils.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-rpc",
+                  "loc": "83:32-45"
                 }
               ],
               "providedExports": null,
@@ -4280,7 +4289,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "82:46-58"
+                  "loc": "86:46-58"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -4289,7 +4298,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "82:75-87"
+                  "loc": "86:75-87"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -4298,7 +4307,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "82:103-115"
+                  "loc": "86:103-115"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -4307,7 +4316,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "82:130-142"
+                  "loc": "86:130-142"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Login.js",
@@ -5588,7 +5597,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "41:2-11"
+                  "loc": "52:2-11"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -5597,7 +5606,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "55:11-16"
+                  "loc": "59:11-16"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -5606,7 +5615,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "67:9-14"
+                  "loc": "71:9-14"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -5615,7 +5624,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "67:29-34"
+                  "loc": "71:29-34"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -5624,7 +5633,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "67:51-56"
+                  "loc": "71:51-56"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Login.js",
@@ -6654,7 +6663,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "82:20-27"
+                  "loc": "86:20-27"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Login.js",
@@ -7016,7 +7025,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "82:12-19"
+                  "loc": "86:12-19"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Login.js",
@@ -8602,7 +8611,7 @@
           "name": "./src/components/Authentication/Authentication.js",
           "index": 47,
           "index2": 45,
-          "size": 2646,
+          "size": 2775,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -8669,7 +8678,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport PomodoroClock from '../PomodoroClock/PomodoroClock'; // import Home from '../../pages/home';\n\nimport RenderedAuth from './RenderedAuth';\n\nconst Authentication = ({\n  // global state props\n  isAuthenticated,\n  // RPC calls\n  refreshAuth,\n  getProfile,\n  getTimers,\n  getWallet\n}) => {\n  // TODO: add logic that checks path (maybe use switch) and based on path, fetch differnt components\n  // don't need url links - can just render differnt components based on the rpc call?\n  // if (isAuthenticated) {\n  //   useEffect(() => {\n  //     getProfile();\n  //     getTimers();\n  //     getWallet();\n  //   }, [isAuthenticated]);\n  //   return <PomodoroClock />;\n  // }\n  // if (!isAuthenticated) {\n  //   // fire if initial calls returned 401 and if this returns 401 as well, load login\n  //   // fire these calls regardless of auth - if returns 401, keep isAuth false,\n  //   // if calls return succesful, change isAuth to false\n  //   // if res.data.status === 401, redirect to refreshAuth\n  //   // refreshAuth();\n  //   // useEffect(() => {\n  //   //   getProfile();\n  //   //   getTimers();\n  //   //   getWallet();\n  //   // }, [isAuthenticated]);\n  // }\n  useEffect(() => {\n    if (isAuthenticated) {\n      getProfile();\n      getTimers();\n      getWallet();\n    }\n\n    if (!isAuthenticated) {\n      // refreshAuth();\n      getProfile();\n    }\n  }, [isAuthenticated]);\n\n  if (isAuthenticated) {\n    return React.createElement(PomodoroClock, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 55\n      },\n      __self: this\n    });\n  } // TODO: check for access and refresh tokens and if not present, render the login pg\n  // and set isAuthenticated to false. if tokens present, set isAuth to true and render above\n  // fire off rpc handler if isAuth is false and if tokens are present and returns 200, change state\n\n\n  return React.createElement(React.Fragment, null, React.createElement(RenderedAuth, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }));\n};\n\nconst mapStateToProps = state => {\n  return {\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getWallet'));\nexport default hoc(Authentication);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport PomodoroClock from '../PomodoroClock/PomodoroClock'; // import Home from '../../pages/home';\n\nimport RenderedAuth from './RenderedAuth';\n\nconst Authentication = ({\n  // global state props\n  isAuthenticated,\n  // RPC calls\n  refreshAuth,\n  getProfile,\n  getTimers,\n  getWallet\n}) => {\n  // TODO: add logic that checks path (maybe use switch) and based on path, fetch differnt components\n  // don't need url links - can just render differnt components based on the rpc call?\n  // if (isAuthenticated) {\n  //   useEffect(() => {\n  //     getProfile();\n  //     getTimers();\n  //     getWallet();\n  //   }, [isAuthenticated]);\n  //   return <PomodoroClock />;\n  // }\n  // if (!isAuthenticated) {\n  //   // fire if initial calls returned 401 and if this returns 401 as well, load login\n  //   // fire these calls regardless of auth - if returns 401, keep isAuth false,\n  //   // if calls return succesful, change isAuth to false\n  //   // if res.data.status === 401, redirect to refreshAuth\n  //   // refreshAuth();\n  //   // useEffect(() => {\n  //   //   getProfile();\n  //   //   getTimers();\n  //   //   getWallet();\n  //   // }, [isAuthenticated]);\n  // }\n  // useEffect(() => {\n  //   if (isAuthenticated) {\n  //     getProfile();\n  //     getTimers();\n  //     getWallet();\n  //   }\n  //   if (!isAuthenticated) {\n  //     // refreshAuth();\n  //     getProfile();\n  //   }\n  // }, [isAuthenticated]);\n  useEffect(() => {\n    getProfile();\n    getTimers();\n    getWallet();\n  }, [isAuthenticated]);\n\n  if (isAuthenticated) {\n    return React.createElement(PomodoroClock, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 61\n      },\n      __self: this\n    });\n  } // TODO: check for access and refresh tokens and if not present, render the login pg\n  // and set isAuthenticated to false. if tokens present, set isAuth to true and render above\n  // fire off rpc handler if isAuth is false and if tokens are present and returns 200, change state\n\n\n  return React.createElement(React.Fragment, null, React.createElement(RenderedAuth, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 70\n    },\n    __self: this\n  }));\n};\n\nconst mapStateToProps = state => {\n  return {\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getWallet'));\nexport default hoc(Authentication);"
         },
         {
           "id": "./src/components/Authentication/Login.js",
@@ -8911,7 +8920,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "./RenderedAuth",
-              "loc": "67:71-83"
+              "loc": "71:71-83"
             }
           ],
           "providedExports": [
@@ -9066,7 +9075,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "../PomodoroClock/PomodoroClock",
-              "loc": "55:31-44"
+              "loc": "59:31-44"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -10165,9 +10174,9 @@
           "name": "./src/rpc/index.js",
           "index": 65,
           "index2": 67,
-          "size": 13069,
+          "size": 13072,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -10213,7 +10222,7 @@
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "import { ResponseError } from 'fusion-plugin-rpc';\nimport { endpointToBackendLookups } from './services/index';\nimport { fireBackendCall } from './utils';\nimport responseError from 'fusion-plugin-rpc/dist-node-cjs/response-error';\nconst defaultHandlers = Object.keys(endpointToBackendLookups).reduce((acc, endpoint) => {\n  const backend = endpointToBackendLookups[endpoint];\n\n  const handler = (args, ctx) => {\n    return fireBackendCall(backend, endpoint, args, ctx).then(res => {\n      console.log(res);\n      return res;\n    }).catch(err => {\n      responseError = new ResponseError(`Failure calling ${endpoint} with args ${JSON.stringify(args)} from ${backend.name}. error: ${err.message}`);\n      console.log(responseError);\n      throw responseError;\n    });\n  };\n\n  acc[endpoint] = handler;\n  return acc;\n}, {});\nexport default defaultHandlers; // export default {\n//   register: async (args, ctx) => {\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/register/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         ctx['access_token'] = res.data.access;\n//         ctx['refresh_token'] = res.data.refresh;\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//       });\n//     return result;\n//   },\n//   login: async (args, ctx) => {\n//     // console.log(ctx);\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/login/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         ctx['access_token'] = res.data.access;\n//         ctx['refresh_token'] = res.data.refresh;\n//         console.log(`Logged in, refresh token: ${ctx.refresh_token}`);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Login attempt unsuccessful, erro: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   refreshAuth: async (args, ctx) => {\n//     // const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     console.log(ctx.refresh_token);\n//     const data = { refresh: ctx.refresh_token };\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/refreshAuth/',\n//       // headers,\n//       data,\n//     })\n//       .then((res) => {\n//         if (res.data.access) {\n//           ctx.access_token = res.data.access;\n//         }\n//         if (res.data.refresh) {\n//           ctx.refresh_token = res.data.refresh;\n//         }\n//         // if (res.data.access || res.data.refresh) {\n//         //   ctx.access_token = res.data.access;\n//         //   ctx.refresh_token = res.data.refresh;\n//         // }\n//         // console.log(res.data);\n//         // return res.data;\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Auth refresh attempt unsuccessful, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getProfile: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getProfile/',\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         if (err.response.status === 401) {\n//           // const tokenRefresh = async () => {\n//           //   const result = await refreshAuth();\n//           //   return result;\n//           // refreshAuth(args, ctx)\n//           //   .then(() => {\n//           //     getProfile(args, ctx)\n//           //       .then((res) => {\n//           //         return res.data;\n//           //       })\n//           //       .catch((err) => {\n//           //         const responseError = new ResponseError(\n//           //           `Attempt to retrieve profile after auth refresh unsuccesful, error: ${err.message}`\n//           //         );\n//           //         throw responseError;\n//           //       });\n//           //   })\n//           //   .catch((err) => {\n//           //     const responseError = new ResponseError(\n//           //       `Attempt to refresh auth unsuccesful, error: ${err.message}`\n//           //     );\n//           //     console.log(responseError);\n//           //     throw responseError;\n//           //   });\n//         }\n//         const responseError = new ResponseError(\n//           `Could not load profile data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getWallet: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getWallet/',\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not load wallet data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not load timer data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   incrementFocusTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/incrementFocusTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not increment focus time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   decrementFocusTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/decrementFocusTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not decrement focus time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   incrementBreakTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/incrementBreakTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not increment break time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   decrementBreakTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/decrementBreakTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not decrement break time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   resetTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/resetTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not reset timers, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   setCycle: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/setCycle/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set cycle, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   startTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/startTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set isStarted, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   stopTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/stopTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set isStarted, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   // startStopToggle: async (args, ctx) => {\n//   //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//   //   const result = await axios({\n//   //     method: 'POST',\n//   //     headers,\n//   //     url: 'http://localhost:8000/api/startStopToggle/',\n//   //     data: args,\n//   //   })\n//   //     .then((res) => {\n//   //       console.log(res.data);\n//   //       return res.data;\n//   //     })\n//   //     .catch((err) => {\n//   //       const responseError = new ResponseError(\n//   //         `Could not update start/stop, error: ${err.message}`\n//   //       );\n//   //       throw responseError;\n//   //     });\n//   //   return result;\n//   // },\n//   updateCurrentTimes: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/updateCurrentTimes/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not update current times error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   updateCompletedFocusMinutes: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n//       data: args,\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not update completed focus minutes, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n// };"
+          "source": "import { ResponseError } from 'fusion-plugin-rpc';\nimport { endpointToBackendLookups } from './services/index';\nimport { fireBackendCall } from './utils';\nimport responseError from 'fusion-plugin-rpc/dist-node-cjs/response-error';\nconst defaultHandlers = Object.keys(endpointToBackendLookups).reduce((acc, endpoint) => {\n  const backend = endpointToBackendLookups[endpoint];\n\n  const handler = (args, ctx) => {\n    return fireBackendCall(backend, endpoint, args, ctx).then(res => {\n      console.log(res);\n      return res.data;\n    }).catch(err => {\n      responseError = new ResponseError(`Failure calling ${endpoint} with args ${JSON.stringify(args)} from ${backend.name}. error: ${err.message}`); // console.log(responseError);\n\n      throw responseError;\n    });\n  };\n\n  acc[endpoint] = handler;\n  return acc;\n}, {});\nexport default defaultHandlers; // export default {\n//   register: async (args, ctx) => {\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/register/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         ctx['access_token'] = res.data.access;\n//         ctx['refresh_token'] = res.data.refresh;\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//       });\n//     return result;\n//   },\n//   login: async (args, ctx) => {\n//     // console.log(ctx);\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/login/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         ctx['access_token'] = res.data.access;\n//         ctx['refresh_token'] = res.data.refresh;\n//         console.log(`Logged in, refresh token: ${ctx.refresh_token}`);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Login attempt unsuccessful, erro: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   refreshAuth: async (args, ctx) => {\n//     // const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     console.log(ctx.refresh_token);\n//     const data = { refresh: ctx.refresh_token };\n//     const result = await axios({\n//       method: 'POST',\n//       url: 'http://localhost:8000/api/refreshAuth/',\n//       // headers,\n//       data,\n//     })\n//       .then((res) => {\n//         if (res.data.access) {\n//           ctx.access_token = res.data.access;\n//         }\n//         if (res.data.refresh) {\n//           ctx.refresh_token = res.data.refresh;\n//         }\n//         // if (res.data.access || res.data.refresh) {\n//         //   ctx.access_token = res.data.access;\n//         //   ctx.refresh_token = res.data.refresh;\n//         // }\n//         // console.log(res.data);\n//         // return res.data;\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Auth refresh attempt unsuccessful, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getProfile: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getProfile/',\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         if (err.response.status === 401) {\n//           // const tokenRefresh = async () => {\n//           //   const result = await refreshAuth();\n//           //   return result;\n//           // refreshAuth(args, ctx)\n//           //   .then(() => {\n//           //     getProfile(args, ctx)\n//           //       .then((res) => {\n//           //         return res.data;\n//           //       })\n//           //       .catch((err) => {\n//           //         const responseError = new ResponseError(\n//           //           `Attempt to retrieve profile after auth refresh unsuccesful, error: ${err.message}`\n//           //         );\n//           //         throw responseError;\n//           //       });\n//           //   })\n//           //   .catch((err) => {\n//           //     const responseError = new ResponseError(\n//           //       `Attempt to refresh auth unsuccesful, error: ${err.message}`\n//           //     );\n//           //     console.log(responseError);\n//           //     throw responseError;\n//           //   });\n//         }\n//         const responseError = new ResponseError(\n//           `Could not load profile data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getWallet: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getWallet/',\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not load wallet data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   getTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/getTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not load timer data, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   incrementFocusTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/incrementFocusTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not increment focus time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   decrementFocusTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/decrementFocusTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not decrement focus time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   incrementBreakTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/incrementBreakTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not increment break time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   decrementBreakTime: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/decrementBreakTime/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not decrement break time, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   resetTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/resetTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not reset timers, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   setCycle: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/setCycle/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set cycle, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   startTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/startTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set isStarted, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   stopTimers: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/stopTimers/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         console.log(res.data);\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         console.log(err);\n//         const responseError = new ResponseError(\n//           `Could not set isStarted, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   // startStopToggle: async (args, ctx) => {\n//   //   const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//   //   const result = await axios({\n//   //     method: 'POST',\n//   //     headers,\n//   //     url: 'http://localhost:8000/api/startStopToggle/',\n//   //     data: args,\n//   //   })\n//   //     .then((res) => {\n//   //       console.log(res.data);\n//   //       return res.data;\n//   //     })\n//   //     .catch((err) => {\n//   //       const responseError = new ResponseError(\n//   //         `Could not update start/stop, error: ${err.message}`\n//   //       );\n//   //       throw responseError;\n//   //     });\n//   //   return result;\n//   // },\n//   updateCurrentTimes: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/updateCurrentTimes/',\n//       data: args,\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not update current times error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n//   updateCompletedFocusMinutes: async (args, ctx) => {\n//     const headers = { Authorization: `Bearer ${ctx.access_token}` };\n//     const result = await axios({\n//       method: 'POST',\n//       headers,\n//       url: 'http://localhost:8000/api/updateCompletedFocusMinutes',\n//       data: args,\n//     })\n//       .then((res) => {\n//         return res.data;\n//       })\n//       .catch((err) => {\n//         const responseError = new ResponseError(\n//           `Could not update completed focus minutes, error: ${err.message}`\n//         );\n//         throw responseError;\n//       });\n//     return result;\n//   },\n// };"
         },
         {
           "id": "./src/rpc/services/index.js",
@@ -10375,9 +10384,9 @@
           "name": "./src/rpc/utils.js",
           "index": 68,
           "index2": 65,
-          "size": 3183,
+          "size": 3318,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -10437,7 +10446,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "import axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc';\nconst PASSALONG_HEADERS = ['cookie', 'content-type'];\nexport const fireBackendCall = (backend, endpoint, args, ctx, wtihRefresh = true) => {\n  const url = `${backend.basePath}/${endpoint}/`; // let {params, ...data} = args\n\n  const headers = {};\n  PASSALONG_HEADERS.forEach(header => {\n    headers[header] = ctx.request.header[header];\n  });\n\n  if (ctx.access_token) {\n    headers.authorization = `Bearer ${ctx.access_token}`;\n  }\n\n  if (endpoint === backend.refreshEndpoint) {\n    data = {\n      refresh: ctx.refresh_token\n    };\n  }\n\n  return new Promise((resolve, reject) => {\n    axios({\n      method: 'POST',\n      headers,\n      url,\n      data: args\n    }).then(res => {\n      if (res.data.access) {\n        ctx.access_token = res.data.access;\n      }\n\n      if (res.data.refresh) {\n        ctx.refresh_token = res.data.refresh;\n      } // return resolve({body: res.data, initialArgs: args})\n\n\n      return resolve(res.data);\n    }).catch(err => {\n      if (wtihRefresh && err.response && err.response.status === 401) {\n        // TODO: do i need to add data\n        refreshAuth(backend, ctx).then(() => {\n          fireBackendCall(backend, endpoint, args, ctx, false).then(res => {\n            return resolve(res.data);\n          }).catch(err => {\n            const responseError = new ResponseError(`Call to endpoint ${endpoint} unsuccessful after auth refresh, error: ${err.message}`);\n            return reject(responseError); // return reject(err)\n          });\n        });\n      } else {\n        const responseError = new ResponseError(`Call to endpoint ${endpoint} unsuccessful, error: ${err.message}`);\n        return reject(responseError);\n      }\n    });\n  });\n};\n\nconst refreshAuth = (backend, ctx) => {\n  console.log('attempting refresh...');\n  const data = {\n    refresh: ctx.refresh_token\n  };\n  return new Promise((resolve, reject) => {\n    axios({\n      method: 'POST',\n      url: `${backend.basePath}/${backend.endpoints['refreshAuth']}`,\n      data\n    }).then(res => {\n      console.log('refreshing tokens successful');\n\n      if (res.data.access) {\n        ctx.access_token = res.data.access;\n      }\n\n      if (res.data.refresh) {\n        ctx.refresh_token = res.data.refresh;\n      }\n\n      return resolve(res.data);\n    }).catch(err => {\n      const responseError = new ResponseError(`Attempted auth refresh unsuccessful, error: ${err.message}`);\n      return reject(responseError);\n    });\n  });\n}; // export const refreshAuth = async (ctx) => {\n//   const data = { refresh: ctx.refresh_token };\n//   const result = await axios({\n//     method: 'POST',\n//     url: 'http://localhost:8000/api/refreshAuth/',\n//     data,\n//   })\n//     .then((res) => {\n//       if (res.data.access) {\n//         ctx.access_token = res.data.access;\n//       }\n//       if (res.data.refresh) {\n//         ctx.refresh_token = res.data.refresh;\n//       }\n//       return res.data;\n//     })\n//     .catch((err) => {\n//       const responseError = new ResponseError(\n//         `Auth refresh attempt unsuccessful, error: ${err.message}`\n//       );\n//       throw responseError;\n//     });\n// };"
+          "source": "import axios from 'axios';\nimport { ResponseError } from 'fusion-plugin-rpc';\nconst PASSALONG_HEADERS = ['cookie', 'content-type'];\nexport const fireBackendCall = (backend, endpoint, args, ctx, wtihRefresh = true) => {\n  const url = `${backend.basePath}/${endpoint}/`; // let {params, ...data} = args\n\n  const headers = {};\n  PASSALONG_HEADERS.forEach(header => {\n    headers[header] = ctx.request.header[header];\n  });\n\n  if (ctx.access_token) {\n    headers.authorization = `Bearer ${ctx.access_token}`;\n  }\n\n  if (endpoint === backend.refreshEndpoint) {\n    data = {\n      refresh: ctx.refresh_token\n    };\n  }\n\n  return new Promise((resolve, reject) => {\n    axios({\n      method: 'POST',\n      headers,\n      url,\n      data: args\n    }).then(res => {\n      if (res.data.access) {\n        ctx.access_token = res.data.access;\n      }\n\n      if (res.data.refresh) {\n        ctx.refresh_token = res.data.refresh;\n      }\n\n      return resolve(res.data);\n    }).catch(err => {\n      if (wtihRefresh && err.response && err.response.status === 401) {\n        // TODO: do i need to add data\n        refreshAuth(backend, ctx).then(() => {\n          fireBackendCall(backend, endpoint, args, ctx, false).then(res => {\n            return resolve(res);\n          }).catch(err => {\n            const responseError = new ResponseError(`Call to endpoint ${endpoint} unsuccessful after auth refresh, error: ${err.message}`);\n            return reject(responseError); // return reject(err)\n          });\n        }).catch(err => {\n          const responseError = new ResponseError(`call to endpoint ${endpoint} unsuccessful, error: ${err.message}`);\n          return reject(responseError);\n        });\n      } else {\n        const responseError = new ResponseError(`Call to endpoint ${endpoint} unsuccessful, error: ${err.message}`);\n        return reject(responseError);\n      }\n    });\n  });\n};\n\nconst refreshAuth = (backend, ctx) => {\n  console.log('attempting refresh...');\n  const data = {\n    refresh: ctx.refresh_token\n  };\n  return new Promise((resolve, reject) => {\n    axios({\n      method: 'POST',\n      url: `${backend.basePath}/refreshAuth/`,\n      data\n    }).then(res => {\n      console.log('refreshing tokens successful');\n\n      if (res.data.access) {\n        ctx.access_token = res.data.access;\n      }\n\n      if (res.data.refresh) {\n        ctx.refresh_token = res.data.refresh;\n      }\n\n      return resolve(res.data);\n    }).catch(err => {\n      const responseError = new ResponseError(`Attempted auth refresh unsuccessful, error: ${err.message}`);\n      console.log(responseError);\n      return reject(responseError);\n    });\n  });\n}; // export const refreshAuth = async (ctx) => {\n//   const data = { refresh: ctx.refresh_token };\n//   const result = await axios({\n//     method: 'POST',\n//     url: 'http://localhost:8000/api/refreshAuth/',\n//     data,\n//   })\n//     .then((res) => {\n//       if (res.data.access) {\n//         ctx.access_token = res.data.access;\n//       }\n//       if (res.data.refresh) {\n//         ctx.refresh_token = res.data.refresh;\n//       }\n//       return res.data;\n//     })\n//     .catch((err) => {\n//       const responseError = new ResponseError(\n//         `Auth refresh attempt unsuccessful, error: ${err.message}`\n//       );\n//       throw responseError;\n//     });\n// };"
         },
         {
           "id": "assert",
@@ -10595,7 +10604,7 @@
               "moduleName": "./src/rpc/utils.js",
               "type": "harmony import specifier",
               "userRequest": "axios",
-              "loc": "64:4-9"
+              "loc": "66:4-9"
             }
           ],
           "providedExports": null,
@@ -11424,7 +11433,7 @@
               "moduleName": "./src/rpc/utils.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "46:38-51"
+              "loc": "45:38-51"
             },
             {
               "moduleId": "./src/rpc/utils.js",
@@ -11433,7 +11442,7 @@
               "moduleName": "./src/rpc/utils.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "51:34-47"
+              "loc": "49:36-49"
             },
             {
               "moduleId": "./src/rpc/utils.js",
@@ -11442,7 +11451,16 @@
               "moduleName": "./src/rpc/utils.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc",
-              "loc": "81:32-45"
+              "loc": "53:34-47"
+            },
+            {
+              "moduleId": "./src/rpc/utils.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/utils.js",
+              "module": "./src/rpc/utils.js",
+              "moduleName": "./src/rpc/utils.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-rpc",
+              "loc": "83:32-45"
             }
           ],
           "providedExports": null,
@@ -11513,7 +11531,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "82:46-58"
+              "loc": "86:46-58"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -11522,7 +11540,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "82:75-87"
+              "loc": "86:75-87"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -11531,7 +11549,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "82:103-115"
+              "loc": "86:103-115"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -11540,7 +11558,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "82:130-142"
+              "loc": "86:130-142"
             },
             {
               "moduleId": "./src/components/Authentication/Login.js",
@@ -12821,7 +12839,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "41:2-11"
+              "loc": "52:2-11"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -12830,7 +12848,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "55:11-16"
+              "loc": "59:11-16"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -12839,7 +12857,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "67:9-14"
+              "loc": "71:9-14"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -12848,7 +12866,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "67:29-34"
+              "loc": "71:29-34"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -12857,7 +12875,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "67:51-56"
+              "loc": "71:51-56"
             },
             {
               "moduleId": "./src/components/Authentication/Login.js",
@@ -13887,7 +13905,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "82:20-27"
+              "loc": "86:20-27"
             },
             {
               "moduleId": "./src/components/Authentication/Login.js",
@@ -14249,7 +14267,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "82:12-19"
+              "loc": "86:12-19"
             },
             {
               "moduleId": "./src/components/Authentication/Login.js",

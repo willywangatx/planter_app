@@ -11,7 +11,7 @@ const defaultHandlers = Object.keys(endpointToBackendLookups).reduce(
       return fireBackendCall(backend, endpoint, args, ctx)
         .then((res) => {
           console.log(res);
-          return res;
+          return res.data;
         })
         .catch((err) => {
           responseError = new ResponseError(
@@ -19,11 +19,10 @@ const defaultHandlers = Object.keys(endpointToBackendLookups).reduce(
               args
             )} from ${backend.name}. error: ${err.message}`
           );
-          console.log(responseError);
+          // console.log(responseError);
           throw responseError;
         });
     };
-
     acc[endpoint] = handler;
     return acc;
   },

@@ -39,16 +39,22 @@ const Authentication = ({
   //   // }, [isAuthenticated]);
   // }
 
+  // useEffect(() => {
+  //   if (isAuthenticated) {
+  //     getProfile();
+  //     getTimers();
+  //     getWallet();
+  //   }
+  //   if (!isAuthenticated) {
+  //     // refreshAuth();
+  //     getProfile();
+  //   }
+  // }, [isAuthenticated]);
+
   useEffect(() => {
-    if (isAuthenticated) {
-      getProfile();
-      getTimers();
-      getWallet();
-    }
-    if (!isAuthenticated) {
-      // refreshAuth();
-      getProfile();
-    }
+    getProfile();
+    getTimers();
+    getWallet();
   }, [isAuthenticated]);
 
   if (isAuthenticated) {
