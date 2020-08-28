@@ -7,21 +7,22 @@ const defaultHandlers = Object.keys(endpointToBackendLookups).reduce(
   (acc, endpoint) => {
     const backend = endpointToBackendLookups[endpoint];
 
-    const handler = (args, ctx) => {
-      return fireBackendCall(backend, endpoint, args, ctx)
-        .then((res) => {
-          console.log(res);
-          return res.data;
-        })
-        .catch((err) => {
-          responseError = new ResponseError(
-            `Failure calling ${endpoint} with args ${JSON.stringify(
-              args
-            )} from ${backend.name}. error: ${err.message}`
-          );
-          // console.log(responseError);
-          throw responseError;
-        });
+    const handler = async (args, ctx) => {
+      try {
+        console.log(`about to fire backend call`);
+        const res = await fireBackendCall(backend, endpoint, args, ctx);
+        console.log(`testing`);
+        console.log(res);
+        return res;
+      } catch (err) {
+        responseError = new ResponseError(
+          `Failure calling ${endpoint} with args ${JSON.stringify(args)} from ${
+            backend.name
+          }. error: ${err.message}`
+        );
+        // console.log(responseError);
+        throw responseError;
+      }
     };
     acc[endpoint] = handler;
     return acc;
