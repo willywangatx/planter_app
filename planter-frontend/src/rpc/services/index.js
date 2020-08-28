@@ -16,10 +16,10 @@ export const endpointToBackendLookups = backends.reduce((acc, backend) => {
   return acc;
 }, {});
 
-// export const endpoints = Object.keys(endpointToBackendLookups).reduce(
-//   (acc, key) => {
-//     acc[key] = key;
-//     return acc;
-//   },
-//   {}
-// );
+export const endpoints = Object.keys(endpointToBackendLookups).reduce(
+  (acc, key) => {
+    acc[key] = key;
+    return acc;
+  },
+  {}
+);

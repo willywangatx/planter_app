@@ -38,17 +38,4 @@ export default reduceReducers(
       };
     },
   })
-
-  // createRPCReducer('login', {
-  //   // what we call thunk with
-
-  //   success: (state, { payload }) => {
-  //     console.log(payload);
-  //     return {
-  //       ...state,
-  //       authenticated: true,
-  //       // TODO: how to preserve login between page refreshes?
-  //     };
-  //   },
-  // })
 );

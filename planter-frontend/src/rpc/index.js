@@ -9,10 +9,7 @@ const defaultHandlers = Object.keys(endpointToBackendLookups).reduce(
 
     const handler = async (args, ctx) => {
       try {
-        console.log(`about to fire backend call`);
         const res = await fireBackendCall(backend, endpoint, args, ctx);
-        console.log(`testing`);
-        console.log(res);
         return res;
       } catch (err) {
         responseError = new ResponseError(
@@ -20,7 +17,6 @@ const defaultHandlers = Object.keys(endpointToBackendLookups).reduce(
             backend.name
           }. error: ${err.message}`
         );
-        // console.log(responseError);
         throw responseError;
       }
     };

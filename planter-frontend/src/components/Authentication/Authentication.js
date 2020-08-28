@@ -10,53 +10,19 @@ const Authentication = ({
   // global state props
   isAuthenticated,
   // RPC calls
-  refreshAuth,
   getProfile,
   getTimers,
   getWallet,
 }) => {
-  // TODO: add logic that checks path (maybe use switch) and based on path, fetch differnt components
-  // don't need url links - can just render differnt components based on the rpc call?
-  // if (isAuthenticated) {
-  //   useEffect(() => {
-  //     getProfile();
-  //     getTimers();
-  //     getWallet();
-  //   }, [isAuthenticated]);
-  //   return <PomodoroClock />;
-  // }
-
-  // if (!isAuthenticated) {
-  //   // fire if initial calls returned 401 and if this returns 401 as well, load login
-  //   // fire these calls regardless of auth - if returns 401, keep isAuth false,
-  //   // if calls return succesful, change isAuth to false
-  //   // if res.data.status === 401, redirect to refreshAuth
-  //   // refreshAuth();
-  //   // useEffect(() => {
-  //   //   getProfile();
-  //   //   getTimers();
-  //   //   getWallet();
-  //   // }, [isAuthenticated]);
-  // }
-
   useEffect(() => {
-    if (isAuthenticated) {
-      getProfile();
-      getTimers();
-      getWallet();
-    }
-    if (!isAuthenticated) {
-      getProfile();
-    }
-  }, [isAuthenticated]);
+    getProfile();
+    getTimers();
+    getWallet();
+  }, []);
 
   if (isAuthenticated) {
     return <PomodoroClock />;
   }
-
-  // TODO: check for access and refresh tokens and if not present, render the login pg
-  // and set isAuthenticated to false. if tokens present, set isAuth to true and render above
-  // fire off rpc handler if isAuth is false and if tokens are present and returns 200, change state
 
   return (
     <>
