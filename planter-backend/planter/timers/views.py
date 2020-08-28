@@ -104,8 +104,8 @@ def decrement_focus_time(request):
             if cft >= min_focus_time:
                 timer.current_focus_timer = cft - 60
                 # timer.current_focus_time = (F('current_focus_time') == 60)
-            else:
-                timer.current_focus_time = (F('current_focus_time') == 0)
+            # else:
+            #     timer.current_focus_time = (F('current_focus_time') == 0)
 
             timer.save()
             timer.refresh_from_db()
@@ -159,8 +159,8 @@ def decrement_break_time(request):
             timer.break_time = (F('break_time') - 60)
             if cbt >= min_break_time:
                 timer.current_break_time = cbt - 60
-            else: 
-                timer.current_break_time = (F('current_break_time') == 0)
+            # else: 
+            #     timer.current_break_time = (F('current_break_time') == 0)
             timer.save()
             timer.refresh_from_db()
     except Timer.DoesNotExist:

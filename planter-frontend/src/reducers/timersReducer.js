@@ -119,7 +119,7 @@ export default reduceReducers(
             : state.focus_time - 60,
         current_focus_time:
           state.current_focus_time <= 60
-            ? state.current_focus_time === 0
+            ? state.current_focus_time
             : state.current_focus_time - 60,
       };
     },
@@ -182,7 +182,7 @@ export default reduceReducers(
             : state.break_time - 60,
         current_break_time:
           state.current_break_time <= 60
-            ? state.current_break_time === 0
+            ? state.current_break_time
             : state.current_break_time - 60,
       };
     },

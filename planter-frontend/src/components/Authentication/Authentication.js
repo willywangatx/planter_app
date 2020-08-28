@@ -18,7 +18,7 @@ const Authentication = ({
     getProfile();
     getTimers();
     getWallet();
-  }, []);
+  }, [isAuthenticated]);
 
   if (isAuthenticated) {
     return <PomodoroClock />;

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
@@ -8,12 +8,9 @@ import AdjustTime from './AdjustTime';
 import StartStop from './StartStop';
 import Reset from './Reset';
 import ToggleSwitch from './ToggleSwitch';
+import NavBar from '../Navigation/NavBar';
 
 const PomodoroClock = ({
-  // RPC handlers
-  getProfile,
-  getTimers,
-  stopTimers,
   // global state props
   timersLoading,
   timersError,
@@ -44,6 +41,7 @@ const PomodoroClock = ({
 
   return (
     <>
+      <NavBar />
       <div className="pomodoro-clock raised-panel">
         <div className="left-panel"></div>
         <div className="center-panel">
