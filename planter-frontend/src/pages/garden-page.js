@@ -6,7 +6,8 @@ const GardenPage = () => {
   return (
     <>
       <NavBar />
-      <Garden />
+      {/* <Garden /> */}
+      <Authentication />
     </>
   );
 };
