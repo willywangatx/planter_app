@@ -8,7 +8,6 @@ import AdjustTime from './AdjustTime';
 import StartStop from './StartStop';
 import Reset from './Reset';
 import ToggleSwitch from './ToggleSwitch';
-import NavBar from '../Navigation/NavBar';
 
 const PomodoroClock = ({
   // global state props
@@ -20,27 +19,26 @@ const PomodoroClock = ({
   profileData,
   walletData,
 }) => {
-  if (profileLoading) {
-    return <div>loading</div>;
-  }
+  // if (profileLoading) {
+  //   return <div>loading</div>;
+  // }
 
   // TODO: ask why this is causing error? continuously fires and doesn't load
   // if (timersLoading) {
   //   return <div>loading</div>;
   // }
 
-  if (profileError) {
-    return <div>{profileError.message}</div>;
-  }
-  if (timersError) {
-    return <div>{timersError.message}</div>;
-  }
+  // if (profileError) {
+  //   return <div>{profileError.message}</div>;
+  // }
+  // if (timersError) {
+  //   return <div>{timersError.message}</div>;
+  // }
 
   const shownProfileData = profileLoading ? 'loading' : { walletData };
 
   return (
     <>
-      <NavBar />
       <div className="pomodoro-clock raised-panel">
         <div className="left-panel"></div>
         <div className="center-panel">

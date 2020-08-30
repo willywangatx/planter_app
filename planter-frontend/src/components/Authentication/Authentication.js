@@ -5,8 +5,9 @@ import { compose } from 'redux';
 import { withRouter } from 'fusion-plugin-react-router';
 
 import RenderedAuth from './RenderedAuth';
-import PomodoroClock from '../PomodoroClock/PomodoroClock';
-import Garden from '../Garden/Garden';
+// import PomodoroClock from '../PomodoroClock/PomodoroClock';
+import GardenPage from '../../pages/garden-page';
+import Home from '../../pages/home';
 
 const Authentication = ({
   // withRouter
@@ -15,36 +16,38 @@ const Authentication = ({
   history,
   // global state props
   isAuthenticated,
-  // RPC calls
+  // RPC
   getProfile,
   getTimers,
   getWallet,
 }) => {
-  useEffect(() => {
-    getProfile();
-    getTimers();
-    getWallet();
-  }, [isAuthenticated]);
-
   const componentToLoad = () => {
     switch (location.pathname) {
       case '/':
-        return <PomodoroClock />;
+        return <Home />;
       case '/garden':
-        return <Garden />;
+        return <GardenPage />;
       default:
-        <PomodoroClock />;
+        <Home />;
     }
   };
 
-  // if (isAuthenticated) {
-  //   return (
-  //     <>
-  //       <div>{componentToLoad()}</div>
-  //       <div>You are now at {location.pathname}</div>
-  //     </>
-  //   );
-  // }
+  useEffect(() => {
+    switch (location.pathname) {
+      case '/':
+        getProfile();
+        getTimers();
+        getWallet();
+        break;
+      case '/garden':
+        getProfile();
+        break;
+      default:
+        getProfile();
+        getTimers();
+        getWallet();
+    }
+  }, []);
 
   return <>{isAuthenticated ? componentToLoad() : <RenderedAuth />}</>;
 };
@@ -57,7 +60,6 @@ const mapStateToProps = (state) => {
 
 const hoc = compose(
   connect(mapStateToProps),
-  withRPCRedux('refreshAuth'),
   withRPCRedux('getProfile'),
   withRPCRedux('getTimers'),
   withRPCRedux('getWallet')

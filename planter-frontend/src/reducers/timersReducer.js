@@ -49,16 +49,17 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
-      const newTimer = { ...payload.timers };
-      delete newTimer.current_cycle;
-      delete newTimer.current_focus_time;
-      delete newTimer.current_break_time;
-      delete newTimer.is_started;
+      // const newTimer = { ...payload.timers };
+      // delete newTimer.current_cycle;
+      // delete newTimer.current_focus_time;
+      // delete newTimer.current_break_time;
+      // delete newTimer.is_started;
       return {
         ...state,
         loading: false,
         error: null,
-        ...newTimer,
+        focus_time: payload.timers.focus_time,
+        break_time: payload.timers.break_time,
       };
     },
     failure: (state, { payload }) => {
@@ -82,15 +83,16 @@ export default reduceReducers(
     },
     success: (state, { payload }) => {
       console.log(payload);
-      const newTimer = { ...payload.timers };
-      delete newTimer.current_focus_time;
+      // const newTimer = { ...payload.timers };
+      // delete newTimer.current_focus_time;
       // delete newTimer.current_cycle;
       // delete newTimer.current_break_time;
       // delete newTimer.current_cycle;
       return {
         ...state,
         loading: false,
-        ...newTimer,
+        // ...newTimer,
+        focus_time: payload.timers.focus_time,
       };
     },
     failure: (state, { payload }) => {
@@ -120,12 +122,13 @@ export default reduceReducers(
     },
     success: (state, { payload }) => {
       console.log(payload);
-      const newTimer = { ...payload.timers };
-      delete newTimer.current_focus_time;
+      // const newTimer = { ...payload.timers };
+      // delete newTimer.current_focus_time;
       return {
         ...state,
         loading: false,
-        ...newTimer,
+        // ...newTimer,
+        focus_time: payload.timers.focus_time,
       };
     },
     failure: (state, { payload }) => {
@@ -148,12 +151,13 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
-      const newTimer = { ...payload.timers };
-      delete newTimer.current_focus_time;
+      // const newTimer = { ...payload.timers };
+      // delete newTimer.current_focus_time;
       return {
         ...state,
         loading: false,
-        ...newTimer,
+        // ...newTimer,
+        break_time: payload.timers.break_time,
       };
     },
     failure: (state, { payload }) => {
@@ -182,12 +186,13 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
-      const newTimer = { ...payload.timers };
-      delete newTimer.current_focus_time;
+      // const newTimer = { ...payload.timers };
+      // delete newTimer.current_focus_time;
       return {
         ...state,
         loading: false,
-        ...newTimer,
+        // ...newTimer,
+        break_time: payload.timers.break_time,
       };
     },
     failure: (state, { payload }) => {
@@ -209,16 +214,17 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
-      // const newTimer = { ...payload.timers };
-      // delete newTimer.current_focus_time;
-      // delete newTimer.current_break_time;
-      // delete newTimer.is_started;
-      // delete newTimer.current_cycle;
+      const newTimer = { ...payload.timers };
+      delete newTimer.current_focus_time;
+      delete newTimer.current_break_time;
+      delete newTimer.is_started;
+      delete newTimer.current_cycle;
       return {
         ...state,
         loading: false,
         error: null,
-        // ...newTimer,
+        // current_cycle: payload.timers.current_cycle,
+        ...newTimer,
       };
     },
     failure: (state, { payload }) => {
@@ -265,15 +271,16 @@ export default reduceReducers(
       };
     },
     success: (state, { payload }) => {
-      const newTimer = { ...payload.timers };
-      delete newTimer.current_cycle;
-      delete newTimer.current_focus_time;
-      delete newTimer.current_break_time;
-      delete newTimer.is_started;
+      // const newTimer = { ...payload.timers };
+      // delete newTimer.current_cycle;
+      // delete newTimer.current_focus_time;
+      // delete newTimer.current_break_time;
+      // delete newTimer.is_started;
       return {
         ...state,
         loading: true,
-        ...newTimer,
+        // ...newTimer,
+        is_started: payload.timers.is_started,
       };
     },
     error: (state, { payload }) => {
