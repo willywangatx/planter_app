@@ -2,22 +2,22 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "6428e494bf5379499ab7",
+  "hash": "38c9cbd4db1ee76a1661",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "6428e494bf5379499ab7",
-      "time": 399,
-      "builtAt": 1598647902822,
+      "hash": "38c9cbd4db1ee76a1661",
+      "time": 235,
+      "builtAt": 1598755022375,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.c0b0640ba375141b1187.hot-update.js",
+          "main.b078f7d2b8f2214ffbe8.hot-update.js",
           "server-main.js.map",
-          "main.c0b0640ba375141b1187.hot-update.js.map"
+          "main.b078f7d2b8f2214ffbe8.hot-update.js.map"
         ]
       },
       "assets": [
@@ -30,7 +30,7 @@
           "emitted": false
         },
         {
-          "name": "c0b0640ba375141b1187.hot-update.json",
+          "name": "b078f7d2b8f2214ffbe8.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.c0b0640ba375141b1187.hot-update.js",
-          "size": 10662,
+          "name": "main.b078f7d2b8f2214ffbe8.hot-update.js",
+          "size": 3960,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.c0b0640ba375141b1187.hot-update.js.map",
-          "size": 11893,
+          "name": "main.b078f7d2b8f2214ffbe8.hot-update.js.map",
+          "size": 1587,
           "chunks": [
             "main"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 198180,
+          "size": 198370,
           "chunks": [
             "main"
           ],
@@ -83,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 142314,
+          "size": 142854,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.c0b0640ba375141b1187.hot-update.js",
+            "main.b078f7d2b8f2214ffbe8.hot-update.js",
             "server-main.js.map",
-            "main.c0b0640ba375141b1187.hot-update.js.map"
+            "main.b078f7d2b8f2214ffbe8.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.c0b0640ba375141b1187.hot-update.js",
+            "main.b078f7d2b8f2214ffbe8.hot-update.js",
             "server-main.js.map",
-            "main.c0b0640ba375141b1187.hot-update.js.map"
+            "main.b078f7d2b8f2214ffbe8.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -133,17 +133,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 89383,
+          "size": 89573,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.c0b0640ba375141b1187.hot-update.js",
+            "main.b078f7d2b8f2214ffbe8.hot-update.js",
             "server-main.js.map",
-            "main.c0b0640ba375141b1187.hot-update.js.map"
+            "main.b078f7d2b8f2214ffbe8.hot-update.js.map"
           ],
-          "hash": "b04df1b6fa2ed9a79668",
+          "hash": "ede6022f97eaf04c2b1b",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -1778,9 +1778,9 @@
               "name": "./src/components/Navigation/NavBar.js",
               "index": 48,
               "index2": 41,
-              "size": 1286,
+              "size": 1476,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -1863,7 +1863,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Navigation/NavBar.js\";\nimport React from 'react';\nimport { Link, NavLink } from 'fusion-plugin-react-router';\nimport paths from '../../constants/paths';\n\nconst NavBar = () => {\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 8\n    },\n    __self: this\n  }, React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, \"home.\"), React.createElement(Link, {\n    to: paths.garden,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, \"garden.\"), React.createElement(Link, {\n    to: paths.market,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, \"market.\"), React.createElement(Link, {\n    to: paths.shed,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, \"shed.\"), React.createElement(Link, {\n    to: paths.tasks,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, \"tasks.\")));\n};\n\nexport default NavBar;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Navigation/NavBar.js\";\nimport React from 'react';\nimport { Link, NavLink } from 'fusion-plugin-react-router';\nimport paths from '../../constants/paths';\n\nconst NavBar = () => {\n  // const activePath = () => {\n  // }\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    exact: true,\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, \"home.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.garden,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, \"garden.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.market,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }, \"market.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.shed,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 22\n    },\n    __self: this\n  }, \"shed.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.tasks,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 25\n    },\n    __self: this\n  }, \"tasks.\")));\n};\n\nexport default NavBar;"
             },
             {
               "id": "./src/components/PomodoroClock/AdjustTime.js",
@@ -2430,7 +2430,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "../../constants/paths",
-                  "loc": "15:8-13"
+                  "loc": "18:8-13"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -2439,7 +2439,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "../../constants/paths",
-                  "loc": "22:8-13"
+                  "loc": "26:8-13"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -2448,7 +2448,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "../../constants/paths",
-                  "loc": "29:8-13"
+                  "loc": "34:8-13"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -2457,7 +2457,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "../../constants/paths",
-                  "loc": "36:8-13"
+                  "loc": "42:8-13"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -2466,7 +2466,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "../../constants/paths",
-                  "loc": "43:8-13"
+                  "loc": "50:8-13"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -3051,7 +3051,7 @@
               "index2": 61,
               "size": 8353,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -4336,7 +4336,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "13:25-32"
+                  "loc": "15:25-32"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -4345,7 +4345,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "21:35-39"
+                  "loc": "24:35-42"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -4354,7 +4354,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "28:37-41"
+                  "loc": "32:37-44"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -4363,7 +4363,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "35:37-41"
+                  "loc": "40:37-44"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -4372,7 +4372,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "42:35-39"
+                  "loc": "48:35-42"
                 },
                 {
                   "moduleId": "./src/main.js",
@@ -6551,7 +6551,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "7:9-14"
+                  "loc": "9:9-14"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -6560,7 +6560,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "7:29-34"
+                  "loc": "9:29-34"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -6569,7 +6569,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "7:51-56"
+                  "loc": "9:51-56"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -6578,7 +6578,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "13:5-10"
+                  "loc": "15:5-10"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -6587,7 +6587,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "21:15-20"
+                  "loc": "24:15-20"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -6596,7 +6596,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "28:17-22"
+                  "loc": "32:17-22"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -6605,7 +6605,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "35:17-22"
+                  "loc": "40:17-22"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -6614,7 +6614,7 @@
                   "moduleName": "./src/components/Navigation/NavBar.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "42:15-20"
+                  "loc": "48:15-20"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
@@ -9659,9 +9659,9 @@
           "name": "./src/components/Navigation/NavBar.js",
           "index": 48,
           "index2": 41,
-          "size": 1286,
+          "size": 1476,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -9744,7 +9744,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Navigation/NavBar.js\";\nimport React from 'react';\nimport { Link, NavLink } from 'fusion-plugin-react-router';\nimport paths from '../../constants/paths';\n\nconst NavBar = () => {\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 8\n    },\n    __self: this\n  }, React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, \"home.\"), React.createElement(Link, {\n    to: paths.garden,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, \"garden.\"), React.createElement(Link, {\n    to: paths.market,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, \"market.\"), React.createElement(Link, {\n    to: paths.shed,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, \"shed.\"), React.createElement(Link, {\n    to: paths.tasks,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, \"tasks.\")));\n};\n\nexport default NavBar;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Navigation/NavBar.js\";\nimport React from 'react';\nimport { Link, NavLink } from 'fusion-plugin-react-router';\nimport paths from '../../constants/paths';\n\nconst NavBar = () => {\n  // const activePath = () => {\n  // }\n  return React.createElement(React.Fragment, null, React.createElement(\"nav\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    exact: true,\n    to: paths.home,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, \"home.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.garden,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, \"garden.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.market,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }, \"market.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.shed,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 22\n    },\n    __self: this\n  }, \"shed.\"), React.createElement(NavLink, {\n    activeClassName: \"inset\",\n    to: paths.tasks,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 25\n    },\n    __self: this\n  }, \"tasks.\")));\n};\n\nexport default NavBar;"
         },
         {
           "id": "./src/components/PomodoroClock/AdjustTime.js",
@@ -10311,7 +10311,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "../../constants/paths",
-              "loc": "15:8-13"
+              "loc": "18:8-13"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -10320,7 +10320,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "../../constants/paths",
-              "loc": "22:8-13"
+              "loc": "26:8-13"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -10329,7 +10329,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "../../constants/paths",
-              "loc": "29:8-13"
+              "loc": "34:8-13"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -10338,7 +10338,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "../../constants/paths",
-              "loc": "36:8-13"
+              "loc": "42:8-13"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -10347,7 +10347,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "../../constants/paths",
-              "loc": "43:8-13"
+              "loc": "50:8-13"
             },
             {
               "moduleId": "./src/root.js",
@@ -10932,7 +10932,7 @@
           "index2": 61,
           "size": 8353,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -12217,7 +12217,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "13:25-32"
+              "loc": "15:25-32"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -12226,7 +12226,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "21:35-39"
+              "loc": "24:35-42"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -12235,7 +12235,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "28:37-41"
+              "loc": "32:37-44"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -12244,7 +12244,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "35:37-41"
+              "loc": "40:37-44"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -12253,7 +12253,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "42:35-39"
+              "loc": "48:35-42"
             },
             {
               "moduleId": "./src/main.js",
@@ -14432,7 +14432,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:9-14"
+              "loc": "9:9-14"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -14441,7 +14441,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:29-34"
+              "loc": "9:29-34"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -14450,7 +14450,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:51-56"
+              "loc": "9:51-56"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -14459,7 +14459,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "13:5-10"
+              "loc": "15:5-10"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -14468,7 +14468,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "21:15-20"
+              "loc": "24:15-20"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -14477,7 +14477,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "28:17-22"
+              "loc": "32:17-22"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -14486,7 +14486,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "35:17-22"
+              "loc": "40:17-22"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -14495,7 +14495,7 @@
               "moduleName": "./src/components/Navigation/NavBar.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "42:15-20"
+              "loc": "48:15-20"
             },
             {
               "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
