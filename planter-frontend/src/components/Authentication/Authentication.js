@@ -20,6 +20,7 @@ const Authentication = ({
   getProfile,
   getTimers,
   getWallet,
+  getGardens,
 }) => {
   const componentToLoad = () => {
     switch (location.pathname) {
@@ -32,22 +33,23 @@ const Authentication = ({
     }
   };
 
-  useEffect(() => {
-    switch (location.pathname) {
-      case '/':
-        getProfile();
-        getTimers();
-        getWallet();
-        break;
-      case '/garden':
-        getProfile();
-        break;
-      default:
-        getProfile();
-        getTimers();
-        getWallet();
-    }
-  }, []);
+  // useEffect(() => {
+  //   switch (location.pathname) {
+  //     case '/':
+  //       getProfile();
+  //       // getTimers();
+  //       // getWallet();
+  //       break;
+  //     case '/garden':
+  //       getProfile();
+  //       getGardens();
+  //       break;
+  //     default:
+  //       getProfile();
+  //       getTimers();
+  //       getWallet();
+  //   }
+  // }, []);
 
   return <>{isAuthenticated ? componentToLoad() : <RenderedAuth />}</>;
 };
@@ -62,7 +64,8 @@ const hoc = compose(
   connect(mapStateToProps),
   withRPCRedux('getProfile'),
   withRPCRedux('getTimers'),
-  withRPCRedux('getWallet')
+  withRPCRedux('getWallet'),
+  withRPCRedux('getGardens')
 );
 
 const withRouterAuthWrapper = withRouter(Authentication);
