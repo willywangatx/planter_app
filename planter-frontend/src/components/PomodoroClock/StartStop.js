@@ -88,6 +88,7 @@ const StartStop = ({
         if (currentCycle === 'Break')
           dispatch({ type: 'DECREMENT_CURRENT_BREAK_TIME' });
       }, 100);
+      // clean up for uesEffect
       return () => clearInterval(interval);
     }
   }, [startStopTimer]);

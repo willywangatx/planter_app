@@ -23,7 +23,8 @@ const Root = (
     <Switch>
       <AuthRoute exact path={paths.home} component={Home} />
       {/* <Route path={paths.home} exact component={Home} /> */}
-      <Route path={paths.garden} exact component={GardenPage} />
+      <AuthRoute exact path={paths.garden} component={GardenPage} />
+      {/* <Route path={paths.garden} exact component={GardenPage} /> */}
       <Route component={PageNotFound} />
     </Switch>
   </>

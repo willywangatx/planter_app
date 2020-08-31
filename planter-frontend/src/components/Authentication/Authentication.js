@@ -22,16 +22,16 @@ const Authentication = ({
   getWallet,
   getGardens,
 }) => {
-  const componentToLoad = () => {
-    switch (location.pathname) {
-      case '/':
-        return <Home />;
-      case '/garden':
-        return <GardenPage />;
-      default:
-        <Home />;
-    }
-  };
+  // const componentToLoad = () => {
+  //   switch (location.pathname) {
+  //     case '/':
+  //       return <Home />;
+  //     case '/garden':
+  //       return <GardenPage />;
+  //     default:
+  //       <Home />;
+  //   }
+  // };
 
   // useEffect(() => {
   //   switch (location.pathname) {
@@ -51,7 +51,12 @@ const Authentication = ({
   //   }
   // }, []);
 
-  return <>{isAuthenticated ? componentToLoad() : <RenderedAuth />}</>;
+  // return <>{isAuthenticated ? componentToLoad() : <RenderedAuth />}</>;
+  return (
+    <>
+      <RenderedAuth />
+    </>
+  );
 };
 
 const mapStateToProps = (state) => {
