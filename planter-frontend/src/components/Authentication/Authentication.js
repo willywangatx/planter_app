@@ -15,23 +15,38 @@ const Authentication = ({
   location,
   history,
   // global state props
-  isAuthenticated,
+  auth,
   // RPC
   getProfile,
   getTimers,
   getWallet,
   getGardens,
 }) => {
-  // const componentToLoad = () => {
-  //   switch (location.pathname) {
-  //     case '/':
-  //       return <Home />;
-  //     case '/garden':
-  //       return <GardenPage />;
-  //     default:
-  //       <Home />;
-  //   }
-  // };
+  useEffect(() => {
+    if (!auth.isAuthenticated) {
+      refreshAuth();
+    }
+  }, []);
+
+  if (!auth.isAuthenticated) {
+    // TODO: make a loading component/page
+    return <div>loading...</div>;
+  }
+
+  // if (auth.didAttempt && !auth.isAuthenticated) {
+  //   return <RenderedAuth />;
+  // }
+
+  const componentToLoad = () => {
+    switch (location.pathname) {
+      case '/':
+        return <Home />;
+      case '/garden':
+        return <GardenPage />;
+      default:
+        <Home />;
+    }
+  };
 
   // useEffect(() => {
   //   switch (location.pathname) {
@@ -51,17 +66,25 @@ const Authentication = ({
   //   }
   // }, []);
 
-  // return <>{isAuthenticated ? componentToLoad() : <RenderedAuth />}</>;
   return (
     <>
-      <RenderedAuth />
+      {auth.didAttempt && !auth.isAuthenticated ? (
+        componentToLoad()
+      ) : (
+        <RenderedAuth />
+      )}
     </>
   );
+  // return (
+  //   <>
+  //     <RenderedAuth />
+  //   </>
+  // );
 };
 
 const mapStateToProps = (state) => {
   return {
-    isAuthenticated: state.authentication.isAuthenticated,
+    auth: state.authentication,
   };
 };
 

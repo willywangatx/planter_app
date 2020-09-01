@@ -8,11 +8,7 @@ import Garden from '../components/Garden/Garden';
 // import PomodoroClock from '../components/PomodoroClock/PomodoroClock';
 
 const GardenPage = ({ isAuthenticated, getGardens }) => {
-  // const displayBreakTime = () => {
-  //   if (currentCycle === 'Break') {
-  //     return PomodoroClock;
-  //   }
-  // };
+  // TODO: error do not call hooks inside a use effect, can only call hooks at top level of function
 
   useEffect(() => {
     getGardens();
@@ -21,13 +17,10 @@ const GardenPage = ({ isAuthenticated, getGardens }) => {
   return (
     <>
       <NavBar />
-      {/* <div>{displayBreakTime()}</div> */}
       <Garden />
     </>
   );
 };
-
-// export default GardenPage;
 
 const mapStateToProps = (state) => {
   return {

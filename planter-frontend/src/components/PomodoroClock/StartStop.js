@@ -75,6 +75,7 @@ const StartStop = ({
 
   // TIMER SECONDS COUNTDOWN LOGIC
   // TODO: ask why there is a return clear interval needed in the if (isStarted) block??
+
   useEffect(() => {
     let interval;
     if (!isStarted) {

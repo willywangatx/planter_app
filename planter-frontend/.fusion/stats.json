@@ -2,22 +2,22 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "d71a7fd5882e6aa5488e",
+  "hash": "b29ebe49bd3b368e6732",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "d71a7fd5882e6aa5488e",
-      "time": 644,
-      "builtAt": 1598907500628,
+      "hash": "b29ebe49bd3b368e6732",
+      "time": 379,
+      "builtAt": 1598935263229,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.e56761ac4886e8a99a7f.hot-update.js",
+          "main.947c2b0b816b1d12cb71.hot-update.js",
           "server-main.js.map",
-          "main.e56761ac4886e8a99a7f.hot-update.js.map"
+          "main.947c2b0b816b1d12cb71.hot-update.js.map"
         ]
       },
       "assets": [
@@ -30,7 +30,7 @@
           "emitted": false
         },
         {
-          "name": "e56761ac4886e8a99a7f.hot-update.json",
+          "name": "947c2b0b816b1d12cb71.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.e56761ac4886e8a99a7f.hot-update.js",
-          "size": 5577,
+          "name": "main.947c2b0b816b1d12cb71.hot-update.js",
+          "size": 6441,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.e56761ac4886e8a99a7f.hot-update.js.map",
-          "size": 1749,
+          "name": "main.947c2b0b816b1d12cb71.hot-update.js.map",
+          "size": 3020,
           "chunks": [
             "main"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 211181,
+          "size": 206026,
           "chunks": [
             "main"
           ],
@@ -83,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 150644,
+          "size": 147878,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.e56761ac4886e8a99a7f.hot-update.js",
+            "main.947c2b0b816b1d12cb71.hot-update.js",
             "server-main.js.map",
-            "main.e56761ac4886e8a99a7f.hot-update.js.map"
+            "main.947c2b0b816b1d12cb71.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.e56761ac4886e8a99a7f.hot-update.js",
+            "main.947c2b0b816b1d12cb71.hot-update.js",
             "server-main.js.map",
-            "main.e56761ac4886e8a99a7f.hot-update.js.map"
+            "main.947c2b0b816b1d12cb71.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -133,17 +133,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 96359,
+          "size": 93642,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.e56761ac4886e8a99a7f.hot-update.js",
+            "main.947c2b0b816b1d12cb71.hot-update.js",
             "server-main.js.map",
-            "main.e56761ac4886e8a99a7f.hot-update.js.map"
+            "main.947c2b0b816b1d12cb71.hot-update.js.map"
           ],
-          "hash": "ff83a09c282034749d27",
+          "hash": "c1125834d8263105592b",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -154,7 +154,7 @@
               "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
               "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
               "index": 0,
-              "index2": 76,
+              "index2": 75,
               "size": 52,
               "built": false,
               "optional": false,
@@ -375,8 +375,8 @@
               "id": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/constants/styles.css",
               "name": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
-              "index": 56,
-              "index2": 52,
+              "index": 55,
+              "index2": 51,
               "size": 82,
               "cacheable": true,
               "built": false,
@@ -424,7 +424,7 @@
                   "moduleName": "./src/root.js",
                   "type": "cjs require",
                   "userRequest": "__SECRET_FILE_LOADER__?assetUrl=true!./constants/styles.css",
-                  "loc": "28:17-87"
+                  "loc": "27:17-87"
                 }
               ],
               "providedExports": null,
@@ -715,7 +715,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
               "name": "./node_modules/fusion-cli/entries/server-entry.js",
               "index": 7,
-              "index2": 75,
+              "index2": 74,
               "size": 3021,
               "cacheable": true,
               "built": false,
@@ -1369,9 +1369,9 @@
               "name": "./src/components/Authentication/Authentication.js",
               "index": 51,
               "index2": 50,
-              "size": 1994,
+              "size": 2860,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -1408,31 +1408,31 @@
               "assets": [],
               "reasons": [
                 {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "../Authentication/Authentication",
-                  "loc": "11:0-62"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "../Authentication/Authentication",
-                  "loc": "58:35-49"
-                },
-                {
                   "moduleId": "./src/root.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
                   "module": "./src/root.js",
                   "moduleName": "./src/root.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./components/Authentication/Authentication",
-                  "loc": "11:0-72"
+                  "loc": "12:0-72"
+                },
+                {
+                  "moduleId": "./src/root.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+                  "module": "./src/root.js",
+                  "moduleName": "./src/root.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "./components/Authentication/Authentication",
+                  "loc": "42:13-27"
+                },
+                {
+                  "moduleId": "./src/root.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+                  "module": "./src/root.js",
+                  "moduleName": "./src/root.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "./components/Authentication/Authentication",
+                  "loc": "51:13-27"
                 }
               ],
               "providedExports": [
@@ -1440,7 +1440,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport { withRouter } from 'fusion-plugin-react-router';\nimport RenderedAuth from './RenderedAuth'; // import PomodoroClock from '../PomodoroClock/PomodoroClock';\n\nimport GardenPage from '../../pages/garden-page';\nimport Home from '../../pages/home';\n\nconst Authentication = ({\n  // withRouter\n  match,\n  location,\n  history,\n  // global state props\n  isAuthenticated,\n  // RPC\n  getProfile,\n  getTimers,\n  getWallet,\n  getGardens\n}) => {\n  // const componentToLoad = () => {\n  //   switch (location.pathname) {\n  //     case '/':\n  //       return <Home />;\n  //     case '/garden':\n  //       return <GardenPage />;\n  //     default:\n  //       <Home />;\n  //   }\n  // };\n  // useEffect(() => {\n  //   switch (location.pathname) {\n  //     case '/':\n  //       getProfile();\n  //       // getTimers();\n  //       // getWallet();\n  //       break;\n  //     case '/garden':\n  //       getProfile();\n  //       getGardens();\n  //       break;\n  //     default:\n  //       getProfile();\n  //       getTimers();\n  //       getWallet();\n  //   }\n  // }, []);\n  // return <>{isAuthenticated ? componentToLoad() : <RenderedAuth />}</>;\n  return React.createElement(React.Fragment, null, React.createElement(RenderedAuth, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 57\n    },\n    __self: this\n  }));\n};\n\nconst mapStateToProps = state => {\n  return {\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getWallet'), withRPCRedux('getGardens'));\nconst withRouterAuthWrapper = withRouter(Authentication);\nexport default hoc(withRouterAuthWrapper);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport { withRouter } from 'fusion-plugin-react-router';\nimport RenderedAuth from './RenderedAuth'; // import PomodoroClock from '../PomodoroClock/PomodoroClock';\n\nimport GardenPage from '../../pages/garden-page';\nimport Home from '../../pages/home';\n\nconst Authentication = ({\n  // withRouter\n  match,\n  location,\n  history,\n  // global state props\n  auth,\n  // RPC\n  getProfile,\n  getTimers,\n  getWallet,\n  getGardens\n}) => {\n  useEffect(() => {\n    if (!auth.isAuthenticated) {\n      refreshAuth();\n    }\n  }, []);\n\n  if (!auth.isAuthenticated) {\n    // TODO: make a loading component/page\n    return React.createElement(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 33\n      },\n      __self: this\n    }, \"loading...\");\n  } // if (auth.didAttempt && !auth.isAuthenticated) {\n  //   return <RenderedAuth />;\n  // }\n\n\n  const componentToLoad = () => {\n    switch (location.pathname) {\n      case '/':\n        return React.createElement(Home, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 43\n          },\n          __self: this\n        });\n\n      case '/garden':\n        return React.createElement(GardenPage, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 45\n          },\n          __self: this\n        });\n\n      default:\n        React.createElement(Home, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 47\n          },\n          __self: this\n        });\n    }\n  }; // useEffect(() => {\n  //   switch (location.pathname) {\n  //     case '/':\n  //       getProfile();\n  //       // getTimers();\n  //       // getWallet();\n  //       break;\n  //     case '/garden':\n  //       getProfile();\n  //       getGardens();\n  //       break;\n  //     default:\n  //       getProfile();\n  //       getTimers();\n  //       getWallet();\n  //   }\n  // }, []);\n\n\n  return React.createElement(React.Fragment, null, auth.didAttempt && !auth.isAuthenticated ? componentToLoad() : React.createElement(RenderedAuth, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 74\n    },\n    __self: this\n  })); // return (\n  //   <>\n  //     <RenderedAuth />\n  //   </>\n  // );\n};\n\nconst mapStateToProps = state => {\n  return {\n    auth: state.authentication\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getWallet'), withRPCRedux('getGardens'));\nconst withRouterAuthWrapper = withRouter(Authentication);\nexport default hoc(withRouterAuthWrapper);"
             },
             {
               "id": "./src/components/Authentication/Login.js",
@@ -1667,7 +1667,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "./RenderedAuth",
-                  "loc": "53:71-83"
+                  "loc": "93:134-146"
                 }
               ],
               "providedExports": [
@@ -1742,7 +1742,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "../components/Garden/Garden",
-                  "loc": "27:26-32"
+                  "loc": "23:26-32"
                 }
               ],
               "providedExports": [
@@ -1817,7 +1817,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "../components/Navigation/NavBar",
-                  "loc": "21:71-77"
+                  "loc": "17:71-77"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -2158,7 +2158,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  updateEnergy,\n  updateCompletedFocusMinutes,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCurrentTimes,\n  focusTime\n}) => {\n  const dispatch = useDispatch(); // UPDATE BACKEND WITH CURRENT TIME EVERY 10 SECONDS WHEN isStarted\n  // TODO: current times that are passed to BE are not changing every 10 sec - is the same\n  // useEffect(() => {\n  //   let interval;\n  //   if (!isStarted) {\n  //     return clearInterval(interval);\n  //   }\n  //   if (isStarted) {\n  //     interval = setInterval(() => {\n  //       updateCurrentTimes({\n  //         id: timerId,\n  //         current_focus_time: currentFocusTime,\n  //         current_break_time: currentBreakTime,\n  //       });\n  //     }, 10000);\n  //     return () => clearInterval(interval);\n  //   }\n  // }, [isStarted]);\n  // TIMER LOGIC WHEN TIME REACHES ZERO\n\n  useEffect(() => {\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n      updateEnergy({\n        focus_time: focusTime\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // START AND STOP TIMER LOGIC\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n      updateCurrentTimes({\n        id: timerId,\n        current_focus_time: currentFocusTime,\n        current_break_time: currentBreakTime\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TIMER SECONDS COUNTDOWN LOGIC\n  // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 100); // clean up for uesEffect\n\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 97\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 98\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  const focusTime = state.timers.focus_time;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle,\n    focusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCurrentTimes'), withRPCRedux('updateCompletedFocusMinutes'), withRPCRedux('updateEnergy'));\nexport default hoc(StartStop);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  updateEnergy,\n  updateCompletedFocusMinutes,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCurrentTimes,\n  focusTime\n}) => {\n  const dispatch = useDispatch(); // UPDATE BACKEND WITH CURRENT TIME EVERY 10 SECONDS WHEN isStarted\n  // TODO: current times that are passed to BE are not changing every 10 sec - is the same\n  // useEffect(() => {\n  //   let interval;\n  //   if (!isStarted) {\n  //     return clearInterval(interval);\n  //   }\n  //   if (isStarted) {\n  //     interval = setInterval(() => {\n  //       updateCurrentTimes({\n  //         id: timerId,\n  //         current_focus_time: currentFocusTime,\n  //         current_break_time: currentBreakTime,\n  //       });\n  //     }, 10000);\n  //     return () => clearInterval(interval);\n  //   }\n  // }, [isStarted]);\n  // TIMER LOGIC WHEN TIME REACHES ZERO\n\n  useEffect(() => {\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n      updateEnergy({\n        focus_time: focusTime\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // START AND STOP TIMER LOGIC\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n      updateCurrentTimes({\n        id: timerId,\n        current_focus_time: currentFocusTime,\n        current_break_time: currentBreakTime\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TIMER SECONDS COUNTDOWN LOGIC\n  // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 100); // clean up for uesEffect\n\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 98\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 99\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  const focusTime = state.timers.focus_time;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle,\n    focusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCurrentTimes'), withRPCRedux('updateCompletedFocusMinutes'), withRPCRedux('updateEnergy'));\nexport default hoc(StartStop);"
             },
             {
               "id": "./src/components/PomodoroClock/Timer.js",
@@ -2321,85 +2321,6 @@
               "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React, { useEffect, useState } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst ToggleSwitch = ({\n  // RPC handlers\n  resetTimers,\n  stopTimers,\n  setCycle,\n  // props from global state\n  timerId,\n  currentCycle\n}) => {\n  // const useDidMount = () => {\n  //   const [didMount, setDidMount] = useState(false);\n  //   // setting didMount to true when mounted\n  //   useEffect(() => setDidMount(true), []);\n  //   return didMount;\n  // };\n  const toggleCycle = () => {\n    stopTimers({\n      id: timerId\n    });\n    resetTimers({\n      id: timerId\n    });\n    setCycle({\n      id: timerId\n    });\n  }; // TODO: when the page refreshes, the stopTimers and resetTimers RPC get called along with getProfile\n  // maybe useEffect is not the correct application - don't wan't these called on initial render\n  // tried using custom hook to inform useEffect below to not run on initial render, but it's still running??\n  // Reset the timer and stop countdown when toggling between modes\n  // useEffect(() => {\n  //   if (useDidMount) {\n  //   }\n  // }, [toggleCycle]);\n\n\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 38\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 39\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    className: currentCycle === 'Focus' ? 'disable-select focus-label toggle-label toggle-label-inset\"' : 'disable-select break-label toggle-label toggle-label-inset\"',\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 45\n    },\n    __self: this\n  }, currentCycle));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  return {\n    timerId,\n    currentCycle\n  };\n};\n\nconst hoc = compose(withRPCRedux('setCycle'), withRPCRedux('resetTimers'), withRPCRedux('stopTimers'), connect(mapStateToProps));\nexport default hoc(ToggleSwitch);"
             },
             {
-              "id": "./src/components/Utils/AuthRoute.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "name": "./src/components/Utils/AuthRoute.js",
-              "index": 55,
-              "index2": 51,
-              "size": 3495,
-              "cacheable": true,
-              "built": false,
-              "optional": false,
-              "prefetched": false,
-              "chunks": [
-                "main"
-              ],
-              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-              "issuerId": "./src/root.js",
-              "issuerName": "./src/root.js",
-              "issuerPath": [
-                {
-                  "id": 0,
-                  "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-                  "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./node_modules/fusion-cli/entries/server-entry.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-                  "name": "./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./src/main.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
-                  "name": "./src/main.js"
-                },
-                {
-                  "id": "./src/root.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-                  "name": "./src/root.js"
-                }
-              ],
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleId": "./src/root.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-                  "module": "./src/root.js",
-                  "moduleName": "./src/root.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "./components/Utils/AuthRoute",
-                  "loc": "12:0-53"
-                },
-                {
-                  "moduleId": "./src/root.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-                  "module": "./src/root.js",
-                  "moduleName": "./src/root.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "./components/Utils/AuthRoute",
-                  "loc": "40:23-32"
-                },
-                {
-                  "moduleId": "./src/root.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-                  "module": "./src/root.js",
-                  "moduleName": "./src/root.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "./components/Utils/AuthRoute",
-                  "loc": "49:24-33"
-                }
-              ],
-              "providedExports": [
-                "default"
-              ],
-              "optimizationBailout": [],
-              "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js\";\n\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nimport React, { useEffect } from 'react';\nimport { Route, Switch, Redirect } from 'fusion-plugin-react-router';\nimport { compose } from 'redux';\nimport { connect, useDispatch } from 'react-redux';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport paths from '../../constants/paths';\nimport Authentication from '../Authentication/Authentication';\nimport gardenPage from '../../pages/garden-page';\n\nconst AuthRoute = ({\n  path,\n  component,\n  auth,\n  refreshAuth\n}) => {\n  const Component = component; //   const componentToLoad = () => {\n  //     if (!auth.didAttempt) {\n  //       refreshAuth()\n  //         .then((res) => {\n  //           if (res.status === 200) {\n  //             // location.path === path\n  //             // Redirect(path);\n  //             return <Component />;\n  //           }\n  //           if (res && res.status === 401) {\n  //             return <Authentication />;\n  //           }\n  //           //   if (res && (res.code < 200 || res.code >=300)) {\n  //           //       return {<div>'Error loading page.'</div>}\n  //           //   }\n  //         })\n  //         .catch((err) => {\n  //           console.log(err);\n  //           return (\n  //             <>\n  //               <Authentication />\n  //             </>\n  //           );\n  //         });\n  //     }\n  //   };\n\n  useEffect(() => {\n    if (!auth.isAuthenticated) {\n      refreshAuth();\n    }\n  }, []);\n\n  if (auth.didAttempt && !auth.isAuthenticated) {\n    console.log('TESTING COMPONENT'); // return <Authentication />;\n\n    return React.createElement(Route, {\n      render: props => {\n        return React.createElement(Authentication, _extends({}, props, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 51\n          },\n          __self: this\n        }));\n      },\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }) //   <Authentication />\n    ;\n  }\n\n  if (!auth.isAuthenticated) {\n    //   TODO: make a loading component\n    // return <div>loading...</div>;\n    return React.createElement(Route, {\n      render: props => React.createElement(\"div\", {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 62\n        },\n        __self: this\n      }, \"loading...\"),\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 62\n      },\n      __self: this\n    });\n  } //   return <>{auth.isAuthenticated ? component : <Authentication />}</>;\n\n\n  return React.createElement(Route, {\n    render: props => {\n      return React.createElement(Component, _extends({}, props, {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 69\n        },\n        __self: this\n      }));\n    },\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 67\n    },\n    __self: this\n  }) //   <Authentication />\n  ;\n};\n\nconst mapStateToProps = state => {\n  return {\n    auth: state.authentication\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'));\nexport default hoc(AuthRoute);"
-            },
-            {
               "id": "./src/constants/paths.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/constants/paths.js",
               "name": "./src/constants/paths.js",
@@ -2498,22 +2419,13 @@
                   "loc": "55:8-13"
                 },
                 {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "../../constants/paths",
-                  "loc": "10:0-42"
-                },
-                {
                   "moduleId": "./src/root.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
                   "module": "./src/root.js",
                   "moduleName": "./src/root.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./constants/paths",
-                  "loc": "7:0-38"
+                  "loc": "6:0-38"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -2522,7 +2434,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "./constants/paths",
-                  "loc": "42:8-13"
+                  "loc": "41:8-13"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -2531,7 +2443,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "./constants/paths",
-                  "loc": "51:8-13"
+                  "loc": "50:8-13"
                 }
               ],
               "providedExports": [
@@ -2546,7 +2458,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
               "name": "./src/main.js",
               "index": 27,
-              "index2": 74,
+              "index2": 73,
               "size": 1625,
               "cacheable": true,
               "built": false,
@@ -2616,7 +2528,7 @@
               "name": "./src/pages/garden-page.js",
               "index": 48,
               "index2": 45,
-              "size": 1320,
+              "size": 1265,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2664,31 +2576,22 @@
                   "loc": "9:0-49"
                 },
                 {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "../../pages/garden-page",
-                  "loc": "12:0-49"
-                },
-                {
-                  "moduleId": "./src/root.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-                  "module": "./src/root.js",
-                  "moduleName": "./src/root.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "./pages/garden-page",
-                  "loc": "9:0-45"
-                },
-                {
-                  "moduleId": "./src/root.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-                  "module": "./src/root.js",
-                  "moduleName": "./src/root.js",
+                  "moduleId": "./src/components/Authentication/Authentication.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+                  "module": "./src/components/Authentication/Authentication.js",
+                  "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
+                  "userRequest": "../../pages/garden-page",
+                  "loc": "57:35-45"
+                },
+                {
+                  "moduleId": "./src/root.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+                  "module": "./src/root.js",
+                  "moduleName": "./src/root.js",
+                  "type": "harmony side effect evaluation",
                   "userRequest": "./pages/garden-page",
-                  "loc": "52:13-23"
+                  "loc": "8:0-45"
                 }
               ],
               "providedExports": [
@@ -2696,7 +2599,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport NavBar from '../components/Navigation/NavBar';\nimport Garden from '../components/Garden/Garden'; // import PomodoroClock from '../components/PomodoroClock/PomodoroClock';\n\nconst GardenPage = ({\n  isAuthenticated,\n  getGardens\n}) => {\n  // const displayBreakTime = () => {\n  //   if (currentCycle === 'Break') {\n  //     return PomodoroClock;\n  //   }\n  // };\n  useEffect(() => {\n    getGardens();\n  }, [isAuthenticated]);\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 23\n    },\n    __self: this\n  }), React.createElement(Garden, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 25\n    },\n    __self: this\n  }));\n}; // export default GardenPage;\n\n\nconst mapStateToProps = state => {\n  return {\n    // currentCycle: state.timers.current_cycle,\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps, withRPCRedux('getGardens')));\nexport default hoc(GardenPage);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport NavBar from '../components/Navigation/NavBar';\nimport Garden from '../components/Garden/Garden'; // import PomodoroClock from '../components/PomodoroClock/PomodoroClock';\n\nconst GardenPage = ({\n  isAuthenticated,\n  getGardens\n}) => {\n  // TODO: error do not call hooks inside a use effect, can only call hooks at top level of function\n  useEffect(() => {\n    getGardens();\n  }, [isAuthenticated]);\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }), React.createElement(Garden, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 20\n    },\n    __self: this\n  }));\n};\n\nconst mapStateToProps = state => {\n  return {\n    // currentCycle: state.timers.current_cycle,\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps, withRPCRedux('getGardens')));\nexport default hoc(GardenPage);"
             },
             {
               "id": "./src/pages/home.js",
@@ -2752,22 +2655,31 @@
                   "loc": "10:0-36"
                 },
                 {
-                  "moduleId": "./src/root.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-                  "module": "./src/root.js",
-                  "moduleName": "./src/root.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "./pages/home",
-                  "loc": "8:0-32"
+                  "moduleId": "./src/components/Authentication/Authentication.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+                  "module": "./src/components/Authentication/Authentication.js",
+                  "moduleName": "./src/components/Authentication/Authentication.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../../pages/home",
+                  "loc": "48:35-39"
+                },
+                {
+                  "moduleId": "./src/components/Authentication/Authentication.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+                  "module": "./src/components/Authentication/Authentication.js",
+                  "moduleName": "./src/components/Authentication/Authentication.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../../pages/home",
+                  "loc": "66:28-32"
                 },
                 {
                   "moduleId": "./src/root.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
                   "module": "./src/root.js",
                   "moduleName": "./src/root.js",
-                  "type": "harmony import specifier",
+                  "type": "harmony side effect evaluation",
                   "userRequest": "./pages/home",
-                  "loc": "43:13-17"
+                  "loc": "7:0-32"
                 }
               ],
               "providedExports": [
@@ -2828,7 +2740,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./pages/pageNotFound",
-                  "loc": "10:0-48"
+                  "loc": "9:0-48"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -2837,7 +2749,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "./pages/pageNotFound",
-                  "loc": "59:13-25"
+                  "loc": "58:13-25"
                 }
               ],
               "providedExports": [
@@ -2851,8 +2763,8 @@
               "id": "./src/plugins/auth.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/auth.js",
               "name": "./src/plugins/auth.js",
-              "index": 76,
-              "index2": 73,
+              "index": 75,
+              "index2": 72,
               "size": 1840,
               "cacheable": true,
               "built": false,
@@ -2907,8 +2819,8 @@
               "id": "./src/reducers/authReducer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/authReducer.js",
               "name": "./src/reducers/authReducer.js",
-              "index": 67,
-              "index2": 63,
+              "index": 66,
+              "index2": 62,
               "size": 2491,
               "cacheable": true,
               "built": false,
@@ -2977,8 +2889,8 @@
               "id": "./src/reducers/gardensReducer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/gardensReducer.js",
               "name": "./src/reducers/gardensReducer.js",
-              "index": 69,
-              "index2": 65,
+              "index": 68,
+              "index2": 64,
               "size": 638,
               "cacheable": true,
               "built": false,
@@ -3047,8 +2959,8 @@
               "id": "./src/reducers/index.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/index.js",
               "name": "./src/reducers/index.js",
-              "index": 63,
-              "index2": 66,
+              "index": 62,
+              "index2": 65,
               "size": 397,
               "cacheable": true,
               "built": false,
@@ -3112,8 +3024,8 @@
               "id": "./src/reducers/profileReducer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/profileReducer.js",
               "name": "./src/reducers/profileReducer.js",
-              "index": 64,
-              "index2": 61,
+              "index": 63,
+              "index2": 60,
               "size": 803,
               "cacheable": true,
               "built": false,
@@ -3182,8 +3094,8 @@
               "id": "./src/reducers/timersReducer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/timersReducer.js",
               "name": "./src/reducers/timersReducer.js",
-              "index": 66,
-              "index2": 62,
+              "index": 65,
+              "index2": 61,
               "size": 8736,
               "cacheable": true,
               "built": false,
@@ -3252,8 +3164,8 @@
               "id": "./src/reducers/walletReducer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/walletReducer.js",
               "name": "./src/reducers/walletReducer.js",
-              "index": 68,
-              "index2": 64,
+              "index": 67,
+              "index2": 63,
               "size": 1010,
               "cacheable": true,
               "built": false,
@@ -3323,10 +3235,10 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
               "name": "./src/root.js",
               "index": 31,
-              "index2": 53,
-              "size": 1830,
+              "index2": 52,
+              "size": 1797,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -3381,14 +3293,14 @@
               ],
               "optimizationBailout": [],
               "depth": 3,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js\";\nimport React from 'react';\nimport { Route, Switch } from 'fusion-plugin-react-router';\nimport { Helmet } from 'fusion-plugin-react-helmet-async';\nimport { assetUrl } from 'fusion-core'; // import { Link } from 'fusion-plugin-react-router';\n\nimport paths from './constants/paths';\nimport Home from './pages/home';\nimport GardenPage from './pages/garden-page';\nimport PageNotFound from './pages/pageNotFound';\nimport Authentication from './components/Authentication/Authentication';\nimport AuthRoute from './components/Utils/AuthRoute'; // import Example from './components/index.js';\n\nconst Root = React.createElement(React.Fragment, null, React.createElement(Helmet, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 18\n  },\n  __self: this\n}, React.createElement(\"title\", {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 19\n  },\n  __self: this\n}, \"planter.\"), React.createElement(\"link\", {\n  rel: \"stylesheet\",\n  href: assetUrl(require(\"__SECRET_FILE_LOADER__?assetUrl=true!./constants/styles.css\")),\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 20\n  },\n  __self: this\n})), React.createElement(Switch, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 23\n  },\n  __self: this\n}, React.createElement(AuthRoute, {\n  exact: true,\n  path: paths.home,\n  component: Home,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 24\n  },\n  __self: this\n}), React.createElement(AuthRoute, {\n  exact: true,\n  path: paths.garden,\n  component: GardenPage,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 26\n  },\n  __self: this\n}), React.createElement(Route, {\n  component: PageNotFound,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 28\n  },\n  __self: this\n})));\nexport default Root;"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js\";\nimport React from 'react';\nimport { Route, Switch } from 'fusion-plugin-react-router';\nimport { Helmet } from 'fusion-plugin-react-helmet-async';\nimport { assetUrl } from 'fusion-core';\nimport paths from './constants/paths';\nimport Home from './pages/home';\nimport GardenPage from './pages/garden-page';\nimport PageNotFound from './pages/pageNotFound'; // import AuthRoute from './components/Utils/AuthRoute';\n// import AuthFactory from './components/Utils/AuthFactory';\n\nimport Authentication from './components/Authentication/Authentication';\nconst Root = React.createElement(React.Fragment, null, React.createElement(Helmet, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 16\n  },\n  __self: this\n}, React.createElement(\"title\", {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 17\n  },\n  __self: this\n}, \"planter.\"), React.createElement(\"link\", {\n  rel: \"stylesheet\",\n  href: assetUrl(require(\"__SECRET_FILE_LOADER__?assetUrl=true!./constants/styles.css\")),\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 18\n  },\n  __self: this\n})), React.createElement(Switch, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 20\n  },\n  __self: this\n}, React.createElement(Route, {\n  exact: true,\n  path: paths.home,\n  component: Authentication,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 21\n  },\n  __self: this\n}), React.createElement(Route, {\n  exact: true,\n  path: paths.garden,\n  component: Authentication,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 26\n  },\n  __self: this\n}), React.createElement(Route, {\n  component: PageNotFound,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 27\n  },\n  __self: this\n})));\nexport default Root;"
             },
             {
               "id": "./src/rpc/index.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
               "name": "./src/rpc/index.js",
-              "index": 70,
-              "index2": 72,
+              "index": 69,
+              "index2": 71,
               "size": 13152,
               "cacheable": true,
               "built": false,
@@ -3443,8 +3355,8 @@
               "id": "./src/rpc/services/index.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/services/index.js",
               "name": "./src/rpc/services/index.js",
-              "index": 71,
-              "index2": 68,
+              "index": 70,
+              "index2": 67,
               "size": 638,
               "cacheable": true,
               "built": false,
@@ -3523,8 +3435,8 @@
               "id": "./src/rpc/services/master-backend.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/services/master-backend.js",
               "name": "./src/rpc/services/master-backend.js",
-              "index": 72,
-              "index2": 67,
+              "index": 71,
+              "index2": 66,
               "size": 650,
               "cacheable": true,
               "built": false,
@@ -3598,8 +3510,8 @@
               "id": "./src/rpc/utils.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/utils.js",
               "name": "./src/rpc/utils.js",
-              "index": 73,
-              "index2": 70,
+              "index": 72,
+              "index2": 69,
               "size": 2648,
               "cacheable": true,
               "built": false,
@@ -3751,8 +3663,8 @@
               "id": "axios",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/axios/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/axios/index.js\"",
-              "index": 74,
-              "index2": 69,
+              "index": 73,
+              "index2": 68,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4155,7 +4067,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-core",
-                  "loc": "28:8-16"
+                  "loc": "27:8-16"
                 }
               ],
               "providedExports": null,
@@ -4166,8 +4078,8 @@
               "id": "fusion-plugin-jwt",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-jwt/dist-node-cjs/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-jwt/dist-node-cjs/index.js\"",
-              "index": 61,
-              "index2": 58,
+              "index": 60,
+              "index2": 57,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4322,7 +4234,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-helmet-async",
-                  "loc": "14:75-81"
+                  "loc": "13:75-81"
                 }
               ],
               "providedExports": null,
@@ -4333,8 +4245,8 @@
               "id": "fusion-plugin-react-redux",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-react-redux/dist-node-cjs/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-react-redux/dist-node-cjs/index.js\"",
-              "index": 58,
-              "index2": 55,
+              "index": 57,
+              "index2": 54,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4462,7 +4374,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "69:30-40"
+                  "loc": "113:30-40"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -4519,42 +4431,6 @@
                   "loc": "52:35-42"
                 },
                 {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "fusion-plugin-react-router",
-                  "loc": "6:0-69"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "fusion-plugin-react-router",
-                  "loc": "56:31-36"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "fusion-plugin-react-router",
-                  "loc": "78:31-36"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "fusion-plugin-react-router",
-                  "loc": "95:29-34"
-                },
-                {
                   "moduleId": "./src/main.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
                   "module": "./src/main.js",
@@ -4606,7 +4482,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "34:25-31"
+                  "loc": "33:25-31"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -4615,7 +4491,25 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-react-router",
-                  "loc": "58:24-29"
+                  "loc": "39:23-28"
+                },
+                {
+                  "moduleId": "./src/root.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+                  "module": "./src/root.js",
+                  "moduleName": "./src/root.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-react-router",
+                  "loc": "48:24-29"
+                },
+                {
+                  "moduleId": "./src/root.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+                  "module": "./src/root.js",
+                  "moduleName": "./src/root.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-react-router",
+                  "loc": "57:24-29"
                 }
               ],
               "providedExports": null,
@@ -4626,8 +4520,8 @@
               "id": "fusion-plugin-rpc",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/index.js\"",
-              "index": 59,
-              "index2": 56,
+              "index": 58,
+              "index2": 55,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4786,9 +4680,9 @@
               "chunks": [
                 "main"
               ],
-              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/profileReducer.js",
-              "issuerId": "./src/reducers/profileReducer.js",
-              "issuerName": "./src/reducers/profileReducer.js",
+              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
+              "issuerId": "./src/pages/home.js",
+              "issuerName": "./src/pages/home.js",
               "issuerPath": [
                 {
                   "id": 0,
@@ -4806,14 +4700,14 @@
                   "name": "./src/main.js"
                 },
                 {
-                  "id": "./src/reducers/index.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/index.js",
-                  "name": "./src/reducers/index.js"
+                  "id": "./src/root.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+                  "name": "./src/root.js"
                 },
                 {
-                  "id": "./src/reducers/profileReducer.js",
-                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/profileReducer.js",
-                  "name": "./src/reducers/profileReducer.js"
+                  "id": "./src/pages/home.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
+                  "name": "./src/pages/home.js"
                 }
               ],
               "failed": false,
@@ -4837,7 +4731,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "68:46-58"
+                  "loc": "112:46-58"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -4846,7 +4740,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "68:74-86"
+                  "loc": "112:74-86"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -4855,7 +4749,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "68:101-113"
+                  "loc": "112:101-113"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -4864,7 +4758,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "68:128-140"
+                  "loc": "112:128-140"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Login.js",
@@ -5155,24 +5049,6 @@
                   "loc": "79:75-87"
                 },
                 {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "9:0-61"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "120:46-58"
-                },
-                {
                   "moduleId": "./src/pages/garden-page.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
                   "module": "./src/pages/garden-page.js",
@@ -5188,7 +5064,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "44:45-57"
+                  "loc": "39:45-57"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -5460,8 +5336,8 @@
               "id": "fusion-plugin-rpc/dist-node-cjs/response-error",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/response-error.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/response-error.js\"",
-              "index": 75,
-              "index2": 71,
+              "index": 74,
+              "index2": 70,
               "size": 42,
               "built": false,
               "optional": false,
@@ -5578,8 +5454,8 @@
               "id": "fusion-plugin-universal-events",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-universal-events/dist-node-cjs/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-universal-events/dist-node-cjs/index.js\"",
-              "index": 57,
-              "index2": 54,
+              "index": 56,
+              "index2": 53,
               "size": 42,
               "built": false,
               "optional": false,
@@ -5709,8 +5585,8 @@
               "id": "fusion-tokens",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-tokens/dist/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-tokens/dist/index.js\"",
-              "index": 60,
-              "index2": 57,
+              "index": 59,
+              "index2": 56,
               "size": 42,
               "built": false,
               "optional": false,
@@ -6262,7 +6138,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "53:9-14"
+                  "loc": "25:2-11"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -6271,7 +6147,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "53:29-34"
+                  "loc": "33:11-16"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Authentication.js",
@@ -6280,7 +6156,52 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "53:51-56"
+                  "loc": "48:15-20"
+                },
+                {
+                  "moduleId": "./src/components/Authentication/Authentication.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+                  "module": "./src/components/Authentication/Authentication.js",
+                  "moduleName": "./src/components/Authentication/Authentication.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "57:15-20"
+                },
+                {
+                  "moduleId": "./src/components/Authentication/Authentication.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+                  "module": "./src/components/Authentication/Authentication.js",
+                  "moduleName": "./src/components/Authentication/Authentication.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "66:8-13"
+                },
+                {
+                  "moduleId": "./src/components/Authentication/Authentication.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+                  "module": "./src/components/Authentication/Authentication.js",
+                  "moduleName": "./src/components/Authentication/Authentication.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "93:9-14"
+                },
+                {
+                  "moduleId": "./src/components/Authentication/Authentication.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+                  "module": "./src/components/Authentication/Authentication.js",
+                  "moduleName": "./src/components/Authentication/Authentication.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "93:29-34"
+                },
+                {
+                  "moduleId": "./src/components/Authentication/Authentication.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+                  "module": "./src/components/Authentication/Authentication.js",
+                  "moduleName": "./src/components/Authentication/Authentication.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "93:114-119"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Login.js",
@@ -7183,78 +7104,6 @@
                   "loc": "59:6-11"
                 },
                 {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "react",
-                  "loc": "5:0-41"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "47:2-11"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "56:11-16"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "58:15-20"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "78:11-16"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "79:23-28"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "95:9-14"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "97:13-18"
-                },
-                {
                   "moduleId": "./src/pages/garden-page.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
                   "module": "./src/pages/garden-page.js",
@@ -7270,7 +7119,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "18:2-11"
+                  "loc": "14:2-11"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -7279,7 +7128,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "21:9-14"
+                  "loc": "17:9-14"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -7288,7 +7137,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "21:29-34"
+                  "loc": "17:29-34"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -7297,7 +7146,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "21:51-56"
+                  "loc": "17:51-56"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -7306,7 +7155,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "27:6-11"
+                  "loc": "23:6-11"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -7405,7 +7254,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "14:13-18"
+                  "loc": "13:13-18"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -7414,7 +7263,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "14:33-38"
+                  "loc": "13:33-38"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -7423,7 +7272,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "14:55-60"
+                  "loc": "13:55-60"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -7432,7 +7281,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "20:3-8"
+                  "loc": "19:3-8"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -7441,7 +7290,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "26:16-21"
+                  "loc": "25:16-21"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -7450,7 +7299,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "34:5-10"
+                  "loc": "33:5-10"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -7459,7 +7308,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "40:3-8"
+                  "loc": "39:3-8"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -7468,7 +7317,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "49:4-9"
+                  "loc": "48:4-9"
                 },
                 {
                   "moduleId": "./src/root.js",
@@ -7477,7 +7326,7 @@
                   "moduleName": "./src/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "58:4-9"
+                  "loc": "57:4-9"
                 }
               ],
               "providedExports": null,
@@ -7548,7 +7397,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "68:20-27"
+                  "loc": "112:20-27"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Login.js",
@@ -7740,24 +7589,6 @@
                   "loc": "79:103-110"
                 },
                 {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "react-redux",
-                  "loc": "8:0-51"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react-redux",
-                  "loc": "120:20-27"
-                },
-                {
                   "moduleId": "./src/pages/garden-page.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
                   "module": "./src/pages/garden-page.js",
@@ -7773,7 +7604,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "44:20-27"
+                  "loc": "39:20-27"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -7802,8 +7633,8 @@
               "id": "reduce-reducers",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/reduce-reducers/lib/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/reduce-reducers/lib/index.js\"",
-              "index": 65,
-              "index2": 60,
+              "index": 64,
+              "index2": 59,
               "size": 42,
               "built": false,
               "optional": false,
@@ -8000,7 +7831,7 @@
                   "moduleName": "./src/components/Authentication/Authentication.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "68:12-19"
+                  "loc": "112:12-19"
                 },
                 {
                   "moduleId": "./src/components/Authentication/Login.js",
@@ -8183,24 +8014,6 @@
                   "loc": "79:12-19"
                 },
                 {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "redux",
-                  "loc": "7:0-32"
-                },
-                {
-                  "moduleId": "./src/components/Utils/AuthRoute.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-                  "module": "./src/components/Utils/AuthRoute.js",
-                  "moduleName": "./src/components/Utils/AuthRoute.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "redux",
-                  "loc": "120:12-19"
-                },
-                {
                   "moduleId": "./src/pages/garden-page.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
                   "module": "./src/pages/garden-page.js",
@@ -8216,7 +8029,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "44:12-19"
+                  "loc": "39:12-19"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -8319,8 +8132,8 @@
               "id": "unfetch",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/unfetch/dist/unfetch.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/unfetch/dist/unfetch.js\"",
-              "index": 62,
-              "index2": 59,
+              "index": 61,
+              "index2": 58,
               "size": 42,
               "built": false,
               "optional": false,
@@ -8443,7 +8256,7 @@
           "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
           "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
           "index": 0,
-          "index2": 76,
+          "index2": 75,
           "size": 52,
           "built": false,
           "optional": false,
@@ -8664,8 +8477,8 @@
           "id": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/constants/styles.css",
           "name": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
-          "index": 56,
-          "index2": 52,
+          "index": 55,
+          "index2": 51,
           "size": 82,
           "cacheable": true,
           "built": false,
@@ -8713,7 +8526,7 @@
               "moduleName": "./src/root.js",
               "type": "cjs require",
               "userRequest": "__SECRET_FILE_LOADER__?assetUrl=true!./constants/styles.css",
-              "loc": "28:17-87"
+              "loc": "27:17-87"
             }
           ],
           "providedExports": null,
@@ -9004,7 +8817,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
           "name": "./node_modules/fusion-cli/entries/server-entry.js",
           "index": 7,
-          "index2": 75,
+          "index2": 74,
           "size": 3021,
           "cacheable": true,
           "built": false,
@@ -9658,9 +9471,9 @@
           "name": "./src/components/Authentication/Authentication.js",
           "index": 51,
           "index2": 50,
-          "size": 1994,
+          "size": 2860,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -9697,31 +9510,31 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "../Authentication/Authentication",
-              "loc": "11:0-62"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "../Authentication/Authentication",
-              "loc": "58:35-49"
-            },
-            {
               "moduleId": "./src/root.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
               "module": "./src/root.js",
               "moduleName": "./src/root.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./components/Authentication/Authentication",
-              "loc": "11:0-72"
+              "loc": "12:0-72"
+            },
+            {
+              "moduleId": "./src/root.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+              "module": "./src/root.js",
+              "moduleName": "./src/root.js",
+              "type": "harmony import specifier",
+              "userRequest": "./components/Authentication/Authentication",
+              "loc": "42:13-27"
+            },
+            {
+              "moduleId": "./src/root.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+              "module": "./src/root.js",
+              "moduleName": "./src/root.js",
+              "type": "harmony import specifier",
+              "userRequest": "./components/Authentication/Authentication",
+              "loc": "51:13-27"
             }
           ],
           "providedExports": [
@@ -9729,7 +9542,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport { withRouter } from 'fusion-plugin-react-router';\nimport RenderedAuth from './RenderedAuth'; // import PomodoroClock from '../PomodoroClock/PomodoroClock';\n\nimport GardenPage from '../../pages/garden-page';\nimport Home from '../../pages/home';\n\nconst Authentication = ({\n  // withRouter\n  match,\n  location,\n  history,\n  // global state props\n  isAuthenticated,\n  // RPC\n  getProfile,\n  getTimers,\n  getWallet,\n  getGardens\n}) => {\n  // const componentToLoad = () => {\n  //   switch (location.pathname) {\n  //     case '/':\n  //       return <Home />;\n  //     case '/garden':\n  //       return <GardenPage />;\n  //     default:\n  //       <Home />;\n  //   }\n  // };\n  // useEffect(() => {\n  //   switch (location.pathname) {\n  //     case '/':\n  //       getProfile();\n  //       // getTimers();\n  //       // getWallet();\n  //       break;\n  //     case '/garden':\n  //       getProfile();\n  //       getGardens();\n  //       break;\n  //     default:\n  //       getProfile();\n  //       getTimers();\n  //       getWallet();\n  //   }\n  // }, []);\n  // return <>{isAuthenticated ? componentToLoad() : <RenderedAuth />}</>;\n  return React.createElement(React.Fragment, null, React.createElement(RenderedAuth, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 57\n    },\n    __self: this\n  }));\n};\n\nconst mapStateToProps = state => {\n  return {\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getWallet'), withRPCRedux('getGardens'));\nconst withRouterAuthWrapper = withRouter(Authentication);\nexport default hoc(withRouterAuthWrapper);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport { withRouter } from 'fusion-plugin-react-router';\nimport RenderedAuth from './RenderedAuth'; // import PomodoroClock from '../PomodoroClock/PomodoroClock';\n\nimport GardenPage from '../../pages/garden-page';\nimport Home from '../../pages/home';\n\nconst Authentication = ({\n  // withRouter\n  match,\n  location,\n  history,\n  // global state props\n  auth,\n  // RPC\n  getProfile,\n  getTimers,\n  getWallet,\n  getGardens\n}) => {\n  useEffect(() => {\n    if (!auth.isAuthenticated) {\n      refreshAuth();\n    }\n  }, []);\n\n  if (!auth.isAuthenticated) {\n    // TODO: make a loading component/page\n    return React.createElement(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 33\n      },\n      __self: this\n    }, \"loading...\");\n  } // if (auth.didAttempt && !auth.isAuthenticated) {\n  //   return <RenderedAuth />;\n  // }\n\n\n  const componentToLoad = () => {\n    switch (location.pathname) {\n      case '/':\n        return React.createElement(Home, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 43\n          },\n          __self: this\n        });\n\n      case '/garden':\n        return React.createElement(GardenPage, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 45\n          },\n          __self: this\n        });\n\n      default:\n        React.createElement(Home, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 47\n          },\n          __self: this\n        });\n    }\n  }; // useEffect(() => {\n  //   switch (location.pathname) {\n  //     case '/':\n  //       getProfile();\n  //       // getTimers();\n  //       // getWallet();\n  //       break;\n  //     case '/garden':\n  //       getProfile();\n  //       getGardens();\n  //       break;\n  //     default:\n  //       getProfile();\n  //       getTimers();\n  //       getWallet();\n  //   }\n  // }, []);\n\n\n  return React.createElement(React.Fragment, null, auth.didAttempt && !auth.isAuthenticated ? componentToLoad() : React.createElement(RenderedAuth, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 74\n    },\n    __self: this\n  })); // return (\n  //   <>\n  //     <RenderedAuth />\n  //   </>\n  // );\n};\n\nconst mapStateToProps = state => {\n  return {\n    auth: state.authentication\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getWallet'), withRPCRedux('getGardens'));\nconst withRouterAuthWrapper = withRouter(Authentication);\nexport default hoc(withRouterAuthWrapper);"
         },
         {
           "id": "./src/components/Authentication/Login.js",
@@ -9956,7 +9769,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "./RenderedAuth",
-              "loc": "53:71-83"
+              "loc": "93:134-146"
             }
           ],
           "providedExports": [
@@ -10031,7 +9844,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "../components/Garden/Garden",
-              "loc": "27:26-32"
+              "loc": "23:26-32"
             }
           ],
           "providedExports": [
@@ -10106,7 +9919,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "../components/Navigation/NavBar",
-              "loc": "21:71-77"
+              "loc": "17:71-77"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -10447,7 +10260,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  updateEnergy,\n  updateCompletedFocusMinutes,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCurrentTimes,\n  focusTime\n}) => {\n  const dispatch = useDispatch(); // UPDATE BACKEND WITH CURRENT TIME EVERY 10 SECONDS WHEN isStarted\n  // TODO: current times that are passed to BE are not changing every 10 sec - is the same\n  // useEffect(() => {\n  //   let interval;\n  //   if (!isStarted) {\n  //     return clearInterval(interval);\n  //   }\n  //   if (isStarted) {\n  //     interval = setInterval(() => {\n  //       updateCurrentTimes({\n  //         id: timerId,\n  //         current_focus_time: currentFocusTime,\n  //         current_break_time: currentBreakTime,\n  //       });\n  //     }, 10000);\n  //     return () => clearInterval(interval);\n  //   }\n  // }, [isStarted]);\n  // TIMER LOGIC WHEN TIME REACHES ZERO\n\n  useEffect(() => {\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n      updateEnergy({\n        focus_time: focusTime\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // START AND STOP TIMER LOGIC\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n      updateCurrentTimes({\n        id: timerId,\n        current_focus_time: currentFocusTime,\n        current_break_time: currentBreakTime\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TIMER SECONDS COUNTDOWN LOGIC\n  // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 100); // clean up for uesEffect\n\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 97\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 98\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  const focusTime = state.timers.focus_time;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle,\n    focusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCurrentTimes'), withRPCRedux('updateCompletedFocusMinutes'), withRPCRedux('updateEnergy'));\nexport default hoc(StartStop);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/StartStop.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect, useDispatch } from 'react-redux';\nimport { compose } from 'redux';\n\nconst StartStop = ({\n  // RPC handlers\n  startTimers,\n  stopTimers,\n  updateEnergy,\n  updateCompletedFocusMinutes,\n  // global state props\n  isStarted,\n  currentFocusTime,\n  currentBreakTime,\n  currentCycle,\n  timerId,\n  updateCurrentTimes,\n  focusTime\n}) => {\n  const dispatch = useDispatch(); // UPDATE BACKEND WITH CURRENT TIME EVERY 10 SECONDS WHEN isStarted\n  // TODO: current times that are passed to BE are not changing every 10 sec - is the same\n  // useEffect(() => {\n  //   let interval;\n  //   if (!isStarted) {\n  //     return clearInterval(interval);\n  //   }\n  //   if (isStarted) {\n  //     interval = setInterval(() => {\n  //       updateCurrentTimes({\n  //         id: timerId,\n  //         current_focus_time: currentFocusTime,\n  //         current_break_time: currentBreakTime,\n  //       });\n  //     }, 10000);\n  //     return () => clearInterval(interval);\n  //   }\n  // }, [isStarted]);\n  // TIMER LOGIC WHEN TIME REACHES ZERO\n\n  useEffect(() => {\n    if (currentFocusTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n      updateCompletedFocusMinutes({\n        id: timerId\n      });\n      updateEnergy({\n        focus_time: focusTime\n      });\n    }\n\n    if (currentBreakTime === 0) {\n      stopTimers({\n        id: timerId\n      });\n    }\n  }, [currentFocusTime, currentBreakTime]); // START AND STOP TIMER LOGIC\n\n  const startStopTimer = event => {\n    event.preventDefault();\n\n    if (isStarted) {\n      stopTimers({\n        id: timerId\n      });\n      updateCurrentTimes({\n        id: timerId,\n        current_focus_time: currentFocusTime,\n        current_break_time: currentBreakTime\n      });\n    }\n\n    if (!isStarted) {\n      startTimers({\n        id: timerId\n      });\n    }\n  }; // TIMER SECONDS COUNTDOWN LOGIC\n  // TODO: ask why there is a return clear interval needed in the if (isStarted) block??\n\n\n  useEffect(() => {\n    let interval;\n\n    if (!isStarted) {\n      return clearInterval(interval);\n    }\n\n    if (isStarted) {\n      interval = setInterval(() => {\n        if (currentCycle === 'Focus') {\n          dispatch({\n            type: 'DECREMENT_CURRENT_FOCUS_TIME'\n          });\n        }\n\n        if (currentCycle === 'Break') dispatch({\n          type: 'DECREMENT_CURRENT_BREAK_TIME'\n        });\n      }, 100); // clean up for uesEffect\n\n      return () => clearInterval(interval);\n    }\n  }, [startStopTimer]);\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 98\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn start-stop-btn\",\n    onClick: startStopTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 99\n    },\n    __self: this\n  }, isStarted ? 'Stop' : 'Start'));\n};\n\nconst mapStateToProps = state => {\n  const isStarted = state.timers.is_started;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  const focusTime = state.timers.focus_time;\n  return {\n    isStarted,\n    currentFocusTime,\n    currentBreakTime,\n    timerId,\n    currentCycle,\n    focusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('startTimers'), withRPCRedux('stopTimers'), withRPCRedux('updateCurrentTimes'), withRPCRedux('updateCompletedFocusMinutes'), withRPCRedux('updateEnergy'));\nexport default hoc(StartStop);"
         },
         {
           "id": "./src/components/PomodoroClock/Timer.js",
@@ -10610,85 +10423,6 @@
           "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/ToggleSwitch.js\";\nimport React, { useEffect, useState } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst ToggleSwitch = ({\n  // RPC handlers\n  resetTimers,\n  stopTimers,\n  setCycle,\n  // props from global state\n  timerId,\n  currentCycle\n}) => {\n  // const useDidMount = () => {\n  //   const [didMount, setDidMount] = useState(false);\n  //   // setting didMount to true when mounted\n  //   useEffect(() => setDidMount(true), []);\n  //   return didMount;\n  // };\n  const toggleCycle = () => {\n    stopTimers({\n      id: timerId\n    });\n    resetTimers({\n      id: timerId\n    });\n    setCycle({\n      id: timerId\n    });\n  }; // TODO: when the page refreshes, the stopTimers and resetTimers RPC get called along with getProfile\n  // maybe useEffect is not the correct application - don't wan't these called on initial render\n  // tried using custom hook to inform useEffect below to not run on initial render, but it's still running??\n  // Reset the timer and stop countdown when toggling between modes\n  // useEffect(() => {\n  //   if (useDidMount) {\n  //   }\n  // }, [toggleCycle]);\n\n\n  return React.createElement(\"div\", {\n    className: \"toggle-container\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 38\n    },\n    __self: this\n  }, React.createElement(\"input\", {\n    className: \"toggle-input\",\n    id: \"toggle-switch\",\n    type: \"checkbox\",\n    onClick: toggleCycle,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 39\n    },\n    __self: this\n  }), React.createElement(\"label\", {\n    className: currentCycle === 'Focus' ? 'disable-select focus-label toggle-label toggle-label-inset\"' : 'disable-select break-label toggle-label toggle-label-inset\"',\n    htmlFor: \"toggle-switch\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 45\n    },\n    __self: this\n  }, currentCycle));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const currentCycle = state.timers.current_cycle;\n  return {\n    timerId,\n    currentCycle\n  };\n};\n\nconst hoc = compose(withRPCRedux('setCycle'), withRPCRedux('resetTimers'), withRPCRedux('stopTimers'), connect(mapStateToProps));\nexport default hoc(ToggleSwitch);"
         },
         {
-          "id": "./src/components/Utils/AuthRoute.js",
-          "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-          "name": "./src/components/Utils/AuthRoute.js",
-          "index": 55,
-          "index2": 51,
-          "size": 3495,
-          "cacheable": true,
-          "built": false,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            "main"
-          ],
-          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-          "issuerId": "./src/root.js",
-          "issuerName": "./src/root.js",
-          "issuerPath": [
-            {
-              "id": 0,
-              "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-              "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./node_modules/fusion-cli/entries/server-entry.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
-              "name": "./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./src/main.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
-              "name": "./src/main.js"
-            },
-            {
-              "id": "./src/root.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-              "name": "./src/root.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": "./src/root.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-              "module": "./src/root.js",
-              "moduleName": "./src/root.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "./components/Utils/AuthRoute",
-              "loc": "12:0-53"
-            },
-            {
-              "moduleId": "./src/root.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-              "module": "./src/root.js",
-              "moduleName": "./src/root.js",
-              "type": "harmony import specifier",
-              "userRequest": "./components/Utils/AuthRoute",
-              "loc": "40:23-32"
-            },
-            {
-              "moduleId": "./src/root.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-              "module": "./src/root.js",
-              "moduleName": "./src/root.js",
-              "type": "harmony import specifier",
-              "userRequest": "./components/Utils/AuthRoute",
-              "loc": "49:24-33"
-            }
-          ],
-          "providedExports": [
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js\";\n\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nimport React, { useEffect } from 'react';\nimport { Route, Switch, Redirect } from 'fusion-plugin-react-router';\nimport { compose } from 'redux';\nimport { connect, useDispatch } from 'react-redux';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport paths from '../../constants/paths';\nimport Authentication from '../Authentication/Authentication';\nimport gardenPage from '../../pages/garden-page';\n\nconst AuthRoute = ({\n  path,\n  component,\n  auth,\n  refreshAuth\n}) => {\n  const Component = component; //   const componentToLoad = () => {\n  //     if (!auth.didAttempt) {\n  //       refreshAuth()\n  //         .then((res) => {\n  //           if (res.status === 200) {\n  //             // location.path === path\n  //             // Redirect(path);\n  //             return <Component />;\n  //           }\n  //           if (res && res.status === 401) {\n  //             return <Authentication />;\n  //           }\n  //           //   if (res && (res.code < 200 || res.code >=300)) {\n  //           //       return {<div>'Error loading page.'</div>}\n  //           //   }\n  //         })\n  //         .catch((err) => {\n  //           console.log(err);\n  //           return (\n  //             <>\n  //               <Authentication />\n  //             </>\n  //           );\n  //         });\n  //     }\n  //   };\n\n  useEffect(() => {\n    if (!auth.isAuthenticated) {\n      refreshAuth();\n    }\n  }, []);\n\n  if (auth.didAttempt && !auth.isAuthenticated) {\n    console.log('TESTING COMPONENT'); // return <Authentication />;\n\n    return React.createElement(Route, {\n      render: props => {\n        return React.createElement(Authentication, _extends({}, props, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 51\n          },\n          __self: this\n        }));\n      },\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }) //   <Authentication />\n    ;\n  }\n\n  if (!auth.isAuthenticated) {\n    //   TODO: make a loading component\n    // return <div>loading...</div>;\n    return React.createElement(Route, {\n      render: props => React.createElement(\"div\", {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 62\n        },\n        __self: this\n      }, \"loading...\"),\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 62\n      },\n      __self: this\n    });\n  } //   return <>{auth.isAuthenticated ? component : <Authentication />}</>;\n\n\n  return React.createElement(Route, {\n    render: props => {\n      return React.createElement(Component, _extends({}, props, {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 69\n        },\n        __self: this\n      }));\n    },\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 67\n    },\n    __self: this\n  }) //   <Authentication />\n  ;\n};\n\nconst mapStateToProps = state => {\n  return {\n    auth: state.authentication\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'));\nexport default hoc(AuthRoute);"
-        },
-        {
           "id": "./src/constants/paths.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/constants/paths.js",
           "name": "./src/constants/paths.js",
@@ -10787,22 +10521,13 @@
               "loc": "55:8-13"
             },
             {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "../../constants/paths",
-              "loc": "10:0-42"
-            },
-            {
               "moduleId": "./src/root.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
               "module": "./src/root.js",
               "moduleName": "./src/root.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./constants/paths",
-              "loc": "7:0-38"
+              "loc": "6:0-38"
             },
             {
               "moduleId": "./src/root.js",
@@ -10811,7 +10536,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "./constants/paths",
-              "loc": "42:8-13"
+              "loc": "41:8-13"
             },
             {
               "moduleId": "./src/root.js",
@@ -10820,7 +10545,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "./constants/paths",
-              "loc": "51:8-13"
+              "loc": "50:8-13"
             }
           ],
           "providedExports": [
@@ -10835,7 +10560,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
           "name": "./src/main.js",
           "index": 27,
-          "index2": 74,
+          "index2": 73,
           "size": 1625,
           "cacheable": true,
           "built": false,
@@ -10905,7 +10630,7 @@
           "name": "./src/pages/garden-page.js",
           "index": 48,
           "index2": 45,
-          "size": 1320,
+          "size": 1265,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -10953,31 +10678,22 @@
               "loc": "9:0-49"
             },
             {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "../../pages/garden-page",
-              "loc": "12:0-49"
-            },
-            {
-              "moduleId": "./src/root.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-              "module": "./src/root.js",
-              "moduleName": "./src/root.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "./pages/garden-page",
-              "loc": "9:0-45"
-            },
-            {
-              "moduleId": "./src/root.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-              "module": "./src/root.js",
-              "moduleName": "./src/root.js",
+              "moduleId": "./src/components/Authentication/Authentication.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+              "module": "./src/components/Authentication/Authentication.js",
+              "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
+              "userRequest": "../../pages/garden-page",
+              "loc": "57:35-45"
+            },
+            {
+              "moduleId": "./src/root.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+              "module": "./src/root.js",
+              "moduleName": "./src/root.js",
+              "type": "harmony side effect evaluation",
               "userRequest": "./pages/garden-page",
-              "loc": "52:13-23"
+              "loc": "8:0-45"
             }
           ],
           "providedExports": [
@@ -10985,7 +10701,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport NavBar from '../components/Navigation/NavBar';\nimport Garden from '../components/Garden/Garden'; // import PomodoroClock from '../components/PomodoroClock/PomodoroClock';\n\nconst GardenPage = ({\n  isAuthenticated,\n  getGardens\n}) => {\n  // const displayBreakTime = () => {\n  //   if (currentCycle === 'Break') {\n  //     return PomodoroClock;\n  //   }\n  // };\n  useEffect(() => {\n    getGardens();\n  }, [isAuthenticated]);\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 23\n    },\n    __self: this\n  }), React.createElement(Garden, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 25\n    },\n    __self: this\n  }));\n}; // export default GardenPage;\n\n\nconst mapStateToProps = state => {\n  return {\n    // currentCycle: state.timers.current_cycle,\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps, withRPCRedux('getGardens')));\nexport default hoc(GardenPage);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport NavBar from '../components/Navigation/NavBar';\nimport Garden from '../components/Garden/Garden'; // import PomodoroClock from '../components/PomodoroClock/PomodoroClock';\n\nconst GardenPage = ({\n  isAuthenticated,\n  getGardens\n}) => {\n  // TODO: error do not call hooks inside a use effect, can only call hooks at top level of function\n  useEffect(() => {\n    getGardens();\n  }, [isAuthenticated]);\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }), React.createElement(Garden, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 20\n    },\n    __self: this\n  }));\n};\n\nconst mapStateToProps = state => {\n  return {\n    // currentCycle: state.timers.current_cycle,\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps, withRPCRedux('getGardens')));\nexport default hoc(GardenPage);"
         },
         {
           "id": "./src/pages/home.js",
@@ -11041,22 +10757,31 @@
               "loc": "10:0-36"
             },
             {
-              "moduleId": "./src/root.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
-              "module": "./src/root.js",
-              "moduleName": "./src/root.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "./pages/home",
-              "loc": "8:0-32"
+              "moduleId": "./src/components/Authentication/Authentication.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+              "module": "./src/components/Authentication/Authentication.js",
+              "moduleName": "./src/components/Authentication/Authentication.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../pages/home",
+              "loc": "48:35-39"
+            },
+            {
+              "moduleId": "./src/components/Authentication/Authentication.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+              "module": "./src/components/Authentication/Authentication.js",
+              "moduleName": "./src/components/Authentication/Authentication.js",
+              "type": "harmony import specifier",
+              "userRequest": "../../pages/home",
+              "loc": "66:28-32"
             },
             {
               "moduleId": "./src/root.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
               "module": "./src/root.js",
               "moduleName": "./src/root.js",
-              "type": "harmony import specifier",
+              "type": "harmony side effect evaluation",
               "userRequest": "./pages/home",
-              "loc": "43:13-17"
+              "loc": "7:0-32"
             }
           ],
           "providedExports": [
@@ -11117,7 +10842,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./pages/pageNotFound",
-              "loc": "10:0-48"
+              "loc": "9:0-48"
             },
             {
               "moduleId": "./src/root.js",
@@ -11126,7 +10851,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "./pages/pageNotFound",
-              "loc": "59:13-25"
+              "loc": "58:13-25"
             }
           ],
           "providedExports": [
@@ -11140,8 +10865,8 @@
           "id": "./src/plugins/auth.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/auth.js",
           "name": "./src/plugins/auth.js",
-          "index": 76,
-          "index2": 73,
+          "index": 75,
+          "index2": 72,
           "size": 1840,
           "cacheable": true,
           "built": false,
@@ -11196,8 +10921,8 @@
           "id": "./src/reducers/authReducer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/authReducer.js",
           "name": "./src/reducers/authReducer.js",
-          "index": 67,
-          "index2": 63,
+          "index": 66,
+          "index2": 62,
           "size": 2491,
           "cacheable": true,
           "built": false,
@@ -11266,8 +10991,8 @@
           "id": "./src/reducers/gardensReducer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/gardensReducer.js",
           "name": "./src/reducers/gardensReducer.js",
-          "index": 69,
-          "index2": 65,
+          "index": 68,
+          "index2": 64,
           "size": 638,
           "cacheable": true,
           "built": false,
@@ -11336,8 +11061,8 @@
           "id": "./src/reducers/index.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/index.js",
           "name": "./src/reducers/index.js",
-          "index": 63,
-          "index2": 66,
+          "index": 62,
+          "index2": 65,
           "size": 397,
           "cacheable": true,
           "built": false,
@@ -11401,8 +11126,8 @@
           "id": "./src/reducers/profileReducer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/profileReducer.js",
           "name": "./src/reducers/profileReducer.js",
-          "index": 64,
-          "index2": 61,
+          "index": 63,
+          "index2": 60,
           "size": 803,
           "cacheable": true,
           "built": false,
@@ -11471,8 +11196,8 @@
           "id": "./src/reducers/timersReducer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/timersReducer.js",
           "name": "./src/reducers/timersReducer.js",
-          "index": 66,
-          "index2": 62,
+          "index": 65,
+          "index2": 61,
           "size": 8736,
           "cacheable": true,
           "built": false,
@@ -11541,8 +11266,8 @@
           "id": "./src/reducers/walletReducer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/walletReducer.js",
           "name": "./src/reducers/walletReducer.js",
-          "index": 68,
-          "index2": 64,
+          "index": 67,
+          "index2": 63,
           "size": 1010,
           "cacheable": true,
           "built": false,
@@ -11612,10 +11337,10 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
           "name": "./src/root.js",
           "index": 31,
-          "index2": 53,
-          "size": 1830,
+          "index2": 52,
+          "size": 1797,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -11670,14 +11395,14 @@
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js\";\nimport React from 'react';\nimport { Route, Switch } from 'fusion-plugin-react-router';\nimport { Helmet } from 'fusion-plugin-react-helmet-async';\nimport { assetUrl } from 'fusion-core'; // import { Link } from 'fusion-plugin-react-router';\n\nimport paths from './constants/paths';\nimport Home from './pages/home';\nimport GardenPage from './pages/garden-page';\nimport PageNotFound from './pages/pageNotFound';\nimport Authentication from './components/Authentication/Authentication';\nimport AuthRoute from './components/Utils/AuthRoute'; // import Example from './components/index.js';\n\nconst Root = React.createElement(React.Fragment, null, React.createElement(Helmet, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 18\n  },\n  __self: this\n}, React.createElement(\"title\", {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 19\n  },\n  __self: this\n}, \"planter.\"), React.createElement(\"link\", {\n  rel: \"stylesheet\",\n  href: assetUrl(require(\"__SECRET_FILE_LOADER__?assetUrl=true!./constants/styles.css\")),\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 20\n  },\n  __self: this\n})), React.createElement(Switch, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 23\n  },\n  __self: this\n}, React.createElement(AuthRoute, {\n  exact: true,\n  path: paths.home,\n  component: Home,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 24\n  },\n  __self: this\n}), React.createElement(AuthRoute, {\n  exact: true,\n  path: paths.garden,\n  component: GardenPage,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 26\n  },\n  __self: this\n}), React.createElement(Route, {\n  component: PageNotFound,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 28\n  },\n  __self: this\n})));\nexport default Root;"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js\";\nimport React from 'react';\nimport { Route, Switch } from 'fusion-plugin-react-router';\nimport { Helmet } from 'fusion-plugin-react-helmet-async';\nimport { assetUrl } from 'fusion-core';\nimport paths from './constants/paths';\nimport Home from './pages/home';\nimport GardenPage from './pages/garden-page';\nimport PageNotFound from './pages/pageNotFound'; // import AuthRoute from './components/Utils/AuthRoute';\n// import AuthFactory from './components/Utils/AuthFactory';\n\nimport Authentication from './components/Authentication/Authentication';\nconst Root = React.createElement(React.Fragment, null, React.createElement(Helmet, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 16\n  },\n  __self: this\n}, React.createElement(\"title\", {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 17\n  },\n  __self: this\n}, \"planter.\"), React.createElement(\"link\", {\n  rel: \"stylesheet\",\n  href: assetUrl(require(\"__SECRET_FILE_LOADER__?assetUrl=true!./constants/styles.css\")),\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 18\n  },\n  __self: this\n})), React.createElement(Switch, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 20\n  },\n  __self: this\n}, React.createElement(Route, {\n  exact: true,\n  path: paths.home,\n  component: Authentication,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 21\n  },\n  __self: this\n}), React.createElement(Route, {\n  exact: true,\n  path: paths.garden,\n  component: Authentication,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 26\n  },\n  __self: this\n}), React.createElement(Route, {\n  component: PageNotFound,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 27\n  },\n  __self: this\n})));\nexport default Root;"
         },
         {
           "id": "./src/rpc/index.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
           "name": "./src/rpc/index.js",
-          "index": 70,
-          "index2": 72,
+          "index": 69,
+          "index2": 71,
           "size": 13152,
           "cacheable": true,
           "built": false,
@@ -11732,8 +11457,8 @@
           "id": "./src/rpc/services/index.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/services/index.js",
           "name": "./src/rpc/services/index.js",
-          "index": 71,
-          "index2": 68,
+          "index": 70,
+          "index2": 67,
           "size": 638,
           "cacheable": true,
           "built": false,
@@ -11812,8 +11537,8 @@
           "id": "./src/rpc/services/master-backend.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/services/master-backend.js",
           "name": "./src/rpc/services/master-backend.js",
-          "index": 72,
-          "index2": 67,
+          "index": 71,
+          "index2": 66,
           "size": 650,
           "cacheable": true,
           "built": false,
@@ -11887,8 +11612,8 @@
           "id": "./src/rpc/utils.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/utils.js",
           "name": "./src/rpc/utils.js",
-          "index": 73,
-          "index2": 70,
+          "index": 72,
+          "index2": 69,
           "size": 2648,
           "cacheable": true,
           "built": false,
@@ -12040,8 +11765,8 @@
           "id": "axios",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/axios/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/axios/index.js\"",
-          "index": 74,
-          "index2": 69,
+          "index": 73,
+          "index2": 68,
           "size": 42,
           "built": false,
           "optional": false,
@@ -12444,7 +12169,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-core",
-              "loc": "28:8-16"
+              "loc": "27:8-16"
             }
           ],
           "providedExports": null,
@@ -12455,8 +12180,8 @@
           "id": "fusion-plugin-jwt",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-jwt/dist-node-cjs/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-jwt/dist-node-cjs/index.js\"",
-          "index": 61,
-          "index2": 58,
+          "index": 60,
+          "index2": 57,
           "size": 42,
           "built": false,
           "optional": false,
@@ -12611,7 +12336,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-helmet-async",
-              "loc": "14:75-81"
+              "loc": "13:75-81"
             }
           ],
           "providedExports": null,
@@ -12622,8 +12347,8 @@
           "id": "fusion-plugin-react-redux",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-react-redux/dist-node-cjs/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-react-redux/dist-node-cjs/index.js\"",
-          "index": 58,
-          "index2": 55,
+          "index": 57,
+          "index2": 54,
           "size": 42,
           "built": false,
           "optional": false,
@@ -12751,7 +12476,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "69:30-40"
+              "loc": "113:30-40"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -12808,42 +12533,6 @@
               "loc": "52:35-42"
             },
             {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "fusion-plugin-react-router",
-              "loc": "6:0-69"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "fusion-plugin-react-router",
-              "loc": "56:31-36"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "fusion-plugin-react-router",
-              "loc": "78:31-36"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "fusion-plugin-react-router",
-              "loc": "95:29-34"
-            },
-            {
               "moduleId": "./src/main.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
               "module": "./src/main.js",
@@ -12895,7 +12584,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "34:25-31"
+              "loc": "33:25-31"
             },
             {
               "moduleId": "./src/root.js",
@@ -12904,7 +12593,25 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-react-router",
-              "loc": "58:24-29"
+              "loc": "39:23-28"
+            },
+            {
+              "moduleId": "./src/root.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+              "module": "./src/root.js",
+              "moduleName": "./src/root.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-react-router",
+              "loc": "48:24-29"
+            },
+            {
+              "moduleId": "./src/root.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+              "module": "./src/root.js",
+              "moduleName": "./src/root.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-react-router",
+              "loc": "57:24-29"
             }
           ],
           "providedExports": null,
@@ -12915,8 +12622,8 @@
           "id": "fusion-plugin-rpc",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/index.js\"",
-          "index": 59,
-          "index2": 56,
+          "index": 58,
+          "index2": 55,
           "size": 42,
           "built": false,
           "optional": false,
@@ -13075,9 +12782,9 @@
           "chunks": [
             "main"
           ],
-          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/profileReducer.js",
-          "issuerId": "./src/reducers/profileReducer.js",
-          "issuerName": "./src/reducers/profileReducer.js",
+          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
+          "issuerId": "./src/pages/home.js",
+          "issuerName": "./src/pages/home.js",
           "issuerPath": [
             {
               "id": 0,
@@ -13095,14 +12802,14 @@
               "name": "./src/main.js"
             },
             {
-              "id": "./src/reducers/index.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/index.js",
-              "name": "./src/reducers/index.js"
+              "id": "./src/root.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+              "name": "./src/root.js"
             },
             {
-              "id": "./src/reducers/profileReducer.js",
-              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/profileReducer.js",
-              "name": "./src/reducers/profileReducer.js"
+              "id": "./src/pages/home.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
+              "name": "./src/pages/home.js"
             }
           ],
           "failed": false,
@@ -13126,7 +12833,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "68:46-58"
+              "loc": "112:46-58"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -13135,7 +12842,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "68:74-86"
+              "loc": "112:74-86"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -13144,7 +12851,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "68:101-113"
+              "loc": "112:101-113"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -13153,7 +12860,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "68:128-140"
+              "loc": "112:128-140"
             },
             {
               "moduleId": "./src/components/Authentication/Login.js",
@@ -13444,24 +13151,6 @@
               "loc": "79:75-87"
             },
             {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "9:0-61"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "120:46-58"
-            },
-            {
               "moduleId": "./src/pages/garden-page.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
               "module": "./src/pages/garden-page.js",
@@ -13477,7 +13166,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "44:45-57"
+              "loc": "39:45-57"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -13749,8 +13438,8 @@
           "id": "fusion-plugin-rpc/dist-node-cjs/response-error",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/response-error.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/response-error.js\"",
-          "index": 75,
-          "index2": 71,
+          "index": 74,
+          "index2": 70,
           "size": 42,
           "built": false,
           "optional": false,
@@ -13867,8 +13556,8 @@
           "id": "fusion-plugin-universal-events",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-universal-events/dist-node-cjs/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-universal-events/dist-node-cjs/index.js\"",
-          "index": 57,
-          "index2": 54,
+          "index": 56,
+          "index2": 53,
           "size": 42,
           "built": false,
           "optional": false,
@@ -13998,8 +13687,8 @@
           "id": "fusion-tokens",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-tokens/dist/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-tokens/dist/index.js\"",
-          "index": 60,
-          "index2": 57,
+          "index": 59,
+          "index2": 56,
           "size": 42,
           "built": false,
           "optional": false,
@@ -14551,7 +14240,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "53:9-14"
+              "loc": "25:2-11"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -14560,7 +14249,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "53:29-34"
+              "loc": "33:11-16"
             },
             {
               "moduleId": "./src/components/Authentication/Authentication.js",
@@ -14569,7 +14258,52 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "53:51-56"
+              "loc": "48:15-20"
+            },
+            {
+              "moduleId": "./src/components/Authentication/Authentication.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+              "module": "./src/components/Authentication/Authentication.js",
+              "moduleName": "./src/components/Authentication/Authentication.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "57:15-20"
+            },
+            {
+              "moduleId": "./src/components/Authentication/Authentication.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+              "module": "./src/components/Authentication/Authentication.js",
+              "moduleName": "./src/components/Authentication/Authentication.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "66:8-13"
+            },
+            {
+              "moduleId": "./src/components/Authentication/Authentication.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+              "module": "./src/components/Authentication/Authentication.js",
+              "moduleName": "./src/components/Authentication/Authentication.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "93:9-14"
+            },
+            {
+              "moduleId": "./src/components/Authentication/Authentication.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+              "module": "./src/components/Authentication/Authentication.js",
+              "moduleName": "./src/components/Authentication/Authentication.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "93:29-34"
+            },
+            {
+              "moduleId": "./src/components/Authentication/Authentication.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Authentication.js",
+              "module": "./src/components/Authentication/Authentication.js",
+              "moduleName": "./src/components/Authentication/Authentication.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "93:114-119"
             },
             {
               "moduleId": "./src/components/Authentication/Login.js",
@@ -15472,78 +15206,6 @@
               "loc": "59:6-11"
             },
             {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "react",
-              "loc": "5:0-41"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "47:2-11"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "56:11-16"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "58:15-20"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "78:11-16"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "79:23-28"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "95:9-14"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "97:13-18"
-            },
-            {
               "moduleId": "./src/pages/garden-page.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
               "module": "./src/pages/garden-page.js",
@@ -15559,7 +15221,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "18:2-11"
+              "loc": "14:2-11"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -15568,7 +15230,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "21:9-14"
+              "loc": "17:9-14"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -15577,7 +15239,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "21:29-34"
+              "loc": "17:29-34"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -15586,7 +15248,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "21:51-56"
+              "loc": "17:51-56"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -15595,7 +15257,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "27:6-11"
+              "loc": "23:6-11"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -15694,7 +15356,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "14:13-18"
+              "loc": "13:13-18"
             },
             {
               "moduleId": "./src/root.js",
@@ -15703,7 +15365,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "14:33-38"
+              "loc": "13:33-38"
             },
             {
               "moduleId": "./src/root.js",
@@ -15712,7 +15374,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "14:55-60"
+              "loc": "13:55-60"
             },
             {
               "moduleId": "./src/root.js",
@@ -15721,7 +15383,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "20:3-8"
+              "loc": "19:3-8"
             },
             {
               "moduleId": "./src/root.js",
@@ -15730,7 +15392,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "26:16-21"
+              "loc": "25:16-21"
             },
             {
               "moduleId": "./src/root.js",
@@ -15739,7 +15401,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "34:5-10"
+              "loc": "33:5-10"
             },
             {
               "moduleId": "./src/root.js",
@@ -15748,7 +15410,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "40:3-8"
+              "loc": "39:3-8"
             },
             {
               "moduleId": "./src/root.js",
@@ -15757,7 +15419,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "49:4-9"
+              "loc": "48:4-9"
             },
             {
               "moduleId": "./src/root.js",
@@ -15766,7 +15428,7 @@
               "moduleName": "./src/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "58:4-9"
+              "loc": "57:4-9"
             }
           ],
           "providedExports": null,
@@ -15837,7 +15499,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "68:20-27"
+              "loc": "112:20-27"
             },
             {
               "moduleId": "./src/components/Authentication/Login.js",
@@ -16029,24 +15691,6 @@
               "loc": "79:103-110"
             },
             {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "react-redux",
-              "loc": "8:0-51"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "react-redux",
-              "loc": "120:20-27"
-            },
-            {
               "moduleId": "./src/pages/garden-page.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
               "module": "./src/pages/garden-page.js",
@@ -16062,7 +15706,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "44:20-27"
+              "loc": "39:20-27"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -16091,8 +15735,8 @@
           "id": "reduce-reducers",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/reduce-reducers/lib/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/reduce-reducers/lib/index.js\"",
-          "index": 65,
-          "index2": 60,
+          "index": 64,
+          "index2": 59,
           "size": 42,
           "built": false,
           "optional": false,
@@ -16289,7 +15933,7 @@
               "moduleName": "./src/components/Authentication/Authentication.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "68:12-19"
+              "loc": "112:12-19"
             },
             {
               "moduleId": "./src/components/Authentication/Login.js",
@@ -16472,24 +16116,6 @@
               "loc": "79:12-19"
             },
             {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "redux",
-              "loc": "7:0-32"
-            },
-            {
-              "moduleId": "./src/components/Utils/AuthRoute.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthRoute.js",
-              "module": "./src/components/Utils/AuthRoute.js",
-              "moduleName": "./src/components/Utils/AuthRoute.js",
-              "type": "harmony import specifier",
-              "userRequest": "redux",
-              "loc": "120:12-19"
-            },
-            {
               "moduleId": "./src/pages/garden-page.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
               "module": "./src/pages/garden-page.js",
@@ -16505,7 +16131,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "44:12-19"
+              "loc": "39:12-19"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -16608,8 +16234,8 @@
           "id": "unfetch",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/unfetch/dist/unfetch.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/unfetch/dist/unfetch.js\"",
-          "index": 62,
-          "index2": 59,
+          "index": 61,
+          "index2": 58,
           "size": 42,
           "built": false,
           "optional": false,
