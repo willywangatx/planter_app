@@ -1,18 +1,4 @@
-"""planter URL Configuration
 
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.0/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import (
@@ -23,7 +9,8 @@ from rest_framework_simplejwt.views import (
 from profiles.views import get_profile 
 from accounts.views import create_account
 from timers.views import *
-from wallets.views import get_wallet
+from wallets.views import get_wallet, update_energy
+from gardens.views import get_gardens
 # from timers.views import get_timers, increment_focus_time, decrement_focus_time, increment_break_time, decrement_break_time, reset_timers
 
 urlpatterns = [
@@ -40,6 +27,10 @@ urlpatterns = [
 
     # wallet endpoints
     path('api/getWallet/', get_wallet, name='get_wallet'),
+    path('api/updateEnergy/', update_energy, name='update_energy'),
+
+    # garden endpoints
+    path('api/getGardens/', get_gardens, name='get_gardens'),
 
     # timers endpoints
     path('api/getTimers/', get_timers, name='get_timers'),
@@ -52,5 +43,5 @@ urlpatterns = [
     path ('api/startTimers/', start_timers, name='start_timers'),
     path('api/stopTimers/', stop_timers, name='stop_timers'),
     path('api/updateCurrentTimes/', update_current_times, name='update_current_times'),
-    path('api/updateCompletedFocusMinutes', update_completed_focus_minutes, name='update_completed_focus_minutes'),
+    path('api/updateCompletedFocusMinutes/', update_completed_focus_minutes, name='update_completed_focus_minutes'),
 ]

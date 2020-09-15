@@ -8,6 +8,9 @@ const StartStop = ({
   // RPC handlers
   startTimers,
   stopTimers,
+  updateEnergy,
+  updateCompletedFocusMinutes,
+
   // global state props
   isStarted,
   currentFocusTime,
@@ -15,18 +18,36 @@ const StartStop = ({
   currentCycle,
   timerId,
   updateCurrentTimes,
-  updateCompletedFocusMinutes,
+  focusTime,
 }) => {
   const dispatch = useDispatch();
-  // stops the timer when the time runs to 0
 
+  // UPDATE BACKEND WITH CURRENT TIME EVERY 10 SECONDS WHEN isStarted
+  // TODO: current times that are passed to BE are not changing every 10 sec - is the same
+
+  // useEffect(() => {
+  //   let interval;
+  //   if (!isStarted) {
+  //     return clearInterval(interval);
+  //   }
+  //   if (isStarted) {
+  //     interval = setInterval(() => {
+  //       updateCurrentTimes({
+  //         id: timerId,
+  //         current_focus_time: currentFocusTime,
+  //         current_break_time: currentBreakTime,
+  //       });
+  //     }, 10000);
+  //     return () => clearInterval(interval);
+  //   }
+  // }, [isStarted]);
+
+  // TIMER LOGIC WHEN TIME REACHES ZERO
   useEffect(() => {
-    // if (currentFocusTime === 0 || currentBreakTime === 0) {
-    //   stopTimers({ id: timerId });
-    // }
     if (currentFocusTime === 0) {
       stopTimers({ id: timerId });
       updateCompletedFocusMinutes({ id: timerId });
+      updateEnergy({ focus_time: focusTime });
     }
 
     if (currentBreakTime === 0) {
@@ -36,7 +57,7 @@ const StartStop = ({
     }
   }, [currentFocusTime, currentBreakTime]);
 
-  // toggles the timer between start and stop
+  // START AND STOP TIMER LOGIC
   const startStopTimer = (event) => {
     event.preventDefault();
     if (isStarted) {
@@ -52,7 +73,9 @@ const StartStop = ({
     }
   };
 
+  // TIMER SECONDS COUNTDOWN LOGIC
   // TODO: ask why there is a return clear interval needed in the if (isStarted) block??
+
   useEffect(() => {
     let interval;
     if (!isStarted) {
@@ -65,7 +88,8 @@ const StartStop = ({
         }
         if (currentCycle === 'Break')
           dispatch({ type: 'DECREMENT_CURRENT_BREAK_TIME' });
-      }, 1000);
+      }, 100);
+      // clean up for uesEffect
       return () => clearInterval(interval);
     }
   }, [startStopTimer]);
@@ -88,6 +112,7 @@ const mapStateToProps = (state) => {
   const currentBreakTime = state.timers.current_break_time;
   const timerId = state.timers.id;
   const currentCycle = state.timers.current_cycle;
+  const focusTime = state.timers.focus_time;
 
   return {
     isStarted,
@@ -95,6 +120,7 @@ const mapStateToProps = (state) => {
     currentBreakTime,
     timerId,
     currentCycle,
+    focusTime,
   };
 };
 
@@ -103,7 +129,8 @@ const hoc = compose(
   withRPCRedux('startTimers'),
   withRPCRedux('stopTimers'),
   withRPCRedux('updateCurrentTimes'),
-  withRPCRedux('updateCompletedFocusMinutes')
+  withRPCRedux('updateCompletedFocusMinutes'),
+  withRPCRedux('updateEnergy')
 );
 
 export default hoc(StartStop);

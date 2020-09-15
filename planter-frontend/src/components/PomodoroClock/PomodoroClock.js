@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
@@ -10,10 +10,6 @@ import Reset from './Reset';
 import ToggleSwitch from './ToggleSwitch';
 
 const PomodoroClock = ({
-  // RPC handlers
-  getProfile,
-  getTimers,
-  stopTimers,
   // global state props
   timersLoading,
   timersError,
@@ -21,26 +17,25 @@ const PomodoroClock = ({
   profileLoading,
   profileError,
   profileData,
+  walletData,
 }) => {
-  if (profileLoading) {
-    return <div>loading</div>;
-  }
+  // if (profileLoading) {
+  //   return <div>loading</div>;
+  // }
 
   // TODO: ask why this is causing error? continuously fires and doesn't load
   // if (timersLoading) {
   //   return <div>loading</div>;
   // }
 
-  if (profileError) {
-    return <div>{profileError.message}</div>;
-  }
-  if (timersError) {
-    return <div>{timersError.message}</div>;
-  }
+  // if (profileError) {
+  //   return <div>{profileError.message}</div>;
+  // }
+  // if (timersError) {
+  //   return <div>{timersError.message}</div>;
+  // }
 
-  const shownProfileData = profileLoading
-    ? 'loading'
-    : { profileData, timersData };
+  const shownProfileData = profileLoading ? 'loading' : { walletData };
 
   return (
     <>
@@ -74,6 +69,7 @@ const mapStateToProps = (state) => {
   const timersError = state.timers.error;
   const timersData = state.timers;
   const timerId = state.timers.id;
+  const walletData = state.wallet;
 
   return {
     profileLoading,
@@ -83,6 +79,7 @@ const mapStateToProps = (state) => {
     timersError,
     timersData,
     timerId,
+    walletData,
   };
 };
 

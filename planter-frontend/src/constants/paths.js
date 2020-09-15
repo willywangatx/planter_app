@@ -1,5 +1,7 @@
 export default {
   home: '/',
-  login: '/login',
-  register: '/register',
+  garden: '/garden',
+  market: '/market',
+  shed: '/shed',
+  tasks: '/tasks',
 };

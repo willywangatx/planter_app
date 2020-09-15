@@ -10,13 +10,17 @@ const defaultHandlers = Object.keys(endpointToBackendLookups).reduce(
     const handler = async (args, ctx) => {
       try {
         const res = await fireBackendCall(backend, endpoint, args, ctx);
+        console.log(res);
+
         return res;
       } catch (err) {
+        // TODO: look at this - need to make this throw responseError
         responseError = new ResponseError(
           `Failure calling ${endpoint} with args ${JSON.stringify(args)} from ${
             backend.name
           }. error: ${err.message}`
         );
+        // responseError.code = err.status;
         throw responseError;
       }
     };

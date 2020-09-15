@@ -1,5 +1,4 @@
 from rest_framework import serializers
-# from profiles.serializers import ProfileSerializer
 from .models import Timer
 
 class TimerSerializer(serializers.ModelSerializer):
@@ -7,7 +6,7 @@ class TimerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Timer
-        fields = "__all__"
+        fields = ['id', 'focus_time', 'break_time', 'is_started', 'current_focus_time', 'current_break_time', 'current_cycle', 'completed_focus_minutes']
 
     # def update(self, instance, validated_data):
     #     for (key, value) in validated_data.items():

@@ -4,13 +4,14 @@ import { createRPCReducer } from 'fusion-plugin-rpc-redux-react';
 const DEFAULT_STATE = {
   loading: false,
   error: null,
-  energy: null,
-  coins: null,
+  rows: null,
+  columns: null,
+  id: null,
 };
 
 export default reduceReducers(
   DEFAULT_STATE,
-  createRPCReducer('getWallet', {
+  createRPCReducer('getGardens', {
     start: (state) => {
       return {
         ...state,
@@ -22,31 +23,7 @@ export default reduceReducers(
       return {
         ...state,
         loading: false,
-        ...payload.wallet,
-      };
-    },
-    failure: (state, { payload }) => {
-      return {
-        ...state,
-        loading: false,
-        error: payload,
-      };
-    },
-  }),
-
-  createRPCReducer('updateEnergy', {
-    start: (state) => {
-      return {
-        ...state,
-        loading: true,
-        error: null,
-      };
-    },
-    success: (state, { payload }) => {
-      return {
-        ...state,
-        loading: false,
-        energy: payload.wallet.energy,
+        ...payload.gardens[0],
       };
     },
     failure: (state, { payload }) => {

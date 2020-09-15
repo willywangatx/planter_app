@@ -2,9 +2,15 @@ const API_BASEPATH = 'http://localhost:8000/api';
 
 const authEndpoints = ['register', 'login', 'refreshAuth'];
 
-const fetchUserDataEndpoints = ['getProfile', 'getTimers', 'getWallet'];
+const fetchUserDataEndpoints = [
+  'getProfile',
+  'getTimers',
+  'getWallet',
+  'getGardens',
+];
 
 const userActionEndpoints = [
+  // TIMER
   'incrementFocusTime',
   'decrementFocusTime',
   'incrementBreakTime',
@@ -15,6 +21,8 @@ const userActionEndpoints = [
   'stopTimers',
   'updateCurrentTimes',
   'updateCompletedFocusMinutes',
+  // WALLET
+  'updateEnergy',
 ];
 
 const masterBackend = {

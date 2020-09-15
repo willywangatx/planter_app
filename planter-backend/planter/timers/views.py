@@ -17,10 +17,9 @@ def get_timers(request):
     # if not cycle: 
     #     return Response({'details': {'required fields': ['current_cycle']}}, status=status.HTTP_400_BAD_REQUEST) 
 
-    timers = Timer.objects.filter(profile=request.user.profile)
+    timers = Timer.objects.select_related().filter(profile=request.user.profile)
     timers.update(current_cycle='Focus')
     timers.update(is_started=False)
-    
     serializer = TimerSerializer(timers, many=True)
     data = {'timers': serializer.data, 'response': 'Timers Data successfully fetched'}
     return Response(data, status=status.HTTP_200_OK)
@@ -89,26 +88,18 @@ def decrement_focus_time(request):
     timer_id = request.data.get('id')
     cft = request.data.get('current_focus_time')
     min_focus_time = request.data.get('min_focus_time')
+    print(cft, timer_id, min_focus_time)
     if not timer_id or not cft or not min_focus_time:
-        return Response({'details': {'required fields': ['id', 'min_focus_time']}}, status=status.HTTP_400_BAD_REQUEST)
-    # try: 
-    #     timer_id = request.data['id']
-    #     min_focus_time = request.data['min_focus_time']
-    # except KeyError: 
-    #     return Response({'details': {'required fields': ['id', 'min_focus_time']}}, status=status.HTTP_400_BAD_REQUEST)
+        return Response({'details': {'required fields': ['id', 'min_focus_time', 'current_focus_time']}}, status=status.HTTP_400_BAD_REQUEST)
     
     try: 
         timer = Timer.objects.get(pk=timer_id)
+        if cft > min_focus_time:
+            timer.current_focus_time = cft - 60
         if timer.focus_time > min_focus_time:
             timer.focus_time = (F('focus_time') - 60)
-            if cft >= min_focus_time:
-                timer.current_focus_timer = cft - 60
-                # timer.current_focus_time = (F('current_focus_time') == 60)
-            else:
-                timer.current_focus_time = (F('current_focus_time') == 0)
-
-            timer.save()
-            timer.refresh_from_db()
+        timer.save()
+        timer.refresh_from_db()
     except Timer.DoesNotExist:
         raise Http404()
 
@@ -157,10 +148,10 @@ def decrement_break_time(request):
         timer = Timer.objects.get(pk=timer_id)
         if timer.break_time > min_break_time:
             timer.break_time = (F('break_time') - 60)
-            if cbt >= min_break_time:
+            if cbt > min_break_time:
                 timer.current_break_time = cbt - 60
-            else: 
-                timer.current_break_time = (F('current_break_time') == 0)
+            # else: 
+            #     timer.current_break_time = (F('current_break_time') == 0)
             timer.save()
             timer.refresh_from_db()
     except Timer.DoesNotExist:
@@ -283,7 +274,7 @@ def update_current_times(request):
         timer = Timer.objects.get(pk=timer_id)
         timer.current_focus_time = cft
         timer.current_break_time = cbt
-        timer.save()
+        timer.save(update_fields=['current_focus_time', 'current_break_time'])
         timer.refresh_from_db()
     except Timer.DoesNotExist:
         return Http404()

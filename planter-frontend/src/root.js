@@ -2,15 +2,15 @@
 import React from 'react';
 import { Route, Switch } from 'fusion-plugin-react-router';
 import { Helmet } from 'fusion-plugin-react-helmet-async';
-// import { Link } from 'fusion-plugin-react-router';
-import paths from './constants/paths';
-import Home from './pages/home.js';
-// import Login from './pages/login.js';
-// import Register from './pages/register.js';
-import PageNotFound from './pages/pageNotFound.js';
 import { assetUrl } from 'fusion-core';
+import paths from './constants/paths';
+import Home from './pages/home';
+import Garden from './pages/garden-page';
+import PageNotFound from './pages/pageNotFound';
+import AuthenticatedComponentWrapperFactory from './components/Utils/AuthenticatedComponentWrapperFactory.js';
 
-// import Example from './components/index.js';
+const AuthenticatedHome = AuthenticatedComponentWrapperFactory(Home);
+const AuthenticatedGarden = AuthenticatedComponentWrapperFactory(Garden);
 
 const Root = (
   <>
@@ -19,12 +19,12 @@ const Root = (
       <link rel="stylesheet" href={assetUrl('./constants/styles.css')}></link>
     </Helmet>
     <Switch>
-      <Route exact path={paths.home} component={Home} />
-      {/* <Route exact path={paths.login} component={Login} />
-      <Route exact path={paths.register} component={Register} /> */}
+      <Route exact path={paths.home} component={AuthenticatedHome} />
+      <Route exact path={paths.garden} component={AuthenticatedGarden} />
       <Route component={PageNotFound} />
     </Switch>
   </>
 );
 
 export default Root;
+

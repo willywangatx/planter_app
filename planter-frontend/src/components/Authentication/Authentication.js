@@ -1,48 +1,101 @@
-import React, { useEffect } from 'react';
-import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
-import { connect } from 'react-redux';
-import { compose } from 'redux';
-import PomodoroClock from '../PomodoroClock/PomodoroClock';
+// import React, { useEffect } from 'react';
+// import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
+// import { connect } from 'react-redux';
+// import { compose } from 'redux';
+// import { withRouter } from 'fusion-plugin-react-router';
+
+// import RenderedAuth from './RenderedAuth';
+// // import PomodoroClock from '../PomodoroClock/PomodoroClock';
+// import GardenPage from '../../pages/garden-page';
 // import Home from '../../pages/home';
-import RenderedAuth from './RenderedAuth';
 
-const Authentication = ({
-  // global state props
-  isAuthenticated,
-  // RPC calls
-  getProfile,
-  getTimers,
-  getWallet,
-}) => {
-  useEffect(() => {
-    getProfile();
-    getTimers();
-    getWallet();
-  }, []);
+// const Authentication = ({
+//   // withRouter
+//   match,
+//   location,
+//   history,
+//   // global state props
+//   auth,
+//   // RPC
+//   getProfile,
+//   getTimers,
+//   getWallet,
+//   getGardens,
+// }) => {
+//   useEffect(() => {
+//     if (!auth.isAuthenticated) {
+//       refreshAuth();
+//     }
+//   }, []);
 
-  if (isAuthenticated) {
-    return <PomodoroClock />;
-  }
+//   if (!auth.isAuthenticated) {
+//     // TODO: make a loading component/page
+//     return <div>loading...</div>;
+//   }
 
-  return (
-    <>
-      <RenderedAuth />
-    </>
-  );
-};
+//   // if (auth.didAttempt && !auth.isAuthenticated) {
+//   //   return <RenderedAuth />;
+//   // }
 
-const mapStateToProps = (state) => {
-  return {
-    isAuthenticated: state.authentication.isAuthenticated,
-  };
-};
+//   const componentToLoad = () => {
+//     switch (location.pathname) {
+//       case '/':
+//         getProfile();
+//         getTimers();
+//         getWallet();
+//         return <Home />;
+//       case '/garden':
+//         return <GardenPage />;
+//       default:
+//         getProfile();
+//         getTimers();
+//         getWallet();
+//         <Home />;
+//     }
+//   };
 
-const hoc = compose(
-  connect(mapStateToProps),
-  withRPCRedux('refreshAuth'),
-  withRPCRedux('getProfile'),
-  withRPCRedux('getTimers'),
-  withRPCRedux('getWallet')
-);
+//   // useEffect(() => {
+//   //   switch (location.pathname) {
+//   //     case '/':
+//   //       getProfile();
+//   //       // getTimers();
+//   //       // getWallet();
+//   //       break;
+//   //     case '/garden':
+//   //       getProfile();
+//   //       getGardens();
+//   //       break;
+//   //     default:
+//   //       getProfile();
+//   //       getTimers();
+//   //       getWallet();
+//   //   }
+//   // }, []);
 
-export default hoc(Authentication);
+//   return (
+//     <>
+//       {auth.didAttempt && !auth.isAuthenticated ? (
+//         <RenderedAuth />
+//       ) : (
+//           componentToLoad()
+//         )}
+//     </>
+//   );
+// };
+
+// const mapStateToProps = (state) => {
+//   return {
+//     auth: state.authentication,
+//   };
+// };
+
+// const hoc = compose(
+//   connect(mapStateToProps),
+//   withRPCRedux('getProfile'),
+//   withRPCRedux('getTimers'),
+//   withRPCRedux('getWallet'),
+//   withRPCRedux('getGardens')
+// );
+
+// const withRouterAuthWrapper = withRouter(Authentication);
+// export default hoc(withRouterAuthWrapper);

@@ -11,7 +11,8 @@ export const fireBackendCall = (
   wtihRefresh = true
 ) => {
   const url = `${backend.basePath}/${endpoint}/`;
-  // let {params, ...data} = args
+  // let { params, ...data } = args;
+  let data = args;
 
   const headers = {};
   PASSALONG_HEADERS.forEach((header) => {
@@ -21,7 +22,8 @@ export const fireBackendCall = (
   if (ctx.access_token) {
     headers.authorization = `Bearer ${ctx.access_token}`;
   }
-  if (endpoint === backend.refreshEndpoint) {
+
+  if (endpoint === 'refreshAuth') {
     data = { refresh: ctx.refresh_token };
   }
 
@@ -30,7 +32,7 @@ export const fireBackendCall = (
       method: 'POST',
       headers,
       url,
-      data: args,
+      data,
     })
       .then((res) => {
         if (res.data.access) {
