@@ -5,11 +5,12 @@ import { Helmet } from 'fusion-plugin-react-helmet-async';
 import { assetUrl } from 'fusion-core';
 import paths from './constants/paths';
 import Home from './pages/home';
-import GardenPage from './pages/garden-page';
+import Garden from './pages/garden-page';
 import PageNotFound from './pages/pageNotFound';
-// import AuthRoute from './components/Utils/AuthRoute';
-// import AuthFactory from './components/Utils/AuthFactory';
-import Authentication from './components/Authentication/Authentication';
+import AuthenticatedComponentWrapperFactory from './components/Utils/AuthenticatedComponentWrapperFactory.js';
+
+const AuthenticatedHome = AuthenticatedComponentWrapperFactory(Home);
+const AuthenticatedGarden = AuthenticatedComponentWrapperFactory(Garden);
 
 const Root = (
   <>
@@ -18,15 +19,12 @@ const Root = (
       <link rel="stylesheet" href={assetUrl('./constants/styles.css')}></link>
     </Helmet>
     <Switch>
-      <Route exact path={paths.home} component={Authentication} />
-      {/* <Route exact path={paths.home}>
-        <AuthFactory component={Home} />
-      </Route> */}
-
-      <Route exact path={paths.garden} component={Authentication} />
+      <Route exact path={paths.home} component={AuthenticatedHome} />
+      <Route exact path={paths.garden} component={AuthenticatedGarden} />
       <Route component={PageNotFound} />
     </Switch>
   </>
 );
 
 export default Root;
+

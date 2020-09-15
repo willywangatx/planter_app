@@ -18,11 +18,11 @@ const Home = ({ isAuthenticated, getProfile, getTimers, getWallet }) => {
   //   window.herpderp = history;
   // } catch {}
 
-  useEffect(() => {
-    getProfile();
-    getTimers();
-    getWallet();
-  }, [isAuthenticated]);
+  // useEffect(() => {
+  //   getProfile();
+  //   getTimers();
+  //   getWallet();
+  // }, [isAuthenticated]);
 
   return (
     <>
