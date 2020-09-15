@@ -134,6 +134,8 @@ input:focus {
   margin: 2.5vw auto;
   padding: 3vw;
   width: 85vw;
+  /* max-width: 1200px; */
+  
   /* Grid layout  */
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;

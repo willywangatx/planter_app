@@ -35,7 +35,7 @@ const PomodoroClock = ({
   //   return <div>{timersError.message}</div>;
   // }
 
-  const shownProfileData = profileLoading ? 'loading' : { walletData };
+  const shownProfileData = profileLoading ? 'loading' : { timersData, profileData };
 
   return (
     <>

@@ -10,10 +10,6 @@ import Garden from '../components/Garden/Garden';
 const GardenPage = ({ isAuthenticated, getGardens }) => {
   // TODO: error do not call hooks inside a use effect, can only call hooks at top level of function
 
-  useEffect(() => {
-    getGardens();
-  }, [isAuthenticated]);
-
   return (
     <>
       <NavBar />
