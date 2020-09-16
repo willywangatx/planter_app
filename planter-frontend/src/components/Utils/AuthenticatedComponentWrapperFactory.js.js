@@ -4,15 +4,12 @@ import { withRPCRedux } from 'fusion-plugin-rpc-redux-react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import RenderedAuth from '../Authentication/RenderedAuth';
-// import GetData from './GetData';
 
 const AuthenticatedComponentWrapperFactory = (ComponentPage) => {
   const AuthenticatedComponent = ({ auth, refreshAuth, getProfile, getTimers }) => {
     useEffect(() => {
       if (!auth.isAuthenticated && !auth.didAttempt) {
         refreshAuth();
-        // getProfile();
-        // getTimers();
       }
     }, [])
 
