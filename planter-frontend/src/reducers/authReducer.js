@@ -45,7 +45,7 @@ export default reduceReducers(
 
   createRPCReducer('refreshAuth', {
     start: (state) => {
-      return { ...state, loading: true, error: null };
+      return { ...state, loading: true, didAttempt: false, error: null };
     },
     success: (state, { payload }) => {
       return {
@@ -77,6 +77,7 @@ export default reduceReducers(
       return {
         ...state,
         isAuthenticated: true,
+        didAttempt: true,
       };
     },
   }),
@@ -86,6 +87,7 @@ export default reduceReducers(
       return {
         ...state,
         isAuthenticated: true,
+        didAttempt: true,
       };
     },
   }),
@@ -95,6 +97,7 @@ export default reduceReducers(
       return {
         ...state,
         isAuthenticated: true,
+        didAttempt: true,
       };
     },
   })
