@@ -22,8 +22,10 @@ export default reduceReducers(
     success: (state, { payload }) => {
       return {
         ...state,
+        ...payload.garden,
         loading: false,
-        ...payload.gardens[0],
+
+
       };
     },
     failure: (state, { payload }) => {
