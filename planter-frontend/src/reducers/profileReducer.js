@@ -21,8 +21,9 @@ export default reduceReducers(
       console.log(payload);
       return {
         ...state,
-        loading: false,
         ...payload.profile,
+        loading: false,
+        error: null,
       };
     },
     failure: (state, { payload }) => {

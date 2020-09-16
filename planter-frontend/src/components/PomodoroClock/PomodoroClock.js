@@ -18,6 +18,9 @@ const PomodoroClock = ({
   profileError,
   profileData,
   walletData,
+  auth,
+  getProfile,
+  getTimers,
 }) => {
   // if (profileLoading) {
   //   return <div>loading</div>;
@@ -35,7 +38,15 @@ const PomodoroClock = ({
   //   return <div>{timersError.message}</div>;
   // }
 
-  const shownProfileData = profileLoading ? 'loading' : { walletData };
+
+  // useEffect(() => {
+  //   if (auth.isAuthenticated) {
+  //     getProfile();
+  //     getTimers();
+  //   }
+  // }, [auth.isAuthenticated])
+
+  const shownProfileData = profileLoading ? 'loading' : { timersData, profileData };
 
   return (
     <>
@@ -70,6 +81,7 @@ const mapStateToProps = (state) => {
   const timersData = state.timers;
   const timerId = state.timers.id;
   const walletData = state.wallet;
+  const auth = state.auth;
 
   return {
     profileLoading,
@@ -80,13 +92,14 @@ const mapStateToProps = (state) => {
     timersData,
     timerId,
     walletData,
+    auth,
   };
 };
 
 const hoc = compose(
   connect(mapStateToProps),
   withRPCRedux('getProfile'),
-  withRPCRedux('getTimers')
+  withRPCRedux('getTimers'),
 );
 
 export default hoc(PomodoroClock);

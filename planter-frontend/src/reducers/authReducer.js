@@ -77,6 +77,7 @@ export default reduceReducers(
       return {
         ...state,
         isAuthenticated: true,
+        didAttempt: true,
       };
     },
   }),
@@ -86,6 +87,7 @@ export default reduceReducers(
       return {
         ...state,
         isAuthenticated: true,
+        didAttempt: true,
       };
     },
   }),
@@ -95,6 +97,7 @@ export default reduceReducers(
       return {
         ...state,
         isAuthenticated: true,
+        didAttempt: true,
       };
     },
   })

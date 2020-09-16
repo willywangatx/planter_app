@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 
 const Garden = () => {
+  const plots = [];
   return (
     <>
       <div>Garden</div>
