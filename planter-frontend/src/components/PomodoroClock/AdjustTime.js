@@ -20,8 +20,8 @@ const AdjustTime = ({
   // AdjustTimeLabel
   const adjustTimeLabel = () => {
     return currentCycle === 'Focus'
-      ? `Focus Time: ${focusTime / 60} min.`
-      : `Break Time: ${breakTime / 60} min.`;
+      ? `Focus Time: ${Math.floor(focusTime / 60)} min.`
+      : `Break Time: ${Math.floor(breakTime / 60)} min.`;
   };
 
   // INCREMENT TIME
@@ -29,13 +29,13 @@ const AdjustTime = ({
     event.preventDefault();
     currentCycle === 'Focus'
       ? incrementFocusTime({
-          id: timerId,
-          current_focus_time: currentFocusTime + 60,
-        })
+        id: timerId,
+        current_focus_time: currentFocusTime + 60,
+      })
       : incrementBreakTime({
-          id: timerId,
-          current_break_time: currentBreakTime + 60,
-        });
+        id: timerId,
+        current_break_time: currentBreakTime + 60,
+      });
   };
 
   // DECREMENT TIME
@@ -43,15 +43,15 @@ const AdjustTime = ({
     event.preventDefault();
     currentCycle === 'Focus'
       ? decrementFocusTime({
-          id: timerId,
-          min_focus_time: 300,
-          current_focus_time: currentFocusTime,
-        })
+        id: timerId,
+        min_focus_time: 300,
+        current_focus_time: currentFocusTime,
+      })
       : decrementBreakTime({
-          id: timerId,
-          min_break_time: 60,
-          current_break_time: currentBreakTime,
-        });
+        id: timerId,
+        min_break_time: 60,
+        current_break_time: currentBreakTime,
+      });
   };
 
   return (

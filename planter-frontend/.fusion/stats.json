@@ -2,22 +2,20 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "51e208a04a9847f9ec21",
+  "hash": "19f512c364c44f62019c",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "51e208a04a9847f9ec21",
-      "time": 294,
-      "builtAt": 1600231657384,
+      "hash": "19f512c364c44f62019c",
+      "time": 315,
+      "builtAt": 1600233841184,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.df0ea64e251fd3e21997.hot-update.js",
-          "server-main.js.map",
-          "main.df0ea64e251fd3e21997.hot-update.js.map"
+          "server-main.js.map"
         ]
       },
       "assets": [
@@ -30,48 +28,8 @@
           "emitted": false
         },
         {
-          "name": "df0ea64e251fd3e21997.hot-update.json",
-          "size": 46,
-          "chunks": [],
-          "chunkNames": [],
-          "info": {
-            "hotModuleReplacement": true,
-            "immutable": true
-          },
-          "emitted": true
-        },
-        {
-          "name": "main.df0ea64e251fd3e21997.hot-update.js",
-          "size": 6288,
-          "chunks": [
-            "main"
-          ],
-          "chunkNames": [
-            "main"
-          ],
-          "info": {
-            "hotModuleReplacement": true,
-            "immutable": true
-          },
-          "emitted": true
-        },
-        {
-          "name": "main.df0ea64e251fd3e21997.hot-update.js.map",
-          "size": 3737,
-          "chunks": [
-            "main"
-          ],
-          "chunkNames": [
-            "main"
-          ],
-          "info": {
-            "development": true
-          },
-          "emitted": true
-        },
-        {
           "name": "server-main.js",
-          "size": 205770,
+          "size": 205870,
           "chunks": [
             "main"
           ],
@@ -83,7 +41,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 148578,
+          "size": 148486,
           "chunks": [
             "main"
           ],
@@ -104,9 +62,7 @@
           ],
           "assets": [
             "server-main.js",
-            "main.df0ea64e251fd3e21997.hot-update.js",
-            "server-main.js.map",
-            "main.df0ea64e251fd3e21997.hot-update.js.map"
+            "server-main.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +75,7 @@
           ],
           "assets": [
             "server-main.js",
-            "main.df0ea64e251fd3e21997.hot-update.js",
-            "server-main.js.map",
-            "main.df0ea64e251fd3e21997.hot-update.js.map"
+            "server-main.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -130,20 +84,18 @@
       "chunks": [
         {
           "id": "main",
-          "rendered": true,
+          "rendered": false,
           "initial": true,
           "entry": true,
-          "size": 94258,
+          "size": 94218,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.df0ea64e251fd3e21997.hot-update.js",
-            "server-main.js.map",
-            "main.df0ea64e251fd3e21997.hot-update.js.map"
+            "server-main.js.map"
           ],
-          "hash": "7100f248730800b42add",
+          "hash": "240f8213187a601e14a5",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -1588,7 +1540,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "../Authentication/RenderedAuth",
-                  "loc": "44:35-47"
+                  "loc": "40:35-47"
                 }
               ],
               "providedExports": [
@@ -1756,7 +1708,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../components/Navigation/NavBar",
-                  "loc": "17:71-77"
+                  "loc": "20:71-77"
                 }
               ],
               "providedExports": [
@@ -1772,9 +1724,9 @@
               "name": "./src/components/PomodoroClock/AdjustTime.js",
               "index": 43,
               "index2": 37,
-              "size": 2847,
+              "size": 2871,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -1844,7 +1796,7 @@
               ],
               "optimizationBailout": [],
               "depth": 6,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/AdjustTime.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst AdjustTime = ({\n  // global state props\n  focusTime,\n  breakTime,\n  currentCycle,\n  timerId,\n  // RPC handlers\n  incrementFocusTime,\n  decrementFocusTime,\n  incrementBreakTime,\n  decrementBreakTime,\n  currentFocusTime,\n  currentBreakTime\n}) => {\n  // AdjustTimeLabel\n  const adjustTimeLabel = () => {\n    return currentCycle === 'Focus' ? `Focus Time: ${focusTime / 60} min.` : `Break Time: ${breakTime / 60} min.`;\n  }; // INCREMENT TIME\n\n\n  const increaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? incrementFocusTime({\n      id: timerId,\n      current_focus_time: currentFocusTime + 60\n    }) : incrementBreakTime({\n      id: timerId,\n      current_break_time: currentBreakTime + 60\n    });\n  }; // DECREMENT TIME\n\n\n  const decreaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? decrementFocusTime({\n      id: timerId,\n      min_focus_time: 300,\n      current_focus_time: currentFocusTime\n    }) : decrementBreakTime({\n      id: timerId,\n      min_break_time: 60,\n      current_break_time: currentBreakTime\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: increaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 59\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"disable-select inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  }, adjustTimeLabel()), React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: decreaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const focusTime = state.timers.focus_time;\n  const breakTime = state.timers.break_time;\n  const currentCycle = state.timers.current_cycle;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  return {\n    timerId,\n    focusTime,\n    breakTime,\n    currentCycle,\n    currentBreakTime,\n    currentFocusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('incrementFocusTime'), withRPCRedux('decrementFocusTime'), withRPCRedux('incrementBreakTime'), withRPCRedux('decrementBreakTime'));\nexport default hoc(AdjustTime);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/AdjustTime.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst AdjustTime = ({\n  // global state props\n  focusTime,\n  breakTime,\n  currentCycle,\n  timerId,\n  // RPC handlers\n  incrementFocusTime,\n  decrementFocusTime,\n  incrementBreakTime,\n  decrementBreakTime,\n  currentFocusTime,\n  currentBreakTime\n}) => {\n  // AdjustTimeLabel\n  const adjustTimeLabel = () => {\n    return currentCycle === 'Focus' ? `Focus Time: ${Math.floor(focusTime / 60)} min.` : `Break Time: ${Math.floor(breakTime / 60)} min.`;\n  }; // INCREMENT TIME\n\n\n  const increaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? incrementFocusTime({\n      id: timerId,\n      current_focus_time: currentFocusTime + 60\n    }) : incrementBreakTime({\n      id: timerId,\n      current_break_time: currentBreakTime + 60\n    });\n  }; // DECREMENT TIME\n\n\n  const decreaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? decrementFocusTime({\n      id: timerId,\n      min_focus_time: 300,\n      current_focus_time: currentFocusTime\n    }) : decrementBreakTime({\n      id: timerId,\n      min_break_time: 60,\n      current_break_time: currentBreakTime\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: increaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 59\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"disable-select inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  }, adjustTimeLabel()), React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: decreaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const focusTime = state.timers.focus_time;\n  const breakTime = state.timers.break_time;\n  const currentCycle = state.timers.current_cycle;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  return {\n    timerId,\n    focusTime,\n    breakTime,\n    currentCycle,\n    currentBreakTime,\n    currentFocusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('incrementFocusTime'), withRPCRedux('decrementFocusTime'), withRPCRedux('incrementBreakTime'), withRPCRedux('decrementBreakTime'));\nexport default hoc(AdjustTime);"
             },
             {
               "id": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -1911,7 +1863,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "../components/PomodoroClock/PomodoroClock",
-                  "loc": "23:26-39"
+                  "loc": "26:26-39"
                 }
               ],
               "providedExports": [
@@ -2247,9 +2199,9 @@
               "name": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "index": 51,
               "index2": 50,
-              "size": 3394,
+              "size": 3326,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -2318,7 +2270,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport RenderedAuth from '../Authentication/RenderedAuth'; // import GetData from './GetData';\n\nconst AuthenticatedComponentWrapperFactory = ComponentPage => {\n  const AuthenticatedComponent = ({\n    auth,\n    refreshAuth,\n    getProfile,\n    getTimers\n  }) => {\n    useEffect(() => {\n      if (!auth.isAuthenticated && !auth.didAttempt) {\n        refreshAuth(); // getProfile();\n        // getTimers();\n      }\n    }, []); // const getData = () => {\n    //   useEffect(() => {\n    //     getProfile();\n    //     getTimers();\n    //   }, [auth.isAuthenticated])\n    // }\n\n    useEffect(() => {\n      switch (location.pathname) {\n        case '/':\n          getProfile();\n          getTimers();\n          break;\n\n        case '/garden':\n          break;\n\n        default:\n          break;\n      }\n    }, [auth.isAuthenticated]);\n\n    const ComponentToRender = () => {\n      if (auth.didAttempt && !auth.isAuthenticated) {\n        return React.createElement(RenderedAuth, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 42\n          },\n          __self: this\n        });\n      }\n\n      if (auth.didAttempt && auth.isAuthenticated) {\n        return React.createElement(ComponentPage, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 46\n          },\n          __self: this\n        });\n      }\n\n      return React.createElement(\"div\", {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 49\n        },\n        __self: this\n      }, \"loading...\");\n    };\n\n    return React.createElement(React.Fragment, null, React.createElement(ComponentToRender, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 54\n      },\n      __self: this\n    }));\n  };\n\n  const mapStateToProps = state => {\n    return {\n      auth: state.authentication\n    };\n  };\n\n  const hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\n  return hoc(AuthenticatedComponent);\n};\n\nexport default AuthenticatedComponentWrapperFactory; // const AuthenticatedComponentWrapperFactory = (ComponentPage) => {\n//   class AuthenticatedComponentClass extends React.Component {\n//     componentDidMount() {\n//       const {\n//         auth,\n//         refreshAuth,\n//       } = this.props;\n//       if (!auth.isAuthenticated && !auth.didAttempt) {\n//         refreshAuth();\n//       }\n//     }\n//     render() {\n//       const { auth } = this.props;\n//       if (auth.didAttempt && !auth.isAuthenticated) {\n//         return (<RenderedAuth />);\n//       }\n//       if (auth.didAttempt && auth.isAuthenticated) {\n//         return (<ComponentPage />);\n//       }\n//       return <div>loading...</div>\n//     }\n//   }\n//   const mapStateToProps = (state) => {\n//     return {\n//       auth: state.authentication,\n//     };\n//   };\n//   const hoc = compose(\n//     connect(mapStateToProps),\n//     withRPCRedux('refreshAuth')\n//   );\n//   return hoc(AuthenticatedComponentClass);\n// }\n// export default AuthenticatedComponentWrapperFactory"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport RenderedAuth from '../Authentication/RenderedAuth'; // import GetData from './GetData';\n\nconst AuthenticatedComponentWrapperFactory = ComponentPage => {\n  const AuthenticatedComponent = ({\n    auth,\n    refreshAuth,\n    getProfile,\n    getTimers\n  }) => {\n    useEffect(() => {\n      if (!auth.isAuthenticated && !auth.didAttempt) {\n        refreshAuth(); // getProfile();\n        // getTimers();\n      }\n    }, []);\n    useEffect(() => {\n      if (auth.isAuthenticated && auth.didAttempt) {\n        switch (location.pathname) {\n          case '/':\n            getProfile();\n            getTimers();\n            break;\n\n          case '/garden':\n            break;\n\n          default:\n            break;\n        }\n      }\n    }, [auth.isAuthenticated]);\n\n    const ComponentToRender = () => {\n      if (auth.didAttempt && !auth.isAuthenticated) {\n        return React.createElement(RenderedAuth, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 37\n          },\n          __self: this\n        });\n      }\n\n      if (auth.didAttempt && auth.isAuthenticated) {\n        return React.createElement(ComponentPage, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 41\n          },\n          __self: this\n        });\n      }\n\n      return React.createElement(\"div\", {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 44\n        },\n        __self: this\n      }, \"loading...\");\n    };\n\n    return React.createElement(React.Fragment, null, React.createElement(ComponentToRender, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }));\n  };\n\n  const mapStateToProps = state => {\n    return {\n      auth: state.authentication\n    };\n  };\n\n  const hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\n  return hoc(AuthenticatedComponent);\n};\n\nexport default AuthenticatedComponentWrapperFactory; // const AuthenticatedComponentWrapperFactory = (ComponentPage) => {\n//   class AuthenticatedComponentClass extends React.Component {\n//     componentDidMount() {\n//       const {\n//         auth,\n//         refreshAuth,\n//       } = this.props;\n//       if (!auth.isAuthenticated && !auth.didAttempt) {\n//         refreshAuth();\n//       }\n//     }\n//     render() {\n//       const { auth } = this.props;\n//       if (auth.didAttempt && !auth.isAuthenticated) {\n//         return (<RenderedAuth />);\n//       }\n//       if (auth.didAttempt && auth.isAuthenticated) {\n//         return (<ComponentPage />);\n//       }\n//       return <div>loading...</div>\n//     }\n//   }\n//   const mapStateToProps = (state) => {\n//     return {\n//       auth: state.authentication,\n//     };\n//   };\n//   const hoc = compose(\n//     connect(mapStateToProps),\n//     withRPCRedux('refreshAuth')\n//   );\n//   return hoc(AuthenticatedComponentClass);\n// }\n// export default AuthenticatedComponentWrapperFactory"
             },
             {
               "id": "./src/constants/paths.js",
@@ -2598,7 +2550,7 @@
               "name": "./src/pages/home.js",
               "index": 35,
               "index2": 43,
-              "size": 1147,
+              "size": 1176,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2660,7 +2612,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroClock';\nimport NavBar from '../components/Navigation/NavBar';\n\nconst Home = ({\n  getData\n}) => {\n  // useEffect(() => {\n  //   if (isAuthenticated) {\n  //     getData();\n  //   }\n  // }, [])\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 18\n    },\n    __self: this\n  }), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }));\n}; // export default Home;\n\n\nconst mapStateToProps = state => {\n  return {\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps) // withRPCRedux('getProfile'),\n// withRPCRedux('getTimers'),\n// withRPCRedux('getWallet')\n);\nexport default hoc(Home);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroClock';\nimport NavBar from '../components/Navigation/NavBar';\n\nconst Home = ({\n  getProfile,\n  getTimers,\n  auth\n}) => {\n  // useEffect(() => {\n  //   if (auth.didAttempt) {\n  //     getProfile()\n  //     getTimers()\n  //   }\n  // }, [auth.didAttempt])\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 20\n    },\n    __self: this\n  }), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 21\n    },\n    __self: this\n  }));\n}; // export default Home;\n\n\nconst mapStateToProps = state => {\n  return {\n    auth: state.authentication\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers') // withRPCRedux('getWallet')\n);\nexport default hoc(Home);"
             },
             {
               "id": "./src/pages/pageNotFound.js",
@@ -2794,7 +2746,7 @@
               "name": "./src/reducers/authReducer.js",
               "index": 66,
               "index2": 62,
-              "size": 2588,
+              "size": 2563,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2856,7 +2808,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  isAuthenticated: false,\n  didAttempt: false\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('login', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      isAuthenticated: true,\n      didAttempt: true // TODO: how to preserve login between page refreshes?\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    // if (payload.data.code == 'NOT_LOGGED_IN') {\n    //   return {\n    //     ...state,\n    //     loading: false,\n    //     didAttempt: true,\n    //   };\n    // }\n    return { ...state,\n      loading: false,\n      didAttempt: true,\n      error: payload\n    };\n  }\n}), createRPCReducer('refreshAuth', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      didAttempt: false,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    // if (payload.data.code == 'NOT_LOGGED_IN') {\n    //   return {\n    //     ...state,\n    //   };\n    // }\n    return { ...state,\n      loading: false,\n      error: payload,\n      didAttempt: true,\n      isAuthenticated: false\n    };\n  }\n}), // Listeners for RPC handlers to auth\ncreateRPCReducer('getProfile', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}), createRPCReducer('getTimers', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}), createRPCReducer('getWallet', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}) // create rpc reducer around getProfilee\n// createRPCReducer('register', {\n//   start: (state) => {\n//     return { ...state, loading: true, error: null };\n//   },\n//   success: (state, { payload }) => {\n//     console.log(payload);\n//     return {\n//       ...state,\n//       loading: false,\n//       isAuthenticated: true,\n//       loginAttempted: true,\n//     };\n//   },\n//   failure: (state, { payload }) => ({\n//     ...state,\n//     loading: false,\n//     loginAttempted: true,\n//     error: payload,\n//   }),\n// })\n);"
+              "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  isAuthenticated: false,\n  didAttempt: false\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('login', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      isAuthenticated: true,\n      didAttempt: true // TODO: how to preserve login between page refreshes?\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    // if (payload.data.code == 'NOT_LOGGED_IN') {\n    //   return {\n    //     ...state,\n    //     loading: false,\n    //     didAttempt: true,\n    //   };\n    // }\n    return { ...state,\n      loading: false,\n      didAttempt: true,\n      error: payload\n    };\n  }\n}), createRPCReducer('refreshAuth', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    // if (payload.data.code == 'NOT_LOGGED_IN') {\n    //   return {\n    //     ...state,\n    //   };\n    // }\n    return { ...state,\n      loading: false,\n      error: payload,\n      didAttempt: true,\n      isAuthenticated: false\n    };\n  }\n}), // Listeners for RPC handlers to auth\ncreateRPCReducer('getProfile', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}), createRPCReducer('getTimers', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}), createRPCReducer('getWallet', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}) // create rpc reducer around getProfilee\n// createRPCReducer('register', {\n//   start: (state) => {\n//     return { ...state, loading: true, error: null };\n//   },\n//   success: (state, { payload }) => {\n//     console.log(payload);\n//     return {\n//       ...state,\n//       loading: false,\n//       isAuthenticated: true,\n//       loginAttempted: true,\n//     };\n//   },\n//   failure: (state, { payload }) => ({\n//     ...state,\n//     loading: false,\n//     loginAttempted: true,\n//     error: payload,\n//   }),\n// })\n);"
             },
             {
               "id": "./src/reducers/gardensReducer.js",
@@ -4974,7 +4926,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "87:48-60"
+                  "loc": "83:48-60"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -4983,7 +4935,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "87:77-89"
+                  "loc": "83:77-89"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -4992,7 +4944,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "87:105-117"
+                  "loc": "83:105-117"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -5020,6 +4972,24 @@
                   "type": "harmony side effect evaluation",
                   "userRequest": "fusion-plugin-rpc-redux-react",
                   "loc": "3:0-61"
+                },
+                {
+                  "moduleId": "./src/pages/home.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
+                  "module": "./src/pages/home.js",
+                  "moduleName": "./src/pages/home.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "42:46-58"
+                },
+                {
+                  "moduleId": "./src/pages/home.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
+                  "module": "./src/pages/home.js",
+                  "moduleName": "./src/pages/home.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "42:74-86"
                 },
                 {
                   "moduleId": "./src/reducers/authReducer.js",
@@ -5055,7 +5025,7 @@
                   "moduleName": "./src/reducers/authReducer.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "76:0-16"
+                  "loc": "75:0-16"
                 },
                 {
                   "moduleId": "./src/reducers/authReducer.js",
@@ -5064,7 +5034,7 @@
                   "moduleName": "./src/reducers/authReducer.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "85:4-20"
+                  "loc": "84:4-20"
                 },
                 {
                   "moduleId": "./src/reducers/authReducer.js",
@@ -5073,7 +5043,7 @@
                   "moduleName": "./src/reducers/authReducer.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "94:4-20"
+                  "loc": "93:4-20"
                 },
                 {
                   "moduleId": "./src/reducers/gardensReducer.js",
@@ -6966,7 +6936,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "27:4-13"
+                  "loc": "21:4-13"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -6975,7 +6945,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "44:15-20"
+                  "loc": "40:15-20"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -6984,7 +6954,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "54:15-20"
+                  "loc": "50:15-20"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -6993,7 +6963,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "63:13-18"
+                  "loc": "59:13-18"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -7002,7 +6972,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "72:11-16"
+                  "loc": "68:11-16"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -7011,7 +6981,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "72:31-36"
+                  "loc": "68:31-36"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -7020,7 +6990,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "72:53-58"
+                  "loc": "68:53-58"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -7083,7 +7053,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "17:9-14"
+                  "loc": "20:9-14"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -7092,7 +7062,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "17:29-34"
+                  "loc": "20:29-34"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -7101,7 +7071,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "17:51-56"
+                  "loc": "20:51-56"
                 },
                 {
                   "moduleId": "./src/pages/home.js",
@@ -7110,7 +7080,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "23:6-11"
+                  "loc": "26:6-11"
                 },
                 {
                   "moduleId": "./src/pages/pageNotFound.js",
@@ -7487,7 +7457,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "87:22-29"
+                  "loc": "83:22-29"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -7523,7 +7493,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "39:20-27"
+                  "loc": "42:20-27"
                 }
               ],
               "providedExports": null,
@@ -7912,7 +7882,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "87:14-21"
+                  "loc": "83:14-21"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -7948,7 +7918,7 @@
                   "moduleName": "./src/pages/home.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "39:12-19"
+                  "loc": "42:12-19"
                 },
                 {
                   "moduleId": "./src/reducers/index.js",
@@ -9591,7 +9561,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "../Authentication/RenderedAuth",
-              "loc": "44:35-47"
+              "loc": "40:35-47"
             }
           ],
           "providedExports": [
@@ -9759,7 +9729,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../components/Navigation/NavBar",
-              "loc": "17:71-77"
+              "loc": "20:71-77"
             }
           ],
           "providedExports": [
@@ -9775,9 +9745,9 @@
           "name": "./src/components/PomodoroClock/AdjustTime.js",
           "index": 43,
           "index2": 37,
-          "size": 2847,
+          "size": 2871,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -9847,7 +9817,7 @@
           ],
           "optimizationBailout": [],
           "depth": 6,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/AdjustTime.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst AdjustTime = ({\n  // global state props\n  focusTime,\n  breakTime,\n  currentCycle,\n  timerId,\n  // RPC handlers\n  incrementFocusTime,\n  decrementFocusTime,\n  incrementBreakTime,\n  decrementBreakTime,\n  currentFocusTime,\n  currentBreakTime\n}) => {\n  // AdjustTimeLabel\n  const adjustTimeLabel = () => {\n    return currentCycle === 'Focus' ? `Focus Time: ${focusTime / 60} min.` : `Break Time: ${breakTime / 60} min.`;\n  }; // INCREMENT TIME\n\n\n  const increaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? incrementFocusTime({\n      id: timerId,\n      current_focus_time: currentFocusTime + 60\n    }) : incrementBreakTime({\n      id: timerId,\n      current_break_time: currentBreakTime + 60\n    });\n  }; // DECREMENT TIME\n\n\n  const decreaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? decrementFocusTime({\n      id: timerId,\n      min_focus_time: 300,\n      current_focus_time: currentFocusTime\n    }) : decrementBreakTime({\n      id: timerId,\n      min_break_time: 60,\n      current_break_time: currentBreakTime\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: increaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 59\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"disable-select inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  }, adjustTimeLabel()), React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: decreaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const focusTime = state.timers.focus_time;\n  const breakTime = state.timers.break_time;\n  const currentCycle = state.timers.current_cycle;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  return {\n    timerId,\n    focusTime,\n    breakTime,\n    currentCycle,\n    currentBreakTime,\n    currentFocusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('incrementFocusTime'), withRPCRedux('decrementFocusTime'), withRPCRedux('incrementBreakTime'), withRPCRedux('decrementBreakTime'));\nexport default hoc(AdjustTime);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/AdjustTime.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst AdjustTime = ({\n  // global state props\n  focusTime,\n  breakTime,\n  currentCycle,\n  timerId,\n  // RPC handlers\n  incrementFocusTime,\n  decrementFocusTime,\n  incrementBreakTime,\n  decrementBreakTime,\n  currentFocusTime,\n  currentBreakTime\n}) => {\n  // AdjustTimeLabel\n  const adjustTimeLabel = () => {\n    return currentCycle === 'Focus' ? `Focus Time: ${Math.floor(focusTime / 60)} min.` : `Break Time: ${Math.floor(breakTime / 60)} min.`;\n  }; // INCREMENT TIME\n\n\n  const increaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? incrementFocusTime({\n      id: timerId,\n      current_focus_time: currentFocusTime + 60\n    }) : incrementBreakTime({\n      id: timerId,\n      current_break_time: currentBreakTime + 60\n    });\n  }; // DECREMENT TIME\n\n\n  const decreaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? decrementFocusTime({\n      id: timerId,\n      min_focus_time: 300,\n      current_focus_time: currentFocusTime\n    }) : decrementBreakTime({\n      id: timerId,\n      min_break_time: 60,\n      current_break_time: currentBreakTime\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: increaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 59\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"disable-select inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  }, adjustTimeLabel()), React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: decreaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const focusTime = state.timers.focus_time;\n  const breakTime = state.timers.break_time;\n  const currentCycle = state.timers.current_cycle;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  return {\n    timerId,\n    focusTime,\n    breakTime,\n    currentCycle,\n    currentBreakTime,\n    currentFocusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('incrementFocusTime'), withRPCRedux('decrementFocusTime'), withRPCRedux('incrementBreakTime'), withRPCRedux('decrementBreakTime'));\nexport default hoc(AdjustTime);"
         },
         {
           "id": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -9914,7 +9884,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "../components/PomodoroClock/PomodoroClock",
-              "loc": "23:26-39"
+              "loc": "26:26-39"
             }
           ],
           "providedExports": [
@@ -10250,9 +10220,9 @@
           "name": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
           "index": 51,
           "index2": 50,
-          "size": 3394,
+          "size": 3326,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -10321,7 +10291,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport RenderedAuth from '../Authentication/RenderedAuth'; // import GetData from './GetData';\n\nconst AuthenticatedComponentWrapperFactory = ComponentPage => {\n  const AuthenticatedComponent = ({\n    auth,\n    refreshAuth,\n    getProfile,\n    getTimers\n  }) => {\n    useEffect(() => {\n      if (!auth.isAuthenticated && !auth.didAttempt) {\n        refreshAuth(); // getProfile();\n        // getTimers();\n      }\n    }, []); // const getData = () => {\n    //   useEffect(() => {\n    //     getProfile();\n    //     getTimers();\n    //   }, [auth.isAuthenticated])\n    // }\n\n    useEffect(() => {\n      switch (location.pathname) {\n        case '/':\n          getProfile();\n          getTimers();\n          break;\n\n        case '/garden':\n          break;\n\n        default:\n          break;\n      }\n    }, [auth.isAuthenticated]);\n\n    const ComponentToRender = () => {\n      if (auth.didAttempt && !auth.isAuthenticated) {\n        return React.createElement(RenderedAuth, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 42\n          },\n          __self: this\n        });\n      }\n\n      if (auth.didAttempt && auth.isAuthenticated) {\n        return React.createElement(ComponentPage, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 46\n          },\n          __self: this\n        });\n      }\n\n      return React.createElement(\"div\", {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 49\n        },\n        __self: this\n      }, \"loading...\");\n    };\n\n    return React.createElement(React.Fragment, null, React.createElement(ComponentToRender, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 54\n      },\n      __self: this\n    }));\n  };\n\n  const mapStateToProps = state => {\n    return {\n      auth: state.authentication\n    };\n  };\n\n  const hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\n  return hoc(AuthenticatedComponent);\n};\n\nexport default AuthenticatedComponentWrapperFactory; // const AuthenticatedComponentWrapperFactory = (ComponentPage) => {\n//   class AuthenticatedComponentClass extends React.Component {\n//     componentDidMount() {\n//       const {\n//         auth,\n//         refreshAuth,\n//       } = this.props;\n//       if (!auth.isAuthenticated && !auth.didAttempt) {\n//         refreshAuth();\n//       }\n//     }\n//     render() {\n//       const { auth } = this.props;\n//       if (auth.didAttempt && !auth.isAuthenticated) {\n//         return (<RenderedAuth />);\n//       }\n//       if (auth.didAttempt && auth.isAuthenticated) {\n//         return (<ComponentPage />);\n//       }\n//       return <div>loading...</div>\n//     }\n//   }\n//   const mapStateToProps = (state) => {\n//     return {\n//       auth: state.authentication,\n//     };\n//   };\n//   const hoc = compose(\n//     connect(mapStateToProps),\n//     withRPCRedux('refreshAuth')\n//   );\n//   return hoc(AuthenticatedComponentClass);\n// }\n// export default AuthenticatedComponentWrapperFactory"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport RenderedAuth from '../Authentication/RenderedAuth'; // import GetData from './GetData';\n\nconst AuthenticatedComponentWrapperFactory = ComponentPage => {\n  const AuthenticatedComponent = ({\n    auth,\n    refreshAuth,\n    getProfile,\n    getTimers\n  }) => {\n    useEffect(() => {\n      if (!auth.isAuthenticated && !auth.didAttempt) {\n        refreshAuth(); // getProfile();\n        // getTimers();\n      }\n    }, []);\n    useEffect(() => {\n      if (auth.isAuthenticated && auth.didAttempt) {\n        switch (location.pathname) {\n          case '/':\n            getProfile();\n            getTimers();\n            break;\n\n          case '/garden':\n            break;\n\n          default:\n            break;\n        }\n      }\n    }, [auth.isAuthenticated]);\n\n    const ComponentToRender = () => {\n      if (auth.didAttempt && !auth.isAuthenticated) {\n        return React.createElement(RenderedAuth, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 37\n          },\n          __self: this\n        });\n      }\n\n      if (auth.didAttempt && auth.isAuthenticated) {\n        return React.createElement(ComponentPage, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 41\n          },\n          __self: this\n        });\n      }\n\n      return React.createElement(\"div\", {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 44\n        },\n        __self: this\n      }, \"loading...\");\n    };\n\n    return React.createElement(React.Fragment, null, React.createElement(ComponentToRender, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }));\n  };\n\n  const mapStateToProps = state => {\n    return {\n      auth: state.authentication\n    };\n  };\n\n  const hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\n  return hoc(AuthenticatedComponent);\n};\n\nexport default AuthenticatedComponentWrapperFactory; // const AuthenticatedComponentWrapperFactory = (ComponentPage) => {\n//   class AuthenticatedComponentClass extends React.Component {\n//     componentDidMount() {\n//       const {\n//         auth,\n//         refreshAuth,\n//       } = this.props;\n//       if (!auth.isAuthenticated && !auth.didAttempt) {\n//         refreshAuth();\n//       }\n//     }\n//     render() {\n//       const { auth } = this.props;\n//       if (auth.didAttempt && !auth.isAuthenticated) {\n//         return (<RenderedAuth />);\n//       }\n//       if (auth.didAttempt && auth.isAuthenticated) {\n//         return (<ComponentPage />);\n//       }\n//       return <div>loading...</div>\n//     }\n//   }\n//   const mapStateToProps = (state) => {\n//     return {\n//       auth: state.authentication,\n//     };\n//   };\n//   const hoc = compose(\n//     connect(mapStateToProps),\n//     withRPCRedux('refreshAuth')\n//   );\n//   return hoc(AuthenticatedComponentClass);\n// }\n// export default AuthenticatedComponentWrapperFactory"
         },
         {
           "id": "./src/constants/paths.js",
@@ -10601,7 +10571,7 @@
           "name": "./src/pages/home.js",
           "index": 35,
           "index2": 43,
-          "size": 1147,
+          "size": 1176,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -10663,7 +10633,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroClock';\nimport NavBar from '../components/Navigation/NavBar';\n\nconst Home = ({\n  getData\n}) => {\n  // useEffect(() => {\n  //   if (isAuthenticated) {\n  //     getData();\n  //   }\n  // }, [])\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 18\n    },\n    __self: this\n  }), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }));\n}; // export default Home;\n\n\nconst mapStateToProps = state => {\n  return {\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps) // withRPCRedux('getProfile'),\n// withRPCRedux('getTimers'),\n// withRPCRedux('getWallet')\n);\nexport default hoc(Home);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport PomodoroClock from '../components/PomodoroClock/PomodoroClock';\nimport NavBar from '../components/Navigation/NavBar';\n\nconst Home = ({\n  getProfile,\n  getTimers,\n  auth\n}) => {\n  // useEffect(() => {\n  //   if (auth.didAttempt) {\n  //     getProfile()\n  //     getTimers()\n  //   }\n  // }, [auth.didAttempt])\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 20\n    },\n    __self: this\n  }), React.createElement(PomodoroClock, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 21\n    },\n    __self: this\n  }));\n}; // export default Home;\n\n\nconst mapStateToProps = state => {\n  return {\n    auth: state.authentication\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers') // withRPCRedux('getWallet')\n);\nexport default hoc(Home);"
         },
         {
           "id": "./src/pages/pageNotFound.js",
@@ -10797,7 +10767,7 @@
           "name": "./src/reducers/authReducer.js",
           "index": 66,
           "index2": 62,
-          "size": 2588,
+          "size": 2563,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -10859,7 +10829,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  isAuthenticated: false,\n  didAttempt: false\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('login', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      isAuthenticated: true,\n      didAttempt: true // TODO: how to preserve login between page refreshes?\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    // if (payload.data.code == 'NOT_LOGGED_IN') {\n    //   return {\n    //     ...state,\n    //     loading: false,\n    //     didAttempt: true,\n    //   };\n    // }\n    return { ...state,\n      loading: false,\n      didAttempt: true,\n      error: payload\n    };\n  }\n}), createRPCReducer('refreshAuth', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      didAttempt: false,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    // if (payload.data.code == 'NOT_LOGGED_IN') {\n    //   return {\n    //     ...state,\n    //   };\n    // }\n    return { ...state,\n      loading: false,\n      error: payload,\n      didAttempt: true,\n      isAuthenticated: false\n    };\n  }\n}), // Listeners for RPC handlers to auth\ncreateRPCReducer('getProfile', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}), createRPCReducer('getTimers', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}), createRPCReducer('getWallet', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}) // create rpc reducer around getProfilee\n// createRPCReducer('register', {\n//   start: (state) => {\n//     return { ...state, loading: true, error: null };\n//   },\n//   success: (state, { payload }) => {\n//     console.log(payload);\n//     return {\n//       ...state,\n//       loading: false,\n//       isAuthenticated: true,\n//       loginAttempted: true,\n//     };\n//   },\n//   failure: (state, { payload }) => ({\n//     ...state,\n//     loading: false,\n//     loginAttempted: true,\n//     error: payload,\n//   }),\n// })\n);"
+          "source": "import reduceReducers from 'reduce-reducers';\nimport { createRPCReducer } from 'fusion-plugin-rpc-redux-react';\nconst DEFAULT_STATE = {\n  loading: false,\n  error: null,\n  isAuthenticated: false,\n  didAttempt: false\n};\nexport default reduceReducers(DEFAULT_STATE, createRPCReducer('login', {\n  // what we call thunk with\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      isAuthenticated: true,\n      didAttempt: true // TODO: how to preserve login between page refreshes?\n\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    // if (payload.data.code == 'NOT_LOGGED_IN') {\n    //   return {\n    //     ...state,\n    //     loading: false,\n    //     didAttempt: true,\n    //   };\n    // }\n    return { ...state,\n      loading: false,\n      didAttempt: true,\n      error: payload\n    };\n  }\n}), createRPCReducer('refreshAuth', {\n  start: state => {\n    return { ...state,\n      loading: true,\n      error: null\n    };\n  },\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      loading: false,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  },\n  failure: (state, {\n    payload\n  }) => {\n    // if (payload.data.code == 'NOT_LOGGED_IN') {\n    //   return {\n    //     ...state,\n    //   };\n    // }\n    return { ...state,\n      loading: false,\n      error: payload,\n      didAttempt: true,\n      isAuthenticated: false\n    };\n  }\n}), // Listeners for RPC handlers to auth\ncreateRPCReducer('getProfile', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}), createRPCReducer('getTimers', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}), createRPCReducer('getWallet', {\n  success: (state, {\n    payload\n  }) => {\n    return { ...state,\n      isAuthenticated: true,\n      didAttempt: true\n    };\n  }\n}) // create rpc reducer around getProfilee\n// createRPCReducer('register', {\n//   start: (state) => {\n//     return { ...state, loading: true, error: null };\n//   },\n//   success: (state, { payload }) => {\n//     console.log(payload);\n//     return {\n//       ...state,\n//       loading: false,\n//       isAuthenticated: true,\n//       loginAttempted: true,\n//     };\n//   },\n//   failure: (state, { payload }) => ({\n//     ...state,\n//     loading: false,\n//     loginAttempted: true,\n//     error: payload,\n//   }),\n// })\n);"
         },
         {
           "id": "./src/reducers/gardensReducer.js",
@@ -12977,7 +12947,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "87:48-60"
+              "loc": "83:48-60"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -12986,7 +12956,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "87:77-89"
+              "loc": "83:77-89"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -12995,7 +12965,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "87:105-117"
+              "loc": "83:105-117"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -13023,6 +12993,24 @@
               "type": "harmony side effect evaluation",
               "userRequest": "fusion-plugin-rpc-redux-react",
               "loc": "3:0-61"
+            },
+            {
+              "moduleId": "./src/pages/home.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
+              "module": "./src/pages/home.js",
+              "moduleName": "./src/pages/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "42:46-58"
+            },
+            {
+              "moduleId": "./src/pages/home.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
+              "module": "./src/pages/home.js",
+              "moduleName": "./src/pages/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "42:74-86"
             },
             {
               "moduleId": "./src/reducers/authReducer.js",
@@ -13058,7 +13046,7 @@
               "moduleName": "./src/reducers/authReducer.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "76:0-16"
+              "loc": "75:0-16"
             },
             {
               "moduleId": "./src/reducers/authReducer.js",
@@ -13067,7 +13055,7 @@
               "moduleName": "./src/reducers/authReducer.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "85:4-20"
+              "loc": "84:4-20"
             },
             {
               "moduleId": "./src/reducers/authReducer.js",
@@ -13076,7 +13064,7 @@
               "moduleName": "./src/reducers/authReducer.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "94:4-20"
+              "loc": "93:4-20"
             },
             {
               "moduleId": "./src/reducers/gardensReducer.js",
@@ -14969,7 +14957,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "27:4-13"
+              "loc": "21:4-13"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -14978,7 +14966,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "44:15-20"
+              "loc": "40:15-20"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -14987,7 +14975,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "54:15-20"
+              "loc": "50:15-20"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -14996,7 +14984,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "63:13-18"
+              "loc": "59:13-18"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -15005,7 +14993,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "72:11-16"
+              "loc": "68:11-16"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -15014,7 +15002,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "72:31-36"
+              "loc": "68:31-36"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -15023,7 +15011,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "72:53-58"
+              "loc": "68:53-58"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -15086,7 +15074,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "17:9-14"
+              "loc": "20:9-14"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -15095,7 +15083,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "17:29-34"
+              "loc": "20:29-34"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -15104,7 +15092,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "17:51-56"
+              "loc": "20:51-56"
             },
             {
               "moduleId": "./src/pages/home.js",
@@ -15113,7 +15101,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "23:6-11"
+              "loc": "26:6-11"
             },
             {
               "moduleId": "./src/pages/pageNotFound.js",
@@ -15490,7 +15478,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "87:22-29"
+              "loc": "83:22-29"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -15526,7 +15514,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "39:20-27"
+              "loc": "42:20-27"
             }
           ],
           "providedExports": null,
@@ -15915,7 +15903,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "87:14-21"
+              "loc": "83:14-21"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -15951,7 +15939,7 @@
               "moduleName": "./src/pages/home.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "39:12-19"
+              "loc": "42:12-19"
             },
             {
               "moduleId": "./src/reducers/index.js",

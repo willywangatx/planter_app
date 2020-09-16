@@ -6,12 +6,14 @@ import { compose } from 'redux';
 import PomodoroClock from '../components/PomodoroClock/PomodoroClock';
 import NavBar from '../components/Navigation/NavBar';
 
-const Home = ({ getData }) => {
+const Home = ({ getProfile, getTimers, auth }) => {
+
   // useEffect(() => {
-  //   if (isAuthenticated) {
-  //     getData();
+  //   if (auth.didAttempt) {
+  //     getProfile()
+  //     getTimers()
   //   }
-  // }, [])
+  // }, [auth.didAttempt])
 
   return (
     <>
@@ -25,14 +27,14 @@ const Home = ({ getData }) => {
 
 const mapStateToProps = (state) => {
   return {
-    isAuthenticated: state.authentication.isAuthenticated,
+    auth: state.authentication,
   };
 };
 
 const hoc = compose(
   connect(mapStateToProps),
-  // withRPCRedux('getProfile'),
-  // withRPCRedux('getTimers'),
+  withRPCRedux('getProfile'),
+  withRPCRedux('getTimers'),
   // withRPCRedux('getWallet')
 );
 

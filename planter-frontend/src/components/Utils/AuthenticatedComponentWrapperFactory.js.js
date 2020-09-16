@@ -16,23 +16,18 @@ const AuthenticatedComponentWrapperFactory = (ComponentPage) => {
       }
     }, [])
 
-    // const getData = () => {
-    //   useEffect(() => {
-    //     getProfile();
-    //     getTimers();
-    //   }, [auth.isAuthenticated])
-    // }
-
     useEffect(() => {
-      switch (location.pathname) {
-        case '/':
-          getProfile();
-          getTimers();
-          break;
-        case '/garden':
-          break;
-        default:
-          break;
+      if (auth.isAuthenticated && auth.didAttempt) {
+        switch (location.pathname) {
+          case '/':
+            getProfile();
+            getTimers();
+            break;
+          case '/garden':
+            break;
+          default:
+            break;
+        }
       }
     }, [auth.isAuthenticated])
 
