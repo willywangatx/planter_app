@@ -50,7 +50,7 @@ const PomodoroClock = ({
 
   return (
     <>
-      <div className="pomodoro-clock raised-panel">
+      <div className="pomodoro-clock-panel raised-panel">
         <div className="left-panel"></div>
         <div className="center-panel">
           <ToggleSwitch />

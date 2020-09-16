@@ -10,14 +10,14 @@ const Garden = ({ gardens }) => {
   const Grid = () => {
     for (let i = 0; i < gardens.rows; i++) {
       for (let j = 0; j < gardens.columns; j++) {
-        columns[j] = < button key={[i, j]} className="disable-select raised-btn panel-btn" > {j}</button>
+        columns[j] = < button key={[i, j]} className="disable-select raised-btn garden-col" > {j}</button>
       }
       // rows[i] = <div className="raised-panel">{columns}</div>
       rows[i] = columns;
     }
     return (
       <>
-        <div className="raised-panel">
+        <div className="raised-panel garden-panel">
           {rows}
         </div>
       </>
@@ -28,7 +28,8 @@ const Garden = ({ gardens }) => {
 
   return (
     <>
-      <div className="raised-panel">{Grid()}</div>
+      {/* <div className="raised-panel">{Grid()}</div> */}
+      <Grid />
       <div className="json-data">
 
         <p className="inset panel-label">

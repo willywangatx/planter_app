@@ -2,35 +2,35 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "809a62079d848a2345a9",
+  "hash": "962572280769dd1eeb9f",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "809a62079d848a2345a9",
-      "time": 376,
-      "builtAt": 1600288000109,
+      "hash": "962572280769dd1eeb9f",
+      "time": 384,
+      "builtAt": 1600289024838,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.7ed3c19c7ab5faea6585.hot-update.js",
+          "main.a69d03422fcfc5a976b3.hot-update.js",
           "server-main.js.map",
-          "main.7ed3c19c7ab5faea6585.hot-update.js.map"
+          "main.a69d03422fcfc5a976b3.hot-update.js.map"
         ]
       },
       "assets": [
         {
-          "name": "../client/f964e669152a913daf22856e960da9dc.css",
-          "size": 4761,
+          "name": "../client/db3154e54f37c068099dbd7f661ab4ca.css",
+          "size": 4916,
           "chunks": [],
           "chunkNames": [],
           "info": {},
           "emitted": false
         },
         {
-          "name": "7ed3c19c7ab5faea6585.hot-update.json",
+          "name": "a69d03422fcfc5a976b3.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.7ed3c19c7ab5faea6585.hot-update.js",
-          "size": 4299,
+          "name": "main.a69d03422fcfc5a976b3.hot-update.js",
+          "size": 4273,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.7ed3c19c7ab5faea6585.hot-update.js.map",
-          "size": 1836,
+          "name": "main.a69d03422fcfc5a976b3.hot-update.js.map",
+          "size": 1869,
           "chunks": [
             "main"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 206325,
+          "size": 206305,
           "chunks": [
             "main"
           ],
@@ -83,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 149337,
+          "size": 149376,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.7ed3c19c7ab5faea6585.hot-update.js",
+            "main.a69d03422fcfc5a976b3.hot-update.js",
             "server-main.js.map",
-            "main.7ed3c19c7ab5faea6585.hot-update.js.map"
+            "main.a69d03422fcfc5a976b3.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.7ed3c19c7ab5faea6585.hot-update.js",
+            "main.a69d03422fcfc5a976b3.hot-update.js",
             "server-main.js.map",
-            "main.7ed3c19c7ab5faea6585.hot-update.js.map"
+            "main.a69d03422fcfc5a976b3.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -133,17 +133,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 95332,
+          "size": 95312,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.7ed3c19c7ab5faea6585.hot-update.js",
+            "main.a69d03422fcfc5a976b3.hot-update.js",
             "server-main.js.map",
-            "main.7ed3c19c7ab5faea6585.hot-update.js.map"
+            "main.a69d03422fcfc5a976b3.hot-update.js.map"
           ],
-          "hash": "600f6afbf52a09afe07a",
+          "hash": "67e48be4a62fa1f6975c",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -414,7 +414,7 @@
               "errors": 0,
               "warnings": 0,
               "assets": [
-                "../client/f964e669152a913daf22856e960da9dc.css"
+                "../client/db3154e54f37c068099dbd7f661ab4ca.css"
               ],
               "reasons": [
                 {
@@ -430,7 +430,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 4,
-              "source": "module.exports = __webpack_public_path__ + \"f964e669152a913daf22856e960da9dc.css\";"
+              "source": "module.exports = __webpack_public_path__ + \"db3154e54f37c068099dbd7f661ab4ca.css\";"
             },
             {
               "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -1604,7 +1604,7 @@
               "name": "./src/components/Garden/Garden.js",
               "index": 49,
               "index2": 44,
-              "size": 1891,
+              "size": 1865,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -1671,7 +1671,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst Garden = ({\n  gardens\n}) => {\n  let rows = [];\n  let columns = [];\n\n  const Grid = () => {\n    for (let i = 0; i < gardens.rows; i++) {\n      for (let j = 0; j < gardens.columns; j++) {\n        columns[j] = React.createElement(\"button\", {\n          key: [i, j],\n          className: \"disable-select raised-btn panel-btn\",\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 13\n          },\n          __self: this\n        }, \" \", j);\n      } // rows[i] = <div className=\"raised-panel\">{columns}</div>\n\n\n      rows[i] = columns;\n    }\n\n    return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n      className: \"raised-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 20\n      },\n      __self: this\n    }, rows));\n  };\n\n  const gardenData = gardens.loading ? 'loading...' : {\n    gardens\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 31\n    },\n    __self: this\n  }, Grid()), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 32\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 34\n    },\n    __self: this\n  }, \"Garden Data: \", JSON.stringify(gardenData))));\n};\n\nconst mapStateToProps = state => {\n  return {\n    gardens: state.gardens\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps));\nexport default hoc(Garden);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst Garden = ({\n  gardens\n}) => {\n  let rows = [];\n  let columns = [];\n\n  const Grid = () => {\n    for (let i = 0; i < gardens.rows; i++) {\n      for (let j = 0; j < gardens.columns; j++) {\n        columns[j] = React.createElement(\"button\", {\n          key: [i, j],\n          className: \"disable-select raised-btn garden-col\",\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 13\n          },\n          __self: this\n        }, \" \", j);\n      } // rows[i] = <div className=\"raised-panel\">{columns}</div>\n\n\n      rows[i] = columns;\n    }\n\n    return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n      className: \"raised-panel garden-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 20\n      },\n      __self: this\n    }, rows));\n  };\n\n  const gardenData = gardens.loading ? 'loading...' : {\n    gardens\n  };\n  return React.createElement(React.Fragment, null, React.createElement(Grid, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 32\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 33\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 35\n    },\n    __self: this\n  }, \"Garden Data: \", JSON.stringify(gardenData))));\n};\n\nconst mapStateToProps = state => {\n  return {\n    gardens: state.gardens\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps));\nexport default hoc(Garden);"
             },
             {
               "id": "./src/components/Navigation/NavBar.js",
@@ -1852,7 +1852,7 @@
               "name": "./src/components/PomodoroClock/PomodoroClock.js",
               "index": 36,
               "index2": 41,
-              "size": 3737,
+              "size": 3743,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1919,7 +1919,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = ({\n  // global state props\n  timersLoading,\n  timersError,\n  timersData,\n  profileLoading,\n  profileError,\n  profileData,\n  walletData,\n  auth,\n  getProfile,\n  getTimers\n}) => {\n  // if (profileLoading) {\n  //   return <div>loading</div>;\n  // }\n  // TODO: ask why this is causing error? continuously fires and doesn't load\n  // if (timersLoading) {\n  //   return <div>loading</div>;\n  // }\n  // if (profileError) {\n  //   return <div>{profileError.message}</div>;\n  // }\n  // if (timersError) {\n  //   return <div>{timersError.message}</div>;\n  // }\n  // useEffect(() => {\n  //   if (auth.isAuthenticated) {\n  //     getProfile();\n  //     getTimers();\n  //   }\n  // }, [auth.isAuthenticated])\n  const shownProfileData = profileLoading ? 'loading' : {\n    timersData,\n    profileData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 53\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 54\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 55\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 56\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 57\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 60\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 61\n    },\n    __self: this\n  }), React.createElement(Reset, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 62\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 65\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 66\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersLoading = state.timers.loading;\n  const timersError = state.timers.error;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const walletData = state.wallet;\n  const auth = state.auth;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timersLoading,\n    timersError,\n    timersData,\n    timerId,\n    walletData,\n    auth\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\nexport default hoc(PomodoroClock);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = ({\n  // global state props\n  timersLoading,\n  timersError,\n  timersData,\n  profileLoading,\n  profileError,\n  profileData,\n  walletData,\n  auth,\n  getProfile,\n  getTimers\n}) => {\n  // if (profileLoading) {\n  //   return <div>loading</div>;\n  // }\n  // TODO: ask why this is causing error? continuously fires and doesn't load\n  // if (timersLoading) {\n  //   return <div>loading</div>;\n  // }\n  // if (profileError) {\n  //   return <div>{profileError.message}</div>;\n  // }\n  // if (timersError) {\n  //   return <div>{timersError.message}</div>;\n  // }\n  // useEffect(() => {\n  //   if (auth.isAuthenticated) {\n  //     getProfile();\n  //     getTimers();\n  //   }\n  // }, [auth.isAuthenticated])\n  const shownProfileData = profileLoading ? 'loading' : {\n    timersData,\n    profileData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock-panel raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 53\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 54\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 55\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 56\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 57\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 60\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 61\n    },\n    __self: this\n  }), React.createElement(Reset, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 62\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 65\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 66\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersLoading = state.timers.loading;\n  const timersError = state.timers.error;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const walletData = state.wallet;\n  const auth = state.auth;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timersLoading,\n    timersError,\n    timersData,\n    timerId,\n    walletData,\n    auth\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\nexport default hoc(PomodoroClock);"
             },
             {
               "id": "./src/components/PomodoroClock/Reset.js",
@@ -6561,7 +6561,7 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "51:14-19"
+                  "loc": "50:6-11"
                 },
                 {
                   "moduleId": "./src/components/Garden/Garden.js",
@@ -6570,7 +6570,7 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "58:5-10"
+                  "loc": "57:5-10"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -7406,7 +7406,7 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "74:20-27"
+                  "loc": "73:20-27"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
@@ -7822,7 +7822,7 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "74:12-19"
+                  "loc": "73:12-19"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
@@ -8435,7 +8435,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "../client/f964e669152a913daf22856e960da9dc.css"
+            "../client/db3154e54f37c068099dbd7f661ab4ca.css"
           ],
           "reasons": [
             {
@@ -8451,7 +8451,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
-          "source": "module.exports = __webpack_public_path__ + \"f964e669152a913daf22856e960da9dc.css\";"
+          "source": "module.exports = __webpack_public_path__ + \"db3154e54f37c068099dbd7f661ab4ca.css\";"
         },
         {
           "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -9625,7 +9625,7 @@
           "name": "./src/components/Garden/Garden.js",
           "index": 49,
           "index2": 44,
-          "size": 1891,
+          "size": 1865,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9692,7 +9692,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst Garden = ({\n  gardens\n}) => {\n  let rows = [];\n  let columns = [];\n\n  const Grid = () => {\n    for (let i = 0; i < gardens.rows; i++) {\n      for (let j = 0; j < gardens.columns; j++) {\n        columns[j] = React.createElement(\"button\", {\n          key: [i, j],\n          className: \"disable-select raised-btn panel-btn\",\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 13\n          },\n          __self: this\n        }, \" \", j);\n      } // rows[i] = <div className=\"raised-panel\">{columns}</div>\n\n\n      rows[i] = columns;\n    }\n\n    return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n      className: \"raised-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 20\n      },\n      __self: this\n    }, rows));\n  };\n\n  const gardenData = gardens.loading ? 'loading...' : {\n    gardens\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 31\n    },\n    __self: this\n  }, Grid()), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 32\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 34\n    },\n    __self: this\n  }, \"Garden Data: \", JSON.stringify(gardenData))));\n};\n\nconst mapStateToProps = state => {\n  return {\n    gardens: state.gardens\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps));\nexport default hoc(Garden);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst Garden = ({\n  gardens\n}) => {\n  let rows = [];\n  let columns = [];\n\n  const Grid = () => {\n    for (let i = 0; i < gardens.rows; i++) {\n      for (let j = 0; j < gardens.columns; j++) {\n        columns[j] = React.createElement(\"button\", {\n          key: [i, j],\n          className: \"disable-select raised-btn garden-col\",\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 13\n          },\n          __self: this\n        }, \" \", j);\n      } // rows[i] = <div className=\"raised-panel\">{columns}</div>\n\n\n      rows[i] = columns;\n    }\n\n    return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n      className: \"raised-panel garden-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 20\n      },\n      __self: this\n    }, rows));\n  };\n\n  const gardenData = gardens.loading ? 'loading...' : {\n    gardens\n  };\n  return React.createElement(React.Fragment, null, React.createElement(Grid, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 32\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 33\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 35\n    },\n    __self: this\n  }, \"Garden Data: \", JSON.stringify(gardenData))));\n};\n\nconst mapStateToProps = state => {\n  return {\n    gardens: state.gardens\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps));\nexport default hoc(Garden);"
         },
         {
           "id": "./src/components/Navigation/NavBar.js",
@@ -9873,7 +9873,7 @@
           "name": "./src/components/PomodoroClock/PomodoroClock.js",
           "index": 36,
           "index2": 41,
-          "size": 3737,
+          "size": 3743,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -9940,7 +9940,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = ({\n  // global state props\n  timersLoading,\n  timersError,\n  timersData,\n  profileLoading,\n  profileError,\n  profileData,\n  walletData,\n  auth,\n  getProfile,\n  getTimers\n}) => {\n  // if (profileLoading) {\n  //   return <div>loading</div>;\n  // }\n  // TODO: ask why this is causing error? continuously fires and doesn't load\n  // if (timersLoading) {\n  //   return <div>loading</div>;\n  // }\n  // if (profileError) {\n  //   return <div>{profileError.message}</div>;\n  // }\n  // if (timersError) {\n  //   return <div>{timersError.message}</div>;\n  // }\n  // useEffect(() => {\n  //   if (auth.isAuthenticated) {\n  //     getProfile();\n  //     getTimers();\n  //   }\n  // }, [auth.isAuthenticated])\n  const shownProfileData = profileLoading ? 'loading' : {\n    timersData,\n    profileData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 53\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 54\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 55\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 56\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 57\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 60\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 61\n    },\n    __self: this\n  }), React.createElement(Reset, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 62\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 65\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 66\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersLoading = state.timers.loading;\n  const timersError = state.timers.error;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const walletData = state.wallet;\n  const auth = state.auth;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timersLoading,\n    timersError,\n    timersData,\n    timerId,\n    walletData,\n    auth\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\nexport default hoc(PomodoroClock);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = ({\n  // global state props\n  timersLoading,\n  timersError,\n  timersData,\n  profileLoading,\n  profileError,\n  profileData,\n  walletData,\n  auth,\n  getProfile,\n  getTimers\n}) => {\n  // if (profileLoading) {\n  //   return <div>loading</div>;\n  // }\n  // TODO: ask why this is causing error? continuously fires and doesn't load\n  // if (timersLoading) {\n  //   return <div>loading</div>;\n  // }\n  // if (profileError) {\n  //   return <div>{profileError.message}</div>;\n  // }\n  // if (timersError) {\n  //   return <div>{timersError.message}</div>;\n  // }\n  // useEffect(() => {\n  //   if (auth.isAuthenticated) {\n  //     getProfile();\n  //     getTimers();\n  //   }\n  // }, [auth.isAuthenticated])\n  const shownProfileData = profileLoading ? 'loading' : {\n    timersData,\n    profileData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock-panel raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 53\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 54\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 55\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 56\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 57\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 60\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 61\n    },\n    __self: this\n  }), React.createElement(Reset, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 62\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 65\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 66\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersLoading = state.timers.loading;\n  const timersError = state.timers.error;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const walletData = state.wallet;\n  const auth = state.auth;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timersLoading,\n    timersError,\n    timersData,\n    timerId,\n    walletData,\n    auth\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\nexport default hoc(PomodoroClock);"
         },
         {
           "id": "./src/components/PomodoroClock/Reset.js",
@@ -14582,7 +14582,7 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "51:14-19"
+              "loc": "50:6-11"
             },
             {
               "moduleId": "./src/components/Garden/Garden.js",
@@ -14591,7 +14591,7 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "58:5-10"
+              "loc": "57:5-10"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -15427,7 +15427,7 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "74:20-27"
+              "loc": "73:20-27"
             },
             {
               "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
@@ -15843,7 +15843,7 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "74:12-19"
+              "loc": "73:12-19"
             },
             {
               "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
