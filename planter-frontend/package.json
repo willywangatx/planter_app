@@ -10,7 +10,7 @@
     "react-hooks/exhaustive-deps": "warn"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "fusion-cli": "^2.6.0",
     "fusion-core": "^2.2.1",
