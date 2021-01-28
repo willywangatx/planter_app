@@ -8,6 +8,7 @@ import AdjustTime from './AdjustTime';
 import StartStop from './StartStop';
 import Reset from './Reset';
 import ToggleSwitch from './ToggleSwitch';
+import CompletedSessions from './CompletedSessions';
 
 const PomodoroClock = ({
   // global state props
@@ -51,7 +52,9 @@ const PomodoroClock = ({
   return (
     <>
       <div className="pomodoro-clock-panel raised-panel">
-        <div className="left-panel"></div>
+        <div className="left-panel">
+          <CompletedSessions />
+        </div>
         <div className="center-panel">
           <ToggleSwitch />
           <Timer />

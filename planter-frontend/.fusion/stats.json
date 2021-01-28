@@ -2,35 +2,35 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "962572280769dd1eeb9f",
+  "hash": "95b5d18dc2c7851a4fb9",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "962572280769dd1eeb9f",
-      "time": 384,
-      "builtAt": 1600289024838,
+      "hash": "95b5d18dc2c7851a4fb9",
+      "time": 335,
+      "builtAt": 1611812430041,
       "publicPath": "",
       "outputPath": "/Users/williamwang/Programming/v3_Planter/planter-frontend/.fusion/dist/development/server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.a69d03422fcfc5a976b3.hot-update.js",
+          "main.8873e0c69b692070f853.hot-update.js",
           "server-main.js.map",
-          "main.a69d03422fcfc5a976b3.hot-update.js.map"
+          "main.8873e0c69b692070f853.hot-update.js.map"
         ]
       },
       "assets": [
         {
-          "name": "../client/db3154e54f37c068099dbd7f661ab4ca.css",
-          "size": 4916,
+          "name": "../client/ab85c94b7867109a3efa1192dfdce10a.css",
+          "size": 4962,
           "chunks": [],
           "chunkNames": [],
           "info": {},
           "emitted": false
         },
         {
-          "name": "a69d03422fcfc5a976b3.hot-update.json",
+          "name": "8873e0c69b692070f853.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -41,8 +41,8 @@
           "emitted": true
         },
         {
-          "name": "main.a69d03422fcfc5a976b3.hot-update.js",
-          "size": 4273,
+          "name": "main.8873e0c69b692070f853.hot-update.js",
+          "size": 3476,
           "chunks": [
             "main"
           ],
@@ -56,8 +56,8 @@
           "emitted": true
         },
         {
-          "name": "main.a69d03422fcfc5a976b3.hot-update.js.map",
-          "size": 1869,
+          "name": "main.8873e0c69b692070f853.hot-update.js.map",
+          "size": 1372,
           "chunks": [
             "main"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 206305,
+          "size": 211857,
           "chunks": [
             "main"
           ],
@@ -83,7 +83,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 149376,
+          "size": 151400,
           "chunks": [
             "main"
           ],
@@ -104,9 +104,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.a69d03422fcfc5a976b3.hot-update.js",
+            "main.8873e0c69b692070f853.hot-update.js",
             "server-main.js.map",
-            "main.a69d03422fcfc5a976b3.hot-update.js.map"
+            "main.8873e0c69b692070f853.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -119,9 +119,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.a69d03422fcfc5a976b3.hot-update.js",
+            "main.8873e0c69b692070f853.hot-update.js",
             "server-main.js.map",
-            "main.a69d03422fcfc5a976b3.hot-update.js.map"
+            "main.8873e0c69b692070f853.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -133,17 +133,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 95312,
+          "size": 97168,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.a69d03422fcfc5a976b3.hot-update.js",
+            "main.8873e0c69b692070f853.hot-update.js",
             "server-main.js.map",
-            "main.a69d03422fcfc5a976b3.hot-update.js.map"
+            "main.8873e0c69b692070f853.hot-update.js.map"
           ],
-          "hash": "67e48be4a62fa1f6975c",
+          "hash": "c71495dc9b75b5de5526",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -154,7 +154,7 @@
               "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
               "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
               "index": 0,
-              "index2": 75,
+              "index2": 77,
               "size": 52,
               "built": false,
               "optional": false,
@@ -375,8 +375,8 @@
               "id": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/constants/styles.css",
               "name": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
-              "index": 55,
-              "index2": 51,
+              "index": 57,
+              "index2": 53,
               "size": 82,
               "cacheable": true,
               "built": false,
@@ -414,7 +414,7 @@
               "errors": 0,
               "warnings": 0,
               "assets": [
-                "../client/db3154e54f37c068099dbd7f661ab4ca.css"
+                "../client/ab85c94b7867109a3efa1192dfdce10a.css"
               ],
               "reasons": [
                 {
@@ -430,7 +430,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 4,
-              "source": "module.exports = __webpack_public_path__ + \"db3154e54f37c068099dbd7f661ab4ca.css\";"
+              "source": "module.exports = __webpack_public_path__ + \"ab85c94b7867109a3efa1192dfdce10a.css\";"
             },
             {
               "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -715,7 +715,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
               "name": "./node_modules/fusion-cli/entries/server-entry.js",
               "index": 7,
-              "index2": 74,
+              "index2": 76,
               "size": 3021,
               "cacheable": true,
               "built": false,
@@ -1367,8 +1367,8 @@
               "id": "./src/components/Authentication/Login.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Login.js",
               "name": "./src/components/Authentication/Login.js",
-              "index": 53,
-              "index2": 47,
+              "index": 55,
+              "index2": 49,
               "size": 3474,
               "cacheable": true,
               "built": false,
@@ -1447,8 +1447,8 @@
               "id": "./src/components/Authentication/Register.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Register.js",
               "name": "./src/components/Authentication/Register.js",
-              "index": 54,
-              "index2": 48,
+              "index": 56,
+              "index2": 50,
               "size": 4959,
               "cacheable": true,
               "built": false,
@@ -1527,8 +1527,8 @@
               "id": "./src/components/Authentication/RenderedAuth.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/RenderedAuth.js",
               "name": "./src/components/Authentication/RenderedAuth.js",
-              "index": 52,
-              "index2": 49,
+              "index": 54,
+              "index2": 51,
               "size": 1463,
               "cacheable": true,
               "built": false,
@@ -1588,7 +1588,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "../Authentication/RenderedAuth",
-                  "loc": "41:35-47"
+                  "loc": "43:35-47"
                 }
               ],
               "providedExports": [
@@ -1602,11 +1602,11 @@
               "id": "./src/components/Garden/Garden.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
               "name": "./src/components/Garden/Garden.js",
-              "index": 49,
-              "index2": 44,
-              "size": 1865,
+              "index": 50,
+              "index2": 46,
+              "size": 1150,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -1671,14 +1671,94 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst Garden = ({\n  gardens\n}) => {\n  let rows = [];\n  let columns = [];\n\n  const Grid = () => {\n    for (let i = 0; i < gardens.rows; i++) {\n      for (let j = 0; j < gardens.columns; j++) {\n        columns[j] = React.createElement(\"button\", {\n          key: [i, j],\n          className: \"disable-select raised-btn garden-col\",\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 13\n          },\n          __self: this\n        }, \" \", j);\n      } // rows[i] = <div className=\"raised-panel\">{columns}</div>\n\n\n      rows[i] = columns;\n    }\n\n    return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n      className: \"raised-panel garden-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 20\n      },\n      __self: this\n    }, rows));\n  };\n\n  const gardenData = gardens.loading ? 'loading...' : {\n    gardens\n  };\n  return React.createElement(React.Fragment, null, React.createElement(Grid, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 32\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 33\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 35\n    },\n    __self: this\n  }, \"Garden Data: \", JSON.stringify(gardenData))));\n};\n\nconst mapStateToProps = state => {\n  return {\n    gardens: state.gardens\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps));\nexport default hoc(Garden);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Grid from './Grid';\n\nconst Garden = ({\n  plots\n}) => {\n  // const plotsData = plots.loading ? 'loading...' : { plots };\n  const plotsData = plots;\n  return React.createElement(React.Fragment, null, React.createElement(Grid, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, \"Garden Data: \", JSON.stringify(plotsData))));\n};\n\nconst mapStateToProps = state => {\n  return {\n    // gardens: state.gardens,\n    plots: state.plots\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps));\nexport default hoc(Garden);"
+            },
+            {
+              "id": "./src/components/Garden/Grid.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "name": "./src/components/Garden/Grid.js",
+              "index": 51,
+              "index2": 45,
+              "size": 1137,
+              "cacheable": true,
+              "built": false,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                "main"
+              ],
+              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
+              "issuerId": "./src/components/Garden/Garden.js",
+              "issuerName": "./src/components/Garden/Garden.js",
+              "issuerPath": [
+                {
+                  "id": 0,
+                  "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
+                  "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
+                },
+                {
+                  "id": "./node_modules/fusion-cli/entries/server-entry.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
+                  "name": "./node_modules/fusion-cli/entries/server-entry.js"
+                },
+                {
+                  "id": "./src/main.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
+                  "name": "./src/main.js"
+                },
+                {
+                  "id": "./src/root.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+                  "name": "./src/root.js"
+                },
+                {
+                  "id": "./src/pages/garden-page.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
+                  "name": "./src/pages/garden-page.js"
+                },
+                {
+                  "id": "./src/components/Garden/Garden.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
+                  "name": "./src/components/Garden/Garden.js"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "./src/components/Garden/Garden.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
+                  "module": "./src/components/Garden/Garden.js",
+                  "moduleName": "./src/components/Garden/Garden.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "./Grid",
+                  "loc": "6:0-26"
+                },
+                {
+                  "moduleId": "./src/components/Garden/Garden.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
+                  "module": "./src/components/Garden/Garden.js",
+                  "moduleName": "./src/components/Garden/Garden.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "./Grid",
+                  "loc": "13:71-75"
+                }
+              ],
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [],
+              "depth": 6,
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst Grid = ({\n  gardens\n}) => {\n  let rows = [];\n  let columns = [];\n\n  for (let i = 0; i < gardens.rows; i++) {\n    for (let j = 0; j < gardens.columns; j++) {\n      columns[j] = React.createElement(\"button\", {\n        key: [i, j],\n        className: \"disable-select raised-btn plant-btn garden-col\",\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 11\n        },\n        __self: this\n      }, \" \", `${i} ${j}`);\n    }\n\n    rows[i] = columns;\n  }\n\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"raised-panel garden-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, rows));\n};\n\nconst mapStateToProps = state => {\n  return {\n    gardens: state.gardens\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps));\nexport default hoc(Grid);"
             },
             {
               "id": "./src/components/Navigation/NavBar.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Navigation/NavBar.js",
               "name": "./src/components/Navigation/NavBar.js",
-              "index": 47,
-              "index2": 42,
+              "index": 48,
+              "index2": 43,
               "size": 1961,
               "cacheable": true,
               "built": false,
@@ -1836,7 +1916,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "./AdjustTime",
-                  "loc": "94:25-35"
+                  "loc": "101:25-35"
                 }
               ],
               "providedExports": [
@@ -1847,12 +1927,92 @@
               "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/AdjustTime.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst AdjustTime = ({\n  // global state props\n  focusTime,\n  breakTime,\n  currentCycle,\n  timerId,\n  // RPC handlers\n  incrementFocusTime,\n  decrementFocusTime,\n  incrementBreakTime,\n  decrementBreakTime,\n  currentFocusTime,\n  currentBreakTime\n}) => {\n  // AdjustTimeLabel\n  const adjustTimeLabel = () => {\n    return currentCycle === 'Focus' ? `Focus Time: ${Math.floor(focusTime / 60)} min.` : `Break Time: ${Math.floor(breakTime / 60)} min.`;\n  }; // INCREMENT TIME\n\n\n  const increaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? incrementFocusTime({\n      id: timerId,\n      current_focus_time: currentFocusTime + 60\n    }) : incrementBreakTime({\n      id: timerId,\n      current_break_time: currentBreakTime + 60\n    });\n  }; // DECREMENT TIME\n\n\n  const decreaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? decrementFocusTime({\n      id: timerId,\n      min_focus_time: 300,\n      current_focus_time: currentFocusTime\n    }) : decrementBreakTime({\n      id: timerId,\n      min_break_time: 60,\n      current_break_time: currentBreakTime\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: increaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 59\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"disable-select inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  }, adjustTimeLabel()), React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: decreaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const focusTime = state.timers.focus_time;\n  const breakTime = state.timers.break_time;\n  const currentCycle = state.timers.current_cycle;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  return {\n    timerId,\n    focusTime,\n    breakTime,\n    currentCycle,\n    currentBreakTime,\n    currentFocusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('incrementFocusTime'), withRPCRedux('decrementFocusTime'), withRPCRedux('incrementBreakTime'), withRPCRedux('decrementBreakTime'));\nexport default hoc(AdjustTime);"
             },
             {
+              "id": "./src/components/PomodoroClock/CompletedSessions.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "name": "./src/components/PomodoroClock/CompletedSessions.js",
+              "index": 47,
+              "index2": 41,
+              "size": 1136,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                "main"
+              ],
+              "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+              "issuerId": "./src/components/PomodoroClock/PomodoroClock.js",
+              "issuerName": "./src/components/PomodoroClock/PomodoroClock.js",
+              "issuerPath": [
+                {
+                  "id": 0,
+                  "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
+                  "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
+                },
+                {
+                  "id": "./node_modules/fusion-cli/entries/server-entry.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
+                  "name": "./node_modules/fusion-cli/entries/server-entry.js"
+                },
+                {
+                  "id": "./src/main.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
+                  "name": "./src/main.js"
+                },
+                {
+                  "id": "./src/root.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+                  "name": "./src/root.js"
+                },
+                {
+                  "id": "./src/pages/home.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
+                  "name": "./src/pages/home.js"
+                },
+                {
+                  "id": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+                  "name": "./src/components/PomodoroClock/PomodoroClock.js"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+                  "module": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "./CompletedSessions",
+                  "loc": "11:0-52"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+                  "module": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "./CompletedSessions",
+                  "loc": "63:25-42"
+                }
+              ],
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [],
+              "depth": 6,
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst CompletedSessions = ({\n  completedFocusMinutes\n}) => {\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    style: {\n      fontSize: '3rem'\n    },\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"Completed Focus Minutes:\", React.createElement(\"div\", {\n    className: \"disable-select inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, completedFocusMinutes)));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const completedFocusMinutes = state.timers.completed_focus_minutes;\n  return {\n    completedFocusMinutes\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getTimers'));\nexport default hoc(CompletedSessions);"
+            },
+            {
               "id": "./src/components/PomodoroClock/PomodoroClock.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
               "name": "./src/components/PomodoroClock/PomodoroClock.js",
               "index": 36,
-              "index2": 41,
-              "size": 3743,
+              "index2": 42,
+              "size": 3934,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1919,7 +2079,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = ({\n  // global state props\n  timersLoading,\n  timersError,\n  timersData,\n  profileLoading,\n  profileError,\n  profileData,\n  walletData,\n  auth,\n  getProfile,\n  getTimers\n}) => {\n  // if (profileLoading) {\n  //   return <div>loading</div>;\n  // }\n  // TODO: ask why this is causing error? continuously fires and doesn't load\n  // if (timersLoading) {\n  //   return <div>loading</div>;\n  // }\n  // if (profileError) {\n  //   return <div>{profileError.message}</div>;\n  // }\n  // if (timersError) {\n  //   return <div>{timersError.message}</div>;\n  // }\n  // useEffect(() => {\n  //   if (auth.isAuthenticated) {\n  //     getProfile();\n  //     getTimers();\n  //   }\n  // }, [auth.isAuthenticated])\n  const shownProfileData = profileLoading ? 'loading' : {\n    timersData,\n    profileData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock-panel raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 53\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 54\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 55\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 56\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 57\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 60\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 61\n    },\n    __self: this\n  }), React.createElement(Reset, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 62\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 65\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 66\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersLoading = state.timers.loading;\n  const timersError = state.timers.error;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const walletData = state.wallet;\n  const auth = state.auth;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timersLoading,\n    timersError,\n    timersData,\n    timerId,\n    walletData,\n    auth\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\nexport default hoc(PomodoroClock);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch';\nimport CompletedSessions from './CompletedSessions';\n\nconst PomodoroClock = ({\n  // global state props\n  timersLoading,\n  timersError,\n  timersData,\n  profileLoading,\n  profileError,\n  profileData,\n  walletData,\n  auth,\n  getProfile,\n  getTimers\n}) => {\n  // if (profileLoading) {\n  //   return <div>loading</div>;\n  // }\n  // TODO: ask why this is causing error? continuously fires and doesn't load\n  // if (timersLoading) {\n  //   return <div>loading</div>;\n  // }\n  // if (profileError) {\n  //   return <div>{profileError.message}</div>;\n  // }\n  // if (timersError) {\n  //   return <div>{timersError.message}</div>;\n  // }\n  // useEffect(() => {\n  //   if (auth.isAuthenticated) {\n  //     getProfile();\n  //     getTimers();\n  //   }\n  // }, [auth.isAuthenticated])\n  const shownProfileData = profileLoading ? 'loading' : {\n    timersData,\n    profileData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock-panel raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 54\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 55\n    },\n    __self: this\n  }, React.createElement(CompletedSessions, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 56\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 59\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 60\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 61\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }), React.createElement(Reset, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 65\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 68\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 69\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersLoading = state.timers.loading;\n  const timersError = state.timers.error;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const walletData = state.wallet;\n  const auth = state.auth;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timersLoading,\n    timersError,\n    timersData,\n    timerId,\n    walletData,\n    auth\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\nexport default hoc(PomodoroClock);"
             },
             {
               "id": "./src/components/PomodoroClock/Reset.js",
@@ -1991,7 +2151,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "./Reset",
-                  "loc": "100:26-31"
+                  "loc": "107:26-31"
                 }
               ],
               "providedExports": [
@@ -2071,7 +2231,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "./StartStop",
-                  "loc": "81:26-35"
+                  "loc": "88:26-35"
                 }
               ],
               "providedExports": [
@@ -2151,7 +2311,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "./Timer",
-                  "loc": "75:26-31"
+                  "loc": "82:26-31"
                 }
               ],
               "providedExports": [
@@ -2231,7 +2391,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "./ToggleSwitch",
-                  "loc": "69:25-37"
+                  "loc": "76:25-37"
                 }
               ],
               "providedExports": [
@@ -2245,9 +2405,9 @@
               "id": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "name": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
-              "index": 51,
-              "index2": 50,
-              "size": 3319,
+              "index": 53,
+              "index2": 52,
+              "size": 3383,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2318,7 +2478,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport RenderedAuth from '../Authentication/RenderedAuth';\n\nconst AuthenticatedComponentWrapperFactory = ComponentPage => {\n  const AuthenticatedComponent = ({\n    auth,\n    refreshAuth,\n    getProfile,\n    getTimers,\n    getGardens\n  }) => {\n    useEffect(() => {\n      if (!auth.isAuthenticated && !auth.didAttempt) {\n        refreshAuth();\n      }\n    }, []);\n    useEffect(() => {\n      if (auth.isAuthenticated && auth.didAttempt) {\n        switch (location.pathname) {\n          case '/':\n            getProfile();\n            getTimers();\n            break;\n\n          case '/garden':\n            getGardens();\n            break;\n\n          default:\n            break;\n        }\n      }\n    }, [auth.isAuthenticated]);\n\n    const ComponentToRender = () => {\n      if (auth.didAttempt && !auth.isAuthenticated) {\n        return React.createElement(RenderedAuth, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 35\n          },\n          __self: this\n        });\n      }\n\n      if (auth.didAttempt && auth.isAuthenticated) {\n        return React.createElement(ComponentPage, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 39\n          },\n          __self: this\n        });\n      }\n\n      return React.createElement(\"div\", {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 42\n        },\n        __self: this\n      }, \"loading...\");\n    };\n\n    return React.createElement(React.Fragment, null, React.createElement(ComponentToRender, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 47\n      },\n      __self: this\n    }));\n  };\n\n  const mapStateToProps = state => {\n    return {\n      auth: state.authentication\n    };\n  };\n\n  const hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getGardens'));\n  return hoc(AuthenticatedComponent);\n};\n\nexport default AuthenticatedComponentWrapperFactory; // const AuthenticatedComponentWrapperFactory = (ComponentPage) => {\n//   class AuthenticatedComponentClass extends React.Component {\n//     componentDidMount() {\n//       const {\n//         auth,\n//         refreshAuth,\n//       } = this.props;\n//       if (!auth.isAuthenticated && !auth.didAttempt) {\n//         refreshAuth();\n//       }\n//     }\n//     render() {\n//       const { auth } = this.props;\n//       if (auth.didAttempt && !auth.isAuthenticated) {\n//         return (<RenderedAuth />);\n//       }\n//       if (auth.didAttempt && auth.isAuthenticated) {\n//         return (<ComponentPage />);\n//       }\n//       return <div>loading...</div>\n//     }\n//   }\n//   const mapStateToProps = (state) => {\n//     return {\n//       auth: state.authentication,\n//     };\n//   };\n//   const hoc = compose(\n//     connect(mapStateToProps),\n//     withRPCRedux('refreshAuth')\n//   );\n//   return hoc(AuthenticatedComponentClass);\n// }\n// export default AuthenticatedComponentWrapperFactory"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport RenderedAuth from '../Authentication/RenderedAuth';\n\nconst AuthenticatedComponentWrapperFactory = ComponentPage => {\n  const AuthenticatedComponent = ({\n    auth,\n    refreshAuth,\n    getProfile,\n    getTimers,\n    getGardens,\n    getPlots\n  }) => {\n    useEffect(() => {\n      if (!auth.isAuthenticated && !auth.didAttempt) {\n        refreshAuth();\n      }\n    }, []);\n    useEffect(() => {\n      if (auth.isAuthenticated && auth.didAttempt) {\n        switch (location.pathname) {\n          case '/':\n            getProfile();\n            getTimers();\n            break;\n\n          case '/garden':\n            getGardens();\n            getPlots();\n            break;\n\n          default:\n            break;\n        }\n      }\n    }, [auth.isAuthenticated]);\n\n    const ComponentToRender = () => {\n      if (auth.didAttempt && !auth.isAuthenticated) {\n        return React.createElement(RenderedAuth, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 36\n          },\n          __self: this\n        });\n      }\n\n      if (auth.didAttempt && auth.isAuthenticated) {\n        return React.createElement(ComponentPage, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 40\n          },\n          __self: this\n        });\n      }\n\n      return React.createElement(\"div\", {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 43\n        },\n        __self: this\n      }, \"loading...\");\n    };\n\n    return React.createElement(React.Fragment, null, React.createElement(ComponentToRender, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 48\n      },\n      __self: this\n    }));\n  };\n\n  const mapStateToProps = state => {\n    return {\n      auth: state.authentication\n    };\n  };\n\n  const hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getGardens'), withRPCRedux('getPlots'));\n  return hoc(AuthenticatedComponent);\n};\n\nexport default AuthenticatedComponentWrapperFactory; // const AuthenticatedComponentWrapperFactory = (ComponentPage) => {\n//   class AuthenticatedComponentClass extends React.Component {\n//     componentDidMount() {\n//       const {\n//         auth,\n//         refreshAuth,\n//       } = this.props;\n//       if (!auth.isAuthenticated && !auth.didAttempt) {\n//         refreshAuth();\n//       }\n//     }\n//     render() {\n//       const { auth } = this.props;\n//       if (auth.didAttempt && !auth.isAuthenticated) {\n//         return (<RenderedAuth />);\n//       }\n//       if (auth.didAttempt && auth.isAuthenticated) {\n//         return (<ComponentPage />);\n//       }\n//       return <div>loading...</div>\n//     }\n//   }\n//   const mapStateToProps = (state) => {\n//     return {\n//       auth: state.authentication,\n//     };\n//   };\n//   const hoc = compose(\n//     connect(mapStateToProps),\n//     withRPCRedux('refreshAuth')\n//   );\n//   return hoc(AuthenticatedComponentClass);\n// }\n// export default AuthenticatedComponentWrapperFactory"
             },
             {
               "id": "./src/constants/paths.js",
@@ -2458,7 +2618,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
               "name": "./src/main.js",
               "index": 27,
-              "index2": 73,
+              "index2": 75,
               "size": 1625,
               "cacheable": true,
               "built": false,
@@ -2526,9 +2686,9 @@
               "id": "./src/pages/garden-page.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
               "name": "./src/pages/garden-page.js",
-              "index": 48,
-              "index2": 45,
-              "size": 1202,
+              "index": 49,
+              "index2": 47,
+              "size": 1233,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -2590,14 +2750,14 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport NavBar from '../components/Navigation/NavBar';\nimport Garden from '../components/Garden/Garden'; // import PomodoroClock from '../components/PomodoroClock/PomodoroClock';\n\nconst GardenPage = ({\n  isAuthenticated,\n  getGardens\n}) => {\n  // TODO: error do not call hooks inside a use effect, can only call hooks at top level of function\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }), React.createElement(Garden, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }));\n};\n\nconst mapStateToProps = state => {\n  return {\n    // currentCycle: state.timers.current_cycle,\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps, withRPCRedux('getGardens')));\nexport default hoc(GardenPage);"
+              "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport NavBar from '../components/Navigation/NavBar';\nimport Garden from '../components/Garden/Garden'; // import PomodoroClock from '../components/PomodoroClock/PomodoroClock';\n\nconst GardenPage = ({\n  isAuthenticated,\n  getGardens\n}) => {\n  // TODO: error do not call hooks inside a use effect, can only call hooks at top level of function\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }), React.createElement(Garden, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }));\n}; // export default GardenPage;\n\n\nconst mapStateToProps = state => {\n  return {\n    // currentCycle: state.timers.current_cycle,\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(withRPCRedux('getGardens'), connect(mapStateToProps));\nexport default hoc(GardenPage);"
             },
             {
               "id": "./src/pages/home.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
               "name": "./src/pages/home.js",
               "index": 35,
-              "index2": 43,
+              "index2": 44,
               "size": 1046,
               "cacheable": true,
               "built": false,
@@ -2666,8 +2826,8 @@
               "id": "./src/pages/pageNotFound.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/pageNotFound.js",
               "name": "./src/pages/pageNotFound.js",
-              "index": 50,
-              "index2": 46,
+              "index": 52,
+              "index2": 48,
               "size": 482,
               "cacheable": true,
               "built": false,
@@ -2736,8 +2896,8 @@
               "id": "./src/plugins/auth.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/auth.js",
               "name": "./src/plugins/auth.js",
-              "index": 75,
-              "index2": 72,
+              "index": 77,
+              "index2": 74,
               "size": 1840,
               "cacheable": true,
               "built": false,
@@ -2792,8 +2952,8 @@
               "id": "./src/reducers/authReducer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/authReducer.js",
               "name": "./src/reducers/authReducer.js",
-              "index": 66,
-              "index2": 62,
+              "index": 68,
+              "index2": 64,
               "size": 2563,
               "cacheable": true,
               "built": false,
@@ -2862,8 +3022,8 @@
               "id": "./src/reducers/gardensReducer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/gardensReducer.js",
               "name": "./src/reducers/gardensReducer.js",
-              "index": 68,
-              "index2": 64,
+              "index": 70,
+              "index2": 66,
               "size": 634,
               "cacheable": true,
               "built": false,
@@ -2932,8 +3092,8 @@
               "id": "./src/reducers/index.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/index.js",
               "name": "./src/reducers/index.js",
-              "index": 62,
-              "index2": 65,
+              "index": 64,
+              "index2": 67,
               "size": 397,
               "cacheable": true,
               "built": false,
@@ -2997,8 +3157,8 @@
               "id": "./src/reducers/profileReducer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/profileReducer.js",
               "name": "./src/reducers/profileReducer.js",
-              "index": 63,
-              "index2": 60,
+              "index": 65,
+              "index2": 62,
               "size": 822,
               "cacheable": true,
               "built": false,
@@ -3067,8 +3227,8 @@
               "id": "./src/reducers/timersReducer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/timersReducer.js",
               "name": "./src/reducers/timersReducer.js",
-              "index": 65,
-              "index2": 61,
+              "index": 67,
+              "index2": 63,
               "size": 8736,
               "cacheable": true,
               "built": false,
@@ -3137,8 +3297,8 @@
               "id": "./src/reducers/walletReducer.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/walletReducer.js",
               "name": "./src/reducers/walletReducer.js",
-              "index": 67,
-              "index2": 63,
+              "index": 69,
+              "index2": 65,
               "size": 1010,
               "cacheable": true,
               "built": false,
@@ -3208,7 +3368,7 @@
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
               "name": "./src/root.js",
               "index": 31,
-              "index2": 52,
+              "index2": 54,
               "size": 1864,
               "cacheable": true,
               "built": false,
@@ -3272,8 +3432,8 @@
               "id": "./src/rpc/index.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
               "name": "./src/rpc/index.js",
-              "index": 69,
-              "index2": 71,
+              "index": 71,
+              "index2": 73,
               "size": 13152,
               "cacheable": true,
               "built": false,
@@ -3328,8 +3488,8 @@
               "id": "./src/rpc/services/index.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/services/index.js",
               "name": "./src/rpc/services/index.js",
-              "index": 70,
-              "index2": 67,
+              "index": 72,
+              "index2": 69,
               "size": 638,
               "cacheable": true,
               "built": false,
@@ -3408,9 +3568,9 @@
               "id": "./src/rpc/services/master-backend.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/services/master-backend.js",
               "name": "./src/rpc/services/master-backend.js",
-              "index": 71,
-              "index2": 66,
-              "size": 650,
+              "index": 73,
+              "index2": 68,
+              "size": 662,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -3477,14 +3637,14 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "const API_BASEPATH = 'http://localhost:8000/api';\nconst authEndpoints = ['register', 'login', 'refreshAuth'];\nconst fetchUserDataEndpoints = ['getProfile', 'getTimers', 'getWallet', 'getGardens'];\nconst userActionEndpoints = [// TIMER\n'incrementFocusTime', 'decrementFocusTime', 'incrementBreakTime', 'decrementBreakTime', 'resetTimers', 'setCycle', 'startTimers', 'stopTimers', 'updateCurrentTimes', 'updateCompletedFocusMinutes', // WALLET\n'updateEnergy'];\nconst masterBackend = {\n  name: 'master backend',\n  basePath: API_BASEPATH,\n  endpoints: [...authEndpoints, ...fetchUserDataEndpoints, ...userActionEndpoints]\n};\nexport default masterBackend;"
+              "source": "const API_BASEPATH = 'http://localhost:8000/api';\nconst authEndpoints = ['register', 'login', 'refreshAuth'];\nconst fetchUserDataEndpoints = ['getProfile', 'getTimers', 'getWallet', 'getGardens', 'getPlots'];\nconst userActionEndpoints = [// TIMER\n'incrementFocusTime', 'decrementFocusTime', 'incrementBreakTime', 'decrementBreakTime', 'resetTimers', 'setCycle', 'startTimers', 'stopTimers', 'updateCurrentTimes', 'updateCompletedFocusMinutes', // WALLET\n'updateEnergy'];\nconst masterBackend = {\n  name: 'master backend',\n  basePath: API_BASEPATH,\n  endpoints: [...authEndpoints, ...fetchUserDataEndpoints, ...userActionEndpoints]\n};\nexport default masterBackend;"
             },
             {
               "id": "./src/rpc/utils.js",
               "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/utils.js",
               "name": "./src/rpc/utils.js",
-              "index": 72,
-              "index2": 69,
+              "index": 74,
+              "index2": 71,
               "size": 2648,
               "cacheable": true,
               "built": false,
@@ -3636,8 +3796,8 @@
               "id": "axios",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/axios/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/axios/index.js\"",
-              "index": 73,
-              "index2": 68,
+              "index": 75,
+              "index2": 70,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4051,8 +4211,8 @@
               "id": "fusion-plugin-jwt",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-jwt/dist-node-cjs/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-jwt/dist-node-cjs/index.js\"",
-              "index": 60,
-              "index2": 57,
+              "index": 62,
+              "index2": 59,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4218,8 +4378,8 @@
               "id": "fusion-plugin-react-redux",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-react-redux/dist-node-cjs/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-react-redux/dist-node-cjs/index.js\"",
-              "index": 57,
-              "index2": 54,
+              "index": 59,
+              "index2": 56,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4475,8 +4635,8 @@
               "id": "fusion-plugin-rpc",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/index.js\"",
-              "index": 58,
-              "index2": 55,
+              "index": 60,
+              "index2": 57,
               "size": 42,
               "built": false,
               "optional": false,
@@ -4752,6 +4912,15 @@
                   "loc": "3:0-61"
                 },
                 {
+                  "moduleId": "./src/components/Garden/Grid.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+                  "module": "./src/components/Garden/Grid.js",
+                  "moduleName": "./src/components/Garden/Grid.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "3:0-61"
+                },
+                {
                   "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/AdjustTime.js",
                   "module": "./src/components/PomodoroClock/AdjustTime.js",
@@ -4797,6 +4966,24 @@
                   "loc": "101:154-166"
                 },
                 {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "3:0-61"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "37:46-58"
+                },
+                {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
                   "module": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4812,7 +4999,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "147:46-58"
+                  "loc": "154:46-58"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -4821,7 +5008,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "147:74-86"
+                  "loc": "154:74-86"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -4974,7 +5161,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "84:48-60"
+                  "loc": "86:48-60"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -4983,7 +5170,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "84:77-89"
+                  "loc": "86:77-89"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -4992,7 +5179,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "84:105-117"
+                  "loc": "86:105-117"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -5001,7 +5188,16 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "84:132-144"
+                  "loc": "86:132-144"
+                },
+                {
+                  "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
+                  "module": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
+                  "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "fusion-plugin-rpc-redux-react",
+                  "loc": "86:160-172"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -5019,7 +5215,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "fusion-plugin-rpc-redux-react",
-                  "loc": "36:45-57"
+                  "loc": "37:20-32"
                 },
                 {
                   "moduleId": "./src/reducers/authReducer.js",
@@ -5255,8 +5451,8 @@
               "id": "fusion-plugin-rpc/dist-node-cjs/response-error",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/response-error.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/response-error.js\"",
-              "index": 74,
-              "index2": 70,
+              "index": 76,
+              "index2": 72,
               "size": 42,
               "built": false,
               "optional": false,
@@ -5373,8 +5569,8 @@
               "id": "fusion-plugin-universal-events",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-universal-events/dist-node-cjs/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-universal-events/dist-node-cjs/index.js\"",
-              "index": 56,
-              "index2": 53,
+              "index": 58,
+              "index2": 55,
               "size": 42,
               "built": false,
               "optional": false,
@@ -5504,8 +5700,8 @@
               "id": "fusion-tokens",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-tokens/dist/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-tokens/dist/index.js\"",
-              "index": 59,
-              "index2": 56,
+              "index": 61,
+              "index2": 58,
               "size": 42,
               "built": false,
               "optional": false,
@@ -6498,7 +6694,7 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "16:21-26"
+                  "loc": "13:9-14"
                 },
                 {
                   "moduleId": "./src/components/Garden/Garden.js",
@@ -6507,7 +6703,7 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "31:11-16"
+                  "loc": "13:29-34"
                 },
                 {
                   "moduleId": "./src/components/Garden/Garden.js",
@@ -6516,7 +6712,7 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "31:31-36"
+                  "loc": "13:51-56"
                 },
                 {
                   "moduleId": "./src/components/Garden/Garden.js",
@@ -6525,7 +6721,7 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "31:53-58"
+                  "loc": "19:6-11"
                 },
                 {
                   "moduleId": "./src/components/Garden/Garden.js",
@@ -6534,43 +6730,52 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "44:9-14"
+                  "loc": "26:5-10"
                 },
                 {
-                  "moduleId": "./src/components/Garden/Garden.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
-                  "module": "./src/components/Garden/Garden.js",
-                  "moduleName": "./src/components/Garden/Garden.js",
-                  "type": "harmony import specifier",
+                  "moduleId": "./src/components/Garden/Grid.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+                  "module": "./src/components/Garden/Grid.js",
+                  "moduleName": "./src/components/Garden/Grid.js",
+                  "type": "harmony side effect evaluation",
                   "userRequest": "react",
-                  "loc": "44:29-34"
+                  "loc": "2:0-26"
                 },
                 {
-                  "moduleId": "./src/components/Garden/Garden.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
-                  "module": "./src/components/Garden/Garden.js",
-                  "moduleName": "./src/components/Garden/Garden.js",
+                  "moduleId": "./src/components/Garden/Grid.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+                  "module": "./src/components/Garden/Grid.js",
+                  "moduleName": "./src/components/Garden/Grid.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "44:51-56"
+                  "loc": "15:19-24"
                 },
                 {
-                  "moduleId": "./src/components/Garden/Garden.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
-                  "module": "./src/components/Garden/Garden.js",
-                  "moduleName": "./src/components/Garden/Garden.js",
+                  "moduleId": "./src/components/Garden/Grid.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+                  "module": "./src/components/Garden/Grid.js",
+                  "moduleName": "./src/components/Garden/Grid.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "50:6-11"
+                  "loc": "29:9-14"
                 },
                 {
-                  "moduleId": "./src/components/Garden/Garden.js",
-                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
-                  "module": "./src/components/Garden/Garden.js",
-                  "moduleName": "./src/components/Garden/Garden.js",
+                  "moduleId": "./src/components/Garden/Grid.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+                  "module": "./src/components/Garden/Grid.js",
+                  "moduleName": "./src/components/Garden/Grid.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "57:5-10"
+                  "loc": "29:29-34"
+                },
+                {
+                  "moduleId": "./src/components/Garden/Grid.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+                  "module": "./src/components/Garden/Grid.js",
+                  "moduleName": "./src/components/Garden/Grid.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "29:51-56"
                 },
                 {
                   "moduleId": "./src/components/Navigation/NavBar.js",
@@ -6708,6 +6913,51 @@
                   "loc": "73:25-30"
                 },
                 {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "react",
+                  "loc": "2:0-26"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "10:9-14"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "10:29-34"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "10:51-56"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "19:33-38"
+                },
+                {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
                   "module": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6723,7 +6973,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "48:9-14"
+                  "loc": "49:9-14"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6732,7 +6982,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "48:29-34"
+                  "loc": "49:29-34"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6741,7 +6991,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "48:51-56"
+                  "loc": "49:51-56"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6750,7 +7000,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "55:5-10"
+                  "loc": "56:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6759,7 +7009,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "62:6-11"
+                  "loc": "63:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6768,7 +7018,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "69:5-10"
+                  "loc": "69:7-12"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6777,7 +7027,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "75:6-11"
+                  "loc": "76:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6786,7 +7036,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "81:6-11"
+                  "loc": "82:6-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6795,7 +7045,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "87:7-12"
+                  "loc": "88:6-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6804,7 +7054,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "94:5-10"
+                  "loc": "94:7-12"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6813,7 +7063,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "100:6-11"
+                  "loc": "101:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6822,7 +7072,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "106:8-13"
+                  "loc": "107:6-11"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -6831,7 +7081,16 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "113:5-10"
+                  "loc": "113:8-13"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+                  "module": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "120:5-10"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -7011,7 +7270,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "16:4-13"
+                  "loc": "17:4-13"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -7020,7 +7279,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "21:4-13"
+                  "loc": "22:4-13"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -7029,7 +7288,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "41:15-20"
+                  "loc": "43:15-20"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -7038,7 +7297,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "51:15-20"
+                  "loc": "53:15-20"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -7047,7 +7306,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "60:13-18"
+                  "loc": "62:13-18"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -7056,7 +7315,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "69:11-16"
+                  "loc": "71:11-16"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -7065,7 +7324,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "69:31-36"
+                  "loc": "71:31-36"
                 },
                 {
                   "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -7074,7 +7333,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "69:53-58"
+                  "loc": "71:53-58"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -7406,7 +7665,25 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "73:20-27"
+                  "loc": "43:20-27"
+                },
+                {
+                  "moduleId": "./src/components/Garden/Grid.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+                  "module": "./src/components/Garden/Grid.js",
+                  "moduleName": "./src/components/Garden/Grid.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "react-redux",
+                  "loc": "4:0-38"
+                },
+                {
+                  "moduleId": "./src/components/Garden/Grid.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+                  "module": "./src/components/Garden/Grid.js",
+                  "moduleName": "./src/components/Garden/Grid.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react-redux",
+                  "loc": "45:20-27"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
@@ -7427,6 +7704,24 @@
                   "loc": "101:20-27"
                 },
                 {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "react-redux",
+                  "loc": "4:0-38"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react-redux",
+                  "loc": "37:20-27"
+                },
+                {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
                   "module": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -7442,7 +7737,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "147:20-27"
+                  "loc": "154:20-27"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -7541,7 +7836,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "84:22-29"
+                  "loc": "86:22-29"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -7559,7 +7854,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "react-redux",
-                  "loc": "36:20-27"
+                  "loc": "37:48-55"
                 }
               ],
               "providedExports": null,
@@ -7570,8 +7865,8 @@
               "id": "reduce-reducers",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/reduce-reducers/lib/index.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/reduce-reducers/lib/index.js\"",
-              "index": 64,
-              "index2": 59,
+              "index": 66,
+              "index2": 61,
               "size": 42,
               "built": false,
               "optional": false,
@@ -7822,7 +8117,25 @@
                   "moduleName": "./src/components/Garden/Garden.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "73:12-19"
+                  "loc": "43:12-19"
+                },
+                {
+                  "moduleId": "./src/components/Garden/Grid.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+                  "module": "./src/components/Garden/Grid.js",
+                  "moduleName": "./src/components/Garden/Grid.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "redux",
+                  "loc": "5:0-32"
+                },
+                {
+                  "moduleId": "./src/components/Garden/Grid.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+                  "module": "./src/components/Garden/Grid.js",
+                  "moduleName": "./src/components/Garden/Grid.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "redux",
+                  "loc": "45:12-19"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
@@ -7843,6 +8156,24 @@
                   "loc": "101:12-19"
                 },
                 {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "redux",
+                  "loc": "5:0-32"
+                },
+                {
+                  "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+                  "module": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "redux",
+                  "loc": "37:12-19"
+                },
+                {
                   "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
                   "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
                   "module": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -7858,7 +8189,7 @@
                   "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "147:12-19"
+                  "loc": "154:12-19"
                 },
                 {
                   "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -7948,7 +8279,7 @@
                   "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "84:14-21"
+                  "loc": "86:14-21"
                 },
                 {
                   "moduleId": "./src/pages/garden-page.js",
@@ -7966,7 +8297,7 @@
                   "moduleName": "./src/pages/garden-page.js",
                   "type": "harmony import specifier",
                   "userRequest": "redux",
-                  "loc": "36:12-19"
+                  "loc": "37:12-19"
                 },
                 {
                   "moduleId": "./src/reducers/index.js",
@@ -8051,8 +8382,8 @@
               "id": "unfetch",
               "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/unfetch/dist/unfetch.js\"",
               "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/unfetch/dist/unfetch.js\"",
-              "index": 61,
-              "index2": 58,
+              "index": 63,
+              "index2": 60,
               "size": 42,
               "built": false,
               "optional": false,
@@ -8175,7 +8506,7 @@
           "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
           "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
           "index": 0,
-          "index2": 75,
+          "index2": 77,
           "size": 52,
           "built": false,
           "optional": false,
@@ -8396,8 +8727,8 @@
           "id": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/constants/styles.css",
           "name": "./node_modules/fusion-cli/build/loaders/file-loader.js?assetUrl=true!./src/constants/styles.css",
-          "index": 55,
-          "index2": 51,
+          "index": 57,
+          "index2": 53,
           "size": 82,
           "cacheable": true,
           "built": false,
@@ -8435,7 +8766,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "../client/db3154e54f37c068099dbd7f661ab4ca.css"
+            "../client/ab85c94b7867109a3efa1192dfdce10a.css"
           ],
           "reasons": [
             {
@@ -8451,7 +8782,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
-          "source": "module.exports = __webpack_public_path__ + \"db3154e54f37c068099dbd7f661ab4ca.css\";"
+          "source": "module.exports = __webpack_public_path__ + \"ab85c94b7867109a3efa1192dfdce10a.css\";"
         },
         {
           "id": "./node_modules/fusion-cli/build/loaders/i18n-manifest-loader.js!./",
@@ -8736,7 +9067,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
           "name": "./node_modules/fusion-cli/entries/server-entry.js",
           "index": 7,
-          "index2": 74,
+          "index2": 76,
           "size": 3021,
           "cacheable": true,
           "built": false,
@@ -9388,8 +9719,8 @@
           "id": "./src/components/Authentication/Login.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Login.js",
           "name": "./src/components/Authentication/Login.js",
-          "index": 53,
-          "index2": 47,
+          "index": 55,
+          "index2": 49,
           "size": 3474,
           "cacheable": true,
           "built": false,
@@ -9468,8 +9799,8 @@
           "id": "./src/components/Authentication/Register.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/Register.js",
           "name": "./src/components/Authentication/Register.js",
-          "index": 54,
-          "index2": 48,
+          "index": 56,
+          "index2": 50,
           "size": 4959,
           "cacheable": true,
           "built": false,
@@ -9548,8 +9879,8 @@
           "id": "./src/components/Authentication/RenderedAuth.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Authentication/RenderedAuth.js",
           "name": "./src/components/Authentication/RenderedAuth.js",
-          "index": 52,
-          "index2": 49,
+          "index": 54,
+          "index2": 51,
           "size": 1463,
           "cacheable": true,
           "built": false,
@@ -9609,7 +9940,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "../Authentication/RenderedAuth",
-              "loc": "41:35-47"
+              "loc": "43:35-47"
             }
           ],
           "providedExports": [
@@ -9623,11 +9954,11 @@
           "id": "./src/components/Garden/Garden.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
           "name": "./src/components/Garden/Garden.js",
-          "index": 49,
-          "index2": 44,
-          "size": 1865,
+          "index": 50,
+          "index2": 46,
+          "size": 1150,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -9692,14 +10023,94 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst Garden = ({\n  gardens\n}) => {\n  let rows = [];\n  let columns = [];\n\n  const Grid = () => {\n    for (let i = 0; i < gardens.rows; i++) {\n      for (let j = 0; j < gardens.columns; j++) {\n        columns[j] = React.createElement(\"button\", {\n          key: [i, j],\n          className: \"disable-select raised-btn garden-col\",\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 13\n          },\n          __self: this\n        }, \" \", j);\n      } // rows[i] = <div className=\"raised-panel\">{columns}</div>\n\n\n      rows[i] = columns;\n    }\n\n    return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n      className: \"raised-panel garden-panel\",\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 20\n      },\n      __self: this\n    }, rows));\n  };\n\n  const gardenData = gardens.loading ? 'loading...' : {\n    gardens\n  };\n  return React.createElement(React.Fragment, null, React.createElement(Grid, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 32\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 33\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 35\n    },\n    __self: this\n  }, \"Garden Data: \", JSON.stringify(gardenData))));\n};\n\nconst mapStateToProps = state => {\n  return {\n    gardens: state.gardens\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps));\nexport default hoc(Garden);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Grid from './Grid';\n\nconst Garden = ({\n  plots\n}) => {\n  // const plotsData = plots.loading ? 'loading...' : { plots };\n  const plotsData = plots;\n  return React.createElement(React.Fragment, null, React.createElement(Grid, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, \"Garden Data: \", JSON.stringify(plotsData))));\n};\n\nconst mapStateToProps = state => {\n  return {\n    // gardens: state.gardens,\n    plots: state.plots\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps));\nexport default hoc(Garden);"
+        },
+        {
+          "id": "./src/components/Garden/Grid.js",
+          "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+          "name": "./src/components/Garden/Grid.js",
+          "index": 51,
+          "index2": 45,
+          "size": 1137,
+          "cacheable": true,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
+          "issuerId": "./src/components/Garden/Garden.js",
+          "issuerName": "./src/components/Garden/Garden.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
+              "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
+            },
+            {
+              "id": "./node_modules/fusion-cli/entries/server-entry.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
+              "name": "./node_modules/fusion-cli/entries/server-entry.js"
+            },
+            {
+              "id": "./src/main.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
+              "name": "./src/main.js"
+            },
+            {
+              "id": "./src/root.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+              "name": "./src/root.js"
+            },
+            {
+              "id": "./src/pages/garden-page.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
+              "name": "./src/pages/garden-page.js"
+            },
+            {
+              "id": "./src/components/Garden/Garden.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
+              "name": "./src/components/Garden/Garden.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "./src/components/Garden/Garden.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
+              "module": "./src/components/Garden/Garden.js",
+              "moduleName": "./src/components/Garden/Garden.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./Grid",
+              "loc": "6:0-26"
+            },
+            {
+              "moduleId": "./src/components/Garden/Garden.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
+              "module": "./src/components/Garden/Garden.js",
+              "moduleName": "./src/components/Garden/Garden.js",
+              "type": "harmony import specifier",
+              "userRequest": "./Grid",
+              "loc": "13:71-75"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 6,
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst Grid = ({\n  gardens\n}) => {\n  let rows = [];\n  let columns = [];\n\n  for (let i = 0; i < gardens.rows; i++) {\n    for (let j = 0; j < gardens.columns; j++) {\n      columns[j] = React.createElement(\"button\", {\n        key: [i, j],\n        className: \"disable-select raised-btn plant-btn garden-col\",\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 11\n        },\n        __self: this\n      }, \" \", `${i} ${j}`);\n    }\n\n    rows[i] = columns;\n  }\n\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"raised-panel garden-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, rows));\n};\n\nconst mapStateToProps = state => {\n  return {\n    gardens: state.gardens\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps));\nexport default hoc(Grid);"
         },
         {
           "id": "./src/components/Navigation/NavBar.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Navigation/NavBar.js",
           "name": "./src/components/Navigation/NavBar.js",
-          "index": 47,
-          "index2": 42,
+          "index": 48,
+          "index2": 43,
           "size": 1961,
           "cacheable": true,
           "built": false,
@@ -9857,7 +10268,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "./AdjustTime",
-              "loc": "94:25-35"
+              "loc": "101:25-35"
             }
           ],
           "providedExports": [
@@ -9868,12 +10279,92 @@
           "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/AdjustTime.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst AdjustTime = ({\n  // global state props\n  focusTime,\n  breakTime,\n  currentCycle,\n  timerId,\n  // RPC handlers\n  incrementFocusTime,\n  decrementFocusTime,\n  incrementBreakTime,\n  decrementBreakTime,\n  currentFocusTime,\n  currentBreakTime\n}) => {\n  // AdjustTimeLabel\n  const adjustTimeLabel = () => {\n    return currentCycle === 'Focus' ? `Focus Time: ${Math.floor(focusTime / 60)} min.` : `Break Time: ${Math.floor(breakTime / 60)} min.`;\n  }; // INCREMENT TIME\n\n\n  const increaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? incrementFocusTime({\n      id: timerId,\n      current_focus_time: currentFocusTime + 60\n    }) : incrementBreakTime({\n      id: timerId,\n      current_break_time: currentBreakTime + 60\n    });\n  }; // DECREMENT TIME\n\n\n  const decreaseTimer = event => {\n    event.preventDefault();\n    currentCycle === 'Focus' ? decrementFocusTime({\n      id: timerId,\n      min_focus_time: 300,\n      current_focus_time: currentFocusTime\n    }) : decrementBreakTime({\n      id: timerId,\n      min_break_time: 60,\n      current_break_time: currentBreakTime\n    });\n  };\n\n  return React.createElement(React.Fragment, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  }, React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: increaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 59\n    },\n    __self: this\n  }, ' ', \"+\", ' '), React.createElement(\"p\", {\n    className: \"disable-select inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  }, adjustTimeLabel()), React.createElement(\"button\", {\n    className: \"disable-select raised-btn\",\n    onClick: decreaseTimer,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }, ' ', \"-\", ' '));\n};\n\nconst mapStateToProps = state => {\n  const timerId = state.timers.id;\n  const focusTime = state.timers.focus_time;\n  const breakTime = state.timers.break_time;\n  const currentCycle = state.timers.current_cycle;\n  const currentFocusTime = state.timers.current_focus_time;\n  const currentBreakTime = state.timers.current_break_time;\n  return {\n    timerId,\n    focusTime,\n    breakTime,\n    currentCycle,\n    currentBreakTime,\n    currentFocusTime\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('incrementFocusTime'), withRPCRedux('decrementFocusTime'), withRPCRedux('incrementBreakTime'), withRPCRedux('decrementBreakTime'));\nexport default hoc(AdjustTime);"
         },
         {
+          "id": "./src/components/PomodoroClock/CompletedSessions.js",
+          "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+          "name": "./src/components/PomodoroClock/CompletedSessions.js",
+          "index": 47,
+          "index2": 41,
+          "size": 1136,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+          "issuerId": "./src/components/PomodoroClock/PomodoroClock.js",
+          "issuerName": "./src/components/PomodoroClock/PomodoroClock.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-public-path.js /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/webpack/hot/poll.js?1000 /Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
+              "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
+            },
+            {
+              "id": "./node_modules/fusion-cli/entries/server-entry.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/entries/server-entry.js",
+              "name": "./node_modules/fusion-cli/entries/server-entry.js"
+            },
+            {
+              "id": "./src/main.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
+              "name": "./src/main.js"
+            },
+            {
+              "id": "./src/root.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
+              "name": "./src/root.js"
+            },
+            {
+              "id": "./src/pages/home.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
+              "name": "./src/pages/home.js"
+            },
+            {
+              "id": "./src/components/PomodoroClock/PomodoroClock.js",
+              "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+              "name": "./src/components/PomodoroClock/PomodoroClock.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+              "module": "./src/components/PomodoroClock/PomodoroClock.js",
+              "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./CompletedSessions",
+              "loc": "11:0-52"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+              "module": "./src/components/PomodoroClock/PomodoroClock.js",
+              "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
+              "type": "harmony import specifier",
+              "userRequest": "./CompletedSessions",
+              "loc": "63:25-42"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 6,
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\n\nconst CompletedSessions = ({\n  completedFocusMinutes\n}) => {\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    style: {\n      fontSize: '3rem'\n    },\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"Completed Focus Minutes:\", React.createElement(\"div\", {\n    className: \"disable-select inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, completedFocusMinutes)));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const completedFocusMinutes = state.timers.completed_focus_minutes;\n  return {\n    completedFocusMinutes\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getTimers'));\nexport default hoc(CompletedSessions);"
+        },
+        {
           "id": "./src/components/PomodoroClock/PomodoroClock.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
           "name": "./src/components/PomodoroClock/PomodoroClock.js",
           "index": 36,
-          "index2": 41,
-          "size": 3743,
+          "index2": 42,
+          "size": 3934,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -9940,7 +10431,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch';\n\nconst PomodoroClock = ({\n  // global state props\n  timersLoading,\n  timersError,\n  timersData,\n  profileLoading,\n  profileError,\n  profileData,\n  walletData,\n  auth,\n  getProfile,\n  getTimers\n}) => {\n  // if (profileLoading) {\n  //   return <div>loading</div>;\n  // }\n  // TODO: ask why this is causing error? continuously fires and doesn't load\n  // if (timersLoading) {\n  //   return <div>loading</div>;\n  // }\n  // if (profileError) {\n  //   return <div>{profileError.message}</div>;\n  // }\n  // if (timersError) {\n  //   return <div>{timersError.message}</div>;\n  // }\n  // useEffect(() => {\n  //   if (auth.isAuthenticated) {\n  //     getProfile();\n  //     getTimers();\n  //   }\n  // }, [auth.isAuthenticated])\n  const shownProfileData = profileLoading ? 'loading' : {\n    timersData,\n    profileData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock-panel raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 53\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 54\n    },\n    __self: this\n  }), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 55\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 56\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 57\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 60\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 61\n    },\n    __self: this\n  }), React.createElement(Reset, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 62\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 65\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 66\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersLoading = state.timers.loading;\n  const timersError = state.timers.error;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const walletData = state.wallet;\n  const auth = state.auth;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timersLoading,\n    timersError,\n    timersData,\n    timerId,\n    walletData,\n    auth\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\nexport default hoc(PomodoroClock);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js\";\nimport React from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport Timer from './Timer';\nimport AdjustTime from './AdjustTime';\nimport StartStop from './StartStop';\nimport Reset from './Reset';\nimport ToggleSwitch from './ToggleSwitch';\nimport CompletedSessions from './CompletedSessions';\n\nconst PomodoroClock = ({\n  // global state props\n  timersLoading,\n  timersError,\n  timersData,\n  profileLoading,\n  profileError,\n  profileData,\n  walletData,\n  auth,\n  getProfile,\n  getTimers\n}) => {\n  // if (profileLoading) {\n  //   return <div>loading</div>;\n  // }\n  // TODO: ask why this is causing error? continuously fires and doesn't load\n  // if (timersLoading) {\n  //   return <div>loading</div>;\n  // }\n  // if (profileError) {\n  //   return <div>{profileError.message}</div>;\n  // }\n  // if (timersError) {\n  //   return <div>{timersError.message}</div>;\n  // }\n  // useEffect(() => {\n  //   if (auth.isAuthenticated) {\n  //     getProfile();\n  //     getTimers();\n  //   }\n  // }, [auth.isAuthenticated])\n  const shownProfileData = profileLoading ? 'loading' : {\n    timersData,\n    profileData\n  };\n  return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n    className: \"pomodoro-clock-panel raised-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 54\n    },\n    __self: this\n  }, React.createElement(\"div\", {\n    className: \"left-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 55\n    },\n    __self: this\n  }, React.createElement(CompletedSessions, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 56\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"center-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 58\n    },\n    __self: this\n  }, React.createElement(ToggleSwitch, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 59\n    },\n    __self: this\n  }), React.createElement(Timer, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 60\n    },\n    __self: this\n  }), React.createElement(StartStop, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 61\n    },\n    __self: this\n  })), React.createElement(\"div\", {\n    className: \"right-panel\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 63\n    },\n    __self: this\n  }, React.createElement(AdjustTime, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 64\n    },\n    __self: this\n  }), React.createElement(Reset, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 65\n    },\n    __self: this\n  }))), React.createElement(\"div\", {\n    className: \"json-data\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 68\n    },\n    __self: this\n  }, React.createElement(\"p\", {\n    className: \"inset panel-label\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 69\n    },\n    __self: this\n  }, \"Profile Data: \", JSON.stringify(shownProfileData))));\n};\n\nconst mapStateToProps = state => {\n  //accessing store and putting it into local props for component\n  const profileLoading = state.profile.loading;\n  const profileError = state.profile.error;\n  const profileData = state.profile;\n  const timersLoading = state.timers.loading;\n  const timersError = state.timers.error;\n  const timersData = state.timers;\n  const timerId = state.timers.id;\n  const walletData = state.wallet;\n  const auth = state.auth;\n  return {\n    profileLoading,\n    profileError,\n    profileData,\n    timersLoading,\n    timersError,\n    timersData,\n    timerId,\n    walletData,\n    auth\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps), withRPCRedux('getProfile'), withRPCRedux('getTimers'));\nexport default hoc(PomodoroClock);"
         },
         {
           "id": "./src/components/PomodoroClock/Reset.js",
@@ -10012,7 +10503,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "./Reset",
-              "loc": "100:26-31"
+              "loc": "107:26-31"
             }
           ],
           "providedExports": [
@@ -10092,7 +10583,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "./StartStop",
-              "loc": "81:26-35"
+              "loc": "88:26-35"
             }
           ],
           "providedExports": [
@@ -10172,7 +10663,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "./Timer",
-              "loc": "75:26-31"
+              "loc": "82:26-31"
             }
           ],
           "providedExports": [
@@ -10252,7 +10743,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "./ToggleSwitch",
-              "loc": "69:25-37"
+              "loc": "76:25-37"
             }
           ],
           "providedExports": [
@@ -10266,9 +10757,9 @@
           "id": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
           "name": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
-          "index": 51,
-          "index2": 50,
-          "size": 3319,
+          "index": 53,
+          "index2": 52,
+          "size": 3383,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -10339,7 +10830,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport RenderedAuth from '../Authentication/RenderedAuth';\n\nconst AuthenticatedComponentWrapperFactory = ComponentPage => {\n  const AuthenticatedComponent = ({\n    auth,\n    refreshAuth,\n    getProfile,\n    getTimers,\n    getGardens\n  }) => {\n    useEffect(() => {\n      if (!auth.isAuthenticated && !auth.didAttempt) {\n        refreshAuth();\n      }\n    }, []);\n    useEffect(() => {\n      if (auth.isAuthenticated && auth.didAttempt) {\n        switch (location.pathname) {\n          case '/':\n            getProfile();\n            getTimers();\n            break;\n\n          case '/garden':\n            getGardens();\n            break;\n\n          default:\n            break;\n        }\n      }\n    }, [auth.isAuthenticated]);\n\n    const ComponentToRender = () => {\n      if (auth.didAttempt && !auth.isAuthenticated) {\n        return React.createElement(RenderedAuth, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 35\n          },\n          __self: this\n        });\n      }\n\n      if (auth.didAttempt && auth.isAuthenticated) {\n        return React.createElement(ComponentPage, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 39\n          },\n          __self: this\n        });\n      }\n\n      return React.createElement(\"div\", {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 42\n        },\n        __self: this\n      }, \"loading...\");\n    };\n\n    return React.createElement(React.Fragment, null, React.createElement(ComponentToRender, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 47\n      },\n      __self: this\n    }));\n  };\n\n  const mapStateToProps = state => {\n    return {\n      auth: state.authentication\n    };\n  };\n\n  const hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getGardens'));\n  return hoc(AuthenticatedComponent);\n};\n\nexport default AuthenticatedComponentWrapperFactory; // const AuthenticatedComponentWrapperFactory = (ComponentPage) => {\n//   class AuthenticatedComponentClass extends React.Component {\n//     componentDidMount() {\n//       const {\n//         auth,\n//         refreshAuth,\n//       } = this.props;\n//       if (!auth.isAuthenticated && !auth.didAttempt) {\n//         refreshAuth();\n//       }\n//     }\n//     render() {\n//       const { auth } = this.props;\n//       if (auth.didAttempt && !auth.isAuthenticated) {\n//         return (<RenderedAuth />);\n//       }\n//       if (auth.didAttempt && auth.isAuthenticated) {\n//         return (<ComponentPage />);\n//       }\n//       return <div>loading...</div>\n//     }\n//   }\n//   const mapStateToProps = (state) => {\n//     return {\n//       auth: state.authentication,\n//     };\n//   };\n//   const hoc = compose(\n//     connect(mapStateToProps),\n//     withRPCRedux('refreshAuth')\n//   );\n//   return hoc(AuthenticatedComponentClass);\n// }\n// export default AuthenticatedComponentWrapperFactory"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport RenderedAuth from '../Authentication/RenderedAuth';\n\nconst AuthenticatedComponentWrapperFactory = ComponentPage => {\n  const AuthenticatedComponent = ({\n    auth,\n    refreshAuth,\n    getProfile,\n    getTimers,\n    getGardens,\n    getPlots\n  }) => {\n    useEffect(() => {\n      if (!auth.isAuthenticated && !auth.didAttempt) {\n        refreshAuth();\n      }\n    }, []);\n    useEffect(() => {\n      if (auth.isAuthenticated && auth.didAttempt) {\n        switch (location.pathname) {\n          case '/':\n            getProfile();\n            getTimers();\n            break;\n\n          case '/garden':\n            getGardens();\n            getPlots();\n            break;\n\n          default:\n            break;\n        }\n      }\n    }, [auth.isAuthenticated]);\n\n    const ComponentToRender = () => {\n      if (auth.didAttempt && !auth.isAuthenticated) {\n        return React.createElement(RenderedAuth, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 36\n          },\n          __self: this\n        });\n      }\n\n      if (auth.didAttempt && auth.isAuthenticated) {\n        return React.createElement(ComponentPage, {\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 40\n          },\n          __self: this\n        });\n      }\n\n      return React.createElement(\"div\", {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 43\n        },\n        __self: this\n      }, \"loading...\");\n    };\n\n    return React.createElement(React.Fragment, null, React.createElement(ComponentToRender, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 48\n      },\n      __self: this\n    }));\n  };\n\n  const mapStateToProps = state => {\n    return {\n      auth: state.authentication\n    };\n  };\n\n  const hoc = compose(connect(mapStateToProps), withRPCRedux('refreshAuth'), withRPCRedux('getProfile'), withRPCRedux('getTimers'), withRPCRedux('getGardens'), withRPCRedux('getPlots'));\n  return hoc(AuthenticatedComponent);\n};\n\nexport default AuthenticatedComponentWrapperFactory; // const AuthenticatedComponentWrapperFactory = (ComponentPage) => {\n//   class AuthenticatedComponentClass extends React.Component {\n//     componentDidMount() {\n//       const {\n//         auth,\n//         refreshAuth,\n//       } = this.props;\n//       if (!auth.isAuthenticated && !auth.didAttempt) {\n//         refreshAuth();\n//       }\n//     }\n//     render() {\n//       const { auth } = this.props;\n//       if (auth.didAttempt && !auth.isAuthenticated) {\n//         return (<RenderedAuth />);\n//       }\n//       if (auth.didAttempt && auth.isAuthenticated) {\n//         return (<ComponentPage />);\n//       }\n//       return <div>loading...</div>\n//     }\n//   }\n//   const mapStateToProps = (state) => {\n//     return {\n//       auth: state.authentication,\n//     };\n//   };\n//   const hoc = compose(\n//     connect(mapStateToProps),\n//     withRPCRedux('refreshAuth')\n//   );\n//   return hoc(AuthenticatedComponentClass);\n// }\n// export default AuthenticatedComponentWrapperFactory"
         },
         {
           "id": "./src/constants/paths.js",
@@ -10479,7 +10970,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/main.js",
           "name": "./src/main.js",
           "index": 27,
-          "index2": 73,
+          "index2": 75,
           "size": 1625,
           "cacheable": true,
           "built": false,
@@ -10547,9 +11038,9 @@
           "id": "./src/pages/garden-page.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js",
           "name": "./src/pages/garden-page.js",
-          "index": 48,
-          "index2": 45,
-          "size": 1202,
+          "index": 49,
+          "index2": 47,
+          "size": 1233,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -10611,14 +11102,14 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport NavBar from '../components/Navigation/NavBar';\nimport Garden from '../components/Garden/Garden'; // import PomodoroClock from '../components/PomodoroClock/PomodoroClock';\n\nconst GardenPage = ({\n  isAuthenticated,\n  getGardens\n}) => {\n  // TODO: error do not call hooks inside a use effect, can only call hooks at top level of function\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }), React.createElement(Garden, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }));\n};\n\nconst mapStateToProps = state => {\n  return {\n    // currentCycle: state.timers.current_cycle,\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(connect(mapStateToProps, withRPCRedux('getGardens')));\nexport default hoc(GardenPage);"
+          "source": "var _jsxFileName = \"/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/garden-page.js\";\nimport React, { useEffect } from 'react';\nimport { withRPCRedux } from 'fusion-plugin-rpc-redux-react';\nimport { connect } from 'react-redux';\nimport { compose } from 'redux';\nimport NavBar from '../components/Navigation/NavBar';\nimport Garden from '../components/Garden/Garden'; // import PomodoroClock from '../components/PomodoroClock/PomodoroClock';\n\nconst GardenPage = ({\n  isAuthenticated,\n  getGardens\n}) => {\n  // TODO: error do not call hooks inside a use effect, can only call hooks at top level of function\n  return React.createElement(React.Fragment, null, React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }), React.createElement(Garden, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }));\n}; // export default GardenPage;\n\n\nconst mapStateToProps = state => {\n  return {\n    // currentCycle: state.timers.current_cycle,\n    isAuthenticated: state.authentication.isAuthenticated\n  };\n};\n\nconst hoc = compose(withRPCRedux('getGardens'), connect(mapStateToProps));\nexport default hoc(GardenPage);"
         },
         {
           "id": "./src/pages/home.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/home.js",
           "name": "./src/pages/home.js",
           "index": 35,
-          "index2": 43,
+          "index2": 44,
           "size": 1046,
           "cacheable": true,
           "built": false,
@@ -10687,8 +11178,8 @@
           "id": "./src/pages/pageNotFound.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/pages/pageNotFound.js",
           "name": "./src/pages/pageNotFound.js",
-          "index": 50,
-          "index2": 46,
+          "index": 52,
+          "index2": 48,
           "size": 482,
           "cacheable": true,
           "built": false,
@@ -10757,8 +11248,8 @@
           "id": "./src/plugins/auth.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/plugins/auth.js",
           "name": "./src/plugins/auth.js",
-          "index": 75,
-          "index2": 72,
+          "index": 77,
+          "index2": 74,
           "size": 1840,
           "cacheable": true,
           "built": false,
@@ -10813,8 +11304,8 @@
           "id": "./src/reducers/authReducer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/authReducer.js",
           "name": "./src/reducers/authReducer.js",
-          "index": 66,
-          "index2": 62,
+          "index": 68,
+          "index2": 64,
           "size": 2563,
           "cacheable": true,
           "built": false,
@@ -10883,8 +11374,8 @@
           "id": "./src/reducers/gardensReducer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/gardensReducer.js",
           "name": "./src/reducers/gardensReducer.js",
-          "index": 68,
-          "index2": 64,
+          "index": 70,
+          "index2": 66,
           "size": 634,
           "cacheable": true,
           "built": false,
@@ -10953,8 +11444,8 @@
           "id": "./src/reducers/index.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/index.js",
           "name": "./src/reducers/index.js",
-          "index": 62,
-          "index2": 65,
+          "index": 64,
+          "index2": 67,
           "size": 397,
           "cacheable": true,
           "built": false,
@@ -11018,8 +11509,8 @@
           "id": "./src/reducers/profileReducer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/profileReducer.js",
           "name": "./src/reducers/profileReducer.js",
-          "index": 63,
-          "index2": 60,
+          "index": 65,
+          "index2": 62,
           "size": 822,
           "cacheable": true,
           "built": false,
@@ -11088,8 +11579,8 @@
           "id": "./src/reducers/timersReducer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/timersReducer.js",
           "name": "./src/reducers/timersReducer.js",
-          "index": 65,
-          "index2": 61,
+          "index": 67,
+          "index2": 63,
           "size": 8736,
           "cacheable": true,
           "built": false,
@@ -11158,8 +11649,8 @@
           "id": "./src/reducers/walletReducer.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/reducers/walletReducer.js",
           "name": "./src/reducers/walletReducer.js",
-          "index": 67,
-          "index2": 63,
+          "index": 69,
+          "index2": 65,
           "size": 1010,
           "cacheable": true,
           "built": false,
@@ -11229,7 +11720,7 @@
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/root.js",
           "name": "./src/root.js",
           "index": 31,
-          "index2": 52,
+          "index2": 54,
           "size": 1864,
           "cacheable": true,
           "built": false,
@@ -11293,8 +11784,8 @@
           "id": "./src/rpc/index.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/index.js",
           "name": "./src/rpc/index.js",
-          "index": 69,
-          "index2": 71,
+          "index": 71,
+          "index2": 73,
           "size": 13152,
           "cacheable": true,
           "built": false,
@@ -11349,8 +11840,8 @@
           "id": "./src/rpc/services/index.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/services/index.js",
           "name": "./src/rpc/services/index.js",
-          "index": 70,
-          "index2": 67,
+          "index": 72,
+          "index2": 69,
           "size": 638,
           "cacheable": true,
           "built": false,
@@ -11429,9 +11920,9 @@
           "id": "./src/rpc/services/master-backend.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/services/master-backend.js",
           "name": "./src/rpc/services/master-backend.js",
-          "index": 71,
-          "index2": 66,
-          "size": 650,
+          "index": 73,
+          "index2": 68,
+          "size": 662,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -11498,14 +11989,14 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "const API_BASEPATH = 'http://localhost:8000/api';\nconst authEndpoints = ['register', 'login', 'refreshAuth'];\nconst fetchUserDataEndpoints = ['getProfile', 'getTimers', 'getWallet', 'getGardens'];\nconst userActionEndpoints = [// TIMER\n'incrementFocusTime', 'decrementFocusTime', 'incrementBreakTime', 'decrementBreakTime', 'resetTimers', 'setCycle', 'startTimers', 'stopTimers', 'updateCurrentTimes', 'updateCompletedFocusMinutes', // WALLET\n'updateEnergy'];\nconst masterBackend = {\n  name: 'master backend',\n  basePath: API_BASEPATH,\n  endpoints: [...authEndpoints, ...fetchUserDataEndpoints, ...userActionEndpoints]\n};\nexport default masterBackend;"
+          "source": "const API_BASEPATH = 'http://localhost:8000/api';\nconst authEndpoints = ['register', 'login', 'refreshAuth'];\nconst fetchUserDataEndpoints = ['getProfile', 'getTimers', 'getWallet', 'getGardens', 'getPlots'];\nconst userActionEndpoints = [// TIMER\n'incrementFocusTime', 'decrementFocusTime', 'incrementBreakTime', 'decrementBreakTime', 'resetTimers', 'setCycle', 'startTimers', 'stopTimers', 'updateCurrentTimes', 'updateCompletedFocusMinutes', // WALLET\n'updateEnergy'];\nconst masterBackend = {\n  name: 'master backend',\n  basePath: API_BASEPATH,\n  endpoints: [...authEndpoints, ...fetchUserDataEndpoints, ...userActionEndpoints]\n};\nexport default masterBackend;"
         },
         {
           "id": "./src/rpc/utils.js",
           "identifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/rpc/utils.js",
           "name": "./src/rpc/utils.js",
-          "index": 72,
-          "index2": 69,
+          "index": 74,
+          "index2": 71,
           "size": 2648,
           "cacheable": true,
           "built": false,
@@ -11657,8 +12148,8 @@
           "id": "axios",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/axios/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/axios/index.js\"",
-          "index": 73,
-          "index2": 68,
+          "index": 75,
+          "index2": 70,
           "size": 42,
           "built": false,
           "optional": false,
@@ -12072,8 +12563,8 @@
           "id": "fusion-plugin-jwt",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-jwt/dist-node-cjs/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-jwt/dist-node-cjs/index.js\"",
-          "index": 60,
-          "index2": 57,
+          "index": 62,
+          "index2": 59,
           "size": 42,
           "built": false,
           "optional": false,
@@ -12239,8 +12730,8 @@
           "id": "fusion-plugin-react-redux",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-react-redux/dist-node-cjs/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-react-redux/dist-node-cjs/index.js\"",
-          "index": 57,
-          "index2": 54,
+          "index": 59,
+          "index2": 56,
           "size": 42,
           "built": false,
           "optional": false,
@@ -12496,8 +12987,8 @@
           "id": "fusion-plugin-rpc",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/index.js\"",
-          "index": 58,
-          "index2": 55,
+          "index": 60,
+          "index2": 57,
           "size": 42,
           "built": false,
           "optional": false,
@@ -12773,6 +13264,15 @@
               "loc": "3:0-61"
             },
             {
+              "moduleId": "./src/components/Garden/Grid.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "module": "./src/components/Garden/Grid.js",
+              "moduleName": "./src/components/Garden/Grid.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "3:0-61"
+            },
+            {
               "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/AdjustTime.js",
               "module": "./src/components/PomodoroClock/AdjustTime.js",
@@ -12818,6 +13318,24 @@
               "loc": "101:154-166"
             },
             {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "3:0-61"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "37:46-58"
+            },
+            {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
               "module": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -12833,7 +13351,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "147:46-58"
+              "loc": "154:46-58"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -12842,7 +13360,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "147:74-86"
+              "loc": "154:74-86"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -12995,7 +13513,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "84:48-60"
+              "loc": "86:48-60"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -13004,7 +13522,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "84:77-89"
+              "loc": "86:77-89"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -13013,7 +13531,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "84:105-117"
+              "loc": "86:105-117"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -13022,7 +13540,16 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "84:132-144"
+              "loc": "86:132-144"
+            },
+            {
+              "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
+              "module": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
+              "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
+              "type": "harmony import specifier",
+              "userRequest": "fusion-plugin-rpc-redux-react",
+              "loc": "86:160-172"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -13040,7 +13567,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "fusion-plugin-rpc-redux-react",
-              "loc": "36:45-57"
+              "loc": "37:20-32"
             },
             {
               "moduleId": "./src/reducers/authReducer.js",
@@ -13276,8 +13803,8 @@
           "id": "fusion-plugin-rpc/dist-node-cjs/response-error",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/response-error.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-rpc/dist-node-cjs/response-error.js\"",
-          "index": 74,
-          "index2": 70,
+          "index": 76,
+          "index2": 72,
           "size": 42,
           "built": false,
           "optional": false,
@@ -13394,8 +13921,8 @@
           "id": "fusion-plugin-universal-events",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-universal-events/dist-node-cjs/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-plugin-universal-events/dist-node-cjs/index.js\"",
-          "index": 56,
-          "index2": 53,
+          "index": 58,
+          "index2": 55,
           "size": 42,
           "built": false,
           "optional": false,
@@ -13525,8 +14052,8 @@
           "id": "fusion-tokens",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-tokens/dist/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-tokens/dist/index.js\"",
-          "index": 59,
-          "index2": 56,
+          "index": 61,
+          "index2": 58,
           "size": 42,
           "built": false,
           "optional": false,
@@ -14519,7 +15046,7 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "16:21-26"
+              "loc": "13:9-14"
             },
             {
               "moduleId": "./src/components/Garden/Garden.js",
@@ -14528,7 +15055,7 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "31:11-16"
+              "loc": "13:29-34"
             },
             {
               "moduleId": "./src/components/Garden/Garden.js",
@@ -14537,7 +15064,7 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "31:31-36"
+              "loc": "13:51-56"
             },
             {
               "moduleId": "./src/components/Garden/Garden.js",
@@ -14546,7 +15073,7 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "31:53-58"
+              "loc": "19:6-11"
             },
             {
               "moduleId": "./src/components/Garden/Garden.js",
@@ -14555,43 +15082,52 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "44:9-14"
+              "loc": "26:5-10"
             },
             {
-              "moduleId": "./src/components/Garden/Garden.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
-              "module": "./src/components/Garden/Garden.js",
-              "moduleName": "./src/components/Garden/Garden.js",
-              "type": "harmony import specifier",
+              "moduleId": "./src/components/Garden/Grid.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "module": "./src/components/Garden/Grid.js",
+              "moduleName": "./src/components/Garden/Grid.js",
+              "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "44:29-34"
+              "loc": "2:0-26"
             },
             {
-              "moduleId": "./src/components/Garden/Garden.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
-              "module": "./src/components/Garden/Garden.js",
-              "moduleName": "./src/components/Garden/Garden.js",
+              "moduleId": "./src/components/Garden/Grid.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "module": "./src/components/Garden/Grid.js",
+              "moduleName": "./src/components/Garden/Grid.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "44:51-56"
+              "loc": "15:19-24"
             },
             {
-              "moduleId": "./src/components/Garden/Garden.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
-              "module": "./src/components/Garden/Garden.js",
-              "moduleName": "./src/components/Garden/Garden.js",
+              "moduleId": "./src/components/Garden/Grid.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "module": "./src/components/Garden/Grid.js",
+              "moduleName": "./src/components/Garden/Grid.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "50:6-11"
+              "loc": "29:9-14"
             },
             {
-              "moduleId": "./src/components/Garden/Garden.js",
-              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Garden.js",
-              "module": "./src/components/Garden/Garden.js",
-              "moduleName": "./src/components/Garden/Garden.js",
+              "moduleId": "./src/components/Garden/Grid.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "module": "./src/components/Garden/Grid.js",
+              "moduleName": "./src/components/Garden/Grid.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "57:5-10"
+              "loc": "29:29-34"
+            },
+            {
+              "moduleId": "./src/components/Garden/Grid.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "module": "./src/components/Garden/Grid.js",
+              "moduleName": "./src/components/Garden/Grid.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "29:51-56"
             },
             {
               "moduleId": "./src/components/Navigation/NavBar.js",
@@ -14729,6 +15265,51 @@
               "loc": "73:25-30"
             },
             {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "react",
+              "loc": "2:0-26"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "10:9-14"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "10:29-34"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "10:51-56"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "19:33-38"
+            },
+            {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
               "module": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14744,7 +15325,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "48:9-14"
+              "loc": "49:9-14"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14753,7 +15334,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "48:29-34"
+              "loc": "49:29-34"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14762,7 +15343,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "48:51-56"
+              "loc": "49:51-56"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14771,7 +15352,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "55:5-10"
+              "loc": "56:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14780,7 +15361,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "62:6-11"
+              "loc": "63:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14789,7 +15370,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "69:5-10"
+              "loc": "69:7-12"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14798,7 +15379,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "75:6-11"
+              "loc": "76:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14807,7 +15388,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "81:6-11"
+              "loc": "82:6-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14816,7 +15397,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "87:7-12"
+              "loc": "88:6-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14825,7 +15406,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "94:5-10"
+              "loc": "94:7-12"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14834,7 +15415,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "100:6-11"
+              "loc": "101:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14843,7 +15424,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "106:8-13"
+              "loc": "107:6-11"
             },
             {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -14852,7 +15433,16 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "113:5-10"
+              "loc": "113:8-13"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
+              "module": "./src/components/PomodoroClock/PomodoroClock.js",
+              "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "120:5-10"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -15032,7 +15622,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "16:4-13"
+              "loc": "17:4-13"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -15041,7 +15631,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "21:4-13"
+              "loc": "22:4-13"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -15050,7 +15640,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "41:15-20"
+              "loc": "43:15-20"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -15059,7 +15649,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "51:15-20"
+              "loc": "53:15-20"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -15068,7 +15658,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "60:13-18"
+              "loc": "62:13-18"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -15077,7 +15667,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "69:11-16"
+              "loc": "71:11-16"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -15086,7 +15676,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "69:31-36"
+              "loc": "71:31-36"
             },
             {
               "moduleId": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
@@ -15095,7 +15685,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "69:53-58"
+              "loc": "71:53-58"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -15427,7 +16017,25 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "73:20-27"
+              "loc": "43:20-27"
+            },
+            {
+              "moduleId": "./src/components/Garden/Grid.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "module": "./src/components/Garden/Grid.js",
+              "moduleName": "./src/components/Garden/Grid.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "react-redux",
+              "loc": "4:0-38"
+            },
+            {
+              "moduleId": "./src/components/Garden/Grid.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "module": "./src/components/Garden/Grid.js",
+              "moduleName": "./src/components/Garden/Grid.js",
+              "type": "harmony import specifier",
+              "userRequest": "react-redux",
+              "loc": "45:20-27"
             },
             {
               "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
@@ -15448,6 +16056,24 @@
               "loc": "101:20-27"
             },
             {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "react-redux",
+              "loc": "4:0-38"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony import specifier",
+              "userRequest": "react-redux",
+              "loc": "37:20-27"
+            },
+            {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
               "module": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -15463,7 +16089,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "147:20-27"
+              "loc": "154:20-27"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -15562,7 +16188,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "84:22-29"
+              "loc": "86:22-29"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -15580,7 +16206,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "react-redux",
-              "loc": "36:20-27"
+              "loc": "37:48-55"
             }
           ],
           "providedExports": null,
@@ -15591,8 +16217,8 @@
           "id": "reduce-reducers",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/reduce-reducers/lib/index.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/reduce-reducers/lib/index.js\"",
-          "index": 64,
-          "index2": 59,
+          "index": 66,
+          "index2": 61,
           "size": 42,
           "built": false,
           "optional": false,
@@ -15843,7 +16469,25 @@
               "moduleName": "./src/components/Garden/Garden.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "73:12-19"
+              "loc": "43:12-19"
+            },
+            {
+              "moduleId": "./src/components/Garden/Grid.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "module": "./src/components/Garden/Grid.js",
+              "moduleName": "./src/components/Garden/Grid.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "redux",
+              "loc": "5:0-32"
+            },
+            {
+              "moduleId": "./src/components/Garden/Grid.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/Garden/Grid.js",
+              "module": "./src/components/Garden/Grid.js",
+              "moduleName": "./src/components/Garden/Grid.js",
+              "type": "harmony import specifier",
+              "userRequest": "redux",
+              "loc": "45:12-19"
             },
             {
               "moduleId": "./src/components/PomodoroClock/AdjustTime.js",
@@ -15864,6 +16508,24 @@
               "loc": "101:12-19"
             },
             {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "redux",
+              "loc": "5:0-32"
+            },
+            {
+              "moduleId": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/CompletedSessions.js",
+              "module": "./src/components/PomodoroClock/CompletedSessions.js",
+              "moduleName": "./src/components/PomodoroClock/CompletedSessions.js",
+              "type": "harmony import specifier",
+              "userRequest": "redux",
+              "loc": "37:12-19"
+            },
+            {
               "moduleId": "./src/components/PomodoroClock/PomodoroClock.js",
               "moduleIdentifier": "/Users/williamwang/Programming/v3_Planter/planter-frontend/node_modules/fusion-cli/build/loaders/babel-loader.js??ref--4-0!/Users/williamwang/Programming/v3_Planter/planter-frontend/src/components/PomodoroClock/PomodoroClock.js",
               "module": "./src/components/PomodoroClock/PomodoroClock.js",
@@ -15879,7 +16541,7 @@
               "moduleName": "./src/components/PomodoroClock/PomodoroClock.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "147:12-19"
+              "loc": "154:12-19"
             },
             {
               "moduleId": "./src/components/PomodoroClock/Reset.js",
@@ -15969,7 +16631,7 @@
               "moduleName": "./src/components/Utils/AuthenticatedComponentWrapperFactory.js.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "84:14-21"
+              "loc": "86:14-21"
             },
             {
               "moduleId": "./src/pages/garden-page.js",
@@ -15987,7 +16649,7 @@
               "moduleName": "./src/pages/garden-page.js",
               "type": "harmony import specifier",
               "userRequest": "redux",
-              "loc": "36:12-19"
+              "loc": "37:12-19"
             },
             {
               "moduleId": "./src/reducers/index.js",
@@ -16072,8 +16734,8 @@
           "id": "unfetch",
           "identifier": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/unfetch/dist/unfetch.js\"",
           "name": "external \"/Users/williamwang/Programming/v3_Planter/node_modules/unfetch/dist/unfetch.js\"",
-          "index": 61,
-          "index2": 58,
+          "index": 63,
+          "index2": 60,
           "size": 42,
           "built": false,
           "optional": false,

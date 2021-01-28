@@ -7,6 +7,7 @@ const fetchUserDataEndpoints = [
   'getTimers',
   'getWallet',
   'getGardens',
+  'getPlots',
 ];
 
 const userActionEndpoints = [

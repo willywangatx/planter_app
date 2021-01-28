@@ -11,6 +11,7 @@ from accounts.views import create_account
 from timers.views import *
 from wallets.views import get_wallet, update_energy
 from gardens.views import get_gardens
+from plots.views import get_plots
 # from timers.views import get_timers, increment_focus_time, decrement_focus_time, increment_break_time, decrement_break_time, reset_timers
 
 urlpatterns = [
@@ -31,6 +32,9 @@ urlpatterns = [
 
     # garden endpoints
     path('api/getGardens/', get_gardens, name='get_gardens'),
+
+    # plots endpoints 
+    path('api/getPlots/', get_plots, name='get_plots'),
 
     # timers endpoints
     path('api/getTimers/', get_timers, name='get_timers'),

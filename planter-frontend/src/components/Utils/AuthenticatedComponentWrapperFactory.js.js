@@ -6,7 +6,7 @@ import { compose } from 'redux';
 import RenderedAuth from '../Authentication/RenderedAuth';
 
 const AuthenticatedComponentWrapperFactory = (ComponentPage) => {
-  const AuthenticatedComponent = ({ auth, refreshAuth, getProfile, getTimers, getGardens }) => {
+  const AuthenticatedComponent = ({ auth, refreshAuth, getProfile, getTimers, getGardens, getPlots }) => {
     useEffect(() => {
       if (!auth.isAuthenticated && !auth.didAttempt) {
         refreshAuth();
@@ -22,6 +22,7 @@ const AuthenticatedComponentWrapperFactory = (ComponentPage) => {
             break;
           case '/garden':
             getGardens();
+            getPlots();
             break;
           default:
             break;
@@ -60,7 +61,8 @@ const AuthenticatedComponentWrapperFactory = (ComponentPage) => {
     withRPCRedux('refreshAuth'),
     withRPCRedux('getProfile'),
     withRPCRedux('getTimers'),
-    withRPCRedux('getGardens')
+    withRPCRedux('getGardens'),
+    withRPCRedux('getPlots'),
   );
 
   return hoc(AuthenticatedComponent);

@@ -23,4 +23,5 @@ class PlotSerializer(serializers.ModelSerializer):
     plant = PlantAttachmentSerializer(read_only=True, many=True)
     class Meta:
         model = Plot
-        fields = ['tool', 'plant']
+        # fields = ['row', 'column', 'tool', 'plant']
+        fields = ['row', 'column', 'tool', 'plant',  'max_tool_attachments', 'max_plant_attachments']

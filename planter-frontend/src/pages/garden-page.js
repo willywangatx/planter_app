@@ -18,6 +18,8 @@ const GardenPage = ({ isAuthenticated, getGardens }) => {
   );
 };
 
+// export default GardenPage;
+
 const mapStateToProps = (state) => {
   return {
     // currentCycle: state.timers.current_cycle,
@@ -26,9 +28,9 @@ const mapStateToProps = (state) => {
 };
 
 const hoc = compose(
+  withRPCRedux('getGardens'),
   connect(
     mapStateToProps,
-    withRPCRedux('getGardens')
   )
 );
 

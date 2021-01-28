@@ -24,8 +24,6 @@ export default reduceReducers(
         ...state,
         ...payload.garden,
         loading: false,
-
-
       };
     },
     failure: (state, { payload }) => {
@@ -35,5 +33,5 @@ export default reduceReducers(
         error: payload,
       };
     },
-  })
+  }),
 );

@@ -2,7 +2,7 @@ from django.db import models
 from gardens.models import Garden 
 from tools.models import Tool
 from plants.models import Plant
-
+from profiles.models import Profile
 # Create your models here.
 
 # many to many through relationship between item db and plot_detail
@@ -11,8 +11,8 @@ class Tool_Attachment (models.Model):
     tool = models.ForeignKey(Tool, on_delete=models.CASCADE)
 
     def __str__(self):
-        return ("(%s's row %s col %s) tool attachment: %s" % (self.plot.garden.profile.account.username, self.plot.row, self.plot.column, self.tool.tool_name))
-
+        return ("(row %s col %s) tool attachment: %s" % (self.plot.row, self.plot.column, self.tool.tool_name))
+        # return ("(%s's row %s col %s) tool attachment: %s" % (self.Plot.garden.profile.account.username, self.plot.row, self.plot.column, self.tool.tool_name))
 class Plant_Attachment (models.Model):
     plot = models.ForeignKey('Plot', on_delete=models.CASCADE)
     plant = models.ForeignKey(Plant, on_delete=models.CASCADE)
@@ -21,6 +21,7 @@ class Plant_Attachment (models.Model):
     last_watered = models.DateTimeField(auto_now=True)
 
 class Plot(models.Model):
+    profile = models.ForeignKey(Profile, related_name='plots', on_delete=models.CASCADE)
     garden = models.ForeignKey(Garden, related_name='plots', on_delete=models.CASCADE)
     
     row = models.IntegerField(default=None)
@@ -34,7 +35,8 @@ class Plot(models.Model):
     max_plant_attachments = models.IntegerField(default=1, editable=False)
 
     def __str__(self):
-        return ("%s's plot: row %s col %s" % (self.garden.profile.account.username, self.row, self.column))
+        # return ("%s's plot: row %s col %s" % (self.garden.profile.account.username, self.row, self.column))
+        return ("plot: row %s col %s" % (self.row, self.column))
 
 
 
